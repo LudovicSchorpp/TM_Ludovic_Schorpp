@@ -1,0 +1,12 @@
+BEGIN options
+  BUDGET  FILEOUT  dis_test.cbc
+  HEAD  FILEOUT  dis_test.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  LAST
+  PRINT  HEAD  LAST
+  PRINT  BUDGET  LAST
+END period  1
+

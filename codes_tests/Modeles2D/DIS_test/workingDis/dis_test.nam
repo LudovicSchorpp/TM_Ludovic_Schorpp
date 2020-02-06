@@ -1,0 +1,12 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  dis_test.dis  dis
+  IC6  dis_test.ic  ic
+  NPF6  dis_test.npf  npf
+  CHD6  dis_test.chd  chd
+  RCH6  dis_test.rcha  rcha
+  OC6  dis_test.oc  oc
+END packages
+
