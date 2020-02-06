@@ -1,5 +1,6 @@
 BEGIN options
   SAVE_FLOWS
+  SAVE_SPECIFIC_DISCHARGE
 END options
 
 BEGIN griddata

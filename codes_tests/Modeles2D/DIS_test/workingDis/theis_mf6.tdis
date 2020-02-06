@@ -1,5 +1,5 @@
 BEGIN options
-  TIME_UNITS  days
+  TIME_UNITS  seconds
 END options
 
 BEGIN dimensions

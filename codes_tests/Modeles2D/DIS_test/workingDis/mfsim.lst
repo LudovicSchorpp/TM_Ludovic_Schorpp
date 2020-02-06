@@ -53,7 +53,7 @@ Integer Variables
  TDIS -- TEMPORAL DISCRETIZATION PACKAGE,
  VERSION 1 : 11/13/2014 - INPUT READ FROM UNIT 1002
  PROCESSING TDIS OPTIONS
-    SIMULATION TIME UNIT IS DAYS
+    SIMULATION TIME UNIT IS SECONDS
  END OF TDIS OPTIONS
  PROCESSING TDIS DIMENSIONS
     1 STRESS PERIOD(S) IN SIMULATION
@@ -138,21 +138,21 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        25     108.546                        1_GWF-(1,18,3)
- Under-relaxation          1               108.546                        1_GWF-(1,18,3)
- Linear Solver             2         1    2.650043E-04                   1_GWF-(1,27,22)
+ Linear Solver             1        27     141.588                        1_GWF-(1,18,4)
+ Under-relaxation          1               141.588                        1_GWF-(1,18,4)
+ Linear Solver             2         1    1.394551E-04                   1_GWF-(1,28,22)
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 26 TOTAL ITERATIONS
+ 28 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   20856
- Number of allocated real variables:    19885
- Allocated memory in megabytes:    0.242504    
+ Number of allocated integer variables:   27549
+ Number of allocated real variables:    27847
+ Allocated memory in megabytes:    0.332972    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/02/06 15:49:25
- Elapsed run time:  0.157 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/02/06 20:30:56
+ Elapsed run time:  0.050 Seconds
 
  Normal termination of simulation.
