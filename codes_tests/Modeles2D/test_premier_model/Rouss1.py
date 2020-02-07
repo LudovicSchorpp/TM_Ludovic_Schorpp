@@ -43,7 +43,7 @@ def Imreduction (imar, nrow, ncol):
 
 
 #2
-def gp2idomain (gp,grid,idomain,area=0):
+def gp2idomain (gp,grid,idomain,area=0,layer=0):
     
     '''
     This function attribute active values to cells given a certain geopandas object and a grid (flopy.discretization) with idomain
@@ -59,16 +59,17 @@ def gp2idomain (gp,grid,idomain,area=0):
     if area >= 1:
         result = ix.intersect_polygon(gp.geometry[0])
         result = result[result.areas>(np.max(result.areas)/area)]
-    
+        
+    lst=[]
     for irow, icol in result.cellids:
         idomain[irow*grid.ncol+icol]=1
-        
-    return idomain
+        lst.append(((layer,irow,icol)))
+    return lst
 
 
 
 #3
-def gp2cellids (grid, gp, idomain,type = "polygon",layer=0):
+def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0):
     """
     this function extract the cellids of the intersection between a geopandas object and a grid 
     """
@@ -88,7 +89,8 @@ def gp2cellids (grid, gp, idomain,type = "polygon",layer=0):
     lst=[];
     for irow, icol in result.cellids:
         lst.append(((layer,irow,icol)))
-        idomain[irow*grid.ncol+icol]=1
+        if idomain_active:
+            idomain[irow*grid.ncol+icol] = 1
     return lst
 
 
