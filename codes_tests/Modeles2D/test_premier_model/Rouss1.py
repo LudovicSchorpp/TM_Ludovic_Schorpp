@@ -43,15 +43,17 @@ def Imreduction (imar, nrow, ncol):
 
 
 #2
-def gp2idomain (gp,grid,idomain,area=0,layer=0):
+def gp2idomain (gp,grid,idomain,area=0,layer=0,method="none"):
     
     '''
     This function attribute active values to cells given a certain geopandas object and a grid (flopy.discretization) with idomain
     the area is a value that determine at which level a cell will be counted as intersected by the polygon 
     (3 for example mean that only cells that have 1/3 of their area intersected by the polygon will be accounted)
     '''
-    
-    ix = GridIntersect(grid)
+    if method == "none":
+        ix = GridIntersect(grid)
+    if method == "structured":
+        ix = GridIntersect(grid,method=method)
     
     if area == 0:
         result = ix.intersect_polygon(gp.geometry[0])
