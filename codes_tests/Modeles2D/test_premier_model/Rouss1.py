@@ -165,3 +165,90 @@ def get_MNTbbox (MNT_path):
     y0 = y1 + R_mnt.RasterYSize*mnt_infos[5]
     
     return x0,y0,x1,y1
+
+
+#7
+def inter_lst (lst1,lst2,typ = "intersection"):
+    """
+    return the intersection/unique values of the list1 compared to list2
+    """
+    
+    
+    
+    
+    if typ == "intersection":
+        return [i for i in lst1 if i in lst2]
+    if typ == "unique":
+        return [i for i in lst1 if i not in lst2]
+        
+#8
+def import_riv(grid,gp):
+    """
+    This function extract infos about a river (geopandas object, LINESTRING OBLIGATIVE),cellids + lengths of in each cells in the right order. 
+    Format : import_riv (Grid (from the gwf model, gwf.modelgrid for ex.), gp (a geopandas object containing a unique Linestring))
+    Return a dataframe containing these datas, post-processing necessary to remove cells that are already counted as BC in the model
+    """
+    
+    
+    ix = GridIntersect(grid)
+    coord_riv=[]
+    for x,y in zip(gp.geometry[0].xy[0],gp.geometry[0].xy[1]):
+        coord_riv.append((x,y))
+
+
+    verti=[]
+    df_tot_ord = pd.DataFrame() # empty DF
+    for i in range(len(coord_riv)):
+        if i < len(coord_riv)-1:
+            lsi = LineString([coord_riv[i],coord_riv[i+1]]) # create the linestring btw point i and i+1
+            res = ix.intersect_linestring(lsi) # do the intersection
+            cellids = res.cellids # extract cellids
+
+            if len(cellids)>1: # if more than one cells is intersected --> we need to order them
+
+                dirx = coord_riv[i+1][0]-coord_riv[i][0] # Xdirection of the linestring
+
+                for x,y in res.vertices: # extract the 1st vertice of the intersections in order to organize 
+                    verti.append(x)
+                vertix = np.array(verti)[:,0]
+                df = pd.DataFrame({"cellids":cellids,"vertix":vertix,"lengths":res.lengths}) # create a DF to order
+                verti=[]
+
+                #organize the cells given the direction
+                if dirx > 0:
+                    df.sort_values(by=["vertix"],ascending=True,inplace=True)                
+                if dirx < 0:
+                    df.sort_values(by=["vertix"],ascending=False,inplace=True) 
+
+                # append these data in a big DF
+                df_tot_ord = df_tot_ord.append(df).drop(["vertix"],axis=1)
+
+            else : # if only one cell is intersected by the linestring
+                df_tot_ord = df_tot_ord.append(pd.DataFrame({"cellids":cellids,"lengths":res.lengths}))
+
+    df_riv = df_tot_ord.groupby(["cellids"],sort=False).sum()
+
+    # retrieve data
+    lst_len_Riv = df_riv["lengths"].values
+
+    cellids_Riv=[]; # list of all the cells intersected by the river
+    cellids = df_riv.index
+    for irow,icol in cellids:
+        cell = (0,irow,icol)
+        if cell not in cellids_Riv:
+            cellids_Riv.append(cell)
+
+    df_riv = pd.DataFrame({"cellids":cellids_Riv,"lengths":lst_len_Riv}) 
+    return df_riv
+    
+
+#9
+def get_cellcenters (gwf,cellids): 
+    """
+    This function return the x and y coordinates of a given cellid and a gwf model (dis only)
+    """
+    xc=[];yc=[]
+    for i,j,k in cellids:
+        xc.append(gwf.modelgrid.xcellcenters[j,k])
+        yc.append(gwf.modelgrid.ycellcenters[j,k])
+    return xc,yc
