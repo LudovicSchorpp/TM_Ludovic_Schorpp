@@ -173,9 +173,6 @@ def inter_lst (lst1,lst2,typ = "intersection"):
     return the intersection/unique values of the list1 compared to list2
     """
     
-    
-    
-    
     if typ == "intersection":
         return [i for i in lst1 if i in lst2]
     if typ == "unique":
@@ -251,4 +248,5 @@ def get_cellcenters (gwf,cellids):
     for i,j,k in cellids:
         xc.append(gwf.modelgrid.xcellcenters[j,k])
         yc.append(gwf.modelgrid.ycellcenters[j,k])
+
     return xc,yc
