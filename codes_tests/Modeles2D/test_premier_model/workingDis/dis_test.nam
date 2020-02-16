@@ -8,6 +8,7 @@ BEGIN packages
   RCH6  dis_test.rcha  rcha
   OC6  dis_test.oc  oc
   CHD6  sea.chd  chd
-  CHD6  riv.chd  riv
+  CHD6  agy.chd  agy
+  CHD6  Tet.chd  tet
 END packages
 
