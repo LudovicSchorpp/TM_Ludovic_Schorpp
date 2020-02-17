@@ -1,6 +1,6 @@
 BEGIN options
-  BUDGET  FILEOUT  dis_test.cbc
-  HEAD  FILEOUT  dis_test.hds
+  BUDGET  FILEOUT  first_2D.cbc
+  HEAD  FILEOUT  first_2D.hds
 END options
 
 BEGIN period  1

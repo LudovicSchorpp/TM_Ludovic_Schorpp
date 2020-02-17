@@ -1,0 +1,14 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  first_2D.dis  dis
+  IC6  first_2D.ic  ic
+  NPF6  first_2D.npf  npf
+  RCH6  first_2D.rcha  rcha
+  OC6  first_2D.oc  oc
+  CHD6  sea.chd  chd
+  CHD6  agy.chd  agy
+  CHD6  Tet.chd  tet
+END packages
+

@@ -130,7 +130,7 @@ def cellidBD(lst_in, layer=0):
 #5
 def get_heads(model_name,workspace):
     """
-    Function that return the heads from the headfile
+    Function that returns the heads from the headfile
     """
     headfile = '{}.hds'.format(model_name)
     fname = os.path.join(workspace,headfile)    
@@ -141,7 +141,7 @@ def get_heads(model_name,workspace):
 
 def get_spdis(model_name,workspace):
     """
-    Function that return the specific discharge from the cbcfile
+    Function that returns the specific discharge from the cbcfile
     """
     spdfile = '{}.cbc'.format(model_name)
     fname = os.path.join(workspace,spdfile)    
@@ -149,6 +149,14 @@ def get_spdis(model_name,workspace):
     spd  = spdobj.get_data(text="SPDIS")
     return spd
 
+def get_budgetobj(model_name,workspace):
+    """
+    Function that returns the budget file as an object
+    """
+    lstBudgetfile = "{}.lst".format(model_name)
+    fname = os.path.join(workspace,lstBudgetfile)
+    Budgetobj = fp.utils.Mf6ListBudget(fname)
+    return Bugetobj
 
 
 #6
