@@ -127,7 +127,7 @@ def cellidBD(lst_in, layer=0):
     return lst_bc
 
 
-#5
+# 5 visualization functions
 def get_heads(model_name,workspace):
     """
     Function that returns the heads from the headfile

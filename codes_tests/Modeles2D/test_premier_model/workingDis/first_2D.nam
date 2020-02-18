@@ -10,5 +10,6 @@ BEGIN packages
   CHD6  sea.chd  chd
   CHD6  agy.chd  agy
   CHD6  Tet.chd  tet
+  CHD6  Rea.chd  rea
 END packages
 
