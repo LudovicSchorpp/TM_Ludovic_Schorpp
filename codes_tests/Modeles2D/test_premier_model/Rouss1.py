@@ -71,7 +71,7 @@ def gp2idomain (gp,grid,idomain,area=0,layer=0,method="none"):
 
 
 #3
-def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0):
+def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0,areas=3):
     """
     this function extract the cellids of the intersection between a geopandas object and a grid 
     """
@@ -79,7 +79,7 @@ def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0
     ix = GridIntersect(grid)
     if type == "polygon":
         result = ix.intersect_polygon(gp.geometry[0])
-        #result = result[result.areas>(np.max(result.areas)/3)] # only take into account cells that have a least 1/3 intersected by the polygon
+        result = result[result.areas>(np.max(result.areas)/3)] # only take into account cells that have a least 1/3 intersected by the polygon
         
     if type == "boundary" :
         result = ix.intersect_linestring(gp.geometry[0].boundary)
@@ -258,3 +258,6 @@ def get_cellcenters (gwf,cellids):
         yc.append(gwf.modelgrid.ycellcenters[j,k])
 
     return xc,yc
+
+
+# plot BC
