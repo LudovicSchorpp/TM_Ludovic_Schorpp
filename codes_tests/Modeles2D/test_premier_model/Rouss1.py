@@ -189,17 +189,15 @@ def inter_lst (lst1,lst2,typ = "intersection"):
 #8
 def import_riv(grid,gp):
     """
-    This function extract infos about a river (geopandas object, LINESTRING OBLIGATIVE),cellids + lengths of in each cells in the right order. 
+    This function extract infos about a river (geopandas object, LINESTRING),cellids + lengths of in each cells in the right order. 
     Format : import_riv (Grid (from the gwf model, gwf.modelgrid for ex.), gp (a geopandas object containing a unique Linestring))
     Return a dataframe containing these datas, post-processing necessary to remove cells that are already counted as BC in the model
     """
-    
     
     ix = GridIntersect(grid)
     coord_riv=[]
     for x,y in zip(gp.geometry[0].xy[0],gp.geometry[0].xy[1]):
         coord_riv.append((x,y))
-
 
     verti=[]
     df_tot_ord = pd.DataFrame() # empty DF
@@ -243,7 +241,9 @@ def import_riv(grid,gp):
         if cell not in cellids_Riv:
             cellids_Riv.append(cell)
 
-    df_riv = pd.DataFrame({"cellids":cellids_Riv,"lengths":lst_len_Riv}) 
+    df_riv = pd.DataFrame({"cellids":cellids_Riv,"lengths":lst_len_Riv})
+    
+    
     return df_riv
     
 
@@ -259,5 +259,20 @@ def get_cellcenters (gwf,cellids):
 
     return xc,yc
 
+#10
 
-# plot BC
+def lin_interp(lengths,Hv,Lv):
+    """
+    function that realize a linear interpolation btw 2 values, given a certain list of weigth (lengths typically for a river)
+    """
+    
+    ar_long = np.array(lengths)
+    dh_dl = (Lv-Hv)/lengths.sum()
+    H_riv = np.zeros(ar_long.shape[0],dtype=np.float)    
+    for idx in range(ar_long.shape[0]):
+        if idx == 0:
+            len_cum = 0.5 * ar_long[0]
+        else:
+            len_cum += 0.5 * (ar_long[idx-1]+ar_long[idx])
+        H_riv[idx] = Hv + len_cum * dh_dl
+    return H_riv
