@@ -7,10 +7,11 @@ BEGIN packages
   NPF6  first_2D.npf  npf
   RCH6  first_2D.rcha  rcha
   OC6  first_2D.oc  oc
-  CHD6  sea.chd  chd
-  CHD6  eta.chd  etang
+  CHD6  sea.chd  sea
+  CHD6  eta.chd  eta
   CHD6  agy.chd  agy
   CHD6  Tet.chd  tet
   CHD6  Rea.chd  rea
+  CHD6  Tech.chd  tech
 END packages
 

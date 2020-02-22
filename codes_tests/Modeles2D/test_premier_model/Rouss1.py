@@ -276,3 +276,16 @@ def lin_interp(lengths,Hv,Lv):
             len_cum += 0.5 * (ar_long[idx-1]+ar_long[idx])
         H_riv[idx] = Hv + len_cum * dh_dl
     return H_riv
+
+#11
+def ibd_bcdata(bc,iper=0,ilay=0):
+    """
+    Function that return the position of the bc of a given a bc package and for a certain period and layer
+    """
+    ibd = np.ones((nlay, nrow, ncol), dtype=np.int)
+    
+    ra = bc.stress_period_data.get_data(iper)   
+    for k, i, j in ra['cellid']:
+        ibd[k, i, j] = -1
+    
+    return ibd
