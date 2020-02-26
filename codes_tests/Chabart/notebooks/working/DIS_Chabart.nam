@@ -1,0 +1,10 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  DIS_Chabart.dis  dis
+  IC6  DIS_Chabart.ic  ic
+  NPF6  DIS_Chabart.npf  npf
+  CHD6  sea.chd  sea
+END packages
+

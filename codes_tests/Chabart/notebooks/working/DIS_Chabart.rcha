@@ -1,0 +1,9 @@
+BEGIN options
+  READASARRAYS
+END options
+
+BEGIN period  1
+  recharge
+    CONSTANT  2.53678336E-09
+END period  1
+
