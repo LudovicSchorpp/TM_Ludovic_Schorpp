@@ -68,7 +68,7 @@ Integer Variables
  END OF SIMULATION TIMING
 
  READING SIMULATION MODELS
-    GWF6 model DIS_CHABART will be created as model 1
+    GWF6 model TEST_PERMA will be created as model 1
  END OF SIMULATION MODELS
 
  READING SIMULATION EXCHANGES
@@ -79,14 +79,14 @@ Integer Variables
  Creating solution: SLN_1           
 
  OPENED theis_mf6.ims
- FILE TYPE:IMS   UNIT 1009   STATUS:OLD                 
+ FILE TYPE:IMS   UNIT 1011   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
  END OF SIMULATION SOLUTIONGROUP
 
  IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
-         INPUT READ FROM UNIT 1009
+         INPUT READ FROM UNIT 1011
 
  PROCESSING IMS OPTIONS
  SIMPLE OPTION:
@@ -138,23 +138,23 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        50    -1.03107                       1_GWF-(5,22,13)
- Under-relaxation          1              -1.03107                       1_GWF-(5,22,13)
- Linear Solver             2        39   -0.405823                        1_GWF-(1,24,1)
- Under-relaxation          2             -0.405823                        1_GWF-(1,24,1)
- Linear Solver             3         1   -1.074024E-04                   1_GWF-(1,26,37)
+ Linear Solver             1        50     402.426                        1_GWF-(1,24,1)
+ Under-relaxation          1               402.426                        1_GWF-(1,24,1)
+ Linear Solver             2        32    0.256938                        1_GWF-(5,18,9)
+ Under-relaxation          2              0.256938                        1_GWF-(5,18,9)
+ Linear Solver             3         1    2.432406E-04                   1_GWF-(1,32,34)
 
  3 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 90 TOTAL ITERATIONS
+ 83 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   173629
- Number of allocated real variables:    147180
- Allocated memory in megabytes:     1.87196    
+ Number of allocated integer variables:   175355
+ Number of allocated real variables:    153992
+ Allocated memory in megabytes:     1.93336    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/02/26 20:18:09
- Elapsed run time:  0.060 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/02/27 15:47:23
+ Elapsed run time:  0.271 Seconds
 
  Normal termination of simulation.

@@ -1,0 +1,12 @@
+BEGIN options
+  BUDGET  FILEOUT  test_perma.cbc
+  HEAD  FILEOUT  test_perma.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  ALL
+  PRINT  HEAD  LAST
+  PRINT  BUDGET  ALL
+END period  1
+

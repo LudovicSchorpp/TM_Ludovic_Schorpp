@@ -6,13 +6,13 @@ BEGIN timing
 END timing
 
 BEGIN models
-  gwf6  DIS_Chabart.nam  DIS_Chabart
+  gwf6  test_perma.nam  test_perma
 END models
 
 BEGIN exchanges
 END exchanges
 
 BEGIN solutiongroup  1
-  ims6  theis_mf6.ims  DIS_Chabart
+  ims6  theis_mf6.ims  test_perma
 END solutiongroup  1
 
