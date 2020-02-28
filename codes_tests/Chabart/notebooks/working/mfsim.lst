@@ -79,14 +79,14 @@ Integer Variables
  Creating solution: SLN_1           
 
  OPENED theis_mf6.ims
- FILE TYPE:IMS   UNIT 1011   STATUS:OLD                 
+ FILE TYPE:IMS   UNIT 1012   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
  END OF SIMULATION SOLUTIONGROUP
 
  IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
-         INPUT READ FROM UNIT 1011
+         INPUT READ FROM UNIT 1012
 
  PROCESSING IMS OPTIONS
  SIMPLE OPTION:
@@ -138,23 +138,23 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        50     166.595                        1_GWF-(1,24,1)
- Under-relaxation          1               166.595                        1_GWF-(1,24,1)
- Linear Solver             2         7   -9.710652E-03                    1_GWF-(1,24,1)
- Under-relaxation          2             -9.710652E-03                    1_GWF-(1,24,1)
- Linear Solver             3         1    4.508112E-04                    1_GWF-(5,3,28)
+ Linear Solver             1        50     166.593                        1_GWF-(1,24,1)
+ Under-relaxation          1               166.593                        1_GWF-(1,24,1)
+ Linear Solver             2         7   -1.028054E-02                    1_GWF-(1,23,2)
+ Under-relaxation          2             -1.028054E-02                    1_GWF-(1,23,2)
+ Linear Solver             3         1    4.242461E-04                    1_GWF-(5,3,28)
 
  3 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
  58 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   180935
- Number of allocated real variables:    158084
- Allocated memory in megabytes:     1.98841    
+ Number of allocated integer variables:   181360
+ Number of allocated real variables:    159688
+ Allocated memory in megabytes:     2.00294    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/02/27 20:27:40
- Elapsed run time:  0.069 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/02/29  0:11:45
+ Elapsed run time:  0.160 Seconds
 
  Normal termination of simulation.

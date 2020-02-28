@@ -59,6 +59,12 @@ Precision of REAL variables: 15
  ACTION:READ                
 
 
+ OPENED well.wel
+ FILE TYPE:WEL6                   UNIT 1011   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
  DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM UNIT 1005
 
 
@@ -87,6 +93,15 @@ Precision of REAL variables: 15
  PROCESSING NPF OPTIONS
     CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
  END OF NPF OPTIONS
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1011
+
+ PROCESSING WEL OPTIONS
+ END OF WEL OPTIONS
+
+ PROCESSING WEL DIMENSIONS
+    MAXBOUND =     401
+ END OF WEL DIMENSIONS
 
  RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1008
 
@@ -125,11 +140,11 @@ Precision of REAL variables: 15
  K22 not provided.  Assuming K22 = K.
  END PROCESSING GRIDDATA
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
-      UNIT NUMBER: 1012
-      FILE NAME: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\Chabart\notebooks\working\test_perma.dis.grb
+      UNIT NUMBER: 1013
+      FILE NAME: C:\Users\emmal\Documents\Uni\Unine\TM\TM_Ludovic_Schorpp\codes_tests\Chabart\notebooks\working\test_perma.dis.grb
 
- OPENED C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\Chabart\notebooks\working\test_perma.dis.grb
- FILE TYPE:DATA(BINARY)   UNIT 1012   STATUS:REPLACE             
+ OPENED C:\Users\emmal\Documents\Uni\Unine\TM\TM_Ludovic_Schorpp\codes_tests\Chabart\notebooks\working\test_perma.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1013   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
 
@@ -137,20 +152,20 @@ Precision of REAL variables: 15
       THE LAST TIME STEP WILL BE PRINTED
  PROCESSING OC OPTIONS
     BUDGET INFORMATION WILL BE WRITTEN TO:
-      UNIT NUMBER: 1013
+      UNIT NUMBER: 1014
       FILE NAME: test_perma.cbc
 
  OPENED test_perma.cbc
- FILE TYPE:DATA(BINARY)   UNIT 1013   STATUS:REPLACE             
+ FILE TYPE:DATA(BINARY)   UNIT 1014   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
 
     HEAD INFORMATION WILL BE WRITTEN TO:
-      UNIT NUMBER: 1014
+      UNIT NUMBER: 1015
       FILE NAME: test_perma.hds
 
  OPENED test_perma.hds
- FILE TYPE:DATA(BINARY)   UNIT 1014   STATUS:REPLACE             
+ FILE TYPE:DATA(BINARY)   UNIT 1015   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
 
@@ -163,8 +178,8 @@ Precision of REAL variables: 15
       ALL TIME STEPS WILL BE PRINTED
 
  END READING OUTPUT CONTROL FOR STRESS PERIOD 1
- UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1013 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING       DATA-SPDIS IN MODEL TEST_PERMA       PACKAGE NPF             CONNECTED TO MODEL TEST_PERMA       PACKAGE NPF              ON UNIT   1013 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1014 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL TEST_PERMA       PACKAGE NPF             CONNECTED TO MODEL TEST_PERMA       PACKAGE NPF              ON UNIT   1014 AT TIME STEP      1, STRESS PERIOD      1
 1
   HEAD IN LAYER   1 AT END OF TIME STEP   1 IN STRESS PERIOD    1
   ---------------------------------------------------------------------------
@@ -378,7 +393,7 @@ Precision of REAL variables: 15
    1   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
        1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
        1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30   22.18    
-        20.47       18.87       17.85       16.82       15.69       14.50       13.24       11.69       10.26       9.411    
+        20.47       18.87       17.85       16.81       15.69       14.50       13.24       11.69       10.26       9.411    
         9.329       9.288    
    2   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
        1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
@@ -802,7 +817,7 @@ Precision of REAL variables: 15
         20.89       20.76    
    6   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
        1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
-       1.0000E+30  1.0000E+30   38.59       36.52       35.63       34.38       32.66       31.00       29.76       28.40    
+       1.0000E+30  1.0000E+30   38.59       36.52       35.63       34.37       32.66       31.00       29.76       28.40    
         27.24       26.25       25.33       24.36       23.60       23.01       22.55       22.12       21.72       21.38    
         21.12       20.98    
    7   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
@@ -1007,8 +1022,8 @@ Precision of REAL variables: 15
         23.39       23.20    
    7   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
        1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
-        40.47       40.14       39.42       38.55       37.42       36.02       34.62       33.33       32.20       31.21    
-        30.37       29.58       28.72       27.79       26.96       26.29       25.69       25.13       24.62       24.20    
+        40.47       40.14       39.41       38.55       37.42       36.02       34.62       33.33       32.20       31.21    
+        30.37       29.58       28.72       27.79       26.96       26.29       25.69       25.13       24.63       24.20    
         23.89       23.72    
    8   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
        1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
@@ -1052,7 +1067,7 @@ Precision of REAL variables: 15
         24.91       24.70    
   16   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
        1.0000E+30   119.3       116.6       111.6       103.8       96.96       89.43       82.06       76.62       71.84    
-        67.37       62.93       58.40       55.06       52.00       48.87       45.98       43.32       40.87       38.62    
+        67.37       62.93       58.39       55.06       52.00       48.87       45.98       43.32       40.87       38.62    
         36.47       34.59       32.91       31.40       30.00       28.67       27.47       26.50       25.75       25.15    
         24.72       24.50    
   17   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30   133.3       130.9    
@@ -1077,12 +1092,12 @@ Precision of REAL variables: 15
         23.43       23.17    
   21   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30   134.3       133.2       131.2    
         128.5       125.2       121.4       117.2       112.3       106.5       100.7       95.47       90.54       85.30    
-        79.38       72.89       66.23       60.23       55.60       51.61       48.01       44.75       41.80       39.18    
+        79.38       72.88       66.23       60.23       55.60       51.61       48.01       44.75       41.80       39.18    
         36.85       34.73       32.79       31.02       29.30       27.75       26.40       25.25       24.30       23.54    
         23.02       22.78    
   22   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30   133.0       131.9       129.9    
         127.2       124.1       120.1       116.0       111.8       106.8       101.5       96.38       91.47       86.01    
-        79.72       72.87       66.06       59.98       55.15       51.15       47.65       44.34       41.34       38.78    
+        79.72       72.87       66.06       59.97       55.15       51.15       47.65       44.34       41.34       38.78    
         36.50       34.42       32.45       30.63       28.92       27.36       25.99       24.83       23.87       23.11    
         22.61       22.39    
   23   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30   131.8       130.7       127.9    
@@ -1099,7 +1114,7 @@ Precision of REAL variables: 15
         119.8       117.2       115.0       113.2       110.2       105.9       101.6       96.94       91.60       85.20    
         77.06       68.28       61.50       56.72       52.77       49.25       45.77       42.37       39.50       37.15    
         35.00       32.97       31.04       29.22       27.51       25.95       24.57       23.41       22.46       21.72    
-        21.18       20.90    
+        21.17       20.90    
   26   1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
        1.0000E+30   114.7       112.5       110.4       107.8       104.5       100.7       96.54       91.62       84.64    
         75.50       66.84       60.54       55.83       51.96       48.54       45.03       41.69       38.88       36.51    
@@ -1166,7 +1181,7 @@ Precision of REAL variables: 15
         29.62      1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30  1.0000E+30
        1.0000E+30  1.0000E+30
 
- HEAD WILL BE SAVED ON UNIT 1014 AT END OF TIME STEP    1, STRESS PERIOD    1
+ HEAD WILL BE SAVED ON UNIT 1015 AT END OF TIME STEP    1, STRESS PERIOD    1
 
 
   VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
@@ -1177,6 +1192,7 @@ Precision of REAL variables: 15
 
            IN:                                      IN:
            ---                                      ---
+                 WEL =           0.0000                   WEL =           0.0000     WELL            
                  RCH =           1.5466                   RCH =           1.5466     RCHA            
                  CHD =           0.0000                   CHD =           0.0000     SEA             
 
@@ -1184,12 +1200,13 @@ Precision of REAL variables: 15
 
           OUT:                                     OUT:
           ----                                     ----
+                 WEL =       1.1108E-06                   WEL =       1.1108E-06     WELL            
                  RCH =           0.0000                   RCH =           0.0000     RCHA            
                  CHD =           1.5467                   CHD =           1.5467     SEA             
 
            TOTAL OUT =           1.5467             TOTAL OUT =           1.5467
 
-            IN - OUT =      -2.2375E-05              IN - OUT =      -2.2375E-05
+            IN - OUT =      -2.3353E-05              IN - OUT =      -2.3353E-05
 
  PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
 

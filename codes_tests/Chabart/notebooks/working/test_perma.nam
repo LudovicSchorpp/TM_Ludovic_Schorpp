@@ -8,5 +8,6 @@ BEGIN packages
   RCH6  test_perma.rcha  rcha
   OC6  test_perma.oc  oc
   CHD6  sea.chd  sea
+  WEL6  well.wel  well
 END packages
 
