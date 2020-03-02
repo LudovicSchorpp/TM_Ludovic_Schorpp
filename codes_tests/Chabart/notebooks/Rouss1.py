@@ -155,8 +155,7 @@ def get_budgetobj(model_name,workspace):
     """
     lstBudgetfile = "{}.lst".format(model_name)
     fname = os.path.join(workspace,lstBudgetfile)
-    Budgetobj = fp.utils.Mf6ListBudget(fname)
-    return Bugetobj
+    return fp.utils.Mf6ListBudget(fname)
 
 
 #6
