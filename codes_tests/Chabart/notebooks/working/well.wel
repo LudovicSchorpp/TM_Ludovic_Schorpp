@@ -1,4 +1,5 @@
 BEGIN options
+  SAVE_FLOWS
 END options
 
 BEGIN dimensions

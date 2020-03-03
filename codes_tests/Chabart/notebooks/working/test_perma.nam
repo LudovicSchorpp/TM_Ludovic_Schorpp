@@ -5,7 +5,7 @@ BEGIN packages
   DIS6  test_perma.dis  dis
   IC6  test_perma.ic  ic
   NPF6  test_perma.npf  npf
-  RCH6  test_perma.rch  rch_0
+  RCH6  test_perma.rch  rch
   OC6  test_perma.oc  oc
   CHD6  sea.chd  sea
   CHD6  riv.chd  riv
