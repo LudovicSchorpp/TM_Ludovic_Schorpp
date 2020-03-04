@@ -79,14 +79,14 @@ Integer Variables
  Creating solution: SLN_1           
 
  OPENED theis_mf6.ims
- FILE TYPE:IMS   UNIT 1015   STATUS:OLD                 
+ FILE TYPE:IMS   UNIT 1014   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
  END OF SIMULATION SOLUTIONGROUP
 
  IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
-         INPUT READ FROM UNIT 1015
+         INPUT READ FROM UNIT 1014
 
  PROCESSING IMS OPTIONS
  SIMPLE OPTION:
@@ -138,29 +138,21 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        43     230.600                        1_GWF-(1,24,1)
- Under-relaxation          1               230.600                        1_GWF-(1,24,1)
- Linear Solver             2        35    -91.5021                       1_GWF-(1,19,13)
- Under-relaxation          2              -91.5021                       1_GWF-(1,19,13)
- Linear Solver             3        29    -13.2029                        1_GWF-(1,19,6)
- Under-relaxation          3              -13.2029                        1_GWF-(1,19,6)
- Linear Solver             4        26    -12.6108                        1_GWF-(1,22,1)
- Under-relaxation          4              -12.6108                        1_GWF-(1,22,1)
- Linear Solver             5        12   -0.396261                       1_GWF-(1,21,23)
- Under-relaxation          5             -0.396261                       1_GWF-(1,21,23)
- Linear Solver             6         1    7.952076E-04                   1_GWF-(4,22,21)
+ Linear Solver             1        40     239.632                        1_GWF-(1,24,1)
+ Under-relaxation          1               239.632                        1_GWF-(1,24,1)
+ Linear Solver             2         1   -2.794663E-04                    1_GWF-(5,6,22)
 
- 6 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 146 TOTAL ITERATIONS
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 41 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   180864
- Number of allocated real variables:    157512
- Allocated memory in megabytes:     1.98355    
+ Number of allocated integer variables:   180770
+ Number of allocated real variables:    157152
+ Allocated memory in megabytes:     1.98030    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/03 15:23:31
- Elapsed run time:  0.219 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/04 19:03:16
+ Elapsed run time:  0.211 Seconds
 
  Normal termination of simulation.
