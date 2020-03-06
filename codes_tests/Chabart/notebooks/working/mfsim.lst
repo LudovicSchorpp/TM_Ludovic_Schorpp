@@ -79,14 +79,14 @@ Integer Variables
  Creating solution: SLN_1           
 
  OPENED theis_mf6.ims
- FILE TYPE:IMS   UNIT 1014   STATUS:OLD                 
+ FILE TYPE:IMS   UNIT 1015   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
  END OF SIMULATION SOLUTIONGROUP
 
  IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
-         INPUT READ FROM UNIT 1014
+         INPUT READ FROM UNIT 1015
 
  PROCESSING IMS OPTIONS
  SIMPLE OPTION:
@@ -140,19 +140,25 @@ Integer Variables
  ---------------------------------------------------------------------------------------
  Linear Solver             1        40     239.632                        1_GWF-(1,24,1)
  Under-relaxation          1               239.632                        1_GWF-(1,24,1)
- Linear Solver             2         1   -2.794663E-04                    1_GWF-(5,6,22)
+ Linear Solver             2        35    -88.0988                       1_GWF-(1,20,14)
+ Under-relaxation          2              -88.0988                       1_GWF-(1,20,14)
+ Linear Solver             3        28    -11.0485                        1_GWF-(1,22,2)
+ Under-relaxation          3              -11.0485                        1_GWF-(1,22,2)
+ Linear Solver             4        23    -1.88324                       1_GWF-(1,20,21)
+ Under-relaxation          4              -1.88324                       1_GWF-(1,20,21)
+ Linear Solver             5         1   -7.141956E-04                   1_GWF-(4,20,22)
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 41 TOTAL ITERATIONS
+ 5 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 127 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   180770
- Number of allocated real variables:    157152
- Allocated memory in megabytes:     1.98030    
+ Number of allocated integer variables:   180864
+ Number of allocated real variables:    157512
+ Allocated memory in megabytes:     1.98355    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/04 19:03:16
- Elapsed run time:  0.211 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/05 20:28:48
+ Elapsed run time:  0.376 Seconds
 
  Normal termination of simulation.

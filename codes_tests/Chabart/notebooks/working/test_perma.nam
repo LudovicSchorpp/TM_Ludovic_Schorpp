@@ -11,5 +11,6 @@ BEGIN packages
   CHD6  riv.chd  riv
   CHD6  plio.chd  plio
   WEL6  well.wel  well
+  DRN6  debordement.drn  debordement
 END packages
 
