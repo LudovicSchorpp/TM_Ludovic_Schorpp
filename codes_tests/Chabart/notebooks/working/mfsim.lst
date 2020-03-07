@@ -89,36 +89,41 @@ Integer Variables
          INPUT READ FROM UNIT 1015
 
  PROCESSING IMS OPTIONS
- SIMPLE OPTION:
- DEFAULT SOLVER INPUT VALUES FOR FAST SOLUTIONS
+ MODERATE OPTION:
+ DEFAULT SOLVER INPUT VALUES REFLECT MODERETELY NONLINEAR MODEL
  END OF IMS OPTIONS
- ***UNDER-RELAXATION WILL NOT BE USED***
+ **UNDER-RELAXATION WILL BE USED***
  
  ***IMS LINEAR SOLVER WILL BE USED***
 
  IMSLINEAR -- UNSTRUCTURED LINEAR SOLUTION PACKAGE, VERSION 8, 04/28/2017
  
- OUTER ITERATION CONVERGENCE CRITERION     (HCLOSE) =    0.100000E-02
+ OUTER ITERATION CONVERGENCE CRITERION     (HCLOSE) =    0.100000E-01
  OUTER ITERATION BOUNDARY FLOW RESIDUAL (RCLOSEBND) =    0.100000E+00
- MAXIMUM NUMBER OF OUTER ITERATIONS        (MXITER) =        25
+ MAXIMUM NUMBER OF OUTER ITERATIONS        (MXITER) =        50
  SOLVER PRINTOUT INDEX                     (IPRIMS) =         1
- NONLINEAR ITERATION METHOD            (NONLINMETH) =         0
+ NONLINEAR ITERATION METHOD            (NONLINMETH) =         3
  LINEAR SOLUTION METHOD                   (LINMETH) =         1
+ UNDER-RELAXATION WEIGHT REDUCTION FACTOR   (THETA) =    0.900000E+00
+ UNDER-RELAXATION WEIGHT INCREASE INCREMENT (KAPPA) =    0.100000E-03
+ UNDER-RELAXATION PREVIOUS HISTORY FACTOR   (GAMMA) =    0.000000E+00
+ UNDER-RELAXATIONMOMENTUM TERM          (AMOMENTUM) =    0.000000E+00
+    MAXIMUM NUMBER OF BACKTRACKS         (NUMTRACK) =         0
 
-       SOLUTION BY THE        CONJUGATE-GRADIENT       METHOD
+       SOLUTION BY THE BICONJUGATE-GRADIENT STABILIZED METHOD
  ------------------------------------------------------------------
- MAXIMUM OF     25 CALLS OF SOLUTION ROUTINE
- MAXIMUM OF     50 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
- LINEAR ACCELERATION METHOD            = CG        
- MATRIX PRECONDITIONING TYPE           = INCOMPLETE LU       
+ MAXIMUM OF     50 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF    100 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ LINEAR ACCELERATION METHOD            = BCGS      
+ MATRIX PRECONDITIONING TYPE           = MOD. INCOMPLETE LU  
  MATRIX SCALING APPROACH               = NO SCALING          
  MATRIX REORDERING APPROACH            = ORIGINAL ORDERING        
  NUMBER OF ORTHOGONALIZATIONS          =        0
- HEAD CHANGE CRITERION FOR CLOSURE     =    0.10000E-02
+ HEAD CHANGE CRITERION FOR CLOSURE     =    0.10000E-01
  RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E+00
  RESIDUAL CONVERGENCE OPTION           =        0
  RESIDUAL CONVERGENCE NORM             = INFINITY NORM   
- RELAXATION FACTOR                     =    0.00000E+00
+ RELAXATION FACTOR                     =    0.97000E+00
 
 
 
@@ -138,27 +143,35 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        47     244.742                       1_GWF-(5,22,41)
- Under-relaxation          1               244.742                       1_GWF-(5,22,41)
- Linear Solver             2        35    -94.8274                        1_GWF-(1,22,1)
- Under-relaxation          2              -94.8274                        1_GWF-(1,22,1)
- Linear Solver             3        28    -9.47187                        1_GWF-(1,19,6)
- Under-relaxation          3              -9.47187                        1_GWF-(1,19,6)
- Linear Solver             4        20    -1.04086                       1_GWF-(1,20,21)
- Under-relaxation          4              -1.04086                       1_GWF-(1,20,21)
- Linear Solver             5         1    5.437459E-04                   1_GWF-(4,23,17)
+ Linear Solver             1        30     244.848                       1_GWF-(5,22,41)
+ Under-relaxation          1               244.848                       1_GWF-(5,22,41)
+ Linear Solver             2        14    -148.362                        1_GWF-(1,22,1)
+ Under-relaxation          2              -133.526                        1_GWF-(1,22,1)
+ Linear Solver             3        12    -14.8362                        1_GWF-(1,22,1)
+ Under-relaxation          3              -13.3540                        1_GWF-(1,22,1)
+ Linear Solver             4        10    -6.88019                       1_GWF-(1,21,17)
+ Under-relaxation          4              -6.19355                       1_GWF-(1,21,17)
+ Linear Solver             5         8    -6.49089                        1_GWF-(1,19,6)
+ Under-relaxation          5              -5.84375                        1_GWF-(1,19,6)
+ Linear Solver             6         7    -2.78436                        1_GWF-(1,18,9)
+ Under-relaxation          6              -2.50704                        1_GWF-(1,18,9)
+ Linear Solver             7         3   -0.279310                        1_GWF-(1,18,9)
+ Under-relaxation          7             -0.251519                        1_GWF-(1,18,9)
+ Linear Solver             8         2   -2.112364E-02                    1_GWF-(1,18,9)
+ Under-relaxation          8             -1.902395E-02                    1_GWF-(1,18,9)
+ Linear Solver             9         1   -2.675920E-03                    1_GWF-(1,18,9)
 
- 5 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 131 TOTAL ITERATIONS
+ 9 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 87 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   180819
- Number of allocated real variables:    157332
- Allocated memory in megabytes:     1.98193    
+ Number of allocated integer variables:   180894
+ Number of allocated real variables:    180384
+ Allocated memory in megabytes:     2.16665    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/06 12:19:59
- Elapsed run time:  0.370 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/07 11:57:38
+ Elapsed run time:  0.135 Seconds
 
  Normal termination of simulation.
