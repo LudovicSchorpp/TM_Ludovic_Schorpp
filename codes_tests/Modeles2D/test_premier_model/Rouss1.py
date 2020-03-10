@@ -248,14 +248,14 @@ def import_riv(grid,gp):
     
 
 #9
-def get_cellcenters (gwf,cellids): 
+def get_cellcenters (grid,cellids): 
     """
-    This function return the x and y coordinates of a given cellid and a gwf model (dis only)
+    This function return the x and y coordinates of a given cellid and a grid (dis only)
     """
     xc=[];yc=[]
     for i,j,k in cellids:
-        xc.append(gwf.modelgrid.xcellcenters[j,k])
-        yc.append(gwf.modelgrid.ycellcenters[j,k])
+        xc.append(grid.xcellcenters[j,k])
+        yc.append(grid.ycellcenters[j,k])
 
     return xc,yc
 
