@@ -5,8 +5,8 @@ END options
 
 BEGIN griddata
   icelltype
-    CONSTANT  0
+    CONSTANT  1
   k
-    CONSTANT  3.00000000E-04
+    CONSTANT  5.00000000E-04
 END griddata
 
