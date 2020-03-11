@@ -138,29 +138,21 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        50     321.965                      1_GWF-(1,145,73)
- Under-relaxation          1               321.965                      1_GWF-(1,145,73)
- Linear Solver             2        50    -205.622                      1_GWF-(1,145,73)
- Under-relaxation          2              -205.622                      1_GWF-(1,145,73)
- Linear Solver             3        50     2.56710                      1_GWF-(1,167,83)
- Under-relaxation          3               2.56710                      1_GWF-(1,167,83)
- Linear Solver             4        37    0.205392                      1_GWF-(1,159,87)
- Under-relaxation          4              0.205392                      1_GWF-(1,159,87)
- Linear Solver             5         7   -1.231183E-02                  1_GWF-(1,166,85)
- Under-relaxation          5             -1.231183E-02                  1_GWF-(1,166,85)
- Linear Solver             6         1   -4.761248E-04                  1_GWF-(1,181,72)
+ Linear Solver             1        46     324.335                       1_GWF-(1,59,10)
+ Under-relaxation          1               324.335                       1_GWF-(1,59,10)
+ Linear Solver             2         1   -4.342423E-04                   1_GWF-(1,48,27)
 
- 6 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 195 TOTAL ITERATIONS
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 47 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   787640
- Number of allocated real variables:    806346
- Allocated memory in megabytes:     9.60133    
+ Number of allocated integer variables:   201350
+ Number of allocated real variables:    206491
+ Allocated memory in megabytes:     2.45733    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/11 11:14:48
- Elapsed run time:  0.670 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/11 17:59:35
+ Elapsed run time:  0.121 Seconds
 
  Normal termination of simulation.
