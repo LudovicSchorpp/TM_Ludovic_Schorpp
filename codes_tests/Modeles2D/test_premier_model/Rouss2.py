@@ -39,12 +39,17 @@ def import_rch(file,grid,coeff=0.5):
     rcha *= coeff
     return rcha
 
-def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,grid):
+def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
     
     """
     a complete function that import a river into the modflow 6 and return the stress data.
     the river path, the station path and the upstream and downstream head must be provided
-    a list of all the constant heads already defined must also be provided
+    
+    riv_path : the path to the shapefile of the river (one linestring only)
+    stations_csv : path to the csv file containing the infos about the stations (x,y,elevation)
+    lst_chd : a list of every cells constant heads
+    lst_domain : a list of each active cell
+    grid : grid of the model
     """
     
     BC_riv = gp.read_file(riv_path) # read shp, linestring from ups to dws
@@ -68,12 +73,16 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,grid):
     # interpolation of the heads btw ups,stations and ds
     linInt_Dfcol(df_riv,col="head")
 
-    #drop cellids which are already constant head
-    a = inter_lst(df_riv.cellids, lst_chd)
-    for i in range (len(a)):
-        df_riv = df_riv.drop(df_riv[df_riv["cellids"] == a[i]].index)
-
+    
+    # drop some cells
+    for cellid in df_riv.cellids:
+        if (cellid in lst_chd):
+            df_riv = df_riv.drop(df_riv[df_riv["cellids"] == cellid].index)
+        if cellid not in lst_domain:
+            df_riv = df_riv.drop(df_riv[df_riv["cellids"]== cellid].index)
+    
     # create the stress package
+    df_riv= df_riv.reset_index()
     H_riv = df_riv["head"]
     riv_chd=[]; o =-1;
     for x in df_riv.cellids:

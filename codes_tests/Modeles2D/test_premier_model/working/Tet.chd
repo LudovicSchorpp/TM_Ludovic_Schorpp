@@ -3,13 +3,12 @@ BEGIN options
 END options
 
 BEGIN dimensions
-  MAXBOUND  102
+  MAXBOUND  101
 END dimensions
 
 BEGIN period  1
   1 58 10     178.21269904
   1 58 11     174.25875965
-  1 57 11     171.99046128
   1 57 12     169.99635804
   1 57 13     166.25433934
   1 57 14     162.55932452
