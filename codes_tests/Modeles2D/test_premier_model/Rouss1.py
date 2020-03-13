@@ -276,3 +276,25 @@ def lin_interp(lengths,Hv,Lv):
             len_cum += 0.5 * (ar_long[idx-1]+ar_long[idx])
         H_riv[idx] = Hv + len_cum * dh_dl
     return H_riv
+
+
+# 
+def linInt_Dfcol(df,weight="lengths",col="head",null=0):
+    
+    """
+    function that linearly interpolates the values in a column btwn certains given values (not null), a null value is indicated by 0
+    this function needs the lin_interp function, a weighting factor must be provided and a column in the df.
+    df : a dataframe
+    weight : a column of the same size that the interpolated column (default : "head") which is used as a weight
+    col : the interpolated column (null value = 0)
+    """
+    
+    new_heads=np.zeros([df.shape[0]])
+    for i in np.arange(df[df[col]!=null].index.shape[0]-1):
+        idx1 = df[df[col]!=null].index[i]
+        idx2 = df[df[col]!=null].index[i+1]
+        new_heads[idx1:idx2+1] = lin_interp(df[weight][idx1:idx2+1],df[col][idx1],df[col][idx2])
+        
+    df[col]=new_heads
+    
+    
