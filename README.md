@@ -1,2 +1,2 @@
-# Travail_de_master_Ludovic_Schorpp
-Modélisation hydrogéologique de la plaine du Roussillon avec Modflow
+# Tentative de modélisation hydrogéologique de la plaine du Roussillon
+Modélisation hydrogéologique de la plaine du Roussillon avec Modflow via flopy. 
