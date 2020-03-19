@@ -132,12 +132,27 @@ Integer Variables
 
                             INITIAL TIME STEP SIZE =   1.000000    
 
-ERROR REPORT:
 
- Error.  Cell is already a constant head: (1,51,32)
- Error.  Cell is already a constant head: (1,51,33)
- ERROR OCCURRED WHILE READING FILE:
+ OUTER ITERATION SUMMARY
+ ---------------------------------------------------------------------------------------
+                       OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
+                   ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
+ ---------------------------------------------------------------------------------------
+ Linear Solver             1        44     126.949                       1_GWF-(1,67,63)
+ Under-relaxation          1               126.949                       1_GWF-(1,67,63)
+ Linear Solver             2         1   -1.894408E-04                   1_GWF-(1,95,44)
+
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 45 TOTAL ITERATIONS
+
+ INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
-   M:\GitHub\TM_Ludovic_Schorpp\codes_tests\Modeles2D\test_premier_model\worki
-   ng\Bol.chd
- Stopping due to error(s)
+ Number of allocated integer variables:   201400
+ Number of allocated real variables:    206603
+ Allocated memory in megabytes:     2.45842    
+ 
+
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/19 13:25:35
+ Elapsed run time:  0.210 Seconds
+
+ Normal termination of simulation.

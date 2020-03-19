@@ -28,7 +28,7 @@ def import_rch(file,grid,coeff=0.5):
     grid : the modelgrid from flopy.discretization
     """
     rcha=[]
-    rch_areas = Raster.load("../data/recharge/rast_peff.tif")
+    rch_areas = Raster.load(file)
     rcha = rch_areas.resample_to_grid(grid.xcellcenters,
                             grid.ycellcenters,
                             band = rch_areas.bands[0],
@@ -88,7 +88,7 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
     for x in df_riv.cellids:
         o = o + 1
         riv_chd.append((x,H_riv[o]))
-    
+        lst_chd.append(x)
     return riv_chd
 
     
