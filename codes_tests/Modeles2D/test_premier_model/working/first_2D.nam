@@ -12,5 +12,6 @@ BEGIN packages
   CHD6  agy.chd  agy
   CHD6  Tet.chd  tet
   CHD6  Tech.chd  tech
+  CHD6  Bol.chd  bol
 END packages
 
