@@ -253,6 +253,7 @@ def get_cellcenters (grid,cellids):
     This function return the x and y coordinates of a given cellid and a grid (dis only)
     """
     xc=[];yc=[]
+    
     for i,j,k in cellids:
         xc.append(grid.xcellcenters[j,k])
         yc.append(grid.ycellcenters[j,k])
@@ -297,4 +298,16 @@ def linInt_Dfcol(df,weight="lengths",col="head",null=0):
         
     df[col]=new_heads
     
+
+#12
+def BC_vizualize(pack,ibd,iper=0):
     
+    """
+    Can be used to plot the bc zones of a certain package (pack), ibd should be a 3d np.zeros list, iper is for the period
+    """
+    
+    ra = pack.stress_period_data.get_data(key=iper)
+    for k, i, j in ra['cellid']:
+        ibd[k, i, j] = -1
+        
+        

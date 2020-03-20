@@ -68,7 +68,7 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
         ys = riv_stations.loc[i].y
         elev = riv_stations.loc[i].elev
         dist = ((df_riv["xc"] - xs)**2 + (df_riv["yc"] - ys)**2)**0.5
-        df_riv.loc[dist==np.min(dist),"head"] = elev
+        df_riv.loc[dist==np.min(dist),"head"] = elev - 2
 
     # interpolation of the heads btw ups,stations and ds
     linInt_Dfcol(df_riv,col="head")
