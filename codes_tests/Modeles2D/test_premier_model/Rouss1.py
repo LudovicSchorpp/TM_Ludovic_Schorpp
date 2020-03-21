@@ -241,9 +241,7 @@ def import_riv(grid,gp):
         if cell not in cellids_Riv:
             cellids_Riv.append(cell)
 
-    df_riv = pd.DataFrame({"cellids":cellids_Riv,"lengths":lst_len_Riv})
-    
-    
+    df_riv = pd.DataFrame({"cellids":cellids_Riv,"lengths":lst_len_Riv})       
     return df_riv
     
 
@@ -257,11 +255,10 @@ def get_cellcenters (grid,cellids):
     for i,j,k in cellids:
         xc.append(grid.xcellcenters[j,k])
         yc.append(grid.ycellcenters[j,k])
-
     return xc,yc
 
-#10
 
+#10
 def lin_interp(lengths,Hv,Lv):
     """
     function that realize a linear interpolation btw 2 values, given a certain weighting list (lengths typically for a river)
@@ -279,7 +276,7 @@ def lin_interp(lengths,Hv,Lv):
     return H_riv
 
 
-# 
+#11 
 def linInt_Dfcol(df,weight="lengths",col="head",null=0):
     
     """
@@ -295,7 +292,6 @@ def linInt_Dfcol(df,weight="lengths",col="head",null=0):
         idx1 = df[df[col]!=null].index[i]
         idx2 = df[df[col]!=null].index[i+1]
         new_heads[idx1:idx2+1] = lin_interp(df[weight][idx1:idx2+1],df[col][idx1],df[col][idx2])
-        
     df[col]=new_heads
     
 
@@ -311,3 +307,40 @@ def BC_vizualize(pack,ibd,iper=0):
         ibd[k, i, j] = -1
         
         
+#13
+def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_col="y"):
+    
+    """
+    
+    return an array containing infos about piezometer level in control pz
+    file_path : the file path to the excel sheet
+    sheetName : the name of the data sheet 
+    np_col : the name of the column containing infos about the PL
+    x_col,y_col : the name of the columns containings geo infos
+    
+    """
+    
+    DB = pd.read_excel(file_path,sheet_name = sheetName) # read the file with pandas
+    
+    Control_pz = np.zeros([grid.nrow,grid.ncol]) #ini some list/df
+    lstIDpz=[];Pz = [];
+    
+    for o in np.arange(DB.shape[0]): # loop to iterate through the data and returns the intersected cellids
+        xc = DB["x"][o]
+        yc = DB["y"][o] 
+        cellid = grid.intersect(xc,yc)
+        
+        if not np.isnan(DB[np_col][o]):
+            lstIDpz.append(cellid)
+            Pz.append(DB[np_col][o])
+        
+    df = pd.DataFrame()
+    df["cellid"]=lstIDpz
+    df["Pz"] = Pz
+    df = df.groupby(["cellid"]).mean().reset_index()
+    
+    for i in df.index:
+        j,k = df.loc[i,"cellid"]
+        Control_pz[j,k] = df.loc[i,"Pz"]
+    
+    return Control_pz

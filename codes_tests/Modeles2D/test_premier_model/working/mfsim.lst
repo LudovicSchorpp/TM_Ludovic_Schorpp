@@ -79,14 +79,14 @@ Integer Variables
  Creating solution: SLN_1           
 
  OPENED theis_mf6.ims
- FILE TYPE:IMS   UNIT 1018   STATUS:OLD                 
+ FILE TYPE:IMS   UNIT 1020   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
  END OF SIMULATION SOLUTIONGROUP
 
  IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
-         INPUT READ FROM UNIT 1018
+         INPUT READ FROM UNIT 1020
 
  PROCESSING IMS OPTIONS
  MODERATE OPTION:
@@ -137,43 +137,16 @@ Integer Variables
 
                             INITIAL TIME STEP SIZE =   1.000000    
 
+ERROR REPORT:
 
- OUTER ITERATION SUMMARY
- ---------------------------------------------------------------------------------------
-                       OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
-                   ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
- ---------------------------------------------------------------------------------------
- Linear Solver             1        28     6531.20                       1_GWF-(1,59,66)
- Under-relaxation          1               6531.20                       1_GWF-(1,59,66)
- Linear Solver             2        25    -6540.14                       1_GWF-(1,59,66)
- Under-relaxation          2              -5886.12                       1_GWF-(1,59,66)
- Linear Solver             3        23    -654.017                       1_GWF-(1,59,66)
- Under-relaxation          3              -588.681                       1_GWF-(1,59,66)
- Linear Solver             4        19    -65.5789                       1_GWF-(1,59,66)
- Under-relaxation          4              -59.0341                       1_GWF-(1,59,66)
- Linear Solver             5        12    -6.49459                       1_GWF-(1,59,69)
- Under-relaxation          5              -5.84708                       1_GWF-(1,59,69)
- Linear Solver             6        10     1.26549                      1_GWF-(1,118,64)
- Under-relaxation          6               1.02539                      1_GWF-(1,118,64)
- Linear Solver             7         7    0.285728                      1_GWF-(1,119,65)
- Under-relaxation          7              0.231543                      1_GWF-(1,119,65)
- Linear Solver             8         4   -6.984845E-02                  1_GWF-(1,118,64)
- Under-relaxation          8             -5.094348E-02                  1_GWF-(1,118,64)
- Linear Solver             9         3   -1.892740E-02                  1_GWF-(1,118,64)
- Under-relaxation          9             -1.380646E-02                  1_GWF-(1,118,64)
- Linear Solver            10         1   -5.945957E-03                  1_GWF-(1,109,55)
-
- 10 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 132 TOTAL ITERATIONS
-
- INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
+ CHD BOUNDARY 1 HEAD (173.4796956000000) IS LESS THAN CELL BOTTOM 
+   (221.8899993900000) FOR CELL (1,58,10)
+ CHD BOUNDARY 3 HEAD (151.6332813700000) IS LESS THAN CELL BOTTOM 
+   (185.1900024400000) FOR CELL (1,57,12)
+ CHD BOUNDARY 27 HEAD (97.82816024000000) IS LESS THAN CELL BOTTOM 
+   (101.6999969500000) FOR CELL (1,49,28)
+ ERROR OCCURRED WHILE READING FILE:
  
- Number of allocated integer variables:   446527
- Number of allocated real variables:    520497
- Allocated memory in megabytes:     5.95008    
- 
-
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/20 22:46:26
- Elapsed run time:  0.257 Seconds
-
- Normal termination of simulation.
+   C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\Modeles2D\te
+   st_premier_model\working\Tet.chd
+ Stopping due to error(s)
