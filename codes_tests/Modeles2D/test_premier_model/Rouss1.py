@@ -322,7 +322,7 @@ def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_c
     
     DB = pd.read_excel(file_path,sheet_name = sheetName) # read the file with pandas
     
-    Control_pz = np.zeros([grid.nrow,grid.ncol]) #ini some list/df
+    Control_pz = np.zeros([grid.nrow,grid.ncol]) #ini list
     lstIDpz=[];Pz = [];
     
     for o in np.arange(DB.shape[0]): # loop to iterate through the data and returns the intersected cellids
