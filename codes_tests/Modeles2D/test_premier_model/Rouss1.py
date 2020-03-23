@@ -311,13 +311,11 @@ def BC_vizualize(pack,ibd,iper=0):
 def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_col="y"):
     
     """
-    
     return an array containing infos about piezometer level in control pz
     file_path : the file path to the excel sheet
     sheetName : the name of the data sheet 
     np_col : the name of the column containing infos about the PL
     x_col,y_col : the name of the columns containings geo infos
-    
     """
     
     DB = pd.read_excel(file_path,sheet_name = sheetName) # read the file with pandas
@@ -344,3 +342,30 @@ def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_c
         Control_pz[j,k] = df.loc[i,"Pz"]
     
     return Control_pz
+
+
+#14
+def importWells(path,grid,fac=1/365/86400,V_col="V Bancaris",layer=0):
+    
+    """
+    extract the infos about the uptake of water in wells
+    path : path to the shp (multi points required)
+    grid : the modelgrid
+    fac : the factor to apply on the Volume to get m3/s
+    V_col : the column name containing info about Volume
+    layer : the layer on which the wells are active
+    """
+    
+    GDB = gp.read_file(path)
+    stress_data_well=[]
+    ix = GridIntersect(grid)
+
+    for o in GDB.index:
+        Vw = GDB[V_col][o]
+        if not (np.isnan(Vw)) | (Vw == 0):
+            cellidx = ix.intersect_point(GDB.geometry[o]).cellids[0][0]
+            cellidy = ix.intersect_point(GDB.geometry[o]).cellids[0][1]
+            cellid = (layer,cellidx,cellidy)
+            stress_data_well.append((cellid,-fac*Vw))
+    
+    return stress_data_well
