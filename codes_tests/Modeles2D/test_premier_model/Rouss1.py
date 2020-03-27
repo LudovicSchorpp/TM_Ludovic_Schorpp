@@ -370,14 +370,12 @@ def importWells(path,grid,fac=1/365/86400,V_col="V Bancaris",layer=0):
     
     return stress_data_well
 
-
 #15
 def coor_convert(x,y,epsgin,epsgout):
     
     """
     a function that converts coordinates :), needs coordinates and epsgin and epsgout !
     """
-    
     from pyproj import Proj, transform
     inproj = Proj(init="epsg:{}".format(epsgin))
     outproj = Proj(init="epsg:{}".format(epsgout))
@@ -386,7 +384,7 @@ def coor_convert(x,y,epsgin,epsgout):
 
 
 #16 
-def Chabart2lst(file):
+def Chabart2df(file):
     
     """
     to import data from Chabart files, return a df with coordinates and the values in L93

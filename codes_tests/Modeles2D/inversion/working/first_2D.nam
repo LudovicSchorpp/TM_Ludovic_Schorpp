@@ -5,6 +5,7 @@ BEGIN packages
   DIS6  first_2D.dis  dis
   IC6  first_2D.ic  ic
   OC6  first_2D.oc  oc
+  NPF6  first_2D.npf  npf
   RCH6  first_2D.rcha  rcha
   WEL6  wel.wel  wel
   CHD6  sea.chd  sea
@@ -15,6 +16,5 @@ BEGIN packages
   CHD6  Cant.chd  cant
   CHD6  Tech.chd  tech
   CHD6  Bol.chd  bol
-  NPF6  first_2D.npf  npf
 END packages
 
