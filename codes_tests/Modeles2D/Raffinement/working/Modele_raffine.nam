@@ -1,0 +1,12 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DISV6  Modele_raffine.disv  disv
+  IC6  Modele_raffine.ic  ic
+  OC6  Modele_raffine.oc  oc
+  NPF6  Modele_raffine.npf  npf
+  RCH6  Modele_raffine.rcha  rcha
+  CHD6  sea.chd  sea
+END packages
+
