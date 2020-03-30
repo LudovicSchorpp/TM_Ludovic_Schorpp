@@ -79,14 +79,14 @@ Integer Variables
  Creating solution: SLN_1           
 
  OPENED first2D_mf6.ims
- FILE TYPE:IMS   UNIT 1011   STATUS:OLD                 
+ FILE TYPE:IMS   UNIT 1013   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
  END OF SIMULATION SOLUTIONGROUP
 
  IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
-         INPUT READ FROM UNIT 1011
+         INPUT READ FROM UNIT 1013
 
  PROCESSING IMS OPTIONS
  MODERATE OPTION:
@@ -143,25 +143,21 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        31     422.691                        1_GWF-(1,4515)
- Under-relaxation          1               422.691                        1_GWF-(1,4515)
- Linear Solver             2         4   -0.259128                        1_GWF-(1,4515)
- Under-relaxation          2             -0.233215                        1_GWF-(1,4515)
- Linear Solver             3         2   -2.132348E-02                    1_GWF-(1,4519)
- Under-relaxation          3              1.991833E-02                    1_GWF-(1,7731)
- Linear Solver             4         1   -5.365299E-03                    1_GWF-(1,4518)
+ Linear Solver             1        20     171.189                        1_GWF-(1,4148)
+ Under-relaxation          1               171.189                        1_GWF-(1,4148)
+ Linear Solver             2         1    2.756881E-03                    1_GWF-(1,7759)
 
- 4 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 38 TOTAL ITERATIONS
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 21 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   682722
- Number of allocated real variables:    746452
- Allocated memory in megabytes:     8.70250    
+ Number of allocated integer variables:   687297
+ Number of allocated real variables:    753480
+ Allocated memory in megabytes:     8.77703    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/29 12:02:16
- Elapsed run time:  0.946 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/30 11:07:59
+ Elapsed run time:  0.571 Seconds
 
  Normal termination of simulation.

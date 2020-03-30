@@ -40,3 +40,16 @@ def gp2lst(gp,featurestype = "polygon"):
     
     else:
         raise "Enter a valid geometry (polygon or line)"
+        
+        
+#3
+def get_cellcenters_disv (grid,cellids): 
+    """
+    This function return the x and y coordinates of a given cellid and a grid (disv only)
+    """
+    xc=[];yc=[]
+    
+    for i in cellids:
+        xc.append(grid.xcellcenters[i])
+        yc.append(grid.ycellcenters[i])
+    return xc,yc

@@ -190,7 +190,11 @@ def inter_lst (lst1,lst2,typ = "intersection"):
 def import_riv(grid,gp):
     """
     This function extract infos about a river (geopandas object, LINESTRING),cellids + lengths of in each cells in the right order. 
-    Format : import_riv (Grid (from the gwf model, gwf.modelgrid for ex.), gp (a geopandas object containing a unique Linestring))
+    Format : 
+    import_riv (Grid (from the gwf model, gwf.modelgrid for ex.)
+    
+    gp (a geopandas object containing a unique Linestring))
+    
     Return a dataframe containing these datas, post-processing necessary to remove cells that are already counted as BC in the model
     """
     
