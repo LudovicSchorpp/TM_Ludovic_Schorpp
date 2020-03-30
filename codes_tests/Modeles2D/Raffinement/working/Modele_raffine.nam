@@ -8,7 +8,12 @@ BEGIN packages
   NPF6  Modele_raffine.npf  npf
   RCH6  Modele_raffine.rcha  rcha
   CHD6  sea.chd  sea
+  CHD6  eta.chd  eta
   CHD6  agy.chd  agy
   CHD6  tet.chd  tet
+  CHD6  Bol.chd  bol
+  CHD6  Cant.chd  cant
+  CHD6  Rea.chd  rea
+  CHD6  Tech.chd  tech
 END packages
 
