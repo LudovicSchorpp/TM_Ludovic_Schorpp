@@ -58,8 +58,8 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
     df_riv["head"] = np.zeros([df_riv.shape[0]])
 
     # us and ds heads
-    df_riv["head"].iloc[0] = us
-    df_riv["head"].iloc[-1] = ds
+    df_riv.loc[0,"head"] = us
+    df_riv.loc[df_riv.index[-1],"head"] = ds
     
     # station(s) and assignement of heads/
     riv_stations = pd.read_csv(stations_csv,sep=";")

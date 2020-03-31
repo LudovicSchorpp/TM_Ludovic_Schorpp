@@ -1,0 +1,12 @@
+BEGIN options
+  BUDGET  FILEOUT  import_MPS.cbc
+  HEAD  FILEOUT  import_MPS.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  ALL
+  PRINT  HEAD  LAST
+  PRINT  BUDGET  ALL
+END period  1
+

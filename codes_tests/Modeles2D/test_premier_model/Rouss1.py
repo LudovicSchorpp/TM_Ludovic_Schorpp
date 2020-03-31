@@ -74,6 +74,14 @@ def gp2idomain (gp,grid,idomain,area=0,layer=0,method="none"):
 def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0,areas=3):
     """
     this function extract the cellids of the intersection between a geopandas object and a grid 
+    grid : modelgrid
+    gp : geopandas object (polygon, linestring only)
+    idomain : the idomain array to update it
+    idomain_active : bool, if true the idomain is update (cells intersect by the gp will be noted as active), prevents some issues
+    type : str, features type (polygon or line)
+    layer : int, the layer on which is the gp
+    areas : factor that determine if a cell is accounted intersected or not based on the total area intersected in this cell 
+    (a value of 3, for example, mean only cells which have 1/3 of their area intersected by the polygon will be taken into account)
     """
     
     ix = GridIntersect(grid)
@@ -349,7 +357,7 @@ def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_c
 
 
 #14
-def importWells(path,grid,fac=1/365/86400,V_col="V Bancaris",layer=0):
+def importWells(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0):
     
     """
     extract the infos about the uptake of water in wells
@@ -370,7 +378,8 @@ def importWells(path,grid,fac=1/365/86400,V_col="V Bancaris",layer=0):
             cellidx = ix.intersect_point(GDB.geometry[o]).cellids[0][0]
             cellidy = ix.intersect_point(GDB.geometry[o]).cellids[0][1]
             cellid = (layer,cellidx,cellidy)
-            stress_data_well.append((cellid,-fac*Vw))
+            if cellid in lst_domain:
+                stress_data_well.append((cellid,-fac*Vw))
     
     return stress_data_well
 

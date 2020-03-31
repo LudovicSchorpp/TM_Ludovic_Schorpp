@@ -1,0 +1,20 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  import_MPS.dis  dis
+  IC6  import_MPS.ic  ic
+  OC6  import_MPS.oc  oc
+  NPF6  import_MPS.npf  npf
+  RCH6  import_MPS.rcha  rcha
+  WEL6  import_MPS.wel  wel
+  CHD6  sea.chd  sea
+  CHD6  eta.chd  eta
+  CHD6  agy.chd  agy
+  CHD6  Tet.chd  tet
+  CHD6  Rea.chd  rea
+  CHD6  Cant.chd  cant
+  CHD6  Tech.chd  tech
+  CHD6  Bol.chd  bol
+END packages
+
