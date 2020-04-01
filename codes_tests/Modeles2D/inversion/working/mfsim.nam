@@ -6,13 +6,13 @@ BEGIN timing
 END timing
 
 BEGIN models
-  gwf6  first_2D.nam  first_2D
+  gwf6  Inversion_test.nam  Inversion_test
 END models
 
 BEGIN exchanges
 END exchanges
 
 BEGIN solutiongroup  1
-  ims6  theis_mf6.ims  first_2D
+  ims6  theis_mf6.ims  Inversion_test
 END solutiongroup  1
 

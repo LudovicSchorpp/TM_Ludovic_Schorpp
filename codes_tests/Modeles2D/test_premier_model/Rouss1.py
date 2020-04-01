@@ -223,7 +223,7 @@ def import_riv(grid,gp):
 
                 dirx = coord_riv[i+1][0]-coord_riv[i][0] # Xdirection of the linestring
 
-                for x,y in res.vertices: # extract the 1st vertice of the intersections in order to organize 
+                for x,y in res.vertices: # extract the 1st vertice of the intersections in order to organize the cells
                     verti.append(x)
                 vertix = np.array(verti)[:,0]
                 df = pd.DataFrame({"cellids":cellids,"vertix":vertix,"lengths":res.lengths}) # create a DF to order

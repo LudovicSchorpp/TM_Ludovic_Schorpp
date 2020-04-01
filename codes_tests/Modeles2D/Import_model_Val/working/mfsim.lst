@@ -143,21 +143,51 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        19     281.835                       1_GWF-(1,76,96)
- Under-relaxation          1               281.835                       1_GWF-(1,76,96)
- Linear Solver             2         1    7.869456E-04                  1_GWF-(1,115,65)
+ Linear Solver             1       100     5398.40                       1_GWF-(1,36,64)
+ Under-relaxation          1               5398.40                       1_GWF-(1,36,64)
+ Linear Solver             2       100    -2992.31                       1_GWF-(1,35,65)
+ Under-relaxation          2              -2693.08                       1_GWF-(1,35,65)
+ Linear Solver             3        75    -300.303                       1_GWF-(1,35,65)
+ Under-relaxation          3              -270.302                       1_GWF-(1,35,65)
+ Linear Solver             4        24    -28.1201                       1_GWF-(1,70,69)
+ Under-relaxation          4              -25.3137                       1_GWF-(1,70,69)
+ Linear Solver             5        40    -55.1689                       1_GWF-(1,35,65)
+ Under-relaxation          5              -49.6686                       1_GWF-(1,35,65)
+ Linear Solver             6        19     39.7708                       1_GWF-(1,35,65)
+ Under-relaxation          6               32.2251                       1_GWF-(1,35,65)
+ Linear Solver             7        41     29.2838                       1_GWF-(1,35,65)
+ Under-relaxation          7               23.7307                       1_GWF-(1,35,65)
+ Linear Solver             8        56    -28.6090                       1_GWF-(1,35,65)
+ Under-relaxation          8              -20.8655                       1_GWF-(1,35,65)
+ Linear Solver             9        11     1.19257                       1_GWF-(1,35,65)
+ Under-relaxation          9              0.782801                       1_GWF-(1,35,65)
+ Linear Solver            10        26     5.70271                       1_GWF-(1,35,65)
+ Under-relaxation         10               3.74383                       1_GWF-(1,35,65)
+ Linear Solver            11         4    0.133556                       1_GWF-(1,38,63)
+ Under-relaxation         11              7.102099E-02                   1_GWF-(1,38,63)
+ Linear Solver            12        42     15.0968                       1_GWF-(1,35,65)
+ Under-relaxation         12               9.91404                       1_GWF-(1,35,65)
+ Linear Solver            13        33    -9.19590                       1_GWF-(1,35,65)
+ Under-relaxation         13              -5.43505                       1_GWF-(1,35,65)
+ Linear Solver            14        10   -0.789693                       1_GWF-(1,35,65)
+ Under-relaxation         14             -0.466811                       1_GWF-(1,35,65)
+ Linear Solver            15         4   -8.981379E-02                   1_GWF-(1,47,54)
+ Under-relaxation         15             -5.309614E-02                   1_GWF-(1,47,54)
+ Linear Solver            16         2   -4.335366E-02                   1_GWF-(1,47,54)
+ Under-relaxation         16             -2.563417E-02                   1_GWF-(1,47,54)
+ Linear Solver            17         1   -7.337448E-03                   1_GWF-(1,47,54)
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 20 TOTAL ITERATIONS
+ 17 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 588 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
  Number of allocated integer variables:   305414
- Number of allocated real variables:    355772
- Allocated memory in megabytes:     4.06783    
+ Number of allocated real variables:    339116
+ Allocated memory in megabytes:     3.93458    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/31 17:45:47
- Elapsed run time:  0.215 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/01 16:41:25
+ Elapsed run time:  0.291 Seconds
 
  Normal termination of simulation.

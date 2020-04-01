@@ -68,7 +68,7 @@ Integer Variables
  END OF SIMULATION TIMING
 
  READING SIMULATION MODELS
-    GWF6 model FIRST_2D will be created as model 1
+    GWF6 model INVERSION_TEST will be created as model 1
  END OF SIMULATION MODELS
 
  READING SIMULATION EXCHANGES
@@ -143,14 +143,12 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        43     338.408                     1_GWF-(1,177,194)
- Under-relaxation          1               338.408                     1_GWF-(1,177,194)
- Linear Solver             2         5   -3.995348E-02                  1_GWF-(1,158,92)
- Under-relaxation          2             -3.986037E-02                  1_GWF-(1,159,92)
- Linear Solver             3         3    7.657078E-03                  1_GWF-(1,226,90)
+ Linear Solver             1        42     338.767                     1_GWF-(1,177,194)
+ Under-relaxation          1               338.767                     1_GWF-(1,177,194)
+ Linear Solver             2         1   -9.313668E-03                  1_GWF-(1,157,94)
 
- 3 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 51 TOTAL ITERATIONS
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 43 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -159,7 +157,7 @@ Integer Variables
  Allocated memory in megabytes:     15.7971    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/03/27 17:00:06
- Elapsed run time:  0.291 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/01 14:04:11
+ Elapsed run time:  0.398 Seconds
 
  Normal termination of simulation.
