@@ -195,7 +195,7 @@ def inter_lst (lst1,lst2,typ = "intersection"):
         return [i for i in lst1 if i not in lst2]
         
 #8
-def import_riv(grid,gp):
+def import_riv(grid,gp,lst_domain,nlay=3):
     """
     This function extract infos about a river (geopandas object, LINESTRING),cellids + lengths of in each cells in the right order. 
     Format : 
@@ -249,7 +249,10 @@ def import_riv(grid,gp):
     cellids_Riv=[]; # list of all the cells intersected by the river
     cellids = df_riv.index
     for irow,icol in cellids:
-        cell = (0,irow,icol)
+        for layer in range(nlay):
+            cell = (layer,irow,icol)
+            if cell in lst_domain: #attribute the river to the uppermost active cell
+                break
         if cell not in cellids_Riv:
             cellids_Riv.append(cell)
 
@@ -390,7 +393,7 @@ def importWells(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0)
 def coor_convert(x,y,epsgin,epsgout):
     
     """
-    a function that converts coordinates :), needs coordinates and epsgin and epsgout !
+    a function that converts coordinates, needs coordinates and epsgin and epsgout.
     """
     from pyproj import Proj, transform
     inproj = Proj(init="epsg:{}".format(epsgin))

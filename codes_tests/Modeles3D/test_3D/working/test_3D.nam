@@ -1,0 +1,17 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  test_3D.dis  dis
+  IC6  test_3D.ic  ic
+  OC6  test_3D.oc  oc
+  NPF6  test_3D.npf  npf
+  RCH6  test_3D.rcha  rcha
+  CHD6  sea.chd  sea
+  CHD6  agy.chd  agy
+  CHD6  Tet.chd  tet
+  CHD6  Rea.chd  rea
+  CHD6  Tech.chd  tech
+  CHD6  Cant.chd  cant
+END packages
+

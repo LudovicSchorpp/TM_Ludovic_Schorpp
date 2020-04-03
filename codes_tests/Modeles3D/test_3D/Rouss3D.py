@@ -14,6 +14,7 @@ from shapely.geometry import Polygon, Point, LineString, MultiLineString, MultiP
 from shapely.strtree import STRtree  
 
 
+#1
 def gp2cellids3D (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0,areas=3):
     """
     this function extract the cellids of the intersection between a geopandas object and a grid 
@@ -44,3 +45,36 @@ def gp2cellids3D (grid, gp, idomain, idomain_active=True, type = "polygon",layer
         if idomain_active:
             idomain[layer,irow,icol] = 1
     return lst
+
+
+#2
+def importWells3D(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",geol_col="NAPPE_CAPT",
+                  geol_layer=["PLIOCENE","QUATERNAIRE"],layer_num=[1,0]):
+    
+    """
+    extract the infos about the amount of water uptake by wells
+    path : path to the shp (multi points required)
+    grid : the modelgrid
+    fac : the factor to transform volume units to get m3/s (depends of original units)
+    V_col : the column name containing info about Volume
+    geol_col = the column name containing geol infos
+    geol_layer : the name of the differents lithology encountered 
+    layer_num : the num layer corresponding to the lithology in geol_layer
+    """
+    
+    ix=GridIntersect(grid)
+    BD_prlvm = gp.read_file(path)
+    stress_data_well=[]
+    
+    for ilayer in range(len(geol_layer)): # iterate through layers
+        BD = BD_prlvm[BD_prlvm[geol_col] == geol_layer[ilayer]] # only keep layers with the right geol
+        for o in BD.index: #iterate through each well
+            Vw = BD.loc[o,V_col]
+            if not (np.isnan(Vw)) | (Vw == 0): #keep productive well
+                    cellidx = ix.intersect_point(BD.geometry[o]).cellids[0][0]
+                    cellidy = ix.intersect_point(BD.geometry[o]).cellids[0][1]
+                    cellid = (layer_num[ilayer],cellidx,cellidy) #cell on which the well is active
+                    if cellid in lst_domain: # check if the well is in the domain
+                        stress_data_well.append((cellid,-fac*Vw))
+    
+    return stress_data_well

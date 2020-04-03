@@ -1,0 +1,18 @@
+BEGIN options
+END options
+
+BEGIN timing
+  TDIS6  first3D_mf6.tdis
+END timing
+
+BEGIN models
+  gwf6  test_3D.nam  test_3D
+END models
+
+BEGIN exchanges
+END exchanges
+
+BEGIN solutiongroup  1
+  ims6  first3D_mf6.ims  test_3D
+END solutiongroup  1
+

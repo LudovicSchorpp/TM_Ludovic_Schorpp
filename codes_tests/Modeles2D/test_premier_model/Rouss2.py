@@ -53,7 +53,7 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
     """
     
     BC_riv = gp.read_file(riv_path) # read shp, linestring from ups to dws
-    df_riv = import_riv(grid,BC_riv) # extract cellids intersected + lengths in each cells
+    df_riv = import_riv(grid,BC_riv,lst_domain,nlay=3) # extract cellids intersected + lengths in each cells
     df_riv["xc"],df_riv["yc"] = get_cellcenters(grid,df_riv.cellids)
     df_riv["head"] = np.zeros([df_riv.shape[0]])
 
@@ -68,7 +68,7 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
         ys = riv_stations.loc[i].y
         elev = riv_stations.loc[i].elev
         dist = ((df_riv["xc"] - xs)**2 + (df_riv["yc"] - ys)**2)**0.5
-        df_riv.loc[dist==np.min(dist),"head"] = elev - 2
+        df_riv.loc[dist==np.min(dist),"head"] = elev - 1
 
     # interpolation of the heads btw ups,stations and ds
     linInt_Dfcol(df_riv,col="head")
