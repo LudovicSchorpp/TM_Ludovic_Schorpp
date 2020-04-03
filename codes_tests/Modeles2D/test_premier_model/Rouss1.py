@@ -375,12 +375,15 @@ def importWells(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0)
     for o in GDB.index:
         Vw = GDB[V_col][o]
         if not (np.isnan(Vw)) | (Vw == 0):
-            cellidx = ix.intersect_point(GDB.geometry[o]).cellids[0][0]
-            cellidy = ix.intersect_point(GDB.geometry[o]).cellids[0][1]
-            cellid = (layer,cellidx,cellidy)
-            if cellid in lst_domain:
-                stress_data_well.append((cellid,-fac*Vw))
-    
+            try:
+                cellidx = ix.intersect_point(GDB.geometry[o]).cellids[0][0]
+                cellidy = ix.intersect_point(GDB.geometry[o]).cellids[0][1]
+                cellid = (layer,cellidx,cellidy)
+                if cellid in lst_domain:
+                    stress_data_well.append((cellid,-fac*Vw))
+            except:
+                pass
+
     return stress_data_well
 
 #15

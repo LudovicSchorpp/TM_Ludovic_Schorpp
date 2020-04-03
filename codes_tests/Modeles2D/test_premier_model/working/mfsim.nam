@@ -2,7 +2,7 @@ BEGIN options
 END options
 
 BEGIN timing
-  TDIS6  theis_mf6.tdis
+  TDIS6  first2D_mf6.tdis
 END timing
 
 BEGIN models
@@ -13,6 +13,6 @@ BEGIN exchanges
 END exchanges
 
 BEGIN solutiongroup  1
-  ims6  theis_mf6.ims  first_2D
+  ims6  first2D_mf6.ims  first_2D
 END solutiongroup  1
 
