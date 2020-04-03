@@ -2,7 +2,7 @@ name: pyclass
 channels:
   - conda-forge
 dependencies:
-  - python=3.7.4
+  - python=3.7
   - numpy
   - matplotlib
   - xarray
@@ -11,7 +11,7 @@ dependencies:
   - xlrd
   - gdal
   - geopandas
-  - rtree=0.9.3
+  - rtree
   - descartes
   - scipy
   - pyproj>=2.0
@@ -27,7 +27,7 @@ dependencies:
   - pytest
   - pip
   - openpyxl
-  - flopy=3.3.0
+  - flopy
   - imageio
   - pip:
     - modflow-export
