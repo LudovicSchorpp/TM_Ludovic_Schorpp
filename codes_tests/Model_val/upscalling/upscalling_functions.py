@@ -2,6 +2,7 @@ import numpy  as np
 import pandas as pd
 import pickle
 import matplotlib.pyplot  as plt
+import time
 
 ##############
 ##############
@@ -82,7 +83,7 @@ def create_mask(grid):
 ##############
 
 
-def up_array_mean(arr, sx, sy, sx_up, sy_up):
+def up_array_mean(arr_k, sx, sy, sx_up, sy_up):
     '''
     Function to upscall a np array (ny,nx) to a defined output resolution.
     
@@ -96,14 +97,13 @@ def up_array_mean(arr, sx, sy, sx_up, sy_up):
     Output:
     means : array (ny,nx), upscalled grid with simple means.
     '''
-    
+
     #Define dimension and spacing.
-    nx, ny       = arr.shape[1], arr.shape[0]
+    nx, ny       = arr_k.shape[1], arr_k.shape[0]
     nx_up, ny_up = nx*sx/sx_up, ny*sy/sy_up
     sx_up, sy_up = sx_up, sy_up
     
-    values = np.copy(arr) #[ny,nx]
-    
+    values = np.copy(arr_k) #[ny,nx]
     #Add empty lines/columns while the extend of the upscalled grid does not match the extend of the original grid. 
     while nx_up/int(nx_up)!= 1.0:
         add_h  = np.full((values.shape[0],1), np.nan)
@@ -116,7 +116,7 @@ def up_array_mean(arr, sx, sy, sx_up, sy_up):
         values = np.vstack((values,add_v)) 
         ny     = values.shape[0]
         ny_up  = ny*sy/sy_up
-    
+
     #Coordinnates of the original grid cells.
     coord_x = np.arange(sx/2,nx*sx+sx/2,sx)
     coord_y = np.arange(sy/2,ny*sy+sy/2,sy)
@@ -128,19 +128,21 @@ def up_array_mean(arr, sx, sy, sx_up, sy_up):
     p = np.array([[px+py] for px,py in zip(p_x,p_y)])
     
     #Group the cells id by new position
-    groups = {}
+    v_up = {} 
+    v    = values.flatten()
+
     for i,pos in enumerate(p):
-        if pos[0] in groups.keys():
-            groups[pos[0]].append(i)
+        if pos[0] in v_up.keys():
+            v_up[pos[0]].append(v[i])
         else:
-            groups[pos[0]] = []
-            groups[pos[0]].append(i)
+            v_up[pos[0]] = []
+            v_up[pos[0]].append(v[i])
+            
 
     #Calculate the mean value of every groups.
-    means = mean_array(groups, values, nx_up, ny_up)    
+    means = mean_array(v_up, nx_up, ny_up)
+
     print('The shape of the ouptut grid is {}'.format(means.shape))
-    print('The original cells dimensions were sx = {} and sy = {}.'.format(sx,sy))
-    print('The upscall cells dimensions are sx_up = {} and sy_up = {}.'.format(sx_up,sy_up))
     print('Upscalling is done!')
     
     return means
@@ -149,19 +151,15 @@ def up_array_mean(arr, sx, sy, sx_up, sy_up):
 ##############
 ##############
 
-def mean_array(groups, values, nx_up, ny_up):
+def mean_array(v_test,nx_up, ny_up):
     '''
     To perform a simple mean operation during upscalling.
     Used within the up_array_mean() function.
     '''
     
-    means = np.full((int(nx_up*ny_up)),np.nan)
-    
-    for i, key in enumerate(groups.keys()):
-        val_group = [values.flatten()[cell] for cell in groups[key]]
-        means[i]  = (np.nanmean(val_group))
-        
-    return np.reshape(means,(int(ny_up),int(nx_up)))
+    means = np.array([np.nanmean(v_test[k]) for k in np.sort(list(v_test.keys()))])
+
+    return np.reshape(means, (int(ny_up),int(nx_up)))
 
 
 ##############
