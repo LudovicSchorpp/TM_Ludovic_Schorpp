@@ -217,6 +217,7 @@ def import_riv(grid,gp,lst_domain,nlay=3):
         if i < len(coord_riv)-1:
             lsi = LineString([coord_riv[i],coord_riv[i+1]]) # create the linestring btw point i and i+1
             res = ix.intersect_linestring(lsi) # do the intersection
+            res = res[res["lengths"]!=0] # remove a bug issue on Linux
             cellids = res.cellids # extract cellids
 
             if len(cellids)>1: # if more than one cells is intersected --> we need to order them
