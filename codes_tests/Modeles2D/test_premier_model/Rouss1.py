@@ -63,6 +63,7 @@ def gp2idomain (gp,grid,idomain,area=0,layer=0,method="none"):
         result = result[result.areas>(np.max(result.areas)/area)]
         
     lst=[]
+    result = result[result.areas!=0]
     for irow, icol in result.cellids:
         idomain[irow*grid.ncol+icol]=1
         lst.append(((layer,irow,icol)))
@@ -96,7 +97,8 @@ def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0
     if type == "line" :
         result = ix.intersect_linestring(gp.geometry[0])
         
-    lst=[];
+    lst=[]
+    result = result[result.areas!=0]
     for irow, icol in result.cellids:
         lst.append(((layer,irow,icol)))
         if idomain_active:
