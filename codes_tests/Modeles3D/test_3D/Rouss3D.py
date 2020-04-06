@@ -78,3 +78,37 @@ def importWells3D(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",geol_c
                         stress_data_well.append((cellid,-fac*Vw))
     
     return stress_data_well
+
+#3
+def active_dom(surf,grid):
+    
+    """
+    return a idomain for active zones, base on surfaces
+    surf : an array with no data zones == -9999
+    grid : modelgrid
+    """
+    idomainQ = np.zeros([grid.nrow,grid.ncol])
+    idomainQ[surf != -9999] = 1
+    return idomainQ
+
+#4
+def up_act_cell(idomain):
+    
+    """
+    return the uppermosts active cells from a 3D list idomain (1: active)
+    idomain : shape (nlay,nrow,ncol)
+    """
+    
+    lst_dom_act=[]
+    nlay = idomain.shape[0]
+    nrow = idomain.shape[1]
+    ncol = idomain.shape[2]
+
+    for irow in range(nrow):
+        for icol in range(ncol):
+            for ilay in range(nlay):
+                idx = (ilay,irow,icol)
+                if idomain[idx] == 1:
+                    lst_dom_act.append((ilay,irow,icol))
+                    break
+    return lst_dom_act

@@ -88,7 +88,8 @@ def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0
     ix = GridIntersect(grid)
     if type == "polygon":
         result = ix.intersect_polygon(gp.geometry[0])
-        result = result[result.areas>(np.max(result.areas)/3)] # only take into account cells that have a least 1/3 intersected by the polygon
+        result = result[result.areas>(np.max(result.areas)/3)] # only take into account cells that have a least 1/3 intersected 
+        result = result[result.areas!=0]                       # fix bug
         
     if type == "boundary" :
         result = ix.intersect_linestring(gp.geometry[0].boundary)
@@ -98,7 +99,7 @@ def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0
         result = ix.intersect_linestring(gp.geometry[0])
         
     lst=[]
-    result = result[result.areas!=0]
+    
     for irow, icol in result.cellids:
         lst.append(((layer,irow,icol)))
         if idomain_active:
