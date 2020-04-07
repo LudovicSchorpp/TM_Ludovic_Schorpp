@@ -147,89 +147,14 @@ Integer Variables
                        OUTER     INNER BACKTRACK BACKTRACK        INCOMING        OUTGOING         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION      FLAG    NUMBER        RESIDUAL        RESIDUAL          CHANGE                    MODEL-(CELLID)
  -------------------------------------------------------------------------------------------------------------------------------------------
- Backtracking              1                   0         0     206.075         206.075    
- Linear Solver             1        24                                                         369.519                     1_GWF-(3,102,150)
- Under-relaxation          1                                                                   369.519                     1_GWF-(3,102,150)
- Backtracking              2                   0         0    1.753991E-03    1.753991E-03
- Linear Solver             2         6                                                         6.47317                     1_GWF-(2,159,107)
- Under-relaxation          2                                                                   6.47174                     1_GWF-(3,158,107)
- Backtracking              3                   4         1    0.797942        7.969918E-02
- Linear Solver             3        10                                                         8.07432                     1_GWF-(2,159,107)
- Under-relaxation          3                                                                   7.94313                     1_GWF-(3,158,107)
- Backtracking              4                   4         1    0.991811        0.170892    
- Linear Solver             4        10                                                         7.29359                     1_GWF-(2,159,107)
- Under-relaxation          4                                                                   7.01404                     1_GWF-(3,158,107)
- Backtracking              5                   4         1    0.893877        0.243186    
- Linear Solver             5        10                                                         6.63351                     1_GWF-(2,159,107)
- Under-relaxation          5                                                                   6.23615                     1_GWF-(3,158,107)
- Backtracking              6                   4         1    0.810516        0.299914    
- Linear Solver             6         2                                                       -0.651262                      1_GWF-(3,154,98)
- Under-relaxation          6                                                                 -0.521010                      1_GWF-(3,154,98)
- Backtracking              7                   0         0    6.030765E-02    6.030765E-02
- Linear Solver             7        13                                                         5.64125                      1_GWF-(2,154,98)
- Under-relaxation          7                                                                   4.86191                     1_GWF-(2,157,115)
- Backtracking              8                   1         1    0.538629        5.772143E-02
- Linear Solver             8        11                                                         5.47885                      1_GWF-(2,154,98)
- Under-relaxation          8                                                                   4.46454                     1_GWF-(2,156,115)
- Backtracking              9                   4         1    0.522798        9.049516E-02
- Linear Solver             9        10                                                         5.15386                      1_GWF-(2,154,98)
- Under-relaxation          9                                                                   3.80942                     1_GWF-(2,156,105)
- Backtracking             10                   4         1    0.480708        0.125256    
- Linear Solver            10         2                                                        0.420684                     1_GWF-(2,152,104)
- Under-relaxation         10                                                                  0.246050                     1_GWF-(1,156,119)
- Backtracking             11                   0         0    3.938424E-02    3.938424E-02
- Linear Solver            11         8                                                         5.75331                      1_GWF-(2,154,98)
- Under-relaxation         11                                                                   4.34178                     1_GWF-(2,156,106)
- Backtracking             12                   4         1    0.465747        5.826155E-02
- Linear Solver            12        11                                                         4.36754                      1_GWF-(2,154,98)
- Under-relaxation         12                                                                   3.10222                     1_GWF-(2,156,106)
- Backtracking             13                   4         1    0.352947        8.307571E-02
- Linear Solver            13        11                                                         4.17284                      1_GWF-(2,154,98)
- Under-relaxation         13                                                                   2.88316                     1_GWF-(2,156,106)
- Backtracking             14                   4         1    0.342719        0.107011    
- Linear Solver            14         3                                                        0.823944                      1_GWF-(2,154,98)
- Under-relaxation         14                                                                  0.422594                      1_GWF-(2,154,98)
- Backtracking             15                   0         0    5.670229E-02    5.670229E-02
- Linear Solver            15         3                                                        0.824925                      1_GWF-(2,154,98)
- Under-relaxation         15                                                                  0.423180                      1_GWF-(2,154,98)
- Backtracking             16                   0         0    5.402931E-02    5.402931E-02
- Linear Solver            16        10                                                         2.96716                     1_GWF-(2,157,106)
- Under-relaxation         16                                                                   2.21186                     1_GWF-(2,156,106)
- Backtracking             17                   4         1    0.257309        7.302386E-02
- Linear Solver            17         7                                                         3.73936                     1_GWF-(2,157,106)
- Under-relaxation         17                                                                   2.77405                     1_GWF-(2,156,106)
- Backtracking             18                   4         1    0.308050        9.600399E-02
- Linear Solver            18        12                                                         2.58065                     1_GWF-(2,157,106)
- Under-relaxation         18                                                                   1.77896                     1_GWF-(2,156,106)
- Backtracking             19                   4         1    0.236215        0.109711    
- Linear Solver            19         7                                                         2.53266                     1_GWF-(2,157,106)
- Under-relaxation         19                                                                   1.70379                     1_GWF-(2,156,106)
- Backtracking             20                   4         1    0.228712        0.121488    
- Linear Solver            20         7                                                         2.31439                     1_GWF-(2,157,106)
- Under-relaxation         20                                                                   1.49655                     1_GWF-(2,156,106)
- Backtracking             21                   4         1    0.213492        0.130610    
- Linear Solver            21         7                                                         2.13348                     1_GWF-(2,157,106)
- Under-relaxation         21                                                                   1.32702                     1_GWF-(2,156,106)
- Backtracking             22                   4         1    0.201074        0.137597    
- Linear Solver            22         7                                                         1.98732                     1_GWF-(2,157,106)
- Under-relaxation         22                                                                   1.19148                     1_GWF-(2,156,106)
- Backtracking             23                   1         1    0.191295        0.142916    
- Linear Solver            23         7                                                         1.86584                     1_GWF-(2,157,106)
- Under-relaxation         23                                                                   1.08056                     1_GWF-(2,156,106)
- Backtracking             24                   1         1    0.183281        0.146907    
- Linear Solver            24         7                                                         1.76069                     1_GWF-(2,157,106)
- Under-relaxation         24                                                                  0.986607                     1_GWF-(2,156,106)
- Backtracking             25                   4         0    0.176328        0.176328    
- Linear Solver            25         4                                                        0.401148                     1_GWF-(2,156,104)
- Under-relaxation         25                                                                  0.206187                     1_GWF-(2,156,104)
- Backtracking             26                   0         0    8.593222E-02    8.593222E-02
- Linear Solver            26         2                                                        0.167397                     1_GWF-(1,153,112)
- Under-relaxation         26                                                                 -9.659799E-02                 1_GWF-(2,155,105)
- Backtracking             27                   0         0    4.057699E-02    4.057699E-02
- Linear Solver            27         1                                                        8.060093E-02                 1_GWF-(1,153,112)
+ Backtracking              1                   0         0     938.966         938.966    
+ Linear Solver             1        36                                                         368.084                     1_GWF-(3,102,150)
+ Under-relaxation          1                                                                   368.084                     1_GWF-(3,102,150)
+ Backtracking              2                   0         0    9.954770E-04    9.954770E-04
+ Linear Solver             2         1                                                        2.567886E-02                 1_GWF-(2,157,106)
 
- 27 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 212 TOTAL ITERATIONS
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 37 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -238,7 +163,7 @@ Integer Variables
  Allocated memory in megabytes:     25.2827    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/06 16:37:30
- Elapsed run time:  1.963 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/07 17:16:35
+ Elapsed run time:  0.659 Seconds
 
  Normal termination of simulation.

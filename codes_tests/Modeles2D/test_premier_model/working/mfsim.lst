@@ -143,14 +143,12 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        21     284.140                      1_GWF-(1,79,140)
- Under-relaxation          1               284.140                      1_GWF-(1,79,140)
- Linear Solver             2         2    1.184288E-02                 1_GWF-(1,131,105)
- Under-relaxation          2              1.177361E-02                 1_GWF-(1,130,105)
- Linear Solver             3         1    1.894905E-03                 1_GWF-(1,131,104)
+ Linear Solver             1        39     430.745                      1_GWF-(1,136,58)
+ Under-relaxation          1               430.745                      1_GWF-(1,136,58)
+ Linear Solver             2         1   -1.644581E-03                  1_GWF-(1,135,57)
 
- 3 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 24 TOTAL ITERATIONS
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 40 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -159,7 +157,7 @@ Integer Variables
  Allocated memory in megabytes:     6.25840    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/06 16:34:18
- Elapsed run time:  0.327 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/07 15:08:51
+ Elapsed run time:  0.223 Seconds
 
  Normal termination of simulation.
