@@ -6,9 +6,7 @@ END options
 BEGIN griddata
   icelltype
     CONSTANT  0
-  k  LAYERED
-    CONSTANT  5.00000000E-05
-    CONSTANT  1.00000000E-05
+  k
     CONSTANT  1.00000000E-04
 END griddata
 

@@ -7,6 +7,7 @@ BEGIN packages
   OC6  2etest_3D.oc  oc
   NPF6  2etest_3D.npf  npf
   RCH6  2etest_3D.rch  rch_0
+  DRN6  2etest_3D.drn  sup_flow
   WEL6  2etest_3D.wel  wel
   CHD6  sea.chd  sea
   CHD6  eta.chd  eta
