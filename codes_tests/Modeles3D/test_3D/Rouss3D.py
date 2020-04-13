@@ -1,4 +1,4 @@
-# useful hand-mades functions to import,pre-process data in 3D
+# useful hand-mades functions to import and pre-process data in 3D
 
 import flopy as fp
 import numpy as np
@@ -112,3 +112,111 @@ def up_act_cell(idomain):
                     lst_dom_act.append((ilay,irow,icol))
                     break
     return lst_dom_act
+
+#5
+def MinThick(idomain,botm,top,min_ep_act=10,min_ep_inact=1):
+    """
+    Change the thickness of certains cells based on a criterion (min_ep_act for active cells and min_ep_inact for inactive cells)
+    Can also be used to change cells with negative thickness
+    
+    idomain : 3d list (nlay,nrow,ncol)
+    botm : the list containing the surfaces of all the layers
+    top : the top surface
+    min_ep : int, the minimum thickness tolerate
+    
+    """
+    
+    #active cells
+    for ilay in range(botm.shape[0]-1):
+        mask = ((botm[ilay] - botm[ilay+1])< min_ep_act) & (idomain[ilay+1]==1)
+        botm[ilay][mask] = botm[ilay+1][mask] + min_ep_act
+
+    mask = ((top-botm[0])<=0) & (idomain[0]==1)
+    top[mask] = botm[0][mask] + min_ep_act
+    
+    #inactive cells
+    for ilay in range(botm.shape[0]-1):
+        mask = ((botm[ilay] - botm[ilay+1])< min_ep_inact) & (idomain[ilay+1]!=1)
+        botm[ilay][mask] = botm[ilay+1][mask] + min_ep_inact
+
+    mask = ((top-botm[0])<=0) & (idomain[0]!=1)
+    top[mask] = botm[0][mask] + min_ep_inact
+    
+#6
+def assign_k_zones(zone1,k1,k,g,layer):
+    
+    """
+    Assign a certain k in a certain zone for a given layer
+    zone1 : the zone format [[[(x,y),(x1,y1),(...),...]]]
+    k1 : the permeability of the zone
+    layer : int
+    k : the 3d list containing the permeability fo the model
+    g : gridgen object
+    """
+    
+    res = g.intersect(zone1,"polygon",layer)
+    k[res.nodenumber] = k1
+    
+#7
+def shp2idomain(shp_path,g,idomain,features_type="polygon",layer=0):
+    
+    """
+    Turns cells active inside a certain shp, need a gridgen object
+    """
+    
+    if len(idomain.shape) != 1:
+        idomain = idomain.reshape(g.nlay*g.nrow*g.ncol) # reshape idomain if not in the right format
+    res = g.intersect(shp_path,features_type,layer)
+    idomain[res.nodenumber] = 1
+    idomain = idomain.reshape(g.nlay,g.nrow,g.ncol)
+    
+    
+#8
+def ImportControlPz3D(piez_path,sheet_name,geol_layer,layer_num,geol_col,grid,nlay,np_col="NP",x_col="x",y_col="y"):
+    
+    """
+    return an 3D array containing infos about piezometer level in control pz in a multiple layers model$
+    the null value is set to 0
+    
+    piez_path : str, the file path to the excel sheet
+    sheet_name : str, the name of the data sheet 
+    geol_layer : lst, the name of the different lithology
+    layer_num : lst, the ilay number which corresponds to the lithology in geol_layer
+    geol_col : the name of the colum containing lithologies
+    grid and nlay : grid and number of layers of the model
+    np_col : str, the name of the column containing infos about the PL
+    x_col,y_col : str, the name of the columns containings geo infos
+    """
+    
+    piez_path="../../data/piezos/pz_hydriad.xlsx"
+    data = pd.read_excel(piez_path,sheet_name=sheet_name)
+
+    geol_layer = geol_layer
+    layer_num = layer_num
+
+    Control_pz = np.zeros([nlay,grid.nrow,grid.ncol]) #ini list
+
+    for ilay in range(len(geol_layer)): # go through each different lithology
+        lstIDpz=[]
+        Pz=[]
+        DB = data[data[geol_col]==geol_layer[ilay]]
+        DB.reset_index(inplace=True)
+        for o in np.arange(DB.shape[0]): # loop to iterate through the data and returns the intersected cellids
+            xc = DB[x_col][o]
+            yc = DB[y_col][o] 
+            cellid = grid.intersect(xc,yc)
+
+            if not np.isnan(DB[np_col][o]):
+                lstIDpz.append(cellid)
+                Pz.append(DB[np_col][o])
+
+        df = pd.DataFrame()
+        df["cellid"]=lstIDpz
+        df["Pz"] = Pz
+        df = df.groupby(["cellid"]).mean().reset_index() # group pz on the same cell
+
+        for i in df.index:
+            j,k = df.loc[i,"cellid"]
+            Control_pz[layer_num[ilay],j,k] = df.loc[i,"Pz"]
+
+    return Control_pz

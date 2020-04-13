@@ -109,33 +109,20 @@ def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0
 
 
 #4
-def cellidBD(lst_in, layer=0):   
+def cellidBD(idomain, layer=0):   
+    
     """
     extract the cellids at the boundary of the domain at a given layer
     """
-    lst_bc=[]
-    lst_in2=np.array(lst_in)
-    for i in range(len(lst_in)):
-        xl=lst_in[i][1]
-        yl=lst_in[i][2]
-        rec = (xl,yl)
-        recx1 = (layer,xl+1,yl)
-        recx_1= (layer,xl-1,yl)
-        recy1 = (layer,xl,yl+1)
-        recy_1= (layer,xl,yl-1)
-        voisins = [recx1,recx_1,recy1,recy_1];
-        for k in voisins:
-            mask = (lst_in2==k)[:,1]*(lst_in2==k)[:,2]
-            if lst_in2[mask].size == 0:
-                lst_bc.append(rec)
-                break # if it finds a neighbour that is not in the list --> stores it and break !
-                
-    lst_bc2 = np.array(lst_bc)
-    lst_bc=[]
-    for x,y in lst_bc2:
-        a = (layer,x,y) # (layer,row,col)
-        lst_bc.append(a)
-    return lst_bc
+    lst_cellBD=[]
+
+    for irow in range(idomain.shape[1]):
+        for icol in range(idomain.shape[2]):
+            if idomain[layer][irow,icol]==1:
+                #check neighbours
+                if np.sum(idomain[layer][irow-1:irow+2,icol-1:icol+2]==1) < 8:
+                    lst_cellBD.append((layer,irow,icol))
+    return lst_cellBD
 
 
 # 5 visualization functions
