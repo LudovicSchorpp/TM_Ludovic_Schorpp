@@ -2,7 +2,7 @@ LOAD quadtreegrid.dfn
 
 BEGIN GRID_INTERSECTION intersect
   GRID = quadtreegrid
-  LAYER = 2
+  LAYER = 3
   SHAPEFILE = intersect_feature
   FEATURE_TYPE = polygon
   OUTPUT_FILE = intersection.ifo

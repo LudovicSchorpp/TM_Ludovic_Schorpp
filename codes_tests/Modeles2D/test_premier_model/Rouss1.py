@@ -186,6 +186,7 @@ def inter_lst (lst1,lst2,typ = "intersection"):
         
 #8
 def import_riv(grid,gp,lst_domain,nlay=3):
+    
     """
     This function extract infos about a river (geopandas object, LINESTRING),cellids + lengths of in each cells in the right order. 
     Format : 
@@ -397,7 +398,7 @@ def coor_convert(x,y,epsgin,epsgout):
 def Chabart2df(file):
     
     """
-    to import data from Chabart files, return a df with coordinates and the values in L93
+    to import data from a Chabart files (csv file), return a df with coordinates and the values in L93
     """
     
     x_l=[]; y_l=[]; V=[]
@@ -443,3 +444,20 @@ def dfXY2lstModflow(df,x_col="x",y_col="y",data_col="data",layer=0,fac=1/1000/36
         cellidr,cellidc = grid.intersect(x,y)
         lst.append(((layer,cellidr,cellidc),fac*a.loc[i,"data"]))
     return lst
+
+
+#17
+def chd2riv(riv_chd,cond,rdepth):
+    
+    """
+    Transform a chd stress period data into a riv stress period data
+    riv_chd : list, chd spd (cellid,stage)
+    cond : float, conducance of the riverbed
+    rdepth : float, depth of the river
+    """
+    
+    Riv=[]
+    for cellid,stage in riv_chd:
+        Riv.append((cellid,stage,cond,stage-rdepth))
+    
+    riv_chd[:] = Riv

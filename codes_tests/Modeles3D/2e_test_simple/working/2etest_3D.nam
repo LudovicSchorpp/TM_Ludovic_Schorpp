@@ -11,11 +11,11 @@ BEGIN packages
   CHD6  sea.chd  sea
   CHD6  plio.chd  plio
   CHD6  eta.chd  eta
-  CHD6  agy.chd  agy
-  CHD6  Tet.chd  tet
-  CHD6  Rea.chd  rea
-  CHD6  Cant.chd  cant
-  CHD6  Tech.chd  tech
-  CHD6  Bol.chd  bol
+  RIV6  agly.riv  agly
+  RIV6  Tet.riv  tet
+  RIV6  Rea.riv  rea
+  RIV6  Cant.riv  cant
+  RIV6  Tech.riv  tech
+  RIV6  Bol.riv  bol
 END packages
 
