@@ -461,3 +461,10 @@ def chd2riv(riv_chd,cond,rdepth):
         Riv.append((cellid,stage,cond,stage-rdepth))
     
     riv_chd[:] = Riv
+    
+#18
+def nn2kij(n,nlay,nrow,ncol):
+    """
+    from a node number to ilay,irow and icol (dis)
+    """
+    return fp.utils.gridintersect.ModflowGridIndices.kij_from_nn0(n,nlay,nrow,ncol)

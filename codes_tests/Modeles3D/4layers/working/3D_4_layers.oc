@@ -1,0 +1,12 @@
+BEGIN options
+  BUDGET  FILEOUT  3D_4_layers.cbc
+  HEAD  FILEOUT  3D_4_layers.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  ALL
+  PRINT  HEAD  LAST
+  PRINT  BUDGET  ALL
+END period  1
+
