@@ -85,31 +85,87 @@ Integer Variables
 
  END OF SIMULATION SOLUTIONGROUP
 
-ERROR REPORT:
+ IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
+         INPUT READ FROM UNIT 1019
 
- Hydraulic property K is <= 0 for cell (1,4,99)   -0.519868
- Hydraulic property K is <= 0 for cell (1,4,101)   -0.283426
- Hydraulic property K is <= 0 for cell (1,6,100)   -0.222621
- Hydraulic property K is <= 0 for cell (1,11,98)   -0.176853
- Hydraulic property K is <= 0 for cell (1,11,100)   -0.459909
- Hydraulic property K is <= 0 for cell (1,20,92)   -0.375331
- Hydraulic property K is <= 0 for cell (1,20,93)   -0.570253
- Hydraulic property K is <= 0 for cell (1,21,85)   -0.668101
- Hydraulic property K is <= 0 for cell (1,21,88)   -0.362058
- Hydraulic property K is <= 0 for cell (1,21,89)   -0.805320
- Hydraulic property K is <= 0 for cell (1,22,84)   -0.198758
- Hydraulic property K is <= 0 for cell (1,22,86)   -3.816013E-02
- Hydraulic property K is <= 0 for cell (1,22,94)   -0.710547
- Hydraulic property K is <= 0 for cell (1,22,95)   -1.248429E-02
- Hydraulic property K is <= 0 for cell (1,23,91)   -0.126632
- Hydraulic property K is <= 0 for cell (1,23,97)   -0.111307
- Hydraulic property K is <= 0 for cell (1,23,98)   -0.114173
- Hydraulic property K is <= 0 for cell (1,25,80)   -1.407246E-02
- Hydraulic property K is <= 0 for cell (1,27,88)   -0.305342
- Hydraulic property K is <= 0 for cell (1,28,82)   -0.445698
- ... 82 additional errors not shown for K
- ERROR OCCURRED WHILE READING FILE:
+ PROCESSING IMS OPTIONS
+ MODERATE OPTION:
+ DEFAULT SOLVER INPUT VALUES REFLECT MODERETELY NONLINEAR MODEL
+ END OF IMS OPTIONS
+ **UNDER-RELAXATION WILL BE USED***
  
-   C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\Modeles2D\Im
-   port_model_Val\working\import_MPS.npf
- Stopping due to error(s)
+ ***IMS LINEAR SOLVER WILL BE USED***
+
+ IMSLINEAR -- UNSTRUCTURED LINEAR SOLUTION PACKAGE, VERSION 8, 04/28/2017
+ 
+ OUTER ITERATION CONVERGENCE CRITERION     (HCLOSE) =    0.100000E-01
+ OUTER ITERATION BOUNDARY FLOW RESIDUAL (RCLOSEBND) =    0.100000E+00
+ MAXIMUM NUMBER OF OUTER ITERATIONS        (MXITER) =        50
+ SOLVER PRINTOUT INDEX                     (IPRIMS) =         1
+ NONLINEAR ITERATION METHOD            (NONLINMETH) =         3
+ LINEAR SOLUTION METHOD                   (LINMETH) =         1
+ UNDER-RELAXATION WEIGHT REDUCTION FACTOR   (THETA) =    0.900000E+00
+ UNDER-RELAXATION WEIGHT INCREASE INCREMENT (KAPPA) =    0.100000E-03
+ UNDER-RELAXATION PREVIOUS HISTORY FACTOR   (GAMMA) =    0.000000E+00
+ UNDER-RELAXATIONMOMENTUM TERM          (AMOMENTUM) =    0.000000E+00
+    MAXIMUM NUMBER OF BACKTRACKS         (NUMTRACK) =         0
+
+       SOLUTION BY THE BICONJUGATE-GRADIENT STABILIZED METHOD
+ ------------------------------------------------------------------
+ MAXIMUM OF     50 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF    100 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ LINEAR ACCELERATION METHOD            = BCGS      
+ MATRIX PRECONDITIONING TYPE           = MOD. INCOMPLETE LU  
+ MATRIX SCALING APPROACH               = NO SCALING          
+ MATRIX REORDERING APPROACH            = ORIGINAL ORDERING        
+ NUMBER OF ORTHOGONALIZATIONS          =        0
+ HEAD CHANGE CRITERION FOR CLOSURE     =    0.10000E-01
+ RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E+00
+ RESIDUAL CONVERGENCE OPTION           =        0
+ RESIDUAL CONVERGENCE NORM             = INFINITY NORM   
+ RELAXATION FACTOR                     =    0.97000E+00
+
+
+
+1
+                            STRESS PERIOD NO.    1, LENGTH =   1.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =   1.000000    
+
+
+ OUTER ITERATION SUMMARY
+ ---------------------------------------------------------------------------------------
+                       OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
+                   ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
+ ---------------------------------------------------------------------------------------
+ Linear Solver             1       100     1474.97                       1_GWF-(1,36,59)
+ Under-relaxation          1               1474.97                       1_GWF-(1,36,59)
+ Linear Solver             2        44     471.758                       1_GWF-(1,35,61)
+ Under-relaxation          2               471.758                       1_GWF-(1,35,61)
+ Linear Solver             3         7    0.521555                       1_GWF-(1,46,55)
+ Under-relaxation          3              0.469400                       1_GWF-(1,46,55)
+ Linear Solver             4         6    5.732191E-02                   1_GWF-(1,46,55)
+ Under-relaxation          4              5.159546E-02                   1_GWF-(1,46,55)
+ Linear Solver             5         2    2.350989E-02                   1_GWF-(1,52,51)
+ Under-relaxation          5              1.986277E-02                   1_GWF-(1,35,61)
+ Linear Solver             6         1    4.084777E-03                   1_GWF-(1,52,51)
+
+ 6 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 160 TOTAL ITERATIONS
+
+ INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
+ 
+ Number of allocated integer variables:   305414
+ Number of allocated real variables:    355772
+ Allocated memory in megabytes:     4.06783    
+ 
+
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/16  9:38:09
+ Elapsed run time:  0.247 Seconds
+
+ Normal termination of simulation.
