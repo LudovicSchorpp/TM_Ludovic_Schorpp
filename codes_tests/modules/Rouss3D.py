@@ -31,8 +31,9 @@ def gp2cellids3D (grid, gp, idomain, idomain_active=True, type = "polygon",layer
     ix = GridIntersect(grid)
     if type == "polygon":
         result = ix.intersect_polygon(gp.geometry[0])
-        result = result[result.areas>(np.max(result.areas)/3)] # only take into account cells that have a least 1/3 area intersected by the polygon
-        
+        result = result[result.areas>(np.max(result.areas)/3)] # only take into account cells that have a least 1/3 area intersected 
+        result = result[result.areas!=0]                       # fix bug
+    
     if type == "boundary" :
         result = ix.intersect_linestring(gp.geometry[0].boundary)
 

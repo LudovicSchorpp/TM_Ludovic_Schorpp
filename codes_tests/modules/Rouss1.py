@@ -147,6 +147,12 @@ def get_spdis(model_name,workspace):
     spd  = spdobj.get_data(text="SPDIS")
     return spd
 
+def get_cbc(model_name,workspace):
+    cbcfile = '{}.cbc'.format(model_name)
+    fname = os.path.join(workspace,cbcfile)    
+    cbcobj = fp.utils.CellBudgetFile(fname, precision='double')  
+    return cbcobj
+
 def get_budgetobj(model_name,workspace):
     """
     Function that returns the budget file as an object
@@ -303,10 +309,11 @@ def linInt_Dfcol(df,weight="lengths",col="head",null=0):
     
 
 #12
-def BC_vizualize(pack,ibd,iper=0):
+def ra_pack(pack,ibd,iper=0):
     
     """
-    Can be used to plot the bc zones of a certain package (pack), ibd should be a 3d np.zeros list, iper is for the period
+    Return recarray containing position of cells from a certain package
+    Can be used to plot the bc zones of a certain package (pack), iper is for the period
     """
     
     ra = pack.stress_period_data.get_data(key=iper)
@@ -468,3 +475,21 @@ def nn2kij(n,nlay,nrow,ncol):
     from a node number to ilay,irow and icol (dis)
     """
     return fp.utils.gridintersect.ModflowGridIndices.kij_from_nn0(n,nlay,nrow,ncol)
+
+#19
+def budg(budg_data):
+    
+    """
+    return in and out budget info from a package of the model
+    budg_data : data from the cbc object of modflow for one package
+    example : budg(cbc.get_data[idx = 0])
+    """
+    pos=0
+    neg=0
+    for i in budg_data:
+        for o,j,k in i:
+            if k >0:
+                pos += k
+            else:
+                neg -= k
+    return pos,neg
