@@ -163,11 +163,11 @@ Integer Variables
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
  Number of allocated integer variables:   2310612
- Number of allocated real variables:    2177247
- Allocated memory in megabytes:     26.6604    
+ Number of allocated real variables:    2283129
+ Allocated memory in megabytes:     27.5075    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/18 14:11:50
- Elapsed run time:  0.733 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/20  9:27:29
+ Elapsed run time:  1.635 Seconds
 
  Normal termination of simulation.
