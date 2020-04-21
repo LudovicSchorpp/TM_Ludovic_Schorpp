@@ -126,15 +126,24 @@ def cellidBD(idomain, layer=0):
 
 
 # 5 visualization functions
-def get_heads(model_name,workspace):
+def get_heads(model_name,workspace,obj=False):
     """
     Function that returns the heads from the headfile
+    model_name : str, the name of the current model
+    workspace : str, the path to workspace (where output files are stored)
+    obj : bool, if we want to have the head object rather than the computed heads for the last stress period
     """
     headfile = '{}.hds'.format(model_name)
     fname = os.path.join(workspace,headfile)    
-    hdobj = fp.utils.HeadFile(fname, precision='double')  
+    hdobj = fp.utils.HeadFile(fname, precision='double') 
+    
     head  = hdobj.get_data()
-    return head
+    
+    if obj:
+        return hdobj
+    else:
+        return head
+
 
 
 def get_spdis(model_name,workspace):

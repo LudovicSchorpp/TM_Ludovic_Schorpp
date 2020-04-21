@@ -1,0 +1,18 @@
+BEGIN options
+END options
+
+BEGIN timing
+  TDIS6  test_trans.tdis
+END timing
+
+BEGIN models
+  gwf6  test_trans.nam  test_trans
+END models
+
+BEGIN exchanges
+END exchanges
+
+BEGIN solutiongroup  1
+  ims6  test_trans.ims  test_trans
+END solutiongroup  1
+

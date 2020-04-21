@@ -1,0 +1,20 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  2D_trans.dis  dis
+  IC6  2D_trans.ic  ic
+  OC6  2D_trans.oc  oc
+  NPF6  2D_trans.npf  npf
+  STO6  2D_trans.sto  sto
+  RCH6  2D_trans.rcha  rcha
+  CHD6  sea.chd  sea
+  CHD6  eta.chd  eta
+  CHD6  agy.chd  agy
+  CHD6  Tet.chd  tet
+  CHD6  Rea.chd  rea
+  CHD6  Cant.chd  cant
+  CHD6  Tech.chd  tech
+  CHD6  Bol.chd  bol
+END packages
+

@@ -1,0 +1,18 @@
+BEGIN options
+END options
+
+BEGIN timing
+  TDIS6  first2D_mf6.tdis
+END timing
+
+BEGIN models
+  gwf6  2D_trans.nam  2D_trans
+END models
+
+BEGIN exchanges
+END exchanges
+
+BEGIN solutiongroup  1
+  ims6  first2D_mf6.ims  2D_trans
+END solutiongroup  1
+
