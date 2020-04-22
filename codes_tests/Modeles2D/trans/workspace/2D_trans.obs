@@ -1,0 +1,11 @@
+BEGIN options
+  DIGITS  10
+  PRINT_INPUT
+END options
+
+BEGIN continuous  FILEOUT  head_obs.csv
+  'ROW: 75/COL: 75'  HEAD  1 76 76
+  'ROW: 90/COL: 80'  HEAD  1 91 81
+  'ROW: 110/COL: 90'  HEAD  1 111 91
+END continuous  FILEOUT  head_obs.csv
+

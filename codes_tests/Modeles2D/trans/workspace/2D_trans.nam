@@ -7,6 +7,7 @@ BEGIN packages
   OC6  2D_trans.oc  oc
   NPF6  2D_trans.npf  npf
   STO6  2D_trans.sto  sto
+  WEL6  wel.wel  wel
   RCH6  2D_trans.rcha  rcha
   CHD6  sea.chd  sea
   CHD6  eta.chd  eta

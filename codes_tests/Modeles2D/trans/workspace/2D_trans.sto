@@ -1,14 +1,13 @@
 BEGIN options
-  SAVE_FLOWS
 END options
 
 BEGIN griddata
   iconvert
     CONSTANT  1
   ss
-    CONSTANT       0.00100000
+    CONSTANT  1.00000000E-05
   sy
-    CONSTANT       0.20000000
+    CONSTANT       0.01000000
 END griddata
 
 BEGIN period  1
@@ -18,4 +17,12 @@ END period  1
 BEGIN period  2
   TRANSIENT
 END period  2
+
+BEGIN period  3
+  TRANSIENT
+END period  3
+
+BEGIN period  4
+  TRANSIENT
+END period  4
 
