@@ -81,15 +81,15 @@ def importWells3D(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",geol_c
     return stress_data_well
 
 #3
-def active_dom(surf,grid):
+def active_dom(surf,grid,nodata=9999):
     
     """
     return a idomain for active zones, base on surfaces
-    surf : an array with no data zones == -9999
+    surf : an array with no data zones == 9999
     grid : modelgrid
     """
     idomainQ = np.zeros([grid.nrow,grid.ncol])
-    idomainQ[surf != -9999] = 1
+    idomainQ[surf != nodata] = 1
     return idomainQ
 
 #4
