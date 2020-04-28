@@ -241,22 +241,6 @@ Precision of REAL variables: 15
  PROCESSING GRIDDATA
 
                 ICELLTYPE = 0
-
-                        K =  0.5000000E-03 FOR LAYER 1
-
-                        K =  0.2500000E-08 FOR LAYER 2
-
-                        K =  0.2500000E-04 FOR LAYER 3
-
-                        K =  0.2000000E-04 FOR LAYER 4
-
-                      K33 =  0.1000000E-03 FOR LAYER 1
-
-                      K33 =  0.5000000E-09 FOR LAYER 2
-
-                      K33 =  0.5000000E-05 FOR LAYER 3
-
-                      K33 =  0.4000000E-05 FOR LAYER 4
  K22 not provided.  Assuming K22 = K.
  END PROCESSING GRIDDATA
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
@@ -321,33 +305,33 @@ Precision of REAL variables: 15
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  RIV =           0.0000                   RIV =           0.0000     AGLY            
-                 RIV =       7.7451E-02                   RIV =       7.7451E-02     TET             
-                 RIV =           0.1119                   RIV =           0.1119     REA             
-                 RIV =           0.1561                   RIV =           0.1561     CANT            
-                 RIV =       6.3143E-02                   RIV =       6.3143E-02     TECH            
-                 RIV =           0.4064                   RIV =           0.4064     BOL             
+                 RIV =       7.7705E-02                   RIV =       7.7705E-02     TET             
+                 RIV =           0.1101                   RIV =           0.1101     REA             
+                 RIV =           0.1564                   RIV =           0.1564     CANT            
+                 RIV =       6.1292E-02                   RIV =       6.1292E-02     TECH            
+                 RIV =           0.4001                   RIV =           0.4001     BOL             
                  RCH =           3.1429                   RCH =           3.1429     RCH_0           
-                 CHD =       5.6994E-03                   CHD =       5.6994E-03     SEA             
-                 CHD =       7.9288E-03                   CHD =       7.9288E-03     ETA             
+                 CHD =       2.8350E-02                   CHD =       2.8350E-02     SEA             
+                 CHD =       1.2477E-02                   CHD =       1.2477E-02     ETA             
 
-            TOTAL IN =           3.9715              TOTAL IN =           3.9715
+            TOTAL IN =           3.9894              TOTAL IN =           3.9894
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.4959                   WEL =           1.4959     WEL             
-                 RIV =           0.2361                   RIV =           0.2361     AGLY            
-                 RIV =           0.7344                   RIV =           0.7344     TET             
-                 RIV =           0.2073                   RIV =           0.2073     REA             
-                 RIV =           0.1071                   RIV =           0.1071     CANT            
-                 RIV =           0.2344                   RIV =           0.2344     TECH            
-                 RIV =       6.2888E-03                   RIV =       6.2888E-03     BOL             
+                 RIV =           0.2378                   RIV =           0.2378     AGLY            
+                 RIV =           0.7334                   RIV =           0.7334     TET             
+                 RIV =           0.2096                   RIV =           0.2096     REA             
+                 RIV =           0.1093                   RIV =           0.1093     CANT            
+                 RIV =           0.2379                   RIV =           0.2379     TECH            
+                 RIV =       6.3579E-03                   RIV =       6.3579E-03     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH_0           
-                 CHD =           0.5379                   CHD =           0.5379     SEA             
-                 CHD =           0.4114                   CHD =           0.4114     ETA             
+                 CHD =           0.5658                   CHD =           0.5658     SEA             
+                 CHD =           0.3927                   CHD =           0.3927     ETA             
 
-           TOTAL OUT =           3.9709             TOTAL OUT =           3.9709
+           TOTAL OUT =           3.9887             TOTAL OUT =           3.9887
 
-            IN - OUT =       6.3953E-04              IN - OUT =       6.3953E-04
+            IN - OUT =       6.5387E-04              IN - OUT =       6.5387E-04
 
  PERCENT DISCREPANCY =           0.02     PERCENT DISCREPANCY =           0.02
 

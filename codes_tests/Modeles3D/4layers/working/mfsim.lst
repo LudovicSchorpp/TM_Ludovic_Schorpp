@@ -143,28 +143,26 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        55     307.922                     1_GWF-(4,102,144)
- Under-relaxation          1               307.922                     1_GWF-(4,102,144)
- Linear Solver             2        38    -134.863                      1_GWF-(3,120,97)
- Under-relaxation          2              -121.377                      1_GWF-(3,120,97)
- Linear Solver             3        29    -13.4861                      1_GWF-(3,120,97)
- Under-relaxation          3              -12.1388                      1_GWF-(3,120,97)
- Linear Solver             4        18    -1.34719                      1_GWF-(3,120,97)
- Under-relaxation          4              -1.21274                      1_GWF-(3,120,97)
- Linear Solver             5         5   -0.141081                      1_GWF-(1,167,64)
- Under-relaxation          5             -0.127015                      1_GWF-(1,167,64)
- Linear Solver             6         3   -2.331365E-02                  1_GWF-(3,134,60)
- Under-relaxation          6             -2.099161E-02                  1_GWF-(3,134,60)
- Linear Solver             7         4   -2.614061E-02                  1_GWF-(4,145,67)
- Under-relaxation          7             -2.285431E-02                   1_GWF-(4,71,79)
- Linear Solver             8         2   -1.649691E-02                  1_GWF-(4,145,67)
- Under-relaxation          8             -1.203222E-02                  1_GWF-(4,145,67)
- Linear Solver             9         3   -1.323031E-02                   1_GWF-(4,71,79)
- Under-relaxation          9             -1.323031E-02                   1_GWF-(4,71,79)
- Linear Solver            10         2   -8.491166E-03                   1_GWF-(4,73,78)
+ Linear Solver             1        67     307.980                     1_GWF-(4,102,144)
+ Under-relaxation          1               307.980                     1_GWF-(4,102,144)
+ Linear Solver             2        47    -132.255                      1_GWF-(3,117,96)
+ Under-relaxation          2              -119.029                      1_GWF-(3,117,96)
+ Linear Solver             3        27    -13.2254                      1_GWF-(3,117,96)
+ Under-relaxation          3              -11.9042                      1_GWF-(3,117,96)
+ Linear Solver             4        14    -1.32119                      1_GWF-(3,117,96)
+ Under-relaxation          4              -1.18934                      1_GWF-(3,117,96)
+ Linear Solver             5         6   -0.143979                      1_GWF-(1,167,64)
+ Under-relaxation          5             -0.129624                      1_GWF-(1,167,64)
+ Linear Solver             6         5   -3.635624E-02                   1_GWF-(3,72,79)
+ Under-relaxation          6             -3.023059E-02                   1_GWF-(4,73,78)
+ Linear Solver             7         9   -0.147956                       1_GWF-(4,72,79)
+ Under-relaxation          7             -0.130521                       1_GWF-(4,73,78)
+ Linear Solver             8         3   -2.259394E-02                   1_GWF-(4,71,80)
+ Under-relaxation          8             -1.831013E-02                   1_GWF-(4,71,80)
+ Linear Solver             9         2   -9.887231E-03                   1_GWF-(4,71,79)
 
- 10 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 159 TOTAL ITERATIONS
+ 9 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 180 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -173,7 +171,7 @@ Integer Variables
  Allocated memory in megabytes:     27.5075    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/26 13:22:32
- Elapsed run time:  1.575 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/28 15:50:05
+ Elapsed run time:  1.610 Seconds
 
  Normal termination of simulation.

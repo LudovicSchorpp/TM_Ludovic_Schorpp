@@ -326,38 +326,38 @@ Precision of REAL variables: 15
            IN:                                      IN:
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
-                 RIV =       3.6393E-02                   RIV =       3.6393E-02     AGLY            
-                 RIV =           0.2092                   RIV =           0.2092     TET             
-                 RIV =           0.1702                   RIV =           0.1702     REA             
-                 RIV =           0.1174                   RIV =           0.1174     CANT            
+                 RIV =       3.6405E-02                   RIV =       3.6405E-02     AGLY            
+                 RIV =           0.2093                   RIV =           0.2093     TET             
+                 RIV =           0.1725                   RIV =           0.1725     REA             
+                 RIV =           0.1196                   RIV =           0.1196     CANT            
                  RIV =           0.1569                   RIV =           0.1569     TECH            
-                 RIV =           0.5478                   RIV =           0.5478     BOL             
+                 RIV =           0.5477                   RIV =           0.5477     BOL             
                  RCH =           3.1271                   RCH =           3.1271     RCH_0           
-                 CHD =       2.1636E-03                   CHD =       2.1636E-03     SEA             
-                 CHD =       5.5296E-02                   CHD =       5.5296E-02     PLIO            
-                 CHD =       1.7101E-02                   CHD =       1.7101E-02     ETA             
+                 CHD =       2.1679E-03                   CHD =       2.1679E-03     SEA             
+                 CHD =       5.6289E-02                   CHD =       5.6289E-02     PLIO            
+                 CHD =       1.7120E-02                   CHD =       1.7120E-02     ETA             
 
-            TOTAL IN =           4.4395              TOTAL IN =           4.4395
+            TOTAL IN =           4.4451              TOTAL IN =           4.4451
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.5063                   WEL =           1.5063     WEL             
                  RIV =           0.1443                   RIV =           0.1443     AGLY            
-                 RIV =           0.9393                   RIV =           0.9393     TET             
-                 RIV =           0.1852                   RIV =           0.1852     REA             
-                 RIV =           0.1091                   RIV =           0.1091     CANT            
-                 RIV =           0.3144                   RIV =           0.3144     TECH            
-                 RIV =       2.3787E-03                   RIV =       2.3787E-03     BOL             
+                 RIV =           0.9389                   RIV =           0.9389     TET             
+                 RIV =           0.1860                   RIV =           0.1860     REA             
+                 RIV =           0.1104                   RIV =           0.1104     CANT            
+                 RIV =           0.3148                   RIV =           0.3148     TECH            
+                 RIV =       2.3898E-03                   RIV =       2.3898E-03     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH_0           
-                 CHD =           0.6762                   CHD =           0.6762     SEA             
-                 CHD =       9.8448E-05                   CHD =       9.8448E-05     PLIO            
-                 CHD =           0.5683                   CHD =           0.5683     ETA             
+                 CHD =           0.6760                   CHD =           0.6760     SEA             
+                 CHD =       2.1451E-05                   CHD =       2.1451E-05     PLIO            
+                 CHD =           0.5681                   CHD =           0.5681     ETA             
 
-           TOTAL OUT =           4.4456             TOTAL OUT =           4.4456
+           TOTAL OUT =           4.4471             TOTAL OUT =           4.4471
 
-            IN - OUT =      -6.0776E-03              IN - OUT =      -6.0776E-03
+            IN - OUT =      -2.0126E-03              IN - OUT =      -2.0126E-03
 
- PERCENT DISCREPANCY =          -0.14     PERCENT DISCREPANCY =          -0.14
+ PERCENT DISCREPANCY =          -0.05     PERCENT DISCREPANCY =          -0.05
 
 
 

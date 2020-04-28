@@ -143,39 +143,35 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        50     289.135                     1_GWF-(1,144,233)
- Under-relaxation          1               289.135                     1_GWF-(1,144,233)
- Linear Solver             2        25    -38.0835                     1_GWF-(1,204,130)
- Under-relaxation          2              -34.2751                     1_GWF-(1,204,130)
- Linear Solver             3        19    -22.1178                     1_GWF-(1,205,133)
- Under-relaxation          3              -19.9082                     1_GWF-(1,205,133)
- Linear Solver             4        27    -19.4430                     1_GWF-(1,206,135)
- Under-relaxation          4              -17.5026                     1_GWF-(1,206,135)
- Linear Solver             5        20    -13.6483                     1_GWF-(1,205,132)
- Under-relaxation          5              -12.2876                     1_GWF-(1,205,132)
- Linear Solver             6        14    -9.09810                     1_GWF-(1,213,142)
- Under-relaxation          6              -8.19193                     1_GWF-(1,213,142)
- Linear Solver             7        12    -2.22481                     1_GWF-(1,214,132)
- Under-relaxation          7              -2.00344                     1_GWF-(1,214,132)
- Linear Solver             8         5   -0.710773                      1_GWF-(1,66,181)
- Under-relaxation          8             -0.640122                      1_GWF-(1,66,181)
- Linear Solver             9         5   -0.111840                      1_GWF-(1,66,181)
- Under-relaxation          9             -0.100734                      1_GWF-(1,66,181)
- Linear Solver            10         3   -1.527008E-02                  1_GWF-(1,66,185)
- Under-relaxation         10             -1.375529E-02                  1_GWF-(1,66,185)
- Linear Solver            11         1   -7.760761E-03                  1_GWF-(1,179,98)
+ Linear Solver             1        24     284.133                      1_GWF-(1,79,140)
+ Under-relaxation          1               284.133                      1_GWF-(1,79,140)
+ Linear Solver             2        12    -30.6404                      1_GWF-(1,124,82)
+ Under-relaxation          2              -27.5764                      1_GWF-(1,124,82)
+ Linear Solver             3        10    -13.0898                      1_GWF-(1,122,81)
+ Under-relaxation          3              -11.7821                      1_GWF-(1,122,81)
+ Linear Solver             4        12    -14.3982                      1_GWF-(1,134,59)
+ Under-relaxation          4              -12.9612                      1_GWF-(1,134,59)
+ Linear Solver             5        10    -6.33339                      1_GWF-(1,122,75)
+ Under-relaxation          5              -5.70195                      1_GWF-(1,122,75)
+ Linear Solver             6         7    -2.28269                      1_GWF-(1,130,73)
+ Under-relaxation          6              -2.05533                      1_GWF-(1,130,73)
+ Linear Solver             7         6   -0.484997                     1_GWF-(1,104,104)
+ Under-relaxation          7             -0.436740                     1_GWF-(1,104,104)
+ Linear Solver             8         3   -6.118863E-02                  1_GWF-(1,33,110)
+ Under-relaxation          8             -5.510648E-02                  1_GWF-(1,33,110)
+ Linear Solver             9         1   -6.566613E-03                  1_GWF-(1,33,110)
 
- 11 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 181 TOTAL ITERATIONS
+ 9 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 85 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   1309592
- Number of allocated real variables:    1600143
- Allocated memory in megabytes:     18.0395    
+ Number of allocated integer variables:   476431
+ Number of allocated real variables:    583112
+ Allocated memory in megabytes:     6.57062    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/16  9:55:08
- Elapsed run time:  1.106 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/28 15:39:06
+ Elapsed run time:  0.422 Seconds
 
  Normal termination of simulation.

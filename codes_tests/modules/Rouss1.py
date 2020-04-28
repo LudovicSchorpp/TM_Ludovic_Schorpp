@@ -502,3 +502,55 @@ def budg(budg_data):
             else:
                 neg -= k
     return pos,neg
+
+#20
+def get_Total_Budget(model_name,model_dir):
+
+    """
+    Return a DF containing Budget data for the entire model in the LST file
+    Only for the 1st time step, 1st stress period for the moment
+    model_name : str, name of the model given in the gwf pack
+    model_dir : str, path to workspace
+    npack : number of additionnal packages with save_flows set True
+    """
+    
+    
+    file = "{}/{}.lst".format(model_dir,model_name)
+    f = open(file,"r")
+    i=-1
+    for ilin in f.readlines():
+        i += 1
+        if ilin =='  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1\n': # check at which line the budget is
+            break
+    
+    ###number of packages
+    npack=0
+    for o in range(100):
+        f = open("working/{}.lst".format(model_name),"r")
+        if f.readlines()[i+8+o]=="\n":
+            break
+        npack +=1
+    ###number of packages
+    
+    # retrieve data
+    lst_val_IN =[]
+    lst_val_OUT = []
+    lst_nam_pak = []
+    for ipak in range(npack):
+        ipak += 8
+        
+        f = open("working/{}.lst".format(model_name),"r")
+        lst_nam_pak.append(f.readlines()[i+ipak][85:96].rstrip())
+
+        f = open("working/{}.lst".format(model_name),"r")
+        lst_val_IN.append(float(f.readlines()[i+ipak][63:80]))
+
+        f = open("working/{}.lst".format(model_name),"r")
+        lst_val_OUT.append(float(f.readlines()[i+ipak+npack+5][63:80]))
+
+
+    Budget = pd.DataFrame({"Pack":lst_nam_pak,
+                  "IN":lst_val_IN,
+                 "OUT":lst_val_OUT})
+
+    return Budget
