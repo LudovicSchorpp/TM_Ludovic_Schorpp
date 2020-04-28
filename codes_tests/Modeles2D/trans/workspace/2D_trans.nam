@@ -17,5 +17,6 @@ BEGIN packages
   CHD6  Cant.chd  cant
   CHD6  Tech.chd  tech
   CHD6  Bol.chd  bol
+  OBS6  2D_trans.obs  head_obs
 END packages
 

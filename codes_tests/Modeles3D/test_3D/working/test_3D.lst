@@ -71,38 +71,38 @@ Precision of REAL variables: 15
  ACTION:READ                
 
 
- OPENED agy.chd
- FILE TYPE:CHD6                   UNIT 1013   STATUS:OLD                 
+ OPENED agly.riv
+ FILE TYPE:RIV6                   UNIT 1013   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
 
- OPENED Tet.chd
- FILE TYPE:CHD6                   UNIT 1014   STATUS:OLD                 
+ OPENED Tet.riv
+ FILE TYPE:RIV6                   UNIT 1014   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
 
- OPENED Rea.chd
- FILE TYPE:CHD6                   UNIT 1015   STATUS:OLD                 
+ OPENED Rea.riv
+ FILE TYPE:RIV6                   UNIT 1015   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
 
- OPENED Cant.chd
- FILE TYPE:CHD6                   UNIT 1016   STATUS:OLD                 
+ OPENED Cant.riv
+ FILE TYPE:RIV6                   UNIT 1016   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
 
- OPENED Tech.chd
- FILE TYPE:CHD6                   UNIT 1017   STATUS:OLD                 
+ OPENED Tech.riv
+ FILE TYPE:RIV6                   UNIT 1017   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
 
- OPENED Bol.chd
- FILE TYPE:CHD6                   UNIT 1018   STATUS:OLD                 
+ OPENED Bol.riv
+ FILE TYPE:RIV6                   UNIT 1018   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
@@ -116,7 +116,7 @@ Precision of REAL variables: 15
  END OF DISCRETIZATION OPTIONS
  MODEL LENGTH UNIT IS UNDEFINED
  PROCESSING DISCRETIZATION DIMENSIONS
-    NLAY =       3
+    NLAY =       4
     NROW =     182
     NCOL =     234
  END OF DISCRETIZATION DIMENSIONS
@@ -124,8 +124,8 @@ Precision of REAL variables: 15
  END PROCESSING GRIDDATA
 
  THE SPECIFIED IDOMAIN RESULTS IN A REDUCED NUMBER OF CELLS.
- NUMBER OF USER NODES:  127764
- NUMBER OF NODES IN SOLUTION:   75715
+ NUMBER OF USER NODES:  170352
+ NUMBER OF NODES IN SOLUTION:   99160
 
 
 
@@ -144,6 +144,66 @@ Precision of REAL variables: 15
  PROCESSING WEL DIMENSIONS
     MAXBOUND =     281
  END OF WEL DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1013
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      84
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1014
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =     170
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      96
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1016
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      54
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1017
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =     127
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1018
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      48
+ END OF RIV DIMENSIONS
 
  RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1010
 
@@ -175,66 +235,6 @@ Precision of REAL variables: 15
     MAXBOUND =     643
  END OF CHD DIMENSIONS
 
- CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1013
-
- PROCESSING CHD OPTIONS
-    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
- END OF CHD OPTIONS
-
- PROCESSING CHD DIMENSIONS
-    MAXBOUND =      84
- END OF CHD DIMENSIONS
-
- CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1014
-
- PROCESSING CHD OPTIONS
-    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
- END OF CHD OPTIONS
-
- PROCESSING CHD DIMENSIONS
-    MAXBOUND =     170
- END OF CHD DIMENSIONS
-
- CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
-
- PROCESSING CHD OPTIONS
-    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
- END OF CHD OPTIONS
-
- PROCESSING CHD DIMENSIONS
-    MAXBOUND =     115
- END OF CHD DIMENSIONS
-
- CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1016
-
- PROCESSING CHD OPTIONS
-    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
- END OF CHD OPTIONS
-
- PROCESSING CHD DIMENSIONS
-    MAXBOUND =      67
- END OF CHD DIMENSIONS
-
- CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1017
-
- PROCESSING CHD OPTIONS
-    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
- END OF CHD OPTIONS
-
- PROCESSING CHD DIMENSIONS
-    MAXBOUND =     127
- END OF CHD DIMENSIONS
-
- CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1018
-
- PROCESSING CHD OPTIONS
-    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
- END OF CHD OPTIONS
-
- PROCESSING CHD DIMENSIONS
-    MAXBOUND =      48
- END OF CHD DIMENSIONS
-
  IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1006
  PROCESSING GRIDDATA
  END PROCESSING GRIDDATA
@@ -242,17 +242,21 @@ Precision of REAL variables: 15
 
                 ICELLTYPE = 0
 
-                        K =  0.6200000E-03 FOR LAYER 1
+                        K =  0.5000000E-03 FOR LAYER 1
 
-                        K =  0.5000000E-05 FOR LAYER 2
+                        K =  0.2500000E-08 FOR LAYER 2
 
-                        K =  0.3000000E-04 FOR LAYER 3
+                        K =  0.2500000E-04 FOR LAYER 3
 
-                      K33 =  0.1860000E-03 FOR LAYER 1
+                        K =  0.2000000E-04 FOR LAYER 4
 
-                      K33 =  0.1500000E-05 FOR LAYER 2
+                      K33 =  0.1000000E-03 FOR LAYER 1
 
-                      K33 =  0.9000000E-05 FOR LAYER 3
+                      K33 =  0.5000000E-09 FOR LAYER 2
+
+                      K33 =  0.5000000E-05 FOR LAYER 3
+
+                      K33 =  0.4000000E-05 FOR LAYER 4
  K22 not provided.  Assuming K22 = K.
  END PROCESSING GRIDDATA
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
@@ -294,15 +298,15 @@ Precision of REAL variables: 15
 
  END READING OUTPUT CONTROL FOR STRESS PERIOD 1
  UBDSV06 SAVING              WEL IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE WEL              ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE AGLY             ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE TET              ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE REA              ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE CANT             ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE TECH             ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE BOL              ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RCH IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE RCH_0            ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE SEA              ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE ETA              ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE AGY              ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE TET              ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE REA              ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE CANT             ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE TECH             ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE BOL              ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
 
  HEAD WILL BE SAVED ON UNIT 1022 AT END OF TIME STEP    1, STRESS PERIOD    1
 
@@ -316,36 +320,36 @@ Precision of REAL variables: 15
            IN:                                      IN:
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
-                 RCH =           2.9476                   RCH =           2.9476     RCH_0           
-                 CHD =       1.9938E-02                   CHD =       1.9938E-02     SEA             
-                 CHD =       5.6137E-03                   CHD =       5.6137E-03     ETA             
-                 CHD =           0.1271                   CHD =           0.1271     AGY             
-                 CHD =           0.3284                   CHD =           0.3284     TET             
-                 CHD =           0.2795                   CHD =           0.2795     REA             
-                 CHD =           0.1893                   CHD =           0.1893     CANT            
-                 CHD =           0.3660                   CHD =           0.3660     TECH            
-                 CHD =           1.0795                   CHD =           1.0795     BOL             
+                 RIV =           0.0000                   RIV =           0.0000     AGLY            
+                 RIV =       7.7451E-02                   RIV =       7.7451E-02     TET             
+                 RIV =           0.1119                   RIV =           0.1119     REA             
+                 RIV =           0.1561                   RIV =           0.1561     CANT            
+                 RIV =       6.3143E-02                   RIV =       6.3143E-02     TECH            
+                 RIV =           0.4064                   RIV =           0.4064     BOL             
+                 RCH =           3.1429                   RCH =           3.1429     RCH_0           
+                 CHD =       5.6994E-03                   CHD =       5.6994E-03     SEA             
+                 CHD =       7.9288E-03                   CHD =       7.9288E-03     ETA             
 
-            TOTAL IN =           5.3430              TOTAL IN =           5.3430
+            TOTAL IN =           3.9715              TOTAL IN =           3.9715
 
           OUT:                                     OUT:
           ----                                     ----
-                 WEL =           1.4126                   WEL =           1.4126     WEL             
+                 WEL =           1.4959                   WEL =           1.4959     WEL             
+                 RIV =           0.2361                   RIV =           0.2361     AGLY            
+                 RIV =           0.7344                   RIV =           0.7344     TET             
+                 RIV =           0.2073                   RIV =           0.2073     REA             
+                 RIV =           0.1071                   RIV =           0.1071     CANT            
+                 RIV =           0.2344                   RIV =           0.2344     TECH            
+                 RIV =       6.2888E-03                   RIV =       6.2888E-03     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH_0           
-                 CHD =           0.4741                   CHD =           0.4741     SEA             
-                 CHD =           0.4769                   CHD =           0.4769     ETA             
-                 CHD =           0.2887                   CHD =           0.2887     AGY             
-                 CHD =           1.5471                   CHD =           1.5471     TET             
-                 CHD =           0.3284                   CHD =           0.3284     REA             
-                 CHD =           0.1575                   CHD =           0.1575     CANT            
-                 CHD =           0.5821                   CHD =           0.5821     TECH            
-                 CHD =       7.5058E-02                   CHD =       7.5058E-02     BOL             
+                 CHD =           0.5379                   CHD =           0.5379     SEA             
+                 CHD =           0.4114                   CHD =           0.4114     ETA             
 
-           TOTAL OUT =           5.3423             TOTAL OUT =           5.3423
+           TOTAL OUT =           3.9709             TOTAL OUT =           3.9709
 
-            IN - OUT =       7.0563E-04              IN - OUT =       7.0563E-04
+            IN - OUT =       6.3953E-04              IN - OUT =       6.3953E-04
 
- PERCENT DISCREPANCY =           0.01     PERCENT DISCREPANCY =           0.01
+ PERCENT DISCREPANCY =           0.02     PERCENT DISCREPANCY =           0.02
 
 
 

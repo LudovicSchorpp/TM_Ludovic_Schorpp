@@ -143,33 +143,37 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        45    -9883.32                      1_GWF-(1,181,65)
- Under-relaxation          1              -9883.32                      1_GWF-(1,181,65)
- Linear Solver             2        33    -191.868                      1_GWF-(3,124,82)
- Under-relaxation          2              -172.681                      1_GWF-(3,124,82)
- Linear Solver             3        29    -21.0962                      1_GWF-(3,135,48)
- Under-relaxation          3              -18.9887                      1_GWF-(3,135,48)
- Linear Solver             4        22    -8.92268                      1_GWF-(3,135,49)
- Under-relaxation          4              -8.03220                      1_GWF-(3,135,49)
- Linear Solver             5        11    -3.84472                      1_GWF-(3,135,50)
- Under-relaxation          5              -3.46140                      1_GWF-(3,135,50)
- Linear Solver             6         5   -0.375985                      1_GWF-(3,135,50)
- Under-relaxation          6             -0.338537                      1_GWF-(3,135,50)
- Linear Solver             7         4   -4.301342E-02                  1_GWF-(3,135,50)
- Under-relaxation          7             -3.873359E-02                  1_GWF-(3,135,50)
- Linear Solver             8         1   -5.384283E-03                  1_GWF-(4,134,48)
+ Linear Solver             1        55     307.922                     1_GWF-(4,102,144)
+ Under-relaxation          1               307.922                     1_GWF-(4,102,144)
+ Linear Solver             2        38    -134.863                      1_GWF-(3,120,97)
+ Under-relaxation          2              -121.377                      1_GWF-(3,120,97)
+ Linear Solver             3        29    -13.4861                      1_GWF-(3,120,97)
+ Under-relaxation          3              -12.1388                      1_GWF-(3,120,97)
+ Linear Solver             4        18    -1.34719                      1_GWF-(3,120,97)
+ Under-relaxation          4              -1.21274                      1_GWF-(3,120,97)
+ Linear Solver             5         5   -0.141081                      1_GWF-(1,167,64)
+ Under-relaxation          5             -0.127015                      1_GWF-(1,167,64)
+ Linear Solver             6         3   -2.331365E-02                  1_GWF-(3,134,60)
+ Under-relaxation          6             -2.099161E-02                  1_GWF-(3,134,60)
+ Linear Solver             7         4   -2.614061E-02                  1_GWF-(4,145,67)
+ Under-relaxation          7             -2.285431E-02                   1_GWF-(4,71,79)
+ Linear Solver             8         2   -1.649691E-02                  1_GWF-(4,145,67)
+ Under-relaxation          8             -1.203222E-02                  1_GWF-(4,145,67)
+ Linear Solver             9         3   -1.323031E-02                   1_GWF-(4,71,79)
+ Under-relaxation          9             -1.323031E-02                   1_GWF-(4,71,79)
+ Linear Solver            10         2   -8.491166E-03                   1_GWF-(4,73,78)
 
- 8 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 150 TOTAL ITERATIONS
+ 10 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 159 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   2493748
- Number of allocated real variables:    2345365
- Allocated memory in megabytes:     28.7379    
+ Number of allocated integer variables:   2310612
+ Number of allocated real variables:    2283129
+ Allocated memory in megabytes:     27.5075    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/25 13:59:39
- Elapsed run time:  1.098 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/26 13:22:32
+ Elapsed run time:  1.575 Seconds
 
  Normal termination of simulation.
