@@ -61,6 +61,8 @@ def importWells3D(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",geol_c
     geol_col = the column name containing geol infos
     geol_layer : the name of the differents lithology encountered 
     layer_num : the num layer corresponding to the lithology in geol_layer
+    note : multiple layer can be assigned to one lithology (assign multiple number in layer_num),
+    in that case the uptake will be equally separate through each specified layer
     """
     
     ix=GridIntersect(grid)
@@ -74,9 +76,16 @@ def importWells3D(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",geol_c
             if not (np.isnan(Vw)) | (Vw == 0): #keep productive well
                     cellidx = ix.intersect_point(BD.geometry[o]).cellids[0][0]
                     cellidy = ix.intersect_point(BD.geometry[o]).cellids[0][1]
-                    cellid = (layer_num[ilayer],cellidx,cellidy) #cell on which the well is active
-                    if cellid in lst_domain: # check if the well is in the domain
-                        stress_data_well.append((cellid,-fac*Vw))
+                    
+                    if type(layer_num[ilayer]) == int:
+                        cellid = (layer_num[ilayer],cellidx,cellidy) #cell on which the well is active
+                        if cellid in lst_domain: # check if the well is in the domain
+                            stress_data_well.append((cellid,-fac*Vw))
+                    elif len(layer_num[ilayer]) > 1:
+                        for isublay in layer_num[ilayer]:
+                            cellid = (isublay,cellidx,cellidy)
+                            if cellid in lst_domain: # check if the well is in the domain
+                                stress_data_well.append((cellid,-fac*Vw/len(layer_num[ilayer])))
     
     return stress_data_well
 

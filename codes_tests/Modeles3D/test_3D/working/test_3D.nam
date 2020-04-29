@@ -10,6 +10,7 @@ BEGIN packages
   RCH6  test_3D.rch  rch_0
   CHD6  sea.chd  sea
   CHD6  eta.chd  eta
+  CHD6  plio.chd  plio
   RIV6  agly.riv  agly
   RIV6  Tet.riv  tet
   RIV6  Rea.riv  rea
