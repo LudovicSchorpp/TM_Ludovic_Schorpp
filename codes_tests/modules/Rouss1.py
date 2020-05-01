@@ -318,7 +318,7 @@ def linInt_Dfcol(df,weight="lengths",col="head",null=0):
     
 
 #12
-def ra_pack(pack,ibd,iper=0):
+def ra_pack(pack,ibd,iper=0,value=-1):
     
     """
     Return recarray containing position of cells from a certain package
@@ -327,7 +327,7 @@ def ra_pack(pack,ibd,iper=0):
     
     ra = pack.stress_period_data.get_data(key=iper)
     for k, i, j in ra['cellid']:
-        ibd[k, i, j] = -1
+        ibd[k, i, j] = value
         
         
 #13

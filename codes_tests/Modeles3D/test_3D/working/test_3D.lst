@@ -322,7 +322,7 @@ Precision of REAL variables: 15
  UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE CANT             ON UNIT   1022 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE TECH             ON UNIT   1022 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE BOL              ON UNIT   1022 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING              RCH IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE RCH_0            ON UNIT   1022 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RCH IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE RCH              ON UNIT   1022 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE SEA              ON UNIT   1022 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE ETA              ON UNIT   1022 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE PLIO             ON UNIT   1022 AT TIME STEP      1, STRESS PERIOD      1
@@ -345,7 +345,7 @@ Precision of REAL variables: 15
                  RIV =           0.1549                   RIV =           0.1549     CANT            
                  RIV =       3.0531E-02                   RIV =       3.0531E-02     TECH            
                  RIV =           0.4063                   RIV =           0.4063     BOL             
-                 RCH =           3.1429                   RCH =           3.1429     RCH_0           
+                 RCH =           3.1429                   RCH =           3.1429     RCH             
                  CHD =       2.5442E-02                   CHD =       2.5442E-02     SEA             
                  CHD =       1.2261E-02                   CHD =       1.2261E-02     ETA             
                  CHD =           0.3125                   CHD =           0.3125     PLIO            
@@ -361,7 +361,7 @@ Precision of REAL variables: 15
                  RIV =           0.1072                   RIV =           0.1072     CANT            
                  RIV =           0.4201                   RIV =           0.4201     TECH            
                  RIV =       6.2902E-03                   RIV =       6.2902E-03     BOL             
-                 RCH =           0.0000                   RCH =           0.0000     RCH_0           
+                 RCH =           0.0000                   RCH =           0.0000     RCH             
                  CHD =           0.6335                   CHD =           0.6335     SEA             
                  CHD =           0.4008                   CHD =           0.4008     ETA             
                  CHD =           0.0000                   CHD =           0.0000     PLIO            
