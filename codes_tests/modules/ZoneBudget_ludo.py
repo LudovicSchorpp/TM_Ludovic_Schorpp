@@ -1,16 +1,16 @@
-# this module groups some functions that can be used to extract the budget data from the cbc file of flopy
+# this module regroups some functions that can be used to extract the budget data from the cbc file of flopy
 
 import flopy as fp
 import numpy as np
 import pandas as pd
 
-def flows_Z2Z(z1,z2,zones=zones,ia=ia,ja=ja,flowja=flowja,return_map=False):
+def flows_Z2Z(z1,z2,zones,ia,ja,flowja,return_map=False):
     
     """
     Total flows from one zone to another
     
     """
-    arr = np.zeros([nlay*nrow*ncol])
+    #arr = np.zeros([nlay*nrow*ncol])
     flow_pos=0
     flow_neg=0
     
@@ -31,7 +31,7 @@ def flows_Z2Z(z1,z2,zones=zones,ia=ia,ja=ja,flowja=flowja,return_map=False):
         return flow_pos,flow_neg
     
     
-def flows_Pack2Z(pack,z1,zones=zones):
+def flows_Pack2Z(pack,z1,zones):
     
     """
     
@@ -43,16 +43,16 @@ def flows_Pack2Z(pack,z1,zones=zones):
     
     """
     
-flow_pos=0
-flow_neg=0
-for q1 in pack:
-    if zones[q1[0]]==z1:
+    flow_pos=0
+    flow_neg=0
+    for q1 in pack:
+        if zones[q1[0]-1]==z1: # nodenumber is one based !
 
-        if q1[2]>0:
-            flow_pos += q1[2]
-        else:
-            flow_neg -= q1[2]
-
-return flow_pos,flow_neg
+            if q1[2]>0:
+                flow_pos += q1[2]
+            else:
+                flow_neg -= q1[2]
+    
+    return flow_pos,flow_neg
 
 
