@@ -4,13 +4,18 @@ import flopy as fp
 import numpy as np
 import pandas as pd
 
-def flows_Z2Z(z1,z2,zones,ia,ja,flowja,return_map=False):
+def flows_Z2Z(z1,z2,zones,ia,ja,cbc,kstpkper=None,return_map=False):
     
     """
     Total flows from one zone to another
     
     """
-    #arr = np.zeros([nlay*nrow*ncol])
+    nlay = zones.shape[0]
+    nrow = zones.shape[1]
+    ncol = zones.shape[2]
+    zones = zones.reshape(nlay*nrow*ncol)
+    arr = np.zeros([nlay*nrow*ncol])
+    flowja = cbc.get_data(text='FLOW-JA-FACE',kstpkper=kstpkper)[0][0, 0, :]
     flow_pos=0
     flow_neg=0
     
@@ -23,7 +28,8 @@ def flows_Z2Z(z1,z2,zones,ia,ja,flowja,return_map=False):
                         flow_pos += flowja[ipos]
                     else:
                         flow_neg -= flowja[ipos]
-                arr[celln] = flowja[ipos]
+                if return_map:
+                    arr[celln] = flowja[ipos]
                 
     if return_map:
         return flow_pos,flow_neg,arr
@@ -38,11 +44,14 @@ def flows_Pack2Z(pack,z1,zones):
     Calculate the flux from/to a modflow pack to/from a certain zone
     pack : the package budget data from the cbc file for example : cbc.get_data(text="chd")[0]
     z1 : the number of the zone that we want to investigate
-    zones : the numpy 2D/3D array containing infos about zones
+    zones : the numpy 2D/3D array containing infos about zones (can't be 1D)
     return : IN/OUT flux (from/to) 
     
     """
-    
+    nlay = zones.shape[0]
+    nrow = zones.shape[1]
+    ncol = zones.shape[2]
+    zones = zones.reshape(nlay*nrow*ncol)
     flow_pos=0
     flow_neg=0
     for q1 in pack:
