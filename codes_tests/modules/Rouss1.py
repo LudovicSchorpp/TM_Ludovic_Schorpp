@@ -526,7 +526,7 @@ def get_Total_Budget(model_name,model_dir):
     ###number of packages
     npack=0
     for o in range(100):
-        f = open("working/{}.lst".format(model_name),"r")
+        f = open("{}/{}.lst".format(model_dir,model_name),"r")
         if f.readlines()[i+8+o]=="\n":
             break
         npack +=1
@@ -539,13 +539,13 @@ def get_Total_Budget(model_name,model_dir):
     for ipak in range(npack):
         ipak += 8
         
-        f = open("working/{}.lst".format(model_name),"r")
+        f = open("{}/{}.lst".format(model_dir,model_name),"r")
         lst_nam_pak.append(f.readlines()[i+ipak][85:96].rstrip())
 
-        f = open("working/{}.lst".format(model_name),"r")
+        f = open("{}/{}.lst".format(model_dir,model_name),"r")
         lst_val_IN.append(float(f.readlines()[i+ipak][63:80]))
 
-        f = open("working/{}.lst".format(model_name),"r")
+        f = open("{}/{}.lst".format(model_dir,model_name),"r")
         lst_val_OUT.append(float(f.readlines()[i+ipak+npack+5][63:80]))
 
 
