@@ -71,8 +71,8 @@ Precision of REAL variables: 15
  ACTION:READ                
 
 
- OPENED eta.chd
- FILE TYPE:CHD6                   UNIT 1013   STATUS:OLD                 
+ OPENED eta.drn
+ FILE TYPE:DRN6                   UNIT 1013   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
@@ -168,6 +168,16 @@ Precision of REAL variables: 15
     MAXBOUND =      56
  END OF WEL DIMENSIONS
 
+ DRN   -- DRN PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1013
+
+ PROCESSING DRN OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF DRN OPTIONS
+
+ PROCESSING DRN DIMENSIONS
+    MAXBOUND =     643
+ END OF DRN DIMENSIONS
+
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
 
  PROCESSING RIV OPTIONS
@@ -195,7 +205,7 @@ Precision of REAL variables: 15
  END OF RIV OPTIONS
 
  PROCESSING RIV DIMENSIONS
-    MAXBOUND =      96
+    MAXBOUND =     108
  END OF RIV DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1018
@@ -246,16 +256,6 @@ Precision of REAL variables: 15
 
  PROCESSING CHD DIMENSIONS
     MAXBOUND =   16431
- END OF CHD DIMENSIONS
-
- CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1013
-
- PROCESSING CHD OPTIONS
-    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
- END OF CHD OPTIONS
-
- PROCESSING CHD DIMENSIONS
-    MAXBOUND =     643
  END OF CHD DIMENSIONS
 
  CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1014
@@ -326,6 +326,7 @@ Precision of REAL variables: 15
  UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              WEL IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE WEL              ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              WEL IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE CORB             ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              DRN IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE ETA              ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE AGLY             ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE TET              ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE REA              ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
@@ -334,7 +335,6 @@ Precision of REAL variables: 15
  UBDSV06 SAVING              RIV IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE BOL              ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RCH IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE RCH              ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE SEA              ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE ETA              ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              CHD IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE THUIR            ON UNIT   1023 AT TIME STEP      1, STRESS PERIOD      1
 
  HEAD WILL BE SAVED ON UNIT 1024 AT END OF TIME STEP    1, STRESS PERIOD    1
@@ -350,37 +350,37 @@ Precision of REAL variables: 15
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
-                 RIV =       5.2154E-03                   RIV =       5.2154E-03     AGLY            
+                 DRN =           0.0000                   DRN =           0.0000     ETA             
+                 RIV =       5.0678E-03                   RIV =       5.0678E-03     AGLY            
                  RIV =           0.1290                   RIV =           0.1290     TET             
                  RIV =           0.1717                   RIV =           0.1717     REA             
                  RIV =           0.1695                   RIV =           0.1695     CANT            
-                 RIV =       8.7574E-02                   RIV =       8.7574E-02     TECH            
+                 RIV =       8.7568E-02                   RIV =       8.7568E-02     TECH            
                  RIV =           0.4813                   RIV =           0.4813     BOL             
-                 RCH =           3.1425                   RCH =           3.1425     RCH             
-                 CHD =       6.3028E-02                   CHD =       6.3028E-02     SEA             
-                 CHD =       2.2345E-02                   CHD =       2.2345E-02     ETA             
+                 RCH =           3.3699                   RCH =           3.3699     RCH             
+                 CHD =       6.3112E-02                   CHD =       6.3112E-02     SEA             
                  CHD =           0.2928                   CHD =           0.2928     THUIR           
 
-            TOTAL IN =           4.7649              TOTAL IN =           4.7649
+            TOTAL IN =           4.9700              TOTAL IN =           4.9700
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.5009                   WEL =           1.5009     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 RIV =           0.2864                   RIV =           0.2864     AGLY            
+                 DRN =           0.7549                   DRN =           0.7549     ETA             
+                 RIV =           0.2868                   RIV =           0.2868     AGLY            
                  RIV =           1.0640                   RIV =           1.0640     TET             
-                 RIV =           0.2009                   RIV =           0.2009     REA             
-                 RIV =           0.1263                   RIV =           0.1263     CANT            
+                 RIV =           0.2319                   RIV =           0.2319     REA             
+                 RIV =           0.1262                   RIV =           0.1262     CANT            
                  RIV =           0.2681                   RIV =           0.2681     TECH            
                  RIV =       7.8080E-03                   RIV =       7.8080E-03     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
-                 CHD =           0.7320                   CHD =           0.7320     SEA             
-                 CHD =           0.5780                   CHD =           0.5780     ETA             
+                 CHD =           0.7290                   CHD =           0.7290     SEA             
                  CHD =           0.0000                   CHD =           0.0000     THUIR           
 
-           TOTAL OUT =           4.7645             TOTAL OUT =           4.7645
+           TOTAL OUT =           4.9696             TOTAL OUT =           4.9696
 
-            IN - OUT =       4.3895E-04              IN - OUT =       4.3895E-04
+            IN - OUT =       4.3886E-04              IN - OUT =       4.3886E-04
 
  PERCENT DISCREPANCY =           0.01     PERCENT DISCREPANCY =           0.01
 
