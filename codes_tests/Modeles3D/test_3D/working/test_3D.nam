@@ -10,8 +10,8 @@ BEGIN packages
   RCH6  test_3D.rch  rch
   WEL6  Corb.wel  corb
   CHD6  sea.chd  sea
-  DRN6  eta.drn  eta
   CHD6  thuir.chd  thuir
+  DRN6  eta.drn  eta
   RIV6  agly.riv  agly
   RIV6  Tet.riv  tet
   RIV6  Rea.riv  rea

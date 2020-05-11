@@ -143,26 +143,28 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        24     284.133                      1_GWF-(1,79,140)
- Under-relaxation          1               284.133                      1_GWF-(1,79,140)
- Linear Solver             2        12    -30.6404                      1_GWF-(1,124,82)
- Under-relaxation          2              -27.5764                      1_GWF-(1,124,82)
- Linear Solver             3        10    -13.0898                      1_GWF-(1,122,81)
- Under-relaxation          3              -11.7821                      1_GWF-(1,122,81)
- Linear Solver             4        12    -14.3982                      1_GWF-(1,134,59)
- Under-relaxation          4              -12.9612                      1_GWF-(1,134,59)
- Linear Solver             5        10    -6.33339                      1_GWF-(1,122,75)
- Under-relaxation          5              -5.70195                      1_GWF-(1,122,75)
- Linear Solver             6         7    -2.28269                      1_GWF-(1,130,73)
- Under-relaxation          6              -2.05533                      1_GWF-(1,130,73)
- Linear Solver             7         6   -0.484997                     1_GWF-(1,104,104)
- Under-relaxation          7             -0.436740                     1_GWF-(1,104,104)
- Linear Solver             8         3   -6.118863E-02                  1_GWF-(1,33,110)
- Under-relaxation          8             -5.510648E-02                  1_GWF-(1,33,110)
- Linear Solver             9         1   -6.566613E-03                  1_GWF-(1,33,110)
+ Linear Solver             1        22     284.114                      1_GWF-(1,79,140)
+ Under-relaxation          1               284.114                      1_GWF-(1,79,140)
+ Linear Solver             2        15    -27.0658                     1_GWF-(1,100,100)
+ Under-relaxation          2              -24.3592                     1_GWF-(1,100,100)
+ Linear Solver             3        11    -9.84420                      1_GWF-(1,99,102)
+ Under-relaxation          3              -8.86077                      1_GWF-(1,99,102)
+ Linear Solver             4        11    -6.96661                      1_GWF-(1,128,79)
+ Under-relaxation          4              -6.27134                      1_GWF-(1,128,79)
+ Linear Solver             5        11    -4.18256                      1_GWF-(1,122,77)
+ Under-relaxation          5              -3.76556                      1_GWF-(1,122,77)
+ Linear Solver             6         9    -1.90483                      1_GWF-(1,38,108)
+ Under-relaxation          6              -1.71511                      1_GWF-(1,38,108)
+ Linear Solver             7         6   -0.620393                      1_GWF-(1,37,110)
+ Under-relaxation          7             -0.558664                      1_GWF-(1,37,110)
+ Linear Solver             8         5   -0.156587                      1_GWF-(1,37,111)
+ Under-relaxation          8             -0.141023                      1_GWF-(1,37,111)
+ Linear Solver             9         2   -1.559902E-02                  1_GWF-(1,37,111)
+ Under-relaxation          9             -1.405003E-02                  1_GWF-(1,37,111)
+ Linear Solver            10         1   -5.970738E-03                  1_GWF-(1,135,57)
 
- 9 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 85 TOTAL ITERATIONS
+ 10 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 93 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -171,7 +173,7 @@ Integer Variables
  Allocated memory in megabytes:     6.57062    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/04/28 15:39:06
- Elapsed run time:  0.422 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/05/11 13:27:34
+ Elapsed run time:  0.387 Seconds
 
  Normal termination of simulation.

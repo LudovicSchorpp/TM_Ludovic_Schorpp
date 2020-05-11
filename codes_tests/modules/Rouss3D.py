@@ -89,17 +89,7 @@ def importWells3D(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",geol_c
     
     return stress_data_well
 
-#3
-def active_dom(surf,grid,nodata=9999):
-    
-    """
-    return a idomain for active zones, base on surfaces
-    surf : an array with no data zones == 9999
-    grid : modelgrid
-    """
-    idomainQ = np.zeros([grid.nrow,grid.ncol])
-    idomainQ[surf != nodata] = 1
-    return idomainQ
+
 
 #4
 def up_act_cell(idomain):
@@ -123,37 +113,7 @@ def up_act_cell(idomain):
                     break
     return lst_dom_act
 
-#5
-def MinThick(idomain,botm,top,min_ep_act=5,min_ep_inact=0.1):
-    
-    """
-    Change the thickness of certains cells based on a criterion (min_ep_act for active cells and min_ep_inact for inactive cells)
-    Can also be used to change cells with negative thickness
-    
-    idomain : 3d list (nlay,nrow,ncol)
-    botm : the list containing every surfaces of all the layers
-    top : the top surface
-    min_ep : int, the minimum thickness tolerate
-    """
-    
-    #active cells (1st layer)
-    mask = ((top-botm[0])<= min_ep_act) & (idomain[0]==1)
-    botm[0][mask] = top[mask] - min_ep_act
-    
-    #inactive cells (1st layer)
-    mask = ((top-botm[0])<= min_ep_inact) & (idomain[0]!=1)
-    top[mask] = botm[0][mask] + min_ep_inact
-    
-    
-    #active cells 
-    for ilay in range(botm.shape[0]-1):
-        mask = ((botm[ilay] - botm[ilay+1])< min_ep_act) & (idomain[ilay+1]==1)
-        botm[ilay+1][mask] = botm[ilay][mask] - min_ep_act
-    
-    #inactive cells
-    for ilay in range(botm.shape[0]-1):
-        mask = ((botm[ilay] - botm[ilay+1])< min_ep_inact) & (idomain[ilay+1]!=1)
-        botm[ilay+1][mask] = botm[ilay][mask] - min_ep_inact
+
     
 #6
 def assign_k_zones(zone1,k1,k,g,layer):
