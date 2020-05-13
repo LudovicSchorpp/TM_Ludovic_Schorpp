@@ -1,0 +1,11 @@
+BEGIN options
+  DIGITS  10
+  PRINT_INPUT
+END options
+
+BEGIN continuous  FILEOUT  gouzi.csv
+  'col 5'  HEAD  1 16 6
+  'col 10'  HEAD  1 16 11
+  'col 20'  HEAD  1 16 21
+END continuous  FILEOUT  gouzi.csv
+

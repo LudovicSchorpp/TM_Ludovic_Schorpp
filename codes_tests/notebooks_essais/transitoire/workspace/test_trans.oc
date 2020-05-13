@@ -1,0 +1,13 @@
+BEGIN options
+  BUDGET  FILEOUT  test_trans.cbb
+  HEAD  FILEOUT  test_trans.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  ALL
+  SAVE  BUDGET  ALL
+  PRINT  HEAD  FIRST
+  PRINT  HEAD  LAST
+  PRINT  BUDGET  LAST
+END period  1
+

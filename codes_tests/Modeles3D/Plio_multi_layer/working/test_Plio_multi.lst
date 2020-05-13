@@ -137,7 +137,7 @@ Precision of REAL variables: 15
 
  THE SPECIFIED IDOMAIN RESULTS IN A REDUCED NUMBER OF CELLS.
  NUMBER OF USER NODES:  425880
- NUMBER OF NODES IN SOLUTION:  221312
+ NUMBER OF NODES IN SOLUTION:  221337
 
 
 
@@ -155,7 +155,7 @@ Precision of REAL variables: 15
  END OF WEL OPTIONS
 
  PROCESSING WEL DIMENSIONS
-    MAXBOUND =     504
+    MAXBOUND =     281
  END OF WEL DIMENSIONS
 
  WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1011
@@ -279,19 +279,11 @@ Precision of REAL variables: 15
 
                         K =  0.2500000E-08 FOR LAYER 2
 
-                        K =  0.5000000E-04 FOR LAYER 3
-
                         K =  0.2500000E-08 FOR LAYER 4
-
-                        K =  0.5000000E-04 FOR LAYER 5
 
                         K =  0.2500000E-08 FOR LAYER 6
 
-                        K =  0.5000000E-04 FOR LAYER 7
-
                         K =  0.2500000E-08 FOR LAYER 8
-
-                        K =  0.5000000E-04 FOR LAYER 9
 
                         K =  0.1000000E-04 FOR LAYER 10
  K33 not provided.  Assuming K33 = K.
@@ -362,39 +354,39 @@ Precision of REAL variables: 15
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
-                 DRN =       5.5511E-17                   DRN =       5.5511E-17     ETA             
+                 DRN =           0.0000                   DRN =           0.0000     ETA             
                  RIV =           0.0000                   RIV =           0.0000     AGLY            
-                 RIV =       6.9329E-02                   RIV =       6.9329E-02     TET             
-                 RIV =           0.1465                   RIV =           0.1465     REA             
-                 RIV =           0.1557                   RIV =           0.1557     CANT            
-                 RIV =       7.0683E-02                   RIV =       7.0683E-02     TECH            
-                 RIV =           0.3774                   RIV =           0.3774     BOL             
+                 RIV =       8.8873E-02                   RIV =       8.8873E-02     TET             
+                 RIV =           0.1711                   RIV =           0.1711     REA             
+                 RIV =           0.1935                   RIV =           0.1935     CANT            
+                 RIV =       6.7992E-02                   RIV =       6.7992E-02     TECH            
+                 RIV =           0.4208                   RIV =           0.4208     BOL             
                  RCH =           3.3699                   RCH =           3.3699     RCH             
-                 CHD =       8.3774E-04                   CHD =       8.3774E-04     SEA             
-                 CHD =           0.2752                   CHD =           0.2752     THUIR           
+                 CHD =       5.1572E-04                   CHD =       5.1572E-04     SEA             
+                 CHD =           0.3184                   CHD =           0.3184     THUIR           
 
-            TOTAL IN =           4.6654              TOTAL IN =           4.6654
+            TOTAL IN =           4.8311              TOTAL IN =           4.8311
 
           OUT:                                     OUT:
           ----                                     ----
-                 WEL =           1.1347                   WEL =           1.1347     WEL             
+                 WEL =           1.4959                   WEL =           1.4959     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           0.8018                   DRN =           0.8018     ETA             
-                 RIV =           0.3791                   RIV =           0.3791     AGLY            
-                 RIV =           1.0146                   RIV =           1.0146     TET             
-                 RIV =           0.2503                   RIV =           0.2503     REA             
-                 RIV =           0.1281                   RIV =           0.1281     CANT            
-                 RIV =           0.2427                   RIV =           0.2427     TECH            
-                 RIV =       7.9830E-03                   RIV =       7.9830E-03     BOL             
+                 DRN =           0.7869                   DRN =           0.7869     ETA             
+                 RIV =           0.2927                   RIV =           0.2927     AGLY            
+                 RIV =           0.9262                   RIV =           0.9262     TET             
+                 RIV =           0.2669                   RIV =           0.2669     REA             
+                 RIV =           0.1010                   RIV =           0.1010     CANT            
+                 RIV =           0.2417                   RIV =           0.2417     TECH            
+                 RIV =       6.3909E-03                   RIV =       6.3909E-03     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
-                 CHD =           0.7053                   CHD =           0.7053     SEA             
+                 CHD =           0.7129                   CHD =           0.7129     SEA             
                  CHD =           0.0000                   CHD =           0.0000     THUIR           
 
-           TOTAL OUT =           4.6645             TOTAL OUT =           4.6645
+           TOTAL OUT =           4.8306             TOTAL OUT =           4.8306
 
-            IN - OUT =       9.3718E-04              IN - OUT =       9.3718E-04
+            IN - OUT =       4.4318E-04              IN - OUT =       4.4318E-04
 
- PERCENT DISCREPANCY =           0.02     PERCENT DISCREPANCY =           0.02
+ PERCENT DISCREPANCY =           0.01     PERCENT DISCREPANCY =           0.01
 
 
 

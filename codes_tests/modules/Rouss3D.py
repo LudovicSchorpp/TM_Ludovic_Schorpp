@@ -77,15 +77,21 @@ def importWells3D(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",geol_c
                     cellidx = ix.intersect_point(BD.geometry[o]).cellids[0][0]
                     cellidy = ix.intersect_point(BD.geometry[o]).cellids[0][1]
                     
-                    if type(layer_num[ilayer]) == int:
+                    if type(layer_num[ilayer]) == int :
                         cellid = (layer_num[ilayer],cellidx,cellidy) #cell on which the well is active
                         if cellid in lst_domain: # check if the well is in the domain
                             stress_data_well.append((cellid,-fac*Vw))
                     elif len(layer_num[ilayer]) > 1:
+                        cpt=0
                         for isublay in layer_num[ilayer]:
                             cellid = (isublay,cellidx,cellidy)
+
+                            if cellid in lst_domain:
+                                cpt+=1
+                        for isublay in layer_num[ilayer]:   
+                            cellid = (isublay,cellidx,cellidy)
                             if cellid in lst_domain: # check if the well is in the domain
-                                stress_data_well.append((cellid,-fac*Vw/len(layer_num[ilayer])))
+                                stress_data_well.append((cellid,-fac*Vw/cpt))
     
     return stress_data_well
 

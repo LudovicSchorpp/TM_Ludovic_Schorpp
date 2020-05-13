@@ -554,3 +554,21 @@ def get_Total_Budget(model_name,model_dir):
                  "OUT":lst_val_OUT})
 
     return Budget
+
+#21
+def files_ext(folder,ends=".txt",split=False):
+    
+    """
+    Extract and returns a list containing all the file paths ending with a certain extension in a given folder
+    ends : str, extension of the files
+    split : bool, keep the extension of the file
+    """
+    lst_file=[]
+    for file in os.listdir(folder):
+        if file.endswith(ends):
+            file = os.path.join(folder,file)
+            if split:
+                lst_file.append(os.path.splitext(file)[0])
+            else:
+                lst_file.append(file)
+    return lst_file
