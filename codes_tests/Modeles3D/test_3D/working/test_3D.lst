@@ -165,7 +165,7 @@ Precision of REAL variables: 15
  END OF WEL OPTIONS
 
  PROCESSING WEL DIMENSIONS
-    MAXBOUND =      56
+    MAXBOUND =      49
  END OF WEL DIMENSIONS
 
  DRN   -- DRN PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1014
@@ -351,36 +351,36 @@ Precision of REAL variables: 15
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
                  DRN =           0.0000                   DRN =           0.0000     ETA             
-                 RIV =       5.0765E-03                   RIV =       5.0765E-03     AGLY            
-                 RIV =           0.1290                   RIV =           0.1290     TET             
-                 RIV =           0.1714                   RIV =           0.1714     REA             
-                 RIV =           0.1689                   RIV =           0.1689     CANT            
-                 RIV =       8.7540E-02                   RIV =       8.7540E-02     TECH            
-                 RIV =           0.4812                   RIV =           0.4812     BOL             
+                 RIV =       4.8646E-03                   RIV =       4.8646E-03     AGLY            
+                 RIV =           0.1288                   RIV =           0.1288     TET             
+                 RIV =           0.1746                   RIV =           0.1746     REA             
+                 RIV =           0.1628                   RIV =           0.1628     CANT            
+                 RIV =       8.7773E-02                   RIV =       8.7773E-02     TECH            
+                 RIV =           0.4813                   RIV =           0.4813     BOL             
                  RCH =           3.3699                   RCH =           3.3699     RCH             
-                 CHD =       6.3048E-02                   CHD =       6.3048E-02     SEA             
-                 CHD =           0.2923                   CHD =           0.2923     THUIR           
+                 CHD =       6.3023E-02                   CHD =       6.3023E-02     SEA             
+                 CHD =           0.2928                   CHD =           0.2928     THUIR           
 
-            TOTAL IN =           4.9682              TOTAL IN =           4.9682
+            TOTAL IN =           4.9658              TOTAL IN =           4.9658
 
           OUT:                                     OUT:
           ----                                     ----
-                 WEL =           1.5009                   WEL =           1.5009     WEL             
+                 WEL =           1.5059                   WEL =           1.5059     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           0.7547                   DRN =           0.7547     ETA             
-                 RIV =           0.2867                   RIV =           0.2867     AGLY            
-                 RIV =           1.0634                   RIV =           1.0634     TET             
-                 RIV =           0.2318                   RIV =           0.2318     REA             
-                 RIV =           0.1261                   RIV =           0.1261     CANT            
-                 RIV =           0.2679                   RIV =           0.2679     TECH            
-                 RIV =       7.8008E-03                   RIV =       7.8008E-03     BOL             
+                 DRN =           0.7526                   DRN =           0.7526     ETA             
+                 RIV =           0.2870                   RIV =           0.2870     AGLY            
+                 RIV =           1.0637                   RIV =           1.0637     TET             
+                 RIV =           0.2304                   RIV =           0.2304     REA             
+                 RIV =           0.1220                   RIV =           0.1220     CANT            
+                 RIV =           0.2672                   RIV =           0.2672     TECH            
+                 RIV =       7.7965E-03                   RIV =       7.7965E-03     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
-                 CHD =           0.7285                   CHD =           0.7285     SEA             
+                 CHD =           0.7286                   CHD =           0.7286     SEA             
                  CHD =           0.0000                   CHD =           0.0000     THUIR           
 
-           TOTAL OUT =           4.9678             TOTAL OUT =           4.9678
+           TOTAL OUT =           4.9653             TOTAL OUT =           4.9653
 
-            IN - OUT =       4.3887E-04              IN - OUT =       4.3887E-04
+            IN - OUT =       4.6096E-04              IN - OUT =       4.6096E-04
 
  PERCENT DISCREPANCY =           0.01     PERCENT DISCREPANCY =           0.01
 
