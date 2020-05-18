@@ -48,7 +48,7 @@ def MinThick(idomain,botm,top,min_ep_act=5,min_ep_inact=0.1):
     
     #inactive cells (1st layer)
     mask = ((top-botm[0])<= min_ep_inact) & (idomain[0]!=1)
-    top[mask] = botm[0][mask] + min_ep_inact
+    botm[0][mask] = top[mask] - min_ep_inact
     
     
     #active cells 

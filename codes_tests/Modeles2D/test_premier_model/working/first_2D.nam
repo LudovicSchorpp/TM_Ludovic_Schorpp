@@ -8,14 +8,16 @@ BEGIN packages
   NPF6  first_2D.npf  npf
   RCH6  first_2D.rcha  rcha
   WEL6  wel.wel  wel
+  WEL6  Corb.wel  corb
+  CHD6  thuir.chd  thuir
   CHD6  sea.chd  sea
   CHD6  eta.chd  eta
   DRN6  first_2D.drn  drn
-  CHD6  agy.chd  agy
-  CHD6  Tet.chd  tet
-  CHD6  Rea.chd  rea
-  CHD6  Cant.chd  cant
-  CHD6  Tech.chd  tech
-  CHD6  Bol.chd  bol
+  RIV6  agy.chd  agy
+  RIV6  Tet.chd  tet
+  RIV6  Rea.chd  rea
+  RIV6  Cant.chd  cant
+  RIV6  Tech.chd  tech
+  RIV6  Bol.chd  bol
 END packages
 

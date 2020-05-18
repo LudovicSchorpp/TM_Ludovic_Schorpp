@@ -140,15 +140,15 @@ Integer Variables
  ---------------------------------------------------------------------------------------
  Linear Solver             1        50    -10246.1                     1_GWF-(2,162,146)
  Under-relaxation          1              -10246.1                     1_GWF-(2,162,146)
- Linear Solver             2        50    -79.2802                      1_GWF-(3,124,82)
- Under-relaxation          2              -79.2802                      1_GWF-(3,124,82)
- Linear Solver             3        50    -3.61298                      1_GWF-(3,136,48)
- Under-relaxation          3              -3.61298                      1_GWF-(3,136,48)
- Linear Solver             4        23   -0.276876                     1_GWF-(1,110,124)
- Under-relaxation          4             -0.276876                     1_GWF-(1,110,124)
- Linear Solver             5         4   -5.450500E-02                 1_GWF-(1,108,126)
- Under-relaxation          5             -5.450500E-02                 1_GWF-(1,108,126)
- Linear Solver             6         1   -3.548703E-04                 1_GWF-(2,107,124)
+ Linear Solver             2        50    -79.3118                      1_GWF-(3,124,82)
+ Under-relaxation          2              -79.3118                      1_GWF-(3,124,82)
+ Linear Solver             3        50    -3.61289                      1_GWF-(3,136,48)
+ Under-relaxation          3              -3.61289                      1_GWF-(3,136,48)
+ Linear Solver             4        23   -0.276602                     1_GWF-(1,110,124)
+ Under-relaxation          4             -0.276602                     1_GWF-(1,110,124)
+ Linear Solver             5         4   -5.422743E-02                 1_GWF-(1,108,126)
+ Under-relaxation          5             -5.422743E-02                 1_GWF-(1,108,126)
+ Linear Solver             6         1   -3.506716E-04                 1_GWF-(2,107,124)
 
  6 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
  178 TOTAL ITERATIONS
@@ -160,7 +160,7 @@ Integer Variables
  Allocated memory in megabytes:     66.1554    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/05/13 17:31:05
- Elapsed run time:  2.339 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/05/18 16:40:10
+ Elapsed run time:  2.402 Seconds
 
  Normal termination of simulation.

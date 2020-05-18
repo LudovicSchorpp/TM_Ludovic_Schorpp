@@ -536,6 +536,7 @@ def get_Total_Budget(model_name,model_dir):
     lst_val_IN =[]
     lst_val_OUT = []
     lst_nam_pak = []
+    pak_type=[]
     for ipak in range(npack):
         ipak += 8
         
@@ -547,11 +548,15 @@ def get_Total_Budget(model_name,model_dir):
 
         f = open("{}/{}.lst".format(model_dir,model_name),"r")
         lst_val_OUT.append(float(f.readlines()[i+ipak+npack+5][63:80]))
+        
+        f = open("{}/{}.lst".format(model_dir,model_name),"r")
+        pak_type.append(f.readlines()[i+ipak][58:62])
 
 
     Budget = pd.DataFrame({"Pack":lst_nam_pak,
                   "IN":lst_val_IN,
-                 "OUT":lst_val_OUT})
+                 "OUT":lst_val_OUT,
+                  "Type":pak_type})
 
     return Budget
 
@@ -561,7 +566,7 @@ def files_ext(folder,ends=".txt",split=False):
     """
     Extract and returns a list containing all the file paths ending with a certain extension in a given folder
     ends : str, extension of the files
-    split : bool, keep the extension of the file
+    split : bool, keep the extension at the end of the path
     """
     lst_file=[]
     for file in os.listdir(folder):
