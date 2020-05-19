@@ -394,7 +394,6 @@ def importWells(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0)
                     stress_data_well.append((cellid,-fac*Vw))
             except:
                 pass
-
     return stress_data_well
 
 #15
@@ -409,59 +408,6 @@ def coor_convert(x,y,epsgin,epsgout):
     xp,yp = transform(inproj,outproj,x,y)
     return xp,yp
 
-
-#16 
-def Chabart2df(file):
-    
-    """
-    to import data from a Chabart files (csv file), return a df with coordinates and the values in L93
-    """
-    
-    x_l=[]; y_l=[]; V=[]
-    x0 = 620;y1 = 3062;
-    data = pd.read_csv(file,sep=";",header=None,na_values=None)
-    data[data==7777]=0 # remove nodata
-    data[data==9999]=0 # remove nodata
-    nrow=38;ncol=42
-
-
-    for irow in np.arange(nrow):
-        if irow == 0:
-            y = y1
-        else:
-            y = y1 - irow
-        for icol in np.arange(ncol):
-            if icol == 0 :
-                x = x0
-            else:
-                x = x0 + icol
-            if data.iloc[irow,icol] != 0:
-                x_l.append(x)
-                y_l.append(y)
-                V.append(data.iloc[irow,icol])
-    
-    x_l = [i*1000 for i in x_l]
-    y_l = [i*1000 for i in y_l]
-    X,Y = coor_convert(x_l,y_l,27573,2154)
-    return pd.DataFrame({"x":X,"y":Y,"data":V})
-
-
-#16 bis 
-def dfXY2lstModflow(df,x_col="x",y_col="y",data_col="data",layer=0,fac=1/1000/365/86400):
-    
-    """
-    from a df with x,y and data to a Modflow list with cellids and stuffs, in progress...
-    can be used easily with Chabart2lst
-    """
-    lst = []
-    for i in range(len(a)):
-        x = a.loc[i,"x"]
-        y = a.loc[i,"y"]
-        cellidr,cellidc = grid.intersect(x,y)
-        lst.append(((layer,cellidr,cellidc),fac*a.loc[i,"data"]))
-    return lst
-
-
 #17
 def chd2riv(riv_chd,cond,rdepth):
     
@@ -475,7 +421,6 @@ def chd2riv(riv_chd,cond,rdepth):
     Riv=[]
     for cellid,stage in riv_chd:
         Riv.append((cellid,stage,cond,stage-rdepth))
-    
     riv_chd[:] = Riv
     
 #18
@@ -551,7 +496,6 @@ def get_Total_Budget(model_name,model_dir):
         
         f = open("{}/{}.lst".format(model_dir,model_name),"r")
         pak_type.append(f.readlines()[i+ipak][58:62])
-
 
     Budget = pd.DataFrame({"Pack":lst_nam_pak,
                   "IN":lst_val_IN,

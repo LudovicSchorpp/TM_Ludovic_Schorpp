@@ -14,7 +14,7 @@ def reshapeZones(zones):
 
 
 #1
-def flows_Z2Z(z1,z2,zones,ia,ja,cbc,kstpkper=None,return_map=False):
+def flows_Z2Z(z1,z2,zones,ia,ja,cbc,kstpkper=None):
     
     """
     Total flows from one zone to another
@@ -38,13 +38,8 @@ def flows_Z2Z(z1,z2,zones,ia,ja,cbc,kstpkper=None,return_map=False):
                         flow_pos += flowja[ipos]
                     else:
                         flow_neg -= flowja[ipos]
-                if return_map:
-                    arr[celln] = flowja[ipos]
                 
-    if return_map:
-        return flow_pos,flow_neg,arr
-    else:
-        return flow_pos,flow_neg
+    return flow_pos,flow_neg
     
 #2    
 def flows_Pack2Z(pack,z1,zones):
@@ -63,13 +58,15 @@ def flows_Pack2Z(pack,z1,zones):
     zones = zones.reshape(nlay*nrow*ncol)
     flow_pos=0
     flow_neg=0
-    for q1 in pack:
-        if zones[q1[0]-1]==z1: # nodenumber is one based !
+    
+    if z1 in np.unique(zones[pack[0].node]):
+        for q1 in pack:
+            if zones[q1[0]-1]==z1: # nodenumber is one based !
 
-            if q1[2]>0:
-                flow_pos += q1[2]
-            else:
-                flow_neg -= q1[2]
+                if q1[2]>0:
+                    flow_pos += q1[2]
+                else:
+                    flow_neg -= q1[2]
     
     return flow_pos,flow_neg
 
