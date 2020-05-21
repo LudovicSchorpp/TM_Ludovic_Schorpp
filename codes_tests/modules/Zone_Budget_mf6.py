@@ -3,13 +3,15 @@
 import flopy as fp
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
-from Rouss1 import *
+
+import os
 
 #poo tentative
 class Zb():
     
-    def __init__(self,zones,m_name,m_dir,m_n=1):
+    def __init__(self,zones,m_name,m_dir,cbc,m_n=1):
         
         # some attributes
         self.nlay = zones.shape[0]
@@ -17,7 +19,9 @@ class Zb():
         self.ncol = zones.shape[2]
         self.m_name = m_name
         self.m_dir = m_dir
-        self.n = m_n
+        self.n = m_n #this value depends on the save parameters choosed, it must be equal to number of records that aren't from a package (Flow-ja-face, ss storage, spdis, ...). 
+        # for ex. If you specify save_specific_discharge = True and save_flows in npf package n will be equal to 2
+        
         self.zones = zones
         
         nzones = np.unique(self.zones).shape[0]
@@ -26,7 +30,8 @@ class Zb():
         self.nzones = nzones
         
         #retrieve cbc file
-        self.cbc = get_cbc(m_name,m_dir)
+
+        self.cbc = cbc
         
         #IA and JA arrays
         fname = os.path.join(m_dir, '{}.dis.grb'.format(m_name))
@@ -119,19 +124,19 @@ class Zb():
         
         pack_flows = np.zeros([cbc.recordarray.shape[0]-n,nzones*2])
 
-        for i in range(1,cbc.recordarray.shape[0]):
+        for i in range(n,cbc.recordarray.shape[0]):
             for n1,n2,q1 in cbc.get_data(i)[0]:
                 zon = int(zones[n1-1])
                 if zon != 0:
                     if q1 > 0:
-                        pack_flows[i-1,zon*2-2] += q1
+                        pack_flows[i-n,zon*2-2] += q1
                     else:
-                        pack_flows[i-1,zon*2-1] -= q1
+                        pack_flows[i-n,zon*2-1] -= q1
         
         return pd.DataFrame(pack_flows)
 
     
-    def index_pack(self):
+    def _index_pack(self):
         """
         return list of all packages name + zones
         """
@@ -147,7 +152,29 @@ class Zb():
 
         return pack_list
 ############################################
+    
+    def zones_plot(self):
+        
+        
+        """
+        Plot the different zones of the zone budget object
+        """
+        zones = self.zones
+        nlay = self.nlay
+        
+        
+        fig = plt.figure(figsize=(10,8))
+        fig.subplots_adjust(hspace=0.2, wspace=0.1)
+        n = round(nlay**0.5)
 
+        for ilay in range(nlay):
+            ax = fig.add_subplot(n, n, ilay+1)
+            g = ax.imshow(zones[ilay])
+            ax.set_title("layer {}".format(ilay))
+            g.set_clim(np.min(zones),np.max(zones))
+        cbar_ax = fig.add_axes([0.9, 0.15, 0.05, 0.7])
+        fig.colorbar(g,cax=cbar_ax)
+    
     def get_Budget(self,kstpkper=None):
         
         
@@ -167,7 +194,6 @@ class Zb():
         
         #append the two dataframes
         df_zz = pd.DataFrame(FluxZZ)
-        #col = np.zeros(nzones*2,dtype=int) # use same columns name because pd concat is stupid
         col = np.arange(0,nzones*2,dtype=int)# use same columns name because pd concat is stupid
         df_zz.columns=col
 
@@ -187,3 +213,58 @@ class Zb():
         
         return DF_Budg
     
+    def Z2Z_3D(self,z1,z2,kstpkper=None):
+
+        """
+        Total flows from one zone to another
+
+        """
+        nlay = self.nlay
+        nrow = self.nrow
+        ncol = self.ncol
+        zones = self.zones.reshape(nlay*nrow*ncol)
+        arr = np.zeros([nlay*nrow*ncol])
+        flowja = self.cbc.get_data(text='FLOW-JA-FACE',kstpkper=kstpkper)[0][0, 0, :]
+        ia = self.ia
+        ja = self.ja
+        
+        
+        
+        for celln in range(ia.shape[0]-1):
+            if zones[celln] == z1:
+                for ipos in range(ia[celln]+1, ia[celln+1]): # loop for each connexions of celln
+                    cellm = ja[ipos]  # retrieve cell number of adjacent cell
+                    if (zones[cellm] == z2): 
+                        arr[celln]=flowja[ipos]
+        arr[arr==0]=None
+        arr = arr.reshape(nlay,nrow,ncol)
+
+        return arr
+    
+    def plot_pack(self,pack):
+        
+        """
+        Make a plot of the flux from a package
+        
+        pack : str, the pname of the package
+        cmin/cmax : float, min/max value on the scale
+        """
+        
+        cbc = self.cbc
+        nlay = self.nlay
+        nrow = self.nrow
+        ncol = self.ncol
+        
+        if type(pack)==str:
+            ind = pd.Series(self._index_pack()).loc[pd.Series(self._index_pack())==pack].index
+        if type(pack)==int:
+            ind = pack
+        
+        arr3D = cbc.create3D(cbc.get_data(ind+self.n,kstpkper=None)[0],nlay,nrow,ncol)
+        mask = arr3D.mask
+        data = arr3D.data
+        data = data.sum(axis=0)
+        data[data==0]=None
+        a=plt.imshow(data)
+        plt.colorbar(a)
+        return a

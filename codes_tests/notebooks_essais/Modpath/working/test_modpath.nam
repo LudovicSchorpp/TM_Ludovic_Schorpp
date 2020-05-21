@@ -1,0 +1,14 @@
+BEGIN options
+  SAVE_FLOWS
+END options
+
+BEGIN packages
+  DIS6  test_modpath.dis  dis
+  IC6  test_modpath.ic  ic
+  NPF6  test_modpath.npf  npf
+  RCH6  test_modpath.rcha  rcha
+  WEL6  test_modpath.wel  wel_0
+  RIV6  test_modpath.riv  riv_0
+  OC6  test_modpath.oc  oc
+END packages
+

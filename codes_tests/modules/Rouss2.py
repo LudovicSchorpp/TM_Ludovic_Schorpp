@@ -39,7 +39,7 @@ def import_rch(file,grid,coeff=0.5):
     rcha *= coeff
     return rcha
 
-def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
+def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid,nlay):
     
     """
     a complete function that import a river into the modflow 6 and return the stress data.
@@ -53,7 +53,7 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
     """
     
     BC_riv = gp.read_file(riv_path) # read shp, linestring from ups to dws
-    df_riv = import_riv(grid,BC_riv,lst_domain,nlay=3) # extract cellids intersected + lengths in each cells
+    df_riv = import_riv(grid,BC_riv,lst_domain,nlay=nlay) # extract cellids intersected + lengths in each cells
     df_riv["xc"],df_riv["yc"] = get_cellcenters(grid,df_riv.cellids)
     df_riv["head"] = np.zeros([df_riv.shape[0]])
 

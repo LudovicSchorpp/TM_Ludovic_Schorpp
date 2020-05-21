@@ -1,0 +1,5 @@
+BEGIN griddata
+  strt
+    CONSTANT     400.00000000
+END griddata
+

@@ -25,6 +25,8 @@ def flows_Z2Z(z1,z2,zones,ia,ja,cbc,kstpkper=None):
     ncol = zones.shape[2]
     zones = zones.reshape(nlay*nrow*ncol)
     arr = np.zeros([nlay*nrow*ncol])
+
+    
     flowja = cbc.get_data(text='FLOW-JA-FACE',kstpkper=kstpkper)[0][0, 0, :]
     flow_pos=0
     flow_neg=0
@@ -38,8 +40,10 @@ def flows_Z2Z(z1,z2,zones,ia,ja,cbc,kstpkper=None):
                         flow_pos += flowja[ipos]
                     else:
                         flow_neg -= flowja[ipos]
+                    
+                    arr[ipos]=flowja[ipos]
                 
-    return flow_pos,flow_neg
+    return flow_pos,flow_neg,arr
     
 #2    
 def flows_Pack2Z(pack,z1,zones):
@@ -59,7 +63,7 @@ def flows_Pack2Z(pack,z1,zones):
     flow_pos=0
     flow_neg=0
     
-    if z1 in np.unique(zones[pack[0].node]):
+    if z1 in np.unique(zones[pack.node-1]):
         for q1 in pack:
             if zones[q1[0]-1]==z1: # nodenumber is one based !
 
@@ -181,3 +185,58 @@ def index_pack(cbc,zones,n=1):
             pack_list.append("zone {}".format(int(zm)))
     
     return pack_list
+
+def get_Total_Budget(model_name,model_dir):
+
+    """
+    Return a DF containing Budget data for the entire model in the LST file
+    Only for the 1st time step, 1st stress period for the moment
+    model_name : str, name of the model given in the gwf pack
+    model_dir : str, path to workspace
+    npack : number of additionnal packages with save_flows set True
+    """
+    
+    
+    file = "{}/{}.lst".format(model_dir,model_name)
+    f = open(file,"r")
+    i=-1
+    for ilin in f.readlines():
+        i += 1
+        if ilin =='  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1\n': # check at which line the budget is
+            break
+    
+    ###number of packages
+    npack=0
+    for o in range(100):
+        f = open("{}/{}.lst".format(model_dir,model_name),"r")
+        if f.readlines()[i+8+o]=="\n":
+            break
+        npack +=1
+    ###number of packages
+    
+    # retrieve data
+    lst_val_IN =[]
+    lst_val_OUT = []
+    lst_nam_pak = []
+    pak_type=[]
+    for ipak in range(npack):
+        ipak += 8
+        
+        f = open("{}/{}.lst".format(model_dir,model_name),"r")
+        lst_nam_pak.append(f.readlines()[i+ipak][85:96].rstrip())
+
+        f = open("{}/{}.lst".format(model_dir,model_name),"r")
+        lst_val_IN.append(float(f.readlines()[i+ipak][63:80]))
+
+        f = open("{}/{}.lst".format(model_dir,model_name),"r")
+        lst_val_OUT.append(float(f.readlines()[i+ipak+npack+5][63:80]))
+        
+        f = open("{}/{}.lst".format(model_dir,model_name),"r")
+        pak_type.append(f.readlines()[i+ipak][58:62])
+
+    Budget = pd.DataFrame({"Pack":lst_nam_pak,
+                  "IN":lst_val_IN,
+                 "OUT":lst_val_OUT,
+                  "Type":pak_type})
+
+    return Budget

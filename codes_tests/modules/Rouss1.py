@@ -125,26 +125,23 @@ def cellidBD(idomain, layer=0):
     return lst_cellBD
 
 
-# 5 visualization functions
+# 5 get functions
 def get_heads(model_name,workspace,obj=False):
     """
     Function that returns the heads from the headfile
     model_name : str, the name of the current model
     workspace : str, the path to workspace (where output files are stored)
-    obj : bool, if we want to have the head object rather than the computed heads for the last stress period
+    obj : bool, if we want to retrieve the head object rather than the computed heads for the last stress period
     """
     headfile = '{}.hds'.format(model_name)
     fname = os.path.join(workspace,headfile)    
     hdobj = fp.utils.HeadFile(fname, precision='double') 
-    
     head  = hdobj.get_data()
     
     if obj:
         return hdobj
     else:
         return head
-
-
 
 def get_spdis(model_name,workspace):
     """
@@ -177,7 +174,6 @@ def get_MNTbbox (MNT_path):
     """
     Function that returns the x0,y0,x1 and y1 (in this order) of a mnt in the mnt's Coord. Sys.
     """
-    
     R_mnt = gdal.Open(MNT_path)
     mnt_infos=R_mnt.GetGeoTransform()
     x0 = mnt_infos[0]+mnt_infos[1]/2

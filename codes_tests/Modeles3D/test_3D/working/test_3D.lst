@@ -128,16 +128,16 @@ Precision of REAL variables: 15
  END OF DISCRETIZATION OPTIONS
  MODEL LENGTH UNIT IS UNDEFINED
  PROCESSING DISCRETIZATION DIMENSIONS
-    NLAY =       4
+    NLAY =       5
     NROW =     182
-    NCOL =     234
+    NCOL =     183
  END OF DISCRETIZATION DIMENSIONS
  PROCESSING GRIDDATA
  END PROCESSING GRIDDATA
 
  THE SPECIFIED IDOMAIN RESULTS IN A REDUCED NUMBER OF CELLS.
- NUMBER OF USER NODES:  170352
- NUMBER OF NODES IN SOLUTION:   99160
+ NUMBER OF USER NODES:  166530
+ NUMBER OF NODES IN SOLUTION:   75128
 
 
 
@@ -195,7 +195,7 @@ Precision of REAL variables: 15
  END OF RIV OPTIONS
 
  PROCESSING RIV DIMENSIONS
-    MAXBOUND =     170
+    MAXBOUND =     169
  END OF RIV DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1017
@@ -205,7 +205,7 @@ Precision of REAL variables: 15
  END OF RIV OPTIONS
 
  PROCESSING RIV DIMENSIONS
-    MAXBOUND =     108
+    MAXBOUND =     127
  END OF RIV DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1018
@@ -215,7 +215,7 @@ Precision of REAL variables: 15
  END OF RIV OPTIONS
 
  PROCESSING RIV DIMENSIONS
-    MAXBOUND =      54
+    MAXBOUND =      67
  END OF RIV DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1019
@@ -245,7 +245,7 @@ Precision of REAL variables: 15
  END OF RCH OPTIONS
 
  PROCESSING RCH DIMENSIONS
-    MAXBOUND =   26719
+    MAXBOUND =   18703
  END OF RCH DIMENSIONS
 
  CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1012
@@ -255,7 +255,7 @@ Precision of REAL variables: 15
  END OF CHD OPTIONS
 
  PROCESSING CHD DIMENSIONS
-    MAXBOUND =   16431
+    MAXBOUND =    8435
  END OF CHD DIMENSIONS
 
  CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1013
@@ -275,13 +275,15 @@ Precision of REAL variables: 15
 
                 ICELLTYPE = 0
 
-                        K =  0.7620000E-03 FOR LAYER 1
+                        K =  0.1000000E-05 FOR LAYER 1
 
-                        K =  0.2500000E-08 FOR LAYER 2
+                        K =  0.7620000E-03 FOR LAYER 2
 
-                        K =  0.2300000E-04 FOR LAYER 3
+                        K =  0.2500000E-08 FOR LAYER 3
 
-                        K =  0.2800000E-04 FOR LAYER 4
+                        K =  0.2300000E-04 FOR LAYER 4
+
+                        K =  0.2800000E-04 FOR LAYER 5
  K33 not provided.  Assuming K33 = K.
  K22 not provided.  Assuming K22 = K.
  END PROCESSING GRIDDATA
@@ -351,36 +353,36 @@ Precision of REAL variables: 15
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
                  DRN =           0.0000                   DRN =           0.0000     ETA             
-                 RIV =       4.8607E-03                   RIV =       4.8607E-03     AGLY            
-                 RIV =           0.1287                   RIV =           0.1287     TET             
-                 RIV =           0.1732                   RIV =           0.1732     REA             
-                 RIV =           0.1627                   RIV =           0.1627     CANT            
-                 RIV =       9.9652E-02                   RIV =       9.9652E-02     TECH            
-                 RIV =           0.4813                   RIV =           0.4813     BOL             
-                 RCH =           3.3699                   RCH =           3.3699     RCH             
-                 CHD =       6.2982E-02                   CHD =       6.2982E-02     SEA             
-                 CHD =           0.2928                   CHD =           0.2928     THUIR           
+                 RIV =       4.0169E-03                   RIV =       4.0169E-03     AGLY            
+                 RIV =           0.1164                   RIV =           0.1164     TET             
+                 RIV =           0.1831                   RIV =           0.1831     REA             
+                 RIV =           0.1830                   RIV =           0.1830     CANT            
+                 RIV =           0.1002                   RIV =           0.1002     TECH            
+                 RIV =           0.4772                   RIV =           0.4772     BOL             
+                 RCH =           3.3544                   RCH =           3.3544     RCH             
+                 CHD =       3.3750E-03                   CHD =       3.3750E-03     SEA             
+                 CHD =           0.2920                   CHD =           0.2920     THUIR           
 
-            TOTAL IN =           4.9761              TOTAL IN =           4.9761
+            TOTAL IN =           4.9135              TOTAL IN =           4.9135
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.5059                   WEL =           1.5059     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           0.7538                   DRN =           0.7538     ETA             
-                 RIV =           0.2871                   RIV =           0.2871     AGLY            
-                 RIV =           1.0638                   RIV =           1.0638     TET             
-                 RIV =           0.2328                   RIV =           0.2328     REA             
-                 RIV =           0.1221                   RIV =           0.1221     CANT            
-                 RIV =           0.2434                   RIV =           0.2434     TECH            
-                 RIV =       7.7965E-03                   RIV =       7.7965E-03     BOL             
+                 DRN =           0.7865                   DRN =           0.7865     ETA             
+                 RIV =           0.2839                   RIV =           0.2839     AGLY            
+                 RIV =           1.0477                   RIV =           1.0477     TET             
+                 RIV =           0.2502                   RIV =           0.2502     REA             
+                 RIV =           0.1462                   RIV =           0.1462     CANT            
+                 RIV =           0.2384                   RIV =           0.2384     TECH            
+                 RIV =       7.6224E-03                   RIV =       7.6224E-03     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
-                 CHD =           0.7590                   CHD =           0.7590     SEA             
+                 CHD =           0.6467                   CHD =           0.6467     SEA             
                  CHD =           0.0000                   CHD =           0.0000     THUIR           
 
-           TOTAL OUT =           4.9756             TOTAL OUT =           4.9756
+           TOTAL OUT =           4.9130             TOTAL OUT =           4.9130
 
-            IN - OUT =       4.6878E-04              IN - OUT =       4.6878E-04
+            IN - OUT =       4.8853E-04              IN - OUT =       4.8853E-04
 
  PERCENT DISCREPANCY =           0.01     PERCENT DISCREPANCY =           0.01
 

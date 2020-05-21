@@ -1,0 +1,10 @@
+BEGIN options
+  BUDGET  FILEOUT  test_modpath.cbc
+  HEAD  FILEOUT  test_modpath.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  ALL
+  SAVE  BUDGET  ALL
+END period  1
+
