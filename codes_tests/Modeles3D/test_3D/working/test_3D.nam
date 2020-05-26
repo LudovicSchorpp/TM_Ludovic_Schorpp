@@ -12,6 +12,7 @@ BEGIN packages
   CHD6  sea.chd  sea
   CHD6  thuir.chd  thuir
   DRN6  eta.drn  eta
+  DRN6  villnv.drn  villnv
   RIV6  agly.riv  agly
   RIV6  Tet.riv  tet
   RIV6  Rea.riv  rea

@@ -517,3 +517,31 @@ def files_ext(folder,ends=".txt",split=False):
             else:
                 lst_file.append(file)
     return lst_file
+
+#
+def k_zones(k,z1,layer,kn,ix): 
+    
+    """
+    Change value in a numpy 3D array location based on a certain zone (format: [(x1,y1),(x2,y2), ...])
+    Can be used with various array as for example permeability
+    
+    z1: zone
+    layer : list or int, apply changes at which layers ?
+    kn : the new value
+    ix : gridintersect object --> ix = GridIntersect(grid) with grid the modelgrid
+    """
+    
+    poly= Polygon(z1)
+    res = ix.intersect_polygon(poly)
+    if type(layer) != int:
+        for ilay in layer:
+            for cellid in res.cellids:
+                irow = cellid[0]
+                icol = cellid[1]
+                k[ilay,irow,icol] = kn 
+                
+    if type(layer) == int:
+        for cellid in res.cellids:
+            irow = cellid[0]
+            icol = cellid[1]
+            k[layer,irow,icol] = kn 
