@@ -155,7 +155,6 @@ class Zb():
     
     def zones_plot(self):
         
-        
         """
         Plot the different zones of the zone budget object
         """

@@ -359,39 +359,39 @@ Precision of REAL variables: 15
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
-                 DRN =           0.0000                   DRN =           0.0000     ETA             
+                 DRN =       1.9429E-16                   DRN =       1.9429E-16     ETA             
                  DRN =           0.0000                   DRN =           0.0000     VILLNV          
                  RIV =           0.0000                   RIV =           0.0000     AGLY            
-                 RIV =           0.1165                   RIV =           0.1165     TET             
-                 RIV =           0.2551                   RIV =           0.2551     REA             
-                 RIV =           0.1483                   RIV =           0.1483     CANT            
+                 RIV =           0.1185                   RIV =           0.1185     TET             
+                 RIV =           0.2564                   RIV =           0.2564     REA             
+                 RIV =           0.1499                   RIV =           0.1499     CANT            
                  RIV =           0.1841                   RIV =           0.1841     TECH            
-                 RIV =           0.4655                   RIV =           0.4655     BOL             
+                 RIV =           0.4882                   RIV =           0.4882     BOL             
                  RCH =           3.3218                   RCH =           3.3218     RCH             
                  CHD =           7.9148                   CHD =           7.9148     SEA             
-                 CHD =           0.3945                   CHD =           0.3945     THUIR           
+                 CHD =           0.3293                   CHD =           0.3293     THUIR           
 
-            TOTAL IN =          13.0006              TOTAL IN =          13.0006
+            TOTAL IN =          12.9630              TOTAL IN =          12.9630
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.5053                   WEL =           1.5053     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
                  DRN =           0.8296                   DRN =           0.8296     ETA             
-                 DRN =           0.7082                   DRN =           0.7082     VILLNV          
-                 RIV =           0.2430                   RIV =           0.2430     AGLY            
-                 RIV =           0.9810                   RIV =           0.9810     TET             
-                 RIV =       5.3070E-02                   RIV =       5.3070E-02     REA             
-                 RIV =       4.1165E-02                   RIV =       4.1165E-02     CANT            
-                 RIV =           0.1514                   RIV =           0.1514     TECH            
-                 RIV =       7.6910E-03                   RIV =       7.6910E-03     BOL             
+                 DRN =           0.7073                   DRN =           0.7073     VILLNV          
+                 RIV =           0.2427                   RIV =           0.2427     AGLY            
+                 RIV =           0.9487                   RIV =           0.9487     TET             
+                 RIV =       5.2457E-02                   RIV =       5.2457E-02     REA             
+                 RIV =       3.8941E-02                   RIV =       3.8941E-02     CANT            
+                 RIV =           0.1510                   RIV =           0.1510     TECH            
+                 RIV =       6.9335E-03                   RIV =       6.9335E-03     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
-                 CHD =           8.4797                   CHD =           8.4797     SEA             
+                 CHD =           8.4796                   CHD =           8.4796     SEA             
                  CHD =           0.0000                   CHD =           0.0000     THUIR           
 
-           TOTAL OUT =          13.0001             TOTAL OUT =          13.0001
+           TOTAL OUT =          12.9626             TOTAL OUT =          12.9626
 
-            IN - OUT =       4.6282E-04              IN - OUT =       4.6282E-04
+            IN - OUT =       4.4973E-04              IN - OUT =       4.4973E-04
 
  PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 
