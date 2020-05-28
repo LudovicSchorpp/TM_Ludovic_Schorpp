@@ -1,0 +1,261 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                            VERSION 6.0.4 03/13/2019
+
+   MODFLOW 6 compiled Mar 21 2019 15:37:31 with IFORT compiler (ver. 19.0.0)
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+System command used to initiate simulation:
+../../exe/mf6.exe
+
+MODFLOW was compiled using uniform precision.
+Real Variables
+  PRECISION: 15
+  KIND: 8
+  TINY (smallest non-zero value):    2.225074-308
+  HUGE (largest value):    1.797693+308
+Integer Variables
+  KIND: 4
+  HUGE (largest value): 2147483647
+  BIT_SIZE: 32
+ 
+
+ OPENED mfsim.nam
+ FILE TYPE:NAM   UNIT 1001   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ READING SIMULATION OPTIONS
+ END OF SIMULATION OPTIONS
+
+ READING SIMULATION TIMING
+
+ OPENED first3D_mf6.tdis
+ FILE TYPE:TDIS   UNIT 1002   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ TDIS -- TEMPORAL DISCRETIZATION PACKAGE,
+ VERSION 1 : 11/13/2014 - INPUT READ FROM UNIT 1002
+ PROCESSING TDIS OPTIONS
+    SIMULATION TIME UNIT IS SECONDS
+ END OF TDIS OPTIONS
+ PROCESSING TDIS DIMENSIONS
+    1 STRESS PERIOD(S) IN SIMULATION
+ END OF TDIS DIMENSIONS
+ PROCESSING TDIS PERIODDATA
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000
+ END OF TDIS PERIODDATA
+ END OF SIMULATION TIMING
+
+ READING SIMULATION MODELS
+    GWF6 model MULTI_L will be created as model 1
+ END OF SIMULATION MODELS
+
+ READING SIMULATION EXCHANGES
+ END OF SIMULATION EXCHANGES
+
+ READING SOLUTIONGROUP
+
+ Creating solution: SLN_1           
+
+ OPENED first3D_mf6.ims
+ FILE TYPE:IMS   UNIT 1011   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ END OF SIMULATION SOLUTIONGROUP
+
+ IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
+         INPUT READ FROM UNIT 1011
+
+ PROCESSING IMS OPTIONS
+ MODERATE OPTION:
+ DEFAULT SOLVER INPUT VALUES REFLECT MODERETELY NONLINEAR MODEL
+ END OF IMS OPTIONS
+ **UNDER-RELAXATION WILL BE USED***
+ 
+ ***IMS LINEAR SOLVER WILL BE USED***
+
+ IMSLINEAR -- UNSTRUCTURED LINEAR SOLUTION PACKAGE, VERSION 8, 04/28/2017
+ 
+ OUTER ITERATION CONVERGENCE CRITERION     (HCLOSE) =    0.100000E-01
+ OUTER ITERATION BOUNDARY FLOW RESIDUAL (RCLOSEBND) =    0.100000E+00
+ MAXIMUM NUMBER OF OUTER ITERATIONS        (MXITER) =        50
+ SOLVER PRINTOUT INDEX                     (IPRIMS) =         1
+ NONLINEAR ITERATION METHOD            (NONLINMETH) =         3
+ LINEAR SOLUTION METHOD                   (LINMETH) =         1
+ UNDER-RELAXATION WEIGHT REDUCTION FACTOR   (THETA) =    0.900000E+00
+ UNDER-RELAXATION WEIGHT INCREASE INCREMENT (KAPPA) =    0.100000E-03
+ UNDER-RELAXATION PREVIOUS HISTORY FACTOR   (GAMMA) =    0.000000E+00
+ UNDER-RELAXATIONMOMENTUM TERM          (AMOMENTUM) =    0.000000E+00
+    MAXIMUM NUMBER OF BACKTRACKS         (NUMTRACK) =         0
+
+       SOLUTION BY THE BICONJUGATE-GRADIENT STABILIZED METHOD
+ ------------------------------------------------------------------
+ MAXIMUM OF     50 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF    100 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ LINEAR ACCELERATION METHOD            = BCGS      
+ MATRIX PRECONDITIONING TYPE           = MOD. INCOMPLETE LU  
+ MATRIX SCALING APPROACH               = NO SCALING          
+ MATRIX REORDERING APPROACH            = ORIGINAL ORDERING        
+ NUMBER OF ORTHOGONALIZATIONS          =        0
+ HEAD CHANGE CRITERION FOR CLOSURE     =    0.10000E-01
+ RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E+00
+ RESIDUAL CONVERGENCE OPTION           =        0
+ RESIDUAL CONVERGENCE NORM             = INFINITY NORM   
+ RELAXATION FACTOR                     =    0.97000E+00
+
+
+
+1
+                            STRESS PERIOD NO.    1, LENGTH =   1.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =   1.000000    
+
+
+ OUTER ITERATION SUMMARY
+ ---------------------------------------------------------------------------------------
+                       OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
+                   ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
+ ---------------------------------------------------------------------------------------
+ Linear Solver             1       100     584.600                      1_GWF-(4,57,163)
+ Under-relaxation          1               584.600                      1_GWF-(4,57,163)
+ Linear Solver             2       100    -1538.34                       1_GWF-(1,117,2)
+ Under-relaxation          2              -1538.34                       1_GWF-(1,117,2)
+ Linear Solver             3       100     2474.71                       1_GWF-(1,117,2)
+ Under-relaxation          3               2227.24                       1_GWF-(1,117,2)
+ Linear Solver             4        72    -714.986                       1_GWF-(1,117,2)
+ Under-relaxation          4              -579.139                       1_GWF-(1,117,2)
+ Linear Solver             5        96    -125.820                       1_GWF-(3,117,2)
+ Under-relaxation          5              -97.4905                       1_GWF-(1,117,2)
+ Linear Solver             6       100     50.7657                      1_GWF-(4,115,39)
+ Under-relaxation          6               39.9750                      1_GWF-(4,117,37)
+ Linear Solver             7       100    -47.8179                       1_GWF-(4,59,74)
+ Under-relaxation          7              -34.8717                       1_GWF-(4,59,74)
+ Linear Solver             8       100    -260.349                       1_GWF-(3,117,2)
+ Under-relaxation          8              -188.124                      1_GWF-(1,122,45)
+ Linear Solver             9        71     156.056                      1_GWF-(1,122,45)
+ Under-relaxation          9               113.817                      1_GWF-(1,122,45)
+ Linear Solver            10       100     106.784                       1_GWF-(1,117,2)
+ Under-relaxation         10               63.2155                      1_GWF-(1,122,45)
+ Linear Solver            11       100     17.3168                      1_GWF-(4,115,39)
+ Under-relaxation         11               9.20929                      1_GWF-(4,115,39)
+ Linear Solver            12       100     221.397                       1_GWF-(4,117,2)
+ Under-relaxation         12               128.920                       1_GWF-(2,117,2)
+ Linear Solver            13       100    -59.4649                      1_GWF-(2,142,46)
+ Under-relaxation         13              -39.0488                      1_GWF-(2,142,46)
+ Linear Solver            14       100     1233.45                       1_GWF-(3,117,2)
+ Under-relaxation         14               724.337                       1_GWF-(1,117,2)
+ Linear Solver            15       100    -884.227                       1_GWF-(1,117,2)
+ Under-relaxation         15              -470.442                       1_GWF-(1,117,2)
+ Linear Solver            16       100    -852.943                       1_GWF-(3,117,2)
+ Under-relaxation         16              -450.000                       1_GWF-(1,117,2)
+ Linear Solver            17       100    -140.120                      1_GWF-(4,144,48)
+ Under-relaxation         17              -67.1108                      1_GWF-(4,144,48)
+ Linear Solver            18        42    -85.9799                       1_GWF-(1,98,29)
+ Under-relaxation         18              -33.3652                       1_GWF-(1,98,29)
+ Linear Solver            19       100    -86.2376                       1_GWF-(1,98,29)
+ Under-relaxation         19              -33.4738                       1_GWF-(1,98,29)
+ Linear Solver            20        61    -59.4949                       1_GWF-(4,95,33)
+ Under-relaxation         20              -23.0994                       1_GWF-(4,95,33)
+ Linear Solver            21       100    -526.020                       1_GWF-(3,117,2)
+ Under-relaxation         21              -223.435                       1_GWF-(1,117,2)
+ Linear Solver            22       100     178.139                       1_GWF-(1,117,2)
+ Under-relaxation         22               69.1533                       1_GWF-(1,117,2)
+ Linear Solver            23       100     109.641                       1_GWF-(1,117,2)
+ Under-relaxation         23               42.5733                       1_GWF-(1,117,2)
+ Linear Solver            24       100    -146.404                       1_GWF-(3,117,2)
+ Under-relaxation         24              -50.1948                       1_GWF-(2,117,2)
+ Linear Solver            25       100    -208.485                       1_GWF-(3,117,2)
+ Under-relaxation         25              -70.4649                       1_GWF-(1,117,2)
+ Linear Solver            26       100     161.041                       1_GWF-(1,117,2)
+ Under-relaxation         26               50.6654                       1_GWF-(1,117,2)
+ Linear Solver            27       100    -34.5570                       1_GWF-(2,81,58)
+ Under-relaxation         27              -12.1254                       1_GWF-(4,89,63)
+ Linear Solver            28       100    -80.1032                       1_GWF-(3,117,2)
+ Under-relaxation         28              -21.9973                       1_GWF-(1,117,2)
+ Linear Solver            29       100     63.7094                       1_GWF-(1,117,2)
+ Under-relaxation         29               16.2406                       1_GWF-(1,117,2)
+ Linear Solver            30       100    -220.024                       1_GWF-(3,117,2)
+ Under-relaxation         30              -50.1415                       1_GWF-(1,117,2)
+ Linear Solver            31       100     463.223                       1_GWF-(1,117,2)
+ Under-relaxation         31               95.6474                       1_GWF-(1,117,2)
+ Linear Solver            32       100    -363.432                       1_GWF-(4,96,36)
+ Under-relaxation         32              -98.1362                      1_GWF-(4,129,55)
+ Linear Solver            33       100     169.921                      1_GWF-(4,129,55)
+ Under-relaxation         33               48.1827                      1_GWF-(4,129,55)
+ Linear Solver            34       100     173.696                       1_GWF-(3,117,2)
+ Under-relaxation         34               28.9129                       1_GWF-(1,117,2)
+ Linear Solver            35       100     324.359                       1_GWF-(2,95,33)
+ Under-relaxation         35               78.5540                       1_GWF-(1,80,65)
+ Linear Solver            36       100     452.303                       1_GWF-(3,117,2)
+ Under-relaxation         36               74.4443                       1_GWF-(1,117,2)
+ Linear Solver            37       100     161.758                       1_GWF-(3,117,2)
+ Under-relaxation         37               24.7696                      1_GWF-(4,129,55)
+ Linear Solver            38       100     97.4027                      1_GWF-(4,116,38)
+ Under-relaxation         38               22.5813                      1_GWF-(4,146,62)
+ Linear Solver            39       100     145.772                       1_GWF-(3,117,2)
+ Under-relaxation         39               22.2354                       1_GWF-(1,117,2)
+ Linear Solver            40       100     59.7481                       1_GWF-(4,117,2)
+ Under-relaxation         40               9.03865                       1_GWF-(4,117,2)
+ Linear Solver            41       100     226.062                       1_GWF-(3,117,2)
+ Under-relaxation         41               35.9350                       1_GWF-(1,117,2)
+ Linear Solver            42       100     95.8678                      1_GWF-(4,146,49)
+ Under-relaxation         42               21.0703                      1_GWF-(2,131,50)
+ Linear Solver            43       100     83.8532                      1_GWF-(4,115,39)
+ Under-relaxation         43               14.6248                      1_GWF-(2,131,50)
+ Linear Solver            44       100    -30.3584                       1_GWF-(4,86,61)
+ Under-relaxation         44              -7.77802                       1_GWF-(4,86,61)
+ Linear Solver            45       100     324.107                      1_GWF-(4,150,52)
+ Under-relaxation         45               58.6562                      1_GWF-(4,147,62)
+ Linear Solver            46       100     181.143                       1_GWF-(3,117,2)
+ Under-relaxation         46               23.3947                      1_GWF-(1,114,10)
+ Linear Solver            47       100     399.649                       1_GWF-(3,117,2)
+ Under-relaxation         47               51.7188                      1_GWF-(1,114,10)
+ Linear Solver            48       100    -921.026                       1_GWF-(1,117,2)
+ Under-relaxation         48              -109.241                      1_GWF-(1,114,10)
+ Linear Solver            49       100     283.460                       1_GWF-(3,117,2)
+ Under-relaxation         49               30.5169                      1_GWF-(1,114,10)
+ Linear Solver            50       100     188.091                       1_GWF-(3,117,2)
+ Under-relaxation         50               20.0503                      1_GWF-(1,114,10)
+ Solution 1 did not converge for stress period 1 and time step 1
+ Solution Group 1 did not converge for stress period 1 and time step 1
+ Simulation convergence failure. Simulation will terminate after output and deallocation.
+
+ INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
+ 
+ Number of allocated integer variables:   4552263
+ Number of allocated real variables:    4419936
+ Allocated memory in megabytes:     53.5685    
+ 
+
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/05/26 20:48:17
+ Elapsed run time: 42.990 Seconds
+
+ Simulation convergence failure occurred 1 time(s).
+ Premature termination of simulation.

@@ -1,0 +1,21 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  2etest_3D.dis  dis
+  IC6  2etest_3D.ic  ic
+  OC6  2etest_3D.oc  oc
+  NPF6  2etest_3D.npf  npf
+  RCH6  2etest_3D.rch  rch_0
+  WEL6  2etest_3D.wel  wel
+  CHD6  sea.chd  sea
+  CHD6  plio.chd  plio
+  CHD6  eta.chd  eta
+  RIV6  agly.riv  agly
+  RIV6  Tet.riv  tet
+  RIV6  Rea.riv  rea
+  RIV6  Cant.riv  cant
+  RIV6  Tech.riv  tech
+  RIV6  Bol.riv  bol
+END packages
+

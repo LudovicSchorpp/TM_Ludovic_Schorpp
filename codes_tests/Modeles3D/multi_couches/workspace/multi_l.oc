@@ -1,0 +1,11 @@
+BEGIN options
+  BUDGET  FILEOUT  multi_l.cbc
+  HEAD  FILEOUT  multi_l.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  LAST
+  PRINT  BUDGET  ALL
+END period  1
+

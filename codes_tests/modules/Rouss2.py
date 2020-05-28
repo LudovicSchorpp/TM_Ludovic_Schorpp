@@ -35,7 +35,6 @@ def import_rch(file,grid,coeff=0.5):
                             method="nearest")
 
     rcha[rcha==0]=np.mean(rcha[rcha!=0])
-    coeff = 0.5 # part de pluie qui s'infiltre
     rcha *= coeff
     return rcha
 

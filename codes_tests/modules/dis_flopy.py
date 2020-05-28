@@ -81,7 +81,7 @@ def multi_lay(botm,idomain,ep=50,nsublay=4,layer=2):
     botm_sub_lay[0][(thk<ep)&(thk>0.2)] = botm[layer][(thk<ep)&(thk>0.2)]
     botm_sub_lay[0][thk>ep] -= ep
     
-    #idomain 1st sublayer
+    #1st sublayer
     idomain_sub_lay[0][thk>0.2] = 1
     
     #between 1st and nth 

@@ -1,0 +1,18 @@
+                              ZONEBUDGET Version 6
+                             U.S. GEOLOGICAL SURVEY
+                            VERSION 6.0.4 03/13/2019
+
+ OPENED zbud.nam
+ FILE TYPE:NAM   UNIT   22   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ERROR REPORT:
+
+ Error: Required block "ZONEBUDGET" not found. Found block "OPTIONS" instead.
+ ERROR OCCURRED WHILE READING FILE:
+ 
+   C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\Modeles3D\4l
+   ayers\working\zbud.nam
+ Stopping due to error(s)
