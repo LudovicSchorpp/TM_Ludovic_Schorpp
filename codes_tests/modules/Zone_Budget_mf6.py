@@ -263,7 +263,6 @@ class Zb():
         mask = arr3D.mask
         data = arr3D.data
         data = data.sum(axis=0)
-        data[data==0]=None
+        # data[data==0]=None
         a=plt.imshow(data)
-        plt.colorbar(a)
         return a

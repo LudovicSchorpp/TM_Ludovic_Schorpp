@@ -24,17 +24,20 @@ def import_rch(file,grid,coeff=0.5):
     Raster from flopy must be imported
     rcha = import_rch(file,coef)
     file : the path to the raster
-    coeff : the runoff coefficient
+    coeff : int or ndarray, the ratio of efficient rain infiltration coefficient
     grid : the modelgrid from flopy.discretization
     """
+    
+    
     rcha=[]
     rch_areas = Raster.load(file)
     rcha = rch_areas.resample_to_grid(grid.xcellcenters,
                             grid.ycellcenters,
                             band = rch_areas.bands[0],
                             method="nearest")
-
-    rcha[rcha==0]=np.mean(rcha[rcha!=0])
+    
+    rcha[rcha==0]=np.mean(rcha[rcha!=0])   
+        
     rcha *= coeff
     return rcha
 
