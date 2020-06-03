@@ -445,30 +445,35 @@ def budg(budg_data):
     return pos,neg
 
 #20
-def get_Total_Budget(model_name,model_dir):
+def get_Total_Budget(model_name,model_dir,kstpkper=(0,0)):
 
     """
     Return a DF containing Budget data for the entire model in the LST file
     Only for the 1st time step, 1st stress period for the moment
     model_name : str, name of the model given in the gwf pack
     model_dir : str, path to workspace
-    npack : number of additionnal packages with save_flows set True
     """
     
-    
-    file = "{}/{}.lst".format(model_dir,model_name)
-    f = open(file,"r")
+    file = os.path.join(model_dir,"{}.lst".format(model_name))   
+    with open(file) as f:
+        doc = f.readlines()
     i=-1
-    for ilin in f.readlines():
+    tmstp=0;sp=0;inf=0
+    for ilin in doc:
         i += 1
-        if ilin =='  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1\n': # check at which line the budget is
+        try:
+            tmstp = int(ilin[52:58].split(",")[0])
+            sp = int(ilin[73:-1])
+            inf = ilin[2:15]
+        except:
+            pass
+        if (inf == "VOLUME BUDGET") & (tmstp == kstpkper[0]) + 1 & (sp == kstpkper[1]+1):
             break
-    
     ###number of packages
     npack=0
     for o in range(100):
         f = open("{}/{}.lst".format(model_dir,model_name),"r")
-        if f.readlines()[i+8+o]=="\n":
+        if doc[i+8+o]=="\n":
             break
         npack +=1
     ###number of packages
@@ -480,18 +485,11 @@ def get_Total_Budget(model_name,model_dir):
     pak_type=[]
     for ipak in range(npack):
         ipak += 8
-        
-        f = open("{}/{}.lst".format(model_dir,model_name),"r")
-        lst_nam_pak.append(f.readlines()[i+ipak][85:96].rstrip())
 
-        f = open("{}/{}.lst".format(model_dir,model_name),"r")
-        lst_val_IN.append(float(f.readlines()[i+ipak][63:80]))
-
-        f = open("{}/{}.lst".format(model_dir,model_name),"r")
-        lst_val_OUT.append(float(f.readlines()[i+ipak+npack+5][63:80]))
-        
-        f = open("{}/{}.lst".format(model_dir,model_name),"r")
-        pak_type.append(f.readlines()[i+ipak][58:62])
+        lst_nam_pak.append(doc[i+ipak][85:96].rstrip())
+        lst_val_IN.append(float(doc[i+ipak][63:80]))
+        lst_val_OUT.append(float(doc[i+ipak+npack+5][63:80]))
+        pak_type.append(doc[i+ipak][58:62])
 
     Budget = pd.DataFrame({"Pack":lst_nam_pak,
                   "IN":lst_val_IN,
