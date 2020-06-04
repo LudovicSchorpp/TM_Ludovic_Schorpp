@@ -362,36 +362,36 @@ Precision of REAL variables: 15
                  DRN =           0.0000                   DRN =           0.0000     ETA             
                  DRN =           0.0000                   DRN =           0.0000     VILLNV          
                  RIV =           0.0000                   RIV =           0.0000     AGLY            
-                 RIV =           0.1135                   RIV =           0.1135     TET             
+                 RIV =           0.1136                   RIV =           0.1136     TET             
                  RIV =           0.2565                   RIV =           0.2565     REA             
-                 RIV =           0.1506                   RIV =           0.1506     CANT            
-                 RIV =           0.1822                   RIV =           0.1822     TECH            
-                 RIV =           0.4838                   RIV =           0.4838     BOL             
-                 RCH =           3.4261                   RCH =           3.4261     RCH             
-                 CHD =           7.9126                   CHD =           7.9126     SEA             
+                 RIV =           0.1507                   RIV =           0.1507     CANT            
+                 RIV =           0.1809                   RIV =           0.1809     TECH            
+                 RIV =           0.4841                   RIV =           0.4841     BOL             
+                 RCH =           3.4197                   RCH =           3.4197     RCH             
+                 CHD =           7.9133                   CHD =           7.9133     SEA             
                  CHD =           0.3279                   CHD =           0.3279     THUIR           
 
-            TOTAL IN =          13.0532              TOTAL IN =          13.0532
+            TOTAL IN =          13.0466              TOTAL IN =          13.0466
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.5053                   WEL =           1.5053     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           0.8767                   DRN =           0.8767     ETA             
+                 DRN =           0.8718                   DRN =           0.8718     ETA             
                  DRN =           0.6941                   DRN =           0.6941     VILLNV          
                  RIV =           0.2706                   RIV =           0.2706     AGLY            
                  RIV =           0.9652                   RIV =           0.9652     TET             
-                 RIV =       5.1655E-02                   RIV =       5.1655E-02     REA             
+                 RIV =       5.1650E-02                   RIV =       5.1650E-02     REA             
                  RIV =       3.7934E-02                   RIV =       3.7934E-02     CANT            
-                 RIV =           0.1507                   RIV =           0.1507     TECH            
-                 RIV =       7.0386E-03                   RIV =       7.0386E-03     BOL             
+                 RIV =           0.1522                   RIV =           0.1522     TECH            
+                 RIV =       7.0409E-03                   RIV =       7.0409E-03     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
-                 CHD =           8.4935                   CHD =           8.4935     SEA             
+                 CHD =           8.4903                   CHD =           8.4903     SEA             
                  CHD =           0.0000                   CHD =           0.0000     THUIR           
 
-           TOTAL OUT =          13.0528             TOTAL OUT =          13.0528
+           TOTAL OUT =          13.0461             TOTAL OUT =          13.0461
 
-            IN - OUT =       4.8356E-04              IN - OUT =       4.8356E-04
+            IN - OUT =       4.9468E-04              IN - OUT =       4.9468E-04
 
  PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 

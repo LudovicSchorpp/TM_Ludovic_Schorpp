@@ -243,7 +243,7 @@ class Zb():
     def plot_pack(self,pack):
         
         """
-        Make a plot of the flux from a package
+        Make a plot of the flux from a package. Plot sum all the values over each layer.
         
         pack : str, the pname of the package
         cmin/cmax : float, min/max value on the scale
@@ -263,6 +263,6 @@ class Zb():
         mask = arr3D.mask
         data = arr3D.data
         data = data.sum(axis=0)
-        # data[data==0]=None
+        data[data==0]=None
         a=plt.imshow(data)
         return a

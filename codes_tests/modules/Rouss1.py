@@ -9,6 +9,7 @@ import gdal
 import matplotlib.pyplot as plt
 from flopy.utils.gridgen import Gridgen 
 from flopy.utils.gridintersect import GridIntersect
+from flopy.utils import Raster
 import shapely
 from shapely.geometry import Polygon, Point, LineString, MultiLineString, MultiPoint, MultiPolygon
 from shapely.strtree import STRtree  
@@ -543,3 +544,9 @@ def k_zones(k,z1,layer,kn,ix):
             irow = cellid[0]
             icol = cellid[1]
             k[layer,irow,icol] = kn 
+            
+#
+def rspl_rast(rast_path,grid,band=1):
+    rast = Raster.load(rast_path)
+    arr = rast.resample_to_grid(grid.xcellcenters,grid.ycellcenters,band)
+    return arr
