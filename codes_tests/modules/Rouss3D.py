@@ -28,10 +28,11 @@ def gp2cellids3D (grid, gp, idomain, idomain_active=True, type = "polygon",layer
     (a value of 3, for example, mean only cells which have 1/3 of their area intersected by the polygon will be taken into account)
     """
     
+    
     ix = GridIntersect(grid)
     if type == "polygon":
         result = ix.intersect_polygon(gp.geometry[0])
-        result = result[result.areas>(np.max(result.areas)/3)] # only take into account cells that have a least 1/3 area intersected 
+        result = result[result.areas>(np.nanmax(result.areas)/3)] # only take into account cells that have a least 1/3 area intersected 
         result = result[result.areas!=0]                       # fix bug
     
     if type == "boundary" :
@@ -49,12 +50,12 @@ def gp2cellids3D (grid, gp, idomain, idomain_active=True, type = "polygon",layer
 
 
 #2
-def importWells3D(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",geol_col="NAPPE_CAPT",
+def importWells3D(BD_prlvm,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",geol_col="NAPPE_CAPT",
                   geol_layer=["PLIOCENE","QUATERNAIRE"],layer_num=[1,0]):
     
     """
     extract the infos about the amount of water uptake by wells
-    path : path to the shp (multi points required)
+    BD_prlvm : geopanda object (multiple point). Must have a volume col, geology col,
     grid : the modelgrid
     fac : the factor to transform volume units to get m3/s (depends of original units)
     V_col : the column name containing info about Volume
@@ -62,11 +63,10 @@ def importWells3D(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",geol_c
     geol_layer : the name of the differents lithology encountered 
     layer_num : the num layer corresponding to the lithology in geol_layer
     note : multiple layer can be assigned to one lithology (assign multiple number in layer_num),
-    in that case the uptake will be equally separate through each specified layer
+    in that case the flux will be equally separate through each specified layer
     """
     
     ix=GridIntersect(grid)
-    BD_prlvm = gp.read_file(path)
     stress_data_well=[]
     
     for ilayer in range(len(geol_layer)): # iterate through layers

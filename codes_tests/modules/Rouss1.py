@@ -170,21 +170,6 @@ def get_budgetobj(model_name,workspace):
     return Bugetobj
 
 
-#6
-def get_MNTbbox (MNT_path):
-    """
-    Function that returns the x0,y0,x1 and y1 (in this order) of a mnt in the mnt's Coord. Sys.
-    """
-    R_mnt = gdal.Open(MNT_path)
-    mnt_infos=R_mnt.GetGeoTransform()
-    x0 = mnt_infos[0]+mnt_infos[1]/2
-    x1 = x0 + R_mnt.RasterXSize*mnt_infos[1]
-    y1 = mnt_infos[3]+mnt_infos[5]/2
-    y0 = y1 + R_mnt.RasterYSize*mnt_infos[5]
-    
-    return x0,y0,x1,y1
-
-
 #7
 def inter_lst (lst1,lst2,typ = "intersection"):
     """
@@ -240,7 +225,7 @@ def import_riv(grid,gp,lst_domain,nlay=3):
                     df.sort_values(by=["vertix"],ascending=False,inplace=True) 
 
                 # append these data in a big DF
-                df_tot_ord = df_tot_ord.append(df).drop(["vertix"],axis=1)
+                df_tot_ord = df_tot_ord.append(df,sort=True).drop(["vertix"],axis=1)
 
             else : # if only one cell is intersected by the linestring
                 df_tot_ord = df_tot_ord.append(pd.DataFrame({"cellids":cellids,"lengths":res.lengths}))
@@ -263,7 +248,7 @@ def import_riv(grid,gp,lst_domain,nlay=3):
     df_riv = pd.DataFrame({"cellids":cellids_Riv,"lengths":lst_len_Riv})       
     return df_riv
     
-
+    
 #9
 def get_cellcenters (grid,cellids): 
     """
@@ -279,6 +264,7 @@ def get_cellcenters (grid,cellids):
 
 #10
 def lin_interp(lengths,Hv,Lv):
+    
     """
     function that realize a linear interpolation btw 2 values, given a certain weighting list (lengths typically for a river)
     """
@@ -299,7 +285,7 @@ def lin_interp(lengths,Hv,Lv):
 def linInt_Dfcol(df,weight="lengths",col="head",null=0):
     
     """
-    function that linearly interpolates the values in a column btwn certains given values (not null), a null value is indicated by 0
+    function that linearly interpolates the values in a column between certains given values (not null), a null value is indicated by 0
     this function needs the lin_interp function, a weighting factor must be provided and a column in the df.
     df : a dataframe
     weight : a column of the same size that the interpolated column (default : "head") which is used as a weight
@@ -398,6 +384,10 @@ def coor_convert(x,y,epsgin,epsgout):
     
     """
     a function that converts coordinates, needs coordinates and epsgin and epsgout.
+    
+    x,y : coordinates from epsgin
+    epsgin : actual epsg system 
+    epsgout : the epsg goal
     """
     from pyproj import Proj, transform
     inproj = Proj(init="epsg:{}".format(epsgin))
@@ -465,11 +455,12 @@ def get_Total_Budget(model_name,model_dir,kstpkper=(0,0)):
         try:
             tmstp = int(ilin[52:58].split(",")[0])
             sp = int(ilin[73:-1])
-            inf = ilin[2:15]
+            info = ilin[2:15]
         except:
             pass
-        if (inf == "VOLUME BUDGET") & (tmstp == kstpkper[0]) + 1 & (sp == kstpkper[1]+1):
+        if (info == "VOLUME BUDGET") & (tmstp == kstpkper[0]) + 1 & (sp == kstpkper[1]+1):
             break
+            
     ###number of packages
     npack=0
     for o in range(100):
@@ -550,3 +541,28 @@ def rspl_rast(rast_path,grid,band=1):
     rast = Raster.load(rast_path)
     arr = rast.resample_to_grid(grid.xcellcenters,grid.ycellcenters,band)
     return arr
+
+#
+def arr2ascii(arr,filename,x0,y0,res,nodata=-9999):
+    
+    """
+    Create an ascii file from an array as a based. Left corner origin and resolution should be provided.
+    arr : 2D numpy arr
+    filename : the path/name for the new ascii file
+    x0,y0 : left corner origin of the array
+    res : Ascii resolution
+    nodata : no data value
+    """
+    
+    ncol = arr.shape[1]
+    nrow = arr.shape[0]
+    with open(filename,"w") as file:
+        file.write("ncols {}\n".format(ncol))
+        file.write("nrows {}\n".format(nrow))
+        file.write("xllcorner {}\n".format(x0))
+        file.write("yllcorner {}\n".format(y0))
+        file.write("cellsize {}\n".format(res))
+        file.write("nodata_value {}\n".format(nodata))
+        for irow in range(nrow):
+            for icol in range(ncol):
+                file.write(str(arr[irow,icol])+" ")

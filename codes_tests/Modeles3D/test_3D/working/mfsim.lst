@@ -79,14 +79,14 @@ Integer Variables
  Creating solution: SLN_1           
 
  OPENED first3D_mf6.ims
- FILE TYPE:IMS   UNIT 1022   STATUS:OLD                 
+ FILE TYPE:IMS   UNIT 1023   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
  END OF SIMULATION SOLUTIONGROUP
 
  IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
-         INPUT READ FROM UNIT 1022
+         INPUT READ FROM UNIT 1023
 
  PROCESSING IMS OPTIONS
  SIMPLE OPTION:
@@ -138,33 +138,31 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        50    -9994.79                     1_GWF-(2,151,180)
- Under-relaxation          1              -9994.79                     1_GWF-(2,151,180)
- Linear Solver             2        50    -50.1682                      1_GWF-(5,161,78)
- Under-relaxation          2              -50.1682                      1_GWF-(5,161,78)
- Linear Solver             3        50    -8.25438                       1_GWF-(2,99,86)
- Under-relaxation          3              -8.25438                       1_GWF-(2,99,86)
- Linear Solver             4        50    -3.98481                     1_GWF-(2,136,107)
- Under-relaxation          4              -3.98481                     1_GWF-(2,136,107)
- Linear Solver             5        50    -1.82899                     1_GWF-(2,122,105)
- Under-relaxation          5              -1.82899                     1_GWF-(2,122,105)
- Linear Solver             6        50    -1.24430                     1_GWF-(4,134,100)
- Under-relaxation          6              -1.24430                     1_GWF-(4,134,100)
- Linear Solver             7        43   -0.290848                     1_GWF-(2,125,104)
- Under-relaxation          7             -0.290848                     1_GWF-(2,125,104)
- Linear Solver             8         1   -5.039715E-04                 1_GWF-(2,116,109)
+ Linear Solver             1        50    -9995.19                     1_GWF-(2,151,180)
+ Under-relaxation          1              -9995.19                     1_GWF-(2,151,180)
+ Linear Solver             2        50    -93.5832                      1_GWF-(5,164,77)
+ Under-relaxation          2              -93.5832                      1_GWF-(5,164,77)
+ Linear Solver             3        50    -66.9609                      1_GWF-(2,117,96)
+ Under-relaxation          3              -66.9609                      1_GWF-(2,117,96)
+ Linear Solver             4        50    -2.68410                       1_GWF-(5,88,57)
+ Under-relaxation          4              -2.68410                       1_GWF-(5,88,57)
+ Linear Solver             5        50   -0.179420                     1_GWF-(2,107,120)
+ Under-relaxation          5             -0.179420                     1_GWF-(2,107,120)
+ Linear Solver             6         6    6.066683E-03                   1_GWF-(3,52,87)
+ Under-relaxation          6              6.066683E-03                   1_GWF-(3,52,87)
+ Linear Solver             7         1   -7.761662E-04                   1_GWF-(3,51,86)
 
- 8 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 344 TOTAL ITERATIONS
+ 7 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 257 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
- Number of allocated integer variables:   4797998
- Number of allocated real variables:    3965365
- Allocated memory in megabytes:     50.9149    
+ Number of allocated integer variables:   4822646
+ Number of allocated real variables:    4051686
+ Allocated memory in megabytes:     51.7041    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/06/04 14:38:37
- Elapsed run time:  2.631 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/06/06 13:26:22
+ Elapsed run time:  2.457 Seconds
 
  Normal termination of simulation.

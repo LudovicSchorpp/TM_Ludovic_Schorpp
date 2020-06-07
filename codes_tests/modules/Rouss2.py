@@ -1,4 +1,4 @@
-# Very Specific functions that lighten the code, only for the 2d model usage 
+# Very Specific functions that lighten the code
 
 import flopy as fp
 import numpy as np
@@ -63,7 +63,7 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid,nlay):
     df_riv.loc[0,"head"] = us
     df_riv.loc[df_riv.index[-1],"head"] = ds
     
-    # station(s) and assignement of heads/
+    # ref points and assignement of heads
     riv_stations = pd.read_csv(stations_csv,sep=";")
     for i in riv_stations.index:
         xs = riv_stations.loc[i].x
@@ -74,11 +74,10 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid,nlay):
 
     # interpolation of the heads btw ups,stations and ds
     linInt_Dfcol(df_riv,col="head")
-
     
     # drop some cells
     for cellid in df_riv.cellids:
-        if cellid in lst_chd:
+        if cellid in lst_chd: 
             df_riv = df_riv.drop(df_riv[df_riv["cellids"] == cellid].index)
         if cellid not in lst_domain:
             df_riv = df_riv.drop(df_riv[df_riv["cellids"]== cellid].index)
