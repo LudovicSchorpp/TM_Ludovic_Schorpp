@@ -192,7 +192,7 @@ def ImportControlPz3D(piez_path,sheet_name,geol_layer,layer_num,geol_col,grid,nl
         df = pd.DataFrame()
         df["cellid"]=lstIDpz
         df["Pz"] = Pz
-        df = df.groupby(["cellid"]).mean().reset_index() # group pz on the same cell
+        df = df.groupby(["cellid"]).mean().reset_index() # group pz and apply mean on the same cell
 
         for i in df.index:
             j,k = df.loc[i,"cellid"]

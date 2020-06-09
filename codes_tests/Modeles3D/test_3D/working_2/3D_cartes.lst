@@ -1,0 +1,425 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.0.4 03/13/2019
+
+   MODFLOW 6 compiled Mar 21 2019 15:37:31 with IFORT compiler (ver. 19.0.0)
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+MODFLOW was compiled using uniform precision.
+Precision of REAL variables: 15
+
+
+ OPENED 3D_cartes.dis
+ FILE TYPE:DIS6                   UNIT 1005   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED 3D_cartes.ic
+ FILE TYPE:IC6                    UNIT 1006   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED 3D_cartes.oc
+ FILE TYPE:OC6                    UNIT 1007   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED 3D_cartes.npf
+ FILE TYPE:NPF6                   UNIT 1008   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED 3D_cartes.wel
+ FILE TYPE:WEL6                   UNIT 1009   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED 3D_cartes.rch
+ FILE TYPE:RCH6                   UNIT 1010   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED irri.rch
+ FILE TYPE:RCH6                   UNIT 1011   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED p_agri.rch
+ FILE TYPE:RCH6                   UNIT 1012   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Corb.wel
+ FILE TYPE:WEL6                   UNIT 1013   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED sea.chd
+ FILE TYPE:CHD6                   UNIT 1014   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED thuir.chd
+ FILE TYPE:CHD6                   UNIT 1015   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED eta.drn
+ FILE TYPE:DRN6                   UNIT 1016   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED agly.riv
+ FILE TYPE:RIV6                   UNIT 1017   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Tet.riv
+ FILE TYPE:RIV6                   UNIT 1018   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Rea.riv
+ FILE TYPE:RIV6                   UNIT 1019   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Cant.riv
+ FILE TYPE:RIV6                   UNIT 1020   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Tech.riv
+ FILE TYPE:RIV6                   UNIT 1021   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Bol.riv
+ FILE TYPE:RIV6                   UNIT 1022   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM UNIT 1005
+
+
+ PROCESSING DISCRETIZATION OPTIONS
+    XORIGIN SPECIFIED AS     664525.000000000    
+    YORIGIN SPECIFIED AS     6152875.00000000    
+ END OF DISCRETIZATION OPTIONS
+ MODEL LENGTH UNIT IS UNDEFINED
+ PROCESSING DISCRETIZATION DIMENSIONS
+    NLAY =       5
+    NROW =     182
+    NCOL =     183
+ END OF DISCRETIZATION DIMENSIONS
+ PROCESSING GRIDDATA
+ END PROCESSING GRIDDATA
+
+ THE SPECIFIED IDOMAIN RESULTS IN A REDUCED NUMBER OF CELLS.
+ NUMBER OF USER NODES:  166530
+ NUMBER OF NODES IN SOLUTION:   75267
+
+
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM UNIT 1008
+
+
+ PROCESSING NPF OPTIONS
+    CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
+ END OF NPF OPTIONS
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1009
+
+ PROCESSING WEL OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF WEL OPTIONS
+
+ PROCESSING WEL DIMENSIONS
+    MAXBOUND =     267
+ END OF WEL DIMENSIONS
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1013
+
+ PROCESSING WEL OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF WEL OPTIONS
+
+ PROCESSING WEL DIMENSIONS
+    MAXBOUND =     100
+ END OF WEL DIMENSIONS
+
+ DRN   -- DRN PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1016
+
+ PROCESSING DRN OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF DRN OPTIONS
+
+ PROCESSING DRN DIMENSIONS
+    MAXBOUND =     644
+ END OF DRN DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1017
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      86
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1018
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =     173
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1019
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =     129
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1020
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      66
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1021
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =     113
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1022
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      47
+ END OF RIV DIMENSIONS
+
+ RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1010
+
+ PROCESSING RCH OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RCH OPTIONS
+
+ PROCESSING RCH DIMENSIONS
+    MAXBOUND =   18595
+ END OF RCH DIMENSIONS
+
+ RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1011
+
+ PROCESSING RCH OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RCH OPTIONS
+
+ PROCESSING RCH DIMENSIONS
+    MAXBOUND =   18595
+ END OF RCH DIMENSIONS
+
+ RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1012
+
+ PROCESSING RCH OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RCH OPTIONS
+
+ PROCESSING RCH DIMENSIONS
+    MAXBOUND =    3582
+ END OF RCH DIMENSIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1014
+
+ PROCESSING CHD OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF CHD OPTIONS
+
+ PROCESSING CHD DIMENSIONS
+    MAXBOUND =    8454
+ END OF CHD DIMENSIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
+
+ PROCESSING CHD OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF CHD OPTIONS
+
+ PROCESSING CHD DIMENSIONS
+    MAXBOUND =      16
+ END OF CHD DIMENSIONS
+
+ IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1006
+ PROCESSING GRIDDATA
+ END PROCESSING GRIDDATA
+ PROCESSING GRIDDATA
+
+                ICELLTYPE = 0
+ K33 not provided.  Assuming K33 = K.
+ K22 not provided.  Assuming K22 = K.
+ END PROCESSING GRIDDATA
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1024
+      FILE NAME: M:\GitHub\TM_Ludovic_Schorpp\codes_tests\Modeles3D\test_3D\working_2\3D_cartes.dis.grb
+
+ OPENED M:\GitHub\TM_Ludovic_Schorpp\codes_tests\Modeles3D\test_3D\working_2\3D_cartes.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1024   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ PROCESSING OC OPTIONS
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1025
+      FILE NAME: 3D_cartes.cbc
+
+ OPENED 3D_cartes.cbc
+ FILE TYPE:DATA(BINARY)   UNIT 1025   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1026
+      FILE NAME: 3D_cartes.hds
+
+ OPENED 3D_cartes.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1026   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      THE LAST TIME STEP WILL BE SAVED
+      THE LAST TIME STEP WILL BE SAVED
+      ALL TIME STEPS WILL BE PRINTED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE WEL              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE CORB             ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              DRN IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE ETA              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE AGLY             ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE TET              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE REA              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE CANT             ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE TECH             ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE BOL              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RCH IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE RCH              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RCH IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE IRRIG            ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RCH IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE P_AGRI           ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE SEA              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL 3D_CARTES        PACKAGE 3D_CARTES       CONNECTED TO MODEL 3D_CARTES        PACKAGE THUIR            ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1026 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 WEL =           0.0000                   WEL =           0.0000     WEL             
+                 WEL =           0.2000                   WEL =           0.2000     CORB            
+                 DRN =           0.0000                   DRN =           0.0000     ETA             
+                 RIV =       1.5487E-02                   RIV =       1.5487E-02     AGLY            
+                 RIV =           0.2787                   RIV =           0.2787     TET             
+                 RIV =           0.1605                   RIV =           0.1605     REA             
+                 RIV =           0.1008                   RIV =           0.1008     CANT            
+                 RIV =           0.1527                   RIV =           0.1527     TECH            
+                 RIV =           0.6462                   RIV =           0.6462     BOL             
+                 RCH =           3.4444                   RCH =           3.4444     RCH             
+                 RCH =           1.6413                   RCH =           1.6413     IRRIG           
+                 RCH =           0.0000                   RCH =           0.0000     P_AGRI          
+                 CHD =          18.1464                   CHD =          18.1464     SEA             
+                 CHD =           0.2654                   CHD =           0.2654     THUIR           
+
+            TOTAL IN =          25.0518              TOTAL IN =          25.0518
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 WEL =           1.4627                   WEL =           1.4627     WEL             
+                 WEL =           0.0000                   WEL =           0.0000     CORB            
+                 DRN =           1.0968                   DRN =           1.0968     ETA             
+                 RIV =           0.1245                   RIV =           0.1245     AGLY            
+                 RIV =           2.0779                   RIV =           2.0779     TET             
+                 RIV =           0.1868                   RIV =           0.1868     REA             
+                 RIV =       8.1427E-02                   RIV =       8.1427E-02     CANT            
+                 RIV =           0.2680                   RIV =           0.2680     TECH            
+                 RIV =       7.1963E-03                   RIV =       7.1963E-03     BOL             
+                 RCH =           0.0000                   RCH =           0.0000     RCH             
+                 RCH =           0.0000                   RCH =           0.0000     IRRIG           
+                 RCH =           0.5529                   RCH =           0.5529     P_AGRI          
+                 CHD =          19.1928                   CHD =          19.1928     SEA             
+                 CHD =           0.0000                   CHD =           0.0000     THUIR           
+
+           TOTAL OUT =          25.0511             TOTAL OUT =          25.0511
+
+            IN - OUT =       6.9550E-04              IN - OUT =       6.9550E-04
+
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
+ STRESS PERIOD TIME  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
+         TOTAL TIME  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
