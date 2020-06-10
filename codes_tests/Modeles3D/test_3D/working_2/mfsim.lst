@@ -140,18 +140,18 @@ Integer Variables
  ---------------------------------------------------------------------------------------
  Linear Solver             1        50    -9995.19                     1_GWF-(2,151,180)
  Under-relaxation          1              -9995.19                     1_GWF-(2,151,180)
- Linear Solver             2        50    -132.593                      1_GWF-(5,164,77)
- Under-relaxation          2              -132.593                      1_GWF-(5,164,77)
- Linear Solver             3        50    -3.02194                      1_GWF-(2,116,11)
- Under-relaxation          3              -3.02194                      1_GWF-(2,116,11)
- Linear Solver             4        33   -0.395382                      1_GWF-(4,135,49)
- Under-relaxation          4             -0.395382                      1_GWF-(4,135,49)
- Linear Solver             5         3   -7.703057E-03                 1_GWF-(2,107,122)
- Under-relaxation          5             -7.703057E-03                 1_GWF-(2,107,122)
- Linear Solver             6         1   -7.746600E-04                 1_GWF-(2,114,126)
+ Linear Solver             2        50    -53.9505                      1_GWF-(5,164,77)
+ Under-relaxation          2              -53.9505                      1_GWF-(5,164,77)
+ Linear Solver             3        50    -1.66500                      1_GWF-(2,175,49)
+ Under-relaxation          3              -1.66500                      1_GWF-(2,175,49)
+ Linear Solver             4        23   -0.184136                      1_GWF-(2,175,51)
+ Under-relaxation          4             -0.184136                      1_GWF-(2,175,51)
+ Linear Solver             5         3   -2.148901E-02                 1_GWF-(2,107,124)
+ Under-relaxation          5             -2.148901E-02                 1_GWF-(2,107,124)
+ Linear Solver             6         1    5.629462E-04                 1_GWF-(3,107,123)
 
  6 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 187 TOTAL ITERATIONS
+ 177 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -160,7 +160,7 @@ Integer Variables
  Allocated memory in megabytes:     51.7041    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/06/09 15:18:27
- Elapsed run time:  1.930 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/06/10 15:06:50
+ Elapsed run time:  1.959 Seconds
 
  Normal termination of simulation.
