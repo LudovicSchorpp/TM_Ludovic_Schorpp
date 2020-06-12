@@ -1,4 +1,4 @@
-# a master student's hand-made class to handle budget analysis with modflow 6/flopy
+# a master student's hand-made class to handle budget analysis with modflow 6/flopy (Only DIS)
 
 import flopy as fp
 import numpy as np
@@ -84,7 +84,6 @@ class Zb():
     
         """
         Return a matrix containing flux btw differents zones (each 2 columns correspond to one zone (1st is IN and 2nd OUT from the zone)
-        each layer represent a zone (from zone 1 to zone n)
         cbc : cbc object
         df_pos : Dataframe with infos of connexions btw interzones cells (see get_dfpos)
         zones : the numpy 3D array with the zones
