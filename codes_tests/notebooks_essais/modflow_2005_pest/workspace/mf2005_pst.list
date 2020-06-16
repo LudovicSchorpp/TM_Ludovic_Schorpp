@@ -104,7 +104,10 @@
 
  WETTING CAPABILITY IS NOT ACTIVE IN ANY LAYER
 
-    HYD. COND. ALONG ROWS =  1.000000E-04 FOR LAYER   1
+
+
+              HYD. COND. ALONG ROWS FOR LAYER   1
+ READING ON UNIT   15 WITH FORMAT: (10E15.6)           
 
       VERTICAL HYD. COND. =   1.00000     FOR LAYER   1
 
@@ -155,20 +158,20 @@
            IN:                                      IN:
            ---                                      ---
              STORAGE =           0.0000               STORAGE =           0.0000
-       CONSTANT HEAD =       1.1111E-02         CONSTANT HEAD =       1.1111E-02
+       CONSTANT HEAD =       1.9706E-03         CONSTANT HEAD =       1.9706E-03
 
-            TOTAL IN =       1.1111E-02              TOTAL IN =       1.1111E-02
+            TOTAL IN =       1.9706E-03              TOTAL IN =       1.9706E-03
 
           OUT:                                     OUT:
           ----                                     ----
              STORAGE =           0.0000               STORAGE =           0.0000
-       CONSTANT HEAD =       1.1111E-02         CONSTANT HEAD =       1.1111E-02
+       CONSTANT HEAD =       1.9706E-03         CONSTANT HEAD =       1.9706E-03
 
-           TOTAL OUT =       1.1111E-02             TOTAL OUT =       1.1111E-02
+           TOTAL OUT =       1.9706E-03             TOTAL OUT =       1.9706E-03
 
-            IN - OUT =      -9.3132E-10              IN - OUT =      -9.3132E-10
+            IN - OUT =       4.6566E-10              IN - OUT =       4.6566E-10
 
- PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 
 
 
@@ -183,6 +186,6 @@
          TOTAL TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
 1
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/06/15 20:44:55
- Elapsed run time:  0.025 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/06/16 15:36:45
+ Elapsed run time:  0.100 Seconds
 
