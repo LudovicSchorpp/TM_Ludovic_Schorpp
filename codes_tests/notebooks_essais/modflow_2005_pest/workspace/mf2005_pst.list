@@ -146,6 +146,23 @@
 
  OUTPUT CONTROL FOR STRESS PERIOD    1   TIME STEP    1
     SAVE HEAD FOR ALL LAYERS
+    PRINT HEAD FOR ALL LAYERS
+1
+              HEAD IN LAYER   1 AT END OF TIME STEP   1 IN STRESS PERIOD    1
+  ---------------------------------------------------------------------------
+
+            1           2           3           4           5           6           7           8           9          10
+ ........................................................................................................................
+   1    10.00       9.133       7.817       5.665       5.285       4.578       3.761       3.128       2.189       0.000    
+   2    10.00       9.176       8.797       6.619       5.192       4.614       3.676       2.728       2.181       0.000    
+   3    10.00       9.076       8.452       6.852       5.338       4.383       3.739       3.065       2.153       0.000    
+   4    10.00       9.183       8.357       6.711       5.302       4.514       3.799       2.998       1.540       0.000    
+   5    10.00       9.080       7.881       5.856       4.861       4.452       4.171       2.678      0.9128       0.000    
+   6    10.00       8.998       7.414       5.524       4.951       4.424       4.164       2.351      0.6688       0.000    
+   7    10.00       8.620       7.297       5.885       4.782       4.322       3.406       1.755      0.8766       0.000    
+   8    10.00       8.587       7.917       6.173       4.496       3.975       3.284       2.376       1.378       0.000    
+   9    10.00       8.731       7.546       6.304       4.952       3.734       3.262       2.596       1.503       0.000    
+  10    10.00       8.664       7.086       6.282       5.286       4.181       3.372       2.646       1.294       0.000    
 
  HEAD WILL BE SAVED ON UNIT   51 AT END OF TIME STEP    1, STRESS PERIOD    1
 1
@@ -158,20 +175,20 @@
            IN:                                      IN:
            ---                                      ---
              STORAGE =           0.0000               STORAGE =           0.0000
-       CONSTANT HEAD =       1.9706E-03         CONSTANT HEAD =       1.9706E-03
+       CONSTANT HEAD =       1.9217E-03         CONSTANT HEAD =       1.9217E-03
 
-            TOTAL IN =       1.9706E-03              TOTAL IN =       1.9706E-03
+            TOTAL IN =       1.9217E-03              TOTAL IN =       1.9217E-03
 
           OUT:                                     OUT:
           ----                                     ----
              STORAGE =           0.0000               STORAGE =           0.0000
-       CONSTANT HEAD =       1.9706E-03         CONSTANT HEAD =       1.9706E-03
+       CONSTANT HEAD =       1.9217E-03         CONSTANT HEAD =       1.9217E-03
 
-           TOTAL OUT =       1.9706E-03             TOTAL OUT =       1.9706E-03
+           TOTAL OUT =       1.9217E-03             TOTAL OUT =       1.9217E-03
 
-            IN - OUT =       4.6566E-10              IN - OUT =       4.6566E-10
+            IN - OUT =      -2.3283E-10              IN - OUT =      -2.3283E-10
 
- PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+ PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
 
 
 
@@ -186,6 +203,6 @@
          TOTAL TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
 1
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/06/16 15:36:45
- Elapsed run time:  0.100 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/06/17  9:33:00
+ Elapsed run time:  0.062 Seconds
 
