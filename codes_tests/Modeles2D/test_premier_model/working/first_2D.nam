@@ -11,8 +11,7 @@ BEGIN packages
   WEL6  Corb.wel  corb
   CHD6  thuir.chd  thuir
   CHD6  sea.chd  sea
-  CHD6  eta.chd  eta
-  DRN6  first_2D.drn  drn
+  DRN6  eta.drn  eta
   RIV6  agy.chd  agy
   RIV6  Tet.chd  tet
   RIV6  Rea.chd  rea

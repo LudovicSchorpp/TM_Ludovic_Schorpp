@@ -1,5 +1,5 @@
 BEGIN options
   PRINT_OPTION  summary
-  COMPLEXITY  moderate
+  COMPLEXITY  simple
 END options
 

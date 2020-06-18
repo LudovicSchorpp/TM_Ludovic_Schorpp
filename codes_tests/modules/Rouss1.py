@@ -89,7 +89,7 @@ def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0
     ix = GridIntersect(grid)
     if type == "polygon":
         result = ix.intersect_polygon(gp.geometry[0])
-        result = result[result.areas>(np.max(result.areas)/3)] # only take into account cells that have a least 1/3 intersected 
+        result = result[result.areas>(np.nanmax(result.areas)/3)] # only take into account cells that have a least 1/3 intersected 
         result = result[result.areas!=0]                       # fix bug
         
     if type == "boundary" :
@@ -452,6 +452,7 @@ def get_Total_Budget(model_name,model_dir,kstpkper=(0,0)):
     tmstp=0;sp=0;inf=0
     for ilin in doc:
         i += 1
+        info=""
         try:
             tmstp = int(ilin[52:58].split(",")[0])
             sp = int(ilin[73:-1])

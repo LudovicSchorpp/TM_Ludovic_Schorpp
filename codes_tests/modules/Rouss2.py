@@ -44,14 +44,15 @@ def import_rch(file,grid,coeff=0.5):
 def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid,nlay):
     
     """
-    a complete function that import a river into the modflow 6 and return the stress data.
-    the river path, the station path and the upstream and downstream head must be provided
+    a complete function that import a river into modflow 6 and return the stress data.
+    the river path, the station path and the upstream and downstream head as number of layers must be provided
     
     riv_path : the path to the shapefile of the river (one linestring only)
     stations_csv : path to the csv file containing the infos about the stations (x,y,elevation)
     lst_chd : a list of every cells constant heads
     lst_domain : a list of each active cell
     grid : grid of the model
+    nlay : nlay
     """
     
     BC_riv = gp.read_file(riv_path) # read shp, linestring from ups to dws
