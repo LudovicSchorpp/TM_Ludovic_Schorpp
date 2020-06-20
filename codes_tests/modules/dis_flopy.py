@@ -8,7 +8,7 @@ def check_thk(top,botm):
     """
     check if a cell have a thickness <= 0 for each layer
     input : top (the top surface) and botm (botom of each layer)
-    output : lst of bool (false mean everything's okay)
+    output : lst of bool (false mean everything's okay !)
     """
     nlay = botm.shape[0]
     bol_lst=[]
@@ -17,6 +17,24 @@ def check_thk(top,botm):
         bol_lst.append(((botm[ilay]-botm[ilay+1])<=0).any())
     return bol_lst
 
+
+#2
+def p_active_cells(idomain):
+    
+    """
+    Automatically transform inactive cells, between 2 active cells, pseudo active.
+    idomain : 3d array, idomain
+    """
+    
+    nlay = idomain.shape[0]
+    nrow = idomain.shape[1]
+    ncol = idomain.shape[2]
+for ilay in range(nlay-2):
+    for irow in range(nrow):
+        for icol in range(ncol):
+            icell = idomain[:,irow,icol]
+            if (icell[:ilay+1]==1).any() & (icell[ilay+2:]==1).any() & (icell[ilay+1] == 0):
+                idomain[ilay+1,irow,icol] = - 1
 #3
 def active_dom(surf,grid,nodata=9999):
     
@@ -65,8 +83,8 @@ def MinThick(idomain,botm,top,min_ep_act=5,min_ep_inact=0.1):
 def multi_lay(botm,idomain,ep=50,nsublay=4,layer=2):
     
     """
-    subdivised a layer into sublayers, return two numpy 3D array, one is surface and the other the idomain associated 
-    to these new layers
+    subdivised a layer into sublayers, return two numpy 3D array, one for the new surfaces and the other for the new idomain
+    associated to these new layers
     """
     nlay = botm.shape[0]
     nrow = botm.shape[1]
