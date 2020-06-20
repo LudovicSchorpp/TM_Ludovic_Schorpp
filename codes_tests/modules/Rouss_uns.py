@@ -14,7 +14,7 @@ from shapely.strtree import STRtree
 
 sys.path.insert(1, '../test_premier_model/')
 # hand made functions
-from Rouss1 import *
+from Rouss import *
 
 
 #1bis

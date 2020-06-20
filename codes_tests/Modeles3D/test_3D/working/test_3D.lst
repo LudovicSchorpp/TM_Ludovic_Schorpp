@@ -217,7 +217,7 @@ Precision of REAL variables: 15
  END OF RIV OPTIONS
 
  PROCESSING RIV DIMENSIONS
-    MAXBOUND =     129
+    MAXBOUND =     125
  END OF RIV DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1020
@@ -227,7 +227,7 @@ Precision of REAL variables: 15
  END OF RIV OPTIONS
 
  PROCESSING RIV DIMENSIONS
-    MAXBOUND =      66
+    MAXBOUND =      65
  END OF RIV DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1021
@@ -237,7 +237,7 @@ Precision of REAL variables: 15
  END OF RIV OPTIONS
 
  PROCESSING RIV DIMENSIONS
-    MAXBOUND =     113
+    MAXBOUND =     109
  END OF RIV DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1022
@@ -376,41 +376,41 @@ Precision of REAL variables: 15
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
-                 DRN =           0.0000                   DRN =           0.0000     ETA             
-                 RIV =       9.7298E-03                   RIV =       9.7298E-03     AGLY            
-                 RIV =           0.2431                   RIV =           0.2431     TET             
-                 RIV =       7.5081E-02                   RIV =       7.5081E-02     REA             
-                 RIV =           0.1318                   RIV =           0.1318     CANT            
-                 RIV =       9.9274E-02                   RIV =       9.9274E-02     TECH            
-                 RIV =           0.4983                   RIV =           0.4983     BOL             
+                 DRN =       4.3942E-06                   DRN =       4.3942E-06     ETA             
+                 RIV =       6.6862E-03                   RIV =       6.6862E-03     AGLY            
+                 RIV =           0.1193                   RIV =           0.1193     TET             
+                 RIV =           0.1021                   RIV =           0.1021     REA             
+                 RIV =           0.1119                   RIV =           0.1119     CANT            
+                 RIV =           0.1102                   RIV =           0.1102     TECH            
+                 RIV =           0.5392                   RIV =           0.5392     BOL             
                  RCH =           3.4372                   RCH =           3.4372     RCH             
                  RCH =           1.6393                   RCH =           1.6393     IRRIG           
                  RCH =           0.0000                   RCH =           0.0000     P_AGRI          
-                 CHD =          18.0973                   CHD =          18.0973     SEA             
-                 CHD =           1.0386                   CHD =           1.0386     THUIR           
+                 CHD =          18.1010                   CHD =          18.1010     SEA             
+                 CHD =           1.0261                   CHD =           1.0261     THUIR           
 
-            TOTAL IN =          25.4697              TOTAL IN =          25.4697
+            TOTAL IN =          25.3930              TOTAL IN =          25.3930
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.4627                   WEL =           1.4627     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           1.0852                   DRN =           1.0852     ETA             
-                 RIV =           0.1473                   RIV =           0.1473     AGLY            
-                 RIV =           2.3979                   RIV =           2.3979     TET             
-                 RIV =           0.1791                   RIV =           0.1791     REA             
-                 RIV =           0.1036                   RIV =           0.1036     CANT            
-                 RIV =           0.2736                   RIV =           0.2736     TECH            
-                 RIV =       3.3380E-02                   RIV =       3.3380E-02     BOL             
+                 DRN =           1.1048                   DRN =           1.1048     ETA             
+                 RIV =           0.1657                   RIV =           0.1657     AGLY            
+                 RIV =           2.4424                   RIV =           2.4424     TET             
+                 RIV =           0.1367                   RIV =           0.1367     REA             
+                 RIV =           0.1246                   RIV =           0.1246     CANT            
+                 RIV =           0.2786                   RIV =           0.2786     TECH            
+                 RIV =       1.9365E-02                   RIV =       1.9365E-02     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
                  RCH =           0.0000                   RCH =           0.0000     IRRIG           
                  RCH =           0.5510                   RCH =           0.5510     P_AGRI          
-                 CHD =          19.2359                   CHD =          19.2359     SEA             
+                 CHD =          19.1070                   CHD =          19.1070     SEA             
                  CHD =           0.0000                   CHD =           0.0000     THUIR           
 
-           TOTAL OUT =          25.4696             TOTAL OUT =          25.4696
+           TOTAL OUT =          25.3927             TOTAL OUT =          25.3927
 
-            IN - OUT =       9.4447E-05              IN - OUT =       9.4447E-05
+            IN - OUT =       3.0740E-04              IN - OUT =       3.0740E-04
 
  PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 
