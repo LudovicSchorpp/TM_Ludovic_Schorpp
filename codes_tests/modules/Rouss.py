@@ -45,8 +45,6 @@ def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0
             idomain[irow*grid.ncol+icol] = 1
     return lst
 
-
-
 #2
 def cellidBD(idomain, layer=0):   
     
@@ -64,6 +62,7 @@ def cellidBD(idomain, layer=0):
                 if np.sum(idomain[layer][irow-1:irow+2,icol-1:icol+2]==1) < 8:
                     lst_cellBD.append((layer,irow,icol))
     return lst_cellBD
+
 
 #3 get functions
 def get_heads(model_name,workspace,obj=False):
@@ -137,7 +136,7 @@ def import_riv(grid,gp,lst_domain):
     Return a dataframe containing these datas, post-processing necessary to remove cells that are already counted as BC in the model
     """
     
-    nlay = np.max(np.array(lst_domain)[:,0]) #nlay
+    nlay = np.max(np.array(lst_domain)[:,0])+1 #nlay
     
     ix = GridIntersect(grid)
     coord_riv=[]
@@ -263,7 +262,21 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
         df_riv.loc[dist==np.min(dist),"head"] = elev
 
     # interpolation of the heads btw ups,stations and ds
-    linInt_Dfcol(df_riv,col="head")
+    # linInt_Dfcol(df_riv,col="head")
+    
+    # length cumulated
+    lcm=0
+    l_cum=[]
+    for l in df_riv.lengths:
+        lcm += l/2
+        l_cum.append(lcm)
+        lcm += l/2
+    df_riv["l_cum"] = l_cum
+    
+    # linear interp (0 as a null value)
+    yp = df_riv["head"][df_riv["head"]!=0]
+    xp = df_riv["l_cum"][df_riv["head"]!=0]
+    df_riv["head"] = np.interp(df_riv["l_cum"],xp,yp)
     
     # drop some cells
     for cellid in df_riv.cellids:
@@ -350,7 +363,7 @@ def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_c
     return Control_pz
 
 #11
-def importWells(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0):
+def importWells(GDB,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0):
     
     """
     extract the infos about the uptake of wells
@@ -361,7 +374,7 @@ def importWells(path,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0)
     layer : the layer on which the wells are active
     """
     
-    GDB = gp.read_file(path)
+
     stress_data_well=[]
     ix = GridIntersect(grid)
 
@@ -515,6 +528,7 @@ def k_zones(k,z1,layer,kn,ix):
     
     """
     Change value in a numpy 3D array location based on a certain zone (format: [(x1,y1),(x2,y2), ...])
+    Design for update permeability array but can be used for any other purpose that imply modifying an array in a specific zone
     
     z1: list of tuples, zone (format: [(x1,y1),(x2,y2), ...])
     layer : list or int, apply changes at which layers ?

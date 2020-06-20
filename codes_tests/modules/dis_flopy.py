@@ -29,12 +29,12 @@ def p_active_cells(idomain):
     nlay = idomain.shape[0]
     nrow = idomain.shape[1]
     ncol = idomain.shape[2]
-for ilay in range(nlay-2):
-    for irow in range(nrow):
-        for icol in range(ncol):
-            icell = idomain[:,irow,icol]
-            if (icell[:ilay+1]==1).any() & (icell[ilay+2:]==1).any() & (icell[ilay+1] == 0):
-                idomain[ilay+1,irow,icol] = - 1
+    for ilay in range(nlay-2):
+        for irow in range(nrow):
+            for icol in range(ncol):
+                icell = idomain[:,irow,icol]
+                if (icell[:ilay+1]==1).any() & (icell[ilay+2:]==1).any() & (icell[ilay+1] == 0):
+                    idomain[ilay+1,irow,icol] = - 1
 #3
 def active_dom(surf,grid,nodata=9999):
     

@@ -149,7 +149,7 @@ Precision of REAL variables: 15
 
  THE SPECIFIED IDOMAIN RESULTS IN A REDUCED NUMBER OF CELLS.
  NUMBER OF USER NODES:  166530
- NUMBER OF NODES IN SOLUTION:   75267
+ NUMBER OF NODES IN SOLUTION:   70814
 
 
 
@@ -157,7 +157,6 @@ Precision of REAL variables: 15
 
 
  PROCESSING NPF OPTIONS
-    CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
  END OF NPF OPTIONS
 
  WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1009
@@ -177,7 +176,7 @@ Precision of REAL variables: 15
  END OF WEL OPTIONS
 
  PROCESSING WEL DIMENSIONS
-    MAXBOUND =     100
+    MAXBOUND =      97
  END OF WEL DIMENSIONS
 
  DRN   -- DRN PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1016
@@ -217,7 +216,7 @@ Precision of REAL variables: 15
  END OF RIV OPTIONS
 
  PROCESSING RIV DIMENSIONS
-    MAXBOUND =     125
+    MAXBOUND =     124
  END OF RIV DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1020
@@ -237,7 +236,7 @@ Precision of REAL variables: 15
  END OF RIV OPTIONS
 
  PROCESSING RIV DIMENSIONS
-    MAXBOUND =     109
+    MAXBOUND =     111
  END OF RIV DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1022
@@ -257,7 +256,7 @@ Precision of REAL variables: 15
  END OF RCH OPTIONS
 
  PROCESSING RCH DIMENSIONS
-    MAXBOUND =   18595
+    MAXBOUND =   18569
  END OF RCH DIMENSIONS
 
  RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1011
@@ -267,7 +266,7 @@ Precision of REAL variables: 15
  END OF RCH OPTIONS
 
  PROCESSING RCH DIMENSIONS
-    MAXBOUND =   18595
+    MAXBOUND =   18569
  END OF RCH DIMENSIONS
 
  RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1012
@@ -277,7 +276,7 @@ Precision of REAL variables: 15
  END OF RCH OPTIONS
 
  PROCESSING RCH DIMENSIONS
-    MAXBOUND =    3582
+    MAXBOUND =    3583
  END OF RCH DIMENSIONS
 
  CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1014
@@ -287,7 +286,7 @@ Precision of REAL variables: 15
  END OF CHD OPTIONS
 
  PROCESSING CHD DIMENSIONS
-    MAXBOUND =    8454
+    MAXBOUND =    7350
  END OF CHD DIMENSIONS
 
  CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
@@ -297,7 +296,7 @@ Precision of REAL variables: 15
  END OF CHD OPTIONS
 
  PROCESSING CHD DIMENSIONS
-    MAXBOUND =      31
+    MAXBOUND =      32
  END OF CHD DIMENSIONS
 
  IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1006
@@ -347,7 +346,6 @@ Precision of REAL variables: 15
       ALL TIME STEPS WILL BE PRINTED
 
  END READING OUTPUT CONTROL FOR STRESS PERIOD 1
- UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              WEL IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE WEL              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              WEL IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE CORB             ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              DRN IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE ETA              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
@@ -376,43 +374,43 @@ Precision of REAL variables: 15
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
-                 DRN =       4.3942E-06                   DRN =       4.3942E-06     ETA             
-                 RIV =       6.6862E-03                   RIV =       6.6862E-03     AGLY            
-                 RIV =           0.1193                   RIV =           0.1193     TET             
-                 RIV =           0.1021                   RIV =           0.1021     REA             
-                 RIV =           0.1119                   RIV =           0.1119     CANT            
-                 RIV =           0.1102                   RIV =           0.1102     TECH            
-                 RIV =           0.5392                   RIV =           0.5392     BOL             
-                 RCH =           3.4372                   RCH =           3.4372     RCH             
-                 RCH =           1.6393                   RCH =           1.6393     IRRIG           
+                 DRN =           0.0000                   DRN =           0.0000     ETA             
+                 RIV =       6.6305E-03                   RIV =       6.6305E-03     AGLY            
+                 RIV =           0.1067                   RIV =           0.1067     TET             
+                 RIV =           0.1009                   RIV =           0.1009     REA             
+                 RIV =           0.1103                   RIV =           0.1103     CANT            
+                 RIV =       9.0456E-02                   RIV =       9.0456E-02     TECH            
+                 RIV =           0.5412                   RIV =           0.5412     BOL             
+                 RCH =           4.1254                   RCH =           4.1254     RCH             
+                 RCH =           1.6415                   RCH =           1.6415     IRRIG           
                  RCH =           0.0000                   RCH =           0.0000     P_AGRI          
-                 CHD =          18.1010                   CHD =          18.1010     SEA             
-                 CHD =           1.0261                   CHD =           1.0261     THUIR           
+                 CHD =           1.7231                   CHD =           1.7231     SEA             
+                 CHD =           1.0462                   CHD =           1.0462     THUIR           
 
-            TOTAL IN =          25.3930              TOTAL IN =          25.3930
+            TOTAL IN =           9.6924              TOTAL IN =           9.6924
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.4627                   WEL =           1.4627     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           1.1048                   DRN =           1.1048     ETA             
-                 RIV =           0.1657                   RIV =           0.1657     AGLY            
-                 RIV =           2.4424                   RIV =           2.4424     TET             
-                 RIV =           0.1367                   RIV =           0.1367     REA             
-                 RIV =           0.1246                   RIV =           0.1246     CANT            
-                 RIV =           0.2786                   RIV =           0.2786     TECH            
-                 RIV =       1.9365E-02                   RIV =       1.9365E-02     BOL             
+                 DRN =           1.3525                   DRN =           1.3525     ETA             
+                 RIV =           0.1875                   RIV =           0.1875     AGLY            
+                 RIV =           2.4620                   RIV =           2.4620     TET             
+                 RIV =           0.1356                   RIV =           0.1356     REA             
+                 RIV =           0.1058                   RIV =           0.1058     CANT            
+                 RIV =           0.2895                   RIV =           0.2895     TECH            
+                 RIV =       1.8331E-02                   RIV =       1.8331E-02     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
                  RCH =           0.0000                   RCH =           0.0000     IRRIG           
-                 RCH =           0.5510                   RCH =           0.5510     P_AGRI          
-                 CHD =          19.1070                   CHD =          19.1070     SEA             
+                 RCH =           0.5513                   RCH =           0.5513     P_AGRI          
+                 CHD =           3.1266                   CHD =           3.1266     SEA             
                  CHD =           0.0000                   CHD =           0.0000     THUIR           
 
-           TOTAL OUT =          25.3927             TOTAL OUT =          25.3927
+           TOTAL OUT =           9.6919             TOTAL OUT =           9.6919
 
-            IN - OUT =       3.0740E-04              IN - OUT =       3.0740E-04
+            IN - OUT =       5.5545E-04              IN - OUT =       5.5545E-04
 
- PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+ PERCENT DISCREPANCY =           0.01     PERCENT DISCREPANCY =           0.01
 
 
 
