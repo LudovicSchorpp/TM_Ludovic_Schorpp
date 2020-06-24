@@ -1,27 +1,32 @@
-2020-06-24 11:33:55.025766 starting: opening PstFrom.log for logging
-2020-06-24 11:33:55.025766 starting PstFrom process
-2020-06-24 11:33:55.025766 starting: setting up dirs
-2020-06-24 11:33:55.025766 starting: removing existing new_d 'template'
-2020-06-24 11:33:55.033809 finished: removing existing new_d 'template' took: 0:00:00.008043
-2020-06-24 11:33:55.033809 starting: copying original_d 'workspace' to new_d 'template'
-2020-06-24 11:33:55.055969 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:00.022160
-2020-06-24 11:33:55.055969 finished: setting up dirs took: 0:00:00.030203
-2020-06-24 11:33:56.313817 starting: adding observations from tabular output file
-2020-06-24 11:33:56.313817 starting: reading list template\heads.csv
-2020-06-24 11:33:56.318367 finished: reading list template\heads.csv took: 0:00:00.004550
-2020-06-24 11:33:56.318367 starting: building insfile for tabular output file heads.csv
-2020-06-24 11:33:56.353255 finished: building insfile for tabular output file heads.csv took: 0:00:00.034888
-2020-06-24 11:33:56.353255 starting: adding observation from instruction file 'template\heads.csv.ins'
-2020-06-24 11:33:56.368494 finished: adding observation from instruction file 'template\heads.csv.ins' took: 0:00:00.015239
-2020-06-24 11:33:56.368494 finished: adding observations from tabular output file took: 0:00:00.054677
-2020-06-24 11:34:02.798521 starting: adding grid type multiplier style parameters for file(s) ['k.txt']
-2020-06-24 11:34:02.801554 starting: loading array template\k.txt
-2020-06-24 11:34:02.803560 finished: loading array template\k.txt took: 0:00:00.002006
-2020-06-24 11:34:02.803579 loaded array 'k.txt' of shape (10, 10)
-2020-06-24 11:34:02.803579 starting: writing array-based template file 'hk_inst0_grid.csv.tpl'
-2020-06-24 11:34:02.803579 starting: writing template file hk_inst0_grid.csv.tpl for ['hk_inst:0']
-2020-06-24 11:34:02.828718 finished: writing template file hk_inst0_grid.csv.tpl for ['hk_inst:0'] took: 0:00:00.025139
-2020-06-24 11:34:02.828718 finished: writing array-based template file 'hk_inst0_grid.csv.tpl' took: 0:00:00.025139
-2020-06-24 11:34:02.851893 starting: adding parameters for file(s) ['k.txt']
-2020-06-24 11:34:06.026251 forward_run line:pyemu.os_utils.run(r'..\mf6')
+2020-06-24 20:29:59.605230 starting: opening PstFrom.log for logging
+2020-06-24 20:29:59.606231 starting PstFrom process
+2020-06-24 20:29:59.606231 starting: setting up dirs
+2020-06-24 20:29:59.607230 starting: removing existing new_d 'template'
+2020-06-24 20:29:59.608231 finished: removing existing new_d 'template' took: 0:00:00.001001
+2020-06-24 20:29:59.608231 starting: copying original_d 'workspace' to new_d 'template'
+2020-06-24 20:29:59.635229 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:00.026998
+2020-06-24 20:29:59.636229 finished: setting up dirs took: 0:00:00.029998
+2020-06-24 20:30:00.862193 starting: adding observations from tabular output file
+2020-06-24 20:30:00.863193 starting: reading list template\heads.csv
+2020-06-24 20:30:00.871193 finished: reading list template\heads.csv took: 0:00:00.008000
+2020-06-24 20:30:00.872193 starting: building insfile for tabular output file heads.csv
+2020-06-24 20:30:00.907192 finished: building insfile for tabular output file heads.csv took: 0:00:00.034999
+2020-06-24 20:30:00.908192 starting: adding observation from instruction file 'template\heads.csv.ins'
+2020-06-24 20:30:00.933191 finished: adding observation from instruction file 'template\heads.csv.ins' took: 0:00:00.024999
+2020-06-24 20:30:00.935191 finished: adding observations from tabular output file took: 0:00:00.072998
+2020-06-24 20:30:03.441117 starting: adding grid type multiplier style parameters for file(s) ['k.txt']
+2020-06-24 20:30:03.441117 starting: loading array template\k.txt
+2020-06-24 20:30:03.443115 finished: loading array template\k.txt took: 0:00:00.001998
+2020-06-24 20:30:03.444115 loaded array 'k.txt' of shape (10, 10)
+2020-06-24 20:30:03.446115 starting: writing array-based template file 'hk_inst0_grid.csv.tpl'
+2020-06-24 20:30:03.447116 starting: writing template file hk_inst0_grid.csv.tpl for ['hk_inst:0']
+2020-06-24 20:30:03.470115 finished: writing template file hk_inst0_grid.csv.tpl for ['hk_inst:0'] took: 0:00:00.022999
+2020-06-24 20:30:03.471115 finished: writing array-based template file 'hk_inst0_grid.csv.tpl' took: 0:00:00.025000
+2020-06-24 20:30:03.564112 starting: adding parameters for file(s) ['k.txt']
+2020-06-24 20:30:05.055067 forward_run line:pyemu.os_utils.run(r'..\mf6')
 
+2020-06-24 20:30:05.450055 WARNING: sys_cmd 'pyemu.os_utils.run(r'..\mf6')
+' already in sys cmds, skipping...
+2020-06-24 20:30:05.482054 starting: building prior covariance matrix
+2020-06-24 20:30:05.583051 saving prior covariance matrix to file template\mf6_test_1.prior.cov
+2020-06-24 20:30:05.599050 finished: building prior covariance matrix took: 0:00:00.116996

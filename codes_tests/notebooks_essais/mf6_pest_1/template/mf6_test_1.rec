@@ -34,7 +34,7 @@ PEST Control Information
     facparmax = 10
     facorig = 0.001
     phiredswh = 0.1
-    noptmax = 30
+    noptmax = -1
     phiredstp = 0.01
     nphistp = 3
     nphinored = 3
@@ -375,12 +375,11 @@ PEST++ arguments:
 
    -----    Starting pestpp-glm Iterations    ----    
 
+COMPUTING JACOBIAN:
 
-OPTIMISATION ITERATION NUMBER: 1
+    Iteration type: base parameter solution
+    Model calls so far : 0
 
-  Iteration type: base parameter solution
-  SVD Package: RedSVD
-  Model calls so far : 0
 
 
 
