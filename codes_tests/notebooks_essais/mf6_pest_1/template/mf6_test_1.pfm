@@ -1,0 +1,18 @@
+PEST++ performance logger started at:  12:47:06
+        ( time = 12:47:06,  elapsed time = 6ms )
+  starting to process control file
+          ( time = 12:47:06,  elapsed time = 5ms )
+  finished processing control file
+          ( time = 12:47:06,  elapsed time = 7ms )
+    starting basic model IO error checking
+            ( time = 12:47:06,  elapsed time = 2ms )
+    finished basic model IO error checking
+
+            ( time = 12:47:06,  elapsed time = 44ms )
+beginning iteration 1
+        ( time = 12:47:06,  elapsed time = 192us )
+  commencing to build jacobian parameter sets
+          ( time = 12:47:06,  elapsed time = 60ms )
+  jacobian parameter sets built, commencing model runs
+          ( time = 12:57:36,  elapsed time = 10min )
+  jacobian runs complete, processing runs

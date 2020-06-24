@@ -1,0 +1,388 @@
+             pestpp-glm 4.3.0
+
+    by The PEST++ Development Team
+
+
+
+version: 4.3.0
+binary compiled on Dec  9 2019 at 12:11:26
+
+using control file: "mf6_test_1"
+
+in directory: "C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\template"
+
+Note: 3 unused lines in pest control file:
+  -->  line number 6: '2.000000E+01  -3.000000E+00   3.000000E-01   1.000000E-02        -7       999          lamforgive        noderforgive' 
+  -->  line number 10: '0         0         0         0             jcosave          verboserec          jcosaveitn          reisaveitn          parsaveitn        noparsaverun' 
+  -->  line number 12: '1' 
+
+
+binary compiled on Dec  9 2019 at 12:11:05
+
+
+pestmode:- 
+   estimation
+
+Case dimensions:- 
+    Number of parameters = 100
+    Number of adjustable parameters = 100
+    Number of observations = 64
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 30
+    phiredstp = 0.01
+    nphistp = 3
+    nphinored = 3
+    relparstp = 0.01
+    nrelpar = 3
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+max_run_fail: 3
+yamr_poll_interval: 1
+parameter_covariance: 
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 100
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+additional_ins_delimiters: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 5
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 1
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+de_f: 0.8
+de_cr: 0.9
+de_pop_size: 40
+de_max_gen: 100
+de_dither_f: 1
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights0
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_include_bnd_pi: 1
+
+...pestpp-ies options:
+ies_parameter_ensemble: 
+ies_observation_ensemble: 
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.1,1,10,
+ies_initial_lambda: -999
+ies_use_approx: 1
+ies_subset_size: 4
+ies_reg_factor: 0
+ies_verbose_level: 0
+ies_use_prior_scaling: 0
+ies_num_reals: 50
+ies_bad_phi: 1e+300
+ies_bad_phi_sigma: 1e+300
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_save_binary: 0
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_weights_ensemble: 
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+
+
+
+Model command line(s):- 
+    python forward_run.py
+
+Model interface files:-
+    template files:
+      hk_inst0_grid.csv.tpl
+    model input files:
+      mult\hk_inst0_grid.csv
+
+    instruction files:
+      .\heads.csv.ins
+    model output files:
+      .\heads.csv
+
+
+Parameter group information
+NAME            INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+hk__multiplier        RELATIVE                     0.01                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME           TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND          GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+multiplier_hk_inst:0_i:0_j:0_x:5.00_y:95.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:0_j:1_x:15.00_y:95.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:0_j:2_x:25.00_y:95.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:0_j:3_x:35.00_y:95.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:0_j:4_x:45.00_y:95.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:0_j:5_x:55.00_y:95.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:0_j:6_x:65.00_y:95.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:0_j:7_x:75.00_y:95.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:0_j:8_x:85.00_y:95.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:0_j:9_x:95.00_y:95.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:1_j:0_x:5.00_y:85.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:1_j:1_x:15.00_y:85.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:1_j:2_x:25.00_y:85.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:1_j:3_x:35.00_y:85.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:1_j:4_x:45.00_y:85.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:1_j:5_x:55.00_y:85.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:1_j:6_x:65.00_y:85.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:1_j:7_x:75.00_y:85.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:1_j:8_x:85.00_y:85.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:1_j:9_x:95.00_y:85.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:2_j:0_x:5.00_y:75.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:2_j:1_x:15.00_y:75.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:2_j:2_x:25.00_y:75.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:2_j:3_x:35.00_y:75.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:2_j:4_x:45.00_y:75.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:2_j:5_x:55.00_y:75.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:2_j:6_x:65.00_y:75.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:2_j:7_x:75.00_y:75.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:2_j:8_x:85.00_y:75.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:2_j:9_x:95.00_y:75.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:3_j:0_x:5.00_y:65.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:3_j:1_x:15.00_y:65.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:3_j:2_x:25.00_y:65.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:3_j:3_x:35.00_y:65.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:3_j:4_x:45.00_y:65.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:3_j:5_x:55.00_y:65.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:3_j:6_x:65.00_y:65.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:3_j:7_x:75.00_y:65.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:3_j:8_x:85.00_y:65.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:3_j:9_x:95.00_y:65.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:4_j:0_x:5.00_y:55.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:4_j:1_x:15.00_y:55.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:4_j:2_x:25.00_y:55.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:4_j:3_x:35.00_y:55.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:4_j:4_x:45.00_y:55.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:4_j:5_x:55.00_y:55.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:4_j:6_x:65.00_y:55.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:4_j:7_x:75.00_y:55.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:4_j:8_x:85.00_y:55.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:4_j:9_x:95.00_y:55.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:5_j:0_x:5.00_y:45.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:5_j:1_x:15.00_y:45.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:5_j:2_x:25.00_y:45.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:5_j:3_x:35.00_y:45.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:5_j:4_x:45.00_y:45.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:5_j:5_x:55.00_y:45.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:5_j:6_x:65.00_y:45.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:5_j:7_x:75.00_y:45.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:5_j:8_x:85.00_y:45.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:5_j:9_x:95.00_y:45.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:6_j:0_x:5.00_y:35.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:6_j:1_x:15.00_y:35.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:6_j:2_x:25.00_y:35.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:6_j:3_x:35.00_y:35.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:6_j:4_x:45.00_y:35.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:6_j:5_x:55.00_y:35.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:6_j:6_x:65.00_y:35.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:6_j:7_x:75.00_y:35.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:6_j:8_x:85.00_y:35.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:6_j:9_x:95.00_y:35.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:7_j:0_x:5.00_y:25.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:7_j:1_x:15.00_y:25.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:7_j:2_x:25.00_y:25.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:7_j:3_x:35.00_y:25.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:7_j:4_x:45.00_y:25.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:7_j:5_x:55.00_y:25.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:7_j:6_x:65.00_y:25.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:7_j:7_x:75.00_y:25.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:7_j:8_x:85.00_y:25.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:7_j:9_x:95.00_y:25.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:8_j:0_x:5.00_y:15.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:8_j:1_x:15.00_y:15.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:8_j:2_x:25.00_y:15.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:8_j:3_x:35.00_y:15.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:8_j:4_x:45.00_y:15.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:8_j:5_x:55.00_y:15.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:8_j:6_x:65.00_y:15.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:8_j:7_x:75.00_y:15.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:8_j:8_x:85.00_y:15.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:8_j:9_x:95.00_y:15.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:9_j:0_x:5.00_y:5.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:9_j:1_x:15.00_y:5.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:9_j:2_x:25.00_y:5.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:9_j:3_x:35.00_y:5.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:9_j:4_x:45.00_y:5.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:9_j:5_x:55.00_y:5.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:9_j:6_x:65.00_y:5.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:9_j:7_x:75.00_y:5.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:9_j:8_x:85.00_y:5.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+multiplier_hk_inst:0_i:9_j:9_x:95.00_y:5.00log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+
+
+
+Observation information
+NAME                                    VALUE               GROUP              WEIGHT
+hds_usecol:0_1_1_time:1.0             9.78136              obgnme                   1
+hds_usecol:0_1_2_time:1.0             9.47304              obgnme                   1
+hds_usecol:0_1_3_time:1.0             9.14949              obgnme                   1
+hds_usecol:0_1_4_time:1.0             6.66555              obgnme                   1
+hds_usecol:0_1_5_time:1.0             3.61431              obgnme                   1
+hds_usecol:0_1_6_time:1.0             2.67596              obgnme                   1
+hds_usecol:0_1_7_time:1.0             1.14898              obgnme                   1
+hds_usecol:0_1_8_time:1.0            0.429457              obgnme                   1
+hds_usecol:0_2_1_time:1.0             9.75927              obgnme                   1
+hds_usecol:0_2_2_time:1.0              9.5103              obgnme                   1
+hds_usecol:0_2_3_time:1.0             8.93525              obgnme                   1
+hds_usecol:0_2_4_time:1.0             5.58343              obgnme                   1
+hds_usecol:0_2_5_time:1.0             2.28974              obgnme                   1
+hds_usecol:0_2_6_time:1.0             1.77523              obgnme                   1
+hds_usecol:0_2_7_time:1.0             1.27737              obgnme                   1
+hds_usecol:0_2_8_time:1.0            0.557576              obgnme                   1
+hds_usecol:0_3_1_time:1.0             9.70005              obgnme                   1
+hds_usecol:0_3_2_time:1.0             9.40473              obgnme                   1
+hds_usecol:0_3_3_time:1.0             8.93093              obgnme                   1
+hds_usecol:0_3_4_time:1.0              5.0219              obgnme                   1
+hds_usecol:0_3_5_time:1.0              2.1105              obgnme                   1
+hds_usecol:0_3_6_time:1.0              1.7197              obgnme                   1
+hds_usecol:0_3_7_time:1.0              1.5299              obgnme                   1
+hds_usecol:0_3_8_time:1.0            0.721242              obgnme                   1
+hds_usecol:0_4_1_time:1.0             9.67528              obgnme                   1
+hds_usecol:0_4_2_time:1.0             9.31572              obgnme                   1
+hds_usecol:0_4_3_time:1.0             7.33931              obgnme                   1
+hds_usecol:0_4_4_time:1.0             3.82845              obgnme                   1
+hds_usecol:0_4_5_time:1.0             2.31752              obgnme                   1
+hds_usecol:0_4_6_time:1.0             1.77504              obgnme                   1
+hds_usecol:0_4_7_time:1.0             1.41244              obgnme                   1
+hds_usecol:0_4_8_time:1.0            0.768072              obgnme                   1
+hds_usecol:0_5_1_time:1.0             9.74426              obgnme                   1
+hds_usecol:0_5_2_time:1.0             9.02938              obgnme                   1
+hds_usecol:0_5_3_time:1.0             7.01099              obgnme                   1
+hds_usecol:0_5_4_time:1.0             4.53587              obgnme                   1
+hds_usecol:0_5_5_time:1.0             2.97338              obgnme                   1
+hds_usecol:0_5_6_time:1.0             1.69273              obgnme                   1
+hds_usecol:0_5_7_time:1.0             1.05468              obgnme                   1
+hds_usecol:0_5_8_time:1.0            0.379046              obgnme                   1
+hds_usecol:0_6_1_time:1.0             9.36222              obgnme                   1
+hds_usecol:0_6_2_time:1.0             8.28964              obgnme                   1
+hds_usecol:0_6_3_time:1.0             7.64733              obgnme                   1
+hds_usecol:0_6_4_time:1.0             5.40888              obgnme                   1
+hds_usecol:0_6_5_time:1.0             3.23593              obgnme                   1
+hds_usecol:0_6_6_time:1.0             2.05458              obgnme                   1
+hds_usecol:0_6_7_time:1.0             1.00821              obgnme                   1
+hds_usecol:0_6_8_time:1.0            0.290038              obgnme                   1
+hds_usecol:0_7_1_time:1.0             9.30267              obgnme                   1
+hds_usecol:0_7_2_time:1.0             8.18155              obgnme                   1
+hds_usecol:0_7_3_time:1.0             7.57703              obgnme                   1
+hds_usecol:0_7_4_time:1.0             5.22274              obgnme                   1
+hds_usecol:0_7_5_time:1.0             2.56566              obgnme                   1
+hds_usecol:0_7_6_time:1.0             1.95535              obgnme                   1
+hds_usecol:0_7_7_time:1.0             1.14401              obgnme                   1
+hds_usecol:0_7_8_time:1.0            0.450904              obgnme                   1
+hds_usecol:0_8_1_time:1.0             8.85479              obgnme                   1
+hds_usecol:0_8_2_time:1.0             7.79992              obgnme                   1
+hds_usecol:0_8_3_time:1.0             7.32051              obgnme                   1
+hds_usecol:0_8_4_time:1.0             5.37927              obgnme                   1
+hds_usecol:0_8_5_time:1.0             2.68063              obgnme                   1
+hds_usecol:0_8_6_time:1.0             2.15648              obgnme                   1
+hds_usecol:0_8_7_time:1.0             1.45416              obgnme                   1
+hds_usecol:0_8_8_time:1.0            0.601048              obgnme                   1
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 10000000
+    eigthresh = 1e-06
+
+
+PEST++ arguments:
+
+
+
+   -----    Starting pestpp-glm Iterations    ----    
+
+
+OPTIMISATION ITERATION NUMBER: 1
+
+  Iteration type: base parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 0
+
+
+
+Transformable_value_error:  Error can not access tag: "MULTIPLIER_HK_INST:0_I:9_J:8_X:85.00_Y:5"
+Error encountered, cannot continue
