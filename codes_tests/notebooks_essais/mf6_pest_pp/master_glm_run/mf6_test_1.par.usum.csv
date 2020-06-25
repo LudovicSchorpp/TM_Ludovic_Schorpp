@@ -1,0 +1,17 @@
+name,prior_mean,prior_stdev,prior_lower_bound,prior_upper_bound,post_mean,post_stdev,post_lower_bound,post_upper_bound
+KP_INST:0_I:1_J:1,0,0.898136,-1.79627,1.79627,0.720825,0.871295,-1.02177,2.46342
+KP_INST:0_I:1_J:3,0,-nan(ind),-nan(ind),-nan(ind),-0.448353,0.955753,-2.35986,1.46315
+KP_INST:0_I:1_J:5,0,-nan(ind),-nan(ind),-nan(ind),-1,0.900962,-2.80192,0.801924
+KP_INST:0_I:1_J:7,0,-nan(ind),-nan(ind),-nan(ind),-0.549355,0.997799,-2.54495,1.44624
+KP_INST:0_I:3_J:1,0,0.700463,-1.40093,1.40093,1,0.951432,-0.902863,2.90286
+KP_INST:0_I:3_J:3,0,0.638291,-1.27658,1.27658,-0.877472,1.15058,-3.17864,1.4237
+KP_INST:0_I:3_J:5,0,0.505476,-1.01095,1.01095,0.0394457,0.455623,-0.871801,0.950692
+KP_INST:0_I:3_J:7,0,-nan(ind),-nan(ind),-nan(ind),1,0.769624,-0.539249,2.53925
+KP_INST:0_I:5_J:1,0,0.499109,-0.998219,0.998219,-1,0.344056,-1.68811,-0.311889
+KP_INST:0_I:5_J:3,0,0.20187,-0.403739,0.403739,-1,0.680131,-2.36026,0.360262
+KP_INST:0_I:5_J:5,0,-nan(ind),-nan(ind),-nan(ind),-1,0.786369,-2.57274,0.572738
+KP_INST:0_I:5_J:7,0,-nan(ind),-nan(ind),-nan(ind),-1,0.575025,-2.15005,0.15005
+KP_INST:0_I:7_J:1,0,0.458803,-0.917606,0.917606,-0.0830144,-nan(ind),-nan(ind),-nan(ind)
+KP_INST:0_I:7_J:3,0,0.336499,-0.672997,0.672997,-0.637801,-nan(ind),-nan(ind),-nan(ind)
+KP_INST:0_I:7_J:5,0,-nan(ind),-nan(ind),-nan(ind),-0.877373,-nan(ind),-nan(ind),-nan(ind)
+KP_INST:0_I:7_J:7,0,-nan(ind),-nan(ind),-nan(ind),0.300544,-nan(ind),-nan(ind),-nan(ind)

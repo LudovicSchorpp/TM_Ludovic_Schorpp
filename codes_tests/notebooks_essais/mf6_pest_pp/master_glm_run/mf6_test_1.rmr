@@ -1,0 +1,181 @@
+
+PANTHER master listening on socket:0.0.0.0:4004 (IPv4)
+running model 1 times
+
+    waiting for agents to appear...
+
+
+06/25/20 22:13:58->new connection from: DESKTOP-STOT4EU:50743
+06/25/20 22:13:58->initializing new agent connection from: DESKTOP-STOT4EU:50743, number of agents: 1, working dir: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0
+06/25/20 22:13:59->new connection from: DESKTOP-STOT4EU:50744
+06/25/20 22:13:59->initializing new agent connection from: DESKTOP-STOT4EU:50744, number of agents: 2, working dir: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1
+06/25/20 22:13:59->new connection from: DESKTOP-STOT4EU:50745
+06/25/20 22:13:59->initializing new agent connection from: DESKTOP-STOT4EU:50745, number of agents: 3, working dir: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2
+06/25/20 22:13:59->new agent ready: DESKTOP-STOT4EU:50743
+06/25/20 22:13:59->Sending run 0 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:2, run id:0, concurrent runs:1)
+06/25/20 22:13:59->new agent ready: DESKTOP-STOT4EU:50744
+06/25/20 22:14:00->new agent ready: DESKTOP-STOT4EU:50745
+06/25/20 22:14:10->run 0 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.188367 min, avg run time:0.188367 min, group id:2, run id: 0 concurrent:1)
+
+---------------------
+   1 runs complete :  0 runs failed
+
+
+running model 1 times
+
+06/25/20 22:14:11->Sending run 0 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:3, run id:0, concurrent runs:1)
+06/25/20 22:14:17->run 0 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.104267 min, avg run time:0.104267 min, group id:3, run id: 0 concurrent:1)
+
+---------------------
+   1 runs complete :  0 runs failed
+
+
+running model 5 times
+
+06/25/20 22:14:17->Sending run 1 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:4, run id:1, concurrent runs:1)
+06/25/20 22:14:17->Sending run 2 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:4, run id:2, concurrent runs:1)
+06/25/20 22:14:17->Sending run 3 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:4, run id:3, concurrent runs:1)
+06/25/20 22:14:31->run 1 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.243583 min, avg run time:0.243583 min, group id:4, run id: 1 concurrent:1)
+06/25/20 22:14:31->run 2 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.243733 min, avg run time:0.243658 min, group id:4, run id: 2 concurrent:1)
+06/25/20 22:14:31->Sending run 4 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:4, run id:4, concurrent runs:1)
+06/25/20 22:14:31->run 3 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.243817 min, avg run time:0.243711 min, group id:4, run id: 3 concurrent:1)
+06/25/20 22:14:31->Sending run 5 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:4, run id:5, concurrent runs:1)
+06/25/20 22:14:41->run 5 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.2033 min, avg run time:0.230233 min, group id:4, run id: 5 concurrent:1)
+06/25/20 22:14:41->run 4 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.203483 min, avg run time:0.216867 min, group id:4, run id: 4 concurrent:1)
+
+---------------------
+   5 runs complete :  0 runs failed
+
+
+running model 15 times
+
+06/25/20 22:14:41->Sending run 0 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:5, run id:0, concurrent runs:1)
+06/25/20 22:14:41->Sending run 1 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:5, run id:1, concurrent runs:1)
+06/25/20 22:14:41->Sending run 2 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:5, run id:2, concurrent runs:1)
+06/25/20 22:14:56->run 0 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.240067 min, avg run time:0.240067 min, group id:5, run id: 0 concurrent:1)
+06/25/20 22:14:56->run 2 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.240067 min, avg run time:0.240067 min, group id:5, run id: 2 concurrent:1)
+06/25/20 22:14:56->run 1 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.240133 min, avg run time:0.240089 min, group id:5, run id: 1 concurrent:1)
+06/25/20 22:14:56->Sending run 3 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:5, run id:3, concurrent runs:1)
+06/25/20 22:14:56->Sending run 4 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:5, run id:4, concurrent runs:1)
+06/25/20 22:14:56->Sending run 5 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:5, run id:5, concurrent runs:1)
+06/25/20 22:15:09->run 5 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.230933 min, avg run time:0.237022 min, group id:5, run id: 5 concurrent:1)
+06/25/20 22:15:09->Sending run 6 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:5, run id:6, concurrent runs:1)
+06/25/20 22:15:09->run 3 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.23105 min, avg run time:0.234017 min, group id:5, run id: 3 concurrent:1)
+06/25/20 22:15:09->Sending run 7 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:5, run id:7, concurrent runs:1)
+06/25/20 22:15:11->run 4 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.2473 min, avg run time:0.236428 min, group id:5, run id: 4 concurrent:1)
+06/25/20 22:15:11->Sending run 8 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:5, run id:8, concurrent runs:1)
+06/25/20 22:15:22->run 6 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.2262 min, avg run time:0.23485 min, group id:5, run id: 6 concurrent:1)
+06/25/20 22:15:22->run 7 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.22615 min, avg run time:0.233217 min, group id:5, run id: 7 concurrent:1)
+06/25/20 22:15:22->Sending run 9 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:5, run id:9, concurrent runs:1)
+06/25/20 22:15:22->Sending run 10 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:5, run id:10, concurrent runs:1)
+06/25/20 22:15:25->run 8 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.2437 min, avg run time:0.232017 min, group id:5, run id: 8 concurrent:1)
+06/25/20 22:15:25->Sending run 11 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:5, run id:11, concurrent runs:1)
+06/25/20 22:15:38->run 9 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.24285 min, avg run time:0.237567 min, group id:5, run id: 9 concurrent:1)
+06/25/20 22:15:38->Sending run 12 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:5, run id:12, concurrent runs:1)
+06/25/20 22:15:39->run 10 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.251817 min, avg run time:0.246122 min, group id:5, run id: 10 concurrent:1)
+06/25/20 22:15:39->Sending run 13 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:5, run id:13, concurrent runs:1)
+06/25/20 22:15:41->run 11 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.251117 min, avg run time:0.248594 min, group id:5, run id: 11 concurrent:1)
+06/25/20 22:15:41->Sending run 14 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:5, run id:14, concurrent runs:1)
+06/25/20 22:15:53->run 12 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.249783 min, avg run time:0.250906 min, group id:5, run id: 12 concurrent:1)
+06/25/20 22:15:54->run 13 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.253833 min, avg run time:0.251578 min, group id:5, run id: 13 concurrent:1)
+06/25/20 22:15:55->run 14 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.245933 min, avg run time:0.24985 min, group id:5, run id: 14 concurrent:1)
+
+---------------------
+   15 runs complete :  0 runs failed
+
+
+running model 5 times
+
+06/25/20 22:15:55->Sending run 1 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:6, run id:1, concurrent runs:1)
+06/25/20 22:15:55->Sending run 2 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:6, run id:2, concurrent runs:1)
+06/25/20 22:15:55->Sending run 3 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:6, run id:3, concurrent runs:1)
+06/25/20 22:16:12->run 2 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.277483 min, avg run time:0.277483 min, group id:6, run id: 2 concurrent:1)
+06/25/20 22:16:12->run 3 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.277183 min, avg run time:0.277333 min, group id:6, run id: 3 concurrent:1)
+06/25/20 22:16:12->run 1 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.277533 min, avg run time:0.2774 min, group id:6, run id: 1 concurrent:1)
+06/25/20 22:16:12->Sending run 4 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:6, run id:4, concurrent runs:1)
+06/25/20 22:16:12->Sending run 5 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:6, run id:5, concurrent runs:1)
+06/25/20 22:16:24->run 5 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.236933 min, avg run time:0.263983 min, group id:6, run id: 5 concurrent:1)
+06/25/20 22:16:24->run 4 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.238917 min, avg run time:0.251128 min, group id:6, run id: 4 concurrent:1)
+
+---------------------
+   5 runs complete :  0 runs failed
+
+
+running model 27 times
+
+06/25/20 22:16:24->Sending run 0 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:7, run id:0, concurrent runs:1)
+06/25/20 22:16:24->Sending run 1 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:7, run id:1, concurrent runs:1)
+06/25/20 22:16:24->Sending run 2 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:7, run id:2, concurrent runs:1)
+06/25/20 22:16:41->run 1 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.272017 min, avg run time:0.272017 min, group id:7, run id: 1 concurrent:1)
+06/25/20 22:16:41->run 0 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.272167 min, avg run time:0.272092 min, group id:7, run id: 0 concurrent:1)
+06/25/20 22:16:41->Sending run 3 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:7, run id:3, concurrent runs:1)
+06/25/20 22:16:41->Sending run 4 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:7, run id:4, concurrent runs:1)
+06/25/20 22:16:41->run 2 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.273133 min, avg run time:0.272439 min, group id:7, run id: 2 concurrent:1)
+06/25/20 22:16:41->Sending run 5 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:7, run id:5, concurrent runs:1)
+06/25/20 22:16:57->run 3 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.272333 min, avg run time:0.272544 min, group id:7, run id: 3 concurrent:1)
+06/25/20 22:16:57->run 4 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.2724 min, avg run time:0.272622 min, group id:7, run id: 4 concurrent:1)
+06/25/20 22:16:57->Sending run 6 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:7, run id:6, concurrent runs:1)
+06/25/20 22:16:57->Sending run 7 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:7, run id:7, concurrent runs:1)
+06/25/20 22:16:57->run 5 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.2759 min, avg run time:0.273544 min, group id:7, run id: 5 concurrent:1)
+06/25/20 22:16:57->Sending run 8 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:7, run id:8, concurrent runs:1)
+06/25/20 22:17:13->run 6 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.27395 min, avg run time:0.274083 min, group id:7, run id: 6 concurrent:1)
+06/25/20 22:17:13->run 7 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.27395 min, avg run time:0.2746 min, group id:7, run id: 7 concurrent:1)
+06/25/20 22:17:13->Sending run 9 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:7, run id:9, concurrent runs:1)
+06/25/20 22:17:13->Sending run 10 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:7, run id:10, concurrent runs:1)
+06/25/20 22:17:14->run 8 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.276383 min, avg run time:0.274761 min, group id:7, run id: 8 concurrent:1)
+06/25/20 22:17:14->Sending run 11 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:7, run id:11, concurrent runs:1)
+06/25/20 22:17:30->run 10 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.27665 min, avg run time:0.275661 min, group id:7, run id: 10 concurrent:1)
+06/25/20 22:17:30->run 9 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.2767 min, avg run time:0.276578 min, group id:7, run id: 9 concurrent:1)
+06/25/20 22:17:30->Sending run 12 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:7, run id:12, concurrent runs:1)
+06/25/20 22:17:30->Sending run 13 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:7, run id:13, concurrent runs:1)
+06/25/20 22:17:31->run 11 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.276767 min, avg run time:0.276706 min, group id:7, run id: 11 concurrent:1)
+06/25/20 22:17:31->Sending run 14 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:7, run id:14, concurrent runs:1)
+06/25/20 22:17:46->run 12 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.26635 min, avg run time:0.273272 min, group id:7, run id: 12 concurrent:1)
+06/25/20 22:17:46->run 13 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.266383 min, avg run time:0.269833 min, group id:7, run id: 13 concurrent:1)
+06/25/20 22:17:46->Sending run 15 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:7, run id:15, concurrent runs:1)
+06/25/20 22:17:46->Sending run 16 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:7, run id:16, concurrent runs:1)
+06/25/20 22:17:48->run 14 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.2849 min, avg run time:0.272544 min, group id:7, run id: 14 concurrent:1)
+06/25/20 22:17:48->Sending run 17 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:7, run id:17, concurrent runs:1)
+06/25/20 22:18:03->run 16 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.278533 min, avg run time:0.276594 min, group id:7, run id: 16 concurrent:1)
+06/25/20 22:18:03->Sending run 18 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:7, run id:18, concurrent runs:1)
+06/25/20 22:18:03->run 15 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.2794 min, avg run time:0.280944 min, group id:7, run id: 15 concurrent:1)
+06/25/20 22:18:03->Sending run 19 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:7, run id:19, concurrent runs:1)
+06/25/20 22:18:05->run 17 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.28315 min, avg run time:0.280361 min, group id:7, run id: 17 concurrent:1)
+06/25/20 22:18:05->Sending run 20 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:7, run id:20, concurrent runs:1)
+06/25/20 22:18:19->run 18 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.27495 min, avg run time:0.279167 min, group id:7, run id: 18 concurrent:1)
+06/25/20 22:18:19->Sending run 21 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:7, run id:21, concurrent runs:1)
+06/25/20 22:18:19->run 19 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.275567 min, avg run time:0.277889 min, group id:7, run id: 19 concurrent:1)
+06/25/20 22:18:19->Sending run 22 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:7, run id:22, concurrent runs:1)
+06/25/20 22:18:21->run 20 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.273533 min, avg run time:0.274683 min, group id:7, run id: 20 concurrent:1)
+06/25/20 22:18:21->Sending run 23 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:7, run id:23, concurrent runs:1)
+06/25/20 22:18:36->run 21 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.274367 min, avg run time:0.274489 min, group id:7, run id: 21 concurrent:1)
+06/25/20 22:18:36->Sending run 24 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:7, run id:24, concurrent runs:1)
+06/25/20 22:18:37->run 22 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.282533 min, avg run time:0.276811 min, group id:7, run id: 22 concurrent:1)
+06/25/20 22:18:37->Sending run 25 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:7, run id:25, concurrent runs:1)
+06/25/20 22:18:37->run 23 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.272783 min, avg run time:0.276561 min, group id:7, run id: 23 concurrent:1)
+06/25/20 22:18:37->Sending run 26 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:7, run id:26, concurrent runs:1)
+06/25/20 22:18:52->run 24 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.274067 min, avg run time:0.276461 min, group id:7, run id: 24 concurrent:1)
+06/25/20 22:18:54->run 26 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.27325 min, avg run time:0.276617 min, group id:7, run id: 26 concurrent:1)
+06/25/20 22:18:54->run 25 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.286933 min, avg run time:0.278083 min, group id:7, run id: 25 concurrent:1)
+
+---------------------
+   27 runs complete :  0 runs failed
+
+
+running model 5 times
+
+06/25/20 22:18:54->Sending run 1 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:8, run id:1, concurrent runs:1)
+06/25/20 22:18:54->Sending run 2 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:8, run id:2, concurrent runs:1)
+06/25/20 22:18:54->Sending run 3 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:8, run id:3, concurrent runs:1)
+06/25/20 22:19:12->run 2 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.29675 min, avg run time:0.29675 min, group id:8, run id: 2 concurrent:1)
+06/25/20 22:19:12->run 3 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.29675 min, avg run time:0.29675 min, group id:8, run id: 3 concurrent:1)
+06/25/20 22:19:12->run 1 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.296817 min, avg run time:0.296772 min, group id:8, run id: 1 concurrent:1)
+06/25/20 22:19:12->Sending run 4 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:8, run id:4, concurrent runs:1)
+06/25/20 22:19:12->Sending run 5 to: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:8, run id:5, concurrent runs:1)
+06/25/20 22:19:25->run 4 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.2563 min, avg run time:0.283289 min, group id:8, run id: 4 concurrent:1)
+06/25/20 22:19:25->run 5 received from: DESKTOP-STOT4EU$C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.2563 min, avg run time:0.269806 min, group id:8, run id: 5 concurrent:1)
+
+---------------------
+   5 runs complete :  0 runs failed
+
+
