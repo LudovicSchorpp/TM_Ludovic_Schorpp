@@ -1,38 +1,40 @@
-2020-06-24 17:00:44.349074 starting: opening PstFrom.log for logging
-2020-06-24 17:00:44.349074 starting PstFrom process
-2020-06-24 17:00:44.349074 starting: setting up dirs
-2020-06-24 17:00:44.349074 starting: removing existing new_d 'template'
-2020-06-24 17:00:44.367135 finished: removing existing new_d 'template' took: 0:00:00.018061
-2020-06-24 17:00:44.367202 starting: copying original_d 'workspace' to new_d 'template'
-2020-06-24 17:00:44.389375 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:00.022173
-2020-06-24 17:00:44.389375 finished: setting up dirs took: 0:00:00.040301
-2020-06-24 17:00:47.291714 starting: adding observations from tabular output file
-2020-06-24 17:00:47.291714 starting: reading list template\heads.csv
-2020-06-24 17:00:47.301818 finished: reading list template\heads.csv took: 0:00:00.010104
-2020-06-24 17:00:47.301818 starting: building insfile for tabular output file heads.csv
-2020-06-24 17:00:47.331977 finished: building insfile for tabular output file heads.csv took: 0:00:00.030159
-2020-06-24 17:00:47.331977 starting: adding observation from instruction file 'template\heads.csv.ins'
-2020-06-24 17:00:47.352083 finished: adding observation from instruction file 'template\heads.csv.ins' took: 0:00:00.020106
-2020-06-24 17:00:47.352083 finished: adding observations from tabular output file took: 0:00:00.060369
-2020-06-24 17:00:59.945604 starting: adding pilotpoint type multiplier style parameters for file(s) ['k.txt']
-2020-06-24 17:00:59.945604 starting: loading array template\k.txt
-2020-06-24 17:00:59.945604 finished: loading array template\k.txt took: 0:00:00
-2020-06-24 17:00:59.945604 loaded array 'k.txt' of shape (10, 10)
-2020-06-24 17:00:59.953635 starting: writing array-based template file 'kp_inst0_pilotpoint.csv.tpl'
-2020-06-24 17:00:59.953635 starting: setting up pilot point parameters
-2020-06-24 17:00:59.953635 No spatial reference (containing cell spacing) passed.
-2020-06-24 17:00:59.953635 OK - using spatial reference in parent object.
-2020-06-24 17:01:00.076315 16 pilot point parameters created
-2020-06-24 17:01:00.076315 pilot point 'pargp':kp_inst:0
-2020-06-24 17:01:00.076315 finished: setting up pilot point parameters took: 0:00:00.122680
-2020-06-24 17:01:00.086386 starting: calculating factors for pargp=kp_inst:0
-2020-06-24 17:01:00.086386 saving krige variance file:template\kp_inst0pp.var.dat
-2020-06-24 17:01:00.086386 saving krige factors file:template\kp_inst0pp.fac
-2020-06-24 17:01:07.350716 finished: calculating factors for pargp=kp_inst:0 took: 0:00:07.264330
-2020-06-24 17:01:07.350716 starting: writing array-based template file 'kp_inst0pp.dat.tpl'
-2020-06-24 17:01:07.366351 starting: adding parameters for file(s) ['k.txt']
-2020-06-24 17:33:19.132103 starting: building prior covariance matrix
-2020-06-24 17:33:19.192543 saving prior covariance matrix to file template\mf6_test_1.prior.cov
-2020-06-24 17:33:19.192543 finished: building prior covariance matrix took: 0:00:00.060440
-2020-06-24 17:34:31.841019 forward_run line:pyemu.os_utils.run(r'..\mf6')
+2020-06-25 12:30:16.083945 starting: opening PstFrom.log for logging
+2020-06-25 12:30:16.083945 starting PstFrom process
+2020-06-25 12:30:16.083945 starting: setting up dirs
+2020-06-25 12:30:16.088970 starting: removing existing new_d 'template'
+2020-06-25 12:30:16.118691 finished: removing existing new_d 'template' took: 0:00:00.029721
+2020-06-25 12:30:16.119222 starting: copying original_d 'workspace' to new_d 'template'
+2020-06-25 12:30:16.149421 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:00.030199
+2020-06-25 12:30:16.151443 finished: setting up dirs took: 0:00:00.067498
+2020-06-25 12:30:16.183731 starting: adding observations from tabular output file
+2020-06-25 12:30:16.183731 starting: reading list template\heads.csv
+2020-06-25 12:30:16.193814 finished: reading list template\heads.csv took: 0:00:00.010083
+2020-06-25 12:30:16.193814 starting: building insfile for tabular output file heads.csv
+2020-06-25 12:30:16.223621 finished: building insfile for tabular output file heads.csv took: 0:00:00.029807
+2020-06-25 12:30:16.223621 starting: adding observation from instruction file 'template\heads.csv.ins'
+2020-06-25 12:30:16.243877 finished: adding observation from instruction file 'template\heads.csv.ins' took: 0:00:00.020256
+2020-06-25 12:30:16.248883 finished: adding observations from tabular output file took: 0:00:00.065152
+2020-06-25 12:30:17.193662 starting: adding pilotpoint type multiplier style parameters for file(s) ['k.txt']
+2020-06-25 12:30:17.193662 starting: loading array template\k.txt
+2020-06-25 12:30:17.193662 finished: loading array template\k.txt took: 0:00:00
+2020-06-25 12:30:17.193662 loaded array 'k.txt' of shape (10, 10)
+2020-06-25 12:30:17.198690 starting: writing array-based template file 'kp_inst0_pilotpoint.csv.tpl'
+2020-06-25 12:30:17.198690 starting: setting up pilot point parameters
+2020-06-25 12:30:17.198690 No spatial reference (containing cell spacing) passed.
+2020-06-25 12:30:17.198690 OK - using spatial reference in parent object.
+2020-06-25 12:30:17.360164 16 pilot point parameters created
+2020-06-25 12:30:17.362192 pilot point 'pargp':kp_inst:0
+2020-06-25 12:30:17.362192 finished: setting up pilot point parameters took: 0:00:00.163502
+2020-06-25 12:30:17.372270 starting: calculating factors for pargp=kp_inst:0
+2020-06-25 12:30:17.372270 saving krige variance file:template\kp_inst0pp.var.dat
+2020-06-25 12:30:17.372270 saving krige factors file:template\kp_inst0pp.fac
+2020-06-25 12:30:25.333914 finished: calculating factors for pargp=kp_inst:0 took: 0:00:07.961644
+2020-06-25 12:30:25.333914 starting: writing array-based template file 'kp_inst0pp.dat.tpl'
+2020-06-25 12:30:25.420460 starting: adding parameters for file(s) ['k.txt']
+2020-06-25 12:30:26.096640 forward_run line:pyemu.os_utils.run(r'..\mf6')
 
+2020-06-25 12:30:26.473464 WARNING: sys_cmd 'pyemu.os_utils.run(r'..\mf6')
+' already in sys cmds, skipping...
+2020-06-25 12:30:26.499166 starting: building prior covariance matrix
+2020-06-25 12:30:26.521379 saving prior covariance matrix to file template\mf6_test_1.prior.cov
+2020-06-25 12:30:26.523900 finished: building prior covariance matrix took: 0:00:00.024734

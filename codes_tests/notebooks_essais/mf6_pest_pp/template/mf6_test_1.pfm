@@ -1,21 +1,21 @@
-PEST++ performance logger started at:  22:00:40
-        ( time = 22:00:40,  elapsed time = 5ms )
+PEST++ performance logger started at:  12:30:27
+        ( time = 12:30:27,  elapsed time = 6ms )
   starting to process control file
-          ( time = 22:00:40,  elapsed time = 2ms )
+          ( time = 12:30:27,  elapsed time = 4ms )
   finished processing control file
-          ( time = 22:00:40,  elapsed time = 5ms )
+          ( time = 12:30:27,  elapsed time = 6ms )
     starting basic model IO error checking
-            ( time = 22:00:40,  elapsed time = 1ms )
+            ( time = 12:30:27,  elapsed time = 3ms )
     finished basic model IO error checking
-            ( time = 22:00:40,  elapsed time = 14ms )
+            ( time = 12:30:27,  elapsed time = 15ms )
     commencing to build jacobian parameter sets
-            ( time = 22:00:40,  elapsed time = 6ms )
+            ( time = 12:30:27,  elapsed time = 4ms )
     jacobian parameter sets built, commencing model runs
-            ( time = 22:03:14,  elapsed time = 2min )
+            ( time = 12:32:58,  elapsed time = 2min )
     jacobian runs complete, processing runs
-            ( time = 22:03:14,  elapsed time = 2ms )
+            ( time = 12:32:58,  elapsed time = 2ms )
     processing jacobian runs complete
-            ( time = 22:03:14,  elapsed time = 51us )
+            ( time = 12:32:58,  elapsed time = 59us )
     saving jacobian and sen files
 
 
@@ -23,91 +23,91 @@ PEST++ performance logger started at:  22:00:40
 starting linear uncertainty analyses
 -----------------------------------
 
-22:03:14-> starting calc_posterior
-22:03:14->-> starting align
-22:03:14->-> finished align, elapsed time = 1ms
-22:03:14->-> starting invert obscov
-22:03:14->->-> starting inverting diagonal matrix in place
-22:03:14->->->-> starting extracting diagonal
-22:03:14->->->->-> starting inverting diagonal
-22:03:14->->->->->-> starting building triplets
-22:03:14->->->->->->-> starting setting matrix from triplets
-22:03:14->->->->->->-> finished invert obscov, elapsed time = 573us
-22:03:14->->->->->->-> starting form JtQJ
-22:03:14->->->->->->-> finished form JtQJ, elapsed time = 204us
-22:03:14->->->->->->-> starting invert parcov
-22:03:14->->->->->->-> finished invert parcov, elapsed time = 52us
-22:03:14->->->->->->-> starting form posterior
-22:03:14->->->->->->-> finished form posterior, elapsed time = 46us
-22:03:14->->->->->->-> starting invert posterior
-22:03:14->->->->->->->-> starting inverting non-diagonal matrix in place
-22:03:14->->->->->->->->-> starting instantiate solver
-22:03:14->->->->->->->->->-> starting computing inverse
-22:03:14->->->->->->->->->->-> starting getting identity instance for solution
-22:03:14->->->->->->->->->->->-> starting solving
-22:03:14->->->->->->->->->->->-> finished invert posterior, elapsed time = 153us
-22:03:14->->->->->->->->->->-> finished calc_posterior, elapsed time = 2ms
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 40us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 75us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting prior_parameter_variance
-22:03:14->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
-22:03:14->->->->->->->->->->-> starting posterior_parameter_variance
-22:03:14->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
+12:32:58-> starting calc_posterior
+12:32:58->-> starting align
+12:32:58->-> finished align, elapsed time = 1ms
+12:32:58->-> starting invert obscov
+12:32:58->->-> starting inverting diagonal matrix in place
+12:32:58->->->-> starting extracting diagonal
+12:32:58->->->->-> starting inverting diagonal
+12:32:58->->->->->-> starting building triplets
+12:32:58->->->->->->-> starting setting matrix from triplets
+12:32:58->->->->->->-> finished invert obscov, elapsed time = 282us
+12:32:58->->->->->->-> starting form JtQJ
+12:32:58->->->->->->-> finished form JtQJ, elapsed time = 173us
+12:32:58->->->->->->-> starting invert parcov
+12:32:58->->->->->->-> finished invert parcov, elapsed time = 60us
+12:32:58->->->->->->-> starting form posterior
+12:32:58->->->->->->-> finished form posterior, elapsed time = 37us
+12:32:58->->->->->->-> starting invert posterior
+12:32:58->->->->->->->-> starting inverting non-diagonal matrix in place
+12:32:58->->->->->->->->-> starting instantiate solver
+12:32:58->->->->->->->->->-> starting computing inverse
+12:32:58->->->->->->->->->->-> starting getting identity instance for solution
+12:32:58->->->->->->->->->->->-> starting solving
+12:32:58->->->->->->->->->->->-> finished invert posterior, elapsed time = 555us
+12:32:58->->->->->->->->->->-> finished calc_posterior, elapsed time = 2ms
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 27us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 53us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting prior_parameter_variance
+12:32:58->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 10us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
+12:32:58->->->->->->->->->->-> starting posterior_parameter_variance
+12:32:58->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 9us
