@@ -1,0 +1,18 @@
+BEGIN options
+END options
+
+BEGIN timing
+  TDIS6  pest_2D_R.tdis
+END timing
+
+BEGIN models
+  gwf6  pest_2D_R.nam  pest_2D_R
+END models
+
+BEGIN exchanges
+END exchanges
+
+BEGIN solutiongroup  1
+  ims6  pest_2D_R.ims  pest_2D_R
+END solutiongroup  1
+
