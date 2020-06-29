@@ -1,5 +1,6 @@
 BEGIN options
   READASARRAYS
+  SAVE_FLOWS
 END options
 
 BEGIN period  1

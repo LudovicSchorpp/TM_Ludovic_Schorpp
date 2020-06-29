@@ -7,6 +7,8 @@ BEGIN packages
   OC6  first_2D.oc  oc
   NPF6  first_2D.npf  npf
   RCH6  first_2D.rcha  rcha
+  RCH6  first_2D.rch  p_ag
+  RCH6  irr.rch  irr
   WEL6  wel.wel  wel
   WEL6  Corb.wel  corb
   CHD6  thuir.chd  thuir
