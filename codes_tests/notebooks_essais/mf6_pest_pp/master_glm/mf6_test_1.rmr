@@ -1,0 +1,61 @@
+
+PANTHER master listening on socket:0.0.0.0:4004 (IPv4)
+running model 17 times
+
+    waiting for agents to appear...
+
+
+06/30/20 14:36:33->new connection from: IGH-0123-ETU.UNINE.CH:54540
+06/30/20 14:36:33->initializing new agent connection from: IGH-0123-ETU.UNINE.CH:54540, number of agents: 1, working dir: M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0
+06/30/20 14:36:34->new connection from: IGH-0123-ETU.UNINE.CH:54541
+06/30/20 14:36:34->initializing new agent connection from: IGH-0123-ETU.UNINE.CH:54541, number of agents: 2, working dir: M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1
+06/30/20 14:36:34->new agent ready: IGH-0123-ETU.UNINE.CH:54540
+06/30/20 14:36:34->Sending run 0 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:2, run id:0, concurrent runs:1)
+06/30/20 14:36:34->new connection from: IGH-0123-ETU.UNINE.CH:54542
+06/30/20 14:36:34->initializing new agent connection from: IGH-0123-ETU.UNINE.CH:54542, number of agents: 3, working dir: M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2
+06/30/20 14:36:35->new agent ready: IGH-0123-ETU.UNINE.CH:54541
+06/30/20 14:36:35->Sending run 1 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:2, run id:1, concurrent runs:1)
+06/30/20 14:36:35->new agent ready: IGH-0123-ETU.UNINE.CH:54542
+06/30/20 14:36:35->Sending run 2 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:2, run id:2, concurrent runs:1)
+06/30/20 14:36:35->new connection from: IGH-0123-ETU.UNINE.CH:54543
+06/30/20 14:36:35->initializing new agent connection from: IGH-0123-ETU.UNINE.CH:54543, number of agents: 4, working dir: M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_3
+06/30/20 14:36:36->new connection from: IGH-0123-ETU.UNINE.CH:54544
+06/30/20 14:36:36->initializing new agent connection from: IGH-0123-ETU.UNINE.CH:54544, number of agents: 5, working dir: M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_4
+06/30/20 14:36:36->new agent ready: IGH-0123-ETU.UNINE.CH:54543
+06/30/20 14:36:36->Sending run 3 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_3  (group id:2, run id:3, concurrent runs:1)
+06/30/20 14:36:37->new agent ready: IGH-0123-ETU.UNINE.CH:54544
+06/30/20 14:36:37->Sending run 4 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_4  (group id:2, run id:4, concurrent runs:1)
+06/30/20 14:36:59->run 0 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.414933 min, avg run time:0.414933 min, group id:2, run id: 0 concurrent:1)
+06/30/20 14:36:59->Sending run 5 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:2, run id:5, concurrent runs:1)
+06/30/20 14:37:00->run 1 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.429667 min, avg run time:0.4223 min, group id:2, run id: 1 concurrent:1)
+06/30/20 14:37:00->Sending run 6 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:2, run id:6, concurrent runs:1)
+06/30/20 14:37:01->run 2 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.430033 min, avg run time:0.424878 min, group id:2, run id: 2 concurrent:1)
+06/30/20 14:37:01->Sending run 7 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:2, run id:7, concurrent runs:1)
+06/30/20 14:37:03->run 3 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_3  (run time:0.449417 min, avg run time:0.431013 min, group id:2, run id: 3 concurrent:1)
+06/30/20 14:37:03->Sending run 8 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_3  (group id:2, run id:8, concurrent runs:1)
+06/30/20 14:37:04->run 4 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_4  (run time:0.448817 min, avg run time:0.434573 min, group id:2, run id: 4 concurrent:1)
+06/30/20 14:37:04->Sending run 9 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_4  (group id:2, run id:9, concurrent runs:1)
+06/30/20 14:37:24->run 6 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.415783 min, avg run time:0.431797 min, group id:2, run id: 6 concurrent:1)
+06/30/20 14:37:24->Sending run 10 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:2, run id:10, concurrent runs:1)
+06/30/20 14:37:25->run 7 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.41725 min, avg run time:0.42924 min, group id:2, run id: 7 concurrent:1)
+06/30/20 14:37:25->Sending run 11 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:2, run id:11, concurrent runs:1)
+06/30/20 14:37:25->run 5 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.425567 min, avg run time:0.431367 min, group id:2, run id: 5 concurrent:1)
+06/30/20 14:37:25->Sending run 12 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (group id:2, run id:12, concurrent runs:1)
+06/30/20 14:37:30->run 8 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_3  (run time:0.448417 min, avg run time:0.431167 min, group id:2, run id: 8 concurrent:1)
+06/30/20 14:37:30->Sending run 13 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_3  (group id:2, run id:13, concurrent runs:1)
+06/30/20 14:37:31->run 9 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_4  (run time:0.450283 min, avg run time:0.43146 min, group id:2, run id: 9 concurrent:1)
+06/30/20 14:37:31->Sending run 14 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_4  (group id:2, run id:14, concurrent runs:1)
+06/30/20 14:37:52->run 10 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.433183 min, avg run time:0.43494 min, group id:2, run id: 10 concurrent:1)
+06/30/20 14:37:52->Sending run 15 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (group id:2, run id:15, concurrent runs:1)
+06/30/20 14:37:52->run 11 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.43295 min, avg run time:0.43808 min, group id:2, run id: 11 concurrent:1)
+06/30/20 14:37:52->Sending run 16 to: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (group id:2, run id:16, concurrent runs:1)
+06/30/20 14:37:55->run 12 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_0  (run time:0.464133 min, avg run time:0.445793 min, group id:2, run id: 12 concurrent:1)
+06/30/20 14:38:01->run 14 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_4  (run time:0.47705 min, avg run time:0.451147 min, group id:2, run id: 14 concurrent:1)
+06/30/20 14:38:03->run 13 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_3  (run time:0.49575 min, avg run time:0.460613 min, group id:2, run id: 13 concurrent:1)
+06/30/20 14:38:14->run 15 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_1  (run time:0.403033 min, avg run time:0.454583 min, group id:2, run id: 15 concurrent:1)
+06/30/20 14:38:15->run 16 received from: IGH-0123-ETU.UNINE.CH$M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\worker_2  (run time:0.40615 min, avg run time:0.449223 min, group id:2, run id: 16 concurrent:1)
+
+---------------------
+   17 runs complete :  0 runs failed
+
+

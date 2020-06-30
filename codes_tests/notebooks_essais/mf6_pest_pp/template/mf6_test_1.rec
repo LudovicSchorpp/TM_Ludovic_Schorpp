@@ -9,18 +9,12 @@ binary compiled on Dec  9 2019 at 12:11:26
 
 using control file: "mf6_test_1"
 
-in directory: "C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\template"
-
-
-Note 'NOPTMAX' == 0, switching to forgiveness mode when checking inputs
+in directory: "M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_pp\template"
 
 Note: 3 unused lines in pest control file:
   -->  line number 6: '2.000000E+01  -3.000000E+00   3.000000E-01   1.000000E-02        -7       999          lamforgive        noderforgive' 
   -->  line number 10: '0         0         0         0             jcosave          verboserec          jcosaveitn          reisaveitn          parsaveitn        noparsaverun' 
   -->  line number 12: '1' 
-noptmax = 0, resetting max_run_fail = 1
-parameter warning: 6 parameters are at lower bound
-parameter warning: 3 parameters are at upper bound
 
 
 binary compiled on Dec  9 2019 at 12:11:05
@@ -40,7 +34,7 @@ PEST Control Information
     facparmax = 10
     facorig = 0.001
     phiredswh = 0.1
-    noptmax = 0
+    noptmax = -1
     phiredstp = 0.01
     nphistp = 3
     nphinored = 3
@@ -53,9 +47,9 @@ PEST Control Information
 ...general options (used in multiple tools): 
 svd_pack: redsvd
 lambda_scale_fac: 0.75,1,1.1,
-max_run_fail: 1
+max_run_fail: 3
 yamr_poll_interval: 1
-parameter_covariance: mf6_test_1.prior.cov
+parameter_covariance: 
 observation_covariance: 
 hotstart_resfile: 
 overdue_resched_fac: 100
@@ -73,8 +67,8 @@ additional_ins_delimiters:
 ...pestpp-glm specific options:
 max_n_super: 1000000
 super_eigthresh: 1e-06
-n_iter_base: -1
-n_iter_super: 3
+n_iter_base: 1000000
+n_iter_super: 0
 super_relparmax: 0.1
 max_super_frz_iter: 5
 max_reg_iter: 20
@@ -83,8 +77,8 @@ iteration_summary: 1
 der_forgive: 1
 uncertainty: 1
 forecasts: 
-base_jacobian: mf6_test_1.jcb
-glm_num_reals: 50
+base_jacobian: 
+glm_num_reals: 0
 jac_scale: 1
 de_f: 0.8
 de_cr: 0.9
@@ -192,22 +186,22 @@ kp_inst:0             RELATIVE                     0.01                        0
 
 Parameter information
 NAME           TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND          GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
-kp_inst:0_i:1_j:1log                     FACTOR             10            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:1_j:3log                     FACTOR         0.3741            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:1_j:5log                     FACTOR            0.1            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:1_j:7log                     FACTOR       0.228485            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:3_j:1log                     FACTOR             10            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:3_j:3log                     FACTOR            0.1            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:3_j:5log                     FACTOR       0.779302            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:3_j:7log                     FACTOR             10            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:5_j:1log                     FACTOR            0.1            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:5_j:3log                     FACTOR            0.1            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:5_j:5log                     FACTOR            0.1            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:5_j:7log                     FACTOR            0.1            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:7_j:1log                     FACTOR       0.969901            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:7_j:3log                     FACTOR       0.232246            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:7_j:5log                     FACTOR       0.138445            0.1             10      kp_inst:0              1              0                   1
-kp_inst:0_i:7_j:7log                     FACTOR        1.98701            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:1_j:1log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:1_j:3log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:1_j:5log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:1_j:7log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:3_j:1log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:3_j:3log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:3_j:5log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:3_j:7log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:5_j:1log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:5_j:3log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:5_j:5log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:5_j:7log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:7_j:1log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:7_j:3log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:7_j:5log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:7_j:7log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
 
 
 
@@ -292,21 +286,22 @@ PEST SVD Information
 
 
 PEST++ arguments:
-BASE_JACOBIAN = MF6_TEST_1.JCB
-GLM_NUM_REALS = 50
-N_ITER_BASE = -1
-N_ITER_SUPER = 3
-PARCOV = MF6_TEST_1.PRIOR.COV
 
 
 
    -----    Starting pestpp-glm Iterations    ----    
 
+COMPUTING JACOBIAN:
+
+    Iteration type: base parameter solution
+    Model calls so far : 0
+
+
 -----------------------------------------
      ---   OPTIMIZATION COMPLETE   ---   
   Reason for terminating PEST++ simulation: NOPTMAX criterion met
   Summary of termination criteria:
-  NOPTMAX = 0 ;  NOPT at termination = 0
+  NOPTMAX = -1 ;  NOPT at termination = 0
   NPHINORED = 3 ;  NPHINORED at termination = 0
   NRELPAR = 3; RELPARSTP = 0.01 ;  NRELPAR at termination = 0
   PHIREDSTP = 0.01; NPHISTP = 3
@@ -319,94 +314,161 @@ FINAL OPTIMISATION RESULTS
      Parameter            
         Name         Value
     ------------  ------------
-    kp_inst:0_i:1_j:1            10
-    kp_inst:0_i:1_j:3        0.3741
-    kp_inst:0_i:1_j:5           0.1
-    kp_inst:0_i:1_j:7      0.228485
-    kp_inst:0_i:3_j:1            10
-    kp_inst:0_i:3_j:3           0.1
-    kp_inst:0_i:3_j:5      0.779302
-    kp_inst:0_i:3_j:7            10
-    kp_inst:0_i:5_j:1           0.1
-    kp_inst:0_i:5_j:3           0.1
-    kp_inst:0_i:5_j:5           0.1
-    kp_inst:0_i:5_j:7           0.1
-    kp_inst:0_i:7_j:1      0.969901
-    kp_inst:0_i:7_j:3      0.232246
-    kp_inst:0_i:7_j:5      0.138445
-    kp_inst:0_i:7_j:7       1.98701
+    kp_inst:0_i:1_j:1             1
+    kp_inst:0_i:1_j:3             1
+    kp_inst:0_i:1_j:5             1
+    kp_inst:0_i:1_j:7             1
+    kp_inst:0_i:3_j:1             1
+    kp_inst:0_i:3_j:3             1
+    kp_inst:0_i:3_j:5             1
+    kp_inst:0_i:3_j:7             1
+    kp_inst:0_i:5_j:1             1
+    kp_inst:0_i:5_j:3             1
+    kp_inst:0_i:5_j:5             1
+    kp_inst:0_i:5_j:7             1
+    kp_inst:0_i:7_j:1             1
+    kp_inst:0_i:7_j:3             1
+    kp_inst:0_i:7_j:5             1
+    kp_inst:0_i:7_j:7             1
 
 
   Observations with optimal model-simulated equivalents and residuals
                  Name        Group             Measured             Modelled             Residual               Weight
- hds_usecol:0_1_1_time:1.0       obgnme              9.78136              9.86527           -0.0839144              1.00000
- hds_usecol:0_1_2_time:1.0       obgnme              9.47304              9.61144            -0.138406              1.00000
- hds_usecol:0_1_3_time:1.0       obgnme              9.14949              8.63585             0.513634              1.00000
- hds_usecol:0_1_4_time:1.0       obgnme              6.66555              6.73482           -0.0692651              1.00000
- hds_usecol:0_1_5_time:1.0       obgnme              3.61431              4.15728            -0.542971              1.00000
- hds_usecol:0_1_6_time:1.0       obgnme              2.67596              2.20805             0.467914              1.00000
- hds_usecol:0_1_7_time:1.0       obgnme              1.14898              1.21823           -0.0692502              1.00000
- hds_usecol:0_1_8_time:1.0       obgnme             0.429457             0.521681           -0.0922246              1.00000
- hds_usecol:0_2_1_time:1.0       obgnme              9.75927              9.86946            -0.110185              1.00000
- hds_usecol:0_2_2_time:1.0       obgnme              9.51030              9.57985           -0.0695518              1.00000
- hds_usecol:0_2_3_time:1.0       obgnme              8.93525              8.26710             0.668153              1.00000
- hds_usecol:0_2_4_time:1.0       obgnme              5.58343              5.64155           -0.0581162              1.00000
- hds_usecol:0_2_5_time:1.0       obgnme              2.28974              3.09303            -0.803291              1.00000
- hds_usecol:0_2_6_time:1.0       obgnme              1.77523              1.73908            0.0361508              1.00000
- hds_usecol:0_2_7_time:1.0       obgnme              1.27737              1.08080             0.196570              1.00000
- hds_usecol:0_2_8_time:1.0       obgnme             0.557576             0.608910           -0.0513337              1.00000
- hds_usecol:0_3_1_time:1.0       obgnme              9.70005              9.87116            -0.171111              1.00000
- hds_usecol:0_3_2_time:1.0       obgnme              9.40473              9.54488            -0.140150              1.00000
- hds_usecol:0_3_3_time:1.0       obgnme              8.93093              7.57076              1.36017              1.00000
- hds_usecol:0_3_4_time:1.0       obgnme              5.02190              4.53560             0.486306              1.00000
- hds_usecol:0_3_5_time:1.0       obgnme              2.11050              2.53460            -0.424101              1.00000
- hds_usecol:0_3_6_time:1.0       obgnme              1.71970              1.54356             0.176133              1.00000
- hds_usecol:0_3_7_time:1.0       obgnme              1.52990              1.05636             0.473542              1.00000
- hds_usecol:0_3_8_time:1.0       obgnme             0.721242             0.687121            0.0341210              1.00000
- hds_usecol:0_4_1_time:1.0       obgnme              9.67528              9.77561            -0.100336              1.00000
- hds_usecol:0_4_2_time:1.0       obgnme              9.31572              9.13113             0.184593              1.00000
- hds_usecol:0_4_3_time:1.0       obgnme              7.33931              7.22007             0.119238              1.00000
- hds_usecol:0_4_4_time:1.0       obgnme              3.82845              4.64660            -0.818154              1.00000
- hds_usecol:0_4_5_time:1.0       obgnme              2.31752              2.68459            -0.367069              1.00000
- hds_usecol:0_4_6_time:1.0       obgnme              1.77504              1.61852             0.156525              1.00000
- hds_usecol:0_4_7_time:1.0       obgnme              1.41244              1.03178             0.380667              1.00000
- hds_usecol:0_4_8_time:1.0       obgnme             0.768072             0.560903             0.207170              1.00000
- hds_usecol:0_5_1_time:1.0       obgnme              9.74426              9.50487             0.239396              1.00000
- hds_usecol:0_5_2_time:1.0       obgnme              9.02938              8.60373             0.425656              1.00000
- hds_usecol:0_5_3_time:1.0       obgnme              7.01099              7.01129         -0.000301006              1.00000
- hds_usecol:0_5_4_time:1.0       obgnme              4.53587              4.96335            -0.427482              1.00000
- hds_usecol:0_5_5_time:1.0       obgnme              2.97338              3.07395            -0.100565              1.00000
- hds_usecol:0_5_6_time:1.0       obgnme              1.69273              1.81194            -0.119210              1.00000
- hds_usecol:0_5_7_time:1.0       obgnme              1.05468              1.01995            0.0347306              1.00000
- hds_usecol:0_5_8_time:1.0       obgnme             0.379046             0.411973           -0.0329273              1.00000
- hds_usecol:0_6_1_time:1.0       obgnme              9.36222              9.37613           -0.0139143              1.00000
- hds_usecol:0_6_2_time:1.0       obgnme              8.28964              8.46668            -0.177043              1.00000
- hds_usecol:0_6_3_time:1.0       obgnme              7.64733              7.04130             0.606032              1.00000
- hds_usecol:0_6_4_time:1.0       obgnme              5.40888              5.17492             0.233967              1.00000
- hds_usecol:0_6_5_time:1.0       obgnme              3.23593              3.22038            0.0155446              1.00000
- hds_usecol:0_6_6_time:1.0       obgnme              2.05458              1.76869             0.285890              1.00000
- hds_usecol:0_6_7_time:1.0       obgnme              1.00821             0.989852            0.0183586              1.00000
- hds_usecol:0_6_8_time:1.0       obgnme             0.290038             0.467682            -0.177644              1.00000
- hds_usecol:0_7_1_time:1.0       obgnme              9.30267              9.33557           -0.0328967              1.00000
- hds_usecol:0_7_2_time:1.0       obgnme              8.18155              8.47953            -0.297978              1.00000
- hds_usecol:0_7_3_time:1.0       obgnme              7.57703              7.09359             0.483442              1.00000
- hds_usecol:0_7_4_time:1.0       obgnme              5.22274              5.30751           -0.0847693              1.00000
- hds_usecol:0_7_5_time:1.0       obgnme              2.56566              3.25727            -0.691610              1.00000
- hds_usecol:0_7_6_time:1.0       obgnme              1.95535              1.67462             0.280728              1.00000
- hds_usecol:0_7_7_time:1.0       obgnme              1.14401              1.01255             0.131468              1.00000
- hds_usecol:0_7_8_time:1.0       obgnme             0.450904             0.573686            -0.122782              1.00000
- hds_usecol:0_8_1_time:1.0       obgnme              8.85479              9.25074            -0.395948              1.00000
- hds_usecol:0_8_2_time:1.0       obgnme              7.79992              8.30961            -0.509691              1.00000
- hds_usecol:0_8_3_time:1.0       obgnme              7.32051              6.95513             0.365379              1.00000
- hds_usecol:0_8_4_time:1.0       obgnme              5.37927              5.21235             0.166921              1.00000
- hds_usecol:0_8_5_time:1.0       obgnme              2.68063              3.35209            -0.671462              1.00000
- hds_usecol:0_8_6_time:1.0       obgnme              2.15648              1.90868             0.247798              1.00000
- hds_usecol:0_8_7_time:1.0       obgnme              1.45416              1.11374             0.340421              1.00000
- hds_usecol:0_8_8_time:1.0       obgnme             0.601048             0.585380            0.0156675              1.00000
+ hds_usecol:0_1_1_time:1.0       obgnme              9.78136              8.88888             0.892478              1.00000
+ hds_usecol:0_1_2_time:1.0       obgnme              9.47304              7.77777              1.69527              1.00000
+ hds_usecol:0_1_3_time:1.0       obgnme              9.14949              6.66668              2.48281              1.00000
+ hds_usecol:0_1_4_time:1.0       obgnme              6.66555              5.55555              1.11000              1.00000
+ hds_usecol:0_1_5_time:1.0       obgnme              3.61431              4.44444            -0.830122              1.00000
+ hds_usecol:0_1_6_time:1.0       obgnme              2.67596              3.33334            -0.657382              1.00000
+ hds_usecol:0_1_7_time:1.0       obgnme              1.14898              2.22224             -1.07326              1.00000
+ hds_usecol:0_1_8_time:1.0       obgnme             0.429457              1.11112            -0.681664              1.00000
+ hds_usecol:0_2_1_time:1.0       obgnme              9.75927              8.88890             0.870377              1.00000
+ hds_usecol:0_2_2_time:1.0       obgnme              9.51030              7.77778              1.73253              1.00000
+ hds_usecol:0_2_3_time:1.0       obgnme              8.93525              6.66667              2.26858              1.00000
+ hds_usecol:0_2_4_time:1.0       obgnme              5.58343              5.55558            0.0278572              1.00000
+ hds_usecol:0_2_5_time:1.0       obgnme              2.28974              4.44448             -2.15473              1.00000
+ hds_usecol:0_2_6_time:1.0       obgnme              1.77523              3.33337             -1.55813              1.00000
+ hds_usecol:0_2_7_time:1.0       obgnme              1.27737              2.22225            -0.944882              1.00000
+ hds_usecol:0_2_8_time:1.0       obgnme             0.557576              1.11112            -0.553545              1.00000
+ hds_usecol:0_3_1_time:1.0       obgnme              9.70005              8.88889             0.811162              1.00000
+ hds_usecol:0_3_2_time:1.0       obgnme              9.40473              7.77778              1.62695              1.00000
+ hds_usecol:0_3_3_time:1.0       obgnme              8.93093              6.66668              2.26425              1.00000
+ hds_usecol:0_3_4_time:1.0       obgnme              5.02190              5.55557            -0.533673              1.00000
+ hds_usecol:0_3_5_time:1.0       obgnme              2.11050              4.44448             -2.33398              1.00000
+ hds_usecol:0_3_6_time:1.0       obgnme              1.71970              3.33337             -1.61367              1.00000
+ hds_usecol:0_3_7_time:1.0       obgnme              1.52990              2.22226            -0.692353              1.00000
+ hds_usecol:0_3_8_time:1.0       obgnme             0.721242              1.11113            -0.389885              1.00000
+ hds_usecol:0_4_1_time:1.0       obgnme              9.67528              8.88889             0.786383              1.00000
+ hds_usecol:0_4_2_time:1.0       obgnme              9.31572              7.77779              1.53793              1.00000
+ hds_usecol:0_4_3_time:1.0       obgnme              7.33931              6.66669             0.672613              1.00000
+ hds_usecol:0_4_4_time:1.0       obgnme              3.82845              5.55558             -1.72713              1.00000
+ hds_usecol:0_4_5_time:1.0       obgnme              2.31752              4.44448             -2.12696              1.00000
+ hds_usecol:0_4_6_time:1.0       obgnme              1.77504              3.33336             -1.55831              1.00000
+ hds_usecol:0_4_7_time:1.0       obgnme              1.41244              2.22224            -0.809798              1.00000
+ hds_usecol:0_4_8_time:1.0       obgnme             0.768072              1.11113            -0.343053              1.00000
+ hds_usecol:0_5_1_time:1.0       obgnme              9.74426              8.88889             0.855368              1.00000
+ hds_usecol:0_5_2_time:1.0       obgnme              9.02938              7.77779              1.25159              1.00000
+ hds_usecol:0_5_3_time:1.0       obgnme              7.01099              6.66669             0.344303              1.00000
+ hds_usecol:0_5_4_time:1.0       obgnme              4.53587              5.55558             -1.01971              1.00000
+ hds_usecol:0_5_5_time:1.0       obgnme              2.97338              4.44447             -1.47109              1.00000
+ hds_usecol:0_5_6_time:1.0       obgnme              1.69273              3.33335             -1.64062              1.00000
+ hds_usecol:0_5_7_time:1.0       obgnme              1.05468              2.22222             -1.16754              1.00000
+ hds_usecol:0_5_8_time:1.0       obgnme             0.379046              1.11111            -0.732061              1.00000
+ hds_usecol:0_6_1_time:1.0       obgnme              9.36222              8.88889             0.473326              1.00000
+ hds_usecol:0_6_2_time:1.0       obgnme              8.28964              7.77779             0.511856              1.00000
+ hds_usecol:0_6_3_time:1.0       obgnme              7.64733              6.66667             0.980657              1.00000
+ hds_usecol:0_6_4_time:1.0       obgnme              5.40888              5.55555            -0.146666              1.00000
+ hds_usecol:0_6_5_time:1.0       obgnme              3.23593              4.44444             -1.20851              1.00000
+ hds_usecol:0_6_6_time:1.0       obgnme              2.05458              3.33333             -1.27875              1.00000
+ hds_usecol:0_6_7_time:1.0       obgnme              1.00821              2.22220             -1.21399              1.00000
+ hds_usecol:0_6_8_time:1.0       obgnme             0.290038              1.11109            -0.821055              1.00000
+ hds_usecol:0_7_1_time:1.0       obgnme              9.30267              8.88889             0.413786              1.00000
+ hds_usecol:0_7_2_time:1.0       obgnme              8.18155              7.77778             0.403772              1.00000
+ hds_usecol:0_7_3_time:1.0       obgnme              7.57703              6.66666             0.910369              1.00000
+ hds_usecol:0_7_4_time:1.0       obgnme              5.22274              5.55553            -0.332791              1.00000
+ hds_usecol:0_7_5_time:1.0       obgnme              2.56566              4.44440             -1.87874              1.00000
+ hds_usecol:0_7_6_time:1.0       obgnme              1.95535              3.33329             -1.37793              1.00000
+ hds_usecol:0_7_7_time:1.0       obgnme              1.14401              2.22218             -1.07817              1.00000
+ hds_usecol:0_7_8_time:1.0       obgnme             0.450904              1.11108            -0.660179              1.00000
+ hds_usecol:0_8_1_time:1.0       obgnme              8.85479              8.88888           -0.0340915              1.00000
+ hds_usecol:0_8_2_time:1.0       obgnme              7.79992              7.77776            0.0221589              1.00000
+ hds_usecol:0_8_3_time:1.0       obgnme              7.32051              6.66664             0.653869              1.00000
+ hds_usecol:0_8_4_time:1.0       obgnme              5.37927              5.55551            -0.176245              1.00000
+ hds_usecol:0_8_5_time:1.0       obgnme              2.68063              4.44438             -1.76375              1.00000
+ hds_usecol:0_8_6_time:1.0       obgnme              2.15648              3.33326             -1.17678              1.00000
+ hds_usecol:0_8_7_time:1.0       obgnme              1.45416              2.22216            -0.768005              1.00000
+ hds_usecol:0_8_8_time:1.0       obgnme             0.601048              1.11108            -0.510031              1.00000
 
 Final composite objective function 
-  Final phi                                           Total : 8.76494
-  Contribution to phi from observation group       "obgnme" : 8.76494
+  Final phi                                           Total : 93.5555
+  Contribution to phi from observation group       "obgnme" : 93.5555
 
 
-Number of forward model runs performed during optimiztion: 1
+Number of forward model runs performed during optimiztion: 17
+
+
+
+
+-----------------------------------------------------------------------
+Note: The following uncertainty estimates were calculated using 
+      Schur's complement for linear-based conditional uncertainty 
+      propogation.  For a derviation from Bayes equation, see 
+      M. N. Fienen, J. E. Doherty, R. J. Hunt, and H. W. Reeves. 
+      2010. 'Using Prediction Uncertainty Analysis to Design 
+      Hydrologic Monitoring Networks : Example Applications 
+      from the Great Lakes Water Availability Pilot Project'. 
+      See PEST++ V3 documentation for implementation details.
+-----------------------------------------------------------------------
+
+Note: Any observations or prior information equations with a group name
+      starting with 'regul' are dropped from the jacobian and observation
+      covariance matrices before uncertainty calculations.  Please
+      make sure that all expert knowledge is expressed in the prior 
+      parameter bounds or through a covariance matix, which can be 
+      supplied as a ++ option as 'parameter_covariance(<matrix_file_name>),
+      where <matrix_file_name> can be an ASCII PEST-compatible matrix file (.mat) or
+      a PEST-compatible uncertainty file (.unc).
+
+
+Note: The observation covariance matrix has been constructed from 
+      weights listed in the pest control file that have been scaled by 
+      by the final residuals to account for 
+      the level of measurement noise implied by the original weights so
+      the total objective function is equal to the number of  
+      non-zero weighted observations.
+
+Scaled observation weights used to form observation noise covariance matrix written to residual file 'mf6_test_1.fosm_reweight.rei'
+
+Note : posterior parameter covariance matrix written to file 'mf6_test_1.post.cov'
+
+
+---------------------------------------
+---- parameter uncertainty summary ----
+---------------------------------------
+
+
+                name          prior_mean         prior_stdev   prior_lower_bound   prior_upper_bound           post_mean          post_stdev    post_lower_bound    post_upper_bound
+   KP_INST:0_I:1_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.373749           -0.747497            0.747497
+   KP_INST:0_I:1_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.402514           -0.805028            0.805028
+   KP_INST:0_I:1_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.391739           -0.783478            0.783478
+   KP_INST:0_I:1_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.372851           -0.745702            0.745702
+   KP_INST:0_I:3_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.411128           -0.822255            0.822255
+   KP_INST:0_I:3_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.415722           -0.831445            0.831445
+   KP_INST:0_I:3_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.405681           -0.811361            0.811361
+   KP_INST:0_I:3_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.412295           -0.824589            0.824589
+   KP_INST:0_I:5_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.408486           -0.816972            0.816972
+   KP_INST:0_I:5_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.413635           -0.827270            0.827270
+   KP_INST:0_I:5_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.403737           -0.807473            0.807473
+   KP_INST:0_I:5_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.410207           -0.820414            0.820414
+   KP_INST:0_I:7_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.349017           -0.698035            0.698035
+   KP_INST:0_I:7_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.381964           -0.763929            0.763929
+   KP_INST:0_I:7_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.367462           -0.734923            0.734923
+   KP_INST:0_I:7_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.352474           -0.704948            0.704948
+
+Note: Upper and lower uncertainty bounds reported above are 
+      calculated as: <prior,post>_mean +/- (2.0 * <prior,post>_stdev). 
+      For log-transformed parameters, the mean, stdev and range are reported 
+      with respect to the log of the parameter value. 
+
+Note : the above parameter uncertainty summary was written to file 'mf6_test_1.par.usum.csv'
+

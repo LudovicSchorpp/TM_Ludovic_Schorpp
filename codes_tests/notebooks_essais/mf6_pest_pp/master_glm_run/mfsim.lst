@@ -19,7 +19,7 @@ and distribution information.
 
 
 System command used to initiate simulation:
-..\mf6.exe
+../../exe/mf6.exe
 
 MODFLOW was compiled using uniform precision.
 Real Variables
@@ -138,12 +138,12 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1         9     7.88846                         1_GWF-(1,2,2)
- Under-relaxation          1               7.88846                         1_GWF-(1,2,2)
- Linear Solver             2         1    1.174123E-04                    1_GWF-(1,10,7)
+ Linear Solver             1        11     8.80211                         1_GWF-(1,1,2)
+ Under-relaxation          1               8.80211                         1_GWF-(1,1,2)
+ Linear Solver             2         1    1.678247E-04                     1_GWF-(1,1,7)
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 10 TOTAL ITERATIONS
+ 12 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -152,7 +152,7 @@ Integer Variables
  Allocated memory in megabytes:    4.983200E-02
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/06/28 10:02:08
- Elapsed run time:  0.040 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/06/30 14:36:18
+ Elapsed run time:  0.150 Seconds
 
  Normal termination of simulation.

@@ -193,9 +193,9 @@ Name                                      Type                             Time 
 0_8_8                                     Continuous HEAD                  All times    "1 9 9"
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1014
-      FILE NAME: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\workspace\test_mf6_pst.dis.grb
+      FILE NAME: M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\workspace\test_mf6_pst.dis.grb
 
- OPENED C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\workspace\test_mf6_pst.dis.grb
+ OPENED M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\workspace\test_mf6_pst.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1014   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
