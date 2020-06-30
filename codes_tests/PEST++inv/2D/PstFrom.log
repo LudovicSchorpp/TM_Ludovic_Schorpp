@@ -1,33 +1,42 @@
-2020-06-29 22:43:42.800770 starting: opening PstFrom.log for logging
-2020-06-29 22:43:42.800770 starting PstFrom process
-2020-06-29 22:43:42.808795 starting: setting up dirs
-2020-06-29 22:43:42.810821 starting: removing existing new_d 'template'
-2020-06-29 22:43:42.838982 finished: removing existing new_d 'template' took: 0:00:00.028161
-2020-06-29 22:43:42.838982 starting: copying original_d 'workspace' to new_d 'template'
-2020-06-29 22:43:42.921457 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:00.082475
-2020-06-29 22:43:42.929482 finished: setting up dirs took: 0:00:00.120687
-2020-06-29 22:43:42.959731 starting: adding observations from tabular output file
-2020-06-29 22:43:42.961842 starting: reading list template\heads2.csv
-2020-06-29 22:43:42.971910 finished: reading list template\heads2.csv took: 0:00:00.010068
-2020-06-29 22:43:42.971910 starting: building insfile for tabular output file heads2.csv
-2020-06-29 22:43:43.002146 finished: building insfile for tabular output file heads2.csv took: 0:00:00.030236
-2020-06-29 22:43:43.002146 starting: adding observation from instruction file 'template\heads2.csv.ins'
-2020-06-29 22:43:43.022296 finished: adding observation from instruction file 'template\heads2.csv.ins' took: 0:00:00.020150
-2020-06-29 22:43:43.022296 finished: adding observations from tabular output file took: 0:00:00.062565
-2020-06-29 22:43:44.260741 starting: adding pilotpoint type multiplier style parameters for file(s) ['k.txt']
-2020-06-29 22:43:44.260741 starting: loading array template\k.txt
-2020-06-29 22:43:44.341270 finished: loading array template\k.txt took: 0:00:00.080529
-2020-06-29 22:43:44.341270 loaded array 'k.txt' of shape (182, 183)
-2020-06-29 22:43:44.431876 starting: writing array-based template file 'kp_inst0_pilotpoint.csv.tpl'
-2020-06-29 22:43:44.431876 starting: setting up pilot point parameters
-2020-06-29 22:43:44.431876 No spatial reference (containing cell spacing) passed.
-2020-06-29 22:43:44.431876 OK - using spatial reference in parent object.
-2020-06-29 22:43:44.854793 46 pilot point parameters created
-2020-06-29 22:43:44.862844 pilot point 'pargp':kp_inst:0
-2020-06-29 22:43:44.862844 finished: setting up pilot point parameters took: 0:00:00.430968
-2020-06-29 22:43:44.874907 starting: calculating factors for pargp=kp_inst:0
-2020-06-29 22:43:44.882951 saving krige variance file:template\kp_inst0pp.var.dat
-2020-06-29 22:43:44.882951 saving krige factors file:template\kp_inst0pp.fac
-2020-06-29 22:45:05.124368 finished: calculating factors for pargp=kp_inst:0 took: 0:01:20.249461
-2020-06-29 22:45:05.124368 starting: writing array-based template file 'kp_inst0pp.dat.tpl'
-2020-06-29 22:45:05.141508 starting: adding parameters for file(s) ['k.txt']
+2020-06-30 09:24:58.356420 starting: opening PstFrom.log for logging
+2020-06-30 09:24:58.356420 starting PstFrom process
+2020-06-30 09:24:58.356420 starting: setting up dirs
+2020-06-30 09:24:58.366463 starting: removing existing new_d 'template'
+2020-06-30 09:24:59.406339 finished: removing existing new_d 'template' took: 0:00:01.039876
+2020-06-30 09:24:59.406339 starting: copying original_d 'workspace' to new_d 'template'
+2020-06-30 09:25:01.036618 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:01.630279
+2020-06-30 09:25:01.046455 finished: setting up dirs took: 0:00:02.690035
+2020-06-30 09:25:36.740830 starting: adding observations from tabular output file
+2020-06-30 09:25:36.740830 starting: reading list template\heads.csv
+2020-06-30 09:25:36.746378 finished: reading list template\heads.csv took: 0:00:00.005548
+2020-06-30 09:25:36.756518 starting: building insfile for tabular output file heads.csv
+2020-06-30 09:25:36.776448 finished: building insfile for tabular output file heads.csv took: 0:00:00.019930
+2020-06-30 09:25:36.776448 starting: adding observation from instruction file 'template\heads.csv.ins'
+2020-06-30 09:25:36.806374 finished: adding observation from instruction file 'template\heads.csv.ins' took: 0:00:00.029926
+2020-06-30 09:25:36.806374 finished: adding observations from tabular output file took: 0:00:00.065544
+2020-06-30 09:25:53.456054 starting: adding pilotpoint type multiplier style parameters for file(s) ['k.txt']
+2020-06-30 09:25:53.456054 starting: loading array template\k.txt
+2020-06-30 09:25:53.586388 finished: loading array template\k.txt took: 0:00:00.130334
+2020-06-30 09:25:53.586388 loaded array 'k.txt' of shape (182, 183)
+2020-06-30 09:25:53.746248 starting: writing array-based template file 'kp_inst0_pilotpoint.csv.tpl'
+2020-06-30 09:25:53.746248 starting: setting up pilot point parameters
+2020-06-30 09:25:53.746248 No spatial reference (containing cell spacing) passed.
+2020-06-30 09:25:53.746248 OK - using spatial reference in parent object.
+2020-06-30 09:25:54.146042 95 pilot point parameters created
+2020-06-30 09:25:54.146042 pilot point 'pargp':kp_inst:0
+2020-06-30 09:25:54.146042 finished: setting up pilot point parameters took: 0:00:00.399794
+2020-06-30 09:25:54.166474 starting: calculating factors for pargp=kp_inst:0
+2020-06-30 09:25:54.176279 saving krige variance file:template\kp_inst0pp.var.dat
+2020-06-30 09:25:54.176279 saving krige factors file:template\kp_inst0pp.fac
+2020-06-30 09:27:03.434956 finished: calculating factors for pargp=kp_inst:0 took: 0:01:09.268482
+2020-06-30 09:27:03.434956 starting: writing array-based template file 'kp_inst0pp.dat.tpl'
+2020-06-30 09:27:03.469902 starting: adding parameters for file(s) ['k.txt']
+2020-06-30 09:27:04.335135 forward_run line:pyemu.os_utils.run(r'..\..\..\exe\mf6')
+
+2020-06-30 09:27:04.994853 WARNING: sys_cmd 'pyemu.os_utils.run(r'..\..\..\exe\mf6')
+' already in sys cmds, skipping...
+2020-06-30 09:27:05.014867 starting: building prior covariance matrix
+2020-06-30 09:27:05.035192 saving prior covariance matrix to file template\2D_test.prior.cov
+2020-06-30 09:27:05.075206 finished: building prior covariance matrix took: 0:00:00.060339
+2020-06-30 09:43:36.563741 starting: drawing realizations
+2020-06-30 09:43:36.573965 ERROR: draw() error: can't use spectral simulation with irregular grid

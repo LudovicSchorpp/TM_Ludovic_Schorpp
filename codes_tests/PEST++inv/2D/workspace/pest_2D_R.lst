@@ -448,9 +448,9 @@ Name                                      Type                             Time 
 0_167_66                                  Continuous HEAD                  All times    "1 168 67"
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1027
-      FILE NAME: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\2D\workspace\pest_2D_R.dis.grb
+      FILE NAME: M:\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\2D\workspace\pest_2D_R.dis.grb
 
- OPENED C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\2D\workspace\pest_2D_R.dis.grb
+ OPENED M:\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\2D\workspace\pest_2D_R.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1027   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
