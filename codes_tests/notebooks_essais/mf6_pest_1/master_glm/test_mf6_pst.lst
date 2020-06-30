@@ -193,9 +193,9 @@ Name                                      Type                             Time 
 0_8_8                                     Continuous HEAD                  All times    "1 9 9"
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1014
-      FILE NAME: M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\template\test_mf6_pst.dis.grb
+      FILE NAME: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\master_glm\test_mf6_pst.dis.grb
 
- OPENED M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\template\test_mf6_pst.dis.grb
+ OPENED C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\master_glm\test_mf6_pst.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1014   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
@@ -237,16 +237,16 @@ Name                                      Type                             Time 
 
             1           2           3           4           5           6           7           8           9          10
  ........................................................................................................................
-   1    10.00       8.889       7.778       6.667       5.556       4.444       3.333       2.222       1.111       0.000    
-   2    10.00       8.889       7.778       6.667       5.556       4.444       3.333       2.222       1.111       0.000    
-   3    10.00       8.889       7.778       6.667       5.556       4.444       3.333       2.222       1.111       0.000    
-   4    10.00       8.889       7.778       6.667       5.556       4.444       3.333       2.222       1.111       0.000    
-   5    10.00       8.889       7.778       6.667       5.556       4.444       3.333       2.222       1.111       0.000    
-   6    10.00       8.889       7.778       6.667       5.556       4.444       3.333       2.222       1.111       0.000    
-   7    10.00       8.889       7.778       6.667       5.556       4.444       3.333       2.222       1.111       0.000    
-   8    10.00       8.889       7.778       6.667       5.556       4.444       3.333       2.222       1.111       0.000    
-   9    10.00       8.889       7.778       6.667       5.556       4.444       3.333       2.222       1.111       0.000    
-  10    10.00       8.889       7.778       6.667       5.555       4.444       3.333       2.222       1.111       0.000    
+   1    10.00       9.741       9.456       8.857       7.132       4.777       3.127       1.287      0.3705       0.000    
+   2    10.00       9.707       9.339       8.961       6.419       3.406       2.466       1.248      0.5128       0.000    
+   3    10.00       9.670       9.320       8.742       5.528       2.413       1.913       1.356      0.6130       0.000    
+   4    10.00       9.631       9.251       8.742       5.089       2.293       1.878       1.577      0.7838       0.000    
+   5    10.00       9.541       9.142       7.280       4.064       2.526       1.912       1.490      0.8426       0.000    
+   6    10.00       9.510       8.812       6.939       4.699       3.088       1.869       1.214      0.5497       0.000    
+   7    10.00       9.262       8.284       7.494       5.336       3.193       2.097       1.137      0.4067       0.000    
+   8    10.00       9.237       8.162       7.495       5.184       2.578       1.915       1.202      0.4969       0.000    
+   9    10.00       8.894       7.844       7.319       5.330       2.651       2.041       1.541      0.9104       0.000    
+  10    10.00       8.868       7.766       7.247       5.837       3.295       2.119       1.706       1.467       0.000    
 
  HEAD WILL BE SAVED ON UNIT 1016 AT END OF TIME STEP    1, STRESS PERIOD    1
 
@@ -259,19 +259,19 @@ Name                                      Type                             Time 
 
            IN:                                      IN:
            ---                                      ---
-                 CHD =       1.1111E-02                   CHD =       1.1111E-02     CHD             
+                 CHD =       1.0498E-02                   CHD =       1.0498E-02     CHD             
 
-            TOTAL IN =       1.1111E-02              TOTAL IN =       1.1111E-02
+            TOTAL IN =       1.0498E-02              TOTAL IN =       1.0498E-02
 
           OUT:                                     OUT:
           ----                                     ----
-                 CHD =       1.1111E-02                   CHD =       1.1111E-02     CHD             
+                 CHD =       1.0498E-02                   CHD =       1.0498E-02     CHD             
 
-           TOTAL OUT =       1.1111E-02             TOTAL OUT =       1.1111E-02
+           TOTAL OUT =       1.0498E-02             TOTAL OUT =       1.0498E-02
 
-            IN - OUT =       5.3543E-08              IN - OUT =       5.3543E-08
+            IN - OUT =      -6.2298E-08              IN - OUT =      -6.2298E-08
 
- PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+ PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
 
 
 

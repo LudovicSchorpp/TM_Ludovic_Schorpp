@@ -7,14 +7,20 @@
 version: 4.3.0
 binary compiled on Dec  9 2019 at 12:11:26
 
-using control file: "mf6_test_1.pst"
+using control file: "mf6_test_1"
 
-in directory: "M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\master_glm"
+in directory: "C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\mf6_pest_1\master_glm"
+
+
+Note 'NOPTMAX' == 0, switching to forgiveness mode when checking inputs
 
 Note: 3 unused lines in pest control file:
   -->  line number 6: '2.000000E+01  -3.000000E+00   3.000000E-01   1.000000E-02        -7       999          lamforgive        noderforgive' 
   -->  line number 10: '0         0         0         0             jcosave          verboserec          jcosaveitn          reisaveitn          parsaveitn        noparsaverun' 
   -->  line number 12: '1' 
+noptmax = 0, resetting max_run_fail = 1
+parameter warning: 13 parameters are at lower bound
+parameter warning: 16 parameters are at upper bound
 
 
 binary compiled on Dec  9 2019 at 12:11:05
@@ -34,7 +40,7 @@ PEST Control Information
     facparmax = 10
     facorig = 0.001
     phiredswh = 0.1
-    noptmax = -1
+    noptmax = 0
     phiredstp = 0.01
     nphistp = 3
     nphinored = 3
@@ -47,9 +53,9 @@ PEST Control Information
 ...general options (used in multiple tools): 
 svd_pack: redsvd
 lambda_scale_fac: 0.75,1,1.1,
-max_run_fail: 3
+max_run_fail: 1
 yamr_poll_interval: 1
-parameter_covariance: 
+parameter_covariance: mf6_test_1.prior.cov
 observation_covariance: 
 hotstart_resfile: 
 overdue_resched_fac: 100
@@ -67,8 +73,8 @@ additional_ins_delimiters:
 ...pestpp-glm specific options:
 max_n_super: 1000000
 super_eigthresh: 1e-06
-n_iter_base: 1000000
-n_iter_super: 0
+n_iter_base: -1
+n_iter_super: 3
 super_relparmax: 0.1
 max_super_frz_iter: 5
 max_reg_iter: 20
@@ -77,8 +83,8 @@ iteration_summary: 1
 der_forgive: 1
 uncertainty: 1
 forecasts: 
-base_jacobian: 
-glm_num_reals: 0
+base_jacobian: mf6_test_1.jcb
+glm_num_reals: 50
 jac_scale: 1
 de_f: 0.8
 de_cr: 0.9
@@ -186,106 +192,106 @@ hk__multiplier        RELATIVE                     0.01                        0
 
 Parameter information
 NAME           TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND          GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
-k_i:0_j:0      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:0_j:1      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:0_j:2      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:0_j:3      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:0_j:4      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:0_j:5      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:0_j:6      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:0_j:7      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:0_j:8      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:0_j:9      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:1_j:0      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:1_j:1      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:1_j:2      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:1_j:3      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:1_j:4      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:1_j:5      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:1_j:6      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:1_j:7      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:1_j:8      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:1_j:9      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:2_j:0      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:2_j:1      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:2_j:2      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:2_j:3      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:2_j:4      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:2_j:5      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:2_j:6      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:2_j:7      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:2_j:8      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:2_j:9      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:3_j:0      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:3_j:1      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:3_j:2      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:3_j:3      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:3_j:4      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:3_j:5      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:3_j:6      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:3_j:7      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:3_j:8      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:3_j:9      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:4_j:0      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:4_j:1      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:4_j:2      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:4_j:3      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:4_j:4      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:4_j:5      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:4_j:6      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:4_j:7      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:4_j:8      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:4_j:9      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:5_j:0      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:5_j:1      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:5_j:2      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:5_j:3      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:5_j:4      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:5_j:5      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:5_j:6      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:5_j:7      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:5_j:8      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:5_j:9      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:6_j:0      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:6_j:1      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:6_j:2      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:6_j:3      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:6_j:4      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:6_j:5      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:6_j:6      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:6_j:7      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:6_j:8      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:6_j:9      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:7_j:0      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:7_j:1      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:7_j:2      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:7_j:3      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:7_j:4      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:7_j:5      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:7_j:6      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:7_j:7      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:7_j:8      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:7_j:9      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:8_j:0      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:8_j:1      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:8_j:2      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:8_j:3      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:8_j:4      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:8_j:5      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:8_j:6      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:8_j:7      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:8_j:8      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:8_j:9      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:9_j:0      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:9_j:1      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:9_j:2      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:9_j:3      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:9_j:4      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:9_j:5      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:9_j:6      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:9_j:7      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:9_j:8      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
-k_i:9_j:9      log                     FACTOR              1            0.1             10 hk__multiplier              1              0                   1
+k_i:0_j:0      log                     FACTOR        4.18787            0.1             10 hk__multiplier              1              0                   1
+k_i:0_j:1      log                     FACTOR        4.97416            0.1             10 hk__multiplier              1              0                   1
+k_i:0_j:2      log                     FACTOR        2.88757            0.1             10 hk__multiplier              1              0                   1
+k_i:0_j:3      log                     FACTOR       0.913048            0.1             10 hk__multiplier              1              0                   1
+k_i:0_j:4      log                     FACTOR       0.426776            0.1             10 hk__multiplier              1              0                   1
+k_i:0_j:5      log                     FACTOR       0.337731            0.1             10 hk__multiplier              1              0                   1
+k_i:0_j:6      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:0_j:7      log                     FACTOR       0.104989            0.1             10 hk__multiplier              1              0                   1
+k_i:0_j:8      log                     FACTOR        2.51141            0.1             10 hk__multiplier              1              0                   1
+k_i:0_j:9      log                     FACTOR         1.7177            0.1             10 hk__multiplier              1              0                   1
+k_i:1_j:0      log                     FACTOR        2.10344            0.1             10 hk__multiplier              1              0                   1
+k_i:1_j:1      log                     FACTOR        3.23092            0.1             10 hk__multiplier              1              0                   1
+k_i:1_j:2      log                     FACTOR        1.34838            0.1             10 hk__multiplier              1              0                   1
+k_i:1_j:3      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:1_j:4      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:1_j:5      log                     FACTOR       0.729872            0.1             10 hk__multiplier              1              0                   1
+k_i:1_j:6      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:1_j:7      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:1_j:8      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:1_j:9      log                     FACTOR       0.595917            0.1             10 hk__multiplier              1              0                   1
+k_i:2_j:0      log                     FACTOR       0.493379            0.1             10 hk__multiplier              1              0                   1
+k_i:2_j:1      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:2_j:2      log                     FACTOR       0.574448            0.1             10 hk__multiplier              1              0                   1
+k_i:2_j:3      log                     FACTOR       0.532997            0.1             10 hk__multiplier              1              0                   1
+k_i:2_j:4      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:2_j:5      log                     FACTOR        1.61374            0.1             10 hk__multiplier              1              0                   1
+k_i:2_j:6      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:2_j:7      log                     FACTOR        1.24304            0.1             10 hk__multiplier              1              0                   1
+k_i:2_j:8      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:2_j:9      log                     FACTOR       0.761171            0.1             10 hk__multiplier              1              0                   1
+k_i:3_j:0      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:3_j:1      log                     FACTOR        1.62276            0.1             10 hk__multiplier              1              0                   1
+k_i:3_j:2      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:3_j:3      log                     FACTOR        1.00811            0.1             10 hk__multiplier              1              0                   1
+k_i:3_j:4      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:3_j:5      log                     FACTOR        1.58703            0.1             10 hk__multiplier              1              0                   1
+k_i:3_j:6      log                     FACTOR        6.29308            0.1             10 hk__multiplier              1              0                   1
+k_i:3_j:7      log                     FACTOR        4.53861            0.1             10 hk__multiplier              1              0                   1
+k_i:3_j:8      log                     FACTOR       0.713145            0.1             10 hk__multiplier              1              0                   1
+k_i:3_j:9      log                     FACTOR        1.81261            0.1             10 hk__multiplier              1              0                   1
+k_i:4_j:0      log                     FACTOR       0.536993            0.1             10 hk__multiplier              1              0                   1
+k_i:4_j:1      log                     FACTOR       0.573319            0.1             10 hk__multiplier              1              0                   1
+k_i:4_j:2      log                     FACTOR        1.05387            0.1             10 hk__multiplier              1              0                   1
+k_i:4_j:3      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:4_j:4      log                     FACTOR       0.805226            0.1             10 hk__multiplier              1              0                   1
+k_i:4_j:5      log                     FACTOR        1.29626            0.1             10 hk__multiplier              1              0                   1
+k_i:4_j:6      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:4_j:7      log                     FACTOR        1.34094            0.1             10 hk__multiplier              1              0                   1
+k_i:4_j:8      log                     FACTOR        1.17754            0.1             10 hk__multiplier              1              0                   1
+k_i:4_j:9      log                     FACTOR       0.150919            0.1             10 hk__multiplier              1              0                   1
+k_i:5_j:0      log                     FACTOR        2.75583            0.1             10 hk__multiplier              1              0                   1
+k_i:5_j:1      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:5_j:2      log                     FACTOR        0.32742            0.1             10 hk__multiplier              1              0                   1
+k_i:5_j:3      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:5_j:4      log                     FACTOR        2.50611            0.1             10 hk__multiplier              1              0                   1
+k_i:5_j:5      log                     FACTOR       0.222328            0.1             10 hk__multiplier              1              0                   1
+k_i:5_j:6      log                     FACTOR        2.01112            0.1             10 hk__multiplier              1              0                   1
+k_i:5_j:7      log                     FACTOR        1.30903            0.1             10 hk__multiplier              1              0                   1
+k_i:5_j:8      log                     FACTOR        4.03634            0.1             10 hk__multiplier              1              0                   1
+k_i:5_j:9      log                     FACTOR        1.21099            0.1             10 hk__multiplier              1              0                   1
+k_i:6_j:0      log                     FACTOR        2.95796            0.1             10 hk__multiplier              1              0                   1
+k_i:6_j:1      log                     FACTOR        5.23409            0.1             10 hk__multiplier              1              0                   1
+k_i:6_j:2      log                     FACTOR        4.04298            0.1             10 hk__multiplier              1              0                   1
+k_i:6_j:3      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:6_j:4      log                     FACTOR        1.14548            0.1             10 hk__multiplier              1              0                   1
+k_i:6_j:5      log                     FACTOR        2.60417            0.1             10 hk__multiplier              1              0                   1
+k_i:6_j:6      log                     FACTOR        1.59874            0.1             10 hk__multiplier              1              0                   1
+k_i:6_j:7      log                     FACTOR        1.11263            0.1             10 hk__multiplier              1              0                   1
+k_i:6_j:8      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:6_j:9      log                     FACTOR        6.43544            0.1             10 hk__multiplier              1              0                   1
+k_i:7_j:0      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:7_j:1      log                     FACTOR       0.888749            0.1             10 hk__multiplier              1              0                   1
+k_i:7_j:2      log                     FACTOR         1.2667            0.1             10 hk__multiplier              1              0                   1
+k_i:7_j:3      log                     FACTOR        2.15355            0.1             10 hk__multiplier              1              0                   1
+k_i:7_j:4      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:7_j:5      log                     FACTOR        1.54874            0.1             10 hk__multiplier              1              0                   1
+k_i:7_j:6      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:7_j:7      log                     FACTOR        3.30338            0.1             10 hk__multiplier              1              0                   1
+k_i:7_j:8      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:7_j:9      log                     FACTOR        3.69329            0.1             10 hk__multiplier              1              0                   1
+k_i:8_j:0      log                     FACTOR       0.251746            0.1             10 hk__multiplier              1              0                   1
+k_i:8_j:1      log                     FACTOR        0.31901            0.1             10 hk__multiplier              1              0                   1
+k_i:8_j:2      log                     FACTOR       0.716736            0.1             10 hk__multiplier              1              0                   1
+k_i:8_j:3      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:8_j:4      log                     FACTOR       0.217625            0.1             10 hk__multiplier              1              0                   1
+k_i:8_j:5      log                     FACTOR        1.08645            0.1             10 hk__multiplier              1              0                   1
+k_i:8_j:6      log                     FACTOR             10            0.1             10 hk__multiplier              1              0                   1
+k_i:8_j:7      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:8_j:8      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:8_j:9      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
+k_i:9_j:0      log                     FACTOR       0.561341            0.1             10 hk__multiplier              1              0                   1
+k_i:9_j:1      log                     FACTOR       0.384204            0.1             10 hk__multiplier              1              0                   1
+k_i:9_j:2      log                     FACTOR       0.628317            0.1             10 hk__multiplier              1              0                   1
+k_i:9_j:3      log                     FACTOR        4.96006            0.1             10 hk__multiplier              1              0                   1
+k_i:9_j:4      log                     FACTOR         0.4045            0.1             10 hk__multiplier              1              0                   1
+k_i:9_j:5      log                     FACTOR       0.321942            0.1             10 hk__multiplier              1              0                   1
+k_i:9_j:6      log                     FACTOR        1.15734            0.1             10 hk__multiplier              1              0                   1
+k_i:9_j:7      log                     FACTOR        0.94163            0.1             10 hk__multiplier              1              0                   1
+k_i:9_j:8      log                     FACTOR        7.52672            0.1             10 hk__multiplier              1              0                   1
+k_i:9_j:9      log                     FACTOR            0.1            0.1             10 hk__multiplier              1              0                   1
 
 
 
@@ -370,22 +376,21 @@ PEST SVD Information
 
 
 PEST++ arguments:
+BASE_JACOBIAN = MF6_TEST_1.JCB
+GLM_NUM_REALS = 50
+N_ITER_BASE = -1
+N_ITER_SUPER = 3
+PARCOV = MF6_TEST_1.PRIOR.COV
 
 
 
    -----    Starting pestpp-glm Iterations    ----    
 
-COMPUTING JACOBIAN:
-
-    Iteration type: base parameter solution
-    Model calls so far : 0
-
-
 -----------------------------------------
      ---   OPTIMIZATION COMPLETE   ---   
   Reason for terminating PEST++ simulation: NOPTMAX criterion met
   Summary of termination criteria:
-  NOPTMAX = -1 ;  NOPT at termination = 0
+  NOPTMAX = 0 ;  NOPT at termination = 0
   NPHINORED = 3 ;  NPHINORED at termination = 0
   NRELPAR = 3; RELPARSTP = 0.01 ;  NRELPAR at termination = 0
   PHIREDSTP = 0.01; NPHISTP = 3
@@ -398,329 +403,178 @@ FINAL OPTIMISATION RESULTS
      Parameter            
         Name         Value
     ------------  ------------
-    k_i:0_j:0                1
-    k_i:0_j:1                1
-    k_i:0_j:2                1
-    k_i:0_j:3                1
-    k_i:0_j:4                1
-    k_i:0_j:5                1
-    k_i:0_j:6                1
-    k_i:0_j:7                1
-    k_i:0_j:8                1
-    k_i:0_j:9                1
-    k_i:1_j:0                1
-    k_i:1_j:1                1
-    k_i:1_j:2                1
-    k_i:1_j:3                1
-    k_i:1_j:4                1
-    k_i:1_j:5                1
-    k_i:1_j:6                1
-    k_i:1_j:7                1
-    k_i:1_j:8                1
-    k_i:1_j:9                1
-    k_i:2_j:0                1
-    k_i:2_j:1                1
-    k_i:2_j:2                1
-    k_i:2_j:3                1
-    k_i:2_j:4                1
-    k_i:2_j:5                1
-    k_i:2_j:6                1
-    k_i:2_j:7                1
-    k_i:2_j:8                1
-    k_i:2_j:9                1
-    k_i:3_j:0                1
-    k_i:3_j:1                1
-    k_i:3_j:2                1
-    k_i:3_j:3                1
-    k_i:3_j:4                1
-    k_i:3_j:5                1
-    k_i:3_j:6                1
-    k_i:3_j:7                1
-    k_i:3_j:8                1
-    k_i:3_j:9                1
-    k_i:4_j:0                1
-    k_i:4_j:1                1
-    k_i:4_j:2                1
-    k_i:4_j:3                1
-    k_i:4_j:4                1
-    k_i:4_j:5                1
-    k_i:4_j:6                1
-    k_i:4_j:7                1
-    k_i:4_j:8                1
-    k_i:4_j:9                1
-    k_i:5_j:0                1
-    k_i:5_j:1                1
-    k_i:5_j:2                1
-    k_i:5_j:3                1
-    k_i:5_j:4                1
-    k_i:5_j:5                1
-    k_i:5_j:6                1
-    k_i:5_j:7                1
-    k_i:5_j:8                1
-    k_i:5_j:9                1
-    k_i:6_j:0                1
-    k_i:6_j:1                1
-    k_i:6_j:2                1
-    k_i:6_j:3                1
-    k_i:6_j:4                1
-    k_i:6_j:5                1
-    k_i:6_j:6                1
-    k_i:6_j:7                1
-    k_i:6_j:8                1
-    k_i:6_j:9                1
-    k_i:7_j:0                1
-    k_i:7_j:1                1
-    k_i:7_j:2                1
-    k_i:7_j:3                1
-    k_i:7_j:4                1
-    k_i:7_j:5                1
-    k_i:7_j:6                1
-    k_i:7_j:7                1
-    k_i:7_j:8                1
-    k_i:7_j:9                1
-    k_i:8_j:0                1
-    k_i:8_j:1                1
-    k_i:8_j:2                1
-    k_i:8_j:3                1
-    k_i:8_j:4                1
-    k_i:8_j:5                1
-    k_i:8_j:6                1
-    k_i:8_j:7                1
-    k_i:8_j:8                1
-    k_i:8_j:9                1
-    k_i:9_j:0                1
-    k_i:9_j:1                1
-    k_i:9_j:2                1
-    k_i:9_j:3                1
-    k_i:9_j:4                1
-    k_i:9_j:5                1
-    k_i:9_j:6                1
-    k_i:9_j:7                1
-    k_i:9_j:8                1
-    k_i:9_j:9                1
+    k_i:0_j:0          4.18787
+    k_i:0_j:1          4.97416
+    k_i:0_j:2          2.88757
+    k_i:0_j:3         0.913048
+    k_i:0_j:4         0.426776
+    k_i:0_j:5         0.337731
+    k_i:0_j:6              0.1
+    k_i:0_j:7         0.104989
+    k_i:0_j:8          2.51141
+    k_i:0_j:9           1.7177
+    k_i:1_j:0          2.10344
+    k_i:1_j:1          3.23092
+    k_i:1_j:2          1.34838
+    k_i:1_j:3               10
+    k_i:1_j:4              0.1
+    k_i:1_j:5         0.729873
+    k_i:1_j:6              0.1
+    k_i:1_j:7              0.1
+    k_i:1_j:8               10
+    k_i:1_j:9         0.595917
+    k_i:2_j:0         0.493379
+    k_i:2_j:1               10
+    k_i:2_j:2         0.574448
+    k_i:2_j:3         0.532997
+    k_i:2_j:4              0.1
+    k_i:2_j:5          1.61374
+    k_i:2_j:6               10
+    k_i:2_j:7          1.24304
+    k_i:2_j:8               10
+    k_i:2_j:9         0.761171
+    k_i:3_j:0               10
+    k_i:3_j:1          1.62276
+    k_i:3_j:2               10
+    k_i:3_j:3          1.00811
+    k_i:3_j:4              0.1
+    k_i:3_j:5          1.58703
+    k_i:3_j:6          6.29308
+    k_i:3_j:7          4.53861
+    k_i:3_j:8         0.713145
+    k_i:3_j:9          1.81261
+    k_i:4_j:0         0.536993
+    k_i:4_j:1         0.573319
+    k_i:4_j:2          1.05387
+    k_i:4_j:3              0.1
+    k_i:4_j:4         0.805226
+    k_i:4_j:5          1.29626
+    k_i:4_j:6               10
+    k_i:4_j:7          1.34094
+    k_i:4_j:8          1.17754
+    k_i:4_j:9         0.150919
+    k_i:5_j:0          2.75583
+    k_i:5_j:1               10
+    k_i:5_j:2          0.32742
+    k_i:5_j:3              0.1
+    k_i:5_j:4          2.50611
+    k_i:5_j:5         0.222328
+    k_i:5_j:6          2.01112
+    k_i:5_j:7          1.30903
+    k_i:5_j:8          4.03634
+    k_i:5_j:9          1.21099
+    k_i:6_j:0          2.95796
+    k_i:6_j:1          5.23409
+    k_i:6_j:2          4.04298
+    k_i:6_j:3               10
+    k_i:6_j:4          1.14548
+    k_i:6_j:5          2.60417
+    k_i:6_j:6          1.59874
+    k_i:6_j:7          1.11263
+    k_i:6_j:8               10
+    k_i:6_j:9          6.43544
+    k_i:7_j:0               10
+    k_i:7_j:1         0.888749
+    k_i:7_j:2           1.2667
+    k_i:7_j:3          2.15355
+    k_i:7_j:4              0.1
+    k_i:7_j:5          1.54874
+    k_i:7_j:6               10
+    k_i:7_j:7          3.30338
+    k_i:7_j:8               10
+    k_i:7_j:9          3.69329
+    k_i:8_j:0         0.251746
+    k_i:8_j:1          0.31901
+    k_i:8_j:2         0.716736
+    k_i:8_j:3               10
+    k_i:8_j:4         0.217625
+    k_i:8_j:5          1.08645
+    k_i:8_j:6               10
+    k_i:8_j:7              0.1
+    k_i:8_j:8              0.1
+    k_i:8_j:9              0.1
+    k_i:9_j:0         0.561341
+    k_i:9_j:1         0.384204
+    k_i:9_j:2         0.628317
+    k_i:9_j:3          4.96006
+    k_i:9_j:4           0.4045
+    k_i:9_j:5         0.321942
+    k_i:9_j:6          1.15734
+    k_i:9_j:7          0.94163
+    k_i:9_j:8          7.52672
+    k_i:9_j:9              0.1
 
 
   Observations with optimal model-simulated equivalents and residuals
                  Name        Group             Measured             Modelled             Residual               Weight
- hds_usecol:0_1_1_time:1.0       obgnme              9.78136              8.88888             0.892478              1.00000
- hds_usecol:0_1_2_time:1.0       obgnme              9.47304              7.77777              1.69527              1.00000
- hds_usecol:0_1_3_time:1.0       obgnme              9.14949              6.66668              2.48281              1.00000
- hds_usecol:0_1_4_time:1.0       obgnme              6.66555              5.55555              1.11000              1.00000
- hds_usecol:0_1_5_time:1.0       obgnme              3.61431              4.44444            -0.830122              1.00000
- hds_usecol:0_1_6_time:1.0       obgnme              2.67596              3.33334            -0.657382              1.00000
- hds_usecol:0_1_7_time:1.0       obgnme              1.14898              2.22224             -1.07326              1.00000
- hds_usecol:0_1_8_time:1.0       obgnme             0.429457              1.11112            -0.681664              1.00000
- hds_usecol:0_2_1_time:1.0       obgnme              9.75927              8.88890             0.870377              1.00000
- hds_usecol:0_2_2_time:1.0       obgnme              9.51030              7.77778              1.73253              1.00000
- hds_usecol:0_2_3_time:1.0       obgnme              8.93525              6.66667              2.26858              1.00000
- hds_usecol:0_2_4_time:1.0       obgnme              5.58343              5.55558            0.0278572              1.00000
- hds_usecol:0_2_5_time:1.0       obgnme              2.28974              4.44448             -2.15473              1.00000
- hds_usecol:0_2_6_time:1.0       obgnme              1.77523              3.33337             -1.55813              1.00000
- hds_usecol:0_2_7_time:1.0       obgnme              1.27737              2.22225            -0.944882              1.00000
- hds_usecol:0_2_8_time:1.0       obgnme             0.557576              1.11112            -0.553545              1.00000
- hds_usecol:0_3_1_time:1.0       obgnme              9.70005              8.88889             0.811162              1.00000
- hds_usecol:0_3_2_time:1.0       obgnme              9.40473              7.77778              1.62695              1.00000
- hds_usecol:0_3_3_time:1.0       obgnme              8.93093              6.66668              2.26425              1.00000
- hds_usecol:0_3_4_time:1.0       obgnme              5.02190              5.55557            -0.533673              1.00000
- hds_usecol:0_3_5_time:1.0       obgnme              2.11050              4.44448             -2.33398              1.00000
- hds_usecol:0_3_6_time:1.0       obgnme              1.71970              3.33337             -1.61367              1.00000
- hds_usecol:0_3_7_time:1.0       obgnme              1.52990              2.22226            -0.692353              1.00000
- hds_usecol:0_3_8_time:1.0       obgnme             0.721242              1.11113            -0.389885              1.00000
- hds_usecol:0_4_1_time:1.0       obgnme              9.67528              8.88889             0.786383              1.00000
- hds_usecol:0_4_2_time:1.0       obgnme              9.31572              7.77779              1.53793              1.00000
- hds_usecol:0_4_3_time:1.0       obgnme              7.33931              6.66669             0.672613              1.00000
- hds_usecol:0_4_4_time:1.0       obgnme              3.82845              5.55558             -1.72713              1.00000
- hds_usecol:0_4_5_time:1.0       obgnme              2.31752              4.44448             -2.12696              1.00000
- hds_usecol:0_4_6_time:1.0       obgnme              1.77504              3.33336             -1.55831              1.00000
- hds_usecol:0_4_7_time:1.0       obgnme              1.41244              2.22224            -0.809798              1.00000
- hds_usecol:0_4_8_time:1.0       obgnme             0.768072              1.11113            -0.343053              1.00000
- hds_usecol:0_5_1_time:1.0       obgnme              9.74426              8.88889             0.855368              1.00000
- hds_usecol:0_5_2_time:1.0       obgnme              9.02938              7.77779              1.25159              1.00000
- hds_usecol:0_5_3_time:1.0       obgnme              7.01099              6.66669             0.344303              1.00000
- hds_usecol:0_5_4_time:1.0       obgnme              4.53587              5.55558             -1.01971              1.00000
- hds_usecol:0_5_5_time:1.0       obgnme              2.97338              4.44447             -1.47109              1.00000
- hds_usecol:0_5_6_time:1.0       obgnme              1.69273              3.33335             -1.64062              1.00000
- hds_usecol:0_5_7_time:1.0       obgnme              1.05468              2.22222             -1.16754              1.00000
- hds_usecol:0_5_8_time:1.0       obgnme             0.379046              1.11111            -0.732061              1.00000
- hds_usecol:0_6_1_time:1.0       obgnme              9.36222              8.88889             0.473326              1.00000
- hds_usecol:0_6_2_time:1.0       obgnme              8.28964              7.77779             0.511856              1.00000
- hds_usecol:0_6_3_time:1.0       obgnme              7.64733              6.66667             0.980657              1.00000
- hds_usecol:0_6_4_time:1.0       obgnme              5.40888              5.55555            -0.146666              1.00000
- hds_usecol:0_6_5_time:1.0       obgnme              3.23593              4.44444             -1.20851              1.00000
- hds_usecol:0_6_6_time:1.0       obgnme              2.05458              3.33333             -1.27875              1.00000
- hds_usecol:0_6_7_time:1.0       obgnme              1.00821              2.22220             -1.21399              1.00000
- hds_usecol:0_6_8_time:1.0       obgnme             0.290038              1.11109            -0.821055              1.00000
- hds_usecol:0_7_1_time:1.0       obgnme              9.30267              8.88889             0.413786              1.00000
- hds_usecol:0_7_2_time:1.0       obgnme              8.18155              7.77778             0.403772              1.00000
- hds_usecol:0_7_3_time:1.0       obgnme              7.57703              6.66666             0.910369              1.00000
- hds_usecol:0_7_4_time:1.0       obgnme              5.22274              5.55553            -0.332791              1.00000
- hds_usecol:0_7_5_time:1.0       obgnme              2.56566              4.44440             -1.87874              1.00000
- hds_usecol:0_7_6_time:1.0       obgnme              1.95535              3.33329             -1.37793              1.00000
- hds_usecol:0_7_7_time:1.0       obgnme              1.14401              2.22218             -1.07817              1.00000
- hds_usecol:0_7_8_time:1.0       obgnme             0.450904              1.11108            -0.660179              1.00000
- hds_usecol:0_8_1_time:1.0       obgnme              8.85479              8.88888           -0.0340915              1.00000
- hds_usecol:0_8_2_time:1.0       obgnme              7.79992              7.77776            0.0221589              1.00000
- hds_usecol:0_8_3_time:1.0       obgnme              7.32051              6.66664             0.653869              1.00000
- hds_usecol:0_8_4_time:1.0       obgnme              5.37927              5.55551            -0.176245              1.00000
- hds_usecol:0_8_5_time:1.0       obgnme              2.68063              4.44438             -1.76375              1.00000
- hds_usecol:0_8_6_time:1.0       obgnme              2.15648              3.33326             -1.17678              1.00000
- hds_usecol:0_8_7_time:1.0       obgnme              1.45416              2.22216            -0.768005              1.00000
- hds_usecol:0_8_8_time:1.0       obgnme             0.601048              1.11108            -0.510031              1.00000
+ hds_usecol:0_1_1_time:1.0       obgnme              9.78136              9.70714            0.0742219              1.00000
+ hds_usecol:0_1_2_time:1.0       obgnme              9.47304              9.33926             0.133776              1.00000
+ hds_usecol:0_1_3_time:1.0       obgnme              9.14949              8.96114             0.188350              1.00000
+ hds_usecol:0_1_4_time:1.0       obgnme              6.66555              6.41877             0.246778              1.00000
+ hds_usecol:0_1_5_time:1.0       obgnme              3.61431              3.40606             0.208256              1.00000
+ hds_usecol:0_1_6_time:1.0       obgnme              2.67596              2.46619             0.209767              1.00000
+ hds_usecol:0_1_7_time:1.0       obgnme              1.14898              1.24822           -0.0992409              1.00000
+ hds_usecol:0_1_8_time:1.0       obgnme             0.429457             0.512792           -0.0833356              1.00000
+ hds_usecol:0_2_1_time:1.0       obgnme              9.75927              9.67037            0.0889055              1.00000
+ hds_usecol:0_2_2_time:1.0       obgnme              9.51030              9.32037             0.189934              1.00000
+ hds_usecol:0_2_3_time:1.0       obgnme              8.93525              8.74223             0.193022              1.00000
+ hds_usecol:0_2_4_time:1.0       obgnme              5.58343              5.52781            0.0556235              1.00000
+ hds_usecol:0_2_5_time:1.0       obgnme              2.28974              2.41328            -0.123533              1.00000
+ hds_usecol:0_2_6_time:1.0       obgnme              1.77523              1.91259            -0.137355              1.00000
+ hds_usecol:0_2_7_time:1.0       obgnme              1.27737              1.35577           -0.0783997              1.00000
+ hds_usecol:0_2_8_time:1.0       obgnme             0.557576             0.613032           -0.0554559              1.00000
+ hds_usecol:0_3_1_time:1.0       obgnme              9.70005              9.63123            0.0688214              1.00000
+ hds_usecol:0_3_2_time:1.0       obgnme              9.40473              9.25060             0.154135              1.00000
+ hds_usecol:0_3_3_time:1.0       obgnme              8.93093              8.74237             0.188560              1.00000
+ hds_usecol:0_3_4_time:1.0       obgnme              5.02190              5.08927           -0.0673711              1.00000
+ hds_usecol:0_3_5_time:1.0       obgnme              2.11050              2.29266            -0.182164              1.00000
+ hds_usecol:0_3_6_time:1.0       obgnme              1.71970              1.87766            -0.157962              1.00000
+ hds_usecol:0_3_7_time:1.0       obgnme              1.52990              1.57661           -0.0467067              1.00000
+ hds_usecol:0_3_8_time:1.0       obgnme             0.721242             0.783764           -0.0625215              1.00000
+ hds_usecol:0_4_1_time:1.0       obgnme              9.67528              9.54131             0.133967              1.00000
+ hds_usecol:0_4_2_time:1.0       obgnme              9.31572              9.14162             0.174107              1.00000
+ hds_usecol:0_4_3_time:1.0       obgnme              7.33931              7.27995            0.0593536              1.00000
+ hds_usecol:0_4_4_time:1.0       obgnme              3.82845              4.06419            -0.235744              1.00000
+ hds_usecol:0_4_5_time:1.0       obgnme              2.31752              2.52586            -0.208334              1.00000
+ hds_usecol:0_4_6_time:1.0       obgnme              1.77504              1.91208            -0.137038              1.00000
+ hds_usecol:0_4_7_time:1.0       obgnme              1.41244              1.48994           -0.0774932              1.00000
+ hds_usecol:0_4_8_time:1.0       obgnme             0.768072             0.842613           -0.0745412              1.00000
+ hds_usecol:0_5_1_time:1.0       obgnme              9.74426              9.51020             0.234059              1.00000
+ hds_usecol:0_5_2_time:1.0       obgnme              9.02938              8.81232             0.217061              1.00000
+ hds_usecol:0_5_3_time:1.0       obgnme              7.01099              6.93941            0.0715828              1.00000
+ hds_usecol:0_5_4_time:1.0       obgnme              4.53587              4.69896            -0.163088              1.00000
+ hds_usecol:0_5_5_time:1.0       obgnme              2.97338              3.08771            -0.114328              1.00000
+ hds_usecol:0_5_6_time:1.0       obgnme              1.69273              1.86897            -0.176241              1.00000
+ hds_usecol:0_5_7_time:1.0       obgnme              1.05468              1.21366            -0.158980              1.00000
+ hds_usecol:0_5_8_time:1.0       obgnme             0.379046             0.549728            -0.170682              1.00000
+ hds_usecol:0_6_1_time:1.0       obgnme              9.36222              9.26170             0.100516              1.00000
+ hds_usecol:0_6_2_time:1.0       obgnme              8.28964              8.28396           0.00568360              1.00000
+ hds_usecol:0_6_3_time:1.0       obgnme              7.64733              7.49440             0.152934              1.00000
+ hds_usecol:0_6_4_time:1.0       obgnme              5.40888              5.33551            0.0733766              1.00000
+ hds_usecol:0_6_5_time:1.0       obgnme              3.23593              3.19306            0.0428642              1.00000
+ hds_usecol:0_6_6_time:1.0       obgnme              2.05458              2.09737           -0.0427944              1.00000
+ hds_usecol:0_6_7_time:1.0       obgnme              1.00821              1.13660            -0.128388              1.00000
+ hds_usecol:0_6_8_time:1.0       obgnme             0.290038             0.406740            -0.116702              1.00000
+ hds_usecol:0_7_1_time:1.0       obgnme              9.30267              9.23689            0.0657854              1.00000
+ hds_usecol:0_7_2_time:1.0       obgnme              8.18155              8.16249            0.0190540              1.00000
+ hds_usecol:0_7_3_time:1.0       obgnme              7.57703              7.49475            0.0822829              1.00000
+ hds_usecol:0_7_4_time:1.0       obgnme              5.22274              5.18377            0.0389681              1.00000
+ hds_usecol:0_7_5_time:1.0       obgnme              2.56566              2.57787           -0.0122139              1.00000
+ hds_usecol:0_7_6_time:1.0       obgnme              1.95535              1.91481            0.0405385              1.00000
+ hds_usecol:0_7_7_time:1.0       obgnme              1.14401              1.20159           -0.0575746              1.00000
+ hds_usecol:0_7_8_time:1.0       obgnme             0.450904             0.496875           -0.0459710              1.00000
+ hds_usecol:0_8_1_time:1.0       obgnme              8.85479              8.89372           -0.0389307              1.00000
+ hds_usecol:0_8_2_time:1.0       obgnme              7.79992              7.84416           -0.0442361              1.00000
+ hds_usecol:0_8_3_time:1.0       obgnme              7.32051              7.31917           0.00134026              1.00000
+ hds_usecol:0_8_4_time:1.0       obgnme              5.37927              5.32953            0.0497435              1.00000
+ hds_usecol:0_8_5_time:1.0       obgnme              2.68063              2.65141            0.0292231              1.00000
+ hds_usecol:0_8_6_time:1.0       obgnme              2.15648              2.04085             0.115625              1.00000
+ hds_usecol:0_8_7_time:1.0       obgnme              1.45416              1.54076           -0.0865983              1.00000
+ hds_usecol:0_8_8_time:1.0       obgnme             0.601048             0.910408            -0.309360              1.00000
 
 Final composite objective function 
-  Final phi                                           Total : 93.5555
-  Contribution to phi from observation group       "obgnme" : 93.5555
+  Final phi                                           Total : 1.11396
+  Contribution to phi from observation group       "obgnme" : 1.11396
 
 
-Number of forward model runs performed during optimiztion: 101
-
-
-
-
------------------------------------------------------------------------
-Note: The following uncertainty estimates were calculated using 
-      Schur's complement for linear-based conditional uncertainty 
-      propogation.  For a derviation from Bayes equation, see 
-      M. N. Fienen, J. E. Doherty, R. J. Hunt, and H. W. Reeves. 
-      2010. 'Using Prediction Uncertainty Analysis to Design 
-      Hydrologic Monitoring Networks : Example Applications 
-      from the Great Lakes Water Availability Pilot Project'. 
-      See PEST++ V3 documentation for implementation details.
------------------------------------------------------------------------
-
-Note: Any observations or prior information equations with a group name
-      starting with 'regul' are dropped from the jacobian and observation
-      covariance matrices before uncertainty calculations.  Please
-      make sure that all expert knowledge is expressed in the prior 
-      parameter bounds or through a covariance matix, which can be 
-      supplied as a ++ option as 'parameter_covariance(<matrix_file_name>),
-      where <matrix_file_name> can be an ASCII PEST-compatible matrix file (.mat) or
-      a PEST-compatible uncertainty file (.unc).
-
-
-Note: The observation covariance matrix has been constructed from 
-      weights listed in the pest control file that have been scaled by 
-      by the final residuals to account for 
-      the level of measurement noise implied by the original weights so
-      the total objective function is equal to the number of  
-      non-zero weighted observations.
-
-Scaled observation weights used to form observation noise covariance matrix written to residual file 'mf6_test_1.fosm_reweight.rei'
-
-Note : posterior parameter covariance matrix written to file 'mf6_test_1.post.cov'
-
-
----------------------------------------
----- parameter uncertainty summary ----
----------------------------------------
-
-
-                name          prior_mean         prior_stdev   prior_lower_bound   prior_upper_bound           post_mean          post_stdev    post_lower_bound    post_upper_bound
-           K_I:0_J:0            0.000000            0.500000            -1.00000             1.00000            0.000000            0.493680           -0.987359            0.987359
-           K_I:0_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.483857           -0.967715            0.967715
-           K_I:0_J:2            0.000000            0.500000            -1.00000             1.00000            0.000000            0.490607           -0.981215            0.981215
-           K_I:0_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.491872           -0.983743            0.983743
-           K_I:0_J:4            0.000000            0.500000            -1.00000             1.00000            0.000000            0.491933           -0.983866            0.983866
-           K_I:0_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.491940           -0.983881            0.983881
-           K_I:0_J:6            0.000000            0.500000            -1.00000             1.00000            0.000000            0.491881           -0.983763            0.983763
-           K_I:0_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.490611           -0.981222            0.981222
-           K_I:0_J:8            0.000000            0.500000            -1.00000             1.00000            0.000000            0.483844           -0.967688            0.967688
-           K_I:0_J:9            0.000000            0.500000            -1.00000             1.00000            0.000000            0.493674           -0.987348            0.987348
-           K_I:1_J:0            0.000000            0.500000            -1.00000             1.00000            0.000000            0.483404           -0.966808            0.966808
-           K_I:1_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.471338           -0.942675            0.942675
-           K_I:1_J:2            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474113           -0.948225            0.948225
-           K_I:1_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473469           -0.946937            0.946937
-           K_I:1_J:4            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473234           -0.946467            0.946467
-           K_I:1_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473237           -0.946473            0.946473
-           K_I:1_J:6            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473490           -0.946979            0.946979
-           K_I:1_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474125           -0.948249            0.948249
-           K_I:1_J:8            0.000000            0.500000            -1.00000             1.00000            0.000000            0.471330           -0.942660            0.942660
-           K_I:1_J:9            0.000000            0.500000            -1.00000             1.00000            0.000000            0.483399           -0.966799            0.966799
-           K_I:2_J:0            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484159           -0.968317            0.968317
-           K_I:2_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473951           -0.947901            0.947901
-           K_I:2_J:2            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475327           -0.950653            0.950653
-           K_I:2_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474357           -0.948715            0.948715
-           K_I:2_J:4            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474091           -0.948181            0.948181
-           K_I:2_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474087           -0.948173            0.948173
-           K_I:2_J:6            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474368           -0.948735            0.948735
-           K_I:2_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475334           -0.950668            0.950668
-           K_I:2_J:8            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473944           -0.947888            0.947888
-           K_I:2_J:9            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484155           -0.968311            0.968311
-           K_I:3_J:0            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484557           -0.969115            0.969115
-           K_I:3_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475090           -0.950180            0.950180
-           K_I:3_J:2            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475899           -0.951797            0.951797
-           K_I:3_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474702           -0.949404            0.949404
-           K_I:3_J:4            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474324           -0.948648            0.948648
-           K_I:3_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474323           -0.948646            0.948646
-           K_I:3_J:6            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474708           -0.949417            0.949417
-           K_I:3_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475903           -0.951805            0.951805
-           K_I:3_J:8            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475089           -0.950177            0.950177
-           K_I:3_J:9            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484556           -0.969111            0.969111
-           K_I:4_J:0            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484610           -0.969220            0.969220
-           K_I:4_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475235           -0.950470            0.950470
-           K_I:4_J:2            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475965           -0.951931            0.951931
-           K_I:4_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474712           -0.949425            0.949425
-           K_I:4_J:4            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474291           -0.948583            0.948583
-           K_I:4_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474296           -0.948592            0.948592
-           K_I:4_J:6            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474718           -0.949436            0.949436
-           K_I:4_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475964           -0.951928            0.951928
-           K_I:4_J:8            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475238           -0.950475            0.950475
-           K_I:4_J:9            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484610           -0.969219            0.969219
-           K_I:5_J:0            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484610           -0.969220            0.969220
-           K_I:5_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475236           -0.950472            0.950472
-           K_I:5_J:2            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475965           -0.951929            0.951929
-           K_I:5_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474707           -0.949414            0.949414
-           K_I:5_J:4            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474291           -0.948581            0.948581
-           K_I:5_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474295           -0.948590            0.948590
-           K_I:5_J:6            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474714           -0.949429            0.949429
-           K_I:5_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475963           -0.951926            0.951926
-           K_I:5_J:8            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475238           -0.950476            0.950476
-           K_I:5_J:9            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484610           -0.969220            0.969220
-           K_I:6_J:0            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484557           -0.969114            0.969114
-           K_I:6_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475092           -0.950185            0.950185
-           K_I:6_J:2            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475896           -0.951792            0.951792
-           K_I:6_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474693           -0.949386            0.949386
-           K_I:6_J:4            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474320           -0.948640            0.948640
-           K_I:6_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474324           -0.948648            0.948648
-           K_I:6_J:6            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474703           -0.949406            0.949406
-           K_I:6_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475900           -0.951801            0.951801
-           K_I:6_J:8            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475089           -0.950178            0.950178
-           K_I:6_J:9            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484555           -0.969111            0.969111
-           K_I:7_J:0            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484158           -0.968316            0.968316
-           K_I:7_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473951           -0.947903            0.947903
-           K_I:7_J:2            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475327           -0.950654            0.950654
-           K_I:7_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474363           -0.948726            0.948726
-           K_I:7_J:4            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474088           -0.948176            0.948176
-           K_I:7_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474091           -0.948182            0.948182
-           K_I:7_J:6            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474373           -0.948746            0.948746
-           K_I:7_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.475338           -0.950676            0.950676
-           K_I:7_J:8            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473944           -0.947888            0.947888
-           K_I:7_J:9            0.000000            0.500000            -1.00000             1.00000            0.000000            0.484155           -0.968309            0.968309
-           K_I:8_J:0            0.000000            0.500000            -1.00000             1.00000            0.000000            0.483403           -0.966805            0.966805
-           K_I:8_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.471338           -0.942676            0.942676
-           K_I:8_J:2            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474122           -0.948244            0.948244
-           K_I:8_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473489           -0.946977            0.946977
-           K_I:8_J:4            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473233           -0.946465            0.946465
-           K_I:8_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473232           -0.946464            0.946464
-           K_I:8_J:6            0.000000            0.500000            -1.00000             1.00000            0.000000            0.473495           -0.946990            0.946990
-           K_I:8_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.474128           -0.948257            0.948257
-           K_I:8_J:8            0.000000            0.500000            -1.00000             1.00000            0.000000            0.471329           -0.942658            0.942658
-           K_I:8_J:9            0.000000            0.500000            -1.00000             1.00000            0.000000            0.483400           -0.966801            0.966801
-           K_I:9_J:0            0.000000            0.500000            -1.00000             1.00000            0.000000            0.493678           -0.987355            0.987355
-           K_I:9_J:1            0.000000            0.500000            -1.00000             1.00000            0.000000            0.483852           -0.967703            0.967703
-           K_I:9_J:2            0.000000            0.500000            -1.00000             1.00000            0.000000            0.490610           -0.981221            0.981221
-           K_I:9_J:3            0.000000            0.500000            -1.00000             1.00000            0.000000            0.491882           -0.983763            0.983763
-           K_I:9_J:4            0.000000            0.500000            -1.00000             1.00000            0.000000            0.491938           -0.983876            0.983876
-           K_I:9_J:5            0.000000            0.500000            -1.00000             1.00000            0.000000            0.491936           -0.983871            0.983871
-           K_I:9_J:6            0.000000            0.500000            -1.00000             1.00000            0.000000            0.491879           -0.983758            0.983758
-           K_I:9_J:7            0.000000            0.500000            -1.00000             1.00000            0.000000            0.490603           -0.981206            0.981206
-           K_I:9_J:8            0.000000            0.500000            -1.00000             1.00000            0.000000            0.483840           -0.967680            0.967680
-           K_I:9_J:9            0.000000            0.500000            -1.00000             1.00000            0.000000            0.493676           -0.987351            0.987351
-
-Note: Upper and lower uncertainty bounds reported above are 
-      calculated as: <prior,post>_mean +/- (2.0 * <prior,post>_stdev). 
-      For log-transformed parameters, the mean, stdev and range are reported 
-      with respect to the log of the parameter value. 
-
-Note : the above parameter uncertainty summary was written to file 'mf6_test_1.par.usum.csv'
-
+Number of forward model runs performed during optimiztion: 1
