@@ -551,4 +551,22 @@ def k_zones(k,z1,layer,kn,ix):
             icol = cellid[1]
             k[layer,irow,icol] = kn 
 
-#
+#19
+def liss_mob(arr,n,null_v = 0):
+    
+    """
+    Apply a moving average (with 2*n numbers) on 2D array.
+    arr : 2D numpy array
+    n : number of elements (in one of the four direction) to take into account for the moving average (n=2 --> average of a specific number will be calculated with the surroundings 5x5 elements)
+    return a 2D array and replace null value by 0
+    """
+    
+    
+    arr[arr==null_v]=None
+    for irow in range(n,arr.shape[0]-n):
+        for icol in range(n,arr.shape[1]-n):
+            if not np.isnan(arr[irow,icol]):
+                bloc = arr[irow-n:irow+n+1,icol-n:icol+n+1]
+                arr[irow,icol] = np.nanmean(bloc)
+    arr = np.nan_to_num(arr)
+    return arr
