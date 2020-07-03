@@ -140,17 +140,17 @@ Integer Variables
  ---------------------------------------------------------------------------------------
  Linear Solver             1        50    -10011.6                     1_GWF-(2,162,116)
  Under-relaxation          1              -10011.6                     1_GWF-(2,162,116)
- Linear Solver             2        50    -153.684                      1_GWF-(5,164,77)
- Under-relaxation          2              -153.684                      1_GWF-(5,164,77)
- Linear Solver             3        50    -31.4520                     1_GWF-(2,116,110)
- Under-relaxation          3              -31.4520                     1_GWF-(2,116,110)
- Linear Solver             4        50    -2.40916                      1_GWF-(2,175,53)
- Under-relaxation          4              -2.40916                      1_GWF-(2,175,53)
- Linear Solver             5        50   -0.148119                     1_GWF-(2,106,122)
- Under-relaxation          5             -0.148119                     1_GWF-(2,106,122)
- Linear Solver             6         6   -2.980862E-03                  1_GWF-(4,166,59)
- Under-relaxation          6             -2.980862E-03                  1_GWF-(4,166,59)
- Linear Solver             7         1   -6.934913E-04                  1_GWF-(3,167,98)
+ Linear Solver             2        50    -153.679                      1_GWF-(5,164,77)
+ Under-relaxation          2              -153.679                      1_GWF-(5,164,77)
+ Linear Solver             3        50    -24.6319                     1_GWF-(2,115,111)
+ Under-relaxation          3              -24.6319                     1_GWF-(2,115,111)
+ Linear Solver             4        50    -2.40156                      1_GWF-(2,175,53)
+ Under-relaxation          4              -2.40156                      1_GWF-(2,175,53)
+ Linear Solver             5        50   -0.105862                     1_GWF-(2,107,121)
+ Under-relaxation          5             -0.105862                     1_GWF-(2,107,121)
+ Linear Solver             6         6   -2.930511E-03                  1_GWF-(4,166,59)
+ Under-relaxation          6             -2.930511E-03                  1_GWF-(4,166,59)
+ Linear Solver             7         1   -6.243325E-04                  1_GWF-(3,167,98)
 
  7 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
  257 TOTAL ITERATIONS
@@ -162,7 +162,7 @@ Integer Variables
  Allocated memory in megabytes:     47.2445    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/07/01 16:09:39
- Elapsed run time:  1.905 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/07/03 13:21:37
+ Elapsed run time:  1.740 Seconds
 
  Normal termination of simulation.
