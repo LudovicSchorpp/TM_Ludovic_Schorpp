@@ -1,0 +1,12 @@
+BEGIN options
+  SAVE_FLOWS
+END options
+
+BEGIN dimensions
+  MAXBOUND  113
+END dimensions
+
+BEGIN period  1
+OPEN/CLOSE    'Tech.txt'  FACTOR  1.0
+END period  1
+
