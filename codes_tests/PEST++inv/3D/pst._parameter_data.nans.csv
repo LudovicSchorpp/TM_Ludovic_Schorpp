@@ -1,0 +1,10 @@
+,parnme,partrans,parchglim,parval1,parlbnd,parubnd,pargp,scale,offset,dercom
+multiplier_const_c_inst:0,c_agly,log,factor,1.0,1e-10,10000000000.0,c_agy__multiplier,1.0,0.0,1
+multiplier_const_c_inst:1,c_Bol,log,factor,1.0,1e-10,10000000000.0,c_agy__multiplier,1.0,0.0,1
+multiplier_const_c_inst:2,c_Cant,log,factor,1.0,1e-10,10000000000.0,c_agy__multiplier,1.0,0.0,1
+multiplier_const_c_inst:3,c_Rea,log,factor,1.0,1e-10,10000000000.0,c_agy__multiplier,1.0,0.0,1
+multiplier_const_c_inst:4,c_Tech,log,factor,1.0,1e-10,10000000000.0,c_agy__multiplier,1.0,0.0,1
+multiplier_const_c_inst:5,c_Tet,log,factor,1.0,1e-10,10000000000.0,c_agy__multiplier,1.0,0.0,1
+aa,aa,log,factor,1.0,0.1,10,asdf,1.0,0.0,1
+aa,,,,,,,,,,
+aa,aa,log,factor,1.0,0.1,10,asdf,1.0,0.0,1
