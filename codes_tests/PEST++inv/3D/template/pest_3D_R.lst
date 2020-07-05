@@ -478,9 +478,9 @@ Name                                      Type                             Time 
 1_167_66                                  Continuous HEAD                  All times    "2 168 67"
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1032
-      FILE NAME: C:\Users\emmal\Documents\Uni\Unine\TM\TM_Ludovic_Schorpp\codes_tests\PEST++inv\3D\template\pest_3D_R.dis.grb
+      FILE NAME: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\3D\template\pest_3D_R.dis.grb
 
- OPENED C:\Users\emmal\Documents\Uni\Unine\TM\TM_Ludovic_Schorpp\codes_tests\PEST++inv\3D\template\pest_3D_R.dis.grb
+ OPENED C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\3D\template\pest_3D_R.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1032   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
@@ -546,7 +546,7 @@ Name                                      Type                             Time 
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
                  DRN =           0.0000                   DRN =           0.0000     ETA             
-                 RIV =       4.0178E-02                   RIV =       4.0178E-02     AGLY            
+                 RIV =       4.0210E-02                   RIV =       4.0210E-02     AGLY            
                  RIV =           0.1249                   RIV =           0.1249     TET             
                  RIV =           0.3533                   RIV =           0.3533     REA             
                  RIV =           0.2537                   RIV =           0.2537     CANT            
@@ -555,16 +555,16 @@ Name                                      Type                             Time 
                  RCH =           3.1380                   RCH =           3.1380     RCH             
                  RCH =       3.7526E-02                   RCH =       3.7526E-02     IRRIG           
                  RCH =           0.0000                   RCH =           0.0000     P_AGRI          
-                 CHD =          13.9935                   CHD =          13.9935     SEA             
+                 CHD =          13.9936                   CHD =          13.9936     SEA             
                  CHD =           1.5864                   CHD =           1.5864     THUIR           
 
-            TOTAL IN =          20.4366              TOTAL IN =          20.4366
+            TOTAL IN =          20.4368              TOTAL IN =          20.4368
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.3716                   WEL =           1.3716     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           1.0052                   DRN =           1.0052     ETA             
+                 DRN =           1.0053                   DRN =           1.0053     ETA             
                  RIV =           0.1296                   RIV =           0.1296     AGLY            
                  RIV =           1.6489                   RIV =           1.6489     TET             
                  RIV =           0.1667                   RIV =           0.1667     REA             
@@ -574,12 +574,12 @@ Name                                      Type                             Time 
                  RCH =           0.0000                   RCH =           0.0000     RCH             
                  RCH =           0.0000                   RCH =           0.0000     IRRIG           
                  RCH =           0.5513                   RCH =           0.5513     P_AGRI          
-                 CHD =          15.2063                   CHD =          15.2063     SEA             
+                 CHD =          15.2064                   CHD =          15.2064     SEA             
                  CHD =       3.0642E-02                   CHD =       3.0642E-02     THUIR           
 
-           TOTAL OUT =          20.4366             TOTAL OUT =          20.4366
+           TOTAL OUT =          20.4367             TOTAL OUT =          20.4367
 
-            IN - OUT =       2.3506E-05              IN - OUT =       2.3506E-05
+            IN - OUT =       2.3706E-05              IN - OUT =       2.3706E-05
 
  PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 
