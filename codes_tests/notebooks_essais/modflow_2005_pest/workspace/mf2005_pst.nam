@@ -6,4 +6,5 @@ LPF               15  mf2005_pst.lpf
 BAS6              13  mf2005_pst.bas
 PCG               27  mf2005_pst.pcg
 OC                14  mf2005_pst.oc
+DATA(BINARY)      53  mf2005_pst.cbc REPLACE
 DATA(BINARY)      51  mf2005_pst.hds REPLACE

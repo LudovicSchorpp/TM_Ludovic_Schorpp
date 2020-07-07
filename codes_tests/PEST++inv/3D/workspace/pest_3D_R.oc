@@ -6,6 +6,7 @@ END options
 BEGIN period  1
   SAVE  HEAD  LAST
   SAVE  BUDGET  LAST
+  PRINT  HEAD  LAST
   PRINT  BUDGET  ALL
 END period  1
 
