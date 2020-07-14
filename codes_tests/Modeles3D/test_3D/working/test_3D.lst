@@ -376,41 +376,41 @@ Precision of REAL variables: 15
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
-                 DRN =       2.1536E-09                   DRN =       2.1536E-09     ETA             
-                 RIV =       3.3578E-02                   RIV =       3.3578E-02     AGLY            
-                 RIV =           0.1081                   RIV =           0.1081     TET             
-                 RIV =           0.1481                   RIV =           0.1481     REA             
-                 RIV =           0.1816                   RIV =           0.1816     CANT            
-                 RIV =           0.1692                   RIV =           0.1692     TECH            
-                 RIV =           0.2648                   RIV =           0.2648     BOL             
+                 DRN =           0.0000                   DRN =           0.0000     ETA             
+                 RIV =       3.4526E-02                   RIV =       3.4526E-02     AGLY            
+                 RIV =           0.1266                   RIV =           0.1266     TET             
+                 RIV =           0.1521                   RIV =           0.1521     REA             
+                 RIV =           0.1820                   RIV =           0.1820     CANT            
+                 RIV =           0.1689                   RIV =           0.1689     TECH            
+                 RIV =           0.3336                   RIV =           0.3336     BOL             
                  RCH =           3.1380                   RCH =           3.1380     RCH             
                  RCH =           0.5230                   RCH =           0.5230     IRRIG           
                  RCH =           0.0000                   RCH =           0.0000     P_AGRI          
-                 CHD =          10.5771                   CHD =          10.5771     SEA             
-                 CHD =           1.4859                   CHD =           1.4859     THUIR           
+                 CHD =          10.5685                   CHD =          10.5685     SEA             
+                 CHD =           0.5863                   CHD =           0.5863     THUIR           
 
-            TOTAL IN =          16.8292              TOTAL IN =          16.8292
+            TOTAL IN =          16.0135              TOTAL IN =          16.0135
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.3716                   WEL =           1.3716     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           1.2253                   DRN =           1.2253     ETA             
-                 RIV =           0.1489                   RIV =           0.1489     AGLY            
-                 RIV =           1.8093                   RIV =           1.8093     TET             
-                 RIV =           0.1563                   RIV =           0.1563     REA             
-                 RIV =           0.1382                   RIV =           0.1382     CANT            
-                 RIV =           0.2612                   RIV =           0.2612     TECH            
-                 RIV =       9.0212E-02                   RIV =       9.0212E-02     BOL             
+                 DRN =           1.2377                   DRN =           1.2377     ETA             
+                 RIV =           0.1487                   RIV =           0.1487     AGLY            
+                 RIV =           1.0573                   RIV =           1.0573     TET             
+                 RIV =           0.1561                   RIV =           0.1561     REA             
+                 RIV =           0.1348                   RIV =           0.1348     CANT            
+                 RIV =           0.2590                   RIV =           0.2590     TECH            
+                 RIV =       9.5001E-04                   RIV =       9.5001E-04     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
                  RCH =           0.0000                   RCH =           0.0000     IRRIG           
                  RCH =           0.5481                   RCH =           0.5481     P_AGRI          
-                 CHD =          11.0459                   CHD =          11.0459     SEA             
-                 CHD =       3.3840E-02                   CHD =       3.3840E-02     THUIR           
+                 CHD =          11.0668                   CHD =          11.0668     SEA             
+                 CHD =       3.2003E-02                   CHD =       3.2003E-02     THUIR           
 
-           TOTAL OUT =          16.8289             TOTAL OUT =          16.8289
+           TOTAL OUT =          16.0131             TOTAL OUT =          16.0131
 
-            IN - OUT =       3.2995E-04              IN - OUT =       3.2995E-04
+            IN - OUT =       3.2955E-04              IN - OUT =       3.2955E-04
 
  PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 
