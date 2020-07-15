@@ -5,7 +5,6 @@ BEGIN packages
   DIS6  3D_cartes.dis  dis
   IC6  3D_cartes.ic  ic
   OC6  3D_cartes.oc  oc
-  OBS6  3D_cartes.obs  head_obs
   NPF6  3D_cartes.npf  npf
   WEL6  3D_cartes.wel  wel
   RCH6  3D_cartes.rch  rch

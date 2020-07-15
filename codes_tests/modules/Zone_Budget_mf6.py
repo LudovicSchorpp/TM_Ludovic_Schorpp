@@ -239,10 +239,10 @@ class Zb():
 
         return arr
     
-    def plot_pack(self,pack):
+    def return_arr(self,pack,kstpkp=None):
         
         """
-        Make a plot of the flux from a package. Plot sum all the values over each layer.
+        return an array of the flux from a package. Plot sum all the values over each layer.
         
         pack : str, the pname of the package
         cmin/cmax : float, min/max value on the scale
@@ -258,10 +258,10 @@ class Zb():
         if type(pack)==int:
             ind = pack
         
-        arr3D = cbc.create3D(cbc.get_data(ind+self.n,kstpkper=None)[0],nlay,nrow,ncol)
+        arr3D = cbc.create3D(cbc.get_data(ind+self.n,kstpkper=kstpkp)[0],nlay,nrow,ncol)
         mask = arr3D.mask
         data = arr3D.data
         data = data.sum(axis=0)
         data[data==0]=None
-        a=plt.imshow(data)
-        return a
+        # a=plt.imshow(data)
+        return data
