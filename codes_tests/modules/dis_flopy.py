@@ -6,9 +6,9 @@ import pandas as pd
 
 def check_thk(top,botm):
     """
-    check if a cell have a thickness <= 0 for each layer
+    check if all the cells in a modflow model (given top and botm array) which have a thickness <= 0 for and this for each layer
     input : top (the top surface) and botm (botom of each layer)
-    output : lst of bool (false mean everything's okay !)
+    output : lst of bool (false mean everything's okay in that specific layer !)
     """
     nlay = botm.shape[0]
     bol_lst=[]
@@ -22,7 +22,7 @@ def check_thk(top,botm):
 def p_active_cells(idomain):
     
     """
-    Automatically transform inactive cells, between 2 active cells, pseudo active.
+    Automatically transform inactive cells, between 2 active cells into a pseudo active cell.
     idomain : 3d array, idomain
     """
     
@@ -54,8 +54,8 @@ def MinThick(idomain,botm,top,min_ep_act=5,min_ep_inact=0.1):
     Change the thickness of certains cells based on a criterion (min_ep_act for active cells and min_ep_inact for inactive cells)
     Can also be used to change cells with negative thickness
     
-    idomain : 3d list (nlay,nrow,ncol)
-    botm : the list containing every surfaces of all the layers
+    idomain : 3d array (nlay,nrow,ncol)
+    botm : np 3D array containing info about botom of layers
     top : the top surface
     min_ep : int, the minimum thickness tolerate
     """
@@ -85,6 +85,12 @@ def multi_lay(botm,idomain,ep=50,nsublay=4,layer=2):
     """
     subdivised a layer into sublayers, return two numpy 3D array, one for the new surfaces and the other for the new idomain
     associated to these new layers
+    
+    botm : np 3D array containing info about botom of layers
+    idomain : np 3D array, idomain
+    ep : thickness of new sublayers
+    nsublay : number of new sublayers
+    layers : int, to indicate which layer needs to be subdivised.
     """
     nlay = botm.shape[0]
     nrow = botm.shape[1]

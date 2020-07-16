@@ -6,7 +6,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-
 #1
 def list2txt(liste,filename,ncol=2,nid=3):
     

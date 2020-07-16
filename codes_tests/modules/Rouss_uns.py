@@ -11,11 +11,8 @@ import shapely
 from shapely.geometry import Polygon, Point, LineString, MultiLineString, MultiPoint, MultiPolygon,shape
 from shapely.strtree import STRtree  
 
-
-sys.path.insert(1, '../test_premier_model/')
 # hand made functions
 from Rouss import *
-
 
 #1bis
 def gridgen2grid(g):
@@ -32,7 +29,6 @@ def gridgen2grid(g):
     
     grid = fp.discretization.VertexGrid(vertices,cell2d,ncpl=ncpl)
     return grid
-
 
 #2
 def gp2lst(gp,featurestype = "polygon"):

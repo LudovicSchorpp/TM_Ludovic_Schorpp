@@ -193,43 +193,8 @@ def import_riv(grid,gp,lst_domain):
     df_riv = pd.DataFrame({"cellids":cellids_Riv,"lengths":lst_len_Riv})       
     return df_riv
 
+    
 #6
-def lin_interp(lengths,Hv,Lv):
-    
-    """
-    function that realize a linear interpolation btw 2 values, given a certain weighting list (lengths typically for a river)
-    """
-    
-    ar_long = np.array(lengths)
-    dh_dl = (Lv-Hv)/lengths.sum()
-    H_riv = np.zeros(ar_long.shape[0],dtype=np.float)    
-    for idx in range(ar_long.shape[0]):
-        if idx == 0:
-            len_cum = 0.5 * ar_long[0]
-        else:
-            len_cum += 0.5 * (ar_long[idx-1]+ar_long[idx])
-        H_riv[idx] = Hv + len_cum * dh_dl
-    return H_riv
-
-#7 
-def linInt_Dfcol(df,weight="lengths",col="head",null=0):
-    
-    """
-    function that linearly interpolates the values in a column between certains given values (not null), a null value is indicated by 0
-    this function needs the lin_interp function, a weighting factor must be provided and a column in the df.
-    df : a dataframe
-    weight : a column of the same size that the interpolated column (default : "head") which is used as a weight
-    col : the interpolated column (null value = 0)
-    """
-    
-    new_heads=np.zeros([df.shape[0]])
-    for i in np.arange(df[df[col]!=null].index.shape[0]-1):
-        idx1 = df[df[col]!=null].index[i]
-        idx2 = df[df[col]!=null].index[i+1]
-        new_heads[idx1:idx2+1] = lin_interp(df[weight][idx1:idx2+1],df[col][idx1],df[col][idx2])
-    df[col]=new_heads
-    
-#7 bis
 def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
     
     """
@@ -296,7 +261,7 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
     return riv_chd
 
 
-#8
+#7
 def get_cellcenters (grid,cellids): 
     """
     This function return the x and y coordinates of a given cellid and a grid (dis only)
@@ -308,7 +273,7 @@ def get_cellcenters (grid,cellids):
         yc.append(grid.ycellcenters[j,k])
     return xc,yc
     
-#9
+#8
 def ra_pack(pack,ibd,iper=0,value=-1):
     
     """
@@ -324,7 +289,7 @@ def ra_pack(pack,ibd,iper=0,value=-1):
     for k, i, j in ra['cellid']:
         ibd[k, i, j] = value 
 
-#10
+#9
 def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_col="y"):
     
     """
@@ -362,7 +327,7 @@ def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_c
     
     return Control_pz
 
-#11
+#10
 def importWells(GDB,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0):
     
     """
@@ -391,7 +356,7 @@ def importWells(GDB,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0):
                 pass
     return stress_data_well
 
-#12
+#11
 def coor_convert(x,y,epsgin,epsgout):
     
     """
@@ -407,7 +372,7 @@ def coor_convert(x,y,epsgin,epsgout):
     xp,yp = transform(inproj,outproj,x,y)
     return xp,yp
 
-#13
+#12
 def chd2riv(riv_chd,cond,rdepth):
     
     """
@@ -422,7 +387,7 @@ def chd2riv(riv_chd,cond,rdepth):
         Riv.append((cellid,stage,cond,stage-rdepth))
     riv_chd[:] = Riv
 
-#14
+#13
 def nn2kij(n,nlay,nrow,ncol):
     
     """
@@ -431,7 +396,7 @@ def nn2kij(n,nlay,nrow,ncol):
     
     return fp.utils.gridintersect.ModflowGridIndices.kij_from_nn0(n,nlay,nrow,ncol)
 
-#15
+#14
 def get_Total_Budget(model_name,model_dir,kstpkper=(0,0)):
 
     """
@@ -485,7 +450,7 @@ def get_Total_Budget(model_name,model_dir,kstpkper=(0,0)):
 
     return Budget
 
-#16
+#15
 def arr2ascii(arr,filename,x0,y0,res,nodata=-9999):
     
     """
@@ -510,7 +475,7 @@ def arr2ascii(arr,filename,x0,y0,res,nodata=-9999):
             for icol in range(ncol):
                 file.write(str(arr[irow,icol])+" ")
 
-#17
+#16
 def rspl_rast(rast_path,grid,band=1):
     
     """
@@ -523,7 +488,7 @@ def rspl_rast(rast_path,grid,band=1):
     arr = rast.resample_to_grid(grid.xcellcenters,grid.ycellcenters,band)
     return arr
 
-#18
+#17
 def k_zones(k,z1,layer,kn,ix): 
     
     """
@@ -531,8 +496,8 @@ def k_zones(k,z1,layer,kn,ix):
     Design for update permeability array but can be used for any other purpose that imply modifying an array in a specific zone
     
     z1: list of tuples, zone (format: [(x1,y1),(x2,y2), ...])
-    layer : list or int, apply changes at which layers ?
-    kn : float, the new value
+    layer : list or int, layers on which to apply changes
+    kn : float, the new value of k
     ix : gridintersect object --> ix = GridIntersect(grid) as grid the modelgrid
     """
     
@@ -551,7 +516,7 @@ def k_zones(k,z1,layer,kn,ix):
             icol = cellid[1]
             k[layer,irow,icol] = kn 
 
-#19
+#18
 def liss_mob(arr,n,null_v = 0):
     
     """

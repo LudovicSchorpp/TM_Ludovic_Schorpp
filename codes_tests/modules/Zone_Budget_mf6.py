@@ -5,10 +5,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 import os
 
-#poo tentative
+
 class Zb():
     
     def __init__(self,zones,m_name,m_dir,cbc,m_n=1):
@@ -188,7 +187,7 @@ class Zb():
         FluxZZ = self._flow_zz(kstpkper=kstpkper)
         
         # total budgets for 1st stress period
-        DF_pack = self._flow_pack(kstpkper=kstpkper) # slow... need to fix it
+        DF_pack = self._flow_pack(kstpkper=kstpkper) # slow
         
         #append the two dataframes
         df_zz = pd.DataFrame(FluxZZ)

@@ -16,6 +16,7 @@ from shapely.strtree import STRtree
 
 #1
 def gp2cellids3D (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0,areas=3):
+    
     """
     this function extract the cellids of the intersection between a geopandas object and a grid 
     grid : modelgrid
@@ -27,7 +28,6 @@ def gp2cellids3D (grid, gp, idomain, idomain_active=True, type = "polygon",layer
     areas : factor that determine if a cell is accounted intersected or not based on the total area intersected in this cell 
     (a value of 3, for example, mean only cells which have 1/3 of their area intersected by the polygon will be taken into account)
     """
-    
     
     ix = GridIntersect(grid)
     if type == "polygon":
@@ -95,8 +95,6 @@ def importWells3D(BD_prlvm,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",ge
     
     return stress_data_well
 
-
-
 #4
 def up_act_cell(idomain):
     
@@ -118,21 +116,19 @@ def up_act_cell(idomain):
                     lst_dom_act.append((ilay,irow,icol))
                     break
     return lst_dom_act
-
-
     
 #6
 def assign_k_zones(zone1,k1,k,g,layer):
     
     """
     Assign a certain k in a certain zone for a given layer
-    zone1 : the zone format [[[(x,y),(x1,y1),(...),...]]]
+    zone1 : the zone format --> points need to be in a subsublist [[[(x,y),(x1,y1),(...),...]]]
     k1 : the permeability of the zone
     layer : int
-    k : the 3d list containing the permeability fo the model
+    k : the 3d array containing the permeability fo the model that will be updated
     g : gridgen object
     """
-    
+   
     res = g.intersect(zone1,"polygon",layer)
     k[res.nodenumber] = k1
     
@@ -148,8 +144,7 @@ def shp2idomain(shp_path,g,idomain,features_type="polygon",layer=0):
     res = g.intersect(shp_path,features_type,layer)
     idomain[res.nodenumber] = 1
     idomain = idomain.reshape(g.nlay,g.nrow,g.ncol)
-    
-    
+        
 #8
 def ImportControlPz3D(piez_path,sheet_name,geol_layer,layer_num,geol_col,grid,nlay,np_col="NP",x_col="x",y_col="y"):
     
