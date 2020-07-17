@@ -1,24 +1,24 @@
-2020-07-17 09:47:45.109919 starting: opening PstFrom.log for logging
-2020-07-17 09:47:45.109919 starting PstFrom process
-2020-07-17 09:47:45.119922 starting: setting up dirs
-2020-07-17 09:47:45.119922 starting: removing existing new_d 'template'
-2020-07-17 09:47:46.399902 finished: removing existing new_d 'template' took: 0:00:01.279980
-2020-07-17 09:47:46.399902 starting: copying original_d 'workspace' to new_d 'template'
-2020-07-17 09:47:50.190087 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:03.790185
-2020-07-17 09:47:50.209838 finished: setting up dirs took: 0:00:05.089916
-2020-07-17 09:47:56.280146 starting: adding observations from tabular output file
-2020-07-17 09:47:56.280146 starting: reading list template\heads_q.csv
-2020-07-17 09:47:56.290036 finished: reading list template\heads_q.csv took: 0:00:00.009890
-2020-07-17 09:47:56.290036 starting: building insfile for tabular output file heads_q.csv
-2020-07-17 09:47:56.459882 finished: building insfile for tabular output file heads_q.csv took: 0:00:00.169846
-2020-07-17 09:47:56.470249 starting: adding observation from instruction file 'template\heads_q.csv.ins'
-2020-07-17 09:47:56.530015 finished: adding observation from instruction file 'template\heads_q.csv.ins' took: 0:00:00.059766
-2020-07-17 09:47:56.530015 finished: adding observations from tabular output file took: 0:00:00.249869
-2020-07-17 09:47:56.550011 starting: adding observations from tabular output file
-2020-07-17 09:47:56.550011 starting: reading list template\heads_pc.csv
-2020-07-17 09:47:56.560092 finished: reading list template\heads_pc.csv took: 0:00:00.010081
-2020-07-17 09:47:56.560092 starting: building insfile for tabular output file heads_pc.csv
-2020-07-17 09:47:56.579898 finished: building insfile for tabular output file heads_pc.csv took: 0:00:00.019806
-2020-07-17 09:47:56.590189 starting: adding observation from instruction file 'template\heads_pc.csv.ins'
-2020-07-17 09:47:56.620048 finished: adding observation from instruction file 'template\heads_pc.csv.ins' took: 0:00:00.029859
-2020-07-17 09:47:56.620048 finished: adding observations from tabular output file took: 0:00:00.070037
+2020-07-17 11:08:42.050720 starting: opening PstFrom.log for logging
+2020-07-17 11:08:42.066336 starting PstFrom process
+2020-07-17 11:08:42.066336 starting: setting up dirs
+2020-07-17 11:08:42.066336 starting: removing existing new_d 'template'
+2020-07-17 11:08:42.128820 finished: removing existing new_d 'template' took: 0:00:00.062484
+2020-07-17 11:08:42.128820 starting: copying original_d 'workspace' to new_d 'template'
+2020-07-17 11:08:42.498326 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:00.369506
+2020-07-17 11:08:42.498326 finished: setting up dirs took: 0:00:00.431990
+2020-07-17 11:08:42.551721 starting: adding observations from tabular output file
+2020-07-17 11:08:42.551721 starting: reading list template\heads_q.csv
+2020-07-17 11:08:42.551721 finished: reading list template\heads_q.csv took: 0:00:00
+2020-07-17 11:08:42.551721 starting: building insfile for tabular output file heads_q.csv
+2020-07-17 11:08:42.582970 finished: building insfile for tabular output file heads_q.csv took: 0:00:00.031249
+2020-07-17 11:08:42.582970 starting: adding observation from instruction file 'template\heads_q.csv.ins'
+2020-07-17 11:08:42.598585 finished: adding observation from instruction file 'template\heads_q.csv.ins' took: 0:00:00.015615
+2020-07-17 11:08:42.598585 finished: adding observations from tabular output file took: 0:00:00.046864
+2020-07-17 11:08:42.614205 starting: adding observations from tabular output file
+2020-07-17 11:08:42.614205 starting: reading list template\heads_pc.csv
+2020-07-17 11:08:42.614205 finished: reading list template\heads_pc.csv took: 0:00:00
+2020-07-17 11:08:42.614205 starting: building insfile for tabular output file heads_pc.csv
+2020-07-17 11:08:42.636337 finished: building insfile for tabular output file heads_pc.csv took: 0:00:00.022132
+2020-07-17 11:08:42.636337 starting: adding observation from instruction file 'template\heads_pc.csv.ins'
+2020-07-17 11:08:42.667588 finished: adding observation from instruction file 'template\heads_pc.csv.ins' took: 0:00:00.031251
+2020-07-17 11:08:42.667588 finished: adding observations from tabular output file took: 0:00:00.053383
