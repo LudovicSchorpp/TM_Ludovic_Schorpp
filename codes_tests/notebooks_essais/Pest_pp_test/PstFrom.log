@@ -1,0 +1,40 @@
+2020-07-20 11:43:24.868344 starting: opening PstFrom.log for logging
+2020-07-20 11:43:24.868344 starting PstFrom process
+2020-07-20 11:43:24.868344 starting: setting up dirs
+2020-07-20 11:43:24.873390 starting: removing existing new_d 'template'
+2020-07-20 11:43:25.303651 finished: removing existing new_d 'template' took: 0:00:00.430261
+2020-07-20 11:43:25.303651 starting: copying original_d 'workspace' to new_d 'template'
+2020-07-20 11:43:25.673722 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:00.370071
+2020-07-20 11:43:25.673722 finished: setting up dirs took: 0:00:00.805378
+2020-07-20 11:43:25.693349 starting: adding observations from tabular output file
+2020-07-20 11:43:25.693349 starting: reading list template\heads.csv
+2020-07-20 11:43:25.703704 finished: reading list template\heads.csv took: 0:00:00.010355
+2020-07-20 11:43:25.713398 starting: building insfile for tabular output file heads.csv
+2020-07-20 11:43:25.733734 finished: building insfile for tabular output file heads.csv took: 0:00:00.020336
+2020-07-20 11:43:25.733734 starting: adding observation from instruction file 'template\heads.csv.ins'
+2020-07-20 11:43:25.763741 finished: adding observation from instruction file 'template\heads.csv.ins' took: 0:00:00.030007
+2020-07-20 11:43:25.763741 finished: adding observations from tabular output file took: 0:00:00.070392
+2020-07-20 11:43:26.203586 starting: adding pilotpoint type multiplier style parameters for file(s) ['k.txt']
+2020-07-20 11:43:26.203586 starting: loading array template\k.txt
+2020-07-20 11:43:26.243707 finished: loading array template\k.txt took: 0:00:00.040121
+2020-07-20 11:43:26.243707 loaded array 'k.txt' of shape (100, 100)
+2020-07-20 11:43:26.293574 starting: writing array-based template file 'kp_inst0_pilotpoint.csv.tpl'
+2020-07-20 11:43:26.293574 starting: setting up pilot point parameters
+2020-07-20 11:43:26.303502 No spatial reference (containing cell spacing) passed.
+2020-07-20 11:43:26.303502 OK - using spatial reference in parent object.
+2020-07-20 11:43:26.563695 64 pilot point parameters created
+2020-07-20 11:43:26.563695 pilot point 'pargp':kp_inst:0
+2020-07-20 11:43:26.563695 finished: setting up pilot point parameters took: 0:00:00.270121
+2020-07-20 11:43:26.583473 starting: calculating factors for pargp=kp_inst:0
+2020-07-20 11:43:26.583473 saving krige variance file:template\kp_inst0pp.var.dat
+2020-07-20 11:43:26.583473 saving krige factors file:template\kp_inst0pp.fac
+2020-07-20 11:44:09.513717 finished: calculating factors for pargp=kp_inst:0 took: 0:00:42.930244
+2020-07-20 11:44:09.513717 starting: writing array-based template file 'kp_inst0pp.dat.tpl'
+2020-07-20 11:44:09.529304 starting: adding parameters for file(s) ['k.txt']
+2020-07-20 11:44:09.745467 forward_run line:pyemu.os_utils.run(r'..\mf6')
+
+2020-07-20 11:44:09.977287 WARNING: sys_cmd 'pyemu.os_utils.run(r'..\mf6')
+' already in sys cmds, skipping...
+2020-07-20 11:44:09.999430 starting: building prior covariance matrix
+2020-07-20 11:44:10.262591 saving prior covariance matrix to file template\pest_test.prior.cov
+2020-07-20 11:44:10.300351 finished: building prior covariance matrix took: 0:00:00.300921

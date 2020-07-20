@@ -1,0 +1,1983 @@
+             pestpp-glm 4.3.0
+
+    by The PEST++ Development Team
+
+
+
+version: 4.3.0
+binary compiled on Dec  9 2019 at 12:11:26
+
+using control file: "pest_test.pst"
+
+in directory: "M:\GitHub\TM_Ludovic_Schorpp\codes_tests\notebooks_essais\Pest_pp_test\master_glm_run"
+
+Note: 3 unused lines in pest control file:
+  -->  line number 6: '2.000000E+01  -3.000000E+00   3.000000E-01   1.000000E-02        -7       999          lamforgive        noderforgive' 
+  -->  line number 10: '0         0         0         0             jcosave          verboserec          jcosaveitn          reisaveitn          parsaveitn        noparsaverun' 
+  -->  line number 12: '1' 
+
+
+binary compiled on Dec  9 2019 at 12:11:05
+
+
+pestmode:- 
+   estimation
+
+Case dimensions:- 
+    Number of parameters = 64
+    Number of adjustable parameters = 64
+    Number of observations = 196
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 6
+    phiredstp = 0.01
+    nphistp = 3
+    nphinored = 3
+    relparstp = 0.01
+    nrelpar = 3
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+max_run_fail: 3
+yamr_poll_interval: 1
+parameter_covariance: pest_test.prior.cov
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 100
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+additional_ins_delimiters: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: -1
+n_iter_super: 4
+super_relparmax: 0.1
+max_super_frz_iter: 5
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 1
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: pest_test.jcb
+glm_num_reals: 20
+jac_scale: 1
+de_f: 0.8
+de_cr: 0.9
+de_pop_size: 40
+de_max_gen: 100
+de_dither_f: 1
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights0
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_include_bnd_pi: 1
+
+...pestpp-ies options:
+ies_parameter_ensemble: 
+ies_observation_ensemble: 
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.1,1,10,
+ies_initial_lambda: -999
+ies_use_approx: 1
+ies_subset_size: 4
+ies_reg_factor: 0
+ies_verbose_level: 0
+ies_use_prior_scaling: 0
+ies_num_reals: 50
+ies_bad_phi: 1e+300
+ies_bad_phi_sigma: 1e+300
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_save_binary: 0
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_weights_ensemble: 
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+
+
+
+Model command line(s):- 
+    python forward_run.py
+
+Model interface files:-
+    template files:
+      kp_inst0pp.dat.tpl
+    model input files:
+      kp_inst0pp.dat
+
+    instruction files:
+      .\heads.csv.ins
+    model output files:
+      .\heads.csv
+
+
+Parameter group information
+NAME            INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+kp_inst:0             RELATIVE                     0.01                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME           TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND          GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+kp_inst:0_i:6_j:6log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:6_j:18log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:6_j:30log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:6_j:42log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:6_j:54log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:6_j:66log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:6_j:78log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:6_j:90log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:18_j:6log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:18_j:18log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:18_j:30log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:18_j:42log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:18_j:54log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:18_j:66log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:18_j:78log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:18_j:90log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:30_j:6log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:30_j:18log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:30_j:30log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:30_j:42log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:30_j:54log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:30_j:66log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:30_j:78log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:30_j:90log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:42_j:6log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:42_j:18log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:42_j:30log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:42_j:42log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:42_j:54log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:42_j:66log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:42_j:78log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:42_j:90log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:54_j:6log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:54_j:18log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:54_j:30log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:54_j:42log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:54_j:54log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:54_j:66log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:54_j:78log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:54_j:90log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:66_j:6log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:66_j:18log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:66_j:30log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:66_j:42log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:66_j:54log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:66_j:66log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:66_j:78log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:66_j:90log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:78_j:6log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:78_j:18log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:78_j:30log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:78_j:42log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:78_j:54log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:78_j:66log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:78_j:78log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:78_j:90log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:90_j:6log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:90_j:18log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:90_j:30log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:90_j:42log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:90_j:54log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:90_j:66log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:90_j:78log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+kp_inst:0_i:90_j:90log                     FACTOR              1            0.1             10      kp_inst:0              1              0                   1
+
+
+
+Observation information
+NAME                                    VALUE               GROUP              WEIGHT
+hds_usecol:0_15_15_time:1.0             7.59144              obgnme                   1
+hds_usecol:0_15_1_time:1.0             9.84315              obgnme                   1
+hds_usecol:0_15_22_time:1.0             6.38631              obgnme                   1
+hds_usecol:0_15_29_time:1.0              5.2061              obgnme                   1
+hds_usecol:0_15_36_time:1.0             4.92902              obgnme                   1
+hds_usecol:0_15_43_time:1.0             4.86748              obgnme                   1
+hds_usecol:0_15_50_time:1.0              4.8384              obgnme                   1
+hds_usecol:0_15_57_time:1.0             4.80993              obgnme                   1
+hds_usecol:0_15_64_time:1.0             4.75184              obgnme                   1
+hds_usecol:0_15_71_time:1.0             4.49249              obgnme                   1
+hds_usecol:0_15_78_time:1.0             3.37543              obgnme                   1
+hds_usecol:0_15_85_time:1.0             2.21764              obgnme                   1
+hds_usecol:0_15_8_time:1.0             8.73352              obgnme                   1
+hds_usecol:0_15_92_time:1.0             1.10419              obgnme                   1
+hds_usecol:0_1_15_time:1.0             7.65266              obgnme                   1
+hds_usecol:0_1_1_time:1.0             9.84399              obgnme                   1
+hds_usecol:0_1_22_time:1.0             6.58849              obgnme                   1
+hds_usecol:0_1_29_time:1.0             5.64559              obgnme                   1
+hds_usecol:0_1_36_time:1.0              5.0289              obgnme                   1
+hds_usecol:0_1_43_time:1.0             4.88021              obgnme                   1
+hds_usecol:0_1_50_time:1.0             4.84125              obgnme                   1
+hds_usecol:0_1_57_time:1.0             4.80414              obgnme                   1
+hds_usecol:0_1_64_time:1.0             4.66906              obgnme                   1
+hds_usecol:0_1_71_time:1.0             4.09933              obgnme                   1
+hds_usecol:0_1_78_time:1.0             3.20829              obgnme                   1
+hds_usecol:0_1_85_time:1.0             2.18113              obgnme                   1
+hds_usecol:0_1_8_time:1.0             8.74786              obgnme                   1
+hds_usecol:0_1_92_time:1.0              1.1021              obgnme                   1
+hds_usecol:0_22_15_time:1.0             7.59915              obgnme                   1
+hds_usecol:0_22_1_time:1.0             9.84414              obgnme                   1
+hds_usecol:0_22_22_time:1.0             6.37447              obgnme                   1
+hds_usecol:0_22_29_time:1.0             5.18627              obgnme                   1
+hds_usecol:0_22_36_time:1.0             4.92798              obgnme                   1
+hds_usecol:0_22_43_time:1.0             4.86722              obgnme                   1
+hds_usecol:0_22_50_time:1.0               4.837              obgnme                   1
+hds_usecol:0_22_57_time:1.0             4.80708              obgnme                   1
+hds_usecol:0_22_64_time:1.0             4.74808              obgnme                   1
+hds_usecol:0_22_71_time:1.0             4.49996              obgnme                   1
+hds_usecol:0_22_78_time:1.0             3.35685              obgnme                   1
+hds_usecol:0_22_85_time:1.0             2.17837              obgnme                   1
+hds_usecol:0_22_8_time:1.0             8.74049              obgnme                   1
+hds_usecol:0_22_92_time:1.0             1.07821              obgnme                   1
+hds_usecol:0_29_15_time:1.0             7.66722              obgnme                   1
+hds_usecol:0_29_1_time:1.0             9.84723              obgnme                   1
+hds_usecol:0_29_22_time:1.0             6.52249              obgnme                   1
+hds_usecol:0_29_29_time:1.0              5.3335              obgnme                   1
+hds_usecol:0_29_36_time:1.0              4.9541              obgnme                   1
+hds_usecol:0_29_43_time:1.0             4.87277              obgnme                   1
+hds_usecol:0_29_50_time:1.0             4.83467              obgnme                   1
+hds_usecol:0_29_57_time:1.0             4.79609              obgnme                   1
+hds_usecol:0_29_64_time:1.0             4.71307              obgnme                   1
+hds_usecol:0_29_71_time:1.0             4.32986              obgnme                   1
+hds_usecol:0_29_78_time:1.0             3.15263              obgnme                   1
+hds_usecol:0_29_85_time:1.0             2.05493              obgnme                   1
+hds_usecol:0_29_8_time:1.0             8.76827              obgnme                   1
+hds_usecol:0_29_92_time:1.0             1.01864              obgnme                   1
+hds_usecol:0_36_15_time:1.0             7.76144              obgnme                   1
+hds_usecol:0_36_1_time:1.0             9.85074              obgnme                   1
+hds_usecol:0_36_22_time:1.0              6.7399              obgnme                   1
+hds_usecol:0_36_29_time:1.0             5.76267              obgnme                   1
+hds_usecol:0_36_36_time:1.0             5.06435              obgnme                   1
+hds_usecol:0_36_43_time:1.0             4.89602              obgnme                   1
+hds_usecol:0_36_50_time:1.0             4.82847              obgnme                   1
+hds_usecol:0_36_57_time:1.0             4.75628              obgnme                   1
+hds_usecol:0_36_64_time:1.0             4.56568              obgnme                   1
+hds_usecol:0_36_71_time:1.0             3.79913              obgnme                   1
+hds_usecol:0_36_78_time:1.0             2.81481              obgnme                   1
+hds_usecol:0_36_85_time:1.0             1.85855              obgnme                   1
+hds_usecol:0_36_8_time:1.0             8.80266              obgnme                   1
+hds_usecol:0_36_92_time:1.0            0.927272              obgnme                   1
+hds_usecol:0_43_15_time:1.0             7.82203              obgnme                   1
+hds_usecol:0_43_1_time:1.0             9.85139              obgnme                   1
+hds_usecol:0_43_22_time:1.0             6.90829              obgnme                   1
+hds_usecol:0_43_29_time:1.0             6.10558              obgnme                   1
+hds_usecol:0_43_36_time:1.0             5.45638              obgnme                   1
+hds_usecol:0_43_43_time:1.0             5.02467              obgnme                   1
+hds_usecol:0_43_50_time:1.0             4.79623              obgnme                   1
+hds_usecol:0_43_57_time:1.0             4.52738              obgnme                   1
+hds_usecol:0_43_64_time:1.0             3.97796              obgnme                   1
+hds_usecol:0_43_71_time:1.0              3.2286              obgnme                   1
+hds_usecol:0_43_78_time:1.0             2.42296              obgnme                   1
+hds_usecol:0_43_85_time:1.0              1.6202              obgnme                   1
+hds_usecol:0_43_8_time:1.0             8.81567              obgnme                   1
+hds_usecol:0_43_92_time:1.0            0.817234              obgnme                   1
+hds_usecol:0_50_15_time:1.0             7.78511              obgnme                   1
+hds_usecol:0_50_1_time:1.0             9.84484              obgnme                   1
+hds_usecol:0_50_22_time:1.0             6.95098              obgnme                   1
+hds_usecol:0_50_29_time:1.0             6.28664              obgnme                   1
+hds_usecol:0_50_36_time:1.0             5.73882              obgnme                   1
+hds_usecol:0_50_43_time:1.0             5.23389              obgnme                   1
+hds_usecol:0_50_50_time:1.0             4.71035              obgnme                   1
+hds_usecol:0_50_57_time:1.0             4.10662              obgnme                   1
+hds_usecol:0_50_64_time:1.0             3.40725              obgnme                   1
+hds_usecol:0_50_71_time:1.0             2.67992              obgnme                   1
+hds_usecol:0_50_78_time:1.0             2.00188              obgnme                   1
+hds_usecol:0_50_85_time:1.0             1.36722              obgnme                   1
+hds_usecol:0_50_8_time:1.0             8.77241              obgnme                   1
+hds_usecol:0_50_92_time:1.0            0.710112              obgnme                   1
+hds_usecol:0_57_15_time:1.0             7.56952              obgnme                   1
+hds_usecol:0_57_1_time:1.0             9.82575              obgnme                   1
+hds_usecol:0_57_22_time:1.0             6.79401              obgnme                   1
+hds_usecol:0_57_29_time:1.0             6.33329              obgnme                   1
+hds_usecol:0_57_36_time:1.0             5.96625              obgnme                   1
+hds_usecol:0_57_43_time:1.0             5.44173              obgnme                   1
+hds_usecol:0_57_50_time:1.0             4.69173              obgnme                   1
+hds_usecol:0_57_57_time:1.0              3.7843              obgnme                   1
+hds_usecol:0_57_64_time:1.0              2.8486              obgnme                   1
+hds_usecol:0_57_71_time:1.0             2.04866              obgnme                   1
+hds_usecol:0_57_78_time:1.0             1.50941              obgnme                   1
+hds_usecol:0_57_85_time:1.0             1.13311              obgnme                   1
+hds_usecol:0_57_8_time:1.0             8.62853              obgnme                   1
+hds_usecol:0_57_92_time:1.0            0.656685              obgnme                   1
+hds_usecol:0_64_15_time:1.0             7.04348              obgnme                   1
+hds_usecol:0_64_1_time:1.0             9.79001              obgnme                   1
+hds_usecol:0_64_22_time:1.0             6.49151              obgnme                   1
+hds_usecol:0_64_29_time:1.0             6.31038              obgnme                   1
+hds_usecol:0_64_36_time:1.0             6.16262              obgnme                   1
+hds_usecol:0_64_43_time:1.0             5.83748              obgnme                   1
+hds_usecol:0_64_50_time:1.0             4.81942              obgnme                   1
+hds_usecol:0_64_57_time:1.0             3.48051              obgnme                   1
+hds_usecol:0_64_64_time:1.0             2.13536              obgnme                   1
+hds_usecol:0_64_71_time:1.0             1.40562              obgnme                   1
+hds_usecol:0_64_78_time:1.0             1.17861              obgnme                   1
+hds_usecol:0_64_85_time:1.0             1.02516              obgnme                   1
+hds_usecol:0_64_8_time:1.0             8.33795              obgnme                   1
+hds_usecol:0_64_92_time:1.0            0.764624              obgnme                   1
+hds_usecol:0_71_15_time:1.0             6.67969              obgnme                   1
+hds_usecol:0_71_1_time:1.0             9.74288              obgnme                   1
+hds_usecol:0_71_22_time:1.0             6.40992              obgnme                   1
+hds_usecol:0_71_29_time:1.0             6.29954              obgnme                   1
+hds_usecol:0_71_36_time:1.0             6.20163              obgnme                   1
+hds_usecol:0_71_43_time:1.0             6.01036              obgnme                   1
+hds_usecol:0_71_50_time:1.0             5.17875              obgnme                   1
+hds_usecol:0_71_57_time:1.0             3.17807              obgnme                   1
+hds_usecol:0_71_64_time:1.0             1.61417              obgnme                   1
+hds_usecol:0_71_71_time:1.0             1.25035              obgnme                   1
+hds_usecol:0_71_78_time:1.0              1.1136              obgnme                   1
+hds_usecol:0_71_85_time:1.0             1.00205              obgnme                   1
+hds_usecol:0_71_8_time:1.0             7.91472              obgnme                   1
+hds_usecol:0_71_92_time:1.0            0.802315              obgnme                   1
+hds_usecol:0_78_15_time:1.0             6.59401              obgnme                   1
+hds_usecol:0_78_1_time:1.0             9.70962              obgnme                   1
+hds_usecol:0_78_22_time:1.0             6.38759              obgnme                   1
+hds_usecol:0_78_29_time:1.0             6.29527              obgnme                   1
+hds_usecol:0_78_36_time:1.0              6.2106              obgnme                   1
+hds_usecol:0_78_43_time:1.0             6.05016              obgnme                   1
+hds_usecol:0_78_50_time:1.0              5.3931              obgnme                   1
+hds_usecol:0_78_57_time:1.0             2.95275              obgnme                   1
+hds_usecol:0_78_64_time:1.0             1.49351              obgnme                   1
+hds_usecol:0_78_71_time:1.0               1.209              obgnme                   1
+hds_usecol:0_78_78_time:1.0             1.09352              obgnme                   1
+hds_usecol:0_78_85_time:1.0            0.992423              obgnme                   1
+hds_usecol:0_78_8_time:1.0             7.58771              obgnme                   1
+hds_usecol:0_78_92_time:1.0            0.802485              obgnme                   1
+hds_usecol:0_85_15_time:1.0             6.60214              obgnme                   1
+hds_usecol:0_85_1_time:1.0             9.71632              obgnme                   1
+hds_usecol:0_85_22_time:1.0             6.38667              obgnme                   1
+hds_usecol:0_85_29_time:1.0              6.2942              obgnme                   1
+hds_usecol:0_85_36_time:1.0             6.20951              obgnme                   1
+hds_usecol:0_85_43_time:1.0             6.04286              obgnme                   1
+hds_usecol:0_85_50_time:1.0             5.33701              obgnme                   1
+hds_usecol:0_85_57_time:1.0             2.99669              obgnme                   1
+hds_usecol:0_85_64_time:1.0              1.4981              obgnme                   1
+hds_usecol:0_85_71_time:1.0             1.20224              obgnme                   1
+hds_usecol:0_85_78_time:1.0             1.08682              obgnme                   1
+hds_usecol:0_85_85_time:1.0            0.987048              obgnme                   1
+hds_usecol:0_85_8_time:1.0             7.66829              obgnme                   1
+hds_usecol:0_85_92_time:1.0            0.798217              obgnme                   1
+hds_usecol:0_8_15_time:1.0              7.6259              obgnme                   1
+hds_usecol:0_8_1_time:1.0             9.84354              obgnme                   1
+hds_usecol:0_8_22_time:1.0             6.50529              obgnme                   1
+hds_usecol:0_8_29_time:1.0             5.42036              obgnme                   1
+hds_usecol:0_8_36_time:1.0             4.95527              obgnme                   1
+hds_usecol:0_8_43_time:1.0             4.87216              obgnme                   1
+hds_usecol:0_8_50_time:1.0             4.83972              obgnme                   1
+hds_usecol:0_8_57_time:1.0             4.80833              obgnme                   1
+hds_usecol:0_8_64_time:1.0             4.73146              obgnme                   1
+hds_usecol:0_8_71_time:1.0             4.30147              obgnme                   1
+hds_usecol:0_8_78_time:1.0             3.27928              obgnme                   1
+hds_usecol:0_8_85_time:1.0             2.20121              obgnme                   1
+hds_usecol:0_8_8_time:1.0             8.74128              obgnme                   1
+hds_usecol:0_8_92_time:1.0             1.10626              obgnme                   1
+hds_usecol:0_92_15_time:1.0             6.71027              obgnme                   1
+hds_usecol:0_92_1_time:1.0             9.74888              obgnme                   1
+hds_usecol:0_92_22_time:1.0             6.40265              obgnme                   1
+hds_usecol:0_92_29_time:1.0             6.29544              obgnme                   1
+hds_usecol:0_92_36_time:1.0             6.20047              obgnme                   1
+hds_usecol:0_92_43_time:1.0             5.98361              obgnme                   1
+hds_usecol:0_92_50_time:1.0             4.97127              obgnme                   1
+hds_usecol:0_92_57_time:1.0              3.1799              obgnme                   1
+hds_usecol:0_92_64_time:1.0             1.63563              obgnme                   1
+hds_usecol:0_92_71_time:1.0             1.22015              obgnme                   1
+hds_usecol:0_92_78_time:1.0              1.0874              obgnme                   1
+hds_usecol:0_92_85_time:1.0            0.983094              obgnme                   1
+hds_usecol:0_92_8_time:1.0             8.01393              obgnme                   1
+hds_usecol:0_92_92_time:1.0            0.784536              obgnme                   1
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 10000000
+    eigthresh = 1e-06
+
+
+PEST++ arguments:
+BASE_JACOBIAN = PEST_TEST.JCB
+GLM_NUM_REALS = 20
+N_ITER_BASE = -1
+N_ITER_SUPER = 4
+PARCOV = PEST_TEST.PRIOR.COV
+
+
+
+   -----    Starting pestpp-glm Iterations    ----    
+
+  reading previously computed jacobian:  pest_test.jcb
+
+
+
+  Starting phi for this iteration                     Total : 176.157
+
+
+  Contribution to phi from observation group       "obgnme" : 176.157
+  Number of terms in the jacobian equal to zero: 0 / 12544 (0%)
+
+  Summary of upgrade runs:
+    Lambda =     0.10; Type:  upgrade_nrm; length = 2.42e+01;   phi = 80.8078 (45.87% of starting phi)
+    Lambda =     1.00; Type:  upgrade_nrm; length = 1.16e+01;   phi = 59.819 (33.96% of starting phi)
+    Lambda =    10.00; Type:  upgrade_nrm; length = 4.09e+00;   phi = 97.5722 (55.39% of starting phi)
+    Lambda =   100.00; Type:  upgrade_nrm; length = 1.49e+00;   phi = 143.415 (81.41% of starting phi)
+    Lambda =  1000.00; Type:  upgrade_nrm; length = 5.14e-01;   phi = 164.653 (93.47% of starting phi)
+
+    Parameters frozen during upgrades:
+      KP_INST:0_I:78_J:54 frozen at 0.1
+      KP_INST:0_I:78_J:6 frozen at 0.1
+
+  Model calls in iteration 1: 5
+  Total model calls at end of iteration 1: 7
+
+
+  Final phi for this iteration                     Total : 59.819
+
+
+  Contribution to phi from observation group       "obgnme" : 59.819
+    Iteration 1 Parameter Upgrades (Control File Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+    kp_inst:0_i:6_j:6       2.21736             1       2.21736      -1.21736
+    kp_inst:0_i:6_j:18       1.51948             1       1.51948     -0.519485
+    kp_inst:0_i:6_j:30       1.29115             1       1.29115     -0.291151
+    kp_inst:0_i:6_j:42       2.16797             1       2.16797      -1.16797
+    kp_inst:0_i:6_j:54       1.86981             1       1.86981     -0.869813
+    kp_inst:0_i:6_j:66      0.970143             1       1.03078     0.0298569
+    kp_inst:0_i:6_j:78       0.76056             1       1.31482       0.23944
+    kp_inst:0_i:6_j:90       1.32978             1       1.32978     -0.329785
+    kp_inst:0_i:18_j:6       1.77384             1       1.77384     -0.773843
+    kp_inst:0_i:18_j:18       1.06556             1       1.06556    -0.0655628
+    kp_inst:0_i:18_j:30       3.48839             1       3.48839      -2.48839
+    kp_inst:0_i:18_j:42       5.95587             1       5.95587      -4.95587
+    kp_inst:0_i:18_j:54       4.14609             1       4.14609      -3.14609
+    kp_inst:0_i:18_j:66       5.83496             1       5.83496      -4.83496
+    kp_inst:0_i:18_j:78       1.14736             1       1.14736     -0.147356
+    kp_inst:0_i:18_j:90       1.06444             1       1.06444     -0.064435
+    kp_inst:0_i:30_j:6        1.2849             1        1.2849     -0.284903
+    kp_inst:0_i:30_j:18      0.943717             1       1.05964     0.0562832
+    kp_inst:0_i:30_j:30       1.54327             1       1.54327      -0.54327
+    kp_inst:0_i:30_j:42       4.46524             1       4.46524      -3.46524
+    kp_inst:0_i:30_j:54       4.45639             1       4.45639      -3.45639
+    kp_inst:0_i:30_j:66       3.25264             1       3.25264      -2.25264
+    kp_inst:0_i:30_j:78      0.833569             1       1.19966      0.166431
+    kp_inst:0_i:30_j:90      0.552472             1       1.81005      0.447528
+    kp_inst:0_i:42_j:6       1.13966             1       1.13966     -0.139659
+    kp_inst:0_i:42_j:18       1.17223             1       1.17223     -0.172232
+    kp_inst:0_i:42_j:30      0.815575             1       1.22613      0.184425
+    kp_inst:0_i:42_j:42        1.1805             1        1.1805       -0.1805
+    kp_inst:0_i:42_j:54       1.29674             1       1.29674     -0.296741
+    kp_inst:0_i:42_j:66       0.84342             1       1.18565       0.15658
+    kp_inst:0_i:42_j:78      0.648776             1       1.54136      0.351224
+    kp_inst:0_i:42_j:90      0.237048             1       4.21856      0.762952
+    kp_inst:0_i:54_j:6      0.309482             1       3.23121      0.690518
+    kp_inst:0_i:54_j:18      0.246104             1       4.06333      0.753896
+    kp_inst:0_i:54_j:30      0.277863             1       3.59889      0.722137
+    kp_inst:0_i:54_j:42       0.17288             1       5.78435       0.82712
+    kp_inst:0_i:54_j:54      0.226133             1       4.42218      0.773867
+    kp_inst:0_i:54_j:66      0.316663             1       3.15793      0.683337
+    kp_inst:0_i:54_j:78      0.340826             1       2.93405      0.659174
+    kp_inst:0_i:54_j:90      0.198341             1       5.04183      0.801659
+    kp_inst:0_i:66_j:6      0.107753             1       9.28049      0.892247
+    kp_inst:0_i:66_j:18      0.544225             1       1.83748      0.455775
+    kp_inst:0_i:66_j:30       1.44043             1       1.44043     -0.440428
+    kp_inst:0_i:66_j:42      0.731713             1       1.36666      0.268287
+    kp_inst:0_i:66_j:54      0.188152             1       5.31484      0.811848
+    kp_inst:0_i:66_j:66      0.496648             1        2.0135      0.503352
+    kp_inst:0_i:66_j:78       2.99481             1       2.99481      -1.99481
+    kp_inst:0_i:66_j:90        2.2716             1        2.2716       -1.2716
+    kp_inst:0_i:78_j:6           0.1             1            10           0.9
+    kp_inst:0_i:78_j:18         1.184             1         1.184     -0.184002
+    kp_inst:0_i:78_j:30      0.709684             1       1.40908      0.290316
+    kp_inst:0_i:78_j:42       1.73786             1       1.73786      -0.73786
+    kp_inst:0_i:78_j:54           0.1             1            10           0.9
+    kp_inst:0_i:78_j:66       1.05777             1       1.05777    -0.0577709
+    kp_inst:0_i:78_j:78       1.29815             1       1.29815     -0.298145
+    kp_inst:0_i:78_j:90       1.55001             1       1.55001     -0.550013
+    kp_inst:0_i:90_j:6      0.336115             1       2.97517      0.663885
+    kp_inst:0_i:90_j:18        2.0888             1        2.0888       -1.0888
+    kp_inst:0_i:90_j:30       2.86048             1       2.86048      -1.86048
+    kp_inst:0_i:90_j:42       3.02668             1       3.02668      -2.02668
+    kp_inst:0_i:90_j:54      0.271537             1       3.68274      0.728463
+    kp_inst:0_i:90_j:66       0.84202             1       1.18762       0.15798
+    kp_inst:0_i:90_j:78       2.29804             1       2.29804      -1.29804
+    kp_inst:0_i:90_j:90       3.99107             1       3.99107      -2.99107
+       Maximum changes in "Control File" parameters:
+         Maximum relative change = -4.95587   [kp_inst:0_i:18_j:42]
+         Maximum factor change = 10   [kp_inst:0_i:78_j:54]
+
+    Iteration 1 Parameter Upgrades (Transformed Numeric Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+           sup_1       9.90094            10       1.01001    0.00990639
+          sup_10       8.87193            10       1.12715      0.112807
+          sup_11       9.99216            10       1.00078   0.000784274
+          sup_12        9.8187            10       1.01846     0.0181297
+          sup_13       10.4196            10       1.04196    -0.0419563
+          sup_14       9.76629            10       1.02393     0.0233711
+          sup_15       9.81283            10       1.01907     0.0187171
+          sup_16       10.7675            10       1.07675    -0.0767495
+          sup_17       9.85459            10       1.01476     0.0145414
+          sup_18       10.1033            10       1.01033    -0.0103301
+          sup_19       10.0074            10       1.00074  -0.000736207
+           sup_2       9.80143            10       1.02026     0.0198566
+          sup_20       9.88953            10       1.01117     0.0110468
+          sup_21       10.6107            10       1.06107    -0.0610721
+          sup_22       10.4839            10       1.04839    -0.0483947
+          sup_23       9.69104            10       1.03188     0.0308965
+          sup_24       9.73466            10       1.02726     0.0265344
+          sup_25       10.3164            10       1.03164    -0.0316373
+          sup_26       10.3081            10       1.03081    -0.0308143
+          sup_27       10.0843            10       1.00843   -0.00843263
+          sup_28       9.70173            10       1.03074     0.0298275
+          sup_29       9.95845            10       1.00417    0.00415517
+           sup_3       10.0072            10       1.00072  -0.000724143
+          sup_30       10.2016            10       1.02016    -0.0201568
+          sup_31       9.65501            10       1.03573     0.0344987
+          sup_32        10.274            10        1.0274    -0.0273996
+          sup_33        9.8515            10       1.01507     0.0148501
+          sup_34       10.0441            10       1.00441   -0.00440752
+          sup_35       10.0761            10       1.00761   -0.00760802
+          sup_36       9.96663            10       1.00335     0.0033375
+          sup_37       10.4303            10       1.04303    -0.0430306
+          sup_38       9.97768            10       1.00224    0.00223195
+          sup_39       10.4022            10       1.04022    -0.0402211
+           sup_4        9.4265            10       1.06084       0.05735
+          sup_40       9.81419            10       1.01893     0.0185807
+          sup_41       9.73086            10       1.02766     0.0269144
+          sup_42       9.86296            10       1.01389     0.0137039
+          sup_43       10.1993            10       1.01993    -0.0199346
+          sup_44       9.92858            10       1.00719    0.00714226
+          sup_45       9.99207            10       1.00079   0.000793223
+          sup_46       10.2559            10       1.02559    -0.0255867
+          sup_47       9.95383            10       1.00464    0.00461711
+          sup_48        9.8325            10       1.01703     0.0167497
+          sup_49       10.0435            10       1.00435   -0.00434917
+           sup_5       10.9821            10       1.09821    -0.0982091
+          sup_50       10.2096            10       1.02096    -0.0209609
+          sup_51        10.125            10        1.0125     -0.012499
+          sup_52       10.2812            10       1.02812    -0.0281185
+          sup_53        9.7375            10       1.02696     0.0262502
+          sup_54       9.99779            10       1.00022    0.00022076
+          sup_55       9.83048            10       1.01724     0.0169516
+          sup_56       9.97254            10       1.00275    0.00274645
+          sup_57       10.2264            10       1.02264    -0.0226436
+          sup_58       11.5681            10       1.15681      -0.15681
+          sup_59       9.47559            10       1.05534     0.0524409
+           sup_6       10.1786            10       1.01786    -0.0178625
+          sup_60        10.807            10        1.0807    -0.0807015
+          sup_61       10.1529            10       1.01529    -0.0152872
+          sup_62       10.0119            10       1.00119   -0.00119367
+          sup_63        10.853            10        1.0853     -0.085302
+          sup_64       11.3222            10       1.13222     -0.132223
+           sup_7       9.88589            10       1.01154     0.0114114
+           sup_8       9.03699            10       1.10656     0.0963008
+           sup_9       9.93441            10        1.0066    0.00655866
+       Maximum changes in "Transformed Numeric" parameters:
+         Maximum relative change = -0.15681   [sup_58]
+         Maximum factor change = 1.15681   [sup_58]
+
+
+OPTIMISATION ITERATION NUMBER: 2
+
+  Iteration type: super parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 7
+
+
+
+  Starting phi for this iteration                     Total : 59.819
+
+
+  Contribution to phi from observation group       "obgnme" : 59.819
+  Number of terms in the jacobian equal to zero: 0 / 12152 (0%)
+
+  Summary of upgrade runs:
+    Lambda =     0.10; Type:  upgrade_nrm; length = 2.63e+01;   phi = 24.7984 (41.46% of starting phi)
+    Lambda =     1.00; Type:  upgrade_nrm; length = 1.85e+01;   phi = 27.7369 (46.37% of starting phi)
+    Lambda =    10.00; Type:  upgrade_nrm; length = 1.07e+01;   phi = 37.2782 (62.32% of starting phi)
+    Lambda =   100.00; Type:  upgrade_nrm; length = 3.79e+00;   phi = 50.3745 (84.21% of starting phi)
+    Lambda =  1000.00; Type:  upgrade_nrm; length = 1.17e+00;   phi = 56.5366 (94.51% of starting phi)
+
+    Parameters previously frozen in SVD transformation:
+      KP_INST:0_I:78_J:54 frozen at 0.1
+      KP_INST:0_I:78_J:6 frozen at 0.1
+
+    Parameters frozen during upgrades:
+      KP_INST:0_I:18_J:42 frozen at 10
+      KP_INST:0_I:18_J:54 frozen at 10
+      KP_INST:0_I:18_J:66 frozen at 10
+      KP_INST:0_I:30_J:42 frozen at 10
+      KP_INST:0_I:30_J:54 frozen at 10
+      KP_INST:0_I:66_J:54 frozen at 0.1
+      KP_INST:0_I:66_J:78 frozen at 10
+      KP_INST:0_I:6_J:42 frozen at 10
+      KP_INST:0_I:6_J:54 frozen at 10
+      KP_INST:0_I:78_J:42 frozen at 10
+      KP_INST:0_I:90_J:30 frozen at 10
+      KP_INST:0_I:90_J:78 frozen at 10
+
+  Model calls in iteration 2: 68
+  Total model calls at end of iteration 2: 75
+
+
+  Final phi for this iteration                     Total : 24.7984
+
+
+  Contribution to phi from observation group       "obgnme" : 24.7984
+    Iteration 2 Parameter Upgrades (Control File Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+    kp_inst:0_i:6_j:6       4.90419       2.21736       2.21172      -1.21172
+    kp_inst:0_i:6_j:18       2.95473       1.51948       1.94456     -0.944561
+    kp_inst:0_i:6_j:30       2.45138       1.29115        1.8986     -0.898604
+    kp_inst:0_i:6_j:42            10       2.16797       4.61261      -3.61261
+    kp_inst:0_i:6_j:54            10       1.86981       5.34813      -4.34813
+    kp_inst:0_i:6_j:66       2.73822      0.970143       2.82249      -1.82249
+    kp_inst:0_i:6_j:78       1.46613       0.76056        1.9277     -0.927695
+    kp_inst:0_i:6_j:90       2.25307       1.32978       1.69431     -0.694311
+    kp_inst:0_i:18_j:6       2.95805       1.77384       1.66759     -0.667592
+    kp_inst:0_i:18_j:18       1.76649       1.06556        1.6578     -0.657796
+    kp_inst:0_i:18_j:30       9.88101       3.48839       2.83254      -1.83254
+    kp_inst:0_i:18_j:42            10       5.95587       1.67901     -0.679015
+    kp_inst:0_i:18_j:54            10       4.14609       2.41191      -1.41191
+    kp_inst:0_i:18_j:66            10       5.83496       1.71381     -0.713809
+    kp_inst:0_i:18_j:78        1.9293       1.14736       1.68152     -0.681517
+    kp_inst:0_i:18_j:90       3.16028       1.06444       2.96897      -1.96897
+    kp_inst:0_i:30_j:6       1.95057        1.2849       1.51807      -0.51807
+    kp_inst:0_i:30_j:18       1.27939      0.943717       1.35569     -0.355691
+    kp_inst:0_i:30_j:30       1.78263       1.54327        1.1551       -0.1551
+    kp_inst:0_i:30_j:42            10       4.46524       2.23952      -1.23952
+    kp_inst:0_i:30_j:54            10       4.45639       2.24397      -1.24397
+    kp_inst:0_i:30_j:66       7.58198       3.25264       2.33102      -1.33102
+    kp_inst:0_i:30_j:78       1.28699      0.833569       1.54395      -0.54395
+    kp_inst:0_i:30_j:90       1.77092      0.552472       3.20545      -2.20545
+    kp_inst:0_i:42_j:6      0.711993       1.13966       1.60066      0.375257
+    kp_inst:0_i:42_j:18      0.959246       1.17223       1.22203      0.181693
+    kp_inst:0_i:42_j:30      0.499365      0.815575       1.63322      0.387714
+    kp_inst:0_i:42_j:42      0.467208        1.1805       2.52671      0.604228
+    kp_inst:0_i:42_j:54      0.783681       1.29674       1.65468      0.395654
+    kp_inst:0_i:42_j:66      0.415567       0.84342       2.02957      0.507284
+    kp_inst:0_i:42_j:78      0.981096      0.648776       1.51223     -0.512226
+    kp_inst:0_i:42_j:90      0.724048      0.237048       3.05444      -2.05444
+    kp_inst:0_i:54_j:6      0.226537      0.309482       1.36614      0.268013
+    kp_inst:0_i:54_j:18      0.225337      0.246104       1.09216     0.0843824
+    kp_inst:0_i:54_j:30      0.189951      0.277863       1.46281      0.316386
+    kp_inst:0_i:54_j:42      0.123787       0.17288       1.39659      0.283972
+    kp_inst:0_i:54_j:54      0.155301      0.226133        1.4561      0.313233
+    kp_inst:0_i:54_j:66       0.39932      0.316663       1.26102     -0.261025
+    kp_inst:0_i:54_j:78      0.321606      0.340826       1.05976      0.056393
+    kp_inst:0_i:54_j:90       0.19613      0.198341       1.01127      0.011146
+    kp_inst:0_i:66_j:6      0.173813      0.107753       1.61307     -0.613066
+    kp_inst:0_i:66_j:18       0.64642      0.544225       1.18778     -0.187781
+    kp_inst:0_i:66_j:30       4.54253       1.44043        3.1536       -2.1536
+    kp_inst:0_i:66_j:42      0.363299      0.731713       2.01408      0.503495
+    kp_inst:0_i:66_j:54           0.1      0.188152       1.88152      0.468516
+    kp_inst:0_i:66_j:66      0.173948      0.496648       2.85515      0.649755
+    kp_inst:0_i:66_j:78            10       2.99481       3.33911      -2.33911
+    kp_inst:0_i:66_j:90       1.58534        2.2716       1.43287      0.302102
+    kp_inst:0_i:78_j:6           0.1           0.1             1             0
+    kp_inst:0_i:78_j:18       6.86825         1.184       5.80088      -4.80088
+    kp_inst:0_i:78_j:30       5.85675      0.709684       8.25261      -7.25261
+    kp_inst:0_i:78_j:42            10       1.73786        5.7542       -4.7542
+    kp_inst:0_i:78_j:54           0.1           0.1             1             0
+    kp_inst:0_i:78_j:66       2.48357       1.05777       2.34793      -1.34793
+    kp_inst:0_i:78_j:78        7.7446       1.29815       5.96589      -4.96589
+    kp_inst:0_i:78_j:90       1.98621       1.55001       1.28141     -0.281412
+    kp_inst:0_i:90_j:6      0.477715      0.336115       1.42128     -0.421282
+    kp_inst:0_i:90_j:18       4.00809        2.0888       1.91885     -0.918849
+    kp_inst:0_i:90_j:30            10       2.86048       3.49592      -2.49592
+    kp_inst:0_i:90_j:42       3.34738       3.02668       1.10596     -0.105958
+    kp_inst:0_i:90_j:54       0.16492      0.271537       1.64647      0.392641
+    kp_inst:0_i:90_j:66       1.37075       0.84202       1.62794     -0.627936
+    kp_inst:0_i:90_j:78            10       2.29804       4.35154      -3.35154
+    kp_inst:0_i:90_j:90       5.72815       3.99107       1.43524     -0.435241
+       Maximum changes in "Control File" parameters:
+         Maximum relative change = -7.25261   [kp_inst:0_i:78_j:30]
+         Maximum factor change = 8.25261   [kp_inst:0_i:78_j:30]
+
+    Iteration 2 Parameter Upgrades (Transformed Numeric Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+           sup_1       10.9093       9.90889       1.10096     -0.100963
+          sup_10       8.26276       9.20807       1.11441      0.102661
+          sup_11        10.042       10.0036       1.00384   -0.00384295
+          sup_12       9.86994       9.95158       1.00827    0.00820413
+          sup_13       9.58498        9.7251       1.01462     0.0144087
+          sup_14       9.75553       9.57586       1.01876    -0.0187626
+          sup_15       10.0262       9.98513       1.00412    -0.0041177
+          sup_16       10.6956       10.6075       1.00831   -0.00830864
+          sup_17       9.56778        9.7242       1.01635     0.0160862
+          sup_18       10.0197       10.0468       1.00271    0.00269912
+          sup_19       10.1026       9.97821       1.01246     -0.012465
+           sup_2       9.74295       9.92261       1.01844     0.0181067
+          sup_20       10.1717       10.0881       1.00829   -0.00828664
+          sup_21       10.2582       10.5029       1.02385     0.0232951
+          sup_22       10.3784       10.3483       1.00291   -0.00290941
+          sup_23       9.64338       9.95591       1.03241     0.0313908
+          sup_24       10.0707       9.56586       1.05277    -0.0527725
+          sup_25       10.1944       10.4168       1.02182     0.0213507
+          sup_26       9.95744       10.2919       1.03359     0.0324995
+          sup_27       10.3596        10.041       1.03173    -0.0317311
+          sup_28       9.73955       9.81658       1.00791      0.007847
+          sup_29       9.81221       9.86814        1.0057    0.00566771
+           sup_3       10.4166       10.0834       1.03305    -0.0330524
+          sup_30       10.5545       10.2827       1.02642    -0.0264246
+          sup_31       9.52824       9.71914       1.02004     0.0196419
+          sup_32       10.5693        10.243       1.03186    -0.0318608
+          sup_33       9.70956       9.74087       1.00322    0.00321401
+          sup_34       10.1579       9.92617       1.02335    -0.0233472
+          sup_35       10.2482        9.8885       1.03638    -0.0363756
+          sup_36       10.4536       10.1467       1.03024    -0.0302394
+          sup_37       10.7428       10.3128        1.0417    -0.0416963
+          sup_38       10.3017       9.61442       1.07148    -0.0714828
+          sup_39       9.76368       9.89473       1.01342     0.0132446
+           sup_4       9.35129       9.37922       1.00299    0.00297735
+          sup_40       9.65485        9.8901       1.02437     0.0237871
+          sup_41       9.64739       9.61503       1.00337    -0.0033658
+          sup_42       10.4307       9.93881       1.04949    -0.0494934
+          sup_43       9.66888       10.1849       1.05337       0.05067
+          sup_44       10.3563       10.0781        1.0276    -0.0275979
+          sup_45       9.79408       9.98235       1.01922     0.0188598
+          sup_46       10.4745          10.2       1.02691    -0.0269052
+          sup_47       10.0557       9.98404       1.00718    -0.0071761
+          sup_48       10.3945       10.2523       1.01387    -0.0138734
+          sup_49         9.949       10.0505        1.0102     0.0100973
+           sup_5       11.5615       10.8189       1.06864    -0.0686389
+          sup_50       9.23516       9.69876        1.0502     0.0477997
+          sup_51       9.80107       9.93481       1.01365     0.0134618
+          sup_52       9.65416       10.3174        1.0687     0.0642873
+          sup_53       10.5054       9.81895       1.06991    -0.0699054
+          sup_54       10.3051        10.263        1.0041    -0.0041016
+          sup_55       9.80744       9.98355       1.01796     0.0176399
+          sup_56       9.58051           9.8       1.02291     0.0223976
+          sup_57       11.9375       11.6012       1.02899    -0.0289881
+          sup_58       11.3839       10.8052       1.05356     -0.053563
+          sup_59       10.9044       10.5664       1.03199    -0.0319857
+           sup_6       9.96619       9.92595       1.00405   -0.00405377
+          sup_60        9.8607        9.9645       1.01053     0.0104167
+          sup_61       10.7419       10.8177       1.00706    0.00700796
+          sup_62       11.9874        11.196       1.07069    -0.0706889
+           sup_7       10.3364       9.95776       1.03802     -0.038024
+           sup_8       8.58156       9.30981       1.08486     0.0782244
+           sup_9       9.71261       10.0388       1.03359      0.032497
+       Maximum changes in "Transformed Numeric" parameters:
+         Maximum relative change = 0.102661   [sup_10]
+         Maximum factor change = 1.11441   [sup_10]
+
+
+OPTIMISATION ITERATION NUMBER: 3
+
+  Iteration type: super parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 75
+
+
+
+  Starting phi for this iteration                     Total : 24.7984
+
+
+  Contribution to phi from observation group       "obgnme" : 24.7984
+  Number of terms in the jacobian equal to zero: 0 / 9800 (0%)
+
+  Summary of upgrade runs:
+    Lambda =     0.10; Type:  upgrade_nrm; length = 1.52e+01;   phi = 14.2519 (57.47% of starting phi)
+    Lambda =     1.00; Type:  upgrade_nrm; length = 1.21e+01;   phi = 10.304 (41.55% of starting phi)
+    Lambda =    10.00; Type:  upgrade_nrm; length = 7.51e+00;   phi = 11.7821 (47.51% of starting phi)
+    Lambda =   100.00; Type:  upgrade_nrm; length = 3.68e+00;   phi = 18.8235 (75.91% of starting phi)
+    Lambda =  1000.00; Type:  upgrade_nrm; length = 1.28e+00;   phi = 22.9404 (92.51% of starting phi)
+
+    Parameters previously frozen in SVD transformation:
+      KP_INST:0_I:18_J:42 frozen at 10
+      KP_INST:0_I:18_J:54 frozen at 10
+      KP_INST:0_I:18_J:66 frozen at 10
+      KP_INST:0_I:30_J:42 frozen at 10
+      KP_INST:0_I:30_J:54 frozen at 10
+      KP_INST:0_I:66_J:54 frozen at 0.1
+      KP_INST:0_I:66_J:78 frozen at 10
+      KP_INST:0_I:6_J:42 frozen at 10
+      KP_INST:0_I:6_J:54 frozen at 10
+      KP_INST:0_I:78_J:42 frozen at 10
+      KP_INST:0_I:78_J:54 frozen at 0.1
+      KP_INST:0_I:78_J:6 frozen at 0.1
+      KP_INST:0_I:90_J:30 frozen at 10
+      KP_INST:0_I:90_J:78 frozen at 10
+
+    Parameters frozen during upgrades:
+      KP_INST:0_I:54_J:78 frozen at 0.1
+      KP_INST:0_I:54_J:90 frozen at 0.1
+      KP_INST:0_I:66_J:6 frozen at 0.1
+      KP_INST:0_I:78_J:78 frozen at 10
+      KP_INST:0_I:90_J:54 frozen at 0.1
+      KP_INST:0_I:90_J:6 frozen at 0.1
+
+  Model calls in iteration 3: 56
+  Total model calls at end of iteration 3: 131
+
+
+  Final phi for this iteration                     Total : 10.304
+
+
+  Contribution to phi from observation group       "obgnme" : 10.304
+    Iteration 3 Parameter Upgrades (Control File Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+    kp_inst:0_i:6_j:6       1.27572       4.90419       3.84424       0.73987
+    kp_inst:0_i:6_j:18       1.01697       2.95473       2.90541      0.655815
+    kp_inst:0_i:6_j:30      0.824111       2.45138       2.97458      0.663818
+    kp_inst:0_i:6_j:42            10            10             1             0
+    kp_inst:0_i:6_j:54            10            10             1             0
+    kp_inst:0_i:6_j:66       1.18331       2.73822       2.31404      0.567855
+    kp_inst:0_i:6_j:78       0.81865       1.46613       1.79091      0.441625
+    kp_inst:0_i:6_j:90       1.15643       2.25307       1.94829      0.486731
+    kp_inst:0_i:18_j:6       1.13325       2.95805       2.61023      0.616892
+    kp_inst:0_i:18_j:18      0.618426       1.76649       2.85642      0.649912
+    kp_inst:0_i:18_j:30       3.72263       9.88101       2.65431      0.623254
+    kp_inst:0_i:18_j:42            10            10             1             0
+    kp_inst:0_i:18_j:54            10            10             1             0
+    kp_inst:0_i:18_j:66            10            10             1             0
+    kp_inst:0_i:18_j:78      0.605986        1.9293       3.18374      0.685904
+    kp_inst:0_i:18_j:90       1.01699       3.16028        3.1075      0.678198
+    kp_inst:0_i:30_j:6      0.778157       1.95057       2.50666      0.601063
+    kp_inst:0_i:30_j:18      0.585013       1.27939       2.18694      0.542741
+    kp_inst:0_i:30_j:30      0.693117       1.78263       2.57191      0.611184
+    kp_inst:0_i:30_j:42            10            10             1             0
+    kp_inst:0_i:30_j:54            10            10             1             0
+    kp_inst:0_i:30_j:66       2.69075       7.58198        2.8178      0.645113
+    kp_inst:0_i:30_j:78      0.586636       1.28699       2.19384      0.544179
+    kp_inst:0_i:30_j:90      0.684916       1.77092        2.5856      0.613243
+    kp_inst:0_i:42_j:6      0.233906      0.711993       3.04393      0.671477
+    kp_inst:0_i:42_j:18      0.305332      0.959246       3.14165      0.681696
+    kp_inst:0_i:42_j:30      0.187191      0.499365       2.66767      0.625141
+    kp_inst:0_i:42_j:42      0.177228      0.467208        2.6362      0.620666
+    kp_inst:0_i:42_j:54      0.243888      0.783681       3.21328      0.688791
+    kp_inst:0_i:42_j:66      0.117628      0.415567       3.53288      0.716945
+    kp_inst:0_i:42_j:78      0.431461      0.981096       2.27389      0.560226
+    kp_inst:0_i:42_j:90       0.36644      0.724048        1.9759      0.493901
+    kp_inst:0_i:54_j:6       0.20575      0.226537       1.10103     0.0917586
+    kp_inst:0_i:54_j:18      0.194425      0.225337       1.15899      0.137179
+    kp_inst:0_i:54_j:30      0.120902      0.189951       1.57111      0.363508
+    kp_inst:0_i:54_j:42      0.142616      0.123787       1.15211     -0.152108
+    kp_inst:0_i:54_j:54      0.159835      0.155301       1.02919    -0.0291947
+    kp_inst:0_i:54_j:66      0.199588       0.39932       2.00073      0.500181
+    kp_inst:0_i:54_j:78           0.1      0.321606       3.21606       0.68906
+    kp_inst:0_i:54_j:90           0.1       0.19613        1.9613      0.490134
+    kp_inst:0_i:66_j:6           0.1      0.173813       1.73813      0.424668
+    kp_inst:0_i:66_j:18      0.272536       0.64642       2.37187      0.578391
+    kp_inst:0_i:66_j:30        7.2999       4.54253       1.60701     -0.607011
+    kp_inst:0_i:66_j:42      0.324065      0.363299       1.12107      0.107993
+    kp_inst:0_i:66_j:54           0.1           0.1             1             0
+    kp_inst:0_i:66_j:66      0.152685      0.173948       1.13927      0.122241
+    kp_inst:0_i:66_j:78            10            10             1             0
+    kp_inst:0_i:66_j:90      0.483201       1.58534       3.28092      0.695207
+    kp_inst:0_i:78_j:6           0.1           0.1             1             0
+    kp_inst:0_i:78_j:18       7.57934       6.86825       1.10353     -0.103532
+    kp_inst:0_i:78_j:30       5.70614       5.85675       1.02639      0.025715
+    kp_inst:0_i:78_j:42            10            10             1             0
+    kp_inst:0_i:78_j:54           0.1           0.1             1             0
+    kp_inst:0_i:78_j:66       2.74183       2.48357       1.10399     -0.103987
+    kp_inst:0_i:78_j:78            10        7.7446       1.29122     -0.291223
+    kp_inst:0_i:78_j:90       2.89063       1.98621       1.45535     -0.455352
+    kp_inst:0_i:90_j:6           0.1      0.477715       4.77715       0.79067
+    kp_inst:0_i:90_j:18      0.815648       4.00809         4.914        0.7965
+    kp_inst:0_i:90_j:30            10            10             1             0
+    kp_inst:0_i:90_j:42       1.12146       3.34738       2.98485      0.664975
+    kp_inst:0_i:90_j:54           0.1       0.16492        1.6492      0.393647
+    kp_inst:0_i:90_j:66      0.473102       1.37075       2.89738       0.65486
+    kp_inst:0_i:90_j:78            10            10             1             0
+    kp_inst:0_i:90_j:90       2.31469       5.72815        2.4747       0.59591
+       Maximum changes in "Control File" parameters:
+         Maximum relative change = 0.7965   [kp_inst:0_i:90_j:18]
+         Maximum factor change = 4.914   [kp_inst:0_i:90_j:18]
+
+    Iteration 3 Parameter Upgrades (Transformed Numeric Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+           sup_1       9.62065       10.4424       1.08542     0.0786942
+          sup_10        11.415       11.3777       1.00328   -0.00327538
+          sup_11       10.0404        10.751       1.07077     0.0660904
+          sup_12       8.91444        9.0191       1.01174     0.0116043
+          sup_13       9.61051       10.1038       1.05133     0.0488251
+          sup_14       9.95335       10.1549       1.02025     0.0198515
+          sup_15       10.4676       10.6065       1.01327      0.013092
+          sup_16       9.37496       9.89675       1.05566      0.052723
+          sup_17       10.3943       10.3493       1.00435   -0.00434765
+          sup_18       9.91732       9.76027       1.01609    -0.0160913
+          sup_19       10.4277       10.1219       1.03021    -0.0302105
+           sup_2       9.80001       9.93546       1.01382     0.0136327
+          sup_20       10.0572       10.5038        1.0444     0.0425122
+          sup_21       10.0765       10.3757       1.02969     0.0288367
+          sup_22       9.99808       10.1003       1.01022     0.0101198
+          sup_23       10.0773       9.96913       1.01085    -0.0108504
+          sup_24       10.1447       10.3728       1.02248     0.0219857
+          sup_25       10.4073       9.79813       1.06217    -0.0621687
+          sup_26       10.1343       9.74434       1.04002    -0.0400217
+          sup_27       10.2276       10.3242       1.00944    0.00935007
+          sup_28       9.34437        9.1161       1.02504    -0.0250409
+          sup_29        10.138       9.79329        1.0352    -0.0352027
+           sup_3       10.0263         9.738        1.0296    -0.0296018
+          sup_30       8.95573       9.44803       1.05497     0.0521069
+          sup_31       10.0595       9.82761        1.0236    -0.0235991
+          sup_32       9.58801       9.94085        1.0368     0.0354939
+          sup_33       10.0822       10.3831       1.02985     0.0289866
+          sup_34       10.4609       10.2588        1.0197    -0.0197004
+          sup_35       9.88135       10.3313       1.04553     0.0435503
+          sup_36       9.64657       9.85112        1.0212     0.0207646
+          sup_37       10.4779       9.97044        1.0509    -0.0508954
+          sup_38       10.0908       10.0138       1.00769   -0.00768624
+          sup_39       9.75043       9.56498       1.01939    -0.0193887
+           sup_4       10.0752       10.5366       1.04579     0.0437879
+          sup_40       9.97558       9.93674       1.00391   -0.00390875
+          sup_41       9.76951       10.2446       1.04863     0.0463741
+          sup_42       10.7159        10.441       1.02633    -0.0263342
+          sup_43       11.0064        10.951       1.00505   -0.00505363
+          sup_44       11.0955       11.3393       1.02197     0.0215022
+          sup_45       10.8132       10.4617       1.03361    -0.0336062
+          sup_46       10.3012       9.71614       1.06022    -0.0602189
+          sup_47       10.6528       10.0124       1.06396     -0.063962
+          sup_48       9.25728       9.68855       1.04659     0.0445126
+          sup_49       12.2709        11.506       1.06647    -0.0664728
+           sup_5       9.39822       9.58567       1.01995     0.0195551
+          sup_50       9.60595       9.04669       1.06182    -0.0618193
+           sup_6       9.94201       9.72447       1.02237    -0.0223713
+           sup_7       9.61831       10.1556       1.05586     0.0529009
+           sup_8        9.4581       9.54164       1.00883    0.00875597
+           sup_9       10.3332       9.87138       1.04679    -0.0467876
+       Maximum changes in "Transformed Numeric" parameters:
+         Maximum relative change = 0.0786942   [sup_1]
+         Maximum factor change = 1.08542   [sup_1]
+
+
+OPTIMISATION ITERATION NUMBER: 4
+
+  Iteration type: super parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 131
+
+
+
+  Starting phi for this iteration                     Total : 10.304
+
+
+  Contribution to phi from observation group       "obgnme" : 10.304
+  Number of terms in the jacobian equal to zero: 0 / 8624 (0%)
+
+  Summary of upgrade runs:
+    Lambda =     0.10; Type:  upgrade_nrm; length = 1.03e+01;   phi = 3.18709 (30.93% of starting phi)
+    Lambda =     1.00; Type:  upgrade_nrm; length = 7.33e+00;   phi = 4.41 (42.80% of starting phi)
+    Lambda =    10.00; Type:  upgrade_nrm; length = 5.26e+00;   phi = 6.53975 (63.47% of starting phi)
+    Lambda =   100.00; Type:  upgrade_nrm; length = 2.47e+00;   phi = 8.76207 (85.04% of starting phi)
+    Lambda =  1000.00; Type:  upgrade_nrm; length = 7.79e-01;   phi = 9.76476 (94.77% of starting phi)
+
+    Parameters previously frozen in SVD transformation:
+      KP_INST:0_I:18_J:42 frozen at 10
+      KP_INST:0_I:18_J:54 frozen at 10
+      KP_INST:0_I:18_J:66 frozen at 10
+      KP_INST:0_I:30_J:42 frozen at 10
+      KP_INST:0_I:30_J:54 frozen at 10
+      KP_INST:0_I:54_J:78 frozen at 0.1
+      KP_INST:0_I:54_J:90 frozen at 0.1
+      KP_INST:0_I:66_J:54 frozen at 0.1
+      KP_INST:0_I:66_J:6 frozen at 0.1
+      KP_INST:0_I:66_J:78 frozen at 10
+      KP_INST:0_I:6_J:42 frozen at 10
+      KP_INST:0_I:6_J:54 frozen at 10
+      KP_INST:0_I:78_J:42 frozen at 10
+      KP_INST:0_I:78_J:54 frozen at 0.1
+      KP_INST:0_I:78_J:6 frozen at 0.1
+      KP_INST:0_I:78_J:78 frozen at 10
+      KP_INST:0_I:90_J:30 frozen at 10
+      KP_INST:0_I:90_J:54 frozen at 0.1
+      KP_INST:0_I:90_J:6 frozen at 0.1
+      KP_INST:0_I:90_J:78 frozen at 10
+
+    Parameters frozen during upgrades:
+      KP_INST:0_I:42_J:90 frozen at 0.1
+      KP_INST:0_I:54_J:42 frozen at 0.1
+      KP_INST:0_I:78_J:30 frozen at 10
+      KP_INST:0_I:78_J:90 frozen at 10
+
+  Model calls in iteration 4: 50
+  Total model calls at end of iteration 4: 181
+
+
+  Final phi for this iteration                     Total : 3.18709
+
+
+  Contribution to phi from observation group       "obgnme" : 3.18709
+    Iteration 4 Parameter Upgrades (Control File Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+    kp_inst:0_i:6_j:6      0.497143       1.27572       2.56611      0.610305
+    kp_inst:0_i:6_j:18      0.508685       1.01697       1.99922      0.499805
+    kp_inst:0_i:6_j:30       0.38527      0.824111       2.13905      0.532503
+    kp_inst:0_i:6_j:42            10            10             1             0
+    kp_inst:0_i:6_j:54            10            10             1             0
+    kp_inst:0_i:6_j:66      0.258814       1.18331       4.57205       0.78128
+    kp_inst:0_i:6_j:78      0.258023       0.81865       3.17278      0.684819
+    kp_inst:0_i:6_j:90      0.215134       1.15643        5.3754      0.813967
+    kp_inst:0_i:18_j:6      0.148821       1.13325       7.61484      0.868677
+    kp_inst:0_i:18_j:18      0.123188      0.618426       5.02018      0.800804
+    kp_inst:0_i:18_j:30       0.60707       3.72263       6.13213      0.836925
+    kp_inst:0_i:18_j:42            10            10             1             0
+    kp_inst:0_i:18_j:54            10            10             1             0
+    kp_inst:0_i:18_j:66            10            10             1             0
+    kp_inst:0_i:18_j:78      0.267939      0.605986       2.26165      0.557845
+    kp_inst:0_i:18_j:90      0.423165       1.01699       2.40328      0.583903
+    kp_inst:0_i:30_j:6      0.252548      0.778157       3.08122      0.675453
+    kp_inst:0_i:30_j:18      0.212325      0.585013       2.75527      0.637059
+    kp_inst:0_i:30_j:30      0.237014      0.693117       2.92437      0.658046
+    kp_inst:0_i:30_j:42            10            10             1             0
+    kp_inst:0_i:30_j:54            10            10             1             0
+    kp_inst:0_i:30_j:66      0.480958       2.69075       5.59455      0.821255
+    kp_inst:0_i:30_j:78      0.135333      0.586636       4.33476      0.769307
+    kp_inst:0_i:30_j:90      0.164316      0.684916       4.16828      0.760093
+    kp_inst:0_i:42_j:6      0.173505      0.233906       1.34812      0.258227
+    kp_inst:0_i:42_j:18      0.261078      0.305332        1.1695      0.144935
+    kp_inst:0_i:42_j:30      0.185088      0.187191       1.01137     0.0112381
+    kp_inst:0_i:42_j:42      0.383648      0.177228       2.16471      -1.16471
+    kp_inst:0_i:42_j:54      0.293269      0.243888       1.20247      -0.20247
+    kp_inst:0_i:42_j:66      0.105345      0.117628        1.1166      0.104422
+    kp_inst:0_i:42_j:78      0.248727      0.431461       1.73468      0.423524
+    kp_inst:0_i:42_j:90           0.1       0.36644        3.6644      0.727104
+    kp_inst:0_i:54_j:6      0.551203       0.20575       2.67899      -1.67899
+    kp_inst:0_i:54_j:18      0.245873      0.194425       1.26461     -0.264613
+    kp_inst:0_i:54_j:30      0.189263      0.120902       1.56542     -0.565418
+    kp_inst:0_i:54_j:42           0.1      0.142616       1.42616      0.298817
+    kp_inst:0_i:54_j:54       0.10428      0.159835       1.53275      0.347577
+    kp_inst:0_i:54_j:66      0.164356      0.199588       1.21436      0.176524
+    kp_inst:0_i:54_j:78           0.1           0.1             1             0
+    kp_inst:0_i:54_j:90           0.1           0.1             1             0
+    kp_inst:0_i:66_j:6           0.1           0.1             1             0
+    kp_inst:0_i:66_j:18      0.716472      0.272536       2.62891      -1.62891
+    kp_inst:0_i:66_j:30       5.46514        7.2999       1.33572      0.251341
+    kp_inst:0_i:66_j:42      0.141619      0.324065       2.28828      0.562991
+    kp_inst:0_i:66_j:54           0.1           0.1             1             0
+    kp_inst:0_i:66_j:66       0.10903      0.152685       1.40039      0.285911
+    kp_inst:0_i:66_j:78            10            10             1             0
+    kp_inst:0_i:66_j:90      0.184429      0.483201       2.61999      0.618318
+    kp_inst:0_i:78_j:6           0.1           0.1             1             0
+    kp_inst:0_i:78_j:18       4.51883       7.57934       1.67728      0.403797
+    kp_inst:0_i:78_j:30            10       5.70614        1.7525     -0.752497
+    kp_inst:0_i:78_j:42            10            10             1             0
+    kp_inst:0_i:78_j:54           0.1           0.1             1             0
+    kp_inst:0_i:78_j:66       4.34196       2.74183        1.5836     -0.583597
+    kp_inst:0_i:78_j:78            10            10             1             0
+    kp_inst:0_i:78_j:90            10       2.89063       3.45945      -2.45945
+    kp_inst:0_i:90_j:6           0.1           0.1             1             0
+    kp_inst:0_i:90_j:18       1.23645      0.815648       1.51591     -0.515914
+    kp_inst:0_i:90_j:30            10            10             1             0
+    kp_inst:0_i:90_j:42      0.807943       1.12146       1.38804      0.279559
+    kp_inst:0_i:90_j:54           0.1           0.1             1             0
+    kp_inst:0_i:90_j:66      0.388936      0.473102        1.2164      0.177902
+    kp_inst:0_i:90_j:78            10            10             1             0
+    kp_inst:0_i:90_j:90       3.08596       2.31469       1.33321     -0.333209
+       Maximum changes in "Control File" parameters:
+         Maximum relative change = -2.45945   [kp_inst:0_i:78_j:90]
+         Maximum factor change = 7.61484   [kp_inst:0_i:18_j:6]
+
+    Iteration 4 Parameter Upgrades (Transformed Numeric Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+           sup_1       8.64818       9.62915       1.11343      0.101875
+          sup_10       10.8912       10.4738       1.03985     -0.039851
+          sup_11        9.7966        10.393       1.06088     0.0573848
+          sup_12       9.89364       9.65436       1.02478    -0.0247848
+          sup_13       9.33967       9.85951       1.05566     0.0527248
+          sup_14       10.3086       10.1597       1.01465    -0.0146526
+          sup_15       9.47793       9.54089       1.00664    0.00659921
+          sup_16       9.19764       10.0278       1.09026     0.0827864
+          sup_17       11.3898       10.8881       1.04608    -0.0460788
+          sup_18       9.30322       10.0235       1.07742     0.0718604
+          sup_19       10.2382       10.2969       1.00573    0.00569914
+           sup_2       9.96352        9.8007       1.01661    -0.0166125
+          sup_20       10.4126       10.1116       1.02976    -0.0297639
+          sup_21       9.98287       10.0284       1.00456    0.00453962
+          sup_22       9.85065       9.91999       1.00704    0.00698963
+          sup_23       9.37382       9.64614       1.02905     0.0282305
+          sup_24       9.45556       9.96198       1.05356     0.0508358
+          sup_25       10.3358       9.66479       1.06943    -0.0694315
+          sup_26       10.5267       10.4314       1.00914   -0.00914296
+          sup_27       8.95713       8.74848       1.02385    -0.0238495
+          sup_28       10.6443       10.5248       1.01136    -0.0113562
+          sup_29       10.1716       10.4007       1.02252      0.022021
+           sup_3       11.0018       10.3027       1.06785     -0.067853
+          sup_30       10.1741       10.0821       1.00913    -0.0091252
+          sup_31       9.79391       10.2537       1.04695     0.0448454
+          sup_32       9.79883       10.1332       1.03412     0.0329989
+          sup_33       9.87902       9.70924       1.01749     -0.017487
+          sup_34       9.09204       9.26791       1.01934      0.018977
+          sup_35       10.3042       9.92797       1.03789     -0.037891
+          sup_36       10.0629       10.0797       1.00167    0.00166615
+          sup_37        10.475       10.6882       1.02035     0.0199436
+          sup_38       10.5896       10.7931       1.01922     0.0188576
+          sup_39       10.1764         10.13       1.00458   -0.00458061
+           sup_4       10.6117       10.6672       1.00523    0.00520725
+          sup_40       8.85153       9.23927        1.0438     0.0419665
+          sup_41       8.64604       9.28267       1.07363      0.068583
+          sup_42       10.8064       11.2179       1.03808     0.0366824
+          sup_43       8.95046       8.91364       1.00413   -0.00413137
+          sup_44       8.86612       8.97811       1.01263     0.0124735
+           sup_5       9.89015       9.91216       1.00222    0.00222003
+           sup_6       9.54624       9.79042       1.02558     0.0249406
+           sup_7       9.30831       10.1652       1.09205     0.0842946
+           sup_8       9.31374       10.0806       1.08234     0.0760748
+           sup_9       9.57807       9.41766       1.01703    -0.0170332
+       Maximum changes in "Transformed Numeric" parameters:
+         Maximum relative change = 0.101875   [sup_1]
+         Maximum factor change = 1.11343   [sup_1]
+
+COMPUTING JACOBIAN:
+
+    Iteration type: base parameter solution
+    Model calls so far : 181
+
+
+
+OPTIMISATION ITERATION NUMBER: 5
+
+  Iteration type: super parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 246
+
+
+
+  Starting phi for this iteration                     Total : 3.18709
+
+
+  Contribution to phi from observation group       "obgnme" : 3.18709
+  Number of terms in the jacobian equal to zero: 0 / 7840 (0%)
+
+  Summary of upgrade runs:
+    Lambda =     0.10; Type:  upgrade_nrm; length = 5.91e+00;   phi = 3.7069 (116.31% of starting phi)
+    Lambda =     1.00; Type:  upgrade_nrm; length = 5.08e+00;   phi = 2.91642 (91.51% of starting phi)
+    Lambda =    10.00; Type:  upgrade_nrm; length = 4.65e+00;   phi = 2.65691 (83.36% of starting phi)
+    Lambda =   100.00; Type:  upgrade_nrm; length = 1.62e+00;   phi = 2.92578 (91.80% of starting phi)
+    Lambda =  1000.00; Type:  upgrade_nrm; length = 5.02e-01;   phi = 3.09247 (97.03% of starting phi)
+
+    Parameters previously frozen in SVD transformation:
+      KP_INST:0_I:18_J:42 frozen at 10
+      KP_INST:0_I:18_J:54 frozen at 10
+      KP_INST:0_I:18_J:66 frozen at 10
+      KP_INST:0_I:30_J:42 frozen at 10
+      KP_INST:0_I:30_J:54 frozen at 10
+      KP_INST:0_I:42_J:90 frozen at 0.1
+      KP_INST:0_I:54_J:42 frozen at 0.1
+      KP_INST:0_I:54_J:78 frozen at 0.1
+      KP_INST:0_I:54_J:90 frozen at 0.1
+      KP_INST:0_I:66_J:54 frozen at 0.1
+      KP_INST:0_I:66_J:6 frozen at 0.1
+      KP_INST:0_I:66_J:78 frozen at 10
+      KP_INST:0_I:6_J:42 frozen at 10
+      KP_INST:0_I:6_J:54 frozen at 10
+      KP_INST:0_I:78_J:30 frozen at 10
+      KP_INST:0_I:78_J:42 frozen at 10
+      KP_INST:0_I:78_J:54 frozen at 0.1
+      KP_INST:0_I:78_J:6 frozen at 0.1
+      KP_INST:0_I:78_J:78 frozen at 10
+      KP_INST:0_I:78_J:90 frozen at 10
+      KP_INST:0_I:90_J:30 frozen at 10
+      KP_INST:0_I:90_J:54 frozen at 0.1
+      KP_INST:0_I:90_J:6 frozen at 0.1
+      KP_INST:0_I:90_J:78 frozen at 10
+
+    Parameters frozen during upgrades:
+      KP_INST:0_I:18_J:18 frozen at 0.1
+      KP_INST:0_I:66_J:30 frozen at 10
+
+  Model calls in iteration 5: 5
+  Total model calls at end of iteration 5: 251
+
+
+  Final phi for this iteration                     Total : 2.65691
+
+
+  Contribution to phi from observation group       "obgnme" : 2.65691
+    Iteration 5 Parameter Upgrades (Control File Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+    kp_inst:0_i:6_j:6      0.394396      0.497143       1.26052      0.206674
+    kp_inst:0_i:6_j:18      0.428409      0.508685       1.18738      0.157812
+    kp_inst:0_i:6_j:30      0.322639       0.38527       1.19412      0.162563
+    kp_inst:0_i:6_j:42            10            10             1             0
+    kp_inst:0_i:6_j:54            10            10             1             0
+    kp_inst:0_i:6_j:66       0.17984      0.258814       1.43913      0.305136
+    kp_inst:0_i:6_j:78      0.201358      0.258023       1.28141      0.219611
+    kp_inst:0_i:6_j:90      0.150504      0.215134       1.42943       0.30042
+    kp_inst:0_i:18_j:6      0.111421      0.148821       1.33567      0.251309
+    kp_inst:0_i:18_j:18           0.1      0.123188       1.23188      0.188232
+    kp_inst:0_i:18_j:30      0.474487       0.60707       1.27942      0.218398
+    kp_inst:0_i:18_j:42            10            10             1             0
+    kp_inst:0_i:18_j:54            10            10             1             0
+    kp_inst:0_i:18_j:66            10            10             1             0
+    kp_inst:0_i:18_j:78      0.229994      0.267939       1.16498      0.141618
+    kp_inst:0_i:18_j:90      0.388834      0.423165       1.08829     0.0811298
+    kp_inst:0_i:30_j:6      0.168799      0.252548       1.49614      0.331615
+    kp_inst:0_i:30_j:18      0.151563      0.212325        1.4009      0.286174
+    kp_inst:0_i:30_j:30      0.168876      0.237014       1.40348      0.287487
+    kp_inst:0_i:30_j:42            10            10             1             0
+    kp_inst:0_i:30_j:54            10            10             1             0
+    kp_inst:0_i:30_j:66      0.448701      0.480958       1.07189     0.0670691
+    kp_inst:0_i:30_j:78       0.11654      0.135333       1.16126      0.138866
+    kp_inst:0_i:30_j:90      0.134373      0.164316       1.22283      0.182228
+    kp_inst:0_i:42_j:6      0.175615      0.173505       1.01216    -0.0121619
+    kp_inst:0_i:42_j:18      0.265736      0.261078       1.01784    -0.0178388
+    kp_inst:0_i:42_j:30      0.218361      0.185088       1.17977      -0.17977
+    kp_inst:0_i:42_j:42      0.515581      0.383648       1.34389     -0.343891
+    kp_inst:0_i:42_j:54      0.291317      0.293269        1.0067    0.00665496
+    kp_inst:0_i:42_j:66      0.106254      0.105345       1.00862   -0.00862423
+    kp_inst:0_i:42_j:78      0.239444      0.248727       1.03877     0.0373215
+    kp_inst:0_i:42_j:90           0.1           0.1             1             0
+    kp_inst:0_i:54_j:6      0.690587      0.551203       1.25287     -0.252873
+    kp_inst:0_i:54_j:18      0.296959      0.245873       1.20777     -0.207773
+    kp_inst:0_i:54_j:30      0.172682      0.189263       1.09602     0.0876099
+    kp_inst:0_i:54_j:42           0.1           0.1             1             0
+    kp_inst:0_i:54_j:54      0.106806       0.10428       1.02423    -0.0242311
+    kp_inst:0_i:54_j:66       0.16166      0.164356       1.01668     0.0164037
+    kp_inst:0_i:54_j:78           0.1           0.1             1             0
+    kp_inst:0_i:54_j:90           0.1           0.1             1             0
+    kp_inst:0_i:66_j:6           0.1           0.1             1             0
+    kp_inst:0_i:66_j:18      0.735369      0.716472       1.02637    -0.0263743
+    kp_inst:0_i:66_j:30            10       5.46514       1.82978      -0.82978
+    kp_inst:0_i:66_j:42      0.137899      0.141619       1.02698     0.0262727
+    kp_inst:0_i:66_j:54           0.1           0.1             1             0
+    kp_inst:0_i:66_j:66      0.114456       0.10903       1.04976    -0.0497587
+    kp_inst:0_i:66_j:78            10            10             1             0
+    kp_inst:0_i:66_j:90      0.157151      0.184429       1.17358      0.147907
+    kp_inst:0_i:78_j:6           0.1           0.1             1             0
+    kp_inst:0_i:78_j:18       5.15526       4.51883       1.14084     -0.140841
+    kp_inst:0_i:78_j:30            10            10             1             0
+    kp_inst:0_i:78_j:42            10            10             1             0
+    kp_inst:0_i:78_j:54           0.1           0.1             1             0
+    kp_inst:0_i:78_j:66       4.27756       4.34196       1.01505     0.0148313
+    kp_inst:0_i:78_j:78            10            10             1             0
+    kp_inst:0_i:78_j:90            10            10             1             0
+    kp_inst:0_i:90_j:6           0.1           0.1             1             0
+    kp_inst:0_i:90_j:18       1.35864       1.23645       1.09882    -0.0988248
+    kp_inst:0_i:90_j:30            10            10             1             0
+    kp_inst:0_i:90_j:42      0.981858      0.807943       1.21526     -0.215257
+    kp_inst:0_i:90_j:54           0.1           0.1             1             0
+    kp_inst:0_i:90_j:66      0.448346      0.388936       1.15275      -0.15275
+    kp_inst:0_i:90_j:78            10            10             1             0
+    kp_inst:0_i:90_j:90       3.75427       3.08596       1.21656     -0.216564
+       Maximum changes in "Control File" parameters:
+         Maximum relative change = -0.82978   [kp_inst:0_i:66_j:30]
+         Maximum factor change = 1.82978   [kp_inst:0_i:66_j:30]
+
+    Iteration 5 Parameter Upgrades (Transformed Numeric Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+           sup_1       9.99872            10       1.00013   0.000128292
+          sup_10        10.033            10        1.0033   -0.00329501
+          sup_11       9.98682            10       1.00132    0.00131813
+          sup_12       9.97298            10       1.00271    0.00270154
+          sup_13       10.0421            10       1.00421   -0.00420954
+          sup_14        9.9955            10       1.00045   0.000449624
+          sup_15       10.0855            10       1.00855   -0.00854963
+          sup_16       10.0585            10       1.00585    -0.0058512
+          sup_17       10.0062            10       1.00062  -0.000624907
+          sup_18       9.96006            10       1.00401    0.00399426
+          sup_19        10.012            10        1.0012   -0.00119584
+           sup_2       10.0219            10       1.00219    -0.0021869
+          sup_20       9.97424            10       1.00258    0.00257608
+          sup_21        10.016            10        1.0016   -0.00160331
+          sup_22       9.97742            10       1.00226    0.00225778
+          sup_23       9.92706            10       1.00735     0.0072938
+          sup_24       10.0155            10       1.00155   -0.00155321
+          sup_25       10.0609            10       1.00609   -0.00608706
+          sup_26       10.0318            10       1.00318   -0.00317754
+          sup_27       9.96676            10       1.00333    0.00332356
+          sup_28       9.98562            10       1.00144    0.00143814
+          sup_29       10.0444            10       1.00444   -0.00444039
+           sup_3       9.94324            10       1.00571    0.00567565
+          sup_30       9.95359            10       1.00466    0.00464077
+          sup_31       9.95593            10       1.00443    0.00440683
+          sup_32       9.80472            10       1.01992     0.0195284
+          sup_33       9.99014            10       1.00099   0.000986166
+          sup_34       10.0922            10       1.00922   -0.00922229
+          sup_35       9.66735            10       1.03441     0.0332652
+          sup_36       9.92962            10       1.00709    0.00703785
+          sup_37       9.79643            10       1.02078     0.0203566
+          sup_38       10.1646            10       1.01646    -0.0164638
+          sup_39       10.2727            10       1.02727    -0.0272663
+           sup_4       10.0148            10       1.00148   -0.00148415
+          sup_40       10.0274            10       1.00274   -0.00274487
+           sup_5       9.97536            10       1.00247    0.00246374
+           sup_6       9.99209            10       1.00079   0.000790632
+           sup_7       9.98997            10         1.001    0.00100327
+           sup_8       10.0245            10       1.00245   -0.00244582
+           sup_9       9.96872            10       1.00314    0.00312782
+       Maximum changes in "Transformed Numeric" parameters:
+         Maximum relative change = 0.0332652   [sup_35]
+         Maximum factor change = 1.03441   [sup_35]
+
+
+OPTIMISATION ITERATION NUMBER: 6
+
+  Iteration type: super parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 251
+
+
+
+  Starting phi for this iteration                     Total : 2.65691
+
+
+  Contribution to phi from observation group       "obgnme" : 2.65691
+  Number of terms in the jacobian equal to zero: 0 / 7448 (0%)
+
+  Summary of upgrade runs:
+    Lambda =     0.10; Type:  upgrade_nrm; length = 3.38e+00;   phi = 2.18697 (82.31% of starting phi)
+    Lambda =     1.00; Type:  upgrade_nrm; length = 2.06e+00;   phi = 2.11498 (79.60% of starting phi)
+    Lambda =    10.00; Type:  upgrade_nrm; length = 9.21e-01;   phi = 2.2194 (83.53% of starting phi)
+    Lambda =   100.00; Type:  upgrade_nrm; length = 3.35e-01;   phi = 2.48417 (93.50% of starting phi)
+    Lambda =  1000.00; Type:  upgrade_nrm; length = 1.11e-01;   phi = 2.59741 (97.76% of starting phi)
+
+    Parameters previously frozen in SVD transformation:
+      KP_INST:0_I:18_J:18 frozen at 0.1
+      KP_INST:0_I:18_J:42 frozen at 10
+      KP_INST:0_I:18_J:54 frozen at 10
+      KP_INST:0_I:18_J:66 frozen at 10
+      KP_INST:0_I:30_J:42 frozen at 10
+      KP_INST:0_I:30_J:54 frozen at 10
+      KP_INST:0_I:42_J:90 frozen at 0.1
+      KP_INST:0_I:54_J:42 frozen at 0.1
+      KP_INST:0_I:54_J:78 frozen at 0.1
+      KP_INST:0_I:54_J:90 frozen at 0.1
+      KP_INST:0_I:66_J:30 frozen at 10
+      KP_INST:0_I:66_J:54 frozen at 0.1
+      KP_INST:0_I:66_J:6 frozen at 0.1
+      KP_INST:0_I:66_J:78 frozen at 10
+      KP_INST:0_I:6_J:42 frozen at 10
+      KP_INST:0_I:6_J:54 frozen at 10
+      KP_INST:0_I:78_J:30 frozen at 10
+      KP_INST:0_I:78_J:42 frozen at 10
+      KP_INST:0_I:78_J:54 frozen at 0.1
+      KP_INST:0_I:78_J:6 frozen at 0.1
+      KP_INST:0_I:78_J:78 frozen at 10
+      KP_INST:0_I:78_J:90 frozen at 10
+      KP_INST:0_I:90_J:30 frozen at 10
+      KP_INST:0_I:90_J:54 frozen at 0.1
+      KP_INST:0_I:90_J:6 frozen at 0.1
+      KP_INST:0_I:90_J:78 frozen at 10
+
+    Parameters frozen during upgrades:
+      KP_INST:0_I:30_J:18 frozen at 0.1
+      KP_INST:0_I:30_J:30 frozen at 0.1
+      KP_INST:0_I:30_J:6 frozen at 0.1
+      KP_INST:0_I:30_J:78 frozen at 0.1
+      KP_INST:0_I:6_J:90 frozen at 0.1
+
+  Model calls in iteration 6: 44
+  Total model calls at end of iteration 6: 295
+
+
+  Final phi for this iteration                     Total : 2.11498
+
+
+  Contribution to phi from observation group       "obgnme" : 2.11498
+    Iteration 6 Parameter Upgrades (Control File Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+    kp_inst:0_i:6_j:6      0.229756      0.394396       1.71658      0.417448
+    kp_inst:0_i:6_j:18      0.282152      0.428409       1.51836      0.341395
+    kp_inst:0_i:6_j:30      0.194746      0.322639       1.65671      0.396396
+    kp_inst:0_i:6_j:42            10            10             1             0
+    kp_inst:0_i:6_j:54            10            10             1             0
+    kp_inst:0_i:6_j:66      0.110337       0.17984       1.62992      0.386473
+    kp_inst:0_i:6_j:78      0.141508      0.201358       1.42294      0.297231
+    kp_inst:0_i:6_j:90           0.1      0.150504       1.50504      0.335564
+    kp_inst:0_i:18_j:6      0.118902      0.111421       1.06714    -0.0671393
+    kp_inst:0_i:18_j:18           0.1           0.1             1             0
+    kp_inst:0_i:18_j:30      0.489774      0.474487       1.03222    -0.0322181
+    kp_inst:0_i:18_j:42            10            10             1             0
+    kp_inst:0_i:18_j:54            10            10             1             0
+    kp_inst:0_i:18_j:66            10            10             1             0
+    kp_inst:0_i:18_j:78      0.185755      0.229994       1.23816       0.19235
+    kp_inst:0_i:18_j:90      0.340557      0.388834       1.14176      0.124157
+    kp_inst:0_i:30_j:6           0.1      0.168799       1.68799      0.407581
+    kp_inst:0_i:30_j:18           0.1      0.151563       1.51563      0.340209
+    kp_inst:0_i:30_j:30           0.1      0.168876       1.68876      0.407848
+    kp_inst:0_i:30_j:42            10            10             1             0
+    kp_inst:0_i:30_j:54            10            10             1             0
+    kp_inst:0_i:30_j:66       0.42185      0.448701       1.06365     0.0598416
+    kp_inst:0_i:30_j:78           0.1       0.11654        1.1654      0.141925
+    kp_inst:0_i:30_j:90      0.101408      0.134373       1.32508      0.245329
+    kp_inst:0_i:42_j:6      0.149685      0.175615       1.17324      0.147656
+    kp_inst:0_i:42_j:18      0.241996      0.265736        1.0981     0.0893344
+    kp_inst:0_i:42_j:30      0.218218      0.218361       1.00065   0.000653009
+    kp_inst:0_i:42_j:42      0.865744      0.515581       1.67916     -0.679161
+    kp_inst:0_i:42_j:54      0.293249      0.291317       1.00663    -0.0066314
+    kp_inst:0_i:42_j:66       0.10648      0.106254       1.00213   -0.00213239
+    kp_inst:0_i:42_j:78      0.229096      0.239444       1.04517     0.0432146
+    kp_inst:0_i:42_j:90           0.1           0.1             1             0
+    kp_inst:0_i:54_j:6      0.899356      0.690587       1.30231     -0.302306
+    kp_inst:0_i:54_j:18       0.33536      0.296959       1.12932     -0.129317
+    kp_inst:0_i:54_j:30      0.241336      0.172682       1.39757     -0.397575
+    kp_inst:0_i:54_j:42           0.1           0.1             1             0
+    kp_inst:0_i:54_j:54      0.101243      0.106806       1.05496     0.0520935
+    kp_inst:0_i:54_j:66      0.157972       0.16166       1.02334     0.0228115
+    kp_inst:0_i:54_j:78           0.1           0.1             1             0
+    kp_inst:0_i:54_j:90           0.1           0.1             1             0
+    kp_inst:0_i:66_j:6           0.1           0.1             1             0
+    kp_inst:0_i:66_j:18      0.877553      0.735369       1.19335     -0.193351
+    kp_inst:0_i:66_j:30            10            10             1             0
+    kp_inst:0_i:66_j:42      0.147001      0.137899       1.06601    -0.0660055
+    kp_inst:0_i:66_j:54           0.1           0.1             1             0
+    kp_inst:0_i:66_j:66      0.118345      0.114456       1.03398    -0.0339779
+    kp_inst:0_i:66_j:78            10            10             1             0
+    kp_inst:0_i:66_j:90      0.122197      0.157151       1.28605      0.222423
+    kp_inst:0_i:78_j:6           0.1           0.1             1             0
+    kp_inst:0_i:78_j:18       7.00244       5.15526       1.35831     -0.358309
+    kp_inst:0_i:78_j:30            10            10             1             0
+    kp_inst:0_i:78_j:42            10            10             1             0
+    kp_inst:0_i:78_j:54           0.1           0.1             1             0
+    kp_inst:0_i:78_j:66       4.18212       4.27756       1.02282     0.0223128
+    kp_inst:0_i:78_j:78            10            10             1             0
+    kp_inst:0_i:78_j:90            10            10             1             0
+    kp_inst:0_i:90_j:6           0.1           0.1             1             0
+    kp_inst:0_i:90_j:18        1.5406       1.35864       1.13392     -0.133921
+    kp_inst:0_i:90_j:30            10            10             1             0
+    kp_inst:0_i:90_j:42       1.18085      0.981858       1.20267     -0.202671
+    kp_inst:0_i:90_j:54           0.1           0.1             1             0
+    kp_inst:0_i:90_j:66      0.483599      0.448346       1.07863    -0.0786303
+    kp_inst:0_i:90_j:78            10            10             1             0
+    kp_inst:0_i:90_j:90       4.42386       3.75427       1.17835     -0.178355
+       Maximum changes in "Control File" parameters:
+         Maximum relative change = -0.679161   [kp_inst:0_i:42_j:42]
+         Maximum factor change = 1.71658   [kp_inst:0_i:6_j:6]
+
+    Iteration 6 Parameter Upgrades (Transformed Numeric Parameters) 
+      Parameter     Current       Previous       Factor       Relative
+        Name         Value         Value         Change        Change
+      ----------  ------------  ------------  ------------  ------------
+           sup_1       10.0136       10.0127       1.00009  -9.25162e-05
+          sup_10       9.95653       9.98655       1.00301    0.00300583
+          sup_11       10.0932       9.99809       1.00952   -0.00951726
+          sup_12       9.94789       9.98822       1.00405    0.00403761
+          sup_13       10.1038       10.0636         1.004   -0.00399706
+          sup_14       9.98432       10.0005       1.00162    0.00161402
+          sup_15       9.75738       9.91242       1.01589     0.0156406
+          sup_16       10.0462       10.0115       1.00346   -0.00346328
+          sup_17       9.98793        10.015       1.00271    0.00269855
+          sup_18         9.936       9.99606       1.00604    0.00600761
+          sup_19       10.0243       10.0144       1.00099  -0.000987701
+           sup_2       10.0486       9.99715       1.00515   -0.00514637
+          sup_20       9.94727       9.97005       1.00229    0.00228524
+          sup_21       10.0689       10.0438       1.00249   -0.00249436
+          sup_22       9.79372       9.92144       1.01304     0.0128727
+          sup_23       9.94402       9.99027       1.00465    0.00462978
+          sup_24       10.1027       10.0734       1.00291   -0.00290631
+          sup_25       9.87873       9.98188       1.01044     0.0103339
+          sup_26         9.911       9.91664       1.00057   0.000569041
+          sup_27       9.82671       9.86505        1.0039    0.00388665
+          sup_28       10.1732       10.0654       1.01071      -0.01071
+          sup_29       10.1138       10.0686       1.00449   -0.00449126
+           sup_3       9.85835       9.94632       1.00892    0.00884405
+          sup_30       10.3278        10.164       1.01611    -0.0161078
+          sup_31       9.94123       9.94472       1.00035   0.000351099
+          sup_32       9.72379       9.96986       1.02531     0.0246811
+          sup_33       10.0035       10.0195       1.00159    0.00158852
+          sup_34       10.4018       10.1643       1.02337    -0.0233699
+          sup_35       9.41989       9.82566       1.04308     0.0412976
+          sup_36       9.58447       9.81917       1.02449     0.0239021
+          sup_37       9.92882       9.93063       1.00018   0.000182561
+          sup_38       10.5684       10.2791       1.02815    -0.0281467
+           sup_4       10.0148       10.0026       1.00122   -0.00122318
+           sup_5       9.94941       10.0097       1.00606    0.00602173
+           sup_6       9.99647        10.003       1.00065   0.000654076
+           sup_7       9.96565       9.99152        1.0026     0.0025897
+           sup_8       9.98916        9.9848       1.00044  -0.000436997
+           sup_9       9.93392       9.96094       1.00272    0.00271244
+       Maximum changes in "Transformed Numeric" parameters:
+         Maximum relative change = 0.0412976   [sup_35]
+         Maximum factor change = 1.04308   [sup_35]
+
+-----------------------------------------
+     ---   OPTIMIZATION COMPLETE   ---   
+  Reason for terminating PEST++ simulation: NOPTMAX criterion met
+  Summary of termination criteria:
+  NOPTMAX = 6 ;  NOPT at termination = 6
+  NPHINORED = 3 ;  NPHINORED at termination = 0
+  NRELPAR = 3; RELPARSTP = 0.01 ;  NRELPAR at termination = 0
+  PHIREDSTP = 0.01; NPHISTP = 3
+  NPHISTP lowest PHI's:
+        2.11498
+        2.65691
+        3.18709
+
+FINAL OPTIMISATION RESULTS
+
+  Optimal parameter values  
+
+     Parameter            
+        Name         Value
+    ------------  ------------
+    kp_inst:0_i:6_j:6      0.229756
+    kp_inst:0_i:6_j:18      0.282152
+    kp_inst:0_i:6_j:30      0.194746
+    kp_inst:0_i:6_j:42            10
+    kp_inst:0_i:6_j:54            10
+    kp_inst:0_i:6_j:66      0.110337
+    kp_inst:0_i:6_j:78      0.141508
+    kp_inst:0_i:6_j:90           0.1
+    kp_inst:0_i:18_j:6      0.118902
+    kp_inst:0_i:18_j:18           0.1
+    kp_inst:0_i:18_j:30      0.489774
+    kp_inst:0_i:18_j:42            10
+    kp_inst:0_i:18_j:54            10
+    kp_inst:0_i:18_j:66            10
+    kp_inst:0_i:18_j:78      0.185755
+    kp_inst:0_i:18_j:90      0.340557
+    kp_inst:0_i:30_j:6           0.1
+    kp_inst:0_i:30_j:18           0.1
+    kp_inst:0_i:30_j:30           0.1
+    kp_inst:0_i:30_j:42            10
+    kp_inst:0_i:30_j:54            10
+    kp_inst:0_i:30_j:66       0.42185
+    kp_inst:0_i:30_j:78           0.1
+    kp_inst:0_i:30_j:90      0.101408
+    kp_inst:0_i:42_j:6      0.149685
+    kp_inst:0_i:42_j:18      0.241996
+    kp_inst:0_i:42_j:30      0.218218
+    kp_inst:0_i:42_j:42      0.865744
+    kp_inst:0_i:42_j:54      0.293249
+    kp_inst:0_i:42_j:66       0.10648
+    kp_inst:0_i:42_j:78      0.229096
+    kp_inst:0_i:42_j:90           0.1
+    kp_inst:0_i:54_j:6      0.899356
+    kp_inst:0_i:54_j:18       0.33536
+    kp_inst:0_i:54_j:30      0.241336
+    kp_inst:0_i:54_j:42           0.1
+    kp_inst:0_i:54_j:54      0.101243
+    kp_inst:0_i:54_j:66      0.157972
+    kp_inst:0_i:54_j:78           0.1
+    kp_inst:0_i:54_j:90           0.1
+    kp_inst:0_i:66_j:6           0.1
+    kp_inst:0_i:66_j:18      0.877553
+    kp_inst:0_i:66_j:30            10
+    kp_inst:0_i:66_j:42      0.147001
+    kp_inst:0_i:66_j:54           0.1
+    kp_inst:0_i:66_j:66      0.118345
+    kp_inst:0_i:66_j:78            10
+    kp_inst:0_i:66_j:90      0.122197
+    kp_inst:0_i:78_j:6           0.1
+    kp_inst:0_i:78_j:18       7.00244
+    kp_inst:0_i:78_j:30            10
+    kp_inst:0_i:78_j:42            10
+    kp_inst:0_i:78_j:54           0.1
+    kp_inst:0_i:78_j:66       4.18212
+    kp_inst:0_i:78_j:78            10
+    kp_inst:0_i:78_j:90            10
+    kp_inst:0_i:90_j:6           0.1
+    kp_inst:0_i:90_j:18        1.5406
+    kp_inst:0_i:90_j:30            10
+    kp_inst:0_i:90_j:42       1.18085
+    kp_inst:0_i:90_j:54           0.1
+    kp_inst:0_i:90_j:66      0.483599
+    kp_inst:0_i:90_j:78            10
+    kp_inst:0_i:90_j:90       4.42386
+
+
+  Observations with optimal model-simulated equivalents and residuals
+                 Name        Group             Measured             Modelled             Residual               Weight
+ hds_usecol:0_15_15_time:1.0       obgnme              7.59144              7.64721           -0.0557686              1.00000
+ hds_usecol:0_15_1_time:1.0       obgnme              9.84315              9.87739           -0.0342396              1.00000
+ hds_usecol:0_15_22_time:1.0       obgnme              6.38631              6.39737           -0.0110573              1.00000
+ hds_usecol:0_15_29_time:1.0       obgnme              5.20610              5.51135            -0.305241              1.00000
+ hds_usecol:0_15_36_time:1.0       obgnme              4.92902              5.06846            -0.139440              1.00000
+ hds_usecol:0_15_43_time:1.0       obgnme              4.86748              4.95786           -0.0903798              1.00000
+ hds_usecol:0_15_50_time:1.0       obgnme              4.83840              4.89268           -0.0542848              1.00000
+ hds_usecol:0_15_57_time:1.0       obgnme              4.80993              4.82002           -0.0100878              1.00000
+ hds_usecol:0_15_64_time:1.0       obgnme              4.75184              4.67996            0.0718836              1.00000
+ hds_usecol:0_15_71_time:1.0       obgnme              4.49249              4.43093            0.0615626              1.00000
+ hds_usecol:0_15_78_time:1.0       obgnme              3.37543              3.51483            -0.139399              1.00000
+ hds_usecol:0_15_85_time:1.0       obgnme              2.21764              2.16654            0.0510976              1.00000
+ hds_usecol:0_15_8_time:1.0       obgnme              8.73352              8.79845           -0.0649290              1.00000
+ hds_usecol:0_15_92_time:1.0       obgnme              1.10419              1.02004            0.0841517              1.00000
+ hds_usecol:0_1_15_time:1.0       obgnme              7.65266              7.72121           -0.0685532              1.00000
+ hds_usecol:0_1_1_time:1.0       obgnme              9.84399              9.86705           -0.0230603              1.00000
+ hds_usecol:0_1_22_time:1.0       obgnme              6.58849              6.67178           -0.0832925              1.00000
+ hds_usecol:0_1_29_time:1.0       obgnme              5.64559              5.71587           -0.0702828              1.00000
+ hds_usecol:0_1_36_time:1.0       obgnme              5.02890              5.12026           -0.0913665              1.00000
+ hds_usecol:0_1_43_time:1.0       obgnme              4.88021              4.97502           -0.0948144              1.00000
+ hds_usecol:0_1_50_time:1.0       obgnme              4.84125              4.91230           -0.0710557              1.00000
+ hds_usecol:0_1_57_time:1.0       obgnme              4.80414              4.85405           -0.0499053              1.00000
+ hds_usecol:0_1_64_time:1.0       obgnme              4.66906              4.63771            0.0313461              1.00000
+ hds_usecol:0_1_71_time:1.0       obgnme              4.09933              4.03279            0.0665408              1.00000
+ hds_usecol:0_1_78_time:1.0       obgnme              3.20829              3.20002           0.00827212              1.00000
+ hds_usecol:0_1_85_time:1.0       obgnme              2.18113              2.17645           0.00467453              1.00000
+ hds_usecol:0_1_8_time:1.0       obgnme              8.74786              8.78719           -0.0393272              1.00000
+ hds_usecol:0_1_92_time:1.0       obgnme              1.10210             0.938224             0.163879              1.00000
+ hds_usecol:0_22_15_time:1.0       obgnme              7.59915              7.64922           -0.0500770              1.00000
+ hds_usecol:0_22_1_time:1.0       obgnme              9.84414              9.88452           -0.0403821              1.00000
+ hds_usecol:0_22_22_time:1.0       obgnme              6.37447              6.38475           -0.0102821              1.00000
+ hds_usecol:0_22_29_time:1.0       obgnme              5.18627              5.49882            -0.312548              1.00000
+ hds_usecol:0_22_36_time:1.0       obgnme              4.92798              5.06047            -0.132497              1.00000
+ hds_usecol:0_22_43_time:1.0       obgnme              4.86722              4.95522           -0.0879987              1.00000
+ hds_usecol:0_22_50_time:1.0       obgnme              4.83700              4.88760           -0.0506016              1.00000
+ hds_usecol:0_22_57_time:1.0       obgnme              4.80708              4.81164          -0.00455557              1.00000
+ hds_usecol:0_22_64_time:1.0       obgnme              4.74808              4.67664            0.0714474              1.00000
+ hds_usecol:0_22_71_time:1.0       obgnme              4.49996              4.43193            0.0680285              1.00000
+ hds_usecol:0_22_78_time:1.0       obgnme              3.35685              3.51874            -0.161893              1.00000
+ hds_usecol:0_22_85_time:1.0       obgnme              2.17837              2.14706            0.0313040              1.00000
+ hds_usecol:0_22_8_time:1.0       obgnme              8.74049              8.81979           -0.0793035              1.00000
+ hds_usecol:0_22_92_time:1.0       obgnme              1.07821             0.986602            0.0916073              1.00000
+ hds_usecol:0_29_15_time:1.0       obgnme              7.66722              7.73614           -0.0689267              1.00000
+ hds_usecol:0_29_1_time:1.0       obgnme              9.84723              9.89029           -0.0430609              1.00000
+ hds_usecol:0_29_22_time:1.0       obgnme              6.52249              6.58105           -0.0585593              1.00000
+ hds_usecol:0_29_29_time:1.0       obgnme              5.33350              5.64709            -0.313587              1.00000
+ hds_usecol:0_29_36_time:1.0       obgnme              4.95410              5.07069            -0.116592              1.00000
+ hds_usecol:0_29_43_time:1.0       obgnme              4.87277              4.96700           -0.0942305              1.00000
+ hds_usecol:0_29_50_time:1.0       obgnme              4.83467              4.88934           -0.0546759              1.00000
+ hds_usecol:0_29_57_time:1.0       obgnme              4.79609              4.81850           -0.0224064              1.00000
+ hds_usecol:0_29_64_time:1.0       obgnme              4.71307              4.63856            0.0745091              1.00000
+ hds_usecol:0_29_71_time:1.0       obgnme              4.32986              4.21089             0.118973              1.00000
+ hds_usecol:0_29_78_time:1.0       obgnme              3.15263              3.28497            -0.132342              1.00000
+ hds_usecol:0_29_85_time:1.0       obgnme              2.05493              2.06781           -0.0128798              1.00000
+ hds_usecol:0_29_8_time:1.0       obgnme              8.76827              8.82465           -0.0563779              1.00000
+ hds_usecol:0_29_92_time:1.0       obgnme              1.01864             0.867502             0.151136              1.00000
+ hds_usecol:0_36_15_time:1.0       obgnme              7.76144              7.80057           -0.0391254              1.00000
+ hds_usecol:0_36_1_time:1.0       obgnme              9.85074              9.88039           -0.0296460              1.00000
+ hds_usecol:0_36_22_time:1.0       obgnme              6.73990              6.81557           -0.0756711              1.00000
+ hds_usecol:0_36_29_time:1.0       obgnme              5.76267              5.88141            -0.118740              1.00000
+ hds_usecol:0_36_36_time:1.0       obgnme              5.06435              5.21728            -0.152932              1.00000
+ hds_usecol:0_36_43_time:1.0       obgnme              4.89602              5.00991            -0.113881              1.00000
+ hds_usecol:0_36_50_time:1.0       obgnme              4.82847              4.89822           -0.0697542              1.00000
+ hds_usecol:0_36_57_time:1.0       obgnme              4.75628              4.76213          -0.00585108              1.00000
+ hds_usecol:0_36_64_time:1.0       obgnme              4.56568              4.43526             0.130419              1.00000
+ hds_usecol:0_36_71_time:1.0       obgnme              3.79913              3.74547            0.0536656              1.00000
+ hds_usecol:0_36_78_time:1.0       obgnme              2.81481              2.85568           -0.0408649              1.00000
+ hds_usecol:0_36_85_time:1.0       obgnme              1.85855              1.88532           -0.0267673              1.00000
+ hds_usecol:0_36_8_time:1.0       obgnme              8.80266              8.84543           -0.0427781              1.00000
+ hds_usecol:0_36_92_time:1.0       obgnme             0.927272             0.798109             0.129162              1.00000
+ hds_usecol:0_43_15_time:1.0       obgnme              7.82203              7.86042           -0.0383937              1.00000
+ hds_usecol:0_43_1_time:1.0       obgnme              9.85139              9.87304           -0.0216545              1.00000
+ hds_usecol:0_43_22_time:1.0       obgnme              6.90829              6.98104           -0.0727495              1.00000
+ hds_usecol:0_43_29_time:1.0       obgnme              6.10558              6.14433           -0.0387573              1.00000
+ hds_usecol:0_43_36_time:1.0       obgnme              5.45638              5.46853           -0.0121505              1.00000
+ hds_usecol:0_43_43_time:1.0       obgnme              5.02467              5.13023            -0.105558              1.00000
+ hds_usecol:0_43_50_time:1.0       obgnme              4.79623              4.88910           -0.0928703              1.00000
+ hds_usecol:0_43_57_time:1.0       obgnme              4.52738              4.53024          -0.00285819              1.00000
+ hds_usecol:0_43_64_time:1.0       obgnme              3.97796              3.98959           -0.0116319              1.00000
+ hds_usecol:0_43_71_time:1.0       obgnme              3.22860              3.17599            0.0526194              1.00000
+ hds_usecol:0_43_78_time:1.0       obgnme              2.42296              2.44818           -0.0252238              1.00000
+ hds_usecol:0_43_85_time:1.0       obgnme              1.62020              1.66431           -0.0441117              1.00000
+ hds_usecol:0_43_8_time:1.0       obgnme              8.81567              8.81861          -0.00294053              1.00000
+ hds_usecol:0_43_92_time:1.0       obgnme             0.817234             0.688973             0.128261              1.00000
+ hds_usecol:0_50_15_time:1.0       obgnme              7.78511              7.86828           -0.0831778              1.00000
+ hds_usecol:0_50_1_time:1.0       obgnme              9.84484              9.82961            0.0152268              1.00000
+ hds_usecol:0_50_22_time:1.0       obgnme              6.95098              7.03072           -0.0797429              1.00000
+ hds_usecol:0_50_29_time:1.0       obgnme              6.28664              6.36464           -0.0780034              1.00000
+ hds_usecol:0_50_36_time:1.0       obgnme              5.73882              5.79936           -0.0605429              1.00000
+ hds_usecol:0_50_43_time:1.0       obgnme              5.23389              5.28768           -0.0537916              1.00000
+ hds_usecol:0_50_50_time:1.0       obgnme              4.71035              4.80987           -0.0995205              1.00000
+ hds_usecol:0_50_57_time:1.0       obgnme              4.10662              4.16565           -0.0590339              1.00000
+ hds_usecol:0_50_64_time:1.0       obgnme              3.40725              3.40809         -0.000847264              1.00000
+ hds_usecol:0_50_71_time:1.0       obgnme              2.67992              2.62149            0.0584347              1.00000
+ hds_usecol:0_50_78_time:1.0       obgnme              2.00188              2.00440          -0.00251790              1.00000
+ hds_usecol:0_50_85_time:1.0       obgnme              1.36722              1.35334            0.0138767              1.00000
+ hds_usecol:0_50_8_time:1.0       obgnme              8.77241              8.83390           -0.0614914              1.00000
+ hds_usecol:0_50_92_time:1.0       obgnme             0.710112             0.587064             0.123047              1.00000
+ hds_usecol:0_57_15_time:1.0       obgnme              7.56952              7.61864           -0.0491144              1.00000
+ hds_usecol:0_57_1_time:1.0       obgnme              9.82575              9.80613            0.0196218              1.00000
+ hds_usecol:0_57_22_time:1.0       obgnme              6.79401              6.85953           -0.0655180              1.00000
+ hds_usecol:0_57_29_time:1.0       obgnme              6.33329              6.43880            -0.105503              1.00000
+ hds_usecol:0_57_36_time:1.0       obgnme              5.96625              6.10758            -0.141337              1.00000
+ hds_usecol:0_57_43_time:1.0       obgnme              5.44173              5.52103           -0.0793063              1.00000
+ hds_usecol:0_57_50_time:1.0       obgnme              4.69173              4.74898           -0.0572517              1.00000
+ hds_usecol:0_57_57_time:1.0       obgnme              3.78430              3.76381            0.0204902              1.00000
+ hds_usecol:0_57_64_time:1.0       obgnme              2.84860              2.81464            0.0339575              1.00000
+ hds_usecol:0_57_71_time:1.0       obgnme              2.04866              1.93881             0.109851              1.00000
+ hds_usecol:0_57_78_time:1.0       obgnme              1.50941              1.42421            0.0851984              1.00000
+ hds_usecol:0_57_85_time:1.0       obgnme              1.13311              1.10304            0.0300776              1.00000
+ hds_usecol:0_57_8_time:1.0       obgnme              8.62853              8.68937           -0.0608394              1.00000
+ hds_usecol:0_57_92_time:1.0       obgnme             0.656685             0.516771             0.139914              1.00000
+ hds_usecol:0_64_15_time:1.0       obgnme              7.04348              7.14985            -0.106375              1.00000
+ hds_usecol:0_64_1_time:1.0       obgnme              9.79001              9.82790           -0.0378902              1.00000
+ hds_usecol:0_64_22_time:1.0       obgnme              6.49151              6.61869            -0.127178              1.00000
+ hds_usecol:0_64_29_time:1.0       obgnme              6.31038              6.38656           -0.0761777              1.00000
+ hds_usecol:0_64_36_time:1.0       obgnme              6.16262              6.24138           -0.0787650              1.00000
+ hds_usecol:0_64_43_time:1.0       obgnme              5.83748              5.72004             0.117439              1.00000
+ hds_usecol:0_64_50_time:1.0       obgnme              4.81942              4.81719           0.00222465              1.00000
+ hds_usecol:0_64_57_time:1.0       obgnme              3.48051              3.45590            0.0246083              1.00000
+ hds_usecol:0_64_64_time:1.0       obgnme              2.13536              2.30425            -0.168884              1.00000
+ hds_usecol:0_64_71_time:1.0       obgnme              1.40562              1.42795           -0.0223331              1.00000
+ hds_usecol:0_64_78_time:1.0       obgnme              1.17861              1.19349           -0.0148865              1.00000
+ hds_usecol:0_64_85_time:1.0       obgnme              1.02516              1.05191           -0.0267487              1.00000
+ hds_usecol:0_64_8_time:1.0       obgnme              8.33795              8.24143            0.0965216              1.00000
+ hds_usecol:0_64_92_time:1.0       obgnme             0.764624             0.526960             0.237664              1.00000
+ hds_usecol:0_71_15_time:1.0       obgnme              6.67969              6.81890            -0.139205              1.00000
+ hds_usecol:0_71_1_time:1.0       obgnme              9.74288              9.77714           -0.0342676              1.00000
+ hds_usecol:0_71_22_time:1.0       obgnme              6.40992              6.50425           -0.0943288              1.00000
+ hds_usecol:0_71_29_time:1.0       obgnme              6.29954              6.34634           -0.0467936              1.00000
+ hds_usecol:0_71_36_time:1.0       obgnme              6.20163              6.19778           0.00385000              1.00000
+ hds_usecol:0_71_43_time:1.0       obgnme              6.01036              5.88498             0.125381              1.00000
+ hds_usecol:0_71_50_time:1.0       obgnme              5.17875              5.03644             0.142313              1.00000
+ hds_usecol:0_71_57_time:1.0       obgnme              3.17807              3.12815            0.0499257              1.00000
+ hds_usecol:0_71_64_time:1.0       obgnme              1.61417              1.83287            -0.218700              1.00000
+ hds_usecol:0_71_71_time:1.0       obgnme              1.25035              1.30598           -0.0556252              1.00000
+ hds_usecol:0_71_78_time:1.0       obgnme              1.11360              1.13071           -0.0171056              1.00000
+ hds_usecol:0_71_85_time:1.0       obgnme              1.00205             0.962045            0.0400092              1.00000
+ hds_usecol:0_71_8_time:1.0       obgnme              7.91472              7.83175            0.0829664              1.00000
+ hds_usecol:0_71_92_time:1.0       obgnme             0.802315             0.608503             0.193812              1.00000
+ hds_usecol:0_78_15_time:1.0       obgnme              6.59401              6.66832           -0.0743031              1.00000
+ hds_usecol:0_78_1_time:1.0       obgnme              9.70962              9.77768           -0.0680613              1.00000
+ hds_usecol:0_78_22_time:1.0       obgnme              6.38759              6.46835           -0.0807627              1.00000
+ hds_usecol:0_78_29_time:1.0       obgnme              6.29527              6.29679          -0.00151684              1.00000
+ hds_usecol:0_78_36_time:1.0       obgnme              6.21060              6.13586            0.0747393              1.00000
+ hds_usecol:0_78_43_time:1.0       obgnme              6.05016              5.93383             0.116326              1.00000
+ hds_usecol:0_78_50_time:1.0       obgnme              5.39310              5.27633             0.116777              1.00000
+ hds_usecol:0_78_57_time:1.0       obgnme              2.95275              2.81473             0.138015              1.00000
+ hds_usecol:0_78_64_time:1.0       obgnme              1.49351              1.66260            -0.169091              1.00000
+ hds_usecol:0_78_71_time:1.0       obgnme              1.20900              1.30123           -0.0922327              1.00000
+ hds_usecol:0_78_78_time:1.0       obgnme              1.09352              1.07614            0.0173831              1.00000
+ hds_usecol:0_78_85_time:1.0       obgnme             0.992423             0.880478             0.111945              1.00000
+ hds_usecol:0_78_8_time:1.0       obgnme              7.58771              7.57951           0.00820506              1.00000
+ hds_usecol:0_78_92_time:1.0       obgnme             0.802485             0.661531             0.140953              1.00000
+ hds_usecol:0_85_15_time:1.0       obgnme              6.60214              6.70895            -0.106815              1.00000
+ hds_usecol:0_85_1_time:1.0       obgnme              9.71632              9.75995           -0.0436268              1.00000
+ hds_usecol:0_85_22_time:1.0       obgnme              6.38667              6.43611           -0.0494370              1.00000
+ hds_usecol:0_85_29_time:1.0       obgnme              6.29420              6.27118            0.0230144              1.00000
+ hds_usecol:0_85_36_time:1.0       obgnme              6.20951              6.12057            0.0889325              1.00000
+ hds_usecol:0_85_43_time:1.0       obgnme              6.04286              5.85412             0.188739              1.00000
+ hds_usecol:0_85_50_time:1.0       obgnme              5.33701              5.11065             0.226358              1.00000
+ hds_usecol:0_85_57_time:1.0       obgnme              2.99669              2.99655          0.000142199              1.00000
+ hds_usecol:0_85_64_time:1.0       obgnme              1.49810              1.76183            -0.263728              1.00000
+ hds_usecol:0_85_71_time:1.0       obgnme              1.20224              1.27024           -0.0680045              1.00000
+ hds_usecol:0_85_78_time:1.0       obgnme              1.08682              1.04625            0.0405729              1.00000
+ hds_usecol:0_85_85_time:1.0       obgnme             0.987048             0.861097             0.125951              1.00000
+ hds_usecol:0_85_8_time:1.0       obgnme              7.66829              7.68978           -0.0214879              1.00000
+ hds_usecol:0_85_92_time:1.0       obgnme             0.798217             0.616050             0.182167              1.00000
+ hds_usecol:0_8_15_time:1.0       obgnme              7.62590              7.68254           -0.0566405              1.00000
+ hds_usecol:0_8_1_time:1.0       obgnme              9.84354              9.87629           -0.0327486              1.00000
+ hds_usecol:0_8_22_time:1.0       obgnme              6.50529              6.59252           -0.0872329              1.00000
+ hds_usecol:0_8_29_time:1.0       obgnme              5.42036              5.63026            -0.209906              1.00000
+ hds_usecol:0_8_36_time:1.0       obgnme              4.95527              5.07736            -0.122089              1.00000
+ hds_usecol:0_8_43_time:1.0       obgnme              4.87216              4.96751           -0.0953490              1.00000
+ hds_usecol:0_8_50_time:1.0       obgnme              4.83972              4.90500           -0.0652820              1.00000
+ hds_usecol:0_8_57_time:1.0       obgnme              4.80833              4.85171           -0.0433713              1.00000
+ hds_usecol:0_8_64_time:1.0       obgnme              4.73146              4.69475            0.0367146              1.00000
+ hds_usecol:0_8_71_time:1.0       obgnme              4.30147              4.19590             0.105561              1.00000
+ hds_usecol:0_8_78_time:1.0       obgnme              3.27928              3.34161           -0.0623278              1.00000
+ hds_usecol:0_8_85_time:1.0       obgnme              2.20121              2.21204           -0.0108355              1.00000
+ hds_usecol:0_8_8_time:1.0       obgnme              8.74128              8.78814           -0.0468612              1.00000
+ hds_usecol:0_8_92_time:1.0       obgnme              1.10626             0.927307             0.178957              1.00000
+ hds_usecol:0_92_15_time:1.0       obgnme              6.71027              6.81085            -0.100571              1.00000
+ hds_usecol:0_92_1_time:1.0       obgnme              9.74888              9.78985           -0.0409690              1.00000
+ hds_usecol:0_92_22_time:1.0       obgnme              6.40265              6.44249           -0.0398381              1.00000
+ hds_usecol:0_92_29_time:1.0       obgnme              6.29544              6.25318            0.0422624              1.00000
+ hds_usecol:0_92_36_time:1.0       obgnme              6.20047              6.08120             0.119265              1.00000
+ hds_usecol:0_92_43_time:1.0       obgnme              5.98361              5.69235             0.291261              1.00000
+ hds_usecol:0_92_50_time:1.0       obgnme              4.97127              4.87315            0.0981226              1.00000
+ hds_usecol:0_92_57_time:1.0       obgnme              3.17990              3.15795            0.0219539              1.00000
+ hds_usecol:0_92_64_time:1.0       obgnme              1.63563              1.99527            -0.359639              1.00000
+ hds_usecol:0_92_71_time:1.0       obgnme              1.22015              1.29631           -0.0761567              1.00000
+ hds_usecol:0_92_78_time:1.0       obgnme              1.08740              1.04094            0.0464515              1.00000
+ hds_usecol:0_92_85_time:1.0       obgnme             0.983094             0.846239             0.136855              1.00000
+ hds_usecol:0_92_8_time:1.0       obgnme              8.01393              7.85941             0.154520              1.00000
+ hds_usecol:0_92_92_time:1.0       obgnme             0.784536             0.571630             0.212907              1.00000
+
+Final composite objective function 
+  Final phi                                           Total : 2.11498
+  Contribution to phi from observation group       "obgnme" : 2.11498
+
+
+Number of forward model runs performed during optimiztion: 295
+
+
+
+
+-----------------------------------------------------------------------
+Note: The following uncertainty estimates were calculated using 
+      Schur's complement for linear-based conditional uncertainty 
+      propogation.  For a derviation from Bayes equation, see 
+      M. N. Fienen, J. E. Doherty, R. J. Hunt, and H. W. Reeves. 
+      2010. 'Using Prediction Uncertainty Analysis to Design 
+      Hydrologic Monitoring Networks : Example Applications 
+      from the Great Lakes Water Availability Pilot Project'. 
+      See PEST++ V3 documentation for implementation details.
+-----------------------------------------------------------------------
+
+Note: Any observations or prior information equations with a group name
+      starting with 'regul' are dropped from the jacobian and observation
+      covariance matrices before uncertainty calculations.  Please
+      make sure that all expert knowledge is expressed in the prior 
+      parameter bounds or through a covariance matix, which can be 
+      supplied as a ++ option as 'parameter_covariance(<matrix_file_name>),
+      where <matrix_file_name> can be an ASCII PEST-compatible matrix file (.mat) or
+      a PEST-compatible uncertainty file (.unc).
+
+
+Note: The observation covariance matrix has been constructed from 
+      weights listed in the pest control file that have been scaled by 
+      by the final residuals to account for 
+      the level of measurement noise implied by the original weights so
+      the total objective function is equal to the number of  
+      non-zero weighted observations.
+
+Scaled observation weights used to form observation noise covariance matrix written to residual file 'pest_test.fosm_reweight.rei'
+
+Note : posterior parameter covariance matrix written to file 'pest_test.post.cov'
+
+
+---------------------------------------
+---- parameter uncertainty summary ----
+---------------------------------------
+
+
+                name          prior_mean         prior_stdev   prior_lower_bound   prior_upper_bound           post_mean          post_stdev    post_lower_bound    post_upper_bound
+   KP_INST:0_I:6_J:6            0.000000            0.235702           -0.471405            0.471405           -0.638732            0.204987            -1.04871           -0.228757
+  KP_INST:0_I:6_J:18            0.000000            0.235702           -0.471405            0.471405           -0.549517            0.220227           -0.989971           -0.109063
+  KP_INST:0_I:6_J:30            0.000000            0.235702           -0.471405            0.471405           -0.710531            0.219098            -1.14873           -0.272334
+  KP_INST:0_I:6_J:42            0.000000            0.235702           -0.471405            0.471405             1.00000            0.232301            0.535397             1.46460
+  KP_INST:0_I:6_J:54            0.000000            0.235702           -0.471405            0.471405             1.00000            0.234008            0.531985             1.46802
+  KP_INST:0_I:6_J:66            0.000000            0.235702           -0.471405            0.471405           -0.957280            0.228112            -1.41350           -0.501056
+  KP_INST:0_I:6_J:78            0.000000            0.235702           -0.471405            0.471405           -0.849218            0.218699            -1.28662           -0.411820
+  KP_INST:0_I:6_J:90            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.211808            -1.42362           -0.576385
+  KP_INST:0_I:18_J:6            0.000000            0.235702           -0.471405            0.471405           -0.924812            0.219240            -1.36329           -0.486332
+ KP_INST:0_I:18_J:18            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.222821            -1.44564           -0.554358
+ KP_INST:0_I:18_J:30            0.000000            0.235702           -0.471405            0.471405           -0.310004            0.221959           -0.753922            0.133914
+ KP_INST:0_I:18_J:42            0.000000            0.235702           -0.471405            0.471405             1.00000            0.232099            0.535803             1.46420
+ KP_INST:0_I:18_J:54            0.000000            0.235702           -0.471405            0.471405             1.00000            0.232606            0.534789             1.46521
+ KP_INST:0_I:18_J:66            0.000000            0.235702           -0.471405            0.471405             1.00000            0.224944            0.550113             1.44989
+ KP_INST:0_I:18_J:78            0.000000            0.235702           -0.471405            0.471405           -0.731060            0.212450            -1.15596           -0.306161
+ KP_INST:0_I:18_J:90            0.000000            0.235702           -0.471405            0.471405           -0.467810            0.212133           -0.892076          -0.0435437
+  KP_INST:0_I:30_J:6            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.219903            -1.43981           -0.560193
+ KP_INST:0_I:30_J:18            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.224128            -1.44826           -0.551744
+ KP_INST:0_I:30_J:30            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.223002            -1.44600           -0.553996
+ KP_INST:0_I:30_J:42            0.000000            0.235702           -0.471405            0.471405             1.00000            0.231561            0.536877             1.46312
+ KP_INST:0_I:30_J:54            0.000000            0.235702           -0.471405            0.471405             1.00000            0.232593            0.534815             1.46519
+ KP_INST:0_I:30_J:66            0.000000            0.235702           -0.471405            0.471405           -0.374842            0.225440           -0.825721           0.0760373
+ KP_INST:0_I:30_J:78            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.221338            -1.44268           -0.557324
+ KP_INST:0_I:30_J:90            0.000000            0.235702           -0.471405            0.471405           -0.993929            0.221327            -1.43658           -0.551275
+  KP_INST:0_I:42_J:6            0.000000            0.235702           -0.471405            0.471405           -0.824823            0.220522            -1.26587           -0.383779
+ KP_INST:0_I:42_J:18            0.000000            0.235702           -0.471405            0.471405           -0.616191            0.226342            -1.06888           -0.163507
+ KP_INST:0_I:42_J:30            0.000000            0.235702           -0.471405            0.471405           -0.661109            0.226976            -1.11506           -0.207157
+ KP_INST:0_I:42_J:42            0.000000            0.235702           -0.471405            0.471405          -0.0626107            0.230980           -0.524571            0.399350
+ KP_INST:0_I:42_J:54            0.000000            0.235702           -0.471405            0.471405           -0.532764            0.230903           -0.994570          -0.0709580
+ KP_INST:0_I:42_J:66            0.000000            0.235702           -0.471405            0.471405           -0.972730            0.226597            -1.42592           -0.519536
+ KP_INST:0_I:42_J:78            0.000000            0.235702           -0.471405            0.471405           -0.639982            0.227203            -1.09439           -0.185577
+ KP_INST:0_I:42_J:90            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.225377            -1.45075           -0.549246
+  KP_INST:0_I:54_J:6            0.000000            0.235702           -0.471405            0.471405          -0.0460684            0.216579           -0.479225            0.387089
+ KP_INST:0_I:54_J:18            0.000000            0.235702           -0.471405            0.471405           -0.474488            0.226467           -0.927421          -0.0215550
+ KP_INST:0_I:54_J:30            0.000000            0.235702           -0.471405            0.471405           -0.617379            0.230969            -1.07932           -0.155440
+ KP_INST:0_I:54_J:42            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.231351            -1.46270           -0.537299
+ KP_INST:0_I:54_J:54            0.000000            0.235702           -0.471405            0.471405           -0.994637            0.229843            -1.45432           -0.534950
+ KP_INST:0_I:54_J:66            0.000000            0.235702           -0.471405            0.471405           -0.801420            0.227628            -1.25668           -0.346163
+ KP_INST:0_I:54_J:78            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.228042            -1.45608           -0.543917
+ KP_INST:0_I:54_J:90            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.228983            -1.45797           -0.542035
+  KP_INST:0_I:66_J:6            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.217284            -1.43457           -0.565431
+ KP_INST:0_I:66_J:18            0.000000            0.235702           -0.471405            0.471405          -0.0567266            0.224673           -0.506072            0.392619
+ KP_INST:0_I:66_J:30            0.000000            0.235702           -0.471405            0.471405             1.00000            0.231783            0.536434             1.46357
+ KP_INST:0_I:66_J:42            0.000000            0.235702           -0.471405            0.471405           -0.832680            0.228770            -1.29022           -0.375140
+ KP_INST:0_I:66_J:54            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.224566            -1.44913           -0.550867
+ KP_INST:0_I:66_J:66            0.000000            0.235702           -0.471405            0.471405           -0.926852            0.223523            -1.37390           -0.479805
+ KP_INST:0_I:66_J:78            0.000000            0.235702           -0.471405            0.471405             1.00000            0.228995            0.542011             1.45799
+ KP_INST:0_I:66_J:90            0.000000            0.235702           -0.471405            0.471405           -0.912941            0.227133            -1.36721           -0.458675
+  KP_INST:0_I:78_J:6            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.213935            -1.42787           -0.572131
+ KP_INST:0_I:78_J:18            0.000000            0.235702           -0.471405            0.471405            0.845249            0.226458            0.392333             1.29817
+ KP_INST:0_I:78_J:30            0.000000            0.235702           -0.471405            0.471405             1.00000            0.230497            0.539006             1.46099
+ KP_INST:0_I:78_J:42            0.000000            0.235702           -0.471405            0.471405             1.00000            0.225627            0.548747             1.45125
+ KP_INST:0_I:78_J:54            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.207742            -1.41548           -0.584516
+ KP_INST:0_I:78_J:66            0.000000            0.235702           -0.471405            0.471405            0.621396            0.219776            0.181844             1.06095
+ KP_INST:0_I:78_J:78            0.000000            0.235702           -0.471405            0.471405             1.00000            0.226113            0.547774             1.45223
+ KP_INST:0_I:78_J:90            0.000000            0.235702           -0.471405            0.471405             1.00000            0.212009            0.575982             1.42402
+  KP_INST:0_I:90_J:6            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.216615            -1.43323           -0.566769
+ KP_INST:0_I:90_J:18            0.000000            0.235702           -0.471405            0.471405            0.187689            0.228623           -0.269557            0.644934
+ KP_INST:0_I:90_J:30            0.000000            0.235702           -0.471405            0.471405             1.00000            0.232290            0.535421             1.46458
+ KP_INST:0_I:90_J:42            0.000000            0.235702           -0.471405            0.471405           0.0721957            0.226018           -0.379841            0.524232
+ KP_INST:0_I:90_J:54            0.000000            0.235702           -0.471405            0.471405            -1.00000            0.213731            -1.42746           -0.572539
+ KP_INST:0_I:90_J:66            0.000000            0.235702           -0.471405            0.471405           -0.315514            0.221228           -0.757971            0.126942
+ KP_INST:0_I:90_J:78            0.000000            0.235702           -0.471405            0.471405             1.00000            0.228337            0.543326             1.45667
+ KP_INST:0_I:90_J:90            0.000000            0.235702           -0.471405            0.471405            0.645802            0.217069            0.211664             1.07994
+
+Note: Upper and lower uncertainty bounds reported above are 
+      calculated as: <prior,post>_mean +/- (2.0 * <prior,post>_stdev). 
+      For log-transformed parameters, the mean, stdev and range are reported 
+      with respect to the log of the parameter value. 
+
+Note : the above parameter uncertainty summary was written to file 'pest_test.par.usum.csv'
+
+drawing 20 posterior parameter realizations
