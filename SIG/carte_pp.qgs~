@@ -65,7 +65,7 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="SA" visible="1">
+  <Composer title="SA" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{538207ae-4c0f-4817-b49a-ddd717d6f1dc}" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -125,7 +125,7 @@
         <fillColor2 alpha="255" red="255" blue="255" green="255"/>
         <strokeColor alpha="255" red="0" blue="0" green="0"/>
         <textColor alpha="255" red="0" blue="0" green="0"/>
-        <ComposerItem pagey="180.163" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="108.385" y="180.163" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="135.013" outlineWidth="0.3" excludeFromExports="0" uuid="{6e4d09e3-fa08-468b-b150-18bd310af71d}" height="20" itemRotation="0" frame="false" pagex="108.385">
+        <ComposerItem pagey="182.684" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="110.653" y="182.684" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="135.013" outlineWidth="0.3" excludeFromExports="0" uuid="{6e4d09e3-fa08-468b-b150-18bd310af71d}" height="20" itemRotation="0" frame="false" pagex="110.653">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -190,7 +190,13 @@
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <customproperties/>
+      <customproperties>
+        <property key="imageCropMarginBottom" value="0"/>
+        <property key="imageCropMarginLeft" value="0"/>
+        <property key="imageCropMarginRight" value="0"/>
+        <property key="imageCropMarginTop" value="0"/>
+        <property key="imageCropToContents" value="false"/>
+      </customproperties>
     </Composition>
   </Composer>
   <projectlayers>
