@@ -448,9 +448,9 @@ Name                                      Type                             Time 
 0_167_66                                  Continuous HEAD                  All times    "1 168 67"
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1027
-      FILE NAME: M:\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\2D\workspace\pest_2D_R.dis.grb
+      FILE NAME: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\2D\workspace\pest_2D_R.dis.grb
 
- OPENED M:\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\2D\workspace\pest_2D_R.dis.grb
+ OPENED C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\2D\workspace\pest_2D_R.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1027   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
@@ -515,40 +515,40 @@ Name                                      Type                             Time 
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
                  DRN =           0.0000                   DRN =           0.0000     ETA             
-                 RIV =       5.9370E-04                   RIV =       5.9370E-04     AGY             
-                 RIV =       8.1359E-02                   RIV =       8.1359E-02     TET             
-                 RIV =           0.1029                   RIV =           0.1029     REA             
-                 RIV =       3.9277E-02                   RIV =       3.9277E-02     CANT            
-                 RIV =       4.9280E-02                   RIV =       4.9280E-02     TECH            
-                 RIV =       9.9079E-02                   RIV =       9.9079E-02     BOL             
+                 RIV =       2.1214E-03                   RIV =       2.1214E-03     AGY             
+                 RIV =       8.8966E-02                   RIV =       8.8966E-02     TET             
+                 RIV =           0.1096                   RIV =           0.1096     REA             
+                 RIV =       4.0925E-02                   RIV =       4.0925E-02     CANT            
+                 RIV =       5.5657E-02                   RIV =       5.5657E-02     TECH            
+                 RIV =           0.1059                   RIV =           0.1059     BOL             
                  RCH =           3.0365                   RCH =           3.0365     RCHA            
                  RCH =           0.0000                   RCH =           0.0000     P_AG            
                  RCH =           0.4966                   RCH =           0.4966     IRR             
-                 CHD =       1.7600E-02                   CHD =       1.7600E-02     THUIR           
-                 CHD =       5.7211E-03                   CHD =       5.7211E-03     SEA             
+                 CHD =       2.2387E-02                   CHD =       2.2387E-02     THUIR           
+                 CHD =       5.7219E-03                   CHD =       5.7219E-03     SEA             
 
-            TOTAL IN =           4.1289              TOTAL IN =           4.1289
+            TOTAL IN =           4.1643              TOTAL IN =           4.1643
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.5165                   WEL =           1.5165     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           0.3035                   DRN =           0.3035     ETA             
-                 RIV =           0.3939                   RIV =           0.3939     AGY             
-                 RIV =           0.5246                   RIV =           0.5246     TET             
-                 RIV =           0.1550                   RIV =           0.1550     REA             
-                 RIV =           0.1439                   RIV =           0.1439     CANT            
-                 RIV =           0.2377                   RIV =           0.2377     TECH            
-                 RIV =       7.3836E-02                   RIV =       7.3836E-02     BOL             
+                 DRN =           0.2928                   DRN =           0.2928     ETA             
+                 RIV =           0.3747                   RIV =           0.3747     AGY             
+                 RIV =           0.4965                   RIV =           0.4965     TET             
+                 RIV =           0.1446                   RIV =           0.1446     REA             
+                 RIV =           0.1359                   RIV =           0.1359     CANT            
+                 RIV =           0.2281                   RIV =           0.2281     TECH            
+                 RIV =       6.9737E-02                   RIV =       6.9737E-02     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCHA            
-                 RCH =           0.5458                   RCH =           0.5458     P_AG            
+                 RCH =           0.6822                   RCH =           0.6822     P_AG            
                  RCH =           0.0000                   RCH =           0.0000     IRR             
-                 CHD =       3.5231E-02                   CHD =       3.5231E-02     THUIR           
-                 CHD =           0.1986                   CHD =           0.1986     SEA             
+                 CHD =       2.9582E-02                   CHD =       2.9582E-02     THUIR           
+                 CHD =           0.1933                   CHD =           0.1933     SEA             
 
-           TOTAL OUT =           4.1285             TOTAL OUT =           4.1285
+           TOTAL OUT =           4.1640             TOTAL OUT =           4.1640
 
-            IN - OUT =       3.2525E-04              IN - OUT =       3.2525E-04
+            IN - OUT =       2.9374E-04              IN - OUT =       2.9374E-04
 
  PERCENT DISCREPANCY =           0.01     PERCENT DISCREPANCY =           0.01
 
