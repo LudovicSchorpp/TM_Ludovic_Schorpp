@@ -1,21 +1,7 @@
-2020-07-20 15:44:36.954008 starting: opening plot_pst_helper.log for logging
-2020-07-20 15:44:36.954008 plot_utils.pst_helper()
-2020-07-20 15:44:36.954008 starting: plot pst_prior
-2020-07-20 15:44:36.954008 starting: loading cov from parameter data
-2020-07-20 15:44:36.969640 finished: loading cov from parameter data took: 0:00:00.015632
-2020-07-20 15:44:36.969640 starting: building mean parameter values
-2020-07-20 15:44:36.969640 finished: building mean parameter values took: 0:00:00
-2020-07-20 15:44:36.985283 starting: building stdev parameter values
-2020-07-20 15:44:36.985283 finished: building stdev parameter values took: 0:00:00
-2020-07-20 15:44:36.985283 starting: plotting priors for kp_inst:0_i:6_j:6,kp_inst:0_i:6_j:18,kp_inst:0_i:6_j:30,kp_inst:0_i:6_j:42,kp_inst:0_i:6_j:54,kp_inst:0_i:6_j:66,kp_inst:0_i:6_j:78,kp_inst:0_i:6_j:90,kp_inst:0_i:18_j:6,kp_inst:0_i:18_j:18,kp_inst:0_i:18_j:30,kp_inst:0_i:18_j:42,kp_inst:0_i:18_j:54,kp_inst:0_i:18_j:66,kp_inst:0_i:18_j:78,kp_inst:0_i:18_j:90,kp_inst:0_i:30_j:6,kp_inst:0_i:30_j:18,kp_inst:0_i:30_j:30,kp_inst:0_i:30_j:42,kp_inst:0_i:30_j:54,kp_inst:0_i:30_j:66,kp_inst:0_i:30_j:78,kp_inst:0_i:30_j:90,kp_inst:0_i:42_j:6,kp_inst:0_i:42_j:18,kp_inst:0_i:42_j:30,kp_inst:0_i:42_j:42,kp_inst:0_i:42_j:54,kp_inst:0_i:42_j:66,kp_inst:0_i:42_j:78,kp_inst:0_i:42_j:90,kp_inst:0_i:54_j:6,kp_inst:0_i:54_j:18,kp_inst:0_i:54_j:30,kp_inst:0_i:54_j:42,kp_inst:0_i:54_j:54,kp_inst:0_i:54_j:66,kp_inst:0_i:54_j:78,kp_inst:0_i:54_j:90,kp_inst:0_i:66_j:6,kp_inst:0_i:66_j:18,kp_inst:0_i:66_j:30,kp_inst:0_i:66_j:42,kp_inst:0_i:66_j:54,kp_inst:0_i:66_j:66,kp_inst:0_i:66_j:78,kp_inst:0_i:66_j:90,kp_inst:0_i:78_j:6,kp_inst:0_i:78_j:18,kp_inst:0_i:78_j:30,kp_inst:0_i:78_j:42,kp_inst:0_i:78_j:54,kp_inst:0_i:78_j:66,kp_inst:0_i:78_j:78,kp_inst:0_i:78_j:90,kp_inst:0_i:90_j:6,kp_inst:0_i:90_j:18,kp_inst:0_i:90_j:30,kp_inst:0_i:90_j:42,kp_inst:0_i:90_j:54,kp_inst:0_i:90_j:66,kp_inst:0_i:90_j:78,kp_inst:0_i:90_j:90
-2020-07-20 15:44:37.132417 finished: plotting priors for kp_inst:0_i:6_j:6,kp_inst:0_i:6_j:18,kp_inst:0_i:6_j:30,kp_inst:0_i:6_j:42,kp_inst:0_i:6_j:54,kp_inst:0_i:6_j:66,kp_inst:0_i:6_j:78,kp_inst:0_i:6_j:90,kp_inst:0_i:18_j:6,kp_inst:0_i:18_j:18,kp_inst:0_i:18_j:30,kp_inst:0_i:18_j:42,kp_inst:0_i:18_j:54,kp_inst:0_i:18_j:66,kp_inst:0_i:18_j:78,kp_inst:0_i:18_j:90,kp_inst:0_i:30_j:6,kp_inst:0_i:30_j:18,kp_inst:0_i:30_j:30,kp_inst:0_i:30_j:42,kp_inst:0_i:30_j:54,kp_inst:0_i:30_j:66,kp_inst:0_i:30_j:78,kp_inst:0_i:30_j:90,kp_inst:0_i:42_j:6,kp_inst:0_i:42_j:18,kp_inst:0_i:42_j:30,kp_inst:0_i:42_j:42,kp_inst:0_i:42_j:54,kp_inst:0_i:42_j:66,kp_inst:0_i:42_j:78,kp_inst:0_i:42_j:90,kp_inst:0_i:54_j:6,kp_inst:0_i:54_j:18,kp_inst:0_i:54_j:30,kp_inst:0_i:54_j:42,kp_inst:0_i:54_j:54,kp_inst:0_i:54_j:66,kp_inst:0_i:54_j:78,kp_inst:0_i:54_j:90,kp_inst:0_i:66_j:6,kp_inst:0_i:66_j:18,kp_inst:0_i:66_j:30,kp_inst:0_i:66_j:42,kp_inst:0_i:66_j:54,kp_inst:0_i:66_j:66,kp_inst:0_i:66_j:78,kp_inst:0_i:66_j:90,kp_inst:0_i:78_j:6,kp_inst:0_i:78_j:18,kp_inst:0_i:78_j:30,kp_inst:0_i:78_j:42,kp_inst:0_i:78_j:54,kp_inst:0_i:78_j:66,kp_inst:0_i:78_j:78,kp_inst:0_i:78_j:90,kp_inst:0_i:90_j:6,kp_inst:0_i:90_j:18,kp_inst:0_i:90_j:30,kp_inst:0_i:90_j:42,kp_inst:0_i:90_j:54,kp_inst:0_i:90_j:66,kp_inst:0_i:90_j:78,kp_inst:0_i:90_j:90 took: 0:00:00.147134
-2020-07-20 15:44:37.702936 finished: plot pst_prior took: 0:00:00.748928
-2020-07-20 15:44:37.702936 starting: plot res_1to1
-2020-07-20 15:44:37.718576 starting: plotting 1to1 for obgnme
-2020-07-20 15:44:37.718576 using control file obsvals to calculate residuals
-2020-07-20 15:44:37.787578 finished: plotting 1to1 for obgnme took: 0:00:00.069002
-2020-07-20 15:44:37.934732 finished: plot res_1to1 took: 0:00:00.231796
-2020-07-20 15:44:37.934732 starting: plot res_phi_pie
-2020-07-20 15:44:37.956879 finished: plot res_phi_pie took: 0:00:00.022147
-2020-07-20 15:44:37.988144 starting: plot phi_progress
-2020-07-20 15:44:38.135281 finished: plot phi_progress took: 0:00:00.147137
+2020-07-22 10:52:15.702624 starting: opening plot_pst_helper.log for logging
+2020-07-22 10:52:15.704657 plot_utils.pst_helper()
+2020-07-22 10:52:15.704657 starting: plot res_1to1
+2020-07-22 10:52:15.926166 starting: plotting 1to1 for obgnme
+2020-07-22 10:52:15.936238 using control file obsvals to calculate residuals
+2020-07-22 10:52:16.228139 finished: plotting 1to1 for obgnme took: 0:00:00.301973
+2020-07-22 10:52:16.389203 finished: plot res_1to1 took: 0:00:00.684546

@@ -138,16 +138,20 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        50     8.85432                        1_GWF-(1,32,2)
- Under-relaxation          1               8.85432                        1_GWF-(1,32,2)
- Linear Solver             2        50     2.02498                        1_GWF-(1,7,57)
- Under-relaxation          2               2.02498                        1_GWF-(1,7,57)
- Linear Solver             3        50    0.112538                       1_GWF-(1,40,15)
- Under-relaxation          3              0.112538                       1_GWF-(1,40,15)
- Linear Solver             4         1   -7.126199E-04                    1_GWF-(1,1,94)
+ Linear Solver             1        50     8.81783                       1_GWF-(1,100,2)
+ Under-relaxation          1               8.81783                       1_GWF-(1,100,2)
+ Linear Solver             2        50     2.08625                       1_GWF-(1,31,43)
+ Under-relaxation          2               2.08625                       1_GWF-(1,31,43)
+ Linear Solver             3        50    0.436787                       1_GWF-(1,98,21)
+ Under-relaxation          3              0.436787                       1_GWF-(1,98,21)
+ Linear Solver             4        50    0.149625                       1_GWF-(1,11,48)
+ Under-relaxation          4              0.149625                       1_GWF-(1,11,48)
+ Linear Solver             5        25    2.124560E-02                  1_GWF-(1,100,68)
+ Under-relaxation          5              2.124560E-02                  1_GWF-(1,100,68)
+ Linear Solver             6         1   -4.145596E-04                    1_GWF-(1,2,77)
 
- 4 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 151 TOTAL ITERATIONS
+ 6 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 226 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -156,7 +160,7 @@ Integer Variables
  Allocated memory in megabytes:     5.34264    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/07/20 12:35:25
- Elapsed run time:  0.582 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/07/22 10:52:37
+ Elapsed run time:  0.252 Seconds
 
  Normal termination of simulation.
