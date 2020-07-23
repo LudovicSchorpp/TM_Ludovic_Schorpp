@@ -9,6 +9,10 @@ def main():
        os.remove('.\heads.csv')
     except Exception as e:
        print('error removing tmp file:.\heads.csv')
+    try:
+       os.remove('.\heads_pcmap.csv')
+    except Exception as e:
+       print('error removing tmp file:.\heads_pcmap.csv')
     pyemu.helpers.apply_list_and_array_pars(arr_par_file='mult2model_info.csv')
     pyemu.os_utils.run(r'..\..\..\exe\mf6')
 

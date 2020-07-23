@@ -144,16 +144,16 @@ Integer Variables
  Under-relaxation          2              -1530.82                       1_GWF-(1,114,2)
  Linear Solver             3        30    -14.7492                      1_GWF-(1,152,91)
  Under-relaxation          3              -14.7492                      1_GWF-(1,152,91)
- Linear Solver             4        12   -0.581510                      1_GWF-(1,44,128)
- Under-relaxation          4             -0.581510                      1_GWF-(1,44,128)
- Linear Solver             5         9   -0.152737                      1_GWF-(1,43,127)
- Under-relaxation          5             -0.152737                      1_GWF-(1,43,127)
- Linear Solver             6         4   -4.946647E-02                  1_GWF-(1,43,125)
- Under-relaxation          6             -4.946647E-02                  1_GWF-(1,43,125)
- Linear Solver             7         1   -6.306798E-04                  1_GWF-(1,43,124)
+ Linear Solver             4        13   -0.581561                      1_GWF-(1,44,128)
+ Under-relaxation          4             -0.581561                      1_GWF-(1,44,128)
+ Linear Solver             5         9   -0.152742                      1_GWF-(1,43,127)
+ Under-relaxation          5             -0.152742                      1_GWF-(1,43,127)
+ Linear Solver             6         4   -4.945198E-02                  1_GWF-(1,43,125)
+ Under-relaxation          6             -4.945198E-02                  1_GWF-(1,43,125)
+ Linear Solver             7         1   -6.804143E-04                  1_GWF-(1,43,124)
 
  7 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 156 TOTAL ITERATIONS
+ 157 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -162,7 +162,7 @@ Integer Variables
  Allocated memory in megabytes:     13.7826    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/07/22 20:14:01
- Elapsed run time:  1.230 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/07/23 22:55:49
+ Elapsed run time:  0.928 Seconds
 
  Normal termination of simulation.

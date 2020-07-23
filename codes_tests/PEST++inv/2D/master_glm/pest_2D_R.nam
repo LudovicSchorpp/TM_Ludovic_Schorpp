@@ -15,11 +15,11 @@ BEGIN packages
   CHD6  thuir.chd  thuir
   CHD6  sea.chd  sea
   DRN6  eta.drn  eta
-  RIV6  agy.chd  agy
-  RIV6  Tet.chd  tet
-  RIV6  Rea.chd  rea
-  RIV6  Cant.chd  cant
-  RIV6  Tech.chd  tech
-  RIV6  Bol.chd  bol
+  RIV6  agy.riv  agy
+  RIV6  Tet.riv  tet
+  RIV6  Rea.riv  rea
+  RIV6  Cant.riv  cant
+  RIV6  Tech.riv  tech
+  RIV6  Bol.riv  bol
 END packages
 
