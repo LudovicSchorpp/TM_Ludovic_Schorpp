@@ -1,0 +1,25 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  pest_2D_R.dis  dis
+  IC6  pest_2D_R.ic  ic
+  OC6  pest_2D_R.oc  oc
+  OBS6  pest_2D_R.obs  head_obs
+  NPF6  pest_2D_R.npf  npf
+  RCH6  pest_2D_R.rcha  rcha
+  RCH6  p_ag.rch  p_ag
+  RCH6  irr.rch  irr
+  WEL6  wel.wel  wel
+  WEL6  Corb.wel  corb
+  CHD6  thuir.chd  thuir
+  CHD6  sea.chd  sea
+  DRN6  eta.drn  eta
+  RIV6  agy.riv  agy
+  RIV6  Tet.riv  tet
+  RIV6  Rea.riv  rea
+  RIV6  Cant.riv  cant
+  RIV6  Tech.riv  tech
+  RIV6  Bol.riv  bol
+END packages
+
