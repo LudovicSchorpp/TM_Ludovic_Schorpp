@@ -9,7 +9,7 @@ binary compiled on Dec  9 2019 at 12:11:26
 
 using control file: "2D_test"
 
-in directory: "M:\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\2D_pp2700m_322obs_vario0.4_a5000\master_glm"
+in directory: "C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\2D_pp2700m_322obs_vario0.4_a5000\master_glm"
 
 
 Note 'NOPTMAX' == 0, switching to forgiveness mode when checking inputs
@@ -19,7 +19,6 @@ Note: 3 unused lines in pest control file:
   -->  line number 10: '0         0         0         0             jcosave          verboserec          jcosaveitn          reisaveitn          parsaveitn        noparsaverun' 
   -->  line number 12: '1' 
 noptmax = 0, resetting max_run_fail = 1
-parameter warning: 1 parameters are at lower bound
 parameter warning: 3 parameters are at upper bound
 parameter warning: KP_INST:0_I:40_J:112 initial value is less than lower bound
 parameter warning: KP_INST:0_I:40_J:121 initial value is less than lower bound
@@ -27,12 +26,15 @@ parameter warning: KP_INST:0_I:49_J:121 initial value is greater than upper boun
 parameter warning: KP_INST:0_I:58_J:76 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:58_J:112 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:67_J:76 initial value is greater than upper bound
-parameter warning: KP_INST:0_I:67_J:103 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:67_J:112 initial value is greater than upper bound
+parameter warning: KP_INST:0_I:76_J:112 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:85_J:121 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:94_J:112 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:94_J:121 initial value is greater than upper bound
+parameter warning: KP_INST:0_I:103_J:22 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:103_J:94 initial value is greater than upper bound
+parameter warning: KP_INST:0_I:103_J:103 initial value is greater than upper bound
+parameter warning: KP_INST:0_I:103_J:112 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:112_J:121 initial value is less than lower bound
 parameter warning: KP_INST:0_I:121_J:103 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:121_J:121 initial value is greater than upper bound
@@ -40,15 +42,18 @@ parameter warning: KP_INST:0_I:130_J:94 initial value is greater than upper boun
 parameter warning: KP_INST:0_I:130_J:103 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:130_J:112 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:130_J:121 initial value is greater than upper bound
-parameter warning: KP_INST:0_I:139_J:67 initial value is less than lower bound
 parameter warning: KP_INST:0_I:139_J:76 initial value is greater than upper bound
+parameter warning: KP_INST:0_I:157_J:58 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:157_J:112 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:166_J:58 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:166_J:103 initial value is less than lower bound
 parameter warning: KP_INST:0_I:175_J:49 initial value is greater than upper bound
 parameter warning: KP_INST:0_I:175_J:58 initial value is greater than upper bound
 parameter warning: MULTIPLIER_IRR_INST:0_ZONE:4.0 initial value is greater than upper bound
+parameter warning: MULTIPLIER_IRR_INST:0_ZONE:10.0 initial value is greater than upper bound
+parameter warning: MULTIPLIER_IRR_INST:0_ZONE:1.0 initial value is greater than upper bound
 parameter warning: MULTIPLIER_IRR_INST:0_ZONE:2.0 initial value is greater than upper bound
+parameter warning: MULTIPLIER_IRR_INST:0_ZONE:7.0 initial value is greater than upper bound
 parameter warning: MULTIPLIER_IRR_INST:0_ZONE:3.0 initial value is greater than upper bound
 parameter warning: MULTIPLIER_IRR_INST:0_ZONE:8.0 initial value is greater than upper bound
 parameter warning: MULTIPLIER_IRR_INST:0_ZONE:14.0 initial value is greater than upper bound
@@ -244,131 +249,131 @@ cond                  RELATIVE                     0.01                        0
 
 Parameter information
 NAME           TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND          GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
-kp_inst:0_i:31_j:121log                     FACTOR        2.99631           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:31_j:121log                     FACTOR        36.9173           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:40_j:112log                     FACTOR           0.05           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:40_j:121log                     FACTOR           0.05           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:49_j:103log                     FACTOR        5.21772           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:49_j:112log                     FACTOR        4.44558           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:49_j:103log                     FACTOR        4.93963           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:49_j:112log                     FACTOR        7.40768           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:49_j:121log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:58_j:76log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:58_j:85log                     FACTOR        2.24308           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:58_j:94log                     FACTOR        11.9143           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:58_j:103log                     FACTOR        40.5033           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:58_j:85log                     FACTOR        1.98434           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:58_j:94log                     FACTOR        9.78422           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:58_j:103log                     FACTOR        20.4904           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:58_j:112log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:58_j:121log                     FACTOR         11.936           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:58_j:121log                     FACTOR         18.437           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:67_j:76log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:67_j:85log                     FACTOR        34.9543           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:67_j:94log                     FACTOR        69.9987           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:67_j:103log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:67_j:85log                     FACTOR        14.0301           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:67_j:94log                     FACTOR        45.2241           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:67_j:103log                     FACTOR        47.9888           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:67_j:112log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:67_j:121log                     FACTOR        3.15095           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:76_j:76log                     FACTOR         11.037           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:76_j:85log                     FACTOR         13.002           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:76_j:94log                     FACTOR        28.9841           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:76_j:103log                     FACTOR        2.34586           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:76_j:112log                     FACTOR        19.9517           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:76_j:121log                     FACTOR        6.96638           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:85_j:67log                     FACTOR        1.29348           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:85_j:76log                     FACTOR        16.0531           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:85_j:85log                     FACTOR        10.7285           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:85_j:94log                     FACTOR        19.1197           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:85_j:103log                     FACTOR         28.387           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:85_j:112log                     FACTOR         59.986           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:67_j:121log                     FACTOR        6.35657           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:76_j:76log                     FACTOR        6.97411           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:76_j:85log                     FACTOR         6.2078           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:76_j:94log                     FACTOR        24.1663           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:76_j:103log                     FACTOR        2.93632           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:76_j:112log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:76_j:121log                     FACTOR        13.0647           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:85_j:67log                     FACTOR        1.13848           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:85_j:76log                     FACTOR        16.4036           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:85_j:85log                     FACTOR         14.572           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:85_j:94log                     FACTOR        19.4089           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:85_j:103log                     FACTOR        39.8878           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:85_j:112log                     FACTOR        61.2999           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:85_j:121log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:94_j:40log                     FACTOR        5.26301           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:94_j:49log                     FACTOR        4.11911           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:94_j:58log                     FACTOR        15.8405           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:94_j:67log                     FACTOR        34.7488           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:94_j:76log                     FACTOR        9.17842           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:94_j:85log                     FACTOR        7.22435           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:94_j:94log                     FACTOR         7.9828           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:94_j:103log                     FACTOR        28.0427           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:94_j:40log                     FACTOR        7.17507           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:94_j:49log                     FACTOR        4.17127           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:94_j:58log                     FACTOR        14.1762           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:94_j:67log                     FACTOR        28.9741           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:94_j:76log                     FACTOR         7.6875           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:94_j:85log                     FACTOR        4.30483           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:94_j:94log                     FACTOR        9.12458           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:94_j:103log                     FACTOR        19.1443           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:94_j:112log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:94_j:121log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:22log                     FACTOR         62.167           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:31log                     FACTOR        20.7348           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:40log                     FACTOR        2.61837           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:49log                     FACTOR       0.860977           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:58log                     FACTOR        17.2183           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:67log                     FACTOR        1.75795           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:76log                     FACTOR        1.20311           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:85log                     FACTOR       0.637478           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:22log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:31log                     FACTOR        27.0352           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:40log                     FACTOR         3.8763           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:49log                     FACTOR        1.16613           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:58log                     FACTOR        16.6671           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:67log                     FACTOR        3.05347           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:76log                     FACTOR        2.37348           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:85log                     FACTOR        1.26701           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:103_j:94log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:103log                     FACTOR        38.2666           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:112log                     FACTOR        36.8299           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:103_j:121log                     FACTOR        14.8792           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:13log                     FACTOR        2.61303           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:22log                     FACTOR        3.62934           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:31log                     FACTOR        1.08731           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:40log                     FACTOR        13.0876           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:49log                     FACTOR        36.6514           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:58log                     FACTOR        46.1158           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:67log                     FACTOR        21.2775           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:76log                     FACTOR        12.6646           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:85log                     FACTOR        33.5514           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:94log                     FACTOR        33.5367           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:103log                     FACTOR       0.246782           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:112_j:112log                     FACTOR        5.26766           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:103log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:112log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:103_j:121log                     FACTOR        45.2793           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:13log                     FACTOR        3.03683           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:22log                     FACTOR        3.29916           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:31log                     FACTOR       0.728979           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:40log                     FACTOR        12.0809           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:49log                     FACTOR        38.5762           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:58log                     FACTOR        67.6083           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:67log                     FACTOR        47.2172           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:76log                     FACTOR        26.8083           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:85log                     FACTOR        52.7254           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:94log                     FACTOR        60.1437           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:103log                     FACTOR       0.223116           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:112_j:112log                     FACTOR        6.36756           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:112_j:121log                     FACTOR           0.05           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:121_j:49log                     FACTOR        8.94028           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:121_j:58log                     FACTOR        5.20159           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:121_j:67log                     FACTOR        35.0276           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:121_j:76log                     FACTOR        32.4631           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:121_j:85log                     FACTOR        9.03862           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:121_j:94log                     FACTOR       0.431901           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:121_j:49log                     FACTOR        19.8203           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:121_j:58log                     FACTOR        12.6862           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:121_j:67log                     FACTOR        30.3026           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:121_j:76log                     FACTOR        27.1075           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:121_j:85log                     FACTOR        7.87651           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:121_j:94log                     FACTOR       0.384495           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:121_j:103log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:121_j:112log                     FACTOR        44.9221           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:121_j:112log                     FACTOR        32.5724           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:121_j:121log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:130_j:49log                     FACTOR       0.165907           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:130_j:58log                     FACTOR        30.5169           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:130_j:67log                     FACTOR        1.91544           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:130_j:76log                     FACTOR       0.935517           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:130_j:85log                     FACTOR        35.0372           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:130_j:49log                     FACTOR       0.125176           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:130_j:58log                     FACTOR        27.9004           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:130_j:67log                     FACTOR        1.47529           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:130_j:76log                     FACTOR        1.44693           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:130_j:85log                     FACTOR        35.2696           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:130_j:94log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:130_j:103log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:130_j:112log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:130_j:121log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:139_j:49log                     FACTOR       0.384397           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:139_j:58log                     FACTOR        1.87533           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:139_j:67log                     FACTOR           0.05           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:139_j:49log                     FACTOR        0.46521           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:139_j:58log                     FACTOR        2.31601           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:139_j:67log                     FACTOR       0.143511           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:139_j:76log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:139_j:85log                     FACTOR        0.35856           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:139_j:94log                     FACTOR        3.56649           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:139_j:103log                     FACTOR        20.3892           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:139_j:112log                     FACTOR         15.674           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:139_j:121log                     FACTOR       0.304393           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:148_j:58log                     FACTOR        1.03126           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:148_j:67log                     FACTOR        1.37358           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:148_j:76log                     FACTOR        1.48845           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:148_j:85log                     FACTOR       0.593256           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:148_j:94log                     FACTOR        16.4991           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:148_j:103log                     FACTOR        3.09426           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:148_j:112log                     FACTOR       0.117718           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:148_j:121log                     FACTOR       0.974598           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:157_j:58log                     FACTOR        11.3991           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:157_j:67log                     FACTOR        32.6024           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:157_j:76log                     FACTOR       0.732931           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:157_j:85log                     FACTOR        1.15851           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:157_j:94log                     FACTOR        7.86323           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:157_j:103log                     FACTOR       0.726512           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:139_j:85log                     FACTOR       0.446628           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:139_j:94log                     FACTOR        3.96788           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:139_j:103log                     FACTOR        23.9547           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:139_j:112log                     FACTOR        16.3516           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:139_j:121log                     FACTOR       0.973231           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:148_j:58log                     FACTOR       0.780092           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:148_j:67log                     FACTOR        2.24723           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:148_j:76log                     FACTOR        2.54332           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:148_j:85log                     FACTOR       0.838417           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:148_j:94log                     FACTOR        15.1754           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:148_j:103log                     FACTOR        3.77473           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:148_j:112log                     FACTOR       0.101432           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:148_j:121log                     FACTOR         1.2143           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:157_j:58log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:157_j:67log                     FACTOR        32.2589           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:157_j:76log                     FACTOR        1.57048           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:157_j:85log                     FACTOR        1.02631           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:157_j:94log                     FACTOR        8.01591           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:157_j:103log                     FACTOR       0.550798           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:157_j:112log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-kp_inst:0_i:157_j:121log                     FACTOR        0.77532           0.05             80      kp_inst:0              1              0                   1
+kp_inst:0_i:157_j:121log                     FACTOR        1.47953           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:166_j:58log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:166_j:103log                     FACTOR           0.05           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:175_j:49log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
 kp_inst:0_i:175_j:58log                     FACTOR             80           0.05             80      kp_inst:0              1              0                   1
-c_agy          log                     FACTOR          0.001          0.001           0.01           cond              1              0                   1
+c_agy          log                     FACTOR     0.00114924          0.001           0.01           cond              1              0                   1
 c_bol          log                     FACTOR           0.01          0.001           0.01           cond              1              0                   1
 c_cant         log                     FACTOR           0.01          0.001           0.01           cond              1              0                   1
-c_rea          log                     FACTOR     0.00774533          0.001           0.01           cond              1              0                   1
+c_rea          log                     FACTOR     0.00544239          0.001           0.01           cond              1              0                   1
 c_tech         log                     FACTOR           0.01          0.001           0.01           cond              1              0                   1
-c_tet          log                     FACTOR     0.00343748          0.001           0.01           cond              1              0                   1
+c_tet          log                     FACTOR     0.00449676          0.001           0.01           cond              1              0                   1
 multiplier_irr_inst:0_zone:4.0log                     FACTOR              2            0.8              2irr__multiplier              1              0                   1
-multiplier_irr_inst:0_zone:10.0log                     FACTOR            0.8            0.8              2irr__multiplier              1              0                   1
+multiplier_irr_inst:0_zone:10.0log                     FACTOR              2            0.8              2irr__multiplier              1              0                   1
 multiplier_irr_inst:0_zone:12.0log                     FACTOR            0.8            0.8              2irr__multiplier              1              0                   1
-multiplier_irr_inst:0_zone:1.0log                     FACTOR       0.915612            0.8              2irr__multiplier              1              0                   1
+multiplier_irr_inst:0_zone:1.0log                     FACTOR              2            0.8              2irr__multiplier              1              0                   1
 multiplier_irr_inst:0_zone:2.0log                     FACTOR              2            0.8              2irr__multiplier              1              0                   1
-multiplier_irr_inst:0_zone:7.0log                     FACTOR            0.8            0.8              2irr__multiplier              1              0                   1
+multiplier_irr_inst:0_zone:7.0log                     FACTOR              2            0.8              2irr__multiplier              1              0                   1
 multiplier_irr_inst:0_zone:3.0log                     FACTOR              2            0.8              2irr__multiplier              1              0                   1
 multiplier_irr_inst:0_zone:8.0log                     FACTOR              2            0.8              2irr__multiplier              1              0                   1
 multiplier_irr_inst:0_zone:13.0log                     FACTOR            0.8            0.8              2irr__multiplier              1              0                   1
@@ -746,131 +751,131 @@ FINAL OPTIMISATION RESULTS
      Parameter            
         Name         Value
     ------------  ------------
-    kp_inst:0_i:31_j:121       2.99631
+    kp_inst:0_i:31_j:121       36.9173
     kp_inst:0_i:40_j:112          0.05
     kp_inst:0_i:40_j:121          0.05
-    kp_inst:0_i:49_j:103       5.21772
-    kp_inst:0_i:49_j:112       4.44558
+    kp_inst:0_i:49_j:103       4.93963
+    kp_inst:0_i:49_j:112       7.40768
     kp_inst:0_i:49_j:121            80
     kp_inst:0_i:58_j:76            80
-    kp_inst:0_i:58_j:85       2.24308
-    kp_inst:0_i:58_j:94       11.9143
-    kp_inst:0_i:58_j:103       40.5033
+    kp_inst:0_i:58_j:85       1.98434
+    kp_inst:0_i:58_j:94       9.78422
+    kp_inst:0_i:58_j:103       20.4904
     kp_inst:0_i:58_j:112            80
-    kp_inst:0_i:58_j:121        11.936
+    kp_inst:0_i:58_j:121        18.437
     kp_inst:0_i:67_j:76            80
-    kp_inst:0_i:67_j:85       34.9543
-    kp_inst:0_i:67_j:94       69.9987
-    kp_inst:0_i:67_j:103            80
+    kp_inst:0_i:67_j:85       14.0301
+    kp_inst:0_i:67_j:94       45.2241
+    kp_inst:0_i:67_j:103       47.9888
     kp_inst:0_i:67_j:112            80
-    kp_inst:0_i:67_j:121       3.15095
-    kp_inst:0_i:76_j:76        11.037
-    kp_inst:0_i:76_j:85        13.002
-    kp_inst:0_i:76_j:94       28.9841
-    kp_inst:0_i:76_j:103       2.34586
-    kp_inst:0_i:76_j:112       19.9517
-    kp_inst:0_i:76_j:121       6.96638
-    kp_inst:0_i:85_j:67       1.29348
-    kp_inst:0_i:85_j:76       16.0531
-    kp_inst:0_i:85_j:85       10.7285
-    kp_inst:0_i:85_j:94       19.1197
-    kp_inst:0_i:85_j:103        28.387
-    kp_inst:0_i:85_j:112        59.986
+    kp_inst:0_i:67_j:121       6.35657
+    kp_inst:0_i:76_j:76       6.97411
+    kp_inst:0_i:76_j:85        6.2078
+    kp_inst:0_i:76_j:94       24.1663
+    kp_inst:0_i:76_j:103       2.93632
+    kp_inst:0_i:76_j:112            80
+    kp_inst:0_i:76_j:121       13.0647
+    kp_inst:0_i:85_j:67       1.13848
+    kp_inst:0_i:85_j:76       16.4036
+    kp_inst:0_i:85_j:85        14.572
+    kp_inst:0_i:85_j:94       19.4089
+    kp_inst:0_i:85_j:103       39.8878
+    kp_inst:0_i:85_j:112       61.2999
     kp_inst:0_i:85_j:121            80
-    kp_inst:0_i:94_j:40       5.26301
-    kp_inst:0_i:94_j:49       4.11911
-    kp_inst:0_i:94_j:58       15.8405
-    kp_inst:0_i:94_j:67       34.7488
-    kp_inst:0_i:94_j:76       9.17842
-    kp_inst:0_i:94_j:85       7.22435
-    kp_inst:0_i:94_j:94        7.9828
-    kp_inst:0_i:94_j:103       28.0427
+    kp_inst:0_i:94_j:40       7.17507
+    kp_inst:0_i:94_j:49       4.17127
+    kp_inst:0_i:94_j:58       14.1762
+    kp_inst:0_i:94_j:67       28.9741
+    kp_inst:0_i:94_j:76        7.6875
+    kp_inst:0_i:94_j:85       4.30483
+    kp_inst:0_i:94_j:94       9.12458
+    kp_inst:0_i:94_j:103       19.1443
     kp_inst:0_i:94_j:112            80
     kp_inst:0_i:94_j:121            80
-    kp_inst:0_i:103_j:22        62.167
-    kp_inst:0_i:103_j:31       20.7348
-    kp_inst:0_i:103_j:40       2.61837
-    kp_inst:0_i:103_j:49      0.860977
-    kp_inst:0_i:103_j:58       17.2183
-    kp_inst:0_i:103_j:67       1.75795
-    kp_inst:0_i:103_j:76       1.20311
-    kp_inst:0_i:103_j:85      0.637478
+    kp_inst:0_i:103_j:22            80
+    kp_inst:0_i:103_j:31       27.0352
+    kp_inst:0_i:103_j:40        3.8763
+    kp_inst:0_i:103_j:49       1.16613
+    kp_inst:0_i:103_j:58       16.6671
+    kp_inst:0_i:103_j:67       3.05347
+    kp_inst:0_i:103_j:76       2.37348
+    kp_inst:0_i:103_j:85       1.26701
     kp_inst:0_i:103_j:94            80
-    kp_inst:0_i:103_j:103       38.2666
-    kp_inst:0_i:103_j:112       36.8299
-    kp_inst:0_i:103_j:121       14.8792
-    kp_inst:0_i:112_j:13       2.61303
-    kp_inst:0_i:112_j:22       3.62934
-    kp_inst:0_i:112_j:31       1.08731
-    kp_inst:0_i:112_j:40       13.0876
-    kp_inst:0_i:112_j:49       36.6514
-    kp_inst:0_i:112_j:58       46.1158
-    kp_inst:0_i:112_j:67       21.2775
-    kp_inst:0_i:112_j:76       12.6646
-    kp_inst:0_i:112_j:85       33.5514
-    kp_inst:0_i:112_j:94       33.5367
-    kp_inst:0_i:112_j:103      0.246782
-    kp_inst:0_i:112_j:112       5.26766
+    kp_inst:0_i:103_j:103            80
+    kp_inst:0_i:103_j:112            80
+    kp_inst:0_i:103_j:121       45.2793
+    kp_inst:0_i:112_j:13       3.03683
+    kp_inst:0_i:112_j:22       3.29916
+    kp_inst:0_i:112_j:31      0.728979
+    kp_inst:0_i:112_j:40       12.0809
+    kp_inst:0_i:112_j:49       38.5762
+    kp_inst:0_i:112_j:58       67.6083
+    kp_inst:0_i:112_j:67       47.2172
+    kp_inst:0_i:112_j:76       26.8083
+    kp_inst:0_i:112_j:85       52.7254
+    kp_inst:0_i:112_j:94       60.1437
+    kp_inst:0_i:112_j:103      0.223116
+    kp_inst:0_i:112_j:112       6.36756
     kp_inst:0_i:112_j:121          0.05
-    kp_inst:0_i:121_j:49       8.94028
-    kp_inst:0_i:121_j:58       5.20159
-    kp_inst:0_i:121_j:67       35.0276
-    kp_inst:0_i:121_j:76       32.4631
-    kp_inst:0_i:121_j:85       9.03862
-    kp_inst:0_i:121_j:94      0.431901
+    kp_inst:0_i:121_j:49       19.8203
+    kp_inst:0_i:121_j:58       12.6862
+    kp_inst:0_i:121_j:67       30.3026
+    kp_inst:0_i:121_j:76       27.1075
+    kp_inst:0_i:121_j:85       7.87651
+    kp_inst:0_i:121_j:94      0.384495
     kp_inst:0_i:121_j:103            80
-    kp_inst:0_i:121_j:112       44.9221
+    kp_inst:0_i:121_j:112       32.5724
     kp_inst:0_i:121_j:121            80
-    kp_inst:0_i:130_j:49      0.165907
-    kp_inst:0_i:130_j:58       30.5169
-    kp_inst:0_i:130_j:67       1.91544
-    kp_inst:0_i:130_j:76      0.935517
-    kp_inst:0_i:130_j:85       35.0372
+    kp_inst:0_i:130_j:49      0.125176
+    kp_inst:0_i:130_j:58       27.9004
+    kp_inst:0_i:130_j:67       1.47529
+    kp_inst:0_i:130_j:76       1.44693
+    kp_inst:0_i:130_j:85       35.2696
     kp_inst:0_i:130_j:94            80
     kp_inst:0_i:130_j:103            80
     kp_inst:0_i:130_j:112            80
     kp_inst:0_i:130_j:121            80
-    kp_inst:0_i:139_j:49      0.384397
-    kp_inst:0_i:139_j:58       1.87533
-    kp_inst:0_i:139_j:67          0.05
+    kp_inst:0_i:139_j:49       0.46521
+    kp_inst:0_i:139_j:58       2.31601
+    kp_inst:0_i:139_j:67      0.143511
     kp_inst:0_i:139_j:76            80
-    kp_inst:0_i:139_j:85       0.35856
-    kp_inst:0_i:139_j:94       3.56649
-    kp_inst:0_i:139_j:103       20.3892
-    kp_inst:0_i:139_j:112        15.674
-    kp_inst:0_i:139_j:121      0.304393
-    kp_inst:0_i:148_j:58       1.03126
-    kp_inst:0_i:148_j:67       1.37358
-    kp_inst:0_i:148_j:76       1.48845
-    kp_inst:0_i:148_j:85      0.593256
-    kp_inst:0_i:148_j:94       16.4991
-    kp_inst:0_i:148_j:103       3.09426
-    kp_inst:0_i:148_j:112      0.117718
-    kp_inst:0_i:148_j:121      0.974598
-    kp_inst:0_i:157_j:58       11.3991
-    kp_inst:0_i:157_j:67       32.6024
-    kp_inst:0_i:157_j:76      0.732931
-    kp_inst:0_i:157_j:85       1.15851
-    kp_inst:0_i:157_j:94       7.86323
-    kp_inst:0_i:157_j:103      0.726512
+    kp_inst:0_i:139_j:85      0.446628
+    kp_inst:0_i:139_j:94       3.96788
+    kp_inst:0_i:139_j:103       23.9547
+    kp_inst:0_i:139_j:112       16.3516
+    kp_inst:0_i:139_j:121      0.973231
+    kp_inst:0_i:148_j:58      0.780092
+    kp_inst:0_i:148_j:67       2.24723
+    kp_inst:0_i:148_j:76       2.54332
+    kp_inst:0_i:148_j:85      0.838417
+    kp_inst:0_i:148_j:94       15.1754
+    kp_inst:0_i:148_j:103       3.77473
+    kp_inst:0_i:148_j:112      0.101432
+    kp_inst:0_i:148_j:121        1.2143
+    kp_inst:0_i:157_j:58            80
+    kp_inst:0_i:157_j:67       32.2589
+    kp_inst:0_i:157_j:76       1.57048
+    kp_inst:0_i:157_j:85       1.02631
+    kp_inst:0_i:157_j:94       8.01591
+    kp_inst:0_i:157_j:103      0.550798
     kp_inst:0_i:157_j:112            80
-    kp_inst:0_i:157_j:121       0.77532
+    kp_inst:0_i:157_j:121       1.47953
     kp_inst:0_i:166_j:58            80
     kp_inst:0_i:166_j:103          0.05
     kp_inst:0_i:175_j:49            80
     kp_inst:0_i:175_j:58            80
-    c_agy                0.001
+    c_agy           0.00114924
     c_bol                 0.01
     c_cant                0.01
-    c_rea           0.00774533
+    c_rea           0.00544239
     c_tech                0.01
-    c_tet           0.00343748
+    c_tet           0.00449676
     multiplier_irr_inst:0_zone:4.0             2
-    multiplier_irr_inst:0_zone:10.0           0.8
+    multiplier_irr_inst:0_zone:10.0             2
     multiplier_irr_inst:0_zone:12.0           0.8
-    multiplier_irr_inst:0_zone:1.0      0.915612
+    multiplier_irr_inst:0_zone:1.0             2
     multiplier_irr_inst:0_zone:2.0             2
-    multiplier_irr_inst:0_zone:7.0           0.8
+    multiplier_irr_inst:0_zone:7.0             2
     multiplier_irr_inst:0_zone:3.0             2
     multiplier_irr_inst:0_zone:8.0             2
     multiplier_irr_inst:0_zone:13.0           0.8
@@ -883,333 +888,333 @@ FINAL OPTIMISATION RESULTS
 
   Observations with optimal model-simulated equivalents and residuals
                  Name        Group             Measured             Modelled             Residual               Weight
- hds_usecol:0_100_51_time:1.0     real_obs              69.7900              68.0939              1.69612              1.00000
- hds_usecol:0_100_75_time:1.0     real_obs              36.0600              37.5226             -1.46257              1.00000
- hds_usecol:0_101_53_time:1.0     real_obs              66.5200              65.3749              1.14513              1.00000
- hds_usecol:0_101_59_time:1.0     real_obs              59.7900              60.6954            -0.905396              1.00000
- hds_usecol:0_102_22_time:1.0     real_obs              116.430              120.265             -3.83472              1.00000
- hds_usecol:0_102_24_time:1.0     real_obs              114.380              118.148             -3.76829              1.00000
- hds_usecol:0_102_28_time:1.0     real_obs              108.450              111.454             -3.00383              1.00000
- hds_usecol:0_102_57_time:1.0     real_obs              60.3400              63.1802             -2.84022              1.00000
- hds_usecol:0_103_32_time:1.0     real_obs              102.930              106.146             -3.21633              1.00000
- hds_usecol:0_104_45_time:1.0     real_obs              77.4300              83.3470             -5.91696              1.00000
- hds_usecol:0_104_74_time:1.0     real_obs              48.9900              47.3231              1.66691              1.00000
- hds_usecol:0_106_17_time:1.0     real_obs              127.760              128.627            -0.866928              1.00000
- hds_usecol:0_106_58_time:1.0     real_obs              73.5200              69.9771              3.54288              1.00000
- hds_usecol:0_106_71_time:1.0     real_obs              55.2400              56.2176            -0.977582              1.00000
- hds_usecol:0_108_24_time:1.0     real_obs              121.480              124.660             -3.18005              1.00000
- hds_usecol:0_108_42_time:1.0     real_obs              93.2100              92.1775              1.03246              1.00000
- hds_usecol:0_108_43_time:1.0     real_obs              95.4100              92.7595              2.65053              1.00000
- hds_usecol:0_109_12_time:1.0     real_obs              142.390              140.993              1.39720              1.00000
- hds_usecol:0_110_22_time:1.0     real_obs              128.460              130.115             -1.65548              1.00000
- hds_usecol:0_111_42_time:1.0     real_obs              99.2000              97.5147              1.68529              1.00000
- hds_usecol:0_112_16_time:1.0     real_obs              143.620              143.791            -0.170760              1.00000
- hds_usecol:0_112_61_time:1.0     real_obs              71.0000              72.8178             -1.81777              1.00000
- hds_usecol:0_113_102_time:1.0     real_obs              9.27000              10.1213            -0.851349              1.00000
- hds_usecol:0_114_114_time:1.0     real_obs              3.72000              4.78530             -1.06530              1.00000
- hds_usecol:0_114_13_time:1.0     real_obs              153.520              153.949            -0.429114              1.00000
- hds_usecol:0_114_6_time:1.0     real_obs              170.690              170.763           -0.0733730              1.00000
- hds_usecol:0_115_66_time:1.0     real_obs              68.3100              67.1030              1.20698              1.00000
- hds_usecol:0_116_100_time:1.0     real_obs              15.6600              19.5317             -3.87171              1.00000
- hds_usecol:0_116_1_time:1.0     real_obs              179.610              179.429             0.181017              1.00000
- hds_usecol:0_116_59_time:1.0     real_obs              76.1300              76.2003           -0.0703340              1.00000
- hds_usecol:0_116_60_time:1.0     real_obs              75.2800              74.5940             0.686041              1.00000
- hds_usecol:0_119_43_time:1.0     real_obs              101.070              110.250             -9.18024              1.00000
- hds_usecol:0_120_112_time:1.0     real_obs              6.47000              6.62839            -0.158392              1.00000
- hds_usecol:0_120_123_time:1.0     real_obs              2.01000              1.66767             0.342330              1.00000
- hds_usecol:0_121_104_time:1.0     real_obs              11.5800              9.02148              2.55852              1.00000
- hds_usecol:0_121_82_time:1.0     real_obs              41.7600              43.4968             -1.73679              1.00000
- hds_usecol:0_122_94_time:1.0     real_obs              12.3400              12.9652            -0.625243              1.00000
- hds_usecol:0_125_75_time:1.0     real_obs              55.5600              57.6976             -2.13763              1.00000
- hds_usecol:0_129_100_time:1.0     real_obs              10.7100              11.3316            -0.621602              1.00000
- hds_usecol:0_129_69_time:1.0     real_obs              70.4900              73.0894             -2.59935              1.00000
- hds_usecol:0_129_86_time:1.0     real_obs              26.7500              27.5462            -0.796246              1.00000
- hds_usecol:0_131_65_time:1.0     real_obs              80.6700              86.7102             -6.04019              1.00000
- hds_usecol:0_132_50_time:1.0     real_obs              104.870              109.772             -4.90232              1.00000
- hds_usecol:0_133_56_time:1.0     real_obs              103.650              103.554            0.0956105              1.00000
- hds_usecol:0_135_119_time:1.0     real_obs              3.46000              3.99368            -0.533680              1.00000
- hds_usecol:0_136_70_time:1.0     real_obs              79.9700              80.1490            -0.178961              1.00000
- hds_usecol:0_137_73_time:1.0     real_obs              86.1200              77.7155              8.40447              1.00000
- hds_usecol:0_138_116_time:1.0     real_obs              5.43000              6.54788             -1.11788              1.00000
- hds_usecol:0_139_122_time:1.0     real_obs              2.48000              4.10841             -1.62841              1.00000
- hds_usecol:0_140_74_time:1.0     real_obs              64.8200              71.2033             -6.38327              1.00000
- hds_usecol:0_140_89_time:1.0     real_obs              28.1500              30.6992             -2.54920              1.00000
- hds_usecol:0_141_114_time:1.0     real_obs              8.48000              8.69432            -0.214316              1.00000
- hds_usecol:0_142_116_time:1.0     real_obs              5.66000              8.17200             -2.51200              1.00000
- hds_usecol:0_143_107_time:1.0     real_obs              16.8700              14.7684              2.10160              1.00000
- hds_usecol:0_146_106_time:1.0     real_obs              19.6000              19.5069            0.0930912              1.00000
- hds_usecol:0_147_91_time:1.0     real_obs              34.4300              32.6683              1.76168              1.00000
- hds_usecol:0_147_97_time:1.0     real_obs              24.1400              27.3923             -3.25235              1.00000
- hds_usecol:0_148_98_time:1.0     real_obs              24.6600              28.2555             -3.59551              1.00000
- hds_usecol:0_149_129_time:1.0     real_obs             0.790000             0.466790             0.323210              1.00000
- hds_usecol:0_152_94_time:1.0     real_obs              39.0400              40.7964             -1.75645              1.00000
- hds_usecol:0_153_111_time:1.0     real_obs              31.5700              24.0722              7.49776              1.00000
- hds_usecol:0_153_113_time:1.0     real_obs              31.8700              22.9251              8.94495              1.00000
- hds_usecol:0_153_124_time:1.0     real_obs              5.90000              7.49294             -1.59294              1.00000
- hds_usecol:0_154_126_time:1.0     real_obs              4.90000              5.67470            -0.774700              1.00000
- hds_usecol:0_155_123_time:1.0     real_obs              8.50000              15.4531             -6.95306              1.00000
- hds_usecol:0_155_131_time:1.0     real_obs             0.380000             0.114553             0.265447              1.00000
- hds_usecol:0_156_96_time:1.0     real_obs              49.8000              44.7078              5.09224              1.00000
- hds_usecol:0_156_99_time:1.0     real_obs              44.4800              42.7583              1.72172              1.00000
- hds_usecol:0_165_101_time:1.0     real_obs              96.3100              91.8371              4.47294              1.00000
- hds_usecol:0_165_59_time:1.0     real_obs              109.510              97.7567              11.7533              1.00000
- hds_usecol:0_167_59_time:1.0     real_obs              111.000              95.6412              15.3588              1.00000
- hds_usecol:0_167_66_time:1.0     real_obs              75.5200              80.0338             -4.51379              1.00000
- hds_usecol:0_50_94_time:1.0     real_obs              9.85000              11.3079             -1.45793              1.00000
- hds_usecol:0_56_126_time:1.0     real_obs             0.460000            0.0512248             0.408775              1.00000
- hds_usecol:0_57_83_time:1.0     real_obs              27.2800              25.3401              1.93987              1.00000
- hds_usecol:0_62_126_time:1.0     real_obs              1.32000             0.888762             0.431238              1.00000
- hds_usecol:0_63_117_time:1.0     real_obs             0.680000             0.644217            0.0357835              1.00000
- hds_usecol:0_63_94_time:1.0     real_obs              5.92000              9.18908             -3.26908              1.00000
- hds_usecol:0_63_99_time:1.0     real_obs              6.48000              6.17654             0.303465              1.00000
- hds_usecol:0_64_104_time:1.0     real_obs              1.78000              3.99834             -2.21834              1.00000
- hds_usecol:0_64_111_time:1.0     real_obs             0.460000              1.65513             -1.19513              1.00000
- hds_usecol:0_64_92_time:1.0     real_obs              12.2200              10.8041              1.41589              1.00000
- hds_usecol:0_64_96_time:1.0     real_obs              5.45000              8.03877             -2.58877              1.00000
- hds_usecol:0_66_128_time:1.0     real_obs              1.31500              1.53536            -0.220360              1.00000
- hds_usecol:0_67_110_time:1.0     real_obs              1.71000              2.36486            -0.654856              1.00000
- hds_usecol:0_67_119_time:1.0     real_obs             0.830000              1.56758            -0.737578              1.00000
- hds_usecol:0_69_104_time:1.0     real_obs              3.80000              4.53785            -0.737846              1.00000
- hds_usecol:0_69_105_time:1.0     real_obs              2.73000              4.07845             -1.34845              1.00000
- hds_usecol:0_69_116_time:1.0     real_obs              1.47000              2.02591            -0.555911              1.00000
- hds_usecol:0_69_118_time:1.0     real_obs              2.35000              1.83346             0.516541              1.00000
- hds_usecol:0_70_73_time:1.0     real_obs              27.9500              22.0372              5.91275              1.00000
- hds_usecol:0_71_72_time:1.0     real_obs              30.6700              22.1585              8.51150              1.00000
- hds_usecol:0_73_83_time:1.0     real_obs              19.7600              18.1273              1.63271              1.00000
- hds_usecol:0_74_115_time:1.0     real_obs              2.45000              2.84209            -0.392088              1.00000
- hds_usecol:0_75_124_time:1.0     real_obs              2.90000              2.66411             0.235888              1.00000
- hds_usecol:0_76_89_time:1.0     real_obs              13.4000              14.1524            -0.752430              1.00000
- hds_usecol:0_79_66_time:1.0     real_obs              64.2300              62.3220              1.90804              1.00000
- hds_usecol:0_79_77_time:1.0     real_obs              27.9000              27.7751             0.124920              1.00000
- hds_usecol:0_80_103_time:1.0     real_obs              6.93000              8.16590             -1.23590              1.00000
- hds_usecol:0_82_115_time:1.0     real_obs              3.37000              3.75401            -0.384010              1.00000
- hds_usecol:0_83_106_time:1.0     real_obs              6.86000              6.79400            0.0659959              1.00000
- hds_usecol:0_83_124_time:1.0     real_obs              1.37000              1.76543            -0.395429              1.00000
- hds_usecol:0_83_67_time:1.0     real_obs              45.3400              45.8648            -0.524792              1.00000
- hds_usecol:0_83_95_time:1.0     real_obs              15.8600              13.0514              2.80857              1.00000
- hds_usecol:0_84_125_time:1.0     real_obs             0.510000              1.43567            -0.925670              1.00000
- hds_usecol:0_84_127_time:1.0     real_obs             0.590000             0.799253            -0.209253              1.00000
- hds_usecol:0_84_94_time:1.0     real_obs              10.4000              13.6929             -3.29288              1.00000
- hds_usecol:0_88_110_time:1.0     real_obs              6.20000              5.66558             0.534424              1.00000
- hds_usecol:0_91_101_time:1.0     real_obs              11.8000              10.2859              1.51414              1.00000
- hds_usecol:0_92_93_time:1.0     real_obs              17.2400              16.9375             0.302487              1.00000
- hds_usecol:0_93_114_time:1.0     real_obs              4.90000              4.77397             0.126033              1.00000
- hds_usecol:0_94_103_time:1.0     real_obs              10.6600              10.0870             0.573005              1.00000
- hds_usecol:0_94_115_time:1.0     real_obs              4.15000              4.50259            -0.352589              1.00000
- hds_usecol:0_94_95_time:1.0     real_obs              16.2200              15.9006             0.319355              1.00000
- hds_usecol:0_95_128_time:1.0     real_obs              1.50000             0.511973             0.988027              1.00000
- hds_usecol:0_95_75_time:1.0     real_obs              40.8600              39.1844              1.67556              1.00000
- hds_usecol:0_95_81_time:1.0     real_obs              31.1200              30.5905             0.529533              1.00000
- hds_usecol:0_95_95_time:1.0     real_obs              16.1300              16.0874            0.0425557              1.00000
- hds_usecol:0_98_43_time:1.0     real_obs              82.8700              83.4571            -0.587109              1.00000
- hds_usecol:0_98_91_time:1.0     real_obs              16.7000              18.9741             -2.27406              1.00000
- hds_usecol:0_99_118_time:1.0     real_obs              2.90000              3.49935            -0.599354              1.00000
- hds_usecol:0_99_44_time:1.0     real_obs              81.3600              82.9235             -1.56347              1.00000
- pcmap_usecol:0_100_26_time:1.0    obs_pcmap              115.546              112.905              2.64098              1.00000
- pcmap_usecol:0_100_30_time:1.0    obs_pcmap              107.386              105.906              1.48029              1.00000
- pcmap_usecol:0_100_37_time:1.0    obs_pcmap              93.7563              93.8292           -0.0729375              1.00000
- pcmap_usecol:0_100_94_time:1.0    obs_pcmap              19.0230              17.1151              1.90789              1.00000
- pcmap_usecol:0_101_125_time:1.0    obs_pcmap             0.865965              1.15944            -0.293475              1.00000
- pcmap_usecol:0_101_22_time:1.0    obs_pcmap              124.238              119.345              4.89302              1.00000
- pcmap_usecol:0_102_109_time:1.0    obs_pcmap              8.06296              7.85179             0.211169              1.00000
- pcmap_usecol:0_102_117_time:1.0    obs_pcmap              3.97945              3.73950             0.239957              1.00000
- pcmap_usecol:0_102_124_time:1.0    obs_pcmap              1.10694              1.27464            -0.167701              1.00000
- pcmap_usecol:0_102_20_time:1.0    obs_pcmap              128.979              122.111              6.86766              1.00000
- pcmap_usecol:0_103_124_time:1.0    obs_pcmap             0.947781             0.953424          -0.00564272              1.00000
- pcmap_usecol:0_103_63_time:1.0    obs_pcmap              58.1863              57.8308             0.355474              1.00000
- pcmap_usecol:0_104_112_time:1.0    obs_pcmap              6.50279              6.26369             0.239100              1.00000
- pcmap_usecol:0_107_107_time:1.0    obs_pcmap              9.37044              9.01878             0.351655              1.00000
+ hds_usecol:0_100_51_time:1.0     real_obs              69.7900              68.9978             0.792154              1.00000
+ hds_usecol:0_100_75_time:1.0     real_obs              36.0600              37.8688             -1.80881              1.00000
+ hds_usecol:0_101_53_time:1.0     real_obs              66.5200              65.8894             0.630602              1.00000
+ hds_usecol:0_101_59_time:1.0     real_obs              59.7900              61.1102             -1.32021              1.00000
+ hds_usecol:0_102_22_time:1.0     real_obs              116.430              118.505             -2.07547              1.00000
+ hds_usecol:0_102_24_time:1.0     real_obs              114.380              116.317             -1.93671              1.00000
+ hds_usecol:0_102_28_time:1.0     real_obs              108.450              110.483             -2.03259              1.00000
+ hds_usecol:0_102_57_time:1.0     real_obs              60.3400              63.3837             -3.04371              1.00000
+ hds_usecol:0_103_32_time:1.0     real_obs              102.930              105.641             -2.71052              1.00000
+ hds_usecol:0_104_45_time:1.0     real_obs              77.4300              82.9166             -5.48659              1.00000
+ hds_usecol:0_104_74_time:1.0     real_obs              48.9900              47.8088              1.18118              1.00000
+ hds_usecol:0_106_17_time:1.0     real_obs              127.760              127.295             0.464598              1.00000
+ hds_usecol:0_106_58_time:1.0     real_obs              73.5200              69.7222              3.79778              1.00000
+ hds_usecol:0_106_71_time:1.0     real_obs              55.2400              56.3904             -1.15041              1.00000
+ hds_usecol:0_108_24_time:1.0     real_obs              121.480              123.070             -1.59036              1.00000
+ hds_usecol:0_108_42_time:1.0     real_obs              93.2100              91.6517              1.55834              1.00000
+ hds_usecol:0_108_43_time:1.0     real_obs              95.4100              92.2593              3.15074              1.00000
+ hds_usecol:0_109_12_time:1.0     real_obs              142.390              140.454              1.93642              1.00000
+ hds_usecol:0_110_22_time:1.0     real_obs              128.460              128.777            -0.317027              1.00000
+ hds_usecol:0_111_42_time:1.0     real_obs              99.2000              97.2654              1.93465              1.00000
+ hds_usecol:0_112_16_time:1.0     real_obs              143.620              142.464              1.15634              1.00000
+ hds_usecol:0_112_61_time:1.0     real_obs              71.0000              72.6823             -1.68225              1.00000
+ hds_usecol:0_113_102_time:1.0     real_obs              9.27000              10.1250            -0.854972              1.00000
+ hds_usecol:0_114_114_time:1.0     real_obs              3.72000              4.89782             -1.17782              1.00000
+ hds_usecol:0_114_13_time:1.0     real_obs              153.520              153.339             0.180758              1.00000
+ hds_usecol:0_114_6_time:1.0     real_obs              170.690              170.616            0.0744680              1.00000
+ hds_usecol:0_115_66_time:1.0     real_obs              68.3100              67.4866             0.823436              1.00000
+ hds_usecol:0_116_100_time:1.0     real_obs              15.6600              19.2107             -3.55069              1.00000
+ hds_usecol:0_116_1_time:1.0     real_obs              179.610              179.295             0.314608              1.00000
+ hds_usecol:0_116_59_time:1.0     real_obs              76.1300              76.5418            -0.411766              1.00000
+ hds_usecol:0_116_60_time:1.0     real_obs              75.2800              74.9844             0.295612              1.00000
+ hds_usecol:0_119_43_time:1.0     real_obs              101.070              110.068             -8.99785              1.00000
+ hds_usecol:0_120_112_time:1.0     real_obs              6.47000              7.05708            -0.587077              1.00000
+ hds_usecol:0_120_123_time:1.0     real_obs              2.01000              1.70565             0.304353              1.00000
+ hds_usecol:0_121_104_time:1.0     real_obs              11.5800              9.61354              1.96646              1.00000
+ hds_usecol:0_121_82_time:1.0     real_obs              41.7600              43.7094             -1.94936              1.00000
+ hds_usecol:0_122_94_time:1.0     real_obs              12.3400              12.7357            -0.395741              1.00000
+ hds_usecol:0_125_75_time:1.0     real_obs              55.5600              57.6044             -2.04438              1.00000
+ hds_usecol:0_129_100_time:1.0     real_obs              10.7100              12.0252             -1.31516              1.00000
+ hds_usecol:0_129_69_time:1.0     real_obs              70.4900              73.0317             -2.54175              1.00000
+ hds_usecol:0_129_86_time:1.0     real_obs              26.7500              28.2084             -1.45843              1.00000
+ hds_usecol:0_131_65_time:1.0     real_obs              80.6700              86.7678             -6.09780              1.00000
+ hds_usecol:0_132_50_time:1.0     real_obs              104.870              109.586             -4.71632              1.00000
+ hds_usecol:0_133_56_time:1.0     real_obs              103.650              103.037             0.612630              1.00000
+ hds_usecol:0_135_119_time:1.0     real_obs              3.46000              4.73928             -1.27928              1.00000
+ hds_usecol:0_136_70_time:1.0     real_obs              79.9700              80.7866            -0.816598              1.00000
+ hds_usecol:0_137_73_time:1.0     real_obs              86.1200              76.5627              9.55731              1.00000
+ hds_usecol:0_138_116_time:1.0     real_obs              5.43000              6.80396             -1.37396              1.00000
+ hds_usecol:0_139_122_time:1.0     real_obs              2.48000              4.29370             -1.81370              1.00000
+ hds_usecol:0_140_74_time:1.0     real_obs              64.8200              71.8558             -7.03584              1.00000
+ hds_usecol:0_140_89_time:1.0     real_obs              28.1500              30.8135             -2.66348              1.00000
+ hds_usecol:0_141_114_time:1.0     real_obs              8.48000              8.68561            -0.205610              1.00000
+ hds_usecol:0_142_116_time:1.0     real_obs              5.66000              7.93684             -2.27684              1.00000
+ hds_usecol:0_143_107_time:1.0     real_obs              16.8700              14.9047              1.96531              1.00000
+ hds_usecol:0_146_106_time:1.0     real_obs              19.6000              19.2568             0.343178              1.00000
+ hds_usecol:0_147_91_time:1.0     real_obs              34.4300              33.0612              1.36879              1.00000
+ hds_usecol:0_147_97_time:1.0     real_obs              24.1400              26.9450             -2.80498              1.00000
+ hds_usecol:0_148_98_time:1.0     real_obs              24.6600              27.5428             -2.88279              1.00000
+ hds_usecol:0_149_129_time:1.0     real_obs             0.790000             0.355991             0.434009              1.00000
+ hds_usecol:0_152_94_time:1.0     real_obs              39.0400              40.8246             -1.78463              1.00000
+ hds_usecol:0_153_111_time:1.0     real_obs              31.5700              20.5750              10.9950              1.00000
+ hds_usecol:0_153_113_time:1.0     real_obs              31.8700              19.2259              12.6441              1.00000
+ hds_usecol:0_153_124_time:1.0     real_obs              5.90000              5.38553             0.514469              1.00000
+ hds_usecol:0_154_126_time:1.0     real_obs              4.90000              3.86542              1.03458              1.00000
+ hds_usecol:0_155_123_time:1.0     real_obs              8.50000              12.4580             -3.95796              1.00000
+ hds_usecol:0_155_131_time:1.0     real_obs             0.380000             0.118606             0.261394              1.00000
+ hds_usecol:0_156_96_time:1.0     real_obs              49.8000              45.0828              4.71719              1.00000
+ hds_usecol:0_156_99_time:1.0     real_obs              44.4800              42.9459              1.53413              1.00000
+ hds_usecol:0_165_101_time:1.0     real_obs              96.3100              86.3487              9.96130              1.00000
+ hds_usecol:0_165_59_time:1.0     real_obs              109.510              103.049              6.46109              1.00000
+ hds_usecol:0_167_59_time:1.0     real_obs              111.000              100.378              10.6223              1.00000
+ hds_usecol:0_167_66_time:1.0     real_obs              75.5200              77.6933             -2.17328              1.00000
+ hds_usecol:0_50_94_time:1.0     real_obs              9.85000              12.7031             -2.85314              1.00000
+ hds_usecol:0_56_126_time:1.0     real_obs             0.460000            0.0469663             0.413034              1.00000
+ hds_usecol:0_57_83_time:1.0     real_obs              27.2800              30.1623             -2.88226              1.00000
+ hds_usecol:0_62_126_time:1.0     real_obs              1.32000             0.507944             0.812056              1.00000
+ hds_usecol:0_63_117_time:1.0     real_obs             0.680000             0.710846           -0.0308464              1.00000
+ hds_usecol:0_63_94_time:1.0     real_obs              5.92000              10.1347             -4.21471              1.00000
+ hds_usecol:0_63_99_time:1.0     real_obs              6.48000              6.82103            -0.341030              1.00000
+ hds_usecol:0_64_104_time:1.0     real_obs              1.78000              4.04331             -2.26331              1.00000
+ hds_usecol:0_64_111_time:1.0     real_obs             0.460000              1.70101             -1.24101              1.00000
+ hds_usecol:0_64_92_time:1.0     real_obs              12.2200              11.7365             0.483511              1.00000
+ hds_usecol:0_64_96_time:1.0     real_obs              5.45000              8.82581             -3.37581              1.00000
+ hds_usecol:0_66_128_time:1.0     real_obs              1.31500             0.806031             0.508969              1.00000
+ hds_usecol:0_67_110_time:1.0     real_obs              1.71000              2.45494            -0.744945              1.00000
+ hds_usecol:0_67_119_time:1.0     real_obs             0.830000              1.75743            -0.927429              1.00000
+ hds_usecol:0_69_104_time:1.0     real_obs              3.80000              4.63300            -0.833005              1.00000
+ hds_usecol:0_69_105_time:1.0     real_obs              2.73000              4.12229             -1.39229              1.00000
+ hds_usecol:0_69_116_time:1.0     real_obs              1.47000              2.32091            -0.850908              1.00000
+ hds_usecol:0_69_118_time:1.0     real_obs              2.35000              2.16882             0.181175              1.00000
+ hds_usecol:0_70_73_time:1.0     real_obs              27.9500              24.9098              3.04023              1.00000
+ hds_usecol:0_71_72_time:1.0     real_obs              30.6700              25.0120              5.65798              1.00000
+ hds_usecol:0_73_83_time:1.0     real_obs              19.7600              20.0895            -0.329523              1.00000
+ hds_usecol:0_74_115_time:1.0     real_obs              2.45000              2.99140            -0.541404              1.00000
+ hds_usecol:0_75_124_time:1.0     real_obs              2.90000              2.78835             0.111647              1.00000
+ hds_usecol:0_76_89_time:1.0     real_obs              13.4000              14.7276             -1.32763              1.00000
+ hds_usecol:0_79_66_time:1.0     real_obs              64.2300              64.0517             0.178300              1.00000
+ hds_usecol:0_79_77_time:1.0     real_obs              27.9000              29.9293             -2.02926              1.00000
+ hds_usecol:0_80_103_time:1.0     real_obs              6.93000              7.68634            -0.756338              1.00000
+ hds_usecol:0_82_115_time:1.0     real_obs              3.37000              3.56102            -0.191025              1.00000
+ hds_usecol:0_83_106_time:1.0     real_obs              6.86000              6.44531             0.414686              1.00000
+ hds_usecol:0_83_124_time:1.0     real_obs              1.37000              1.59148            -0.221484              1.00000
+ hds_usecol:0_83_67_time:1.0     real_obs              45.3400              47.5425             -2.20249              1.00000
+ hds_usecol:0_83_95_time:1.0     real_obs              15.8600              13.0805              2.77950              1.00000
+ hds_usecol:0_84_125_time:1.0     real_obs             0.510000              1.24837            -0.738375              1.00000
+ hds_usecol:0_84_127_time:1.0     real_obs             0.590000             0.678592           -0.0885920              1.00000
+ hds_usecol:0_84_94_time:1.0     real_obs              10.4000              13.8284             -3.42842              1.00000
+ hds_usecol:0_88_110_time:1.0     real_obs              6.20000              5.50313             0.696873              1.00000
+ hds_usecol:0_91_101_time:1.0     real_obs              11.8000              10.4817              1.31829              1.00000
+ hds_usecol:0_92_93_time:1.0     real_obs              17.2400              16.9215             0.318491              1.00000
+ hds_usecol:0_93_114_time:1.0     real_obs              4.90000              4.67918             0.220816              1.00000
+ hds_usecol:0_94_103_time:1.0     real_obs              10.6600              10.3290             0.330998              1.00000
+ hds_usecol:0_94_115_time:1.0     real_obs              4.15000              4.37943            -0.229429              1.00000
+ hds_usecol:0_94_95_time:1.0     real_obs              16.2200              16.1340            0.0860188              1.00000
+ hds_usecol:0_95_128_time:1.0     real_obs              1.50000             0.467590              1.03241              1.00000
+ hds_usecol:0_95_75_time:1.0     real_obs              40.8600              40.0130             0.846976              1.00000
+ hds_usecol:0_95_81_time:1.0     real_obs              31.1200              31.2389            -0.118899              1.00000
+ hds_usecol:0_95_95_time:1.0     real_obs              16.1300              16.3495            -0.219471              1.00000
+ hds_usecol:0_98_43_time:1.0     real_obs              82.8700              86.0839             -3.21385              1.00000
+ hds_usecol:0_98_91_time:1.0     real_obs              16.7000              19.4830             -2.78303              1.00000
+ hds_usecol:0_99_118_time:1.0     real_obs              2.90000              3.16017            -0.260171              1.00000
+ hds_usecol:0_99_44_time:1.0     real_obs              81.3600              84.5274             -3.16740              1.00000
+ pcmap_usecol:0_100_26_time:1.0    obs_pcmap              115.546              111.775              3.77080              1.00000
+ pcmap_usecol:0_100_30_time:1.0    obs_pcmap              107.386              105.627              1.75909              1.00000
+ pcmap_usecol:0_100_37_time:1.0    obs_pcmap              93.7563              94.5429            -0.786682              1.00000
+ pcmap_usecol:0_100_94_time:1.0    obs_pcmap              19.0230              17.5926              1.43041              1.00000
+ pcmap_usecol:0_101_125_time:1.0    obs_pcmap             0.865965             0.822930            0.0430347              1.00000
+ pcmap_usecol:0_101_22_time:1.0    obs_pcmap              124.238              117.572              6.66550              1.00000
+ pcmap_usecol:0_102_109_time:1.0    obs_pcmap              8.06296              7.71303             0.349926              1.00000
+ pcmap_usecol:0_102_117_time:1.0    obs_pcmap              3.97945              3.38141             0.598044              1.00000
+ pcmap_usecol:0_102_124_time:1.0    obs_pcmap              1.10694             0.895188             0.211756              1.00000
+ pcmap_usecol:0_102_20_time:1.0    obs_pcmap              128.979              120.529              8.45035              1.00000
+ pcmap_usecol:0_103_124_time:1.0    obs_pcmap             0.947781             0.681796             0.265985              1.00000
+ pcmap_usecol:0_103_63_time:1.0    obs_pcmap              58.1863              57.9951             0.191129              1.00000
+ pcmap_usecol:0_104_112_time:1.0    obs_pcmap              6.50279              6.04433             0.458460              1.00000
+ pcmap_usecol:0_107_107_time:1.0    obs_pcmap              9.37044              8.77926             0.591183              1.00000
  pcmap_usecol:0_107_128_time:1.0    obs_pcmap             -1.72675             0.100000             -1.82675              1.00000
- pcmap_usecol:0_107_29_time:1.0    obs_pcmap              113.836              115.386             -1.55030              1.00000
- pcmap_usecol:0_107_49_time:1.0    obs_pcmap              81.1756              83.9960             -2.82038              1.00000
- pcmap_usecol:0_110_104_time:1.0    obs_pcmap              11.7168              12.4532            -0.736434              1.00000
- pcmap_usecol:0_111_38_time:1.0    obs_pcmap              104.395              103.643             0.752729              1.00000
- pcmap_usecol:0_111_55_time:1.0    obs_pcmap              77.4428              79.0560             -1.61315              1.00000
- pcmap_usecol:0_112_107_time:1.0    obs_pcmap              9.09347              8.21908             0.874398              1.00000
- pcmap_usecol:0_112_10_time:1.0    obs_pcmap              158.220              153.896              4.32394              1.00000
- pcmap_usecol:0_112_28_time:1.0    obs_pcmap              125.494              124.528             0.965882              1.00000
- pcmap_usecol:0_112_42_time:1.0    obs_pcmap              99.3110              98.5885             0.722541              1.00000
- pcmap_usecol:0_113_77_time:1.0    obs_pcmap              49.9453              48.7422              1.20308              1.00000
- pcmap_usecol:0_114_41_time:1.0    obs_pcmap              103.433              102.121              1.31218              1.00000
- pcmap_usecol:0_114_74_time:1.0    obs_pcmap              56.1144              55.6360             0.478383              1.00000
- pcmap_usecol:0_114_7_time:1.0    obs_pcmap              165.633              168.308             -2.67430              1.00000
- pcmap_usecol:0_115_110_time:1.0    obs_pcmap              7.22815              6.80061             0.427540              1.00000
- pcmap_usecol:0_115_43_time:1.0    obs_pcmap              100.794              100.230             0.563935              1.00000
- pcmap_usecol:0_115_59_time:1.0    obs_pcmap              77.2600              75.8980              1.36204              1.00000
- pcmap_usecol:0_116_122_time:1.0    obs_pcmap              1.43233              1.40138            0.0309523              1.00000
+ pcmap_usecol:0_107_29_time:1.0    obs_pcmap              113.836              114.428            -0.592471              1.00000
+ pcmap_usecol:0_107_49_time:1.0    obs_pcmap              81.1756              83.7019             -2.52632              1.00000
+ pcmap_usecol:0_110_104_time:1.0    obs_pcmap              11.7168              12.3307            -0.613924              1.00000
+ pcmap_usecol:0_111_38_time:1.0    obs_pcmap              104.395              103.238              1.15760              1.00000
+ pcmap_usecol:0_111_55_time:1.0    obs_pcmap              77.4428              79.1144             -1.67154              1.00000
+ pcmap_usecol:0_112_107_time:1.0    obs_pcmap              9.09347              8.11963             0.973847              1.00000
+ pcmap_usecol:0_112_10_time:1.0    obs_pcmap              158.220              153.569              4.65100              1.00000
+ pcmap_usecol:0_112_28_time:1.0    obs_pcmap              125.494              124.952             0.541911              1.00000
+ pcmap_usecol:0_112_42_time:1.0    obs_pcmap              99.3110              98.4475             0.863543              1.00000
+ pcmap_usecol:0_113_77_time:1.0    obs_pcmap              49.9453              49.3171             0.628168              1.00000
+ pcmap_usecol:0_114_41_time:1.0    obs_pcmap              103.433              102.054              1.37923              1.00000
+ pcmap_usecol:0_114_74_time:1.0    obs_pcmap              56.1144              56.0387            0.0756555              1.00000
+ pcmap_usecol:0_114_7_time:1.0    obs_pcmap              165.633              168.143             -2.50950              1.00000
+ pcmap_usecol:0_115_110_time:1.0    obs_pcmap              7.22815              6.91515             0.313003              1.00000
+ pcmap_usecol:0_115_43_time:1.0    obs_pcmap              100.794              100.200             0.593731              1.00000
+ pcmap_usecol:0_115_59_time:1.0    obs_pcmap              77.2600              76.1095              1.15048              1.00000
+ pcmap_usecol:0_116_122_time:1.0    obs_pcmap              1.43233              1.45369           -0.0213591              1.00000
  pcmap_usecol:0_116_36_time:1.0    obs_pcmap              122.362              120.000              2.36223              1.00000
- pcmap_usecol:0_116_78_time:1.0    obs_pcmap              49.9389              48.0854              1.85347              1.00000
- pcmap_usecol:0_116_90_time:1.0    obs_pcmap              26.9566              27.5479            -0.591317              1.00000
- pcmap_usecol:0_117_52_time:1.0    obs_pcmap              88.7883              88.7098            0.0784721              1.00000
- pcmap_usecol:0_117_56_time:1.0    obs_pcmap              83.4156              82.0897              1.32588              1.00000
- pcmap_usecol:0_117_71_time:1.0    obs_pcmap              61.3049              61.3844           -0.0794446              1.00000
- pcmap_usecol:0_117_99_time:1.0    obs_pcmap              13.8799              16.9718             -3.09194              1.00000
- pcmap_usecol:0_118_50_time:1.0    obs_pcmap              93.2763              92.1093              1.16707              1.00000
- pcmap_usecol:0_118_70_time:1.0    obs_pcmap              63.9277              62.7015              1.22628              1.00000
- pcmap_usecol:0_118_84_time:1.0    obs_pcmap              37.8721              38.7023            -0.830176              1.00000
- pcmap_usecol:0_119_103_time:1.0    obs_pcmap              9.80723              9.66187             0.145351              1.00000
- pcmap_usecol:0_121_104_time:1.0    obs_pcmap              8.52038              9.02148            -0.501095              1.00000
- pcmap_usecol:0_121_79_time:1.0    obs_pcmap              47.0608              48.7928             -1.73196              1.00000
- pcmap_usecol:0_123_127_time:1.0    obs_pcmap            -0.741649             0.616151             -1.35780              1.00000
- pcmap_usecol:0_123_83_time:1.0    obs_pcmap              37.3807              41.7815             -4.40078              1.00000
- pcmap_usecol:0_124_64_time:1.0    obs_pcmap              77.6492              77.0047             0.644492              1.00000
- pcmap_usecol:0_125_67_time:1.0    obs_pcmap              72.5319              72.9605            -0.428542              1.00000
- pcmap_usecol:0_126_69_time:1.0    obs_pcmap              69.6732              70.2093            -0.536070              1.00000
- pcmap_usecol:0_126_95_time:1.0    obs_pcmap              12.1099              14.9265             -2.81651              1.00000
- pcmap_usecol:0_127_68_time:1.0    obs_pcmap              73.0452              74.0208            -0.975624              1.00000
- pcmap_usecol:0_127_82_time:1.0    obs_pcmap              40.0938              39.2896             0.804255              1.00000
- pcmap_usecol:0_128_62_time:1.0    obs_pcmap              88.1934              88.2949            -0.101442              1.00000
- pcmap_usecol:0_128_81_time:1.0    obs_pcmap              42.5467              42.6911            -0.144464              1.00000
- pcmap_usecol:0_129_97_time:1.0    obs_pcmap              8.91218              13.5103             -4.59808              1.00000
- pcmap_usecol:0_130_113_time:1.0    obs_pcmap              5.60254              6.30752            -0.704982              1.00000
- pcmap_usecol:0_130_115_time:1.0    obs_pcmap              5.50005              5.50175          -0.00169805              1.00000
- pcmap_usecol:0_130_129_time:1.0    obs_pcmap             -2.95004             0.228316             -3.17836              1.00000
- pcmap_usecol:0_130_48_time:1.0    obs_pcmap              117.145              112.773              4.37214              1.00000
- pcmap_usecol:0_130_71_time:1.0    obs_pcmap              69.0316              70.3745             -1.34297              1.00000
- pcmap_usecol:0_131_116_time:1.0    obs_pcmap              5.46662              5.26489             0.201732              1.00000
- pcmap_usecol:0_132_112_time:1.0    obs_pcmap              5.77466              6.94549             -1.17083              1.00000
- pcmap_usecol:0_132_48_time:1.0    obs_pcmap              120.539              123.771             -3.23189              1.00000
- pcmap_usecol:0_133_66_time:1.0    obs_pcmap              86.3116              88.0661             -1.75456              1.00000
- pcmap_usecol:0_134_91_time:1.0    obs_pcmap              19.7230              18.5264              1.19662              1.00000
- pcmap_usecol:0_135_74_time:1.0    obs_pcmap              71.1711              71.5344            -0.363288              1.00000
- pcmap_usecol:0_136_48_time:1.0    obs_pcmap              129.702              129.164             0.538053              1.00000
- pcmap_usecol:0_136_57_time:1.0    obs_pcmap              111.042              108.439              2.60281              1.00000
- pcmap_usecol:0_136_69_time:1.0    obs_pcmap              84.9840              83.1620              1.82198              1.00000
- pcmap_usecol:0_136_84_time:1.0    obs_pcmap              44.0057              46.8402             -2.83448              1.00000
- pcmap_usecol:0_137_117_time:1.0    obs_pcmap              6.37001              5.52996             0.840056              1.00000
- pcmap_usecol:0_138_112_time:1.0    obs_pcmap              8.18181              8.01826             0.163556              1.00000
- pcmap_usecol:0_139_120_time:1.0    obs_pcmap              5.79982              4.30890              1.49092              1.00000
- pcmap_usecol:0_139_53_time:1.0    obs_pcmap              118.552              116.615              1.93728              1.00000
- pcmap_usecol:0_139_60_time:1.0    obs_pcmap              110.376              114.284             -3.90776              1.00000
- pcmap_usecol:0_140_107_time:1.0    obs_pcmap              10.6641              11.1924            -0.528220              1.00000
- pcmap_usecol:0_141_53_time:1.0    obs_pcmap              120.424              119.202              1.22211              1.00000
- pcmap_usecol:0_141_56_time:1.0    obs_pcmap              118.373              117.874             0.498373              1.00000
- pcmap_usecol:0_141_58_time:1.0    obs_pcmap              116.295              118.652             -2.35722              1.00000
- pcmap_usecol:0_142_112_time:1.0    obs_pcmap              11.6420              10.2500              1.39209              1.00000
- pcmap_usecol:0_142_129_time:1.0    obs_pcmap             -3.22086              1.74480             -4.96566              1.00000
- pcmap_usecol:0_143_111_time:1.0    obs_pcmap              12.5888              11.4165              1.17228              1.00000
- pcmap_usecol:0_144_110_time:1.0    obs_pcmap              14.4767              13.0158              1.46088              1.00000
- pcmap_usecol:0_146_61_time:1.0    obs_pcmap              114.848              109.261              5.58707              1.00000
- pcmap_usecol:0_146_85_time:1.0    obs_pcmap              58.8957              56.5085              2.38715              1.00000
- pcmap_usecol:0_147_103_time:1.0    obs_pcmap              22.3231              23.4813             -1.15821              1.00000
- pcmap_usecol:0_147_108_time:1.0    obs_pcmap              19.0623              19.4973            -0.434997              1.00000
- pcmap_usecol:0_147_116_time:1.0    obs_pcmap              14.5484              11.5932              2.95520              1.00000
- pcmap_usecol:0_148_55_time:1.0    obs_pcmap              118.924              116.832              2.09149              1.00000
- pcmap_usecol:0_149_114_time:1.0    obs_pcmap              18.2164              12.7473              5.46906              1.00000
- pcmap_usecol:0_149_98_time:1.0    obs_pcmap              32.5106              30.7107              1.79987              1.00000
- pcmap_usecol:0_150_77_time:1.0    obs_pcmap              88.3906              82.0120              6.37851              1.00000
- pcmap_usecol:0_151_101_time:1.0    obs_pcmap              31.0045              32.7435             -1.73904              1.00000
- pcmap_usecol:0_151_91_time:1.0    obs_pcmap              49.5586              33.3550              16.2035              1.00000
- pcmap_usecol:0_152_79_time:1.0    obs_pcmap              83.9955              82.5032              1.49230              1.00000
- pcmap_usecol:0_152_99_time:1.0    obs_pcmap              35.6104              36.0022            -0.391769              1.00000
- pcmap_usecol:0_153_113_time:1.0    obs_pcmap              23.3482              22.9251             0.423139              1.00000
- pcmap_usecol:0_153_98_time:1.0    obs_pcmap              38.5239              38.5103            0.0136155              1.00000
- pcmap_usecol:0_154_78_time:1.0    obs_pcmap              87.5303              87.7785            -0.248133              1.00000
- pcmap_usecol:0_154_86_time:1.0    obs_pcmap              66.3135              41.5380              24.7755              1.00000
- pcmap_usecol:0_155_74_time:1.0    obs_pcmap              94.3270              95.9774             -1.65043              1.00000
- pcmap_usecol:0_157_111_time:1.0    obs_pcmap              28.9092              24.1428              4.76643              1.00000
- pcmap_usecol:0_157_61_time:1.0    obs_pcmap              106.813              98.9411              7.87147              1.00000
- pcmap_usecol:0_158_77_time:1.0    obs_pcmap              84.9821              80.9139              4.06827              1.00000
- pcmap_usecol:0_158_89_time:1.0    obs_pcmap              59.4522              54.3509              5.10129              1.00000
- pcmap_usecol:0_159_122_time:1.0    obs_pcmap              16.7848              27.0448             -10.2600              1.00000
- pcmap_usecol:0_159_58_time:1.0    obs_pcmap              103.075              98.7178              4.35697              1.00000
- pcmap_usecol:0_159_84_time:1.0    obs_pcmap              70.9777              69.7184              1.25933              1.00000
- pcmap_usecol:0_160_112_time:1.0    obs_pcmap              30.2395              24.1416              6.09792              1.00000
- pcmap_usecol:0_163_103_time:1.0    obs_pcmap              38.8404              43.1853             -4.34489              1.00000
- pcmap_usecol:0_164_93_time:1.0    obs_pcmap              50.3741              57.8177             -7.44355              1.00000
- pcmap_usecol:0_165_54_time:1.0    obs_pcmap              100.354              99.2554              1.09870              1.00000
- pcmap_usecol:0_166_53_time:1.0    obs_pcmap              99.5766              99.7554            -0.178828              1.00000
- pcmap_usecol:0_167_55_time:1.0    obs_pcmap              95.7553              99.0468             -3.29149              1.00000
- pcmap_usecol:0_167_63_time:1.0    obs_pcmap              86.7510              90.7814             -4.03036              1.00000
- pcmap_usecol:0_168_63_time:1.0    obs_pcmap              84.3538              88.0403             -3.68659              1.00000
- pcmap_usecol:0_168_66_time:1.0    obs_pcmap              81.8161              79.5748              2.24128              1.00000
- pcmap_usecol:0_170_54_time:1.0    obs_pcmap              94.6994              100.054             -5.35417              1.00000
- pcmap_usecol:0_171_52_time:1.0    obs_pcmap              97.1915              102.290             -5.09893              1.00000
- pcmap_usecol:0_173_52_time:1.0    obs_pcmap              95.9787              104.894             -8.91528              1.00000
- pcmap_usecol:0_25_128_time:1.0    obs_pcmap              1.63878          4.18364e-06              1.63877              1.00000
- pcmap_usecol:0_29_120_time:1.0    obs_pcmap              1.60509          5.28306e-14              1.60509              1.00000
- pcmap_usecol:0_32_118_time:1.0    obs_pcmap              1.66495          9.91948e-17              1.66495              1.00000
- pcmap_usecol:0_32_123_time:1.0    obs_pcmap              1.87512          5.63044e-12              1.87512              1.00000
- pcmap_usecol:0_36_126_time:1.0    obs_pcmap              1.86193          0.000171978              1.86175              1.00000
- pcmap_usecol:0_39_125_time:1.0    obs_pcmap              1.30681          0.000209508              1.30660              1.00000
- pcmap_usecol:0_40_108_time:1.0    obs_pcmap              2.00564              1.64766             0.357984              1.00000
- pcmap_usecol:0_41_121_time:1.0    obs_pcmap             0.863876          1.62998e-12             0.863875              1.00000
- pcmap_usecol:0_42_121_time:1.0    obs_pcmap             0.901208          4.74321e-11             0.901208              1.00000
- pcmap_usecol:0_42_128_time:1.0    obs_pcmap              1.12354             0.112965              1.01058              1.00000
- pcmap_usecol:0_43_126_time:1.0    obs_pcmap              1.03416          8.60217e-05              1.03408              1.00000
- pcmap_usecol:0_45_124_time:1.0    obs_pcmap             0.801161          2.72374e-05             0.801134              1.00000
- pcmap_usecol:0_48_117_time:1.0    obs_pcmap            -0.570954         -3.33536e-06            -0.570951              1.00000
- pcmap_usecol:0_48_97_time:1.0    obs_pcmap              7.87776              9.93814             -2.06038              1.00000
- pcmap_usecol:0_49_96_time:1.0    obs_pcmap              9.43670              9.83913            -0.402429              1.00000
- pcmap_usecol:0_51_120_time:1.0    obs_pcmap            -0.183351          1.14189e-05            -0.183363              1.00000
- pcmap_usecol:0_52_109_time:1.0    obs_pcmap            -0.548206           0.00477820            -0.552984              1.00000
- pcmap_usecol:0_53_96_time:1.0    obs_pcmap              8.90869              9.17740            -0.268715              1.00000
- pcmap_usecol:0_55_101_time:1.0    obs_pcmap              3.88843              5.09060             -1.20217              1.00000
- pcmap_usecol:0_57_82_time:1.0    obs_pcmap              24.3927              24.6591            -0.266433              1.00000
- pcmap_usecol:0_58_89_time:1.0    obs_pcmap              15.3158              16.2230            -0.907196              1.00000
- pcmap_usecol:0_59_100_time:1.0    obs_pcmap              5.51439              5.28803             0.226360              1.00000
- pcmap_usecol:0_60_86_time:1.0    obs_pcmap              17.8960              17.9763           -0.0803693              1.00000
- pcmap_usecol:0_62_115_time:1.0    obs_pcmap             0.613044             0.373449             0.239595              1.00000
- pcmap_usecol:0_63_108_time:1.0    obs_pcmap              2.09511              2.31490            -0.219790              1.00000
- pcmap_usecol:0_63_82_time:1.0    obs_pcmap              20.5549              19.5483              1.00665              1.00000
- pcmap_usecol:0_64_108_time:1.0    obs_pcmap              2.42808              2.48616           -0.0580807              1.00000
- pcmap_usecol:0_64_110_time:1.0    obs_pcmap              1.80685              1.89538           -0.0885240              1.00000
- pcmap_usecol:0_67_103_time:1.0    obs_pcmap              5.16877              4.76599             0.402785              1.00000
- pcmap_usecol:0_67_79_time:1.0    obs_pcmap              21.9807              20.1819              1.79871              1.00000
- pcmap_usecol:0_67_88_time:1.0    obs_pcmap              14.6307              13.8001             0.830557              1.00000
- pcmap_usecol:0_69_81_time:1.0    obs_pcmap              19.8756              19.0049             0.870707              1.00000
- pcmap_usecol:0_70_80_time:1.0    obs_pcmap              21.3347              19.6062              1.72847              1.00000
- pcmap_usecol:0_71_76_time:1.0    obs_pcmap              26.0250              21.4759              4.54906              1.00000
- pcmap_usecol:0_73_88_time:1.0    obs_pcmap              15.7399              14.1195              1.62035              1.00000
- pcmap_usecol:0_74_92_time:1.0    obs_pcmap              13.4348              12.3491              1.08570              1.00000
- pcmap_usecol:0_75_102_time:1.0    obs_pcmap              7.27730              7.62560            -0.348304              1.00000
- pcmap_usecol:0_79_74_time:1.0    obs_pcmap              32.9075              29.8727              3.03480              1.00000
- pcmap_usecol:0_79_75_time:1.0    obs_pcmap              31.2009              29.1103              2.09062              1.00000
- pcmap_usecol:0_79_93_time:1.0    obs_pcmap              13.8327              13.2769             0.555823              1.00000
- pcmap_usecol:0_80_123_time:1.0    obs_pcmap              2.12720              2.23422            -0.107025              1.00000
- pcmap_usecol:0_80_69_time:1.0    obs_pcmap              40.3566              39.1293              1.22728              1.00000
- pcmap_usecol:0_81_105_time:1.0    obs_pcmap              6.45917              7.09520            -0.636031              1.00000
- pcmap_usecol:0_81_93_time:1.0    obs_pcmap              14.3598              13.7682             0.591634              1.00000
- pcmap_usecol:0_82_127_time:1.0    obs_pcmap              1.36182             0.814710             0.547109              1.00000
- pcmap_usecol:0_83_116_time:1.0    obs_pcmap              3.77433              3.60523             0.169102              1.00000
- pcmap_usecol:0_83_92_time:1.0    obs_pcmap              16.1040              14.7297              1.37433              1.00000
- pcmap_usecol:0_85_120_time:1.0    obs_pcmap              3.41692              2.73625             0.680672              1.00000
- pcmap_usecol:0_85_86_time:1.0    obs_pcmap              22.9590              22.3413             0.617700              1.00000
- pcmap_usecol:0_86_101_time:1.0    obs_pcmap              9.46317              9.51496           -0.0517890              1.00000
- pcmap_usecol:0_86_67_time:1.0    obs_pcmap              45.7592              44.9662             0.793068              1.00000
- pcmap_usecol:0_86_70_time:1.0    obs_pcmap              42.2702              41.1186              1.15160              1.00000
- pcmap_usecol:0_86_88_time:1.0    obs_pcmap              21.2552              20.0413              1.21389              1.00000
- pcmap_usecol:0_86_94_time:1.0    obs_pcmap              15.0775              13.9759              1.10166              1.00000
- pcmap_usecol:0_87_120_time:1.0    obs_pcmap              3.70004              2.76272             0.937316              1.00000
- pcmap_usecol:0_88_101_time:1.0    obs_pcmap              9.86067              9.59255             0.268122              1.00000
- pcmap_usecol:0_88_107_time:1.0    obs_pcmap              7.03574              6.79355             0.242192              1.00000
- pcmap_usecol:0_88_110_time:1.0    obs_pcmap              6.17348              5.66558             0.507904              1.00000
- pcmap_usecol:0_89_48_time:1.0    obs_pcmap              73.7541              73.6263             0.127789              1.00000
- pcmap_usecol:0_89_79_time:1.0    obs_pcmap              32.2482              32.2425           0.00571208              1.00000
+ pcmap_usecol:0_116_78_time:1.0    obs_pcmap              49.9389              48.3334              1.60547              1.00000
+ pcmap_usecol:0_116_90_time:1.0    obs_pcmap              26.9566              28.4991             -1.54245              1.00000
+ pcmap_usecol:0_117_52_time:1.0    obs_pcmap              88.7883              88.5976             0.190659              1.00000
+ pcmap_usecol:0_117_56_time:1.0    obs_pcmap              83.4156              82.2947              1.12088              1.00000
+ pcmap_usecol:0_117_71_time:1.0    obs_pcmap              61.3049              61.6981            -0.393172              1.00000
+ pcmap_usecol:0_117_99_time:1.0    obs_pcmap              13.8799              17.0890             -3.20909              1.00000
+ pcmap_usecol:0_118_50_time:1.0    obs_pcmap              93.2763              91.8094              1.46699              1.00000
+ pcmap_usecol:0_118_70_time:1.0    obs_pcmap              63.9277              63.0818             0.845947              1.00000
+ pcmap_usecol:0_118_84_time:1.0    obs_pcmap              37.8721              38.9428             -1.07072              1.00000
+ pcmap_usecol:0_119_103_time:1.0    obs_pcmap              9.80723              10.1437            -0.336428              1.00000
+ pcmap_usecol:0_121_104_time:1.0    obs_pcmap              8.52038              9.61354             -1.09315              1.00000
+ pcmap_usecol:0_121_79_time:1.0    obs_pcmap              47.0608              48.8559             -1.79507              1.00000
+ pcmap_usecol:0_123_127_time:1.0    obs_pcmap            -0.741649             0.650527             -1.39218              1.00000
+ pcmap_usecol:0_123_83_time:1.0    obs_pcmap              37.3807              41.9037             -4.52299              1.00000
+ pcmap_usecol:0_124_64_time:1.0    obs_pcmap              77.6492              77.4470             0.202212              1.00000
+ pcmap_usecol:0_125_67_time:1.0    obs_pcmap              72.5319              73.2623            -0.730330              1.00000
+ pcmap_usecol:0_126_69_time:1.0    obs_pcmap              69.6732              70.2058            -0.532562              1.00000
+ pcmap_usecol:0_126_95_time:1.0    obs_pcmap              12.1099              15.3953             -3.28539              1.00000
+ pcmap_usecol:0_127_68_time:1.0    obs_pcmap              73.0452              74.0862             -1.04096              1.00000
+ pcmap_usecol:0_127_82_time:1.0    obs_pcmap              40.0938              39.2997             0.794097              1.00000
+ pcmap_usecol:0_128_62_time:1.0    obs_pcmap              88.1934              88.2139           -0.0204484              1.00000
+ pcmap_usecol:0_128_81_time:1.0    obs_pcmap              42.5467              42.2297             0.316959              1.00000
+ pcmap_usecol:0_129_97_time:1.0    obs_pcmap              8.91218              14.0743             -5.16213              1.00000
+ pcmap_usecol:0_130_113_time:1.0    obs_pcmap              5.60254              6.76047             -1.15793              1.00000
+ pcmap_usecol:0_130_115_time:1.0    obs_pcmap              5.50005              5.94384            -0.443784              1.00000
+ pcmap_usecol:0_130_129_time:1.0    obs_pcmap             -2.95004             0.259006             -3.20905              1.00000
+ pcmap_usecol:0_130_48_time:1.0    obs_pcmap              117.145              113.794              3.35130              1.00000
+ pcmap_usecol:0_130_71_time:1.0    obs_pcmap              69.0316              70.3363             -1.30471              1.00000
+ pcmap_usecol:0_131_116_time:1.0    obs_pcmap              5.46662              5.68025            -0.213629              1.00000
+ pcmap_usecol:0_132_112_time:1.0    obs_pcmap              5.77466              7.36254             -1.58788              1.00000
+ pcmap_usecol:0_132_48_time:1.0    obs_pcmap              120.539              124.553             -4.01402              1.00000
+ pcmap_usecol:0_133_66_time:1.0    obs_pcmap              86.3116              88.3487             -2.03717              1.00000
+ pcmap_usecol:0_134_91_time:1.0    obs_pcmap              19.7230              18.9851             0.737894              1.00000
+ pcmap_usecol:0_135_74_time:1.0    obs_pcmap              71.1711              71.0431             0.127972              1.00000
+ pcmap_usecol:0_136_48_time:1.0    obs_pcmap              129.702              128.990             0.712012              1.00000
+ pcmap_usecol:0_136_57_time:1.0    obs_pcmap              111.042              107.789              3.25339              1.00000
+ pcmap_usecol:0_136_69_time:1.0    obs_pcmap              84.9840              83.6138              1.37020              1.00000
+ pcmap_usecol:0_136_84_time:1.0    obs_pcmap              44.0057              46.7377             -2.73203              1.00000
+ pcmap_usecol:0_137_117_time:1.0    obs_pcmap              6.37001              6.01432             0.355688              1.00000
+ pcmap_usecol:0_138_112_time:1.0    obs_pcmap              8.18181              8.30780            -0.125982              1.00000
+ pcmap_usecol:0_139_120_time:1.0    obs_pcmap              5.79982              4.95313             0.846695              1.00000
+ pcmap_usecol:0_139_53_time:1.0    obs_pcmap              118.552              115.851              2.70120              1.00000
+ pcmap_usecol:0_139_60_time:1.0    obs_pcmap              110.376              112.788             -2.41233              1.00000
+ pcmap_usecol:0_140_107_time:1.0    obs_pcmap              10.6641              11.6064            -0.942296              1.00000
+ pcmap_usecol:0_141_53_time:1.0    obs_pcmap              120.424              118.458              1.96610              1.00000
+ pcmap_usecol:0_141_56_time:1.0    obs_pcmap              118.373              116.454              1.91819              1.00000
+ pcmap_usecol:0_141_58_time:1.0    obs_pcmap              116.295              117.871             -1.57658              1.00000
+ pcmap_usecol:0_142_112_time:1.0    obs_pcmap              11.6420              10.2673              1.37476              1.00000
+ pcmap_usecol:0_142_129_time:1.0    obs_pcmap             -3.22086             0.548407             -3.76927              1.00000
+ pcmap_usecol:0_143_111_time:1.0    obs_pcmap              12.5888              11.4479              1.14092              1.00000
+ pcmap_usecol:0_144_110_time:1.0    obs_pcmap              14.4767              13.0572              1.41949              1.00000
+ pcmap_usecol:0_146_61_time:1.0    obs_pcmap              114.848              110.352              4.49568              1.00000
+ pcmap_usecol:0_146_85_time:1.0    obs_pcmap              58.8957              56.7482              2.14745              1.00000
+ pcmap_usecol:0_147_103_time:1.0    obs_pcmap              22.3231              22.9170            -0.593899              1.00000
+ pcmap_usecol:0_147_108_time:1.0    obs_pcmap              19.0623              18.9847            0.0776002              1.00000
+ pcmap_usecol:0_147_116_time:1.0    obs_pcmap              14.5484              9.01525              5.53310              1.00000
+ pcmap_usecol:0_148_55_time:1.0    obs_pcmap              118.924              116.066              2.85722              1.00000
+ pcmap_usecol:0_149_114_time:1.0    obs_pcmap              18.2164              8.98305              9.23333              1.00000
+ pcmap_usecol:0_149_98_time:1.0    obs_pcmap              32.5106              29.8906              2.61995              1.00000
+ pcmap_usecol:0_150_77_time:1.0    obs_pcmap              88.3906              82.5716              5.81897              1.00000
+ pcmap_usecol:0_151_101_time:1.0    obs_pcmap              31.0045              31.6874            -0.682884              1.00000
+ pcmap_usecol:0_151_91_time:1.0    obs_pcmap              49.5586              33.0442              16.5144              1.00000
+ pcmap_usecol:0_152_79_time:1.0    obs_pcmap              83.9955              81.2229              2.77265              1.00000
+ pcmap_usecol:0_152_99_time:1.0    obs_pcmap              35.6104              35.2669             0.343582              1.00000
+ pcmap_usecol:0_153_113_time:1.0    obs_pcmap              23.3482              19.2259              4.12234              1.00000
+ pcmap_usecol:0_153_98_time:1.0    obs_pcmap              38.5239              38.0865             0.437454              1.00000
+ pcmap_usecol:0_154_78_time:1.0    obs_pcmap              87.5303              86.0734              1.45692              1.00000
+ pcmap_usecol:0_154_86_time:1.0    obs_pcmap              66.3135              41.5403              24.7732              1.00000
+ pcmap_usecol:0_155_74_time:1.0    obs_pcmap              94.3270              97.2842             -2.95720              1.00000
+ pcmap_usecol:0_157_111_time:1.0    obs_pcmap              28.9092              20.4216              8.48763              1.00000
+ pcmap_usecol:0_157_61_time:1.0    obs_pcmap              106.813              103.596              3.21678              1.00000
+ pcmap_usecol:0_158_77_time:1.0    obs_pcmap              84.9821              80.5572              4.42488              1.00000
+ pcmap_usecol:0_158_89_time:1.0    obs_pcmap              59.4522              54.9684              4.48375              1.00000
+ pcmap_usecol:0_159_122_time:1.0    obs_pcmap              16.7848              20.5613             -3.77655              1.00000
+ pcmap_usecol:0_159_58_time:1.0    obs_pcmap              103.075              103.588            -0.513436              1.00000
+ pcmap_usecol:0_159_84_time:1.0    obs_pcmap              70.9777              70.3058             0.671950              1.00000
+ pcmap_usecol:0_160_112_time:1.0    obs_pcmap              30.2395              20.4181              9.82140              1.00000
+ pcmap_usecol:0_163_103_time:1.0    obs_pcmap              38.8404              44.1522             -5.31172              1.00000
+ pcmap_usecol:0_164_93_time:1.0    obs_pcmap              50.3741              57.3476             -6.97351              1.00000
+ pcmap_usecol:0_165_54_time:1.0    obs_pcmap              100.354              103.576             -3.22142              1.00000
+ pcmap_usecol:0_166_53_time:1.0    obs_pcmap              99.5766              103.719             -4.14218              1.00000
+ pcmap_usecol:0_167_55_time:1.0    obs_pcmap              95.7553              103.099             -7.34408              1.00000
+ pcmap_usecol:0_167_63_time:1.0    obs_pcmap              86.7510              94.5651             -7.81408              1.00000
+ pcmap_usecol:0_168_63_time:1.0    obs_pcmap              84.3538              89.3264             -4.97261              1.00000
+ pcmap_usecol:0_168_66_time:1.0    obs_pcmap              81.8161              78.1229              3.69318              1.00000
+ pcmap_usecol:0_170_54_time:1.0    obs_pcmap              94.6994              102.636             -7.93655              1.00000
+ pcmap_usecol:0_171_52_time:1.0    obs_pcmap              97.1915              105.514             -8.32204              1.00000
+ pcmap_usecol:0_173_52_time:1.0    obs_pcmap              95.9787              108.550             -12.5709              1.00000
+ pcmap_usecol:0_25_128_time:1.0    obs_pcmap              1.63878          2.01274e-06              1.63877              1.00000
+ pcmap_usecol:0_29_120_time:1.0    obs_pcmap              1.60509          1.44746e-13              1.60509              1.00000
+ pcmap_usecol:0_32_118_time:1.0    obs_pcmap              1.66495          6.20711e-16              1.66495              1.00000
+ pcmap_usecol:0_32_123_time:1.0    obs_pcmap              1.87512          1.29758e-12              1.87512              1.00000
+ pcmap_usecol:0_36_126_time:1.0    obs_pcmap              1.86193          0.000194390              1.86173              1.00000
+ pcmap_usecol:0_39_125_time:1.0    obs_pcmap              1.30681          0.000212999              1.30660              1.00000
+ pcmap_usecol:0_40_108_time:1.0    obs_pcmap              2.00564              1.77155             0.234097              1.00000
+ pcmap_usecol:0_41_121_time:1.0    obs_pcmap             0.863876          1.22503e-12             0.863875              1.00000
+ pcmap_usecol:0_42_121_time:1.0    obs_pcmap             0.901208          3.00523e-11             0.901208              1.00000
+ pcmap_usecol:0_42_128_time:1.0    obs_pcmap              1.12354             0.142906             0.980638              1.00000
+ pcmap_usecol:0_43_126_time:1.0    obs_pcmap              1.03416          4.24387e-05              1.03412              1.00000
+ pcmap_usecol:0_45_124_time:1.0    obs_pcmap             0.801161          1.14220e-05             0.801150              1.00000
+ pcmap_usecol:0_48_117_time:1.0    obs_pcmap            -0.570954         -2.27547e-06            -0.570952              1.00000
+ pcmap_usecol:0_48_97_time:1.0    obs_pcmap              7.87776              11.3577             -3.47997              1.00000
+ pcmap_usecol:0_49_96_time:1.0    obs_pcmap              9.43670              11.3582             -1.92149              1.00000
+ pcmap_usecol:0_51_120_time:1.0    obs_pcmap            -0.183351          9.77304e-06            -0.183361              1.00000
+ pcmap_usecol:0_52_109_time:1.0    obs_pcmap            -0.548206           0.00482477            -0.553031              1.00000
+ pcmap_usecol:0_53_96_time:1.0    obs_pcmap              8.90869              10.9140             -2.00535              1.00000
+ pcmap_usecol:0_55_101_time:1.0    obs_pcmap              3.88843              5.97245             -2.08402              1.00000
+ pcmap_usecol:0_57_82_time:1.0    obs_pcmap              24.3927              29.3941             -5.00149              1.00000
+ pcmap_usecol:0_58_89_time:1.0    obs_pcmap              15.3158              18.8569             -3.54106              1.00000
+ pcmap_usecol:0_59_100_time:1.0    obs_pcmap              5.51439              6.03942            -0.525029              1.00000
+ pcmap_usecol:0_60_86_time:1.0    obs_pcmap              17.8960              21.4349             -3.53897              1.00000
+ pcmap_usecol:0_62_115_time:1.0    obs_pcmap             0.613044             0.390689             0.222355              1.00000
+ pcmap_usecol:0_63_108_time:1.0    obs_pcmap              2.09511              2.30875            -0.213643              1.00000
+ pcmap_usecol:0_63_82_time:1.0    obs_pcmap              20.5549              23.4617             -2.90679              1.00000
+ pcmap_usecol:0_64_108_time:1.0    obs_pcmap              2.42808              2.49528           -0.0672038              1.00000
+ pcmap_usecol:0_64_110_time:1.0    obs_pcmap              1.80685              1.92770            -0.120846              1.00000
+ pcmap_usecol:0_67_103_time:1.0    obs_pcmap              5.16877              4.93157             0.237198              1.00000
+ pcmap_usecol:0_67_79_time:1.0    obs_pcmap              21.9807              23.8396             -1.85897              1.00000
+ pcmap_usecol:0_67_88_time:1.0    obs_pcmap              14.6307              14.9858            -0.355140              1.00000
+ pcmap_usecol:0_69_81_time:1.0    obs_pcmap              19.8756              21.9745             -2.09885              1.00000
+ pcmap_usecol:0_70_80_time:1.0    obs_pcmap              21.3347              22.3773             -1.04260              1.00000
+ pcmap_usecol:0_71_76_time:1.0    obs_pcmap              26.0250              24.1764              1.84854              1.00000
+ pcmap_usecol:0_73_88_time:1.0    obs_pcmap              15.7399              14.7833             0.956566              1.00000
+ pcmap_usecol:0_74_92_time:1.0    obs_pcmap              13.4348              12.6826             0.752184              1.00000
+ pcmap_usecol:0_75_102_time:1.0    obs_pcmap              7.27730              7.44722            -0.169919              1.00000
+ pcmap_usecol:0_79_74_time:1.0    obs_pcmap              32.9075              32.0403             0.867144              1.00000
+ pcmap_usecol:0_79_75_time:1.0    obs_pcmap              31.2009              31.2904           -0.0894473              1.00000
+ pcmap_usecol:0_79_93_time:1.0    obs_pcmap              13.8327              13.5777             0.255008              1.00000
+ pcmap_usecol:0_80_123_time:1.0    obs_pcmap              2.12720              2.19604           -0.0688467              1.00000
+ pcmap_usecol:0_80_69_time:1.0    obs_pcmap              40.3566              41.2026            -0.846055              1.00000
+ pcmap_usecol:0_81_105_time:1.0    obs_pcmap              6.45917              6.63190            -0.172725              1.00000
+ pcmap_usecol:0_81_93_time:1.0    obs_pcmap              14.3598              14.0691             0.290678              1.00000
+ pcmap_usecol:0_82_127_time:1.0    obs_pcmap              1.36182             0.735218             0.626602              1.00000
+ pcmap_usecol:0_83_116_time:1.0    obs_pcmap              3.77433              3.41629             0.358032              1.00000
+ pcmap_usecol:0_83_92_time:1.0    obs_pcmap              16.1040              15.1385             0.965470              1.00000
+ pcmap_usecol:0_85_120_time:1.0    obs_pcmap              3.41692              2.51611             0.900811              1.00000
+ pcmap_usecol:0_85_86_time:1.0    obs_pcmap              22.9590              23.0012           -0.0421852              1.00000
+ pcmap_usecol:0_86_101_time:1.0    obs_pcmap              9.46317              9.29776             0.165410              1.00000
+ pcmap_usecol:0_86_67_time:1.0    obs_pcmap              45.7592              46.1444            -0.385211              1.00000
+ pcmap_usecol:0_86_70_time:1.0    obs_pcmap              42.2702              41.9087             0.361456              1.00000
+ pcmap_usecol:0_86_88_time:1.0    obs_pcmap              21.2552              20.5183             0.736905              1.00000
+ pcmap_usecol:0_86_94_time:1.0    obs_pcmap              15.0775              14.0920             0.985575              1.00000
+ pcmap_usecol:0_87_120_time:1.0    obs_pcmap              3.70004              2.52191              1.17813              1.00000
+ pcmap_usecol:0_88_101_time:1.0    obs_pcmap              9.86067              9.48525             0.375417              1.00000
+ pcmap_usecol:0_88_107_time:1.0    obs_pcmap              7.03574              6.64498             0.390763              1.00000
+ pcmap_usecol:0_88_110_time:1.0    obs_pcmap              6.17348              5.50313             0.670353              1.00000
+ pcmap_usecol:0_89_48_time:1.0    obs_pcmap              73.7541              76.4260             -2.67188              1.00000
+ pcmap_usecol:0_89_79_time:1.0    obs_pcmap              32.2482              32.6055            -0.357352              1.00000
  pcmap_usecol:0_90_129_time:1.0    obs_pcmap             0.982643             0.100000             0.882643              1.00000
- pcmap_usecol:0_91_62_time:1.0    obs_pcmap              53.5255              52.5513             0.974200              1.00000
- pcmap_usecol:0_91_81_time:1.0    obs_pcmap              30.5996              30.3167             0.282873              1.00000
- pcmap_usecol:0_92_103_time:1.0    obs_pcmap              9.64051              9.46282             0.177690              1.00000
- pcmap_usecol:0_92_41_time:1.0    obs_pcmap              84.9792              84.0609             0.918286              1.00000
- pcmap_usecol:0_92_45_time:1.0    obs_pcmap              78.3424              77.6983             0.644051              1.00000
- pcmap_usecol:0_92_50_time:1.0    obs_pcmap              70.0966              71.6818             -1.58525              1.00000
- pcmap_usecol:0_92_60_time:1.0    obs_pcmap              56.2764              55.3174             0.959012              1.00000
- pcmap_usecol:0_94_53_time:1.0    obs_pcmap              65.5143              65.6226            -0.108335              1.00000
- pcmap_usecol:0_94_77_time:1.0    obs_pcmap              36.5610              36.0939             0.467069              1.00000
- pcmap_usecol:0_96_40_time:1.0    obs_pcmap              87.3339              88.6934             -1.35957              1.00000
- pcmap_usecol:0_96_85_time:1.0    obs_pcmap              27.5300              26.5715             0.958476              1.00000
- pcmap_usecol:0_97_36_time:1.0    obs_pcmap              94.6362              95.5814            -0.945233              1.00000
- pcmap_usecol:0_97_71_time:1.0    obs_pcmap              44.6348              44.6459           -0.0111784              1.00000
- pcmap_usecol:0_97_80_time:1.0    obs_pcmap              34.5345              31.2092              3.32536              1.00000
- pcmap_usecol:0_98_102_time:1.0    obs_pcmap              11.8115              12.1583            -0.346833              1.00000
- pcmap_usecol:0_98_113_time:1.0    obs_pcmap              6.14674              5.53145             0.615296              1.00000
- pcmap_usecol:0_98_92_time:1.0    obs_pcmap              20.3663              18.1674              2.19897              1.00000
- pcmap_usecol:0_99_101_time:1.0    obs_pcmap              12.4119              13.0415            -0.629636              1.00000
+ pcmap_usecol:0_91_62_time:1.0    obs_pcmap              53.5255              53.8603            -0.334862              1.00000
+ pcmap_usecol:0_91_81_time:1.0    obs_pcmap              30.5996              30.7764            -0.176860              1.00000
+ pcmap_usecol:0_92_103_time:1.0    obs_pcmap              9.64051              9.65788           -0.0173653              1.00000
+ pcmap_usecol:0_92_41_time:1.0    obs_pcmap              84.9792              87.9843             -3.00510              1.00000
+ pcmap_usecol:0_92_45_time:1.0    obs_pcmap              78.3424              81.3447             -3.00235              1.00000
+ pcmap_usecol:0_92_50_time:1.0    obs_pcmap              70.0966              74.1347             -4.03817              1.00000
+ pcmap_usecol:0_92_60_time:1.0    obs_pcmap              56.2764              56.5840            -0.307653              1.00000
+ pcmap_usecol:0_94_53_time:1.0    obs_pcmap              65.5143              67.3673             -1.85305              1.00000
+ pcmap_usecol:0_94_77_time:1.0    obs_pcmap              36.5610              36.9521            -0.391165              1.00000
+ pcmap_usecol:0_96_40_time:1.0    obs_pcmap              87.3339              91.5429             -4.20900              1.00000
+ pcmap_usecol:0_96_85_time:1.0    obs_pcmap              27.5300              27.0193             0.510648              1.00000
+ pcmap_usecol:0_97_36_time:1.0    obs_pcmap              94.6362              97.0633             -2.42710              1.00000
+ pcmap_usecol:0_97_71_time:1.0    obs_pcmap              44.6348              45.3880            -0.753290              1.00000
+ pcmap_usecol:0_97_80_time:1.0    obs_pcmap              34.5345              31.6915              2.84302              1.00000
+ pcmap_usecol:0_98_102_time:1.0    obs_pcmap              11.8115              12.1722            -0.360732              1.00000
+ pcmap_usecol:0_98_113_time:1.0    obs_pcmap              6.14674              5.39787             0.748872              1.00000
+ pcmap_usecol:0_98_92_time:1.0    obs_pcmap              20.3663              18.6206              1.74571              1.00000
+ pcmap_usecol:0_99_101_time:1.0    obs_pcmap              12.4119              13.0515            -0.639627              1.00000
 
 Final composite objective function 
-  Final phi                                           Total : 3325.03
-  Contribution to phi from observation group     "real_obs" : 1312.53
-  Contribution to phi from observation group    "obs_pcmap" : 2012.50
+  Final phi                                           Total : 3715.29
+  Contribution to phi from observation group     "real_obs" : 1219.66
+  Contribution to phi from observation group    "obs_pcmap" : 2495.63
 
 
 Number of forward model runs performed during optimiztion: 1

@@ -1,13 +1,16 @@
-2020-07-23 09:33:42.192332 starting: opening plot_pst_helper.log for logging
-2020-07-23 09:33:42.192332 plot_utils.pst_helper()
-2020-07-23 09:33:42.192332 starting: plot res_1to1
-2020-07-23 09:33:42.230085 starting: plotting 1to1 for pc
-2020-07-23 09:33:42.230085 using control file obsvals to calculate residuals
-2020-07-23 09:33:42.424116 finished: plotting 1to1 for pc took: 0:00:00.194031
-2020-07-23 09:33:42.424116 starting: plotting 1to1 for qmap
-2020-07-23 09:33:42.430630 using control file obsvals to calculate residuals
-2020-07-23 09:33:42.446268 finished: plotting 1to1 for qmap took: 0:00:00.022152
-2020-07-23 09:33:42.446268 starting: plotting 1to1 for quat
-2020-07-23 09:33:42.461887 using control file obsvals to calculate residuals
-2020-07-23 09:33:42.477510 finished: plotting 1to1 for quat took: 0:00:00.031242
-2020-07-23 09:33:42.593383 finished: plot res_1to1 took: 0:00:00.401051
+2020-07-26 23:08:20.358187 starting: opening plot_pst_helper.log for logging
+2020-07-26 23:08:20.358187 plot_utils.pst_helper()
+2020-07-26 23:08:20.358187 starting: plot res_1to1
+2020-07-26 23:08:20.373811 starting: plotting 1to1 for pc
+2020-07-26 23:08:20.373811 using control file obsvals to calculate residuals
+2020-07-26 23:08:20.459955 finished: plotting 1to1 for pc took: 0:00:00.086144
+2020-07-26 23:08:20.459955 starting: plotting 1to1 for pmap
+2020-07-26 23:08:20.462071 using control file obsvals to calculate residuals
+2020-07-26 23:08:20.462071 finished: plotting 1to1 for pmap took: 0:00:00.002116
+2020-07-26 23:08:20.462071 starting: plotting 1to1 for qmap
+2020-07-26 23:08:20.462071 using control file obsvals to calculate residuals
+2020-07-26 23:08:20.486028 finished: plotting 1to1 for qmap took: 0:00:00.023957
+2020-07-26 23:08:20.486028 starting: plotting 1to1 for quat
+2020-07-26 23:08:20.488029 using control file obsvals to calculate residuals
+2020-07-26 23:08:20.498323 finished: plotting 1to1 for quat took: 0:00:00.012295
+2020-07-26 23:08:20.705871 finished: plot res_1to1 took: 0:00:00.347684

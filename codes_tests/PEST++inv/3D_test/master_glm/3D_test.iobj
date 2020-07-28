@@ -1,2 +1,2 @@
-iteration,model_runs_completed,total_phi,measurement_phi,regularization_phi,pc,qmap,quat
-0,1,8097.87,8097.87,0,2193.94,2864.8,3039.12
+iteration,model_runs_completed,total_phi,measurement_phi,regularization_phi,pc,pmap,qmap,quat
+0,1,8712.49,8712.49,0,258.431,2529.54,4652.47,1272.05
