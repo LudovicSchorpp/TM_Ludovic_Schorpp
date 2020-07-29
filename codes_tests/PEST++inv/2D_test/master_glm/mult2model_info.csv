@@ -1,3 +1,3 @@
 ,fac_file,fmt,head_rows,index_cols,lower_bound,mlt_file,model_file,org_file,pp_file,sep,upper_bound,use_cols,zero_based
-0,kp_inst0pp.fac,free,0,,5.000000000000001e-07,mult\kp_inst0_pilotpoint.csv,k.txt,org\k.txt,kp_inst0pp.dat,,0.0008,,False
+0,kp_inst0pp.fac,free,0,,5e-07,mult\kp_inst0_pilotpoint.csv,k.txt,org\k.txt,kp_inst0pp.dat,,0.001,,False
 1,,free,0,,,mult\irr_inst0_zone.csv,irr.txt,org\irr.txt,,,,,False

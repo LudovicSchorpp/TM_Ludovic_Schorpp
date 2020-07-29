@@ -1,9 +1,713 @@
-PEST++ performance logger started at:  23:17:29
-        ( time = 23:17:29,  elapsed time = 2ms )
+PEST++ performance logger started at:  14:24:29
+        ( time = 14:24:29,  elapsed time = 16ms )
   starting to process control file
-          ( time = 23:17:29,  elapsed time = 9ms )
+          ( time = 14:24:29,  elapsed time = 24ms )
   finished processing control file
-          ( time = 23:17:29,  elapsed time = 13ms )
-    starting basic model IO error checking
-            ( time = 23:17:29,  elapsed time = 13ms )
-    finished basic model IO error checking
+          ( time = 14:24:30,  elapsed time = 741ms )
+  commencing to build jacobian parameter sets
+          ( time = 14:24:30,  elapsed time = 261ms )
+  jacobian parameter sets built, commencing model runs
+          ( time = 14:43:29,  elapsed time = 18min )
+  jacobian runs complete, processing runs
+          ( time = 14:43:29,  elapsed time = 83ms )
+  processing jacobian runs complete
+          ( time = 14:43:29,  elapsed time = 1ms )
+  saving jacobian and sen files
+
+
+-----------------------------------
+starting linear uncertainty analyses
+-----------------------------------
+
+14:43:31-> starting calc_posterior
+14:43:31->-> starting align
+14:43:31->-> finished align, elapsed time = 3ms
+14:43:31->-> starting invert obscov
+14:43:31->->-> starting inverting diagonal matrix in place
+14:43:31->->->-> starting extracting diagonal
+14:43:31->->->->-> starting inverting diagonal
+14:43:31->->->->->-> starting building triplets
+14:43:31->->->->->->-> starting setting matrix from triplets
+14:43:31->->->->->->-> finished invert obscov, elapsed time = 4ms
+14:43:31->->->->->->-> starting form JtQJ
+14:43:31->->->->->->-> finished form JtQJ, elapsed time = 27ms
+14:43:31->->->->->->-> starting invert parcov
+14:43:31->->->->->->-> finished invert parcov, elapsed time = 1ms
+14:43:31->->->->->->-> starting form posterior
+14:43:31->->->->->->-> finished form posterior, elapsed time = 2ms
+14:43:31->->->->->->-> starting invert posterior
+14:43:31->->->->->->->-> starting inverting non-diagonal matrix in place
+14:43:31->->->->->->->->-> starting instantiate solver
+14:43:31->->->->->->->->->-> starting computing inverse
+14:43:31->->->->->->->->->->-> starting getting identity instance for solution
+14:43:31->->->->->->->->->->->-> starting solving
+14:43:31->->->->->->->->->->->-> finished invert posterior, elapsed time = 15ms
+14:43:31->->->->->->->->->->-> finished calc_posterior, elapsed time = 60ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 575us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 825us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 860us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 706us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 713us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 701us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 770us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 753us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 671us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 598us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 777us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 736us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 694us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 820us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 755us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 670us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 650us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 809us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 751us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 951us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 752us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 633us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 740us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 883us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 888us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 737us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 732us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 649us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 696us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 870us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 912us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 658us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 575us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 741us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 706us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 697us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 852us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 817us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 688us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 776us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 859us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 743us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 743us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 662us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 747us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 744us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 697us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 741us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 806us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 697us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 958us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 713us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 755us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 740us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 839us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 704us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 780us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 738us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 891us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 726us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 885us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 811us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 818us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 664us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 883us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 769us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 769us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 776us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 687us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 879us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 687us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 659us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 749us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 696us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 641us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 883us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 807us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 862us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 775us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 932us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 829us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 801us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 755us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 814us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 664us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 762us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 935us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 804us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 720us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 822us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 650us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 744us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 868us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 753us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 677us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 883us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 775us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 718us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 829us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 780us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 790us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 626us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 692us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 887us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 752us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 811us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 758us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 764us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 947us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 678us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 848us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 820us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 702us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 866us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 701us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 808us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 821us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 936us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 914us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 751us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 681us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 771us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 976us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 871us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 750us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 778us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 652us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 706us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 825us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 652us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 822us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 712us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 879us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 944us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 913us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 826us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 817us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 806us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 884us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 769us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 910us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 799us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 752us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 790us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 753us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 846us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 782us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 797us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 782us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 770us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 721us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 770us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 780us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 801us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 746us
+14:43:31->->->->->->->->->->-> starting prior_parameter_variance
+14:43:31->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 793us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 873us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 794us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 741us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 754us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 711us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 694us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 743us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 674us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 800us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 764us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 915us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 697us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 723us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 812us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 819us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 843us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 711us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 950us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 779us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 816us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 805us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 727us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 745us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 979us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 715us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 865us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 735us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 841us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 972us
+14:43:31->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:31->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 782us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 814us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 716us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 789us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 939us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 889us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 722us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 733us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 917us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 676us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 846us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 889us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 815us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 909us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 765us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 759us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 842us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 825us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 847us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 893us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 822us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 815us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 836us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 913us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 874us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 761us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 726us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 902us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 828us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 834us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 960us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 670us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 862us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 973us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 862us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 726us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 651us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 815us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 773us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 600us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 686us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 746us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 808us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 826us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 791us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 760us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 945us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 854us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 784us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 898us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 957us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 735us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 766us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 671us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 739us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 916us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 742us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 933us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 854us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 768us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 793us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 819us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 949us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 747us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 850us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 733us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 686us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 686us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 876us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 795us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 882us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 800us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 773us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 751us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 785us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 821us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 905us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 847us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 749us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 845us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 837us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 793us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 726us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 862us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 867us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 861us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 755us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 772us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 837us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 681us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 729us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 779us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 778us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 744us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 902us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 862us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 819us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 822us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 808us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 846us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 734us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 882us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 652us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 764us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 817us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 803us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 785us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 755us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 836us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 740us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 804us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 810us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 796us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 968us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 824us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 777us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 787us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 1ms
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 853us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 814us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 913us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 734us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 621us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 798us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 942us
+14:43:32->->->->->->->->->->-> starting posterior_parameter_variance
+14:43:32->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 863us

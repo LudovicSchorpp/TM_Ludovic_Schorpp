@@ -1,2 +1,1 @@
-iteration,model_runs_completed,total_phi,measurement_phi,regularization_phi,real_obs,obs_pcmap
-0,1,6051.96,6051.96,0,1903.62,4148.34
+iteration,model_runs_completed,total_phi,measurement_phi,regularization_phi,real_obs,obs_pcmap,regulkp_inst,regulcond,regulirr__mu
