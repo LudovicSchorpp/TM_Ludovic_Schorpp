@@ -1,0 +1,57 @@
+2020-07-30 13:12:19.194144 starting: opening PstFrom.log for logging
+2020-07-30 13:12:19.194144 starting PstFrom process
+2020-07-30 13:12:19.204009 starting: setting up dirs
+2020-07-30 13:12:19.204009 starting: removing existing new_d 'template'
+2020-07-30 13:12:20.094401 finished: removing existing new_d 'template' took: 0:00:00.890392
+2020-07-30 13:12:20.094401 starting: copying original_d 'workspace' to new_d 'template'
+2020-07-30 13:12:21.934361 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:01.839960
+2020-07-30 13:12:21.944101 finished: setting up dirs took: 0:00:02.740092
+2020-07-30 13:12:21.999178 starting: adding observations from tabular output file
+2020-07-30 13:12:22.009207 starting: reading list template\heads.csv
+2020-07-30 13:12:22.044307 finished: reading list template\heads.csv took: 0:00:00.035100
+2020-07-30 13:12:22.044307 starting: building insfile for tabular output file heads.csv
+2020-07-30 13:12:22.099165 finished: building insfile for tabular output file heads.csv took: 0:00:00.054858
+2020-07-30 13:12:22.104189 starting: adding observation from instruction file 'template\heads.csv.ins'
+2020-07-30 13:12:22.129062 finished: adding observation from instruction file 'template\heads.csv.ins' took: 0:00:00.024873
+2020-07-30 13:12:22.134091 finished: adding observations from tabular output file took: 0:00:00.134913
+2020-07-30 13:12:22.154157 starting: adding observations from tabular output file
+2020-07-30 13:12:22.154157 starting: reading list template\heads_pcmap.csv
+2020-07-30 13:12:22.164198 finished: reading list template\heads_pcmap.csv took: 0:00:00.010041
+2020-07-30 13:12:22.174453 starting: building insfile for tabular output file heads_pcmap.csv
+2020-07-30 13:12:22.204069 finished: building insfile for tabular output file heads_pcmap.csv took: 0:00:00.029616
+2020-07-30 13:12:22.214311 starting: adding observation from instruction file 'template\heads_pcmap.csv.ins'
+2020-07-30 13:12:22.234489 finished: adding observation from instruction file 'template\heads_pcmap.csv.ins' took: 0:00:00.020178
+2020-07-30 13:12:22.244222 finished: adding observations from tabular output file took: 0:00:00.090065
+2020-07-30 13:12:23.384500 starting: adding pilotpoint type multiplier style parameters for file(s) ['k.txt']
+2020-07-30 13:12:23.384500 starting: loading array template\k.txt
+2020-07-30 13:12:23.474333 finished: loading array template\k.txt took: 0:00:00.089833
+2020-07-30 13:12:23.474333 loaded array 'k.txt' of shape (182, 183)
+2020-07-30 13:12:23.644118 starting: writing array-based template file 'kp_inst0_pilotpoint.csv.tpl'
+2020-07-30 13:12:23.644118 starting: setting up pilot point parameters
+2020-07-30 13:12:23.644118 No spatial reference (containing cell spacing) passed.
+2020-07-30 13:12:23.644118 OK - using spatial reference in parent object.
+2020-07-30 13:12:24.284168 147 pilot point parameters created
+2020-07-30 13:12:24.284168 pilot point 'pargp':kp_inst:0
+2020-07-30 13:12:24.294303 finished: setting up pilot point parameters took: 0:00:00.650185
+2020-07-30 13:12:24.324170 starting: calculating factors for pargp=kp_inst:0
+2020-07-30 13:12:24.324170 saving krige variance file:template\kp_inst0pp.var.dat
+2020-07-30 13:12:24.324170 saving krige factors file:template\kp_inst0pp.fac
+2020-07-30 13:13:33.692423 finished: calculating factors for pargp=kp_inst:0 took: 0:01:09.368253
+2020-07-30 13:13:33.692423 starting: writing array-based template file 'kp_inst0pp.dat.tpl'
+2020-07-30 13:13:33.702747 starting: adding parameters for file(s) ['k.txt']
+2020-07-30 13:13:33.822322 starting: adding zone type multiplier style parameters for file(s) ['irr.txt']
+2020-07-30 13:13:33.822322 starting: loading array template\irr.txt
+2020-07-30 13:13:33.917763 finished: loading array template\irr.txt took: 0:00:00.095441
+2020-07-30 13:13:33.917763 loaded array 'irr.txt' of shape (182, 183)
+2020-07-30 13:13:34.112810 starting: writing array-based template file 'irr_inst0_zone.csv.tpl'
+2020-07-30 13:13:34.112810 starting: writing template file irr_inst0_zone.csv.tpl for ['irr_inst:0']
+2020-07-30 13:13:34.302433 finished: writing template file irr_inst0_zone.csv.tpl for ['irr_inst:0'] took: 0:00:00.189623
+2020-07-30 13:13:34.302433 finished: writing array-based template file 'irr_inst0_zone.csv.tpl' took: 0:00:00.189623
+2020-07-30 13:13:34.322571 starting: adding parameters for file(s) ['irr.txt']
+2020-07-30 13:13:35.892817 forward_run line:pyemu.os_utils.run(r'..\..\..\exe\mf6')
+
+2020-07-30 13:13:36.342557 WARNING: sys_cmd 'pyemu.os_utils.run(r'..\..\..\exe\mf6')
+' already in sys cmds, skipping...
+2020-07-30 13:13:36.372574 starting: building prior covariance matrix
+2020-07-30 13:13:36.412527 saving prior covariance matrix to file template\2D_test.prior.cov
+2020-07-30 13:13:36.512713 finished: building prior covariance matrix took: 0:00:00.140139

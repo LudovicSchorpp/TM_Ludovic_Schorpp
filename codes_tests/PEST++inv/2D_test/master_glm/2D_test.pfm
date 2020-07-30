@@ -1,9 +1,801 @@
-PEST++ performance logger started at:  15:58:11
-        ( time = 15:58:11,  elapsed time = 19ms )
+PEST++ performance logger started at:  22:11:09
+        ( time = 22:11:09,  elapsed time = 6ms )
   starting to process control file
-          ( time = 15:58:11,  elapsed time = 25ms )
+          ( time = 22:11:09,  elapsed time = 15ms )
   finished processing control file
-          ( time = 15:58:12,  elapsed time = 866ms )
-    starting basic model IO error checking
-            ( time = 15:58:12,  elapsed time = 93ms )
-    finished basic model IO error checking
+          ( time = 22:11:09,  elapsed time = 43ms )
+  commencing to build jacobian parameter sets
+          ( time = 22:11:09,  elapsed time = 24ms )
+  jacobian parameter sets built, commencing model runs
+          ( time = 22:33:25,  elapsed time = 22min )
+  jacobian runs complete, processing runs
+          ( time = 22:33:25,  elapsed time = 91ms )
+  processing jacobian runs complete
+          ( time = 22:33:25,  elapsed time = 144us )
+  saving jacobian and sen files
+
+
+-----------------------------------
+starting linear uncertainty analyses
+-----------------------------------
+
+22:33:25-> starting calc_posterior
+22:33:25->-> starting align
+22:33:25->-> finished align, elapsed time = 2ms
+22:33:25->-> starting invert obscov
+22:33:25->->-> starting inverting diagonal matrix in place
+22:33:25->->->-> starting extracting diagonal
+22:33:25->->->->-> starting inverting diagonal
+22:33:25->->->->->-> starting building triplets
+22:33:25->->->->->->-> starting setting matrix from triplets
+22:33:25->->->->->->-> finished invert obscov, elapsed time = 121us
+22:33:25->->->->->->-> starting form JtQJ
+22:33:25->->->->->->-> finished form JtQJ, elapsed time = 42ms
+22:33:25->->->->->->-> starting invert parcov
+22:33:25->->->->->->-> finished invert parcov, elapsed time = 362us
+22:33:25->->->->->->-> starting form posterior
+22:33:25->->->->->->-> finished form posterior, elapsed time = 2ms
+22:33:25->->->->->->-> starting invert posterior
+22:33:25->->->->->->->-> starting inverting non-diagonal matrix in place
+22:33:25->->->->->->->->-> starting instantiate solver
+22:33:25->->->->->->->->->-> starting computing inverse
+22:33:25->->->->->->->->->->-> starting getting identity instance for solution
+22:33:25->->->->->->->->->->->-> starting solving
+22:33:25->->->->->->->->->->->-> finished invert posterior, elapsed time = 18ms
+22:33:25->->->->->->->->->->-> finished calc_posterior, elapsed time = 67ms
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 37us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 21us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 55us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 20us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 19us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 74us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 18us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting prior_parameter_variance
+22:33:26->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 18us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 18us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 19us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 19us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 27us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 18us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 23us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 18us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 18us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 21us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 18us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 18us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 18us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 15us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+22:33:26->->->->->->->->->->-> starting posterior_parameter_variance
+22:33:26->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
