@@ -1,0 +1,2 @@
+iteration,model_runs_completed,total_phi,measurement_phi,regularization_phi,real_obs,obs_pcmap,regul_cc
+0,1,3662.08,3053.21,608.867,919.393,2133.82,608.867

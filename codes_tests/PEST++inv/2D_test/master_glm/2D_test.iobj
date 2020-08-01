@@ -1,2 +1,2 @@
 iteration,model_runs_completed,total_phi,measurement_phi,regularization_phi,real_obs,obs_pcmap,regulkp_inst,regulcond,regulirr__mu
-0,1,3431.57,3405.38,26.1894,1415.54,1989.84,23.0583,0.488559,2.64257
+0,1,3127.6,3109.05,18.5507,1014.53,2094.52,13.6413,0.488559,4.42088
