@@ -1,0 +1,2120 @@
+PEST++ performance logger started at:  19:14:34
+        ( time = 19:14:34,  elapsed time = 3ms )
+  starting to process control file
+          ( time = 19:14:34,  elapsed time = 11ms )
+  finished processing control file
+
+          ( time = 19:15:06,  elapsed time = 32sec )
+beginning iteration 1
+        ( time = 19:15:06,  elapsed time = 1ms )
+  computing upgrade vectors
+          ( time = 19:15:06,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 0.1
+          ( time = 19:15:06,  elapsed time = 35ms )
+    forming JtQJ matrix
+            ( time = 19:15:06,  elapsed time = 54ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 19:15:06,  elapsed time = 79us )
+    starting REDSVD
+            ( time = 19:15:07,  elapsed time = 361ms )
+    retrieving REDSVD components
+            ( time = 19:15:07,  elapsed time = 1ms )
+    triming REDSVD components to 176elements
+            ( time = 19:15:07,  elapsed time = 2ms )
+    done REDSVD
+            ( time = 19:15:07,  elapsed time = 195us )
+    SVD factorization complete
+            ( time = 19:15:07,  elapsed time = 56ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 19:15:07,  elapsed time = 34us )
+    Vt info: rows = 176: cols = 213: size = 37488: nonzeros = 37488
+            ( time = 19:15:07,  elapsed time = 18us )
+    U info: rows = 213: cols = 176: size = 37488: nonzeros = 37488
+            ( time = 19:15:07,  elapsed time = 17us )
+    jac info: rows = 372: cols = 213: size = 79236: nonzeros = 79023
+            ( time = 19:15:07,  elapsed time = 879us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 19:15:07,  elapsed time = 4ms )
+  beginning upgrade vector calculations, lambda = 1
+          ( time = 19:15:07,  elapsed time = 31ms )
+    forming JtQJ matrix
+            ( time = 19:15:07,  elapsed time = 52ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 19:15:07,  elapsed time = 51us )
+    starting REDSVD
+            ( time = 19:15:07,  elapsed time = 308ms )
+    retrieving REDSVD components
+            ( time = 19:15:07,  elapsed time = 1ms )
+    triming REDSVD components to 176elements
+            ( time = 19:15:07,  elapsed time = 1ms )
+    done REDSVD
+            ( time = 19:15:07,  elapsed time = 158us )
+    SVD factorization complete
+            ( time = 19:15:07,  elapsed time = 62ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 19:15:07,  elapsed time = 41us )
+    Vt info: rows = 176: cols = 213: size = 37488: nonzeros = 37488
+            ( time = 19:15:07,  elapsed time = 23us )
+    U info: rows = 213: cols = 176: size = 37488: nonzeros = 37488
+            ( time = 19:15:07,  elapsed time = 22us )
+    jac info: rows = 372: cols = 213: size = 79236: nonzeros = 79023
+            ( time = 19:15:07,  elapsed time = 443us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 19:15:07,  elapsed time = 5ms )
+  beginning upgrade vector calculations, lambda = 10
+          ( time = 19:15:07,  elapsed time = 34ms )
+    forming JtQJ matrix
+            ( time = 19:15:07,  elapsed time = 48ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 19:15:07,  elapsed time = 45us )
+    starting REDSVD
+            ( time = 19:15:08,  elapsed time = 302ms )
+    retrieving REDSVD components
+            ( time = 19:15:08,  elapsed time = 1ms )
+    triming REDSVD components to 176elements
+            ( time = 19:15:08,  elapsed time = 2ms )
+    done REDSVD
+            ( time = 19:15:08,  elapsed time = 236us )
+    SVD factorization complete
+            ( time = 19:15:08,  elapsed time = 61ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 19:15:08,  elapsed time = 30us )
+    Vt info: rows = 176: cols = 213: size = 37488: nonzeros = 37488
+            ( time = 19:15:08,  elapsed time = 18us )
+    U info: rows = 213: cols = 176: size = 37488: nonzeros = 37488
+            ( time = 19:15:08,  elapsed time = 52us )
+    jac info: rows = 372: cols = 213: size = 79236: nonzeros = 79023
+            ( time = 19:15:08,  elapsed time = 368us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 19:15:08,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 100
+          ( time = 19:15:08,  elapsed time = 29ms )
+    forming JtQJ matrix
+            ( time = 19:15:08,  elapsed time = 42ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 19:15:08,  elapsed time = 53us )
+    starting REDSVD
+            ( time = 19:15:08,  elapsed time = 334ms )
+    retrieving REDSVD components
+            ( time = 19:15:08,  elapsed time = 2ms )
+    triming REDSVD components to 176elements
+            ( time = 19:15:08,  elapsed time = 2ms )
+    done REDSVD
+            ( time = 19:15:08,  elapsed time = 152us )
+    SVD factorization complete
+            ( time = 19:15:08,  elapsed time = 62ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 19:15:08,  elapsed time = 35us )
+    Vt info: rows = 176: cols = 213: size = 37488: nonzeros = 37488
+            ( time = 19:15:08,  elapsed time = 19us )
+    U info: rows = 213: cols = 176: size = 37488: nonzeros = 37488
+            ( time = 19:15:08,  elapsed time = 18us )
+    jac info: rows = 372: cols = 213: size = 79236: nonzeros = 79023
+            ( time = 19:15:08,  elapsed time = 373us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 19:15:08,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 1000
+          ( time = 19:15:08,  elapsed time = 30ms )
+    forming JtQJ matrix
+            ( time = 19:15:08,  elapsed time = 48ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 19:15:08,  elapsed time = 60us )
+    starting REDSVD
+            ( time = 19:15:09,  elapsed time = 325ms )
+    retrieving REDSVD components
+            ( time = 19:15:09,  elapsed time = 2ms )
+    triming REDSVD components to 176elements
+            ( time = 19:15:09,  elapsed time = 2ms )
+    done REDSVD
+            ( time = 19:15:09,  elapsed time = 144us )
+    SVD factorization complete
+            ( time = 19:15:09,  elapsed time = 68ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 19:15:09,  elapsed time = 44us )
+    Vt info: rows = 176: cols = 213: size = 37488: nonzeros = 37488
+            ( time = 19:15:09,  elapsed time = 25us )
+    U info: rows = 213: cols = 176: size = 37488: nonzeros = 37488
+            ( time = 19:15:09,  elapsed time = 24us )
+    jac info: rows = 372: cols = 213: size = 79236: nonzeros = 79023
+            ( time = 19:15:09,  elapsed time = 469us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 19:15:49,  elapsed time = 40sec )
+  completed iteration 1
+  time to complete iteration 1
+          ( elapsed time = 42sec )
+
+          ( time = 19:15:49,  elapsed time = 98ms )
+beginning iteration 2
+        ( time = 19:15:49,  elapsed time = 123us )
+  commencing to build jacobian parameter sets
+          ( time = 19:15:49,  elapsed time = 451ms )
+  commencing to build jacobian parameter sets
+          ( time = 19:15:50,  elapsed time = 249ms )
+  jacobian parameter sets built, commencing model runs
+          ( time = 19:42:04,  elapsed time = 26min )
+  jacobian runs complete, processing runs
+          ( time = 19:42:04,  elapsed time = 50ms )
+  saving jacobian and sen files
+          ( time = 19:42:04,  elapsed time = 160ms )
+  computing upgrade vectors
+          ( time = 19:42:04,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 0.1
+          ( time = 19:42:04,  elapsed time = 31ms )
+    forming JtQJ matrix
+            ( time = 19:42:04,  elapsed time = 60ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 19:42:04,  elapsed time = 137us )
+    starting REDSVD
+            ( time = 19:42:05,  elapsed time = 343ms )
+    retrieving REDSVD components
+            ( time = 19:42:05,  elapsed time = 2ms )
+    triming REDSVD components to 174elements
+            ( time = 19:42:05,  elapsed time = 2ms )
+    done REDSVD
+            ( time = 19:42:05,  elapsed time = 118us )
+    SVD factorization complete
+            ( time = 19:42:05,  elapsed time = 73ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 19:42:05,  elapsed time = 48us )
+    Vt info: rows = 174: cols = 210: size = 36540: nonzeros = 36540
+            ( time = 19:42:05,  elapsed time = 28us )
+    U info: rows = 210: cols = 174: size = 36540: nonzeros = 36540
+            ( time = 19:42:05,  elapsed time = 27us )
+    jac info: rows = 372: cols = 210: size = 78120: nonzeros = 77694
+            ( time = 19:42:05,  elapsed time = 571us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 19:42:05,  elapsed time = 6ms )
+  beginning upgrade vector calculations, lambda = 1
+          ( time = 19:42:05,  elapsed time = 40ms )
+    forming JtQJ matrix
+            ( time = 19:42:05,  elapsed time = 68ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 19:42:05,  elapsed time = 67us )
+    starting REDSVD
+            ( time = 19:42:05,  elapsed time = 339ms )
+    retrieving REDSVD components
+            ( time = 19:42:05,  elapsed time = 2ms )
+    triming REDSVD components to 174elements
+            ( time = 19:42:05,  elapsed time = 2ms )
+    done REDSVD
+            ( time = 19:42:05,  elapsed time = 215us )
+    SVD factorization complete
+            ( time = 19:42:05,  elapsed time = 69ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 19:42:05,  elapsed time = 43us )
+    Vt info: rows = 174: cols = 210: size = 36540: nonzeros = 36540
+            ( time = 19:42:05,  elapsed time = 25us )
+    U info: rows = 210: cols = 174: size = 36540: nonzeros = 36540
+            ( time = 19:42:05,  elapsed time = 24us )
+    jac info: rows = 372: cols = 210: size = 78120: nonzeros = 77694
+            ( time = 19:42:05,  elapsed time = 461us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 19:42:05,  elapsed time = 5ms )
+  beginning upgrade vector calculations, lambda = 10
+          ( time = 19:42:05,  elapsed time = 39ms )
+    forming JtQJ matrix
+            ( time = 19:42:06,  elapsed time = 64ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 19:42:06,  elapsed time = 61us )
+    starting REDSVD
+            ( time = 19:42:06,  elapsed time = 317ms )
+    retrieving REDSVD components
+            ( time = 19:42:06,  elapsed time = 2ms )
+    triming REDSVD components to 174elements
+            ( time = 19:42:06,  elapsed time = 1ms )
+    done REDSVD
+            ( time = 19:42:06,  elapsed time = 182us )
+    SVD factorization complete
+            ( time = 19:42:06,  elapsed time = 67ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 19:42:06,  elapsed time = 44us )
+    Vt info: rows = 174: cols = 210: size = 36540: nonzeros = 36540
+            ( time = 19:42:06,  elapsed time = 25us )
+    U info: rows = 210: cols = 174: size = 36540: nonzeros = 36540
+            ( time = 19:42:06,  elapsed time = 24us )
+    jac info: rows = 372: cols = 210: size = 78120: nonzeros = 77694
+            ( time = 19:42:06,  elapsed time = 509us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 19:42:06,  elapsed time = 5ms )
+  beginning upgrade vector calculations, lambda = 100
+          ( time = 19:42:06,  elapsed time = 43ms )
+    forming JtQJ matrix
+            ( time = 19:42:06,  elapsed time = 52ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 19:42:06,  elapsed time = 57us )
+    starting REDSVD
+            ( time = 19:42:06,  elapsed time = 345ms )
+    retrieving REDSVD components
+            ( time = 19:42:06,  elapsed time = 2ms )
+    triming REDSVD components to 174elements
+            ( time = 19:42:06,  elapsed time = 2ms )
+    done REDSVD
+            ( time = 19:42:06,  elapsed time = 185us )
+    SVD factorization complete
+            ( time = 19:42:06,  elapsed time = 59ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 19:42:06,  elapsed time = 36us )
+    Vt info: rows = 174: cols = 210: size = 36540: nonzeros = 36540
+            ( time = 19:42:06,  elapsed time = 18us )
+    U info: rows = 210: cols = 174: size = 36540: nonzeros = 36540
+            ( time = 19:42:06,  elapsed time = 18us )
+    jac info: rows = 372: cols = 210: size = 78120: nonzeros = 77694
+            ( time = 19:42:06,  elapsed time = 407us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 19:42:06,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 1000
+          ( time = 19:42:06,  elapsed time = 30ms )
+    forming JtQJ matrix
+            ( time = 19:42:06,  elapsed time = 57ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 19:42:06,  elapsed time = 53us )
+    starting REDSVD
+            ( time = 19:42:07,  elapsed time = 314ms )
+    retrieving REDSVD components
+            ( time = 19:42:07,  elapsed time = 2ms )
+    triming REDSVD components to 174elements
+            ( time = 19:42:07,  elapsed time = 2ms )
+    done REDSVD
+            ( time = 19:42:07,  elapsed time = 186us )
+    SVD factorization complete
+            ( time = 19:42:07,  elapsed time = 82ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 19:42:07,  elapsed time = 40us )
+    Vt info: rows = 174: cols = 210: size = 36540: nonzeros = 36540
+            ( time = 19:42:07,  elapsed time = 23us )
+    U info: rows = 210: cols = 174: size = 36540: nonzeros = 36540
+            ( time = 19:42:07,  elapsed time = 22us )
+    jac info: rows = 372: cols = 210: size = 78120: nonzeros = 77694
+            ( time = 19:42:07,  elapsed time = 424us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 19:42:49,  elapsed time = 42sec )
+  completed iteration 2
+  time to complete iteration 2
+          ( elapsed time = 27min )
+
+          ( time = 19:42:49,  elapsed time = 146ms )
+beginning iteration 3
+        ( time = 19:42:49,  elapsed time = 137us )
+  commencing to build jacobian parameter sets
+          ( time = 19:42:50,  elapsed time = 197ms )
+  commencing to build jacobian parameter sets
+          ( time = 19:42:50,  elapsed time = 195ms )
+  jacobian parameter sets built, commencing model runs
+          ( time = 20:03:52,  elapsed time = 21min )
+  jacobian runs complete, processing runs
+          ( time = 20:03:52,  elapsed time = 31ms )
+  saving jacobian and sen files
+          ( time = 20:03:52,  elapsed time = 96ms )
+  computing upgrade vectors
+          ( time = 20:03:52,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 0.1
+          ( time = 20:03:52,  elapsed time = 21ms )
+    forming JtQJ matrix
+            ( time = 20:03:52,  elapsed time = 26ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:03:52,  elapsed time = 42us )
+    starting REDSVD
+            ( time = 20:03:52,  elapsed time = 136ms )
+    retrieving REDSVD components
+            ( time = 20:03:52,  elapsed time = 1ms )
+    triming REDSVD components to 142elements
+            ( time = 20:03:52,  elapsed time = 699us )
+    done REDSVD
+            ( time = 20:03:52,  elapsed time = 260us )
+    SVD factorization complete
+            ( time = 20:03:52,  elapsed time = 40ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:03:52,  elapsed time = 35us )
+    Vt info: rows = 142: cols = 163: size = 23146: nonzeros = 23146
+            ( time = 20:03:52,  elapsed time = 22us )
+    U info: rows = 163: cols = 142: size = 23146: nonzeros = 23146
+            ( time = 20:03:52,  elapsed time = 26us )
+    jac info: rows = 372: cols = 163: size = 60636: nonzeros = 60271
+            ( time = 20:03:52,  elapsed time = 322us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:03:52,  elapsed time = 4ms )
+  beginning upgrade vector calculations, lambda = 1
+          ( time = 20:03:52,  elapsed time = 25ms )
+    forming JtQJ matrix
+            ( time = 20:03:52,  elapsed time = 35ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:03:52,  elapsed time = 67us )
+    starting REDSVD
+            ( time = 20:03:53,  elapsed time = 161ms )
+    retrieving REDSVD components
+            ( time = 20:03:53,  elapsed time = 1ms )
+    triming REDSVD components to 142elements
+            ( time = 20:03:53,  elapsed time = 1ms )
+    done REDSVD
+            ( time = 20:03:53,  elapsed time = 321us )
+    SVD factorization complete
+            ( time = 20:03:53,  elapsed time = 42ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:03:53,  elapsed time = 40us )
+    Vt info: rows = 142: cols = 163: size = 23146: nonzeros = 23146
+            ( time = 20:03:53,  elapsed time = 25us )
+    U info: rows = 163: cols = 142: size = 23146: nonzeros = 23146
+            ( time = 20:03:53,  elapsed time = 23us )
+    jac info: rows = 372: cols = 163: size = 60636: nonzeros = 60271
+            ( time = 20:03:53,  elapsed time = 349us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:03:53,  elapsed time = 4ms )
+  beginning upgrade vector calculations, lambda = 10
+          ( time = 20:03:53,  elapsed time = 26ms )
+    forming JtQJ matrix
+            ( time = 20:03:53,  elapsed time = 30ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:03:53,  elapsed time = 47us )
+    starting REDSVD
+            ( time = 20:03:53,  elapsed time = 138ms )
+    retrieving REDSVD components
+            ( time = 20:03:53,  elapsed time = 1ms )
+    triming REDSVD components to 142elements
+            ( time = 20:03:53,  elapsed time = 651us )
+    done REDSVD
+            ( time = 20:03:53,  elapsed time = 246us )
+    SVD factorization complete
+            ( time = 20:03:53,  elapsed time = 37ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:03:53,  elapsed time = 42us )
+    Vt info: rows = 142: cols = 163: size = 23146: nonzeros = 23146
+            ( time = 20:03:53,  elapsed time = 24us )
+    U info: rows = 163: cols = 142: size = 23146: nonzeros = 23146
+            ( time = 20:03:53,  elapsed time = 20us )
+    jac info: rows = 372: cols = 163: size = 60636: nonzeros = 60271
+            ( time = 20:03:53,  elapsed time = 299us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:03:53,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 100
+          ( time = 20:03:53,  elapsed time = 23ms )
+    forming JtQJ matrix
+            ( time = 20:03:53,  elapsed time = 28ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:03:53,  elapsed time = 55us )
+    starting REDSVD
+            ( time = 20:03:53,  elapsed time = 135ms )
+    retrieving REDSVD components
+            ( time = 20:03:53,  elapsed time = 818us )
+    triming REDSVD components to 142elements
+            ( time = 20:03:53,  elapsed time = 972us )
+    done REDSVD
+            ( time = 20:03:53,  elapsed time = 166us )
+    SVD factorization complete
+            ( time = 20:03:53,  elapsed time = 34ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:03:53,  elapsed time = 32us )
+    Vt info: rows = 142: cols = 163: size = 23146: nonzeros = 23146
+            ( time = 20:03:53,  elapsed time = 20us )
+    U info: rows = 163: cols = 142: size = 23146: nonzeros = 23146
+            ( time = 20:03:53,  elapsed time = 21us )
+    jac info: rows = 372: cols = 163: size = 60636: nonzeros = 60271
+            ( time = 20:03:53,  elapsed time = 285us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:03:53,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 1000
+          ( time = 20:03:53,  elapsed time = 22ms )
+    forming JtQJ matrix
+            ( time = 20:03:53,  elapsed time = 30ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:03:53,  elapsed time = 48us )
+    starting REDSVD
+            ( time = 20:03:53,  elapsed time = 123ms )
+    retrieving REDSVD components
+            ( time = 20:03:53,  elapsed time = 1ms )
+    triming REDSVD components to 142elements
+            ( time = 20:03:53,  elapsed time = 727us )
+    done REDSVD
+            ( time = 20:03:53,  elapsed time = 29us )
+    SVD factorization complete
+            ( time = 20:03:53,  elapsed time = 39ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:03:53,  elapsed time = 37us )
+    Vt info: rows = 142: cols = 163: size = 23146: nonzeros = 23146
+            ( time = 20:03:53,  elapsed time = 25us )
+    U info: rows = 163: cols = 142: size = 23146: nonzeros = 23146
+            ( time = 20:03:53,  elapsed time = 23us )
+    jac info: rows = 372: cols = 163: size = 60636: nonzeros = 60271
+            ( time = 20:03:53,  elapsed time = 371us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:04:34,  elapsed time = 40sec )
+  completed iteration 3
+  time to complete iteration 3
+          ( elapsed time = 21min )
+
+          ( time = 20:04:34,  elapsed time = 114ms )
+beginning iteration 4
+        ( time = 20:04:34,  elapsed time = 110us )
+  commencing to build jacobian parameter sets
+          ( time = 20:04:34,  elapsed time = 75ms )
+  commencing to build jacobian parameter sets
+          ( time = 20:04:34,  elapsed time = 116ms )
+  jacobian parameter sets built, commencing model runs
+          ( time = 20:20:10,  elapsed time = 15min )
+  jacobian runs complete, processing runs
+          ( time = 20:20:10,  elapsed time = 24ms )
+  saving jacobian and sen files
+          ( time = 20:20:10,  elapsed time = 87ms )
+  computing upgrade vectors
+          ( time = 20:20:10,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 0.1
+          ( time = 20:20:10,  elapsed time = 19ms )
+    forming JtQJ matrix
+            ( time = 20:20:10,  elapsed time = 19ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:20:10,  elapsed time = 49us )
+    starting REDSVD
+            ( time = 20:20:10,  elapsed time = 50ms )
+    retrieving REDSVD components
+            ( time = 20:20:10,  elapsed time = 505us )
+    triming REDSVD components to 110elements
+            ( time = 20:20:10,  elapsed time = 320us )
+    done REDSVD
+            ( time = 20:20:10,  elapsed time = 147us )
+    SVD factorization complete
+            ( time = 20:20:10,  elapsed time = 21ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:20:10,  elapsed time = 36us )
+    Vt info: rows = 110: cols = 120: size = 13200: nonzeros = 13200
+            ( time = 20:20:10,  elapsed time = 22us )
+    U info: rows = 120: cols = 110: size = 13200: nonzeros = 13200
+            ( time = 20:20:10,  elapsed time = 22us )
+    jac info: rows = 372: cols = 120: size = 44640: nonzeros = 44432
+            ( time = 20:20:10,  elapsed time = 223us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:20:10,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 1
+          ( time = 20:20:10,  elapsed time = 19ms )
+    forming JtQJ matrix
+            ( time = 20:20:10,  elapsed time = 18ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:20:10,  elapsed time = 57us )
+    starting REDSVD
+            ( time = 20:20:10,  elapsed time = 54ms )
+    retrieving REDSVD components
+            ( time = 20:20:10,  elapsed time = 847us )
+    triming REDSVD components to 110elements
+            ( time = 20:20:10,  elapsed time = 438us )
+    done REDSVD
+            ( time = 20:20:10,  elapsed time = 190us )
+    SVD factorization complete
+            ( time = 20:20:10,  elapsed time = 26ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:20:10,  elapsed time = 39us )
+    Vt info: rows = 110: cols = 120: size = 13200: nonzeros = 13200
+            ( time = 20:20:10,  elapsed time = 27us )
+    U info: rows = 120: cols = 110: size = 13200: nonzeros = 13200
+            ( time = 20:20:10,  elapsed time = 25us )
+    jac info: rows = 372: cols = 120: size = 44640: nonzeros = 44432
+            ( time = 20:20:10,  elapsed time = 261us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:20:10,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 10
+          ( time = 20:20:10,  elapsed time = 23ms )
+    forming JtQJ matrix
+            ( time = 20:20:11,  elapsed time = 19ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:20:11,  elapsed time = 49us )
+    starting REDSVD
+            ( time = 20:20:11,  elapsed time = 49ms )
+    retrieving REDSVD components
+            ( time = 20:20:11,  elapsed time = 601us )
+    triming REDSVD components to 110elements
+            ( time = 20:20:11,  elapsed time = 311us )
+    done REDSVD
+            ( time = 20:20:11,  elapsed time = 138us )
+    SVD factorization complete
+            ( time = 20:20:11,  elapsed time = 20ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:20:11,  elapsed time = 33us )
+    Vt info: rows = 110: cols = 120: size = 13200: nonzeros = 13200
+            ( time = 20:20:11,  elapsed time = 20us )
+    U info: rows = 120: cols = 110: size = 13200: nonzeros = 13200
+            ( time = 20:20:11,  elapsed time = 19us )
+    jac info: rows = 372: cols = 120: size = 44640: nonzeros = 44432
+            ( time = 20:20:11,  elapsed time = 202us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:20:11,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 100
+          ( time = 20:20:11,  elapsed time = 16ms )
+    forming JtQJ matrix
+            ( time = 20:20:11,  elapsed time = 14ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:20:11,  elapsed time = 22us )
+    starting REDSVD
+            ( time = 20:20:11,  elapsed time = 42ms )
+    retrieving REDSVD components
+            ( time = 20:20:11,  elapsed time = 616us )
+    triming REDSVD components to 110elements
+            ( time = 20:20:11,  elapsed time = 323us )
+    done REDSVD
+            ( time = 20:20:11,  elapsed time = 139us )
+    SVD factorization complete
+            ( time = 20:20:11,  elapsed time = 25ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:20:11,  elapsed time = 40us )
+    Vt info: rows = 110: cols = 120: size = 13200: nonzeros = 13200
+            ( time = 20:20:11,  elapsed time = 22us )
+    U info: rows = 120: cols = 110: size = 13200: nonzeros = 13200
+            ( time = 20:20:11,  elapsed time = 21us )
+    jac info: rows = 372: cols = 120: size = 44640: nonzeros = 44432
+            ( time = 20:20:11,  elapsed time = 258us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:20:11,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 1000
+          ( time = 20:20:11,  elapsed time = 22ms )
+    forming JtQJ matrix
+            ( time = 20:20:11,  elapsed time = 20ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:20:11,  elapsed time = 73us )
+    starting REDSVD
+            ( time = 20:20:11,  elapsed time = 60ms )
+    retrieving REDSVD components
+            ( time = 20:20:11,  elapsed time = 641us )
+    triming REDSVD components to 110elements
+            ( time = 20:20:11,  elapsed time = 362us )
+    done REDSVD
+            ( time = 20:20:11,  elapsed time = 163us )
+    SVD factorization complete
+            ( time = 20:20:11,  elapsed time = 22ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:20:11,  elapsed time = 34us )
+    Vt info: rows = 110: cols = 120: size = 13200: nonzeros = 13200
+            ( time = 20:20:11,  elapsed time = 22us )
+    U info: rows = 120: cols = 110: size = 13200: nonzeros = 13200
+            ( time = 20:20:11,  elapsed time = 22us )
+    jac info: rows = 372: cols = 120: size = 44640: nonzeros = 44432
+            ( time = 20:20:11,  elapsed time = 220us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:20:52,  elapsed time = 40sec )
+  completed iteration 4
+  time to complete iteration 4
+          ( elapsed time = 16min )
+          ( time = 20:20:52,  elapsed time = 87ms )
+  commencing to build jacobian parameter sets
+          ( time = 20:20:52,  elapsed time = 28ms )
+  jacobian parameter sets built, commencing model runs
+          ( time = 20:49:03,  elapsed time = 28min )
+  jacobian runs complete, processing runs
+          ( time = 20:49:03,  elapsed time = 41ms )
+  processing jacobian runs complete
+          ( time = 20:49:03,  elapsed time = 52us )
+  saving jacobian and sen files
+
+          ( time = 20:49:18,  elapsed time = 14sec )
+beginning iteration 5
+        ( time = 20:49:18,  elapsed time = 1ms )
+  computing upgrade vectors
+          ( time = 20:49:18,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 0.1
+          ( time = 20:49:18,  elapsed time = 15ms )
+    forming JtQJ matrix
+            ( time = 20:49:18,  elapsed time = 13ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:49:18,  elapsed time = 53us )
+    starting REDSVD
+            ( time = 20:49:18,  elapsed time = 35ms )
+    retrieving REDSVD components
+            ( time = 20:49:18,  elapsed time = 552us )
+    triming REDSVD components to 103elements
+            ( time = 20:49:18,  elapsed time = 375us )
+    done REDSVD
+            ( time = 20:49:18,  elapsed time = 33us )
+    SVD factorization complete
+            ( time = 20:49:18,  elapsed time = 23ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:49:18,  elapsed time = 37us )
+    Vt info: rows = 103: cols = 110: size = 11330: nonzeros = 11330
+            ( time = 20:49:18,  elapsed time = 25us )
+    U info: rows = 110: cols = 103: size = 11330: nonzeros = 11330
+            ( time = 20:49:18,  elapsed time = 24us )
+    jac info: rows = 372: cols = 110: size = 40920: nonzeros = 40810
+            ( time = 20:49:18,  elapsed time = 225us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:49:18,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 1
+          ( time = 20:49:18,  elapsed time = 19ms )
+    forming JtQJ matrix
+            ( time = 20:49:18,  elapsed time = 15ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:49:18,  elapsed time = 51us )
+    starting REDSVD
+            ( time = 20:49:18,  elapsed time = 33ms )
+    retrieving REDSVD components
+            ( time = 20:49:18,  elapsed time = 397us )
+    triming REDSVD components to 103elements
+            ( time = 20:49:18,  elapsed time = 231us )
+    done REDSVD
+            ( time = 20:49:18,  elapsed time = 26us )
+    SVD factorization complete
+            ( time = 20:49:18,  elapsed time = 16ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:49:18,  elapsed time = 29us )
+    Vt info: rows = 103: cols = 110: size = 11330: nonzeros = 11330
+            ( time = 20:49:18,  elapsed time = 19us )
+    U info: rows = 110: cols = 103: size = 11330: nonzeros = 11330
+            ( time = 20:49:18,  elapsed time = 21us )
+    jac info: rows = 372: cols = 110: size = 40920: nonzeros = 40810
+            ( time = 20:49:18,  elapsed time = 182us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:49:18,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 10
+          ( time = 20:49:18,  elapsed time = 17ms )
+    forming JtQJ matrix
+            ( time = 20:49:18,  elapsed time = 16ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:49:18,  elapsed time = 54us )
+    starting REDSVD
+            ( time = 20:49:18,  elapsed time = 38ms )
+    retrieving REDSVD components
+            ( time = 20:49:18,  elapsed time = 596us )
+    triming REDSVD components to 103elements
+            ( time = 20:49:18,  elapsed time = 343us )
+    done REDSVD
+            ( time = 20:49:18,  elapsed time = 33us )
+    SVD factorization complete
+            ( time = 20:49:18,  elapsed time = 23ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:49:18,  elapsed time = 33us )
+    Vt info: rows = 103: cols = 110: size = 11330: nonzeros = 11330
+            ( time = 20:49:18,  elapsed time = 25us )
+    U info: rows = 110: cols = 103: size = 11330: nonzeros = 11330
+            ( time = 20:49:18,  elapsed time = 23us )
+    jac info: rows = 372: cols = 110: size = 40920: nonzeros = 40810
+            ( time = 20:49:18,  elapsed time = 225us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:49:18,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 100
+          ( time = 20:49:18,  elapsed time = 18ms )
+    forming JtQJ matrix
+            ( time = 20:49:18,  elapsed time = 16ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:49:18,  elapsed time = 58us )
+    starting REDSVD
+            ( time = 20:49:18,  elapsed time = 45ms )
+    retrieving REDSVD components
+            ( time = 20:49:18,  elapsed time = 702us )
+    triming REDSVD components to 103elements
+            ( time = 20:49:18,  elapsed time = 373us )
+    done REDSVD
+            ( time = 20:49:18,  elapsed time = 38us )
+    SVD factorization complete
+            ( time = 20:49:18,  elapsed time = 21ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:49:18,  elapsed time = 41us )
+    Vt info: rows = 103: cols = 110: size = 11330: nonzeros = 11330
+            ( time = 20:49:18,  elapsed time = 23us )
+    U info: rows = 110: cols = 103: size = 11330: nonzeros = 11330
+            ( time = 20:49:18,  elapsed time = 21us )
+    jac info: rows = 372: cols = 110: size = 40920: nonzeros = 40810
+            ( time = 20:49:18,  elapsed time = 206us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:49:18,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 1000
+          ( time = 20:49:18,  elapsed time = 15ms )
+    forming JtQJ matrix
+            ( time = 20:49:18,  elapsed time = 14ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 20:49:18,  elapsed time = 55us )
+    starting REDSVD
+            ( time = 20:49:18,  elapsed time = 35ms )
+    retrieving REDSVD components
+            ( time = 20:49:18,  elapsed time = 449us )
+    triming REDSVD components to 103elements
+            ( time = 20:49:18,  elapsed time = 279us )
+    done REDSVD
+            ( time = 20:49:18,  elapsed time = 27us )
+    SVD factorization complete
+            ( time = 20:49:18,  elapsed time = 16ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 20:49:18,  elapsed time = 29us )
+    Vt info: rows = 103: cols = 110: size = 11330: nonzeros = 11330
+            ( time = 20:49:18,  elapsed time = 18us )
+    U info: rows = 110: cols = 103: size = 11330: nonzeros = 11330
+            ( time = 20:49:18,  elapsed time = 19us )
+    jac info: rows = 372: cols = 110: size = 40920: nonzeros = 40810
+            ( time = 20:49:18,  elapsed time = 179us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 20:49:59,  elapsed time = 41sec )
+  completed iteration 5
+  time to complete iteration 5
+          ( elapsed time = 41sec )
+
+          ( time = 20:49:59,  elapsed time = 65ms )
+beginning iteration 6
+        ( time = 20:49:59,  elapsed time = 116us )
+  commencing to build jacobian parameter sets
+          ( time = 20:49:59,  elapsed time = 51ms )
+  commencing to build jacobian parameter sets
+          ( time = 20:49:59,  elapsed time = 72ms )
+  jacobian parameter sets built, commencing model runs
+          ( time = 21:03:54,  elapsed time = 13min )
+  jacobian runs complete, processing runs
+          ( time = 21:03:54,  elapsed time = 27ms )
+  saving jacobian and sen files
+          ( time = 21:03:54,  elapsed time = 73ms )
+  computing upgrade vectors
+          ( time = 21:03:54,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 0.1
+          ( time = 21:03:54,  elapsed time = 18ms )
+    forming JtQJ matrix
+            ( time = 21:03:54,  elapsed time = 15ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:03:54,  elapsed time = 52us )
+    starting REDSVD
+            ( time = 21:03:54,  elapsed time = 38ms )
+    retrieving REDSVD components
+            ( time = 21:03:54,  elapsed time = 379us )
+    triming REDSVD components to 98elements
+            ( time = 21:03:54,  elapsed time = 258us )
+    done REDSVD
+            ( time = 21:03:54,  elapsed time = 25us )
+    SVD factorization complete
+            ( time = 21:03:54,  elapsed time = 18ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:03:54,  elapsed time = 46us )
+    Vt info: rows = 98: cols = 106: size = 10388: nonzeros = 10388
+            ( time = 21:03:54,  elapsed time = 27us )
+    U info: rows = 106: cols = 98: size = 10388: nonzeros = 10388
+            ( time = 21:03:54,  elapsed time = 25us )
+    jac info: rows = 372: cols = 106: size = 39432: nonzeros = 39140
+            ( time = 21:03:54,  elapsed time = 259us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:03:54,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 1
+          ( time = 21:03:54,  elapsed time = 17ms )
+    forming JtQJ matrix
+            ( time = 21:03:54,  elapsed time = 18ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:03:54,  elapsed time = 71us )
+    starting REDSVD
+            ( time = 21:03:54,  elapsed time = 38ms )
+    retrieving REDSVD components
+            ( time = 21:03:54,  elapsed time = 398us )
+    triming REDSVD components to 98elements
+            ( time = 21:03:54,  elapsed time = 273us )
+    done REDSVD
+            ( time = 21:03:54,  elapsed time = 27us )
+    SVD factorization complete
+            ( time = 21:03:54,  elapsed time = 19ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:03:54,  elapsed time = 41us )
+    Vt info: rows = 98: cols = 106: size = 10388: nonzeros = 10388
+            ( time = 21:03:54,  elapsed time = 24us )
+    U info: rows = 106: cols = 98: size = 10388: nonzeros = 10388
+            ( time = 21:03:54,  elapsed time = 23us )
+    jac info: rows = 372: cols = 106: size = 39432: nonzeros = 39140
+            ( time = 21:03:54,  elapsed time = 218us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:03:54,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 10
+          ( time = 21:03:54,  elapsed time = 16ms )
+    forming JtQJ matrix
+            ( time = 21:03:54,  elapsed time = 15ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:03:54,  elapsed time = 46us )
+    starting REDSVD
+            ( time = 21:03:54,  elapsed time = 41ms )
+    retrieving REDSVD components
+            ( time = 21:03:54,  elapsed time = 472us )
+    triming REDSVD components to 98elements
+            ( time = 21:03:54,  elapsed time = 397us )
+    done REDSVD
+            ( time = 21:03:54,  elapsed time = 35us )
+    SVD factorization complete
+            ( time = 21:03:54,  elapsed time = 20ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:03:54,  elapsed time = 42us )
+    Vt info: rows = 98: cols = 106: size = 10388: nonzeros = 10388
+            ( time = 21:03:54,  elapsed time = 25us )
+    U info: rows = 106: cols = 98: size = 10388: nonzeros = 10388
+            ( time = 21:03:54,  elapsed time = 24us )
+    jac info: rows = 372: cols = 106: size = 39432: nonzeros = 39140
+            ( time = 21:03:54,  elapsed time = 227us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:03:54,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 100
+          ( time = 21:03:54,  elapsed time = 16ms )
+    forming JtQJ matrix
+            ( time = 21:03:54,  elapsed time = 17ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:03:54,  elapsed time = 60us )
+    starting REDSVD
+            ( time = 21:03:54,  elapsed time = 38ms )
+    retrieving REDSVD components
+            ( time = 21:03:54,  elapsed time = 443us )
+    triming REDSVD components to 98elements
+            ( time = 21:03:54,  elapsed time = 323us )
+    done REDSVD
+            ( time = 21:03:54,  elapsed time = 30us )
+    SVD factorization complete
+            ( time = 21:03:54,  elapsed time = 17ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:03:54,  elapsed time = 40us )
+    Vt info: rows = 98: cols = 106: size = 10388: nonzeros = 10388
+            ( time = 21:03:54,  elapsed time = 22us )
+    U info: rows = 106: cols = 98: size = 10388: nonzeros = 10388
+            ( time = 21:03:54,  elapsed time = 21us )
+    jac info: rows = 372: cols = 106: size = 39432: nonzeros = 39140
+            ( time = 21:03:54,  elapsed time = 210us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:03:54,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 1000
+          ( time = 21:03:54,  elapsed time = 19ms )
+    forming JtQJ matrix
+            ( time = 21:03:54,  elapsed time = 16ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:03:54,  elapsed time = 63us )
+    starting REDSVD
+            ( time = 21:03:54,  elapsed time = 44ms )
+    retrieving REDSVD components
+            ( time = 21:03:54,  elapsed time = 403us )
+    triming REDSVD components to 98elements
+            ( time = 21:03:54,  elapsed time = 275us )
+    done REDSVD
+            ( time = 21:03:54,  elapsed time = 28us )
+    SVD factorization complete
+            ( time = 21:03:55,  elapsed time = 20ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:03:55,  elapsed time = 55us )
+    Vt info: rows = 98: cols = 106: size = 10388: nonzeros = 10388
+            ( time = 21:03:55,  elapsed time = 25us )
+    U info: rows = 106: cols = 98: size = 10388: nonzeros = 10388
+            ( time = 21:03:55,  elapsed time = 24us )
+    jac info: rows = 372: cols = 106: size = 39432: nonzeros = 39140
+            ( time = 21:03:55,  elapsed time = 224us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:04:35,  elapsed time = 40sec )
+  completed iteration 6
+  time to complete iteration 6
+          ( elapsed time = 14min )
+
+          ( time = 21:04:35,  elapsed time = 93ms )
+beginning iteration 7
+        ( time = 21:04:35,  elapsed time = 147us )
+  commencing to build jacobian parameter sets
+          ( time = 21:04:35,  elapsed time = 59ms )
+  commencing to build jacobian parameter sets
+          ( time = 21:04:36,  elapsed time = 158ms )
+  jacobian parameter sets built, commencing model runs
+          ( time = 21:31:34,  elapsed time = 26min )
+  jacobian runs complete, processing runs
+          ( time = 21:31:34,  elapsed time = 157ms )
+  saving jacobian and sen files
+          ( time = 21:31:34,  elapsed time = 61ms )
+  computing upgrade vectors
+          ( time = 21:31:34,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 0.1
+          ( time = 21:31:34,  elapsed time = 14ms )
+    forming JtQJ matrix
+            ( time = 21:31:34,  elapsed time = 14ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:31:34,  elapsed time = 54us )
+    starting REDSVD
+            ( time = 21:31:34,  elapsed time = 42ms )
+    retrieving REDSVD components
+            ( time = 21:31:34,  elapsed time = 450us )
+    triming REDSVD components to 97elements
+            ( time = 21:31:34,  elapsed time = 410us )
+    done REDSVD
+            ( time = 21:31:34,  elapsed time = 33us )
+    SVD factorization complete
+            ( time = 21:31:34,  elapsed time = 20ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:31:34,  elapsed time = 38us )
+    Vt info: rows = 97: cols = 105: size = 10185: nonzeros = 10185
+            ( time = 21:31:34,  elapsed time = 25us )
+    U info: rows = 105: cols = 97: size = 10185: nonzeros = 10185
+            ( time = 21:31:34,  elapsed time = 24us )
+    jac info: rows = 372: cols = 105: size = 39060: nonzeros = 39060
+            ( time = 21:31:34,  elapsed time = 217us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:31:34,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 1
+          ( time = 21:31:34,  elapsed time = 17ms )
+    forming JtQJ matrix
+            ( time = 21:31:34,  elapsed time = 13ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:31:34,  elapsed time = 36us )
+    starting REDSVD
+            ( time = 21:31:34,  elapsed time = 34ms )
+    retrieving REDSVD components
+            ( time = 21:31:34,  elapsed time = 499us )
+    triming REDSVD components to 97elements
+            ( time = 21:31:34,  elapsed time = 344us )
+    done REDSVD
+            ( time = 21:31:34,  elapsed time = 27us )
+    SVD factorization complete
+            ( time = 21:31:34,  elapsed time = 18ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:31:34,  elapsed time = 31us )
+    Vt info: rows = 97: cols = 105: size = 10185: nonzeros = 10185
+            ( time = 21:31:34,  elapsed time = 22us )
+    U info: rows = 105: cols = 97: size = 10185: nonzeros = 10185
+            ( time = 21:31:34,  elapsed time = 21us )
+    jac info: rows = 372: cols = 105: size = 39060: nonzeros = 39060
+            ( time = 21:31:34,  elapsed time = 200us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:31:34,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 10
+          ( time = 21:31:34,  elapsed time = 15ms )
+    forming JtQJ matrix
+            ( time = 21:31:34,  elapsed time = 15ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:31:34,  elapsed time = 53us )
+    starting REDSVD
+            ( time = 21:31:34,  elapsed time = 48ms )
+    retrieving REDSVD components
+            ( time = 21:31:34,  elapsed time = 397us )
+    triming REDSVD components to 97elements
+            ( time = 21:31:34,  elapsed time = 367us )
+    done REDSVD
+            ( time = 21:31:34,  elapsed time = 30us )
+    SVD factorization complete
+            ( time = 21:31:34,  elapsed time = 20ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:31:34,  elapsed time = 42us )
+    Vt info: rows = 97: cols = 105: size = 10185: nonzeros = 10185
+            ( time = 21:31:34,  elapsed time = 26us )
+    U info: rows = 105: cols = 97: size = 10185: nonzeros = 10185
+            ( time = 21:31:34,  elapsed time = 29us )
+    jac info: rows = 372: cols = 105: size = 39060: nonzeros = 39060
+            ( time = 21:31:34,  elapsed time = 226us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:31:34,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 100
+          ( time = 21:31:34,  elapsed time = 17ms )
+    forming JtQJ matrix
+            ( time = 21:31:34,  elapsed time = 14ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:31:34,  elapsed time = 59us )
+    starting REDSVD
+            ( time = 21:31:35,  elapsed time = 34ms )
+    retrieving REDSVD components
+            ( time = 21:31:35,  elapsed time = 412us )
+    triming REDSVD components to 97elements
+            ( time = 21:31:35,  elapsed time = 285us )
+    done REDSVD
+            ( time = 21:31:35,  elapsed time = 28us )
+    SVD factorization complete
+            ( time = 21:31:35,  elapsed time = 20ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:31:35,  elapsed time = 42us )
+    Vt info: rows = 97: cols = 105: size = 10185: nonzeros = 10185
+            ( time = 21:31:35,  elapsed time = 24us )
+    U info: rows = 105: cols = 97: size = 10185: nonzeros = 10185
+            ( time = 21:31:35,  elapsed time = 23us )
+    jac info: rows = 372: cols = 105: size = 39060: nonzeros = 39060
+            ( time = 21:31:35,  elapsed time = 213us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:31:35,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 1000
+          ( time = 21:31:35,  elapsed time = 15ms )
+    forming JtQJ matrix
+            ( time = 21:31:35,  elapsed time = 13ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:31:35,  elapsed time = 44us )
+    starting REDSVD
+            ( time = 21:31:35,  elapsed time = 31ms )
+    retrieving REDSVD components
+            ( time = 21:31:35,  elapsed time = 489us )
+    triming REDSVD components to 97elements
+            ( time = 21:31:35,  elapsed time = 306us )
+    done REDSVD
+            ( time = 21:31:35,  elapsed time = 124us )
+    SVD factorization complete
+            ( time = 21:31:35,  elapsed time = 15ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:31:35,  elapsed time = 30us )
+    Vt info: rows = 97: cols = 105: size = 10185: nonzeros = 10185
+            ( time = 21:31:35,  elapsed time = 20us )
+    U info: rows = 105: cols = 97: size = 10185: nonzeros = 10185
+            ( time = 21:31:35,  elapsed time = 19us )
+    jac info: rows = 372: cols = 105: size = 39060: nonzeros = 39060
+            ( time = 21:31:35,  elapsed time = 175us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:32:16,  elapsed time = 41sec )
+  completed iteration 7
+  time to complete iteration 7
+          ( elapsed time = 27min )
+
+          ( time = 21:32:16,  elapsed time = 140ms )
+beginning iteration 8
+        ( time = 21:32:16,  elapsed time = 143us )
+  commencing to build jacobian parameter sets
+          ( time = 21:32:16,  elapsed time = 57ms )
+  commencing to build jacobian parameter sets
+          ( time = 21:32:17,  elapsed time = 150ms )
+  jacobian parameter sets built, commencing model runs
+          ( time = 21:57:08,  elapsed time = 24min )
+  jacobian runs complete, processing runs
+          ( time = 21:57:08,  elapsed time = 130ms )
+  saving jacobian and sen files
+          ( time = 21:57:08,  elapsed time = 63ms )
+  computing upgrade vectors
+          ( time = 21:57:08,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 0.1
+          ( time = 21:57:08,  elapsed time = 14ms )
+    forming JtQJ matrix
+            ( time = 21:57:08,  elapsed time = 14ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:57:08,  elapsed time = 69us )
+    starting REDSVD
+            ( time = 21:57:08,  elapsed time = 32ms )
+    retrieving REDSVD components
+            ( time = 21:57:08,  elapsed time = 360us )
+    triming REDSVD components to 90elements
+            ( time = 21:57:08,  elapsed time = 266us )
+    done REDSVD
+            ( time = 21:57:08,  elapsed time = 26us )
+    SVD factorization complete
+            ( time = 21:57:08,  elapsed time = 15ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:57:08,  elapsed time = 30us )
+    Vt info: rows = 90: cols = 97: size = 8730: nonzeros = 8730
+            ( time = 21:57:08,  elapsed time = 22us )
+    U info: rows = 97: cols = 90: size = 8730: nonzeros = 8730
+            ( time = 21:57:08,  elapsed time = 21us )
+    jac info: rows = 372: cols = 97: size = 36084: nonzeros = 36084
+            ( time = 21:57:08,  elapsed time = 175us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:57:08,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 1
+          ( time = 21:57:08,  elapsed time = 15ms )
+    forming JtQJ matrix
+            ( time = 21:57:08,  elapsed time = 14ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:57:08,  elapsed time = 56us )
+    starting REDSVD
+            ( time = 21:57:08,  elapsed time = 30ms )
+    retrieving REDSVD components
+            ( time = 21:57:08,  elapsed time = 470us )
+    triming REDSVD components to 90elements
+            ( time = 21:57:08,  elapsed time = 291us )
+    done REDSVD
+            ( time = 21:57:08,  elapsed time = 29us )
+    SVD factorization complete
+            ( time = 21:57:08,  elapsed time = 16ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:57:08,  elapsed time = 34us )
+    Vt info: rows = 90: cols = 97: size = 8730: nonzeros = 8730
+            ( time = 21:57:08,  elapsed time = 26us )
+    U info: rows = 97: cols = 90: size = 8730: nonzeros = 8730
+            ( time = 21:57:08,  elapsed time = 25us )
+    jac info: rows = 372: cols = 97: size = 36084: nonzeros = 36084
+            ( time = 21:57:08,  elapsed time = 206us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:57:08,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 10
+          ( time = 21:57:08,  elapsed time = 18ms )
+    forming JtQJ matrix
+            ( time = 21:57:08,  elapsed time = 13ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:57:08,  elapsed time = 44us )
+    starting REDSVD
+            ( time = 21:57:09,  elapsed time = 32ms )
+    retrieving REDSVD components
+            ( time = 21:57:09,  elapsed time = 547us )
+    triming REDSVD components to 90elements
+            ( time = 21:57:09,  elapsed time = 346us )
+    done REDSVD
+            ( time = 21:57:09,  elapsed time = 36us )
+    SVD factorization complete
+            ( time = 21:57:09,  elapsed time = 18ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:57:09,  elapsed time = 41us )
+    Vt info: rows = 90: cols = 97: size = 8730: nonzeros = 8730
+            ( time = 21:57:09,  elapsed time = 26us )
+    U info: rows = 97: cols = 90: size = 8730: nonzeros = 8730
+            ( time = 21:57:09,  elapsed time = 25us )
+    jac info: rows = 372: cols = 97: size = 36084: nonzeros = 36084
+            ( time = 21:57:09,  elapsed time = 209us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:57:09,  elapsed time = 2ms )
+  beginning upgrade vector calculations, lambda = 100
+          ( time = 21:57:09,  elapsed time = 16ms )
+    forming JtQJ matrix
+            ( time = 21:57:09,  elapsed time = 13ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:57:09,  elapsed time = 36us )
+    starting REDSVD
+            ( time = 21:57:09,  elapsed time = 34ms )
+    retrieving REDSVD components
+            ( time = 21:57:09,  elapsed time = 505us )
+    triming REDSVD components to 90elements
+            ( time = 21:57:09,  elapsed time = 289us )
+    done REDSVD
+            ( time = 21:57:09,  elapsed time = 32us )
+    SVD factorization complete
+            ( time = 21:57:09,  elapsed time = 18ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:57:09,  elapsed time = 45us )
+    Vt info: rows = 90: cols = 97: size = 8730: nonzeros = 8730
+            ( time = 21:57:09,  elapsed time = 26us )
+    U info: rows = 97: cols = 90: size = 8730: nonzeros = 8730
+            ( time = 21:57:09,  elapsed time = 25us )
+    jac info: rows = 372: cols = 97: size = 36084: nonzeros = 36084
+            ( time = 21:57:09,  elapsed time = 226us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:57:09,  elapsed time = 3ms )
+  beginning upgrade vector calculations, lambda = 1000
+          ( time = 21:57:09,  elapsed time = 22ms )
+    forming JtQJ matrix
+            ( time = 21:57:09,  elapsed time = 13ms )
+    commencing SVD factorization - using identity lambda scaling
+            ( time = 21:57:09,  elapsed time = 52us )
+    starting REDSVD
+            ( time = 21:57:09,  elapsed time = 26ms )
+    retrieving REDSVD components
+            ( time = 21:57:09,  elapsed time = 372us )
+    triming REDSVD components to 90elements
+            ( time = 21:57:09,  elapsed time = 344us )
+    done REDSVD
+            ( time = 21:57:09,  elapsed time = 46us )
+    SVD factorization complete
+            ( time = 21:57:09,  elapsed time = 15ms )
+    commencing linear algebra multiplication to compute ugrade
+            ( time = 21:57:09,  elapsed time = 39us )
+    Vt info: rows = 90: cols = 97: size = 8730: nonzeros = 8730
+            ( time = 21:57:09,  elapsed time = 25us )
+    U info: rows = 97: cols = 90: size = 8730: nonzeros = 8730
+            ( time = 21:57:09,  elapsed time = 23us )
+    jac info: rows = 372: cols = 97: size = 36084: nonzeros = 36084
+            ( time = 21:57:09,  elapsed time = 197us )
+    linear algebra multiplication to compute ugrade complete
+            ( time = 21:57:50,  elapsed time = 41sec )
+  completed iteration 8
+  time to complete iteration 8
+          ( elapsed time = 25min )
+
+
+-----------------------------------
+starting linear uncertainty analyses
+-----------------------------------
+
+21:57:50-> starting calc_posterior
+21:57:50->-> starting align
+21:57:50->-> finished align, elapsed time = 7ms
+21:57:50->-> starting invert obscov
+21:57:50->->-> starting inverting diagonal matrix in place
+21:57:50->->->-> starting extracting diagonal
+21:57:50->->->->-> starting inverting diagonal
+21:57:50->->->->->-> starting building triplets
+21:57:50->->->->->->-> starting setting matrix from triplets
+21:57:50->->->->->->-> finished invert obscov, elapsed time = 107us
+21:57:50->->->->->->-> starting form JtQJ
+21:57:51->->->->->->-> finished form JtQJ, elapsed time = 53ms
+21:57:51->->->->->->-> starting invert parcov
+21:57:51->->->->->->-> finished invert parcov, elapsed time = 8ms
+21:57:51->->->->->->-> starting form posterior
+21:57:51->->->->->->-> finished form posterior, elapsed time = 1ms
+21:57:51->->->->->->-> starting invert posterior
+21:57:51->->->->->->->-> starting inverting non-diagonal matrix in place
+21:57:51->->->->->->->->-> starting instantiate solver
+21:57:51->->->->->->->->->-> starting computing inverse
+21:57:51->->->->->->->->->->-> starting getting identity instance for solution
+21:57:51->->->->->->->->->->->-> starting solving
+21:57:51->->->->->->->->->->->-> finished invert posterior, elapsed time = 16ms
+21:57:51->->->->->->->->->->-> finished calc_posterior, elapsed time = 87ms
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 34us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 15us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 57us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 17us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 18us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 17us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 42us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 17us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 18us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting prior_parameter_variance
+21:57:51->->->->->->->->->->-> finished prior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 17us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 11us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 16us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 14us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 13us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+21:57:51->->->->->->->->->->-> starting posterior_parameter_variance
+21:57:51->->->->->->->->->->-> finished posterior_parameter_variance, elapsed time = 12us
+          ( time = 21:57:51,  elapsed time = 537ms )
+  parameters not grouped by parameter groups, reordering par ensemble
+          ( time = 21:57:51,  elapsed time = 13ms )
+  making standard normal draws
+          ( time = 21:57:51,  elapsed time = 1ms )
+  ...drawing by group
+
+          ( time = 21:57:51,  elapsed time = 893us )
+  thread: 0 - only one element in group PMS__MULTIPLIER, scaling by std
+          ( time = 21:57:51,  elapsed time = 6ms )
+  thread: 0 - min variance for group KP_Q_INST:0: 0.00369359
+          ( time = 21:57:51,  elapsed time = 35us )
+  thread: 0 - Randomized Eigen decomposition of full cov for 83 element matrix
+
+          ( time = 21:57:51,  elapsed time = 13ms )
+  thread: 0 - min variance for group KP_PC_INST:0: 0.00143054
+          ( time = 21:57:51,  elapsed time = 62us )
+  thread: 0 - Randomized Eigen decomposition of full cov for 110 element matrix
+
+          ( time = 21:57:51,  elapsed time = 18ms )
+  thread: 0 - min variance for group IRR__MULTIPLIER: 0.00168969
+          ( time = 21:57:51,  elapsed time = 53us )
+  thread: 0 - Randomized Eigen decomposition of full cov for 14 element matrix
+
+          ( time = 21:57:51,  elapsed time = 5ms )
+  thread: 0 - min variance for group COND: 0.00250863
+          ( time = 21:57:51,  elapsed time = 33us )
+  thread: 0 - Randomized Eigen decomposition of full cov for 6 element matrix
+
+          ( time = 21:57:51,  elapsed time = 65us )
+  draw thread: 0 processed 0 groups
+          ( time = 21:57:51,  elapsed time = 597us )
+  checking realization for invalid values
+          ( time = 21:57:51,  elapsed time = 168us )
+  resizing reals matrix
+          ( time = 21:57:51,  elapsed time = 70us )
+  filling reals matrix and adding mean values
+          ( time = 22:05:28,  elapsed time = 7min )
+  making standard normal draws
+          ( time = 22:05:28,  elapsed time = 1ms )
+  scaling by std
+          ( time = 22:05:28,  elapsed time = 31us )
+  checking realization for invalid values
+          ( time = 22:05:28,  elapsed time = 164us )
+  resizing reals matrix
+          ( time = 22:05:28,  elapsed time = 77us )
+  filling reals matrix and adding mean values

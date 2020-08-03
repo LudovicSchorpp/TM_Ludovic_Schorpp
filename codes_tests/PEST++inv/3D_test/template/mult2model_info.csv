@@ -3,3 +3,4 @@
 1,kp_pc_inst0pp.fac,free,0,,5e-07,mult\kp_pc_inst0_pilotpoint.csv,kpc.txt,org\kpc.txt,kp_pc_inst0pp.dat,,0.0005,,False
 2,,free,0,,,mult\irr_inst0_zone.csv,irr.txt,org\irr.txt,,,,,False
 3,,free,0,,,mult\pms_inst0_constant.csv,kpms.txt,org\kpms.txt,,,,,False
+4,,free,0,,,mult\qm_inst0_constant.csv,kqm.txt,org\kqm.txt,,,,,False

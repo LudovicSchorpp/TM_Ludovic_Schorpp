@@ -1,0 +1,850 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.0.4 03/13/2019
+
+   MODFLOW 6 compiled Mar 21 2019 15:37:31 with IFORT compiler (ver. 19.0.0)
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+MODFLOW was compiled using uniform precision.
+Precision of REAL variables: 15
+
+
+ OPENED pest_3D_R.dis
+ FILE TYPE:DIS6                   UNIT 1005   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED pest_3D_R.ic
+ FILE TYPE:IC6                    UNIT 1006   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED pest_3D_R.oc
+ FILE TYPE:OC6                    UNIT 1007   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED pest_3D_R.npf
+ FILE TYPE:NPF6                   UNIT 1008   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED pest_3D_R.wel
+ FILE TYPE:WEL6                   UNIT 1009   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED pest_3D_R.rch
+ FILE TYPE:RCH6                   UNIT 1010   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED irri.rch
+ FILE TYPE:RCH6                   UNIT 1011   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED p_agri.rch
+ FILE TYPE:RCH6                   UNIT 1012   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Corb.wel
+ FILE TYPE:WEL6                   UNIT 1013   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED sea.chd
+ FILE TYPE:CHD6                   UNIT 1014   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED thuir.chd
+ FILE TYPE:CHD6                   UNIT 1015   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED eta.drn
+ FILE TYPE:DRN6                   UNIT 1016   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED agly.riv
+ FILE TYPE:RIV6                   UNIT 1017   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Tet.riv
+ FILE TYPE:RIV6                   UNIT 1018   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Rea.riv
+ FILE TYPE:RIV6                   UNIT 1019   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Cant.riv
+ FILE TYPE:RIV6                   UNIT 1020   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Tech.riv
+ FILE TYPE:RIV6                   UNIT 1021   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED Bol.riv
+ FILE TYPE:RIV6                   UNIT 1022   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED pest_3D_R.obs
+ FILE TYPE:OBS6                   UNIT 1023   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM UNIT 1005
+
+
+ PROCESSING DISCRETIZATION OPTIONS
+    XORIGIN SPECIFIED AS     664525.000000000    
+    YORIGIN SPECIFIED AS     6152875.00000000    
+ END OF DISCRETIZATION OPTIONS
+ MODEL LENGTH UNIT IS UNDEFINED
+ PROCESSING DISCRETIZATION DIMENSIONS
+    NLAY =       5
+    NROW =     182
+    NCOL =     183
+ END OF DISCRETIZATION DIMENSIONS
+ PROCESSING GRIDDATA
+ END PROCESSING GRIDDATA
+
+ THE SPECIFIED IDOMAIN RESULTS IN A REDUCED NUMBER OF CELLS.
+ NUMBER OF USER NODES:  166530
+ NUMBER OF NODES IN SOLUTION:   69710
+
+
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM UNIT 1008
+
+
+ PROCESSING NPF OPTIONS
+    CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
+ END OF NPF OPTIONS
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1009
+
+ PROCESSING WEL OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF WEL OPTIONS
+
+ PROCESSING WEL DIMENSIONS
+    MAXBOUND =     291
+ END OF WEL DIMENSIONS
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1013
+
+ PROCESSING WEL OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF WEL OPTIONS
+
+ PROCESSING WEL DIMENSIONS
+    MAXBOUND =      97
+ END OF WEL DIMENSIONS
+
+ DRN   -- DRN PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1016
+
+ PROCESSING DRN OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF DRN OPTIONS
+
+ PROCESSING DRN DIMENSIONS
+    MAXBOUND =     644
+ END OF DRN DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1017
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      86
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1018
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =     173
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1019
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =     129
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1020
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      66
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1021
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =     113
+ END OF RIV DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1022
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      47
+ END OF RIV DIMENSIONS
+
+ RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1010
+
+ PROCESSING RCH OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RCH OPTIONS
+
+ PROCESSING RCH DIMENSIONS
+    MAXBOUND =    9495
+ END OF RCH DIMENSIONS
+
+ RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1011
+
+ PROCESSING RCH OPTIONS
+    RECHARGE INPUT WILL BE READ AS ARRAY(S).
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RCH OPTIONS
+
+ RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1012
+
+ PROCESSING RCH OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RCH OPTIONS
+
+ PROCESSING RCH DIMENSIONS
+    MAXBOUND =    6705
+ END OF RCH DIMENSIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1014
+
+ PROCESSING CHD OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF CHD OPTIONS
+
+ PROCESSING CHD DIMENSIONS
+    MAXBOUND =    7350
+ END OF CHD DIMENSIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
+
+ PROCESSING CHD OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF CHD OPTIONS
+
+ PROCESSING CHD DIMENSIONS
+    MAXBOUND =      32
+ END OF CHD DIMENSIONS
+
+ IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1006
+ PROCESSING GRIDDATA
+ END PROCESSING GRIDDATA
+ PROCESSING GRIDDATA
+
+                ICELLTYPE = 0
+
+ OPENED kqm.txt
+ FILE TYPE:OPEN/CLOSE   UNIT 1025   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED kq.txt
+ FILE TYPE:OPEN/CLOSE   UNIT 1026   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED kep.txt
+ FILE TYPE:OPEN/CLOSE   UNIT 1027   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED kpc.txt
+ FILE TYPE:OPEN/CLOSE   UNIT 1028   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED kpms.txt
+ FILE TYPE:OPEN/CLOSE   UNIT 1029   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ K33 not provided.  Assuming K33 = K.
+ K22 not provided.  Assuming K22 = K.
+ END PROCESSING GRIDDATA
+
+The observation utility is active for "PEST_3D_R"
+
+Processing observation options:
+
+Text output number of digits of precision set to: 10
+The PRINT_INPUT option has been specified.
+
+
+Observations read from file "pest_3D_R.obs":
+Name                                      Type                             Time         Location data
+----------------------------------------  -------------------------------  -----------  --------------------------
+3_50_94                                   Continuous HEAD                  All times    "4 51 95"
+3_57_83                                   Continuous HEAD                  All times    "4 58 84"
+3_62_126                                  Continuous HEAD                  All times    "4 63 127"
+3_63_94                                   Continuous HEAD                  All times    "4 64 95"
+3_63_99                                   Continuous HEAD                  All times    "4 64 100"
+3_64_92                                   Continuous HEAD                  All times    "4 65 93"
+3_64_96                                   Continuous HEAD                  All times    "4 65 97"
+3_66_128                                  Continuous HEAD                  All times    "4 67 129"
+3_69_104                                  Continuous HEAD                  All times    "4 70 105"
+3_69_118                                  Continuous HEAD                  All times    "4 70 119"
+3_71_72                                   Continuous HEAD                  All times    "4 72 73"
+3_75_124                                  Continuous HEAD                  All times    "4 76 125"
+3_79_66                                   Continuous HEAD                  All times    "4 80 67"
+3_79_77                                   Continuous HEAD                  All times    "4 80 78"
+3_82_115                                  Continuous HEAD                  All times    "4 83 116"
+3_83_67                                   Continuous HEAD                  All times    "4 84 68"
+3_84_94                                   Continuous HEAD                  All times    "4 85 95"
+3_84_125                                  Continuous HEAD                  All times    "4 85 126"
+3_91_101                                  Continuous HEAD                  All times    "4 92 102"
+3_95_128                                  Continuous HEAD                  All times    "4 96 129"
+3_98_43                                   Continuous HEAD                  All times    "4 99 44"
+3_98_91                                   Continuous HEAD                  All times    "4 99 92"
+3_99_118                                  Continuous HEAD                  All times    "4 100 119"
+3_101_59                                  Continuous HEAD                  All times    "4 102 60"
+3_102_22                                  Continuous HEAD                  All times    "4 103 23"
+3_102_28                                  Continuous HEAD                  All times    "4 103 29"
+3_103_32                                  Continuous HEAD                  All times    "4 104 33"
+3_104_74                                  Continuous HEAD                  All times    "4 105 75"
+3_108_42                                  Continuous HEAD                  All times    "4 109 43"
+3_109_12                                  Continuous HEAD                  All times    "4 110 13"
+3_111_42                                  Continuous HEAD                  All times    "4 112 43"
+3_112_61                                  Continuous HEAD                  All times    "4 113 62"
+3_113_102                                 Continuous HEAD                  All times    "4 114 103"
+3_114_114                                 Continuous HEAD                  All times    "4 115 115"
+3_116_1                                   Continuous HEAD                  All times    "4 117 2"
+3_116_59                                  Continuous HEAD                  All times    "4 117 60"
+3_119_43                                  Continuous HEAD                  All times    "4 120 44"
+3_120_123                                 Continuous HEAD                  All times    "4 121 124"
+3_122_94                                  Continuous HEAD                  All times    "4 123 95"
+3_125_75                                  Continuous HEAD                  All times    "4 126 76"
+3_129_86                                  Continuous HEAD                  All times    "4 130 87"
+3_129_100                                 Continuous HEAD                  All times    "4 130 101"
+3_132_50                                  Continuous HEAD                  All times    "4 133 51"
+3_136_70                                  Continuous HEAD                  All times    "4 137 71"
+3_140_74                                  Continuous HEAD                  All times    "4 141 75"
+3_140_89                                  Continuous HEAD                  All times    "4 141 90"
+3_141_114                                 Continuous HEAD                  All times    "4 142 115"
+3_148_98                                  Continuous HEAD                  All times    "4 149 99"
+1_56_126                                  Continuous HEAD                  All times    "2 57 127"
+1_63_117                                  Continuous HEAD                  All times    "2 64 118"
+1_64_104                                  Continuous HEAD                  All times    "2 65 105"
+1_64_111                                  Continuous HEAD                  All times    "2 65 112"
+1_67_110                                  Continuous HEAD                  All times    "2 68 111"
+1_67_119                                  Continuous HEAD                  All times    "2 68 120"
+1_68_71                                   Continuous HEAD                  All times    "2 69 72"
+1_69_105                                  Continuous HEAD                  All times    "2 70 106"
+1_69_116                                  Continuous HEAD                  All times    "2 70 117"
+1_70_73                                   Continuous HEAD                  All times    "2 71 74"
+1_73_83                                   Continuous HEAD                  All times    "2 74 84"
+1_74_115                                  Continuous HEAD                  All times    "2 75 116"
+1_76_89                                   Continuous HEAD                  All times    "2 77 90"
+1_80_103                                  Continuous HEAD                  All times    "2 81 104"
+1_83_95                                   Continuous HEAD                  All times    "2 84 96"
+1_83_106                                  Continuous HEAD                  All times    "2 84 107"
+1_83_124                                  Continuous HEAD                  All times    "2 84 125"
+1_84_127                                  Continuous HEAD                  All times    "2 85 128"
+1_88_110                                  Continuous HEAD                  All times    "2 89 111"
+1_92_93                                   Continuous HEAD                  All times    "2 93 94"
+1_93_114                                  Continuous HEAD                  All times    "2 94 115"
+1_94_95                                   Continuous HEAD                  All times    "2 95 96"
+1_94_103                                  Continuous HEAD                  All times    "2 95 104"
+1_94_115                                  Continuous HEAD                  All times    "2 95 116"
+1_95_75                                   Continuous HEAD                  All times    "2 96 76"
+1_95_81                                   Continuous HEAD                  All times    "2 96 82"
+1_95_95                                   Continuous HEAD                  All times    "2 96 96"
+1_99_44                                   Continuous HEAD                  All times    "2 100 45"
+1_100_51                                  Continuous HEAD                  All times    "2 101 52"
+1_100_75                                  Continuous HEAD                  All times    "2 101 76"
+1_101_53                                  Continuous HEAD                  All times    "2 102 54"
+1_102_24                                  Continuous HEAD                  All times    "2 103 25"
+1_102_57                                  Continuous HEAD                  All times    "2 103 58"
+1_103_32                                  Continuous HEAD                  All times    "2 104 33"
+1_104_45                                  Continuous HEAD                  All times    "2 105 46"
+1_106_17                                  Continuous HEAD                  All times    "2 107 18"
+1_106_58                                  Continuous HEAD                  All times    "2 107 59"
+1_106_71                                  Continuous HEAD                  All times    "2 107 72"
+1_108_24                                  Continuous HEAD                  All times    "2 109 25"
+1_108_43                                  Continuous HEAD                  All times    "2 109 44"
+1_110_22                                  Continuous HEAD                  All times    "2 111 23"
+1_112_16                                  Continuous HEAD                  All times    "2 113 17"
+1_112_61                                  Continuous HEAD                  All times    "2 113 62"
+1_114_6                                   Continuous HEAD                  All times    "2 115 7"
+1_114_13                                  Continuous HEAD                  All times    "2 115 14"
+1_115_66                                  Continuous HEAD                  All times    "2 116 67"
+1_116_60                                  Continuous HEAD                  All times    "2 117 61"
+1_116_100                                 Continuous HEAD                  All times    "2 117 101"
+1_120_112                                 Continuous HEAD                  All times    "2 121 113"
+1_121_82                                  Continuous HEAD                  All times    "2 122 83"
+1_121_104                                 Continuous HEAD                  All times    "2 122 105"
+1_131_65                                  Continuous HEAD                  All times    "2 132 66"
+1_135_119                                 Continuous HEAD                  All times    "2 136 120"
+1_137_73                                  Continuous HEAD                  All times    "2 138 74"
+1_138_116                                 Continuous HEAD                  All times    "2 139 117"
+1_139_122                                 Continuous HEAD                  All times    "2 140 123"
+1_142_116                                 Continuous HEAD                  All times    "2 143 117"
+1_143_107                                 Continuous HEAD                  All times    "2 144 108"
+1_146_106                                 Continuous HEAD                  All times    "2 147 107"
+1_147_91                                  Continuous HEAD                  All times    "2 148 92"
+1_147_97                                  Continuous HEAD                  All times    "2 148 98"
+1_149_129                                 Continuous HEAD                  All times    "2 150 130"
+1_152_94                                  Continuous HEAD                  All times    "2 153 95"
+1_153_111                                 Continuous HEAD                  All times    "2 154 112"
+1_153_113                                 Continuous HEAD                  All times    "2 154 114"
+1_153_124                                 Continuous HEAD                  All times    "2 154 125"
+1_154_126                                 Continuous HEAD                  All times    "2 155 127"
+1_155_123                                 Continuous HEAD                  All times    "2 156 124"
+1_155_131                                 Continuous HEAD                  All times    "2 156 132"
+1_156_96                                  Continuous HEAD                  All times    "2 157 97"
+1_156_99                                  Continuous HEAD                  All times    "2 157 100"
+1_165_101                                 Continuous HEAD                  All times    "2 166 102"
+1_167_59                                  Continuous HEAD                  All times    "2 168 60"
+1_167_66                                  Continuous HEAD                  All times    "2 168 67"
+QMAP_1_45_124                             Continuous HEAD                  All times    "2 46 125"
+QMAP_1_170_54                             Continuous HEAD                  All times    "2 171 55"
+QMAP_1_97_71                              Continuous HEAD                  All times    "2 98 72"
+QMAP_1_35_130                             Continuous HEAD                  All times    "2 36 131"
+QMAP_1_151_91                             Continuous HEAD                  All times    "2 152 92"
+QMAP_1_167_55                             Continuous HEAD                  All times    "2 168 56"
+QMAP_1_79_93                              Continuous HEAD                  All times    "2 80 94"
+QMAP_1_139_120                            Continuous HEAD                  All times    "2 140 121"
+QMAP_1_112_42                             Continuous HEAD                  All times    "2 113 43"
+QMAP_1_60_86                              Continuous HEAD                  All times    "2 61 87"
+QMAP_1_83_116                             Continuous HEAD                  All times    "2 84 117"
+QMAP_1_48_117                             Continuous HEAD                  All times    "2 49 118"
+QMAP_1_121_104                            Continuous HEAD                  All times    "2 122 105"
+QMAP_1_51_120                             Continuous HEAD                  All times    "2 52 121"
+QMAP_1_128_81                             Continuous HEAD                  All times    "2 129 82"
+QMAP_1_130_113                            Continuous HEAD                  All times    "2 131 114"
+QMAP_1_168_66                             Continuous HEAD                  All times    "2 169 67"
+QMAP_1_25_128                             Continuous HEAD                  All times    "2 26 129"
+QMAP_1_117_34                             Continuous HEAD                  All times    "2 118 35"
+QMAP_1_164_93                             Continuous HEAD                  All times    "2 165 94"
+QMAP_1_63_82                              Continuous HEAD                  All times    "2 64 83"
+QMAP_1_88_107                             Continuous HEAD                  All times    "2 89 108"
+QMAP_1_112_10                             Continuous HEAD                  All times    "2 113 11"
+QMAP_1_174_47                             Continuous HEAD                  All times    "2 175 48"
+QMAP_1_142_112                            Continuous HEAD                  All times    "2 143 113"
+QMAP_1_42_121                             Continuous HEAD                  All times    "2 43 122"
+QMAP_1_64_108                             Continuous HEAD                  All times    "2 65 109"
+QMAP_1_116_90                             Continuous HEAD                  All times    "2 117 91"
+QMAP_1_81_93                              Continuous HEAD                  All times    "2 82 94"
+QMAP_1_43_126                             Continuous HEAD                  All times    "2 44 127"
+QMAP_1_159_122                            Continuous HEAD                  All times    "2 160 123"
+QMAP_1_26_131                             Continuous HEAD                  All times    "2 27 132"
+QMAP_1_102_20                             Continuous HEAD                  All times    "2 103 21"
+QMAP_1_111_55                             Continuous HEAD                  All times    "2 112 56"
+QMAP_1_149_114                            Continuous HEAD                  All times    "2 150 115"
+QMAP_1_39_125                             Continuous HEAD                  All times    "2 40 126"
+QMAP_1_123_127                            Continuous HEAD                  All times    "2 124 128"
+QMAP_1_32_123                             Continuous HEAD                  All times    "2 33 124"
+QMAP_1_130_71                             Continuous HEAD                  All times    "2 131 72"
+QMAP_1_116_122                            Continuous HEAD                  All times    "2 117 123"
+QMAP_1_101_125                            Continuous HEAD                  All times    "2 102 126"
+QMAP_1_49_96                              Continuous HEAD                  All times    "2 50 97"
+QMAP_1_130_115                            Continuous HEAD                  All times    "2 131 116"
+QMAP_1_173_52                             Continuous HEAD                  All times    "2 174 53"
+QMAP_1_86_88                              Continuous HEAD                  All times    "2 87 89"
+QMAP_1_92_103                             Continuous HEAD                  All times    "2 93 104"
+QMAP_1_160_112                            Continuous HEAD                  All times    "2 161 113"
+QMAP_1_58_89                              Continuous HEAD                  All times    "2 59 90"
+QMAP_1_36_126                             Continuous HEAD                  All times    "2 37 127"
+QMAP_1_110_104                            Continuous HEAD                  All times    "2 111 105"
+QMAP_1_168_63                             Continuous HEAD                  All times    "2 169 64"
+QMAP_1_114_7                              Continuous HEAD                  All times    "2 115 8"
+QMAP_1_132_112                            Continuous HEAD                  All times    "2 133 113"
+QMAP_1_86_94                              Continuous HEAD                  All times    "2 87 95"
+QMAP_1_171_52                             Continuous HEAD                  All times    "2 172 53"
+QMAP_1_153_113                            Continuous HEAD                  All times    "2 154 114"
+QMAP_1_29_120                             Continuous HEAD                  All times    "2 30 121"
+QMAP_1_112_28                             Continuous HEAD                  All times    "2 113 29"
+QMAP_1_158_89                             Continuous HEAD                  All times    "2 159 90"
+QMAP_1_71_76                              Continuous HEAD                  All times    "2 72 77"
+QMAP_1_32_118                             Continuous HEAD                  All times    "2 33 119"
+QMAP_1_86_101                             Continuous HEAD                  All times    "2 87 102"
+QMAP_1_41_121                             Continuous HEAD                  All times    "2 42 122"
+QMAP_1_100_30                             Continuous HEAD                  All times    "2 101 31"
+QMAP_1_123_83                             Continuous HEAD                  All times    "2 124 84"
+QMAP_1_67_88                              Continuous HEAD                  All times    "2 68 89"
+QMAP_1_150_130                            Continuous HEAD                  All times    "2 151 131"
+QMAP_1_74_92                              Continuous HEAD                  All times    "2 75 93"
+QMAP_1_87_120                             Continuous HEAD                  All times    "2 88 121"
+QMAP_1_154_86                             Continuous HEAD                  All times    "2 155 87"
+QMAP_1_127_82                             Continuous HEAD                  All times    "2 128 83"
+QMAP_1_69_81                              Continuous HEAD                  All times    "2 70 82"
+QMAP_1_142_129                            Continuous HEAD                  All times    "2 143 130"
+QMAP_1_62_115                             Continuous HEAD                  All times    "2 63 116"
+QMAP_1_75_102                             Continuous HEAD                  All times    "2 76 103"
+QMAP_1_148_130                            Continuous HEAD                  All times    "2 149 131"
+QMAP_1_81_105                             Continuous HEAD                  All times    "2 82 106"
+QMAP_1_112_107                            Continuous HEAD                  All times    "2 113 108"
+QMAP_1_114_41                             Continuous HEAD                  All times    "2 115 42"
+QMAP_1_48_97                              Continuous HEAD                  All times    "2 49 98"
+QMAP_1_157_111                            Continuous HEAD                  All times    "2 158 112"
+QMAP_1_88_101                             Continuous HEAD                  All times    "2 89 102"
+QMAP_1_52_109                             Continuous HEAD                  All times    "2 53 110"
+QMAP_1_151_101                            Continuous HEAD                  All times    "2 152 102"
+QMAP_1_63_108                             Continuous HEAD                  All times    "2 64 109"
+QMAP_1_111_38                             Continuous HEAD                  All times    "2 112 39"
+QMAP_1_101_22                             Continuous HEAD                  All times    "2 102 23"
+QMAP_1_96_85                              Continuous HEAD                  All times    "2 97 86"
+QMAP_1_85_120                             Continuous HEAD                  All times    "2 86 121"
+QMAP_1_115_59                             Continuous HEAD                  All times    "2 116 60"
+QMAP_1_49_94                              Continuous HEAD                  All times    "2 50 95"
+QMAP_1_73_88                              Continuous HEAD                  All times    "2 74 89"
+QMAP_1_117_52                             Continuous HEAD                  All times    "2 118 53"
+QMAP_1_88_110                             Continuous HEAD                  All times    "2 89 111"
+QMAP_1_42_128                             Continuous HEAD                  All times    "2 43 129"
+QMAP_1_152_99                             Continuous HEAD                  All times    "2 153 100"
+QMAP_1_147_103                            Continuous HEAD                  All times    "2 148 104"
+QMAP_1_98_92                              Continuous HEAD                  All times    "2 99 93"
+QMAP_1_138_112                            Continuous HEAD                  All times    "2 139 113"
+QMAP_1_80_123                             Continuous HEAD                  All times    "2 81 124"
+PMAP_1_45_124                             Continuous HEAD                  All times    "4 46 125"
+PMAP_1_97_71                              Continuous HEAD                  All times    "4 98 72"
+PMAP_1_35_130                             Continuous HEAD                  All times    "4 36 131"
+PMAP_1_102_117                            Continuous HEAD                  All times    "4 103 118"
+PMAP_1_154_78                             Continuous HEAD                  All times    "4 155 79"
+PMAP_1_91_62                              Continuous HEAD                  All times    "4 92 63"
+PMAP_1_96_40                              Continuous HEAD                  All times    "4 97 41"
+PMAP_1_79_93                              Continuous HEAD                  All times    "4 80 94"
+PMAP_1_92_60                              Continuous HEAD                  All times    "4 93 61"
+PMAP_1_139_120                            Continuous HEAD                  All times    "4 140 121"
+PMAP_1_112_42                             Continuous HEAD                  All times    "4 113 43"
+PMAP_1_60_86                              Continuous HEAD                  All times    "4 61 87"
+PMAP_1_83_116                             Continuous HEAD                  All times    "4 84 117"
+PMAP_1_48_117                             Continuous HEAD                  All times    "4 49 118"
+PMAP_1_121_104                            Continuous HEAD                  All times    "4 122 105"
+PMAP_1_51_120                             Continuous HEAD                  All times    "4 52 121"
+PMAP_1_94_53                              Continuous HEAD                  All times    "4 95 54"
+PMAP_1_128_81                             Continuous HEAD                  All times    "4 129 82"
+PMAP_1_102_124                            Continuous HEAD                  All times    "4 103 125"
+PMAP_1_130_113                            Continuous HEAD                  All times    "4 131 114"
+PMAP_1_104_112                            Continuous HEAD                  All times    "4 105 113"
+PMAP_1_91_81                              Continuous HEAD                  All times    "4 92 82"
+PMAP_1_146_85                             Continuous HEAD                  All times    "4 147 86"
+PMAP_1_164_93                             Continuous HEAD                  All times    "4 165 94"
+PMAP_1_63_82                              Continuous HEAD                  All times    "4 64 83"
+PMAP_1_88_107                             Continuous HEAD                  All times    "4 89 108"
+PMAP_1_89_79                              Continuous HEAD                  All times    "4 90 80"
+PMAP_1_112_10                             Continuous HEAD                  All times    "4 113 11"
+PMAP_1_85_86                              Continuous HEAD                  All times    "4 86 87"
+PMAP_1_142_112                            Continuous HEAD                  All times    "4 143 113"
+PMAP_1_129_97                             Continuous HEAD                  All times    "4 130 98"
+PMAP_1_42_121                             Continuous HEAD                  All times    "4 43 122"
+PMAP_1_100_94                             Continuous HEAD                  All times    "4 101 95"
+PMAP_1_64_108                             Continuous HEAD                  All times    "4 65 109"
+PMAP_1_116_90                             Continuous HEAD                  All times    "4 117 91"
+PMAP_1_81_93                              Continuous HEAD                  All times    "4 82 94"
+PMAP_1_43_126                             Continuous HEAD                  All times    "4 44 127"
+PMAP_1_92_50                              Continuous HEAD                  All times    "4 93 51"
+PMAP_1_118_84                             Continuous HEAD                  All times    "4 119 85"
+PMAP_1_159_122                            Continuous HEAD                  All times    "4 160 123"
+PMAP_1_114_74                             Continuous HEAD                  All times    "4 115 75"
+PMAP_1_26_131                             Continuous HEAD                  All times    "4 27 132"
+PMAP_1_102_20                             Continuous HEAD                  All times    "4 103 21"
+PMAP_1_111_55                             Continuous HEAD                  All times    "4 112 56"
+PMAP_1_149_114                            Continuous HEAD                  All times    "4 150 115"
+PMAP_1_98_102                             Continuous HEAD                  All times    "4 99 103"
+PMAP_1_130_48                             Continuous HEAD                  All times    "4 131 49"
+PMAP_1_39_125                             Continuous HEAD                  All times    "4 40 126"
+PMAP_1_123_127                            Continuous HEAD                  All times    "4 124 128"
+PMAP_1_32_123                             Continuous HEAD                  All times    "4 33 124"
+PMAP_1_130_71                             Continuous HEAD                  All times    "4 131 72"
+PMAP_1_116_122                            Continuous HEAD                  All times    "4 117 123"
+PMAP_1_101_125                            Continuous HEAD                  All times    "4 102 126"
+PMAP_1_49_96                              Continuous HEAD                  All times    "4 50 97"
+PMAP_1_102_109                            Continuous HEAD                  All times    "4 103 110"
+PMAP_1_130_115                            Continuous HEAD                  All times    "4 131 116"
+PMAP_1_97_36                              Continuous HEAD                  All times    "4 98 37"
+PMAP_1_113_77                             Continuous HEAD                  All times    "4 114 78"
+PMAP_1_86_88                              Continuous HEAD                  All times    "4 87 89"
+PMAP_1_126_69                             Continuous HEAD                  All times    "4 127 70"
+PMAP_1_92_103                             Continuous HEAD                  All times    "4 93 104"
+PMAP_1_160_112                            Continuous HEAD                  All times    "4 161 113"
+PMAP_1_126_95                             Continuous HEAD                  All times    "4 127 96"
+PMAP_1_157_61                             Continuous HEAD                  All times    "4 158 62"
+PMAP_1_92_45                              Continuous HEAD                  All times    "4 93 46"
+PMAP_1_133_66                             Continuous HEAD                  All times    "4 134 67"
+PMAP_1_58_89                              Continuous HEAD                  All times    "4 59 90"
+PMAP_1_159_58                             Continuous HEAD                  All times    "4 160 59"
+PMAP_1_36_126                             Continuous HEAD                  All times    "4 37 127"
+PMAP_1_110_104                            Continuous HEAD                  All times    "4 111 105"
+PMAP_1_98_113                             Continuous HEAD                  All times    "4 99 114"
+PMAP_1_136_69                             Continuous HEAD                  All times    "4 137 70"
+PMAP_1_114_7                              Continuous HEAD                  All times    "4 115 8"
+PMAP_1_132_112                            Continuous HEAD                  All times    "4 133 113"
+PMAP_1_86_94                              Continuous HEAD                  All times    "4 87 95"
+PMAP_1_148_55                             Continuous HEAD                  All times    "4 149 56"
+PMAP_1_150_77                             Continuous HEAD                  All times    "4 151 78"
+PMAP_1_153_113                            Continuous HEAD                  All times    "4 154 114"
+PMAP_1_118_70                             Continuous HEAD                  All times    "4 119 71"
+PMAP_1_29_120                             Continuous HEAD                  All times    "4 30 121"
+PMAP_1_127_68                             Continuous HEAD                  All times    "4 128 69"
+PMAP_1_112_28                             Continuous HEAD                  All times    "4 113 29"
+PMAP_1_158_89                             Continuous HEAD                  All times    "4 159 90"
+PMAP_1_71_76                              Continuous HEAD                  All times    "4 72 77"
+PMAP_1_86_101                             Continuous HEAD                  All times    "4 87 102"
+PMAP_1_41_121                             Continuous HEAD                  All times    "4 42 122"
+PMAP_1_100_30                             Continuous HEAD                  All times    "4 101 31"
+PMAP_1_123_83                             Continuous HEAD                  All times    "4 124 84"
+PMAP_1_67_88                              Continuous HEAD                  All times    "4 68 89"
+PMAP_1_150_130                            Continuous HEAD                  All times    "4 151 131"
+PMAP_1_155_74                             Continuous HEAD                  All times    "4 156 75"
+PMAP_1_74_92                              Continuous HEAD                  All times    "4 75 93"
+PMAP_1_136_57                             Continuous HEAD                  All times    "4 137 58"
+PMAP_1_87_120                             Continuous HEAD                  All times    "4 88 121"
+PMAP_1_127_82                             Continuous HEAD                  All times    "4 128 83"
+PMAP_1_132_48                             Continuous HEAD                  All times    "4 133 49"
+PMAP_1_69_81                              Continuous HEAD                  All times    "4 70 82"
+PMAP_1_142_129                            Continuous HEAD                  All times    "4 143 130"
+PMAP_1_152_79                             Continuous HEAD                  All times    "4 153 80"
+PMAP_1_116_78                             Continuous HEAD                  All times    "4 117 79"
+PMAP_1_62_115                             Continuous HEAD                  All times    "4 63 116"
+PMAP_1_75_102                             Continuous HEAD                  All times    "4 76 103"
+PMAP_1_148_130                            Continuous HEAD                  All times    "4 149 131"
+PMAP_1_81_105                             Continuous HEAD                  All times    "4 82 106"
+PMAP_1_112_107                            Continuous HEAD                  All times    "4 113 108"
+PMAP_1_114_41                             Continuous HEAD                  All times    "4 115 42"
+PMAP_1_166_53                             Continuous HEAD                  All times    "4 167 54"
+PMAP_1_136_84                             Continuous HEAD                  All times    "4 137 85"
+PMAP_1_48_97                              Continuous HEAD                  All times    "4 49 98"
+PMAP_1_80_69                              Continuous HEAD                  All times    "4 81 70"
+PMAP_1_86_70                              Continuous HEAD                  All times    "4 87 71"
+PMAP_1_157_111                            Continuous HEAD                  All times    "4 158 112"
+PMAP_1_79_74                              Continuous HEAD                  All times    "4 80 75"
+PMAP_1_88_101                             Continuous HEAD                  All times    "4 89 102"
+PMAP_1_121_79                             Continuous HEAD                  All times    "4 122 80"
+PMAP_1_52_109                             Continuous HEAD                  All times    "4 53 110"
+PMAP_1_151_101                            Continuous HEAD                  All times    "4 152 102"
+PMAP_1_63_108                             Continuous HEAD                  All times    "4 64 109"
+PMAP_1_111_38                             Continuous HEAD                  All times    "4 112 39"
+PMAP_1_101_22                             Continuous HEAD                  All times    "4 102 23"
+PMAP_1_96_85                              Continuous HEAD                  All times    "4 97 86"
+PMAP_1_89_48                              Continuous HEAD                  All times    "4 90 49"
+PMAP_1_103_124                            Continuous HEAD                  All times    "4 104 125"
+PMAP_1_85_120                             Continuous HEAD                  All times    "4 86 121"
+PMAP_1_115_59                             Continuous HEAD                  All times    "4 116 60"
+PMAP_1_73_88                              Continuous HEAD                  All times    "4 74 89"
+PMAP_1_117_52                             Continuous HEAD                  All times    "4 118 53"
+PMAP_1_88_110                             Continuous HEAD                  All times    "4 89 111"
+PMAP_1_42_128                             Continuous HEAD                  All times    "4 43 129"
+PMAP_1_107_107                            Continuous HEAD                  All times    "4 108 108"
+PMAP_1_152_99                             Continuous HEAD                  All times    "4 153 100"
+PMAP_1_147_103                            Continuous HEAD                  All times    "4 148 104"
+PMAP_1_98_92                              Continuous HEAD                  All times    "4 99 93"
+PMAP_1_138_112                            Continuous HEAD                  All times    "4 139 113"
+PMAP_1_80_123                             Continuous HEAD                  All times    "4 81 124"
+PMAP_1_70_80                              Continuous HEAD                  All times    "4 71 81"
+PMAP_1_134_91                             Continuous HEAD                  All times    "4 135 92"
+PMAP_1_142_130                            Continuous HEAD                  All times    "4 143 131"
+PMAP_1_94_77                              Continuous HEAD                  All times    "4 95 78"
+PMAP_1_125_67                             Continuous HEAD                  All times    "4 126 68"
+PMAP_1_135_74                             Continuous HEAD                  All times    "4 136 75"
+PMAP_1_139_53                             Continuous HEAD                  All times    "4 140 54"
+PMAP_1_118_50                             Continuous HEAD                  All times    "4 119 51"
+PMAP_1_99_101                             Continuous HEAD                  All times    "4 100 102"
+PMAP_1_59_100                             Continuous HEAD                  All times    "4 60 101"
+PMAP_1_128_62                             Continuous HEAD                  All times    "4 129 63"
+PMAP_1_53_96                              Continuous HEAD                  All times    "4 54 97"
+PMAP_1_163_103                            Continuous HEAD                  All times    "4 164 104"
+PMAP_1_137_117                            Continuous HEAD                  All times    "4 138 118"
+PMAP_1_100_37                             Continuous HEAD                  All times    "4 101 38"
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1034
+      FILE NAME: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\3D_test\workspace\pest_3D_R.dis.grb
+
+ OPENED C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\PEST++inv\3D_test\workspace\pest_3D_R.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1034   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ PROCESSING OC OPTIONS
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1035
+      FILE NAME: pest_3D_R.cbc
+
+ OPENED pest_3D_R.cbc
+ FILE TYPE:DATA(BINARY)   UNIT 1035   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1036
+      FILE NAME: pest_3D_R.hds
+
+ OPENED pest_3D_R.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1036   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      THE LAST TIME STEP WILL BE SAVED
+      THE LAST TIME STEP WILL BE SAVED
+      ALL TIME STEPS WILL BE PRINTED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+
+      LAYER OR NODE INDEX = 2
+
+ OPENED irr.txt
+ FILE TYPE:OPEN/CLOSE   UNIT 1037   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE WEL              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE CORB             ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              DRN IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE ETA              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE AGLY             ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE TET              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE REA              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE CANT             ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE TECH             ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE BOL              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RCH IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE RCH              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RCH IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE IRRIG            ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RCH IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE P_AGRI           ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE SEA              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE THUIR            ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1036 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 WEL =           0.0000                   WEL =           0.0000     WEL             
+                 WEL =           0.2000                   WEL =           0.2000     CORB            
+                 DRN =       1.7219E-05                   DRN =       1.7219E-05     ETA             
+                 RIV =       6.1717E-02                   RIV =       6.1717E-02     AGLY            
+                 RIV =           0.1461                   RIV =           0.1461     TET             
+                 RIV =           0.3054                   RIV =           0.3054     REA             
+                 RIV =           0.1161                   RIV =           0.1161     CANT            
+                 RIV =           0.2656                   RIV =           0.2656     TECH            
+                 RIV =           0.3140                   RIV =           0.3140     BOL             
+                 RCH =           3.1380                   RCH =           3.1380     RCH             
+                 RCH =           0.5178                   RCH =           0.5178     IRRIG           
+                 RCH =           0.0000                   RCH =           0.0000     P_AGRI          
+                 CHD =           7.9267                   CHD =           7.9267     SEA             
+                 CHD =           1.3121                   CHD =           1.3121     THUIR           
+
+            TOTAL IN =          14.3035              TOTAL IN =          14.3035
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 WEL =           1.3716                   WEL =           1.3716     WEL             
+                 WEL =           0.0000                   WEL =           0.0000     CORB            
+                 DRN =           0.8206                   DRN =           0.8206     ETA             
+                 RIV =           0.1075                   RIV =           0.1075     AGLY            
+                 RIV =           1.8816                   RIV =           1.8816     TET             
+                 RIV =           0.1873                   RIV =           0.1873     REA             
+                 RIV =           0.1253                   RIV =           0.1253     CANT            
+                 RIV =           0.2186                   RIV =           0.2186     TECH            
+                 RIV =       9.2883E-02                   RIV =       9.2883E-02     BOL             
+                 RCH =           0.0000                   RCH =           0.0000     RCH             
+                 RCH =           0.0000                   RCH =           0.0000     IRRIG           
+                 RCH =           0.6852                   RCH =           0.6852     P_AGRI          
+                 CHD =           8.7757                   CHD =           8.7757     SEA             
+                 CHD =       3.6981E-02                   CHD =       3.6981E-02     THUIR           
+
+           TOTAL OUT =          14.3033             TOTAL OUT =          14.3033
+
+            IN - OUT =       1.8206E-04              IN - OUT =       1.8206E-04
+
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
+ STRESS PERIOD TIME  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
+         TOTAL TIME  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
