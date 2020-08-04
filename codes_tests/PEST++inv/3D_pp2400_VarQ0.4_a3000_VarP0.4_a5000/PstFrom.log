@@ -1,0 +1,114 @@
+2020-08-03 16:16:50.473606 starting: opening PstFrom.log for logging
+2020-08-03 16:16:50.473606 starting PstFrom process
+2020-08-03 16:16:50.481637 starting: setting up dirs
+2020-08-03 16:16:50.481637 starting: removing existing new_d 'template'
+2020-08-03 16:16:50.552099 finished: removing existing new_d 'template' took: 0:00:00.070462
+2020-08-03 16:16:50.552099 starting: copying original_d 'workspace' to new_d 'template'
+2020-08-03 16:16:50.715206 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:00.163107
+2020-08-03 16:16:50.715206 finished: setting up dirs took: 0:00:00.233569
+2020-08-03 16:16:50.775636 starting: adding observations from tabular output file
+2020-08-03 16:16:50.775636 starting: reading list template\heads_q.csv
+2020-08-03 16:16:50.785696 finished: reading list template\heads_q.csv took: 0:00:00.010060
+2020-08-03 16:16:50.785696 starting: building insfile for tabular output file heads_q.csv
+2020-08-03 16:16:50.856191 finished: building insfile for tabular output file heads_q.csv took: 0:00:00.070495
+2020-08-03 16:16:50.856191 starting: adding observation from instruction file 'template\heads_q.csv.ins'
+2020-08-03 16:16:50.884332 finished: adding observation from instruction file 'template\heads_q.csv.ins' took: 0:00:00.028141
+2020-08-03 16:16:50.886357 finished: adding observations from tabular output file took: 0:00:00.110721
+2020-08-03 16:16:50.896427 starting: adding observations from tabular output file
+2020-08-03 16:16:50.896427 starting: reading list template\heads_pc.csv
+2020-08-03 16:16:50.906478 finished: reading list template\heads_pc.csv took: 0:00:00.010051
+2020-08-03 16:16:50.906478 starting: building insfile for tabular output file heads_pc.csv
+2020-08-03 16:16:50.936696 finished: building insfile for tabular output file heads_pc.csv took: 0:00:00.030218
+2020-08-03 16:16:50.936696 starting: adding observation from instruction file 'template\heads_pc.csv.ins'
+2020-08-03 16:16:50.959265 finished: adding observation from instruction file 'template\heads_pc.csv.ins' took: 0:00:00.022569
+2020-08-03 16:16:50.963265 finished: adding observations from tabular output file took: 0:00:00.066838
+2020-08-03 16:16:50.985568 starting: adding observations from tabular output file
+2020-08-03 16:16:50.987591 starting: reading list template\heads_map_q.csv
+2020-08-03 16:16:51.007721 finished: reading list template\heads_map_q.csv took: 0:00:00.020130
+2020-08-03 16:16:51.007721 starting: building insfile for tabular output file heads_map_q.csv
+2020-08-03 16:16:51.045977 finished: building insfile for tabular output file heads_map_q.csv took: 0:00:00.038256
+2020-08-03 16:16:51.048001 starting: adding observation from instruction file 'template\heads_map_q.csv.ins'
+2020-08-03 16:16:51.078211 finished: adding observation from instruction file 'template\heads_map_q.csv.ins' took: 0:00:00.030210
+2020-08-03 16:16:51.088254 finished: adding observations from tabular output file took: 0:00:00.102686
+2020-08-03 16:16:51.128839 starting: adding observations from tabular output file
+2020-08-03 16:16:51.128839 starting: reading list template\heads_map_p.csv
+2020-08-03 16:16:51.148954 finished: reading list template\heads_map_p.csv took: 0:00:00.020115
+2020-08-03 16:16:51.148954 starting: building insfile for tabular output file heads_map_p.csv
+2020-08-03 16:16:51.189221 finished: building insfile for tabular output file heads_map_p.csv took: 0:00:00.040267
+2020-08-03 16:16:51.189221 starting: adding observation from instruction file 'template\heads_map_p.csv.ins'
+2020-08-03 16:16:51.229467 finished: adding observation from instruction file 'template\heads_map_p.csv.ins' took: 0:00:00.040246
+2020-08-03 16:17:26.564780 starting: adding pilotpoint type multiplier style parameters for file(s) ['kq.txt']
+2020-08-03 16:17:26.564780 starting: loading array template\kq.txt
+2020-08-03 16:17:26.635286 finished: loading array template\kq.txt took: 0:00:00.070506
+2020-08-03 16:17:26.643312 loaded array 'kq.txt' of shape (182, 183)
+2020-08-03 16:17:26.733964 starting: writing array-based template file 'kp_q_inst0_pilotpoint.csv.tpl'
+2020-08-03 16:17:26.733964 starting: setting up pilot point parameters
+2020-08-03 16:17:26.733964 No spatial reference (containing cell spacing) passed.
+2020-08-03 16:17:26.733964 OK - using spatial reference in parent object.
+2020-08-03 16:17:27.502609 118 pilot point parameters created
+2020-08-03 16:17:27.502609 pilot point 'pargp':kp_q_inst:0
+2020-08-03 16:17:27.502609 finished: setting up pilot point parameters took: 0:00:00.768645
+2020-08-03 16:17:27.558433 starting: calculating factors for pargp=kp_q_inst:0
+2020-08-03 16:17:27.559436 saving krige variance file:template\kp_q_inst0pp.var.dat
+2020-08-03 16:17:27.559436 saving krige factors file:template\kp_q_inst0pp.fac
+2020-08-03 16:18:55.571467 finished: calculating factors for pargp=kp_q_inst:0 took: 0:01:28.013034
+2020-08-03 16:18:55.571467 starting: writing array-based template file 'kp_q_inst0pp.dat.tpl'
+2020-08-03 16:18:55.691972 starting: adding parameters for file(s) ['kq.txt']
+2020-08-03 16:18:55.752405 starting: adding pilotpoint type multiplier style parameters for file(s) ['kpc.txt']
+2020-08-03 16:18:55.765042 starting: loading array template\kpc.txt
+2020-08-03 16:18:55.851041 finished: loading array template\kpc.txt took: 0:00:00.085999
+2020-08-03 16:18:55.852041 loaded array 'kpc.txt' of shape (182, 183)
+2020-08-03 16:18:55.976036 starting: writing array-based template file 'kp_pc_inst0_pilotpoint.csv.tpl'
+2020-08-03 16:18:55.977036 starting: setting up pilot point parameters
+2020-08-03 16:18:55.978035 No spatial reference (containing cell spacing) passed.
+2020-08-03 16:18:55.979036 OK - using spatial reference in parent object.
+2020-08-03 16:18:57.112709 162 pilot point parameters created
+2020-08-03 16:18:57.113707 pilot point 'pargp':kp_pc_inst:0
+2020-08-03 16:18:57.114708 finished: setting up pilot point parameters took: 0:00:01.137672
+2020-08-03 16:18:57.191478 starting: calculating factors for pargp=kp_pc_inst:0
+2020-08-03 16:18:57.193513 saving krige variance file:template\kp_pc_inst0pp.var.dat
+2020-08-03 16:18:57.193513 saving krige factors file:template\kp_pc_inst0pp.fac
+2020-08-03 16:20:29.937947 finished: calculating factors for pargp=kp_pc_inst:0 took: 0:01:32.746469
+2020-08-03 16:20:29.937947 starting: writing array-based template file 'kp_pc_inst0pp.dat.tpl'
+2020-08-03 16:20:29.958056 starting: adding parameters for file(s) ['kpc.txt']
+2020-08-03 16:20:30.091072 starting: adding zone type multiplier style parameters for file(s) ['irr.txt']
+2020-08-03 16:20:30.091072 starting: loading array template\irr.txt
+2020-08-03 16:20:30.153070 finished: loading array template\irr.txt took: 0:00:00.061998
+2020-08-03 16:20:30.154116 loaded array 'irr.txt' of shape (182, 183)
+2020-08-03 16:20:30.215067 starting: writing array-based template file 'irr_inst0_zone.csv.tpl'
+2020-08-03 16:20:30.216069 starting: writing template file irr_inst0_zone.csv.tpl for ['irr_inst:0']
+2020-08-03 16:20:30.379063 finished: writing template file irr_inst0_zone.csv.tpl for ['irr_inst:0'] took: 0:00:00.162994
+2020-08-03 16:20:30.379063 finished: writing array-based template file 'irr_inst0_zone.csv.tpl' took: 0:00:00.163996
+2020-08-03 16:20:30.410062 starting: adding parameters for file(s) ['irr.txt']
+2020-08-03 16:20:40.359978 starting: adding constant type multiplier style parameters for file(s) ['kep.txt']
+2020-08-03 16:20:40.359978 starting: loading array template\kep.txt
+2020-08-03 16:20:40.420316 finished: loading array template\kep.txt took: 0:00:00.060338
+2020-08-03 16:20:40.422342 loaded array 'kep.txt' of shape (182, 183)
+2020-08-03 16:20:40.493060 starting: writing array-based template file 'ep_inst0_constant.csv.tpl'
+2020-08-03 16:20:40.493060 starting: writing template file ep_inst0_constant.csv.tpl for ['ep_inst:0']
+2020-08-03 16:20:40.833340 finished: writing template file ep_inst0_constant.csv.tpl for ['ep_inst:0'] took: 0:00:00.340280
+2020-08-03 16:20:40.833340 finished: writing array-based template file 'ep_inst0_constant.csv.tpl' took: 0:00:00.340280
+2020-08-03 16:20:40.925957 starting: adding parameters for file(s) ['kep.txt']
+2020-08-03 16:20:40.934000 starting: adding constant type multiplier style parameters for file(s) ['kpms.txt']
+2020-08-03 16:20:40.934000 starting: loading array template\kpms.txt
+2020-08-03 16:20:41.001390 finished: loading array template\kpms.txt took: 0:00:00.067390
+2020-08-03 16:20:41.001390 loaded array 'kpms.txt' of shape (182, 183)
+2020-08-03 16:20:41.078013 starting: writing array-based template file 'pms_inst0_constant.csv.tpl'
+2020-08-03 16:20:41.078013 starting: writing template file pms_inst0_constant.csv.tpl for ['pms_inst:0']
+2020-08-03 16:20:41.428817 finished: writing template file pms_inst0_constant.csv.tpl for ['pms_inst:0'] took: 0:00:00.350804
+2020-08-03 16:20:41.430836 finished: writing array-based template file 'pms_inst0_constant.csv.tpl' took: 0:00:00.352823
+2020-08-03 16:20:41.531578 starting: adding parameters for file(s) ['kpms.txt']
+2020-08-03 16:20:41.531578 starting: adding constant type multiplier style parameters for file(s) ['kqm.txt']
+2020-08-03 16:20:41.531578 starting: loading array template\kqm.txt
+2020-08-03 16:20:41.602013 finished: loading array template\kqm.txt took: 0:00:00.070435
+2020-08-03 16:20:41.602013 loaded array 'kqm.txt' of shape (182, 183)
+2020-08-03 16:20:41.682667 starting: writing array-based template file 'qm_inst0_constant.csv.tpl'
+2020-08-03 16:20:41.682667 starting: writing template file qm_inst0_constant.csv.tpl for ['qm_inst:0']
+2020-08-03 16:20:42.034836 finished: writing template file qm_inst0_constant.csv.tpl for ['qm_inst:0'] took: 0:00:00.352169
+2020-08-03 16:20:42.042889 finished: writing array-based template file 'qm_inst0_constant.csv.tpl' took: 0:00:00.360222
+2020-08-03 16:20:42.136340 starting: adding parameters for file(s) ['kqm.txt']
+2020-08-03 16:20:47.065681 forward_run line:pyemu.os_utils.run(r'..\..\..\exe\mf6')
+
+2020-08-03 16:20:47.731728 starting: building prior covariance matrix
+2020-08-03 16:20:47.941426 saving prior covariance matrix to file template\3D_test.prior.cov
+2020-08-03 16:20:48.043980 finished: building prior covariance matrix took: 0:00:00.312252
