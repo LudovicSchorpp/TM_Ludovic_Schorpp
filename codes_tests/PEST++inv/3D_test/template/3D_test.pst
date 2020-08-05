@@ -18,8 +18,8 @@ pcf
  irr__multiplier         relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic             1.0000000000E-05      5.0000000000E-01       smaller              
  cond                    relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic             1.0000000000E-05      5.0000000000E-01       smaller              
  ep__multiplier          relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic             1.0000000000E-05      5.0000000000E-01       smaller              
- qm__multiplier          relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic             1.0000000000E-05      5.0000000000E-01       smaller              
  pms__multiplier         relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic             1.0000000000E-05      5.0000000000E-01       smaller              
+ qm__multiplier          relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic             1.0000000000E-05      5.0000000000E-01       smaller              
 * parameter data
            kp_q_inst:0_i:4_j:139   log                    factor                1.0000000000E+00      5.0000000000E-03      3.0000000000E+00       kp_q_inst:0           1.0000000000E+00      0.0000000000E+00      1          
           kp_q_inst:0_i:13_j:139   log                    factor                1.0000000000E+00      5.0000000000E-03      3.0000000000E+00       kp_q_inst:0           1.0000000000E+00      0.0000000000E+00      1          
