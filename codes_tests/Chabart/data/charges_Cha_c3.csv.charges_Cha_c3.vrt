@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="charges_Cha_c3-charges_Cha_c3">
+        <SrcDataSource relativeToVRT="1">charges_Cha_c3.csv</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>charges_Cha_c3</SrcLayer>
+        <Field name="field_1" src="field_1" type="String"/>
+        <Field name="field_2" src="field_2" type="String"/>
+        <Field name="field_3" src="field_3" type="String"/>
+        <Field name="field_4" src="field_4" type="String"/>
+        <Field name="field_5" src="field_5" type="String"/>
+        <Field name="field_6" src="field_6" type="String"/>
+        <Field name="field_7" src="field_7" type="String"/>
+        <Field name="field_8" src="field_8" type="String"/>
+        <Field name="field_9" src="field_9" type="String"/>
+        <Field name="field_10" src="field_10" type="String"/>
+        <Field name="field_11" src="field_11" type="String"/>
+        <Field name="field_12" src="field_12" type="String"/>
+        <Field name="field_13" src="field_13" type="String"/>
+        <Field name="field_14" src="field_14" type="String"/>
+        <Field name="field_15" src="field_15" type="String"/>
+        <Field name="field_16" src="field_16" type="String"/>
+        <Field name="field_17" src="field_17" type="String"/>
+        <Field name="field_18" src="field_18" type="String"/>
+        <Field name="field_19" src="field_19" type="String"/>
+        <Field name="field_20" src="field_20" type="String"/>
+        <Field name="field_21" src="field_21" type="String"/>
+        <Field name="field_22" src="field_22" type="String"/>
+        <Field name="field_23" src="field_23" type="String"/>
+        <Field name="field_24" src="field_24" type="String"/>
+        <Field name="field_25" src="field_25" type="String"/>
+        <Field name="field_26" src="field_26" type="String"/>
+        <Field name="field_27" src="field_27" type="String"/>
+        <Field name="field_28" src="field_28" type="String"/>
+        <Field name="field_29" src="field_29" type="String"/>
+        <Field name="field_30" src="field_30" type="String"/>
+        <Field name="field_31" src="field_31" type="String"/>
+        <Field name="field_32" src="field_32" type="String"/>
+        <Field name="field_33" src="field_33" type="String"/>
+        <Field name="field_34" src="field_34" type="String"/>
+        <Field name="field_35" src="field_35" type="String"/>
+        <Field name="field_36" src="field_36" type="String"/>
+        <Field name="field_37" src="field_37" type="String"/>
+        <Field name="field_38" src="field_38" type="String"/>
+        <Field name="field_39" src="field_39" type="String"/>
+        <Field name="field_40" src="field_40" type="String"/>
+        <Field name="field_41" src="field_41" type="String"/>
+        <Field name="field_42" src="field_42" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
