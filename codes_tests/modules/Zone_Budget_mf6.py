@@ -4,13 +4,14 @@ import flopy as fp
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import Math
 
 import os
 
 
 class Zb():
     
-    def __init__(self,zones,m_name,m_dir,cbc,m_n=1):
+    def __init__(self,zones,m_name,m_dir,cbc,m_n=1,dic_zones=None):
         
         # some attributes
         self.nlay = zones.shape[0]
@@ -41,6 +42,7 @@ class Zb():
         ##df_pos
         self.df_pos = self._df_pos()
         
+        self.dz = dic_zones # a dictionnary to give a name on the different zones
 ############################################################################################################        
 ## Methods
     
@@ -146,8 +148,10 @@ class Zb():
             pack_list.append(str(cbc.recordarray[i+self.n][-1])[2:17].strip())
         for zm in np.unique(zones):
             if zm != 0:
-                pack_list.append("zone {}".format(int(zm)))
-
+                if not self.dz :
+                    pack_list.append("zone {}".format(int(zm)))
+                if self.dz :
+                    pack_list.append(self.dz[zm])
         return pack_list
 ############################################
     
@@ -161,8 +165,8 @@ class Zb():
         
         
         fig = plt.figure(figsize=(10,8))
-        fig.subplots_adjust(hspace=0.2, wspace=0.1)
-        n = round(nlay**0.5)
+        fig.subplots_adjust(hspace=0.2, wspace=0.2)
+        n = Math.ceil(nlay**0.5)
 
         for ilay in range(nlay):
             ax = fig.add_subplot(n, n, ilay+1)
@@ -203,7 +207,10 @@ class Zb():
         lst_z=[]
         for z in np.unique(zones):
             if z !=0:
-                lst_z.append("zone {}".format(int(z)))
+                if not self.dz :
+                    lst_z.append("zone {}".format(int(z)))
+                if self.dz : 
+                    lst_z.append(self.dz[z])
         columns = pd.MultiIndex.from_product([lst_z, ['FROM', 'TO']]) 
         index = pack_list
         DF_Budg = pd.DataFrame(DF_Budg.values,index=index,columns=columns)
