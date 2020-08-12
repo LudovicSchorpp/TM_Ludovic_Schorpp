@@ -4,7 +4,7 @@ import flopy as fp
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import Math
+import math
 
 import os
 
@@ -165,8 +165,8 @@ class Zb():
         
         
         fig = plt.figure(figsize=(10,8))
-        fig.subplots_adjust(hspace=0.2, wspace=0.2)
-        n = Math.ceil(nlay**0.5)
+        fig.subplots_adjust(hspace=0.3, wspace=0.1)
+        n = math.ceil(nlay**0.5)
 
         for ilay in range(nlay):
             ax = fig.add_subplot(n, n, ilay+1)
