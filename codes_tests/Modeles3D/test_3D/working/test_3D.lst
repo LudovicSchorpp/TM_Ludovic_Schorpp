@@ -348,6 +348,7 @@ Precision of REAL variables: 15
 
  END READING OUTPUT CONTROL FOR STRESS PERIOD 1
  UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL TEST_3D          PACKAGE NPF             CONNECTED TO MODEL TEST_3D          PACKAGE NPF              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              WEL IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE WEL              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              WEL IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE CORB             ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              DRN IN MODEL TEST_3D          PACKAGE TEST_3D         CONNECTED TO MODEL TEST_3D          PACKAGE ETA              ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
@@ -377,40 +378,40 @@ Precision of REAL variables: 15
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
                  DRN =           0.0000                   DRN =           0.0000     ETA             
-                 RIV =       1.7945E-02                   RIV =       1.7945E-02     AGLY            
-                 RIV =       9.1875E-02                   RIV =       9.1875E-02     TET             
-                 RIV =           0.3044                   RIV =           0.3044     REA             
-                 RIV =           0.2236                   RIV =           0.2236     CANT            
-                 RIV =           0.2415                   RIV =           0.2415     TECH            
-                 RIV =           0.2654                   RIV =           0.2654     BOL             
+                 RIV =       1.7915E-02                   RIV =       1.7915E-02     AGLY            
+                 RIV =           0.1000                   RIV =           0.1000     TET             
+                 RIV =           0.1565                   RIV =           0.1565     REA             
+                 RIV =           0.1830                   RIV =           0.1830     CANT            
+                 RIV =           0.1599                   RIV =           0.1599     TECH            
+                 RIV =           0.2965                   RIV =           0.2965     BOL             
                  RCH =           3.1380                   RCH =           3.1380     RCH             
                  RCH =           0.5230                   RCH =           0.5230     IRRIG           
                  RCH =           0.0000                   RCH =           0.0000     P_AGRI          
-                 CHD =           8.7778                   CHD =           8.7778     SEA             
-                 CHD =           1.3261                   CHD =           1.3261     THUIR           
+                 CHD =           8.8356                   CHD =           8.8356     SEA             
+                 CHD =           0.8006                   CHD =           0.8006     THUIR           
 
-            TOTAL IN =          15.1095              TOTAL IN =          15.1095
+            TOTAL IN =          14.4110              TOTAL IN =          14.4110
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.3716                   WEL =           1.3716     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           1.2334                   DRN =           1.2334     ETA             
-                 RIV =           0.1769                   RIV =           0.1769     AGLY            
-                 RIV =           1.5050                   RIV =           1.5050     TET             
-                 RIV =           0.1497                   RIV =           0.1497     REA             
-                 RIV =       6.9881E-02                   RIV =       6.9881E-02     CANT            
-                 RIV =           0.1640                   RIV =           0.1640     TECH            
-                 RIV =       5.9707E-02                   RIV =       5.9707E-02     BOL             
+                 DRN =           1.0881                   DRN =           1.0881     ETA             
+                 RIV =           0.1766                   RIV =           0.1766     AGLY            
+                 RIV =           1.1396                   RIV =           1.1396     TET             
+                 RIV =           0.1363                   RIV =           0.1363     REA             
+                 RIV =           0.1133                   RIV =           0.1133     CANT            
+                 RIV =           0.2361                   RIV =           0.2361     TECH            
+                 RIV =       3.3978E-03                   RIV =       3.3978E-03     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
                  RCH =           0.0000                   RCH =           0.0000     IRRIG           
                  RCH =           0.7344                   RCH =           0.7344     P_AGRI          
-                 CHD =           9.6109                   CHD =           9.6109     SEA             
-                 CHD =       3.3674E-02                   CHD =       3.3674E-02     THUIR           
+                 CHD =           9.3790                   CHD =           9.3790     SEA             
+                 CHD =       3.2326E-02                   CHD =       3.2326E-02     THUIR           
 
-           TOTAL OUT =          15.1091             TOTAL OUT =          15.1091
+           TOTAL OUT =          14.4106             TOTAL OUT =          14.4106
 
-            IN - OUT =       4.2340E-04              IN - OUT =       4.2340E-04
+            IN - OUT =       4.4381E-04              IN - OUT =       4.4381E-04
 
  PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 
