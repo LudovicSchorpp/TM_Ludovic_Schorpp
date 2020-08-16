@@ -1,4 +1,0 @@
-start_iteration -9999  -9999  svd_base_par
-parameter_file_save_started mf6_test_1.parb
-parameter_file_save_finished mf6_test_1.parb
-jacobian_model_runs_built

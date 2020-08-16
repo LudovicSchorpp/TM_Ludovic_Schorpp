@@ -1,7 +1,0 @@
-2020-08-06 14:33:38.399216 starting: opening plot_pst_helper.log for logging
-2020-08-06 14:33:38.399216 plot_utils.pst_helper()
-2020-08-06 14:33:38.399216 starting: plot res_1to1
-2020-08-06 14:33:38.429127 starting: plotting 1to1 for obgnme
-2020-08-06 14:33:38.439176 using control file obsvals to calculate residuals
-2020-08-06 14:33:38.559339 finished: plotting 1to1 for obgnme took: 0:00:00.130212
-2020-08-06 14:33:38.669134 finished: plot res_1to1 took: 0:00:00.269918
