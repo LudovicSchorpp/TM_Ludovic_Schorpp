@@ -42,11 +42,17 @@ class Zb():
         ##df_pos
         self.df_pos = self._df_pos()
         
-        self.dz = dic_zones # a dictionnary to give a name on the different zones
+        self.dz = dic_zones # a dictionnary for naming zones :)
+        
 ############################################################################################################        
 ## Methods
     
     def _df_pos(self):
+        
+        """
+        Dataframe with infos of connexions btw interzones cells
+        useful to save computing time.
+        """
         
         zones = self.zones
         ia = self.ia
@@ -84,11 +90,9 @@ class Zb():
     def _flow_zz(self,kstpkper=None):
     
         """
-        Return a matrix containing flux btw differents zones (each 2 columns correspond to one zone (1st is IN and 2nd OUT from the zone)
-        cbc : cbc object
-        df_pos : Dataframe with infos of connexions btw interzones cells (see get_dfpos)
+        Return a matrix containing flux btw differents zones (each 2 columns correspond to one particular zone (1st is IN and 2nd is OUT flux of the zone)
         zones : the numpy 3D array with the zones
-        kstpkper : array of size 2, indices that indicates stress period and time step
+        kstpkper : array of size 2, to indicate stress period and time step to analyze
         """
         cbc = self.cbc
         zones = self.zones
@@ -195,7 +199,7 @@ class Zb():
         
         #append the two dataframes
         df_zz = pd.DataFrame(FluxZZ)
-        col = np.arange(0,nzones*2,dtype=int)# use same columns name because pd concat is stupid
+        col = np.arange(0,nzones*2,dtype=int)# use same columns name because pd concat isn't smart
         df_zz.columns=col
 
         DF_Budg = pd.concat([DF_pack,df_zz])# Union <3
@@ -248,7 +252,7 @@ class Zb():
     def return_arr(self,pack,kstpkp=None):
         
         """
-        return an array of the flux from a package. Plot sum all the values over each layer.
+        return an array of the flux from a package. Plot all the values from each layer added up on one layer
         
         pack : str, the pname of the package
         cmin/cmax : float, min/max value on the scale

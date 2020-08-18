@@ -22,15 +22,15 @@ def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0
     idomain_active : bool, if true the idomain is update (cells intersect by the gp will be noted as active), prevents some issues
     type : str, features type (polygon or line)
     layer : int, the layer on which is the gp
-    areas : factor that determine if a cell is accounted intersected or not based on the total area intersected
-    (a value of 3, for example, mean only cells which have 1/3 of their area intersected by the polygon will be taken into account)
+    areas : factor that determine if a cell is accounted as intersected or not based on the total area intersected
+    (a value of 3, for example, means only cells which have 1/3 of their area intersected by the polygon will be taken into account)
     """
     
     ix = GridIntersect(grid)
     if type == "polygon":
         result = ix.intersect_polygon(gp.geometry[0])
         result = result[result.areas>(np.nanmax(result.areas)/3)] # only take into account cells that have a least 1/3 intersected 
-        result = result[result.areas!=0]                       # fix bug
+        
         
     if type == "boundary" :
         result = ix.intersect_linestring(gp.geometry[0].boundary)
@@ -38,6 +38,8 @@ def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0
     if type == "line" :
         result = ix.intersect_linestring(gp.geometry[0])
         
+    result = result[result.areas!=0]                       # fix bug with some null areas
+    
     lst=[]
     for irow, icol in result.cellids:
         lst.append(((layer,irow,icol)))
@@ -243,12 +245,10 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
     xp = df_riv["l_cum"][df_riv["head"]!=0]
     df_riv["head"] = np.interp(df_riv["l_cum"],xp,yp)
     
-    # drop some cells
+    # drop cells outside domain or already chd
     for cellid in df_riv.cellids:
-        if cellid in lst_chd: 
+        if (cellid in lst_chd) | (cellid not in lst_domain): 
             df_riv = df_riv.drop(df_riv[df_riv["cellids"] == cellid].index)
-        if cellid not in lst_domain:
-            df_riv = df_riv.drop(df_riv[df_riv["cellids"]== cellid].index)
     
     # create the stress package
     df_riv= df_riv.reset_index()
@@ -257,7 +257,7 @@ def Complete_riv(riv_path,stations_csv,us,ds,lst_chd,lst_domain,grid):
     for x in df_riv.cellids:
         o = o + 1
         riv_chd.append((x,H_riv[o]))
-        lst_chd.append(x)
+        lst_chd.append(x) # update chd list
     return riv_chd
 
 
@@ -279,7 +279,7 @@ def ra_pack(pack,ibd,iper=0,value=-1):
     """
     Return an array containing position of cells from a certain package
     Can be used to plot the bc zones of a certain package (pack)
-    pack : a bc package which have a stress_period_data attribute
+    pack : a bc package which possess a stress_period_data attribute
     ibd : 3D array on which the value will be change 
     iper : int, stress period
     value : int, value of replacement in ibd
@@ -293,10 +293,10 @@ def ra_pack(pack,ibd,iper=0,value=-1):
 def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_col="y"):
     
     """
-    for 2D models
-    return an array (nrow,ncol) containing infos about piezometer level in control pz
+    For 2D models ! 
+    return an array (nrow,ncol) containing infos about pz observations in control pz
     file_path : the file path to the excel sheet
-    grid : modelgrid
+    grid : modelgrid (flopy.discretization.structuredgrid object)
     sheetName : the name of the data sheet 
     np_col : the name of the column in the file containing infos about the PL
     x_col,y_col : the name of the columns containings geo infos (x and y coordinates)
@@ -312,18 +312,19 @@ def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_c
         yc = DB["y"][o] 
         cellid = grid.intersect(xc,yc)
         
-        if not np.isnan(DB[np_col][o]):
-            lstIDpz.append(cellid)
-            Pz.append(DB[np_col][o])
+        if DB[np_col][o]: # check that a head data is available
+            lstIDpz.append(cellid) # list of cellids
+            Pz.append(DB[np_col][o]) # list of value
         
     df = pd.DataFrame()
     df["cellid"]=lstIDpz
     df["Pz"] = Pz
-    df = df.groupby(["cellid"]).mean().reset_index() # regroup pz in the same cells
+    df = df.groupby(["cellid"]).mean().reset_index() # regroup pz in the same cells and apply mean
     
+    #create the obs array
     for i in df.index:
-        j,k = df.loc[i,"cellid"]
-        Control_pz[j,k] = df.loc[i,"Pz"]
+        j,k = df.loc[i,"cellid"] #extract cellids
+        Control_pz[j,k] = df.loc[i,"Pz"] # change pz value
     
     return Control_pz
 
@@ -331,6 +332,7 @@ def importControlPz (file_path,grid,sheetName="1990",np_col = "NP",x_col="x",y_c
 def importWells(GDB,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0):
     
     """
+    2D only !
     extract the infos about the uptake of wells
     path : path to the shp (multi points required)
     grid : the modelgrid
@@ -360,7 +362,7 @@ def importWells(GDB,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0):
 def coor_convert(x,y,epsgin,epsgout):
     
     """
-    a function that converts coordinates
+    Function that converts coordinates
     x,y : coordinates from epsgin
     epsgin : actual epsg system 
     epsgout : the epsg goal
@@ -410,8 +412,8 @@ def get_Total_Budget(model_name,model_dir,kstpkper=(0,0)):
         doc = f.readlines()
     i=-1
     tmstp=0;sp=0;inf=0
-    for ilin in doc:
-        i += 1
+    for ilin in doc: # iterate through lines
+        i += 1 # idx line
         info=""
         try:
             tmstp = int(ilin[52:58].split(",")[0])
@@ -419,15 +421,18 @@ def get_Total_Budget(model_name,model_dir,kstpkper=(0,0)):
             info = ilin[2:15]
         except:
             pass
-        if (info == "VOLUME BUDGET") & (tmstp == kstpkper[0]+1) & (sp == kstpkper[1]+1):
+        if (info == "VOLUME BUDGET") & (tmstp == kstpkper[0]+1) & (sp == kstpkper[1]+1): #if this line is encountered --> break
             break
-            
+    
+    if i == len(doc):
+        raise Exception ("No Budget info found ! Check Output Control or stress period ")
+    
     ###number of packages
     npack=0
-    for o in range(100):
+    for o in range(1000):
         if doc[i+8+o]=="\n":
             break
-        npack +=1
+        npack += 1
     ###number of packages
     
     # retrieve data
@@ -435,13 +440,13 @@ def get_Total_Budget(model_name,model_dir,kstpkper=(0,0)):
     lst_val_OUT = []
     lst_nam_pak = []
     pak_type=[]
-    for ipak in range(npack):
-        ipak += 8
+    for ipak in range(npack): # ipak --> line indice for a specific package
+        ipak += 8 # packages begin 8 lines after i
 
-        lst_nam_pak.append(doc[i+ipak][85:96].rstrip())
-        lst_val_IN.append(float(doc[i+ipak][63:80]))
-        lst_val_OUT.append(float(doc[i+ipak+npack+5][63:80]))
-        pak_type.append(doc[i+ipak][55:62])
+        lst_nam_pak.append(doc[i+ipak][85:96].rstrip()) # Package name
+        lst_val_IN.append(float(doc[i+ipak][63:80])) # value IN
+        lst_val_OUT.append(float(doc[i+ipak+npack+5][63:80])) # Value OUT
+        pak_type.append(doc[i+ipak][55:62]) # Package type
 
     Budget = pd.DataFrame({"Pack":lst_nam_pak,
                   "IN":lst_val_IN,
@@ -454,7 +459,7 @@ def get_Total_Budget(model_name,model_dir,kstpkper=(0,0)):
 def arr2ascii(arr,filename,x0,y0,res,nodata=-9999):
     
     """
-    Create an ascii file from an array as a based. Left corner origin and resolution should be provided.
+    Create an ascii raster file from an array as a base. Left corner origin and resolution must be provided.
     arr : 2D numpy arr
     filename : the path/name for the new ascii file
     x0,y0 : left corner origin of the array
@@ -510,12 +515,15 @@ def k_zones(k,z1,layer,kn,ix):
                 icol = cellid[1]
                 k[ilay,irow,icol] = kn 
                 
-    if type(layer) == int:
+    elif type(layer) == int:
         for cellid in res.cellids:
             irow = cellid[0]
             icol = cellid[1]
             k[layer,irow,icol] = kn 
-
+    
+    else :
+        raise Exception ("layer must be an int or a list of int")
+        
 #18
 def liss_mob(arr,n,null_v = 0):
     

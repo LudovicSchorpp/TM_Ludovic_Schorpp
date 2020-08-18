@@ -311,9 +311,9 @@ Precision of REAL variables: 15
  END PROCESSING GRIDDATA
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1025
-      FILE NAME: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\Modeles2D\test_premier_model\working\first_2D.dis.grb
+      FILE NAME: C:\Users\emmal\Documents\Uni\Unine\TM\TM_Ludovic_Schorpp\codes_flopy\Modeles2D\test_premier_model\working\first_2D.dis.grb
 
- OPENED C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\Modeles2D\test_premier_model\working\first_2D.dis.grb
+ OPENED C:\Users\emmal\Documents\Uni\Unine\TM\TM_Ludovic_Schorpp\codes_flopy\Modeles2D\test_premier_model\working\first_2D.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1025   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           

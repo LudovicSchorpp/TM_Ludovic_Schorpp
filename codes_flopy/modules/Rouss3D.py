@@ -121,7 +121,7 @@ def up_act_cell(idomain):
 def assign_k_zones(zone1,k1,k,g,layer):
     
     """
-    Assign a certain k in a certain zone for a given layer
+    Assign a certain k in a certain zone for a given layer --> only work with gridgen objects !!
     zone1 : the zone format --> points need to be in a subsublist [[[(x,y),(x1,y1),(...),...]]]
     k1 : the permeability of the zone
     layer : int
@@ -149,16 +149,16 @@ def shp2idomain(shp_path,g,idomain,features_type="polygon",layer=0):
 def ImportControlPz3D(piez_path,sheet_name,geol_layer,layer_num,geol_col,grid,nlay,np_col="NP",x_col="x",y_col="y"):
     
     """
-    return an 3D array containing infos about piezometer level in control pz in a multiple layers model$
+    return an 3D array containing infos about observed piezometer level
     the null value is set to 0
     
     piez_path : str, the file path to the excel sheet
     sheet_name : str, the name of the data sheet 
-    geol_layer : lst, the name of the different lithology
-    layer_num : lst, the ilay number which corresponds to the lithology in geol_layer
+    geol_layer : lst of string, the name of the different lithology
+    layer_num : lst of int (same length as geol_layer), the ilay number which corresponds to the lithology in geol_layer
     geol_col : the name of the colum containing lithologies
     grid and nlay : grid and number of layers of the model
-    np_col : str, the name of the column containing infos about the PL
+    np_col : str, the name of the column containing infos about the Piezometric Level
     x_col,y_col : str, the name of the columns containings geo infos
     """
     
