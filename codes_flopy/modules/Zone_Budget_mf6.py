@@ -237,7 +237,6 @@ class Zb():
         ja = self.ja
         
         
-        
         for celln in range(ia.shape[0]-1):
             if zones[celln] == z1:
                 for ipos in range(ia[celln]+1, ia[celln+1]): # loop for each connexions of celln
