@@ -311,9 +311,9 @@ Precision of REAL variables: 15
  END PROCESSING GRIDDATA
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1024
-      FILE NAME: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\Modeles3D\test_3D\working\test_3D.dis.grb
+      FILE NAME: M:\GitHub\TM_Ludovic_Schorpp\codes_flopy\Modeles3D\test_3D\working\test_3D.dis.grb
 
- OPENED C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_tests\Modeles3D\test_3D\working\test_3D.dis.grb
+ OPENED M:\GitHub\TM_Ludovic_Schorpp\codes_flopy\Modeles3D\test_3D\working\test_3D.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1024   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
