@@ -1,0 +1,11 @@
+BEGIN options
+  BUDGET  FILEOUT  test_3D.cbc
+  HEAD  FILEOUT  test_3D.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  LAST
+  PRINT  BUDGET  ALL
+END period  1
+

@@ -1,16 +1,16 @@
-2020-08-20 10:33:27.263591 starting: opening plot_pst_helper.log for logging
-2020-08-20 10:33:27.264591 plot_utils.pst_helper()
-2020-08-20 10:33:27.265591 starting: plot res_1to1
-2020-08-20 10:33:27.622596 starting: plotting 1to1 for pc
-2020-08-20 10:33:27.629616 using control file obsvals to calculate residuals
-2020-08-20 10:33:27.758914 finished: plotting 1to1 for pc took: 0:00:00.136318
-2020-08-20 10:33:27.759332 starting: plotting 1to1 for pmap
-2020-08-20 10:33:27.762804 using control file obsvals to calculate residuals
-2020-08-20 10:33:27.774963 finished: plotting 1to1 for pmap took: 0:00:00.015631
-2020-08-20 10:33:27.776041 starting: plotting 1to1 for qmap
-2020-08-20 10:33:27.779055 using control file obsvals to calculate residuals
-2020-08-20 10:33:27.790689 finished: plotting 1to1 for qmap took: 0:00:00.014648
-2020-08-20 10:33:27.791773 starting: plotting 1to1 for quat
-2020-08-20 10:33:27.795787 using control file obsvals to calculate residuals
-2020-08-20 10:33:27.807020 finished: plotting 1to1 for quat took: 0:00:00.015247
-2020-08-20 10:33:27.985269 finished: plot res_1to1 took: 0:00:00.719678
+2020-08-24 15:08:47.466616 starting: opening plot_pst_helper.log for logging
+2020-08-24 15:08:47.466616 plot_utils.pst_helper()
+2020-08-24 15:08:47.466616 starting: plot res_1to1
+2020-08-24 15:08:47.494348 starting: plotting 1to1 for pc
+2020-08-24 15:08:47.494348 using control file obsvals to calculate residuals
+2020-08-24 15:08:47.696334 finished: plotting 1to1 for pc took: 0:00:00.201986
+2020-08-24 15:08:47.696334 starting: plotting 1to1 for pmap
+2020-08-24 15:08:47.701389 using control file obsvals to calculate residuals
+2020-08-24 15:08:47.726624 finished: plotting 1to1 for pmap took: 0:00:00.030290
+2020-08-24 15:08:47.726624 starting: plotting 1to1 for qmap
+2020-08-24 15:08:47.731649 using control file obsvals to calculate residuals
+2020-08-24 15:08:47.756911 finished: plotting 1to1 for qmap took: 0:00:00.030287
+2020-08-24 15:08:47.756911 starting: plotting 1to1 for quat
+2020-08-24 15:08:47.764996 using control file obsvals to calculate residuals
+2020-08-24 15:08:47.785189 finished: plotting 1to1 for quat took: 0:00:00.028278
+2020-08-24 15:08:48.141247 finished: plot res_1to1 took: 0:00:00.674631
