@@ -44,7 +44,7 @@ Integer Variables
 
  READING SIMULATION TIMING
 
- OPENED first3D_mf6.tdis
+ OPENED I3D_2700_mf6.tdis
  FILE TYPE:TDIS   UNIT 1002   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
@@ -68,7 +68,7 @@ Integer Variables
  END OF SIMULATION TIMING
 
  READING SIMULATION MODELS
-    GWF6 model TEST_3D will be created as model 1
+    GWF6 model M3D_2 will be created as model 1
  END OF SIMULATION MODELS
 
  READING SIMULATION EXCHANGES
@@ -78,7 +78,7 @@ Integer Variables
 
  Creating solution: SLN_1           
 
- OPENED first3D_mf6.ims
+ OPENED I3D_2700_mf6.ims
  FILE TYPE:IMS   UNIT 1023   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
@@ -138,22 +138,20 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        50    -10030.4                     1_GWF-(3,163,111)
- Under-relaxation          1              -10030.4                     1_GWF-(3,163,111)
- Linear Solver             2        50    -127.588                      1_GWF-(5,164,77)
- Under-relaxation          2              -127.588                      1_GWF-(5,164,77)
- Linear Solver             3        50    -70.0022                      1_GWF-(2,117,96)
- Under-relaxation          3              -70.0022                      1_GWF-(2,117,96)
- Linear Solver             4        50    -3.20839                      1_GWF-(2,175,53)
- Under-relaxation          4              -3.20839                      1_GWF-(2,175,53)
- Linear Solver             5        50   -0.438777                      1_GWF-(2,175,55)
- Under-relaxation          5             -0.438777                      1_GWF-(2,175,55)
- Linear Solver             6        26   -7.425059E-03                  1_GWF-(4,167,55)
- Under-relaxation          6             -7.425059E-03                  1_GWF-(4,167,55)
- Linear Solver             7         1   -6.627088E-04                  1_GWF-(3,175,54)
+ Linear Solver             1        50    -10028.3                     1_GWF-(3,163,111)
+ Under-relaxation          1              -10028.3                     1_GWF-(3,163,111)
+ Linear Solver             2        50    -130.081                      1_GWF-(5,164,77)
+ Under-relaxation          2              -130.081                      1_GWF-(5,164,77)
+ Linear Solver             3        50    -73.5735                      1_GWF-(2,117,96)
+ Under-relaxation          3              -73.5735                      1_GWF-(2,117,96)
+ Linear Solver             4        50    -2.48265                      1_GWF-(2,175,53)
+ Under-relaxation          4              -2.48265                      1_GWF-(2,175,53)
+ Linear Solver             5        50   -0.257673                      1_GWF-(4,141,65)
+ Under-relaxation          5             -0.257673                      1_GWF-(4,141,65)
+ Linear Solver             6         1   -9.173621E-04                  1_GWF-(3,175,54)
 
- 7 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 277 TOTAL ITERATIONS
+ 6 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 251 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -162,7 +160,7 @@ Integer Variables
  Allocated memory in megabytes:     49.0299    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/08/24 13:49:13
- Elapsed run time:  3.066 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/08/25 22:51:01
+ Elapsed run time:  2.625 Seconds
 
  Normal termination of simulation.

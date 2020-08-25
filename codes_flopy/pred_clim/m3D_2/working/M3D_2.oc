@@ -1,0 +1,11 @@
+BEGIN options
+  BUDGET  FILEOUT  M3D_2.cbc
+  HEAD  FILEOUT  M3D_2.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  LAST
+  PRINT  BUDGET  ALL
+END period  1
+

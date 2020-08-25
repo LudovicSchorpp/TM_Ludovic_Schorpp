@@ -1,0 +1,24 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  M3D_2.dis  dis
+  IC6  M3D_2.ic  ic
+  OC6  M3D_2.oc  oc
+  NPF6  M3D_2.npf  npf
+  WEL6  M3D_2.wel  wel
+  RCH6  M3D_2.rch  rch
+  RCH6  irri.rch  irrig
+  RCH6  p_agri.rch  p_agri
+  WEL6  Corb.wel  corb
+  CHD6  sea.chd  sea
+  CHD6  thuir.chd  thuir
+  DRN6  eta.drn  eta
+  RIV6  agly.riv  agly
+  RIV6  Tet.riv  tet
+  RIV6  Rea.riv  rea
+  RIV6  Cant.riv  cant
+  RIV6  Tech.riv  tech
+  RIV6  Bol.riv  bol
+END packages
+
