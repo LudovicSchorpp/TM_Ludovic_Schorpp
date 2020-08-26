@@ -2,7 +2,7 @@ BEGIN options
 END options
 
 BEGIN timing
-  TDIS6  I3D_2700_mf6.tdis
+  TDIS6  m3D_2_mf6.tdis
 END timing
 
 BEGIN models
@@ -13,6 +13,6 @@ BEGIN exchanges
 END exchanges
 
 BEGIN solutiongroup  1
-  ims6  I3D_2700_mf6.ims  M3D_2
+  ims6  m3D_2_mf6.ims  M3D_2
 END solutiongroup  1
 
