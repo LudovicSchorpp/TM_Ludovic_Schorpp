@@ -1,0 +1,11 @@
+BEGIN options
+  BUDGET  FILEOUT  I3D_2700.cbc
+  HEAD  FILEOUT  I3D_2700.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  LAST
+  PRINT  BUDGET  ALL
+END period  1
+

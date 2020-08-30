@@ -1,0 +1,24 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  I3D_2400.dis  dis
+  IC6  I3D_2400.ic  ic
+  OC6  I3D_2400.oc  oc
+  NPF6  I3D_2400.npf  npf
+  WEL6  I3D_2400.wel  wel
+  RCH6  I3D_2400.rch  rch
+  RCH6  irri.rch  irrig
+  RCH6  p_agri.rch  p_agri
+  WEL6  Corb.wel  corb
+  CHD6  sea.chd  sea
+  CHD6  thuir.chd  thuir
+  DRN6  eta.drn  eta
+  RIV6  agly.riv  agly
+  RIV6  Tet.riv  tet
+  RIV6  Rea.riv  rea
+  RIV6  Cant.riv  cant
+  RIV6  Tech.riv  tech
+  RIV6  Bol.riv  bol
+END packages
+
