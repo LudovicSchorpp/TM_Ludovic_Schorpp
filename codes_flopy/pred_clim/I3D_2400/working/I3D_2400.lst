@@ -311,9 +311,9 @@ Precision of REAL variables: 15
  END PROCESSING GRIDDATA
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1024
-      FILE NAME: C:\Users\emmal\Documents\Uni\Unine\TM\TM_Ludovic_Schorpp\codes_flopy\pred_clim\I3D_2400\working\I3D_2400.dis.grb
+      FILE NAME: C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_flopy\pred_clim\I3D_2400\working\I3D_2400.dis.grb
 
- OPENED C:\Users\emmal\Documents\Uni\Unine\TM\TM_Ludovic_Schorpp\codes_flopy\pred_clim\I3D_2400\working\I3D_2400.dis.grb
+ OPENED C:\Users\emmal\Documents\GitHub\TM_Ludovic_Schorpp\codes_flopy\pred_clim\I3D_2400\working\I3D_2400.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1024   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           

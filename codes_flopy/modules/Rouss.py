@@ -375,7 +375,7 @@ def coor_convert(x,y,epsgin,epsgout):
     return xp,yp
 
 #12
-def chd2riv(riv_chd,cond,rdepth):
+def chd2riv(riv_chd,cond,rdepth,stage_var=1):
     
     """
     Transform a chd stress period data into a riv stress period data
@@ -386,7 +386,7 @@ def chd2riv(riv_chd,cond,rdepth):
     
     Riv=[]
     for cellid,stage in riv_chd:
-        Riv.append((cellid,stage,cond,stage-rdepth))
+        Riv.append((cellid,(stage-rdepth)+rdepth*stage_var,cond,stage-rdepth))
     riv_chd[:] = Riv
 
 #13
