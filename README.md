@@ -15,4 +15,4 @@ Le répertoire est classé en différents dossiers détaillés ci-dessous :
 
 **Pour une bonne utilisation des notebooks il est nécessaire de posséder la version 3.3.0 de Flopy (pas supérieure).**
 
-Pour toute question relative au dossier, données ou au travail en général : [mailto](mailto:ludovic.schorpp@unine.ch)
+Pour toute question relative au dossier, données ou au travail en général vous pouvez utiliser ce lien : [email](mailto:ludovic.schorpp@unine.ch)
