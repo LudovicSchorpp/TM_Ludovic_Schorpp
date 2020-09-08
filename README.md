@@ -14,5 +14,11 @@ Le répertoire est classé en différents dossiers détaillés ci-dessous :
   - traitement_data : multiples sous-dossiers et notebooks sur le traitement des données et la création de figures pour le master
 
 **Pour une bonne utilisation des notebooks il est nécessaire de posséder la version 3.3.0 de Flopy (pas supérieure).**
+D'autres packages doivent également être installés : 
+  - shapely
+  - descartes
+  - rasterio
+  - geopandas
+
 
 Pour toute question relative au dossier, données ou au travail en général vous pouvez me contacter par [email](mailto:ludovic.schorpp@unine.ch)
