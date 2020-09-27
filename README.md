@@ -22,3 +22,7 @@ D'autres packages doivent également être installés :
 
 
 Pour toute question relative au dossier, données ou au travail en général vous pouvez me contacter par [email](mailto:ludovic.schorpp@unine.ch)
+
+
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/LudovicSchorpp/TM_Ludovic_Schorpp/master)
+
