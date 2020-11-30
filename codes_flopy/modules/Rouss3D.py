@@ -162,7 +162,6 @@ def ImportControlPz3D(piez_path,sheet_name,geol_layer,layer_num,geol_col,grid,nl
     x_col,y_col : str, the name of the columns containings geo infos
     """
     
-    piez_path="../../data/piezos/pz_hydriad.xlsx"
     data = pd.read_excel(piez_path,sheet_name=sheet_name)
 
     geol_layer = geol_layer
