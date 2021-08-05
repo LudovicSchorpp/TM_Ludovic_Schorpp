@@ -138,24 +138,20 @@ Integer Variables
                        OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
                    ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
  ---------------------------------------------------------------------------------------
- Linear Solver             1        50    -9999.67                      1_GWF-(2,26,129)
- Under-relaxation          1              -9999.67                      1_GWF-(2,26,129)
- Linear Solver             2        50    -214.178                      1_GWF-(5,164,77)
- Under-relaxation          2              -214.178                      1_GWF-(5,164,77)
- Linear Solver             3        50    -4.33691                      1_GWF-(2,94,101)
- Under-relaxation          3              -4.33691                      1_GWF-(2,94,101)
- Linear Solver             4        50    0.339631                       1_GWF-(5,80,58)
- Under-relaxation          4              0.339631                       1_GWF-(5,80,58)
- Linear Solver             5        15    1.335570E-02                   1_GWF-(5,91,48)
- Under-relaxation          5              1.335570E-02                   1_GWF-(5,91,48)
- Linear Solver             6         2    1.268979E-03                  1_GWF-(2,24,130)
- Under-relaxation          6              1.268979E-03                  1_GWF-(2,24,130)
- Linear Solver             7         2   -1.297886E-03                  1_GWF-(2,24,130)
- Under-relaxation          7             -1.297886E-03                  1_GWF-(2,24,130)
- Linear Solver             8         1    9.998058E-04                  1_GWF-(2,24,130)
+ Linear Solver             1        50    -10010.7                      1_GWF-(3,12,137)
+ Under-relaxation          1              -10010.7                      1_GWF-(3,12,137)
+ Linear Solver             2        50    -221.421                      1_GWF-(5,164,77)
+ Under-relaxation          2              -221.421                      1_GWF-(5,164,77)
+ Linear Solver             3        50    -14.8634                     1_GWF-(2,142,114)
+ Under-relaxation          3              -14.8634                     1_GWF-(2,142,114)
+ Linear Solver             4        50   -0.872413                      1_GWF-(2,175,53)
+ Under-relaxation          4             -0.872413                      1_GWF-(2,175,53)
+ Linear Solver             5        40   -7.797431E-02                 1_GWF-(2,107,121)
+ Under-relaxation          5             -7.797431E-02                 1_GWF-(2,107,121)
+ Linear Solver             6         1   -9.023491E-04                  1_GWF-(3,176,45)
 
- 8 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 220 TOTAL ITERATIONS
+ 6 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 241 TOTAL ITERATIONS
 
  INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
  
@@ -164,7 +160,7 @@ Integer Variables
  Allocated memory in megabytes:     48.4924    
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/08/05 13:21:32
- Elapsed run time:  2.532 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2021/08/05 17:26:34
+ Elapsed run time:  1.368 Seconds
 
  Normal termination of simulation.
