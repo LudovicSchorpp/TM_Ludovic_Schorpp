@@ -1,7 +1,7 @@
 ,fac_file,fmt,head_rows,index_cols,lower_bound,mlt_file,model_file,org_file,pp_file,sep,upper_bound,use_cols,zero_based
 0,kp_q_inst0pp.fac,free,0,,1e-05,mult\kp_q_inst0_pilotpoint.csv,kq.txt,org\kq.txt,kp_q_inst0pp.dat,,0.006,,False
 1,kp_pc_inst0pp.fac,free,0,,5e-07,mult\kp_pc_inst0_pilotpoint.csv,kpc.txt,org\kpc.txt,kp_pc_inst0pp.dat,,0.0005,,False
-2,,free,0,,,mult\irr_inst0_zone.csv,irr.txt,org\irr.txt,,,,,False
-3,,free,0,,,mult\ep_inst0_constant.csv,kep.txt,org\kep.txt,,,,,False
-4,,free,0,,,mult\pms_inst0_constant.csv,kpms.txt,org\kpms.txt,,,,,False
-5,,free,0,,,mult\qm_inst0_constant.csv,kqm.txt,org\kqm.txt,,,,,False
+2,,free,0,,-1e+30,mult\irr_inst0_zone.csv,irr.txt,org\irr.txt,,,1e+30,,False
+3,,free,0,,-1e+30,mult\ep_inst0_constant.csv,kep.txt,org\kep.txt,,,1e+30,,False
+4,,free,0,,-1e+30,mult\pms_inst0_constant.csv,kpms.txt,org\kpms.txt,,,1e+30,,False
+5,,free,0,,-1e+30,mult\qm_inst0_constant.csv,kqm.txt,org\kqm.txt,,,1e+30,,False

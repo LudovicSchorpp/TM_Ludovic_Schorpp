@@ -1,0 +1,2 @@
+iteration,model_runs_completed,total_phi,measurement_phi,regularization_phi,pc,pmap,qmap,quat,regulkp_q_in,regulcond,regulkp_pc_i,regulirr__mu,regulep__mul,regulpms__mu,regulqm__mul
+0,1,3199.76,3199.76,0,260.22,1140.05,1315.17,484.324,0,0,0,0,0,0,0
