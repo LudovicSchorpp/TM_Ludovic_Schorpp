@@ -1,0 +1,12 @@
+BEGIN options
+  READASARRAYS
+  SAVE_FLOWS
+END options
+
+BEGIN period  1
+  irch
+    CONSTANT  2
+  recharge
+    OPEN/CLOSE  'irr.txt'  FACTOR  1.0
+END period  1
+
