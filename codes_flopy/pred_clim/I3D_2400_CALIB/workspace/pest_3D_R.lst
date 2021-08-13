@@ -84,7 +84,7 @@ Precision of REAL variables: 15
 
 
  OPENED thuir.chd
- FILE TYPE:CHD6                   UNIT 1015   STATUS:OLD                 
+ FILE TYPE:WEL6                   UNIT 1015   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
@@ -163,6 +163,7 @@ Precision of REAL variables: 15
 
 
  PROCESSING NPF OPTIONS
+    CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
  END OF NPF OPTIONS
 
  WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1009
@@ -183,6 +184,16 @@ Precision of REAL variables: 15
 
  PROCESSING WEL DIMENSIONS
     MAXBOUND =      97
+ END OF WEL DIMENSIONS
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
+
+ PROCESSING WEL OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF WEL OPTIONS
+
+ PROCESSING WEL DIMENSIONS
+    MAXBOUND =      32
  END OF WEL DIMENSIONS
 
  DRN   -- DRN PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1016
@@ -292,16 +303,6 @@ Precision of REAL variables: 15
     MAXBOUND =    7350
  END OF CHD DIMENSIONS
 
- CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
-
- PROCESSING CHD OPTIONS
-    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
- END OF CHD OPTIONS
-
- PROCESSING CHD DIMENSIONS
-    MAXBOUND =      32
- END OF CHD DIMENSIONS
-
  IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1006
  PROCESSING GRIDDATA
  END PROCESSING GRIDDATA
@@ -309,11 +310,11 @@ Precision of REAL variables: 15
 
                 ICELLTYPE = 0
 
-                        K =  0.4642000E-05 FOR LAYER 1
+                        K =  0.1395660E-04 FOR LAYER 1
 
-                        K =  0.3970300E-08 FOR LAYER 3
+                        K =  0.3612650E-08 FOR LAYER 3
 
-                        K =  0.2493260E-05 FOR LAYER 5
+                        K =  0.2943270E-05 FOR LAYER 5
  K33 not provided.  Assuming K33 = K.
  K22 not provided.  Assuming K22 = K.
  END PROCESSING GRIDDATA
@@ -853,9 +854,9 @@ PMAP_1_101_78                             Continuous HEAD                  All t
 PMAP_1_87_103                             Continuous HEAD                  All times    "4 88 104"
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1029
-      FILE NAME: C:\Users\Ludovic\Documents(sauvegarde)\Github\TM_Ludovic_Schorpp\codes_flopy\pred_clim\I3D_2400_CALIB\workspace\pest_3D_R.dis.grb
+      FILE NAME: C:\Users\emmal\Documents\Github\TM_Ludovic_Schorpp\TM_Ludovic_Schorpp\TM_Ludovic_Schorpp\codes_flopy\pred_clim\I3D_2400_CALIB\workspace\pest_3D_R.dis.grb
 
- OPENED C:\Users\Ludovic\Documents(sauvegarde)\Github\TM_Ludovic_Schorpp\codes_flopy\pred_clim\I3D_2400_CALIB\workspace\pest_3D_R.dis.grb
+ OPENED C:\Users\emmal\Documents\Github\TM_Ludovic_Schorpp\TM_Ludovic_Schorpp\TM_Ludovic_Schorpp\codes_flopy\pred_clim\I3D_2400_CALIB\workspace\pest_3D_R.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1029   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
@@ -897,8 +898,10 @@ PMAP_1_87_103                             Continuous HEAD                  All t
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              WEL IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE WEL              ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              WEL IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE CORB             ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE THUIR            ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              DRN IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE ETA              ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RIV IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE AGLY             ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RIV IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE TET              ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
@@ -910,7 +913,6 @@ PMAP_1_87_103                             Continuous HEAD                  All t
  UBDSV06 SAVING              RCH IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE IRRIG            ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RCH IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE P_AGRI           ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              CHD IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE SEA              ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING              CHD IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE THUIR            ON UNIT   1030 AT TIME STEP      1, STRESS PERIOD      1
 
  HEAD WILL BE SAVED ON UNIT 1031 AT END OF TIME STEP    1, STRESS PERIOD    1
 
@@ -925,43 +927,43 @@ PMAP_1_87_103                             Continuous HEAD                  All t
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
+                 WEL =           0.3000                   WEL =           0.3000     THUIR           
                  DRN =           0.0000                   DRN =           0.0000     ETA             
-                 RIV =       5.6902E-03                   RIV =       5.6902E-03     AGLY            
-                 RIV =           0.1602                   RIV =           0.1602     TET             
-                 RIV =           0.1099                   RIV =           0.1099     REA             
-                 RIV =       3.7961E-02                   RIV =       3.7961E-02     CANT            
-                 RIV =           0.2668                   RIV =           0.2668     TECH            
-                 RIV =           0.5258                   RIV =           0.5258     BOL             
-                 RCH =           3.1380                   RCH =           3.1380     RCH             
-                 RCH =           0.5178                   RCH =           0.5178     IRRIG           
+                 RIV =       4.1297E-02                   RIV =       4.1297E-02     AGLY            
+                 RIV =           0.3913                   RIV =           0.3913     TET             
+                 RIV =       6.8989E-02                   RIV =       6.8989E-02     REA             
+                 RIV =           0.2288                   RIV =           0.2288     CANT            
+                 RIV =           0.2624                   RIV =           0.2624     TECH            
+                 RIV =           0.1372                   RIV =           0.1372     BOL             
+                 RCH =           2.0589                   RCH =           2.0589     RCH             
+                 RCH =           0.5255                   RCH =           0.5255     IRRIG           
                  RCH =           0.0000                   RCH =           0.0000     P_AGRI          
-                 CHD =          11.5551                   CHD =          11.5551     SEA             
-                 CHD =           1.7228                   CHD =           1.7228     THUIR           
+                 CHD =       4.4673E-03                   CHD =       4.4673E-03     SEA             
 
-            TOTAL IN =          18.2400              TOTAL IN =          18.2400
+            TOTAL IN =           4.2189              TOTAL IN =           4.2189
 
           OUT:                                     OUT:
           ----                                     ----
-                 WEL =           1.3716                   WEL =           1.3716     WEL             
+                 WEL =           1.6459                   WEL =           1.6459     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           0.8157                   DRN =           0.8157     ETA             
-                 RIV =           0.1811                   RIV =           0.1811     AGLY            
-                 RIV =           1.9823                   RIV =           1.9823     TET             
-                 RIV =       6.9971E-02                   RIV =       6.9971E-02     REA             
-                 RIV =       2.4630E-02                   RIV =       2.4630E-02     CANT            
-                 RIV =           0.2602                   RIV =           0.2602     TECH            
-                 RIV =       2.6004E-02                   RIV =       2.6004E-02     BOL             
+                 WEL =           0.0000                   WEL =           0.0000     THUIR           
+                 DRN =           0.5082                   DRN =           0.5082     ETA             
+                 RIV =           0.1220                   RIV =           0.1220     AGLY            
+                 RIV =           0.3409                   RIV =           0.3409     TET             
+                 RIV =       4.0838E-03                   RIV =       4.0838E-03     REA             
+                 RIV =       8.5400E-02                   RIV =       8.5400E-02     CANT            
+                 RIV =           0.1229                   RIV =           0.1229     TECH            
+                 RIV =           0.0000                   RIV =           0.0000     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
                  RCH =           0.0000                   RCH =           0.0000     IRRIG           
-                 RCH =           0.6852                   RCH =           0.6852     P_AGRI          
-                 CHD =          12.7648                   CHD =          12.7648     SEA             
-                 CHD =       5.7972E-02                   CHD =       5.7972E-02     THUIR           
+                 RCH =           0.8253                   RCH =           0.8253     P_AGRI          
+                 CHD =           0.5638                   CHD =           0.5638     SEA             
 
-           TOTAL OUT =          18.2394             TOTAL OUT =          18.2394
+           TOTAL OUT =           4.2184             TOTAL OUT =           4.2184
 
-            IN - OUT =       5.9208E-04              IN - OUT =       5.9208E-04
+            IN - OUT =       5.2729E-04              IN - OUT =       5.2729E-04
 
- PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+ PERCENT DISCREPANCY =           0.01     PERCENT DISCREPANCY =           0.01
 
 
 

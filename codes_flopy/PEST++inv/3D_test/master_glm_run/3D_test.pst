@@ -17,9 +17,9 @@ pcf
  kp_q_inst:0             relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic              1.0000000000E-05       5.0000000000E-01       smaller              
  irr__multiplier         relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic              1.0000000000E-05       5.0000000000E-01       smaller              
  cond                    relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic              1.0000000000E-05       5.0000000000E-01       smaller              
- ep__multiplier          relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic              1.0000000000E-05       5.0000000000E-01       smaller              
- qm__multiplier          relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic              1.0000000000E-05       5.0000000000E-01       smaller              
  pms__multiplier         relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic              1.0000000000E-05       5.0000000000E-01       smaller              
+ qm__multiplier          relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic              1.0000000000E-05       5.0000000000E-01       smaller              
+ ep__multiplier          relative              1.0000000000E-02       0.0  switch                2.0000000000E+00       parabolic              1.0000000000E-05       5.0000000000E-01       smaller              
 * parameter data
           kp_q_inst:0_i:28_j:124   log                    factor                1.0000000000E+00      5.0000000000E-03      3.0000000000E+00       kp_q_inst:0           1.0000000000E+00      0.0000000000E+00       1          
           kp_q_inst:0_i:28_j:132   log                    factor                1.0000000000E+00      5.0000000000E-03      3.0000000000E+00       kp_q_inst:0           1.0000000000E+00      0.0000000000E+00       1          
@@ -139,12 +139,12 @@ pcf
          kp_q_inst:0_i:164_j:100   log                    factor                1.3550000000E-02      5.0000000000E-03      3.0000000000E+00       kp_q_inst:0           1.0000000000E+00      0.0000000000E+00       1          
           kp_q_inst:0_i:172_j:52   log                    factor                1.0000000000E+00      5.0000000000E-03      3.0000000000E+00       kp_q_inst:0           1.0000000000E+00      0.0000000000E+00       1          
           kp_q_inst:0_i:172_j:60   log                    factor                1.0000000000E+00      5.0000000000E-03      3.0000000000E+00       kp_q_inst:0           1.0000000000E+00      0.0000000000E+00       1          
-            c_agly                 log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-01       cond                  1.0000000000E+00      0.0000000000E+00       1          
-            c_bol                  log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-01       cond                  1.0000000000E+00      0.0000000000E+00       1          
-            c_cant                 log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-01       cond                  1.0000000000E+00      0.0000000000E+00       1          
-            c_rea                  log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-01       cond                  1.0000000000E+00      0.0000000000E+00       1          
-            c_tech                 log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-01       cond                  1.0000000000E+00      0.0000000000E+00       1          
-            c_tet                  log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-01       cond                  1.0000000000E+00      0.0000000000E+00       1          
+            c_agly                 log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-02       cond                  1.0000000000E+00      0.0000000000E+00       1          
+            c_bol                  log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-02       cond                  1.0000000000E+00      0.0000000000E+00       1          
+            c_cant                 log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-02       cond                  1.0000000000E+00      0.0000000000E+00       1          
+            c_rea                  log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-02       cond                  1.0000000000E+00      0.0000000000E+00       1          
+            c_tech                 log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-02       cond                  1.0000000000E+00      0.0000000000E+00       1          
+            c_tet                  log                    factor                5.0000000000E-03      1.0000000000E-04      1.0000000000E-02       cond                  1.0000000000E+00      0.0000000000E+00       1          
          kp_pc_inst:0_i:20_j:132   log                    factor                9.9500000000E+00      5.0000000000E-02      5.0000000000E+01       kp_pc_inst:0          1.0000000000E+00      0.0000000000E+00       1          
          kp_pc_inst:0_i:28_j:124   log                    factor                9.9500000000E+00      5.0000000000E-02      5.0000000000E+01       kp_pc_inst:0          1.0000000000E+00      0.0000000000E+00       1          
          kp_pc_inst:0_i:28_j:132   log                    factor                9.9500000000E+00      5.0000000000E-02      5.0000000000E+01       kp_pc_inst:0          1.0000000000E+00      0.0000000000E+00       1          
@@ -997,7 +997,7 @@ kp_q_inst:0_i:164_j:92  1.0 * log(kp_q_inst:0_i:164_j:92) = -1.868061E+00       
 kp_q_inst:0_i:164_j:100  1.0 * log(kp_q_inst:0_i:164_j:100) = -1.868061E+00        3.5995160446E+00     regulkp_q_in         
 kp_q_inst:0_i:172_j:52  1.0 * log(kp_q_inst:0_i:172_j:52) = 0.000000E+00          3.5995160446E+00     regulkp_q_in         
 kp_q_inst:0_i:172_j:60  1.0 * log(kp_q_inst:0_i:172_j:60) = 0.000000E+00          3.5995160446E+00     regulkp_q_in         
-c_agly                1.0 * log(c_agly) = -2.301030E+00                         3.3333333333E+00     regulcond            
+c_agly                1.0 * log(c_agly) = -2.301030E+00                         5.0000000000E+00     regulcond            
 kp_pc_inst:0_i:20_j:132  1.0 * log(kp_pc_inst:0_i:20_j:132) = 9.978231E-01         3.3333333333E+00     regulkp_pc_i         
 kp_pc_inst:0_i:28_j:124  1.0 * log(kp_pc_inst:0_i:28_j:124) = 9.978231E-01         3.3333333333E+00     regulkp_pc_i         
 kp_pc_inst:0_i:28_j:132  1.0 * log(kp_pc_inst:0_i:28_j:132) = 9.978231E-01         3.3333333333E+00     regulkp_pc_i         
@@ -1178,11 +1178,11 @@ multiplier_const_ep_inst:0  1.0 * log(multiplier_const_ep_inst:0) = 0.000000E+00
 multiplier_const_pms_inst:0  1.0 * log(multiplier_const_pms_inst:0) = 0.000000E+00     3.5995160446E+00     regulpms__mu         
 multiplier_const_qm_inst:0  1.0 * log(multiplier_const_qm_inst:0) = 0.000000E+00      3.3333333333E+00     regulqm__mul         
 * regularization
-3885.0 4079.25 0.1 nomemsave 
+3465.0 3638.25 0.1 nomemsave 
 1.0 1.0e-10 1.0e10 linreg continue 
 1.3 1.0e-2 1 1.5 1.5 0.5 
 ++n_iter_base(-1)
 ++n_iter_super(4)
-++glm_num_reals(200)
+++glm_num_reals(150)
 ++parcov(3D_test.prior.cov)
 ++base_jacobian(3D_test.jcb)

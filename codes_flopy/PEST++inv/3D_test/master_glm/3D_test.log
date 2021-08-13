@@ -1,0 +1,25 @@
+time,elapsed_seconds,message
+11:43:33,6.25e-05,PEST++ performance logger started
+11:43:33,0.0026627,starting to process control file
+11:43:33,0.0149925,finished processing control file
+11:43:33,0.0165238,loading parcov
+11:43:33,0.0067504,commencing to build jacobian parameter sets
+11:43:33,0.0235427,jacobian parameter sets built, commencing model runs
+12:10:24,1610.66,jacobian runs complete, processing runs
+12:10:24,0.0708411,processing jacobian runs complete
+12:10:24,0.0001417,saving jacobian and sen files
+12:10:24,0.0909174,FOSM-based posterior unc calcs
+12:10:24,0.0180683,starting FOSM uncertainty analyses for iteration -999
+12:10:24,0.0056,loading obscov
+12:10:24,0.0003331,loading parcov
+12:10:24,0.0002936,set_predictions
+12:10:24,0.0002631,parameter fosm calcs
+12:10:24,1.22e-05,LinearAnalysis::calc_posterior
+12:10:24,1.12e-05,LinearAnalysis::align
+12:10:24,0.0015676,LinearAnalysis::prior_prediction_variance()::invert obscov
+12:10:24,1.61e-05,inverting diagonal matrix in place
+12:10:24,2.74e-05,LinearAnalysis::calc_posterior() form JtQJ
+12:10:24,0.0536202,LinearAnalysis::calc_posterior() invert prior parcov
+12:10:24,0.0002935,LinearAnalysis::calc_posterior() form posterior parcov
+12:10:24,0.0018345,LinearAnalysis::calc_posterior() invert posterior parcov
+12:10:24,1.39e-05,inverting non-diagonal matrix in place

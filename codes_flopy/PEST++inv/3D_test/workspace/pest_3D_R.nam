@@ -12,7 +12,7 @@ BEGIN packages
   RCH6  p_agri.rch  p_agri
   WEL6  Corb.wel  corb
   CHD6  sea.chd  sea
-  CHD6  thuir.chd  thuir
+  WEL6  thuir.chd  thuir
   DRN6  eta.drn  eta
   RIV6  agly.riv  agly
   RIV6  Tet.riv  tet

@@ -84,7 +84,7 @@ Precision of REAL variables: 15
 
 
  OPENED thuir.chd
- FILE TYPE:CHD6                   UNIT 1015   STATUS:OLD                 
+ FILE TYPE:WEL6                   UNIT 1015   STATUS:OLD                 
  FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
  ACTION:READ                
 
@@ -184,6 +184,16 @@ Precision of REAL variables: 15
 
  PROCESSING WEL DIMENSIONS
     MAXBOUND =      97
+ END OF WEL DIMENSIONS
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
+
+ PROCESSING WEL OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF WEL OPTIONS
+
+ PROCESSING WEL DIMENSIONS
+    MAXBOUND =      32
  END OF WEL DIMENSIONS
 
  DRN   -- DRN PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1016
@@ -291,16 +301,6 @@ Precision of REAL variables: 15
 
  PROCESSING CHD DIMENSIONS
     MAXBOUND =    7350
- END OF CHD DIMENSIONS
-
- CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
-
- PROCESSING CHD OPTIONS
-    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
- END OF CHD OPTIONS
-
- PROCESSING CHD DIMENSIONS
-    MAXBOUND =      32
  END OF CHD DIMENSIONS
 
  IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1006
@@ -878,9 +878,9 @@ PMAP_1_101_78                             Continuous HEAD                  All t
 PMAP_1_87_103                             Continuous HEAD                  All times    "4 88 104"
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1034
-      FILE NAME: C:\Users\emmal\Documents\Uni\Unine\TM\TM_Ludovic_Schorpp\codes_tests\PEST++inv\3D_test\workspace\pest_3D_R.dis.grb
+      FILE NAME: C:\Users\emmal\Documents\Github\TM_Ludovic_Schorpp\TM_Ludovic_Schorpp\TM_Ludovic_Schorpp\codes_flopy\PEST++inv\3D_test\workspace\pest_3D_R.dis.grb
 
- OPENED C:\Users\emmal\Documents\Uni\Unine\TM\TM_Ludovic_Schorpp\codes_tests\PEST++inv\3D_test\workspace\pest_3D_R.dis.grb
+ OPENED C:\Users\emmal\Documents\Github\TM_Ludovic_Schorpp\TM_Ludovic_Schorpp\TM_Ludovic_Schorpp\codes_flopy\PEST++inv\3D_test\workspace\pest_3D_R.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1034   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
@@ -925,6 +925,7 @@ PMAP_1_87_103                             Continuous HEAD                  All t
  UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              WEL IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE WEL              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              WEL IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE CORB             ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE THUIR            ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              DRN IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE ETA              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RIV IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE AGLY             ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RIV IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE TET              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
@@ -936,7 +937,6 @@ PMAP_1_87_103                             Continuous HEAD                  All t
  UBDSV06 SAVING              RCH IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE IRRIG            ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              RCH IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE P_AGRI           ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
  UBDSV06 SAVING              CHD IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE SEA              ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
- UBDSV06 SAVING              CHD IN MODEL PEST_3D_R        PACKAGE PEST_3D_R       CONNECTED TO MODEL PEST_3D_R        PACKAGE THUIR            ON UNIT   1035 AT TIME STEP      1, STRESS PERIOD      1
 
  HEAD WILL BE SAVED ON UNIT 1036 AT END OF TIME STEP    1, STRESS PERIOD    1
 
@@ -951,41 +951,41 @@ PMAP_1_87_103                             Continuous HEAD                  All t
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
                  WEL =           0.2000                   WEL =           0.2000     CORB            
-                 DRN =       1.7219E-05                   DRN =       1.7219E-05     ETA             
-                 RIV =       6.1717E-02                   RIV =       6.1717E-02     AGLY            
-                 RIV =           0.1461                   RIV =           0.1461     TET             
-                 RIV =           0.3054                   RIV =           0.3054     REA             
-                 RIV =           0.1161                   RIV =           0.1161     CANT            
+                 WEL =           0.3000                   WEL =           0.3000     THUIR           
+                 DRN =       1.7501E-05                   DRN =       1.7501E-05     ETA             
+                 RIV =       6.2124E-02                   RIV =       6.2124E-02     AGLY            
+                 RIV =           0.1603                   RIV =           0.1603     TET             
+                 RIV =           0.3067                   RIV =           0.3067     REA             
+                 RIV =           0.1246                   RIV =           0.1246     CANT            
                  RIV =           0.2656                   RIV =           0.2656     TECH            
-                 RIV =           0.3140                   RIV =           0.3140     BOL             
-                 RCH =           3.1380                   RCH =           3.1380     RCH             
-                 RCH =           0.5178                   RCH =           0.5178     IRRIG           
+                 RIV =           0.4670                   RIV =           0.4670     BOL             
+                 RCH =           3.1452                   RCH =           3.1452     RCH             
+                 RCH =           0.5255                   RCH =           0.5255     IRRIG           
                  RCH =           0.0000                   RCH =           0.0000     P_AGRI          
                  CHD =           7.9267                   CHD =           7.9267     SEA             
-                 CHD =           1.3121                   CHD =           1.3121     THUIR           
 
-            TOTAL IN =          14.3035              TOTAL IN =          14.3035
+            TOTAL IN =          13.4837              TOTAL IN =          13.4837
 
           OUT:                                     OUT:
           ----                                     ----
                  WEL =           1.3716                   WEL =           1.3716     WEL             
                  WEL =           0.0000                   WEL =           0.0000     CORB            
-                 DRN =           0.8206                   DRN =           0.8206     ETA             
-                 RIV =           0.1075                   RIV =           0.1075     AGLY            
-                 RIV =           1.8816                   RIV =           1.8816     TET             
-                 RIV =           0.1873                   RIV =           0.1873     REA             
-                 RIV =           0.1253                   RIV =           0.1253     CANT            
+                 WEL =           0.0000                   WEL =           0.0000     THUIR           
+                 DRN =           0.8204                   DRN =           0.8204     ETA             
+                 RIV =           0.1070                   RIV =           0.1070     AGLY            
+                 RIV =           1.2071                   RIV =           1.2071     TET             
+                 RIV =           0.1859                   RIV =           0.1859     REA             
+                 RIV =           0.1097                   RIV =           0.1097     CANT            
                  RIV =           0.2186                   RIV =           0.2186     TECH            
-                 RIV =       9.2883E-02                   RIV =       9.2883E-02     BOL             
+                 RIV =           0.0000                   RIV =           0.0000     BOL             
                  RCH =           0.0000                   RCH =           0.0000     RCH             
                  RCH =           0.0000                   RCH =           0.0000     IRRIG           
-                 RCH =           0.6852                   RCH =           0.6852     P_AGRI          
-                 CHD =           8.7757                   CHD =           8.7757     SEA             
-                 CHD =       3.6981E-02                   CHD =       3.6981E-02     THUIR           
+                 RCH =           0.6877                   RCH =           0.6877     P_AGRI          
+                 CHD =           8.7756                   CHD =           8.7756     SEA             
 
-           TOTAL OUT =          14.3033             TOTAL OUT =          14.3033
+           TOTAL OUT =          13.4836             TOTAL OUT =          13.4836
 
-            IN - OUT =       1.8206E-04              IN - OUT =       1.8206E-04
+            IN - OUT =       1.6720E-04              IN - OUT =       1.6720E-04
 
  PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 
