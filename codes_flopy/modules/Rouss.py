@@ -28,15 +28,15 @@ def gp2cellids (grid, gp, idomain, idomain_active=True, type = "polygon",layer=0
     
     ix = GridIntersect(grid)
     if type == "polygon":
-        result = ix.intersect_polygon(gp.geometry[0])
+        result = ix.intersect(gp.geometry[0])
         result = result[result.areas>(np.nanmax(result.areas)/3)] # only take into account cells that have a least 1/3 intersected 
         
         
     if type == "boundary" :
-        result = ix.intersect_linestring(gp.geometry[0].boundary)
+        result = ix.intersect(gp.geometry[0].boundary)
         
     if type == "line" :
-        result = ix.intersect_linestring(gp.geometry[0])
+        result = ix.intersect(gp.geometry[0])
         
     result = result[result.areas!=0]                       # fix bug with some null areas
     
@@ -150,7 +150,7 @@ def import_riv(grid,gp,lst_domain):
     for i in range(len(coord_riv)):
         if i < len(coord_riv)-1:
             lsi = LineString([coord_riv[i],coord_riv[i+1]]) # create the linestring btw point i and i+1
-            res = ix.intersect_linestring(lsi) # do the intersection
+            res = ix.intersect(lsi) # do the intersection
             res = res[res["lengths"]!=0] # remove a bug issue on Linux with lengths == 0
             cellids = res.cellids # extract cellids (row,col, only)
 
@@ -349,8 +349,8 @@ def importWells(GDB,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",layer=0):
         Vw = GDB[V_col][o]
         if not (np.isnan(Vw)) | (Vw == 0):
             try:
-                cellidx = ix.intersect_point(GDB.geometry[o]).cellids[0][0]
-                cellidy = ix.intersect_point(GDB.geometry[o]).cellids[0][1]
+                cellidx = ix.intersect(GDB.geometry[o]).cellids[0][0]
+                cellidy = ix.intersect(GDB.geometry[o]).cellids[0][1]
                 cellid = (layer,cellidx,cellidy)
                 if cellid in lst_domain:
                     stress_data_well.append((cellid,-fac*Vw))
@@ -490,7 +490,7 @@ def rspl_rast(rast_path,grid,band=1):
     """
     
     rast = Raster.load(rast_path)
-    arr = rast.resample_to_grid(grid.xcellcenters,grid.ycellcenters,band)
+    arr = rast.resample_to_grid(grid,band)
     return arr
 
 #17
@@ -507,7 +507,7 @@ def k_zones(k,z1,layer,kn,ix):
     """
     
     poly = Polygon(z1)
-    res = ix.intersect_polygon(poly)
+    res = ix.intersect(poly)
     if type(layer) != int:
         for ilay in layer:
             for cellid in res.cellids:

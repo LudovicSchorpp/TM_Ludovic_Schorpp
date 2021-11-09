@@ -35,7 +35,7 @@ class Zb():
         
         #IA and JA arrays
         fname = os.path.join(m_dir, '{}.dis.grb'.format(m_name))
-        bgf = fp.utils.mfgrdfile.MfGrdFile(fname)
+        bgf = fp.utils.MfGrdFile(fname)
         self.ia = bgf._datadict['IA'] - 1
         self.ja = bgf._datadict['JA'] - 1
         

@@ -31,15 +31,15 @@ def gp2cellids3D (grid, gp, idomain, idomain_active=True, type = "polygon",layer
     
     ix = GridIntersect(grid)
     if type == "polygon":
-        result = ix.intersect_polygon(gp.geometry[0])
+        result = ix.intersect(gp.geometry[0])
         result = result[result.areas>(np.nanmax(result.areas)/3)] # only take into account cells that have a least 1/3 area intersected 
         result = result[result.areas!=0]                       # fix bug
     
     if type == "boundary" :
-        result = ix.intersect_linestring(gp.geometry[0].boundary)
+        result = ix.intersect(gp.geometry[0].boundary)
 
     if type == "line" :
-        result = ix.intersect_linestring(gp.geometry[0])
+        result = ix.intersect(gp.geometry[0])
         
     lst=[];
     for irow, icol in result.cellids:
@@ -74,8 +74,8 @@ def importWells3D(BD_prlvm,grid,lst_domain,fac=1/365/86400,V_col="V Bancaris",ge
         for o in BD.index: #iterate through each well
             Vw = BD.loc[o,V_col]
             if not (np.isnan(Vw)) | (Vw == 0): #keep productive well
-                    cellidx = ix.intersect_point(BD.geometry[o]).cellids[0][0]
-                    cellidy = ix.intersect_point(BD.geometry[o]).cellids[0][1]
+                    cellidx = ix.intersect(BD.geometry[o]).cellids[0][0]
+                    cellidy = ix.intersect(BD.geometry[o]).cellids[0][1]
                     
                     if type(layer_num[ilayer]) == int :
                         cellid = (layer_num[ilayer],cellidx,cellidy) #cell on which the well is active
